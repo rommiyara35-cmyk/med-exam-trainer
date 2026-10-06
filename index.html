@@ -50,7 +50,7 @@
     .screen.active{display:block}
 
     /* TAB BAR */
-    #tab-bar{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:430px;height:calc(var(--tab-h) + var(--safe-b));padding-bottom:var(--safe-b);background:rgba(255,255,255,0.88);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-top:.5px solid var(--sep);display:flex;align-items:flex-start;justify-content:space-around;padding-top:8px;z-index:100}
+    #tab-bar{position:fixed;bottom:0;left:0;right:0;margin:0 auto;width:100%;max-width:430px;height:calc(var(--tab-h) + var(--safe-b));padding-bottom:var(--safe-b);background:rgba(255,255,255,0.88);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-top:.5px solid var(--sep);display:flex;align-items:flex-start;justify-content:space-around;padding-top:8px;z-index:100}
     @media(prefers-color-scheme:dark){#tab-bar{background:rgba(28,28,30,0.88)}}
     .tab-item{display:flex;flex-direction:column;align-items:center;gap:3px;flex:1;cursor:pointer;padding:2px 0;-webkit-user-select:none;user-select:none}
     .tab-item:active{opacity:.6}
@@ -174,7 +174,7 @@
     .ios-toggle.on::after{transform:translateX(-20px)}
 
     /* OVERLAY */
-    .overlay{position:fixed;inset:0;background:var(--bg);z-index:200;display:flex;flex-direction:column;max-width:430px;margin:0 auto;left:50%;transform:translateX(-50%);width:100%}
+    .overlay{position:fixed;inset:0;background:var(--bg);z-index:200;display:flex;flex-direction:column;max-width:430px;margin:0 auto;left:0;right:0;margin:0 auto;width:100%}
     .ov-hdr{padding:14px 20px;padding-top:calc(14px + var(--safe-t));display:flex;align-items:center;gap:12px;flex-shrink:0}
     .close-btn{width:32px;height:32px;border-radius:50%;background:var(--surface3);border:none;display:flex;align-items:center;justify-content:center;font-size:16px;cursor:pointer;color:var(--label);flex-shrink:0;transition:opacity .15s;-webkit-user-select:none;user-select:none}
     .close-btn:active{opacity:.6}
@@ -232,7 +232,7 @@
     .btn-ghost{background:var(--surface2);color:var(--accent)}
 
     /* COMPLETE */
-    .complete{position:fixed;inset:0;background:var(--bg);z-index:300;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px;text-align:center;max-width:430px;margin:0 auto;left:50%;transform:translateX(-50%)}
+    .complete{position:fixed;inset:0;background:var(--bg);z-index:300;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px;text-align:center;max-width:430px;margin:0 auto;left:0;right:0;margin:0 auto}
     .complete-emoji{font-size:80px;margin-bottom:18px;animation:bounceIn .55s cubic-bezier(.34,1.56,.64,1)}
     @keyframes bounceIn{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}
     .c-title{font-size:30px;font-weight:800;margin-bottom:6px;letter-spacing:-.5px}
@@ -243,8 +243,8 @@
     .c-lbl{font-size:12px;color:var(--label4);margin-top:2px}
 
     /* TOAST */
-    .toast{position:fixed;top:calc(20px + var(--safe-t));left:50%;transform:translateX(-50%) translateY(-80px);background:rgba(50,50,55,.9);color:#fff;padding:11px 20px;border-radius:99px;font-size:14px;font-weight:600;z-index:500;transition:transform .4s cubic-bezier(.34,1.56,.64,1);backdrop-filter:blur(10px);white-space:nowrap;pointer-events:none;max-width:90vw;text-align:center}
-    .toast.show{transform:translateX(-50%) translateY(0)}
+    .toast{position:fixed;top:calc(20px + var(--safe-t));left:0;right:0;margin:0 auto;width:max-content;transform:translateY(-80px);background:rgba(50,50,55,.9);color:#fff;padding:11px 20px;border-radius:99px;font-size:14px;font-weight:600;z-index:500;transition:transform .4s cubic-bezier(.34,1.56,.64,1);backdrop-filter:blur(10px);white-space:nowrap;pointer-events:none;max-width:90vw;text-align:center}
+    .toast.show{transform:translateY(0)}
 
     /* MISC */
     .empty{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:48px 24px;text-align:center}
