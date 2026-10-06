@@ -1,0 +1,4294 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "israel-four-year-medicine-knowledge-tau-2024-25",
+  "checked_on": "2026-10-06",
+  "title_he": "מבנה הסילבוס למבחן הידע לרפואה ארבע-שנתית",
+  "official_syllabus": {
+    "source_id": "tau-official",
+    "url": "https://med.tau.ac.il/sites/medicine.tau.ac.il/files/media_server/medicine/med2024/yeda/Syllabus%202025.pdf",
+    "edition": "2024-2025",
+    "applicability_to_2027": "unconfirmed",
+    "latest_edition_verified": false
+  },
+  "content_type": "scope-backbone-only",
+  "content_ready": false,
+  "translation_policy": "title_en preserves verified English headings with capitalization and line wrapping normalized. title_he is an editorial Hebrew gloss, not official text.",
+  "granularity": "Principal textbook sections, not every paragraph-level heading. Chapter 18 uses all nine body headings because it has no grouped principal sections.",
+  "scope_rules": [
+    "The official syllabus, not a generated topic list, determines scope. All material in each included full chapter remains required, including introductory text, lower-level headings, figures, examples and boxes; the principal-section list is a navigation aid, not a scope reduction.",
+    "Partial Lehninger chapters require the Introduction and only the explicitly listed numbered sections.",
+    "Physiology chapters 1, 2, 5 and 6 require all chapter material except the exact official exclusions. Chapter 4 and chapter 12 are include-only lists.",
+    "Each subtopic includes all subordinate material in its textbook section, unless excluded in that same area and chapter. Exclusion matching is scoped by area and chapter, never global by keyword.",
+    "Sensory Transduction is retained in physiology chapter 5: the official exclusions name Receptive Fields, Coding of Information by Action Potentials and Sensory Coding, not all sensory transduction.",
+    "Teach and assess only included scope; do not fabricate lessons, citations, questions or claims of complete exam coverage from headings alone.",
+    "Learning requires knowledge, understanding, application and integration between areas. Do not omit plant biology or clinical examples where the included chapters contain them.",
+    "Recheck the official syllabus before preparing for the 2027 exam. This file does not establish 2027 scope."
+  ],
+  "app_rules": {
+    "area_weight": 0.25,
+    "hide_excluded": true,
+    "count_excluded_in_mastery": false,
+    "mastery_key": "subtopic.id",
+    "content_status_default": "not-authored",
+    "validate_content_before_release": true
+  },
+  "caveats": [
+    "Physiology detailed TOC comes from third-party reproductions, not a publisher/library-verified detailed TOC. Official includes/exclusions are independently verified in TAU PDF.",
+    "TOC structure alone is not sufficient to generate accurate or complete teaching content. Obtain the exact-edition textbooks or verified subject sources, write original explanations and validate all lessons/questions.",
+    "Do not treat number of navigation topics as exam weighting, book length or study-hours estimate."
+  ],
+  "sources": [
+    {
+      "id": "tau-official",
+      "url": "https://med.tau.ac.il/sites/medicine.tau.ac.il/files/media_server/medicine/med2024/yeda/Syllabus%202025.pdf",
+      "kind": "official-exam-syllabus",
+      "edition": "2024-2025",
+      "used_for": "Included chapters, required introductions/subsections, 15 explicit physiology exclusions, equal weighting and full-chapter scope."
+    },
+    {
+      "id": "lehninger-library",
+      "url": "https://digrep.mchs.mw/items/69b1e483-9b30-4792-97de-0e746654dd81/full",
+      "kind": "institutional-library-book",
+      "edition": "8th, 2021",
+      "used_for": "Exact numbered section headings and chapter titles. Authors, year and ISBN verified in repository metadata and edition title page."
+    },
+    {
+      "id": "lehninger-publisher",
+      "url": "https://www.macmillanlearning.com/college/us/product/Lehninger-Principles-of-Biochemistry/p/1319228003",
+      "kind": "publisher",
+      "used_for": "Edition and chapter-level TOC cross-check."
+    },
+    {
+      "id": "alberts-library-toc",
+      "url": "https://www.gbv.de/dms/tib-ub-hannover/1809324955.pdf",
+      "kind": "library-hosted-publisher-toc",
+      "edition": "7th",
+      "used_for": "Exact chapter and principal section headings. Chapter 18 has no principal section groups, so all nine body headings are retained."
+    },
+    {
+      "id": "alberts-international-edition",
+      "url": "https://www.wileydirect.com.au/blog/buy/molecular-biology-of-the-cell-international-student-edition/",
+      "kind": "publisher-distributor",
+      "edition": "7th International Student Edition, ISBN 9780393884852",
+      "used_for": "International edition and chapter titles cross-check."
+    },
+    {
+      "id": "physiology-publisher",
+      "url": "https://www.us.elsevierhealth.com/berne-levy-physiology-9780323847902.html",
+      "kind": "publisher",
+      "edition": "8th",
+      "used_for": "Edition and chapter-level TOC only. Publisher page does not verify detailed section headings."
+    },
+    {
+      "id": "physiology-detailed-toc",
+      "url": "https://dokumen.pub/berne-amp-levy-physiology-8nbsped-0323847900-9780323847902.html",
+      "kind": "third-party-book-reproduction",
+      "edition": "8th, ISBN 9780323847902",
+      "used_for": "Detailed section headings. Lower-confidence source than publisher/library; must be checked against a legitimate book copy before claiming content-level completeness."
+    },
+    {
+      "id": "physiology-secondary-toc",
+      "url": "https://studylib.net/doc/28738448/berne-and-levy-physiology-e-book-berne-and-levy-physiolog...",
+      "kind": "third-party-book-reproduction",
+      "edition": "8th",
+      "used_for": "Secondary heading cross-check. Its displayed TOC is less detailed and omits Sensory Transduction; not used as the sole completeness source."
+    }
+  ],
+  "areas": [
+    {
+      "id": "biochemistry",
+      "title_en": "Biochemistry",
+      "title_he": "ביוכימיה",
+      "exam_weight": 0.25,
+      "book_id": "lehninger-8",
+      "chapters": [
+        {
+          "id": "biochemistry-ch-01",
+          "number": 1,
+          "title_en": "The Foundations of Biochemistry",
+          "title_he": "יסודות הביוכימיה",
+          "scope": "listed-subsections-and-introduction",
+          "official_source_id": "tau-official",
+          "toc_source_id": "lehninger-library",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-01-introduction",
+              "area": "biochemistry",
+              "chapter": 1,
+              "chapter_id": "biochemistry-ch-01",
+              "section": null,
+              "title_en": "Introduction",
+              "title_he": "מבוא לפרק",
+              "source": "official-subsection",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-01-sec-1-2",
+              "area": "biochemistry",
+              "chapter": 1,
+              "chapter_id": "biochemistry-ch-01",
+              "section": "1.2",
+              "title_en": "Chemical Foundations",
+              "title_he": "יסודות כימיים",
+              "source": "official-subsection",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-01-sec-1-3",
+              "area": "biochemistry",
+              "chapter": 1,
+              "chapter_id": "biochemistry-ch-01",
+              "section": "1.3",
+              "title_en": "Physical Foundations",
+              "title_he": "יסודות פיזיקליים",
+              "source": "official-subsection",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ]
+        },
+        {
+          "id": "biochemistry-ch-02",
+          "number": 2,
+          "title_en": "Water, the Solvent of Life",
+          "title_he": "מים, הממס של החיים",
+          "scope": "full-chapter",
+          "official_source_id": "tau-official",
+          "toc_source_id": "lehninger-library",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-02-sec-2-1",
+              "area": "biochemistry",
+              "chapter": 2,
+              "chapter_id": "biochemistry-ch-02",
+              "section": "2.1",
+              "title_en": "Weak Interactions in Aqueous Systems",
+              "title_he": "אינטראקציות חלשות במערכות מימיות",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-02-sec-2-2",
+              "area": "biochemistry",
+              "chapter": 2,
+              "chapter_id": "biochemistry-ch-02",
+              "section": "2.2",
+              "title_en": "Ionization of Water, Weak Acids, and Weak Bases",
+              "title_he": "יינון מים, חומצות חלשות ובסיסים חלשים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-02-sec-2-3",
+              "area": "biochemistry",
+              "chapter": 2,
+              "chapter_id": "biochemistry-ch-02",
+              "section": "2.3",
+              "title_en": "Buffering against pH Changes in Biological Systems",
+              "title_he": "בופרים ומניעת שינויי pH במערכות ביולוגיות",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ],
+          "includes_unlisted_chapter_material": true
+        },
+        {
+          "id": "biochemistry-ch-03",
+          "number": 3,
+          "title_en": "Amino Acids, Peptides, and Proteins",
+          "title_he": "חומצות אמינו, פפטידים וחלבונים",
+          "scope": "full-chapter",
+          "official_source_id": "tau-official",
+          "toc_source_id": "lehninger-library",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-03-sec-3-1",
+              "area": "biochemistry",
+              "chapter": 3,
+              "chapter_id": "biochemistry-ch-03",
+              "section": "3.1",
+              "title_en": "Amino Acids",
+              "title_he": "חומצות אמינו",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-03-sec-3-2",
+              "area": "biochemistry",
+              "chapter": 3,
+              "chapter_id": "biochemistry-ch-03",
+              "section": "3.2",
+              "title_en": "Peptides and Proteins",
+              "title_he": "פפטידים וחלבונים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-03-sec-3-3",
+              "area": "biochemistry",
+              "chapter": 3,
+              "chapter_id": "biochemistry-ch-03",
+              "section": "3.3",
+              "title_en": "Working with Proteins",
+              "title_he": "שיטות עבודה עם חלבונים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-03-sec-3-4",
+              "area": "biochemistry",
+              "chapter": 3,
+              "chapter_id": "biochemistry-ch-03",
+              "section": "3.4",
+              "title_en": "The Structure of Proteins: Primary Structure",
+              "title_he": "מבנה חלבונים: מבנה ראשוני",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 4,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ],
+          "includes_unlisted_chapter_material": true
+        },
+        {
+          "id": "biochemistry-ch-04",
+          "number": 4,
+          "title_en": "The Three-Dimensional Structure of Proteins",
+          "title_he": "המבנה התלת-ממדי של חלבונים",
+          "scope": "full-chapter",
+          "official_source_id": "tau-official",
+          "toc_source_id": "lehninger-library",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-04-sec-4-1",
+              "area": "biochemistry",
+              "chapter": 4,
+              "chapter_id": "biochemistry-ch-04",
+              "section": "4.1",
+              "title_en": "Overview of Protein Structure",
+              "title_he": "סקירת מבנה חלבונים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-04-sec-4-2",
+              "area": "biochemistry",
+              "chapter": 4,
+              "chapter_id": "biochemistry-ch-04",
+              "section": "4.2",
+              "title_en": "Protein Secondary Structure",
+              "title_he": "מבנה שניוני של חלבונים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-04-sec-4-3",
+              "area": "biochemistry",
+              "chapter": 4,
+              "chapter_id": "biochemistry-ch-04",
+              "section": "4.3",
+              "title_en": "Protein Tertiary and Quaternary Structures",
+              "title_he": "מבנים שלישוניים ורביעוניים של חלבונים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-04-sec-4-4",
+              "area": "biochemistry",
+              "chapter": 4,
+              "chapter_id": "biochemistry-ch-04",
+              "section": "4.4",
+              "title_en": "Protein Denaturation and Folding",
+              "title_he": "דנטורציה וקיפול חלבונים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 4,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-04-sec-4-5",
+              "area": "biochemistry",
+              "chapter": 4,
+              "chapter_id": "biochemistry-ch-04",
+              "section": "4.5",
+              "title_en": "Determination of Protein and Biomolecular Structures",
+              "title_he": "קביעת מבנים של חלבונים וביומולקולות",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 5,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ],
+          "includes_unlisted_chapter_material": true
+        },
+        {
+          "id": "biochemistry-ch-05",
+          "number": 5,
+          "title_en": "Protein Function",
+          "title_he": "תפקוד חלבונים",
+          "scope": "full-chapter",
+          "official_source_id": "tau-official",
+          "toc_source_id": "lehninger-library",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-05-sec-5-1",
+              "area": "biochemistry",
+              "chapter": 5,
+              "chapter_id": "biochemistry-ch-05",
+              "section": "5.1",
+              "title_en": "Reversible Binding of a Protein to a Ligand: Oxygen-Binding Proteins",
+              "title_he": "קישור הפיך של חלבון לליגנד: חלבונים קושרי חמצן",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-05-sec-5-2",
+              "area": "biochemistry",
+              "chapter": 5,
+              "chapter_id": "biochemistry-ch-05",
+              "section": "5.2",
+              "title_en": "Complementary Interactions between Proteins and Ligands: The Immune System and Immunoglobulins",
+              "title_he": "אינטראקציות משלימות בין חלבונים לליגנדים: מערכת החיסון ו-Immunoglobulins",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-05-sec-5-3",
+              "area": "biochemistry",
+              "chapter": 5,
+              "chapter_id": "biochemistry-ch-05",
+              "section": "5.3",
+              "title_en": "Protein Interactions Modulated by Chemical Energy: Actin, Myosin, and Molecular Motors",
+              "title_he": "אינטראקציות חלבונים המווסתות באנרגיה כימית: Actin, Myosin ומנועים מולקולריים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ],
+          "includes_unlisted_chapter_material": true
+        },
+        {
+          "id": "biochemistry-ch-06",
+          "number": 6,
+          "title_en": "Enzymes",
+          "title_he": "אנזימים",
+          "scope": "full-chapter",
+          "official_source_id": "tau-official",
+          "toc_source_id": "lehninger-library",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-06-sec-6-1",
+              "area": "biochemistry",
+              "chapter": 6,
+              "chapter_id": "biochemistry-ch-06",
+              "section": "6.1",
+              "title_en": "An Introduction to Enzymes",
+              "title_he": "מבוא לאנזימים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-06-sec-6-2",
+              "area": "biochemistry",
+              "chapter": 6,
+              "chapter_id": "biochemistry-ch-06",
+              "section": "6.2",
+              "title_en": "How Enzymes Work",
+              "title_he": "כיצד אנזימים פועלים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-06-sec-6-3",
+              "area": "biochemistry",
+              "chapter": 6,
+              "chapter_id": "biochemistry-ch-06",
+              "section": "6.3",
+              "title_en": "Enzyme Kinetics as an Approach to Understanding Mechanism",
+              "title_he": "קינטיקה אנזימטית להבנת מנגנון הפעולה",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-06-sec-6-4",
+              "area": "biochemistry",
+              "chapter": 6,
+              "chapter_id": "biochemistry-ch-06",
+              "section": "6.4",
+              "title_en": "Examples of Enzymatic Reactions",
+              "title_he": "דוגמאות לתגובות אנזימטיות",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 4,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-06-sec-6-5",
+              "area": "biochemistry",
+              "chapter": 6,
+              "chapter_id": "biochemistry-ch-06",
+              "section": "6.5",
+              "title_en": "Regulatory Enzymes",
+              "title_he": "אנזימים רגולטוריים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 5,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ],
+          "includes_unlisted_chapter_material": true
+        },
+        {
+          "id": "biochemistry-ch-07",
+          "number": 7,
+          "title_en": "Carbohydrates and Glycobiology",
+          "title_he": "פחמימות ו-Glycobiology",
+          "scope": "full-chapter",
+          "official_source_id": "tau-official",
+          "toc_source_id": "lehninger-library",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-07-sec-7-1",
+              "area": "biochemistry",
+              "chapter": 7,
+              "chapter_id": "biochemistry-ch-07",
+              "section": "7.1",
+              "title_en": "Monosaccharides and Disaccharides",
+              "title_he": "חד-סוכרים ודו-סוכרים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-07-sec-7-2",
+              "area": "biochemistry",
+              "chapter": 7,
+              "chapter_id": "biochemistry-ch-07",
+              "section": "7.2",
+              "title_en": "Polysaccharides",
+              "title_he": "רב-סוכרים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-07-sec-7-3",
+              "area": "biochemistry",
+              "chapter": 7,
+              "chapter_id": "biochemistry-ch-07",
+              "section": "7.3",
+              "title_en": "Glycoconjugates: Proteoglycans, Glycoproteins, and Glycolipids",
+              "title_he": "Glycoconjugates: Proteoglycans, Glycoproteins ו-Glycolipids",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-07-sec-7-4",
+              "area": "biochemistry",
+              "chapter": 7,
+              "chapter_id": "biochemistry-ch-07",
+              "section": "7.4",
+              "title_en": "Carbohydrates as Informational Molecules: The Sugar Code",
+              "title_he": "פחמימות כמולקולות מידע: קוד הסוכרים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 4,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-07-sec-7-5",
+              "area": "biochemistry",
+              "chapter": 7,
+              "chapter_id": "biochemistry-ch-07",
+              "section": "7.5",
+              "title_en": "Working with Carbohydrates",
+              "title_he": "שיטות עבודה עם פחמימות",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 5,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ],
+          "includes_unlisted_chapter_material": true
+        },
+        {
+          "id": "biochemistry-ch-12",
+          "number": 12,
+          "title_en": "Biochemical Signaling",
+          "title_he": "איתות ביוכימי",
+          "scope": "listed-subsections-and-introduction",
+          "official_source_id": "tau-official",
+          "toc_source_id": "lehninger-library",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-12-introduction",
+              "area": "biochemistry",
+              "chapter": 12,
+              "chapter_id": "biochemistry-ch-12",
+              "section": null,
+              "title_en": "Introduction",
+              "title_he": "מבוא לפרק",
+              "source": "official-subsection",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-12-sec-12-1",
+              "area": "biochemistry",
+              "chapter": 12,
+              "chapter_id": "biochemistry-ch-12",
+              "section": "12.1",
+              "title_en": "General Features of Signal Transduction",
+              "title_he": "מאפיינים כלליים של העברת אותות",
+              "source": "official-subsection",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-12-sec-12-2",
+              "area": "biochemistry",
+              "chapter": 12,
+              "chapter_id": "biochemistry-ch-12",
+              "section": "12.2",
+              "title_en": "G Protein–Coupled Receptors and Second Messengers",
+              "title_he": "קולטנים מצומדי G Protein ושליחים שניוניים",
+              "source": "official-subsection",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-12-sec-12-4",
+              "area": "biochemistry",
+              "chapter": 12,
+              "chapter_id": "biochemistry-ch-12",
+              "section": "12.4",
+              "title_en": "Receptor Tyrosine Kinases",
+              "title_he": "קולטני Tyrosine Kinase",
+              "source": "official-subsection",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": false,
+              "order": 4,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ]
+        },
+        {
+          "id": "biochemistry-ch-13",
+          "number": 13,
+          "title_en": "Introduction to Metabolism",
+          "title_he": "מבוא למטבוליזם",
+          "scope": "listed-subsections-and-introduction",
+          "official_source_id": "tau-official",
+          "toc_source_id": "lehninger-library",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-13-introduction",
+              "area": "biochemistry",
+              "chapter": 13,
+              "chapter_id": "biochemistry-ch-13",
+              "section": null,
+              "title_en": "Introduction",
+              "title_he": "מבוא לפרק",
+              "source": "official-subsection",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-13-sec-13-1",
+              "area": "biochemistry",
+              "chapter": 13,
+              "chapter_id": "biochemistry-ch-13",
+              "section": "13.1",
+              "title_en": "Bioenergetics and Thermodynamics",
+              "title_he": "ביואנרגטיקה ותרמודינמיקה",
+              "source": "official-subsection",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-13-sec-13-2",
+              "area": "biochemistry",
+              "chapter": 13,
+              "chapter_id": "biochemistry-ch-13",
+              "section": "13.2",
+              "title_en": "Chemical Logic and Common Biochemical Reactions",
+              "title_he": "היגיון כימי ותגובות ביוכימיות נפוצות",
+              "source": "official-subsection",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-13-sec-13-3",
+              "area": "biochemistry",
+              "chapter": 13,
+              "chapter_id": "biochemistry-ch-13",
+              "section": "13.3",
+              "title_en": "Phosphoryl Group Transfers and ATP",
+              "title_he": "העברת קבוצות Phosphoryl ו-ATP",
+              "source": "official-subsection",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": false,
+              "order": 4,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-13-sec-13-4",
+              "area": "biochemistry",
+              "chapter": 13,
+              "chapter_id": "biochemistry-ch-13",
+              "section": "13.4",
+              "title_en": "Biological Oxidation-Reduction Reactions",
+              "title_he": "תגובות חמצון-חיזור ביולוגיות",
+              "source": "official-subsection",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": false,
+              "order": 5,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ]
+        },
+        {
+          "id": "biochemistry-ch-14",
+          "number": 14,
+          "title_en": "Glycolysis, Gluconeogenesis, and the Pentose Phosphate Pathway",
+          "title_he": "גליקוליזה, גלוקונאוגנזה ומסלול הפנטוזות",
+          "scope": "listed-subsections-and-introduction",
+          "official_source_id": "tau-official",
+          "toc_source_id": "lehninger-library",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-14-introduction",
+              "area": "biochemistry",
+              "chapter": 14,
+              "chapter_id": "biochemistry-ch-14",
+              "section": null,
+              "title_en": "Introduction",
+              "title_he": "מבוא לפרק",
+              "source": "official-subsection",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-14-sec-14-1",
+              "area": "biochemistry",
+              "chapter": 14,
+              "chapter_id": "biochemistry-ch-14",
+              "section": "14.1",
+              "title_en": "Glycolysis",
+              "title_he": "גליקוליזה",
+              "source": "official-subsection",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-14-sec-14-3",
+              "area": "biochemistry",
+              "chapter": 14,
+              "chapter_id": "biochemistry-ch-14",
+              "section": "14.3",
+              "title_en": "Fates of Pyruvate",
+              "title_he": "גורלות Pyruvate",
+              "source": "official-subsection",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-14-sec-14-4",
+              "area": "biochemistry",
+              "chapter": 14,
+              "chapter_id": "biochemistry-ch-14",
+              "section": "14.4",
+              "title_en": "Gluconeogenesis",
+              "title_he": "גלוקונאוגנזה",
+              "source": "official-subsection",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": false,
+              "order": 4,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-14-sec-14-5",
+              "area": "biochemistry",
+              "chapter": 14,
+              "chapter_id": "biochemistry-ch-14",
+              "section": "14.5",
+              "title_en": "Coordinated Regulation of Glycolysis and Gluconeogenesis",
+              "title_he": "בקרה מתואמת של גליקוליזה וגלוקונאוגנזה",
+              "source": "official-subsection",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": false,
+              "order": 5,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-14-sec-14-6",
+              "area": "biochemistry",
+              "chapter": 14,
+              "chapter_id": "biochemistry-ch-14",
+              "section": "14.6",
+              "title_en": "Pentose Phosphate Pathway of Glucose Oxidation",
+              "title_he": "מסלול Pentose Phosphate לחמצון גלוקוז",
+              "source": "official-subsection",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": false,
+              "order": 6,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ]
+        },
+        {
+          "id": "biochemistry-ch-15",
+          "number": 15,
+          "title_en": "The Metabolism of Glycogen in Animals",
+          "title_he": "מטבוליזם של גליקוגן בבעלי חיים",
+          "scope": "full-chapter",
+          "official_source_id": "tau-official",
+          "toc_source_id": "lehninger-library",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-15-sec-15-1",
+              "area": "biochemistry",
+              "chapter": 15,
+              "chapter_id": "biochemistry-ch-15",
+              "section": "15.1",
+              "title_en": "The Structure and Function of Glycogen",
+              "title_he": "מבנה ותפקוד של גליקוגן",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-15-sec-15-2",
+              "area": "biochemistry",
+              "chapter": 15,
+              "chapter_id": "biochemistry-ch-15",
+              "section": "15.2",
+              "title_en": "Breakdown and Synthesis of Glycogen",
+              "title_he": "פירוק וסינתזה של גליקוגן",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-15-sec-15-3",
+              "area": "biochemistry",
+              "chapter": 15,
+              "chapter_id": "biochemistry-ch-15",
+              "section": "15.3",
+              "title_en": "Coordinated Regulation of Glycogen Breakdown and Synthesis",
+              "title_he": "בקרה מתואמת של פירוק וסינתזת גליקוגן",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ],
+          "includes_unlisted_chapter_material": true
+        },
+        {
+          "id": "biochemistry-ch-16",
+          "number": 16,
+          "title_en": "The Citric Acid Cycle",
+          "title_he": "מעגל חומצת הלימון",
+          "scope": "full-chapter",
+          "official_source_id": "tau-official",
+          "toc_source_id": "lehninger-library",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-16-sec-16-1",
+              "area": "biochemistry",
+              "chapter": 16,
+              "chapter_id": "biochemistry-ch-16",
+              "section": "16.1",
+              "title_en": "Production of Acetyl-CoA (Activated Acetate)",
+              "title_he": "יצירת Acetyl-CoA",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-16-sec-16-2",
+              "area": "biochemistry",
+              "chapter": 16,
+              "chapter_id": "biochemistry-ch-16",
+              "section": "16.2",
+              "title_en": "Reactions of the Citric Acid Cycle",
+              "title_he": "תגובות מעגל חומצת הלימון",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-16-sec-16-3",
+              "area": "biochemistry",
+              "chapter": 16,
+              "chapter_id": "biochemistry-ch-16",
+              "section": "16.3",
+              "title_en": "The Hub of Intermediary Metabolism",
+              "title_he": "מוקד המטבוליזם הביניים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-16-sec-16-4",
+              "area": "biochemistry",
+              "chapter": 16,
+              "chapter_id": "biochemistry-ch-16",
+              "section": "16.4",
+              "title_en": "Regulation of the Citric Acid Cycle",
+              "title_he": "בקרת מעגל חומצת הלימון",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 4,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ],
+          "includes_unlisted_chapter_material": true
+        },
+        {
+          "id": "biochemistry-ch-17",
+          "number": 17,
+          "title_en": "Fatty Acid Catabolism",
+          "title_he": "פירוק חומצות שומן",
+          "scope": "full-chapter",
+          "official_source_id": "tau-official",
+          "toc_source_id": "lehninger-library",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-17-sec-17-1",
+              "area": "biochemistry",
+              "chapter": 17,
+              "chapter_id": "biochemistry-ch-17",
+              "section": "17.1",
+              "title_en": "Digestion, Mobilization, and Transport of Fats",
+              "title_he": "עיכול, גיוס והובלה של שומנים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-17-sec-17-2",
+              "area": "biochemistry",
+              "chapter": 17,
+              "chapter_id": "biochemistry-ch-17",
+              "section": "17.2",
+              "title_en": "Oxidation of Fatty Acids",
+              "title_he": "חמצון חומצות שומן",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-17-sec-17-3",
+              "area": "biochemistry",
+              "chapter": 17,
+              "chapter_id": "biochemistry-ch-17",
+              "section": "17.3",
+              "title_en": "Ketone Bodies",
+              "title_he": "גופי קטון",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ],
+          "includes_unlisted_chapter_material": true
+        },
+        {
+          "id": "biochemistry-ch-18",
+          "number": 18,
+          "title_en": "Amino Acid Oxidation and the Production of Urea",
+          "title_he": "חמצון חומצות אמינו ויצירת אוריאה",
+          "scope": "full-chapter",
+          "official_source_id": "tau-official",
+          "toc_source_id": "lehninger-library",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-18-sec-18-1",
+              "area": "biochemistry",
+              "chapter": 18,
+              "chapter_id": "biochemistry-ch-18",
+              "section": "18.1",
+              "title_en": "Metabolic Fates of Amino Groups",
+              "title_he": "גורלות מטבוליים של קבוצות אמינו",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-18-sec-18-2",
+              "area": "biochemistry",
+              "chapter": 18,
+              "chapter_id": "biochemistry-ch-18",
+              "section": "18.2",
+              "title_en": "Nitrogen Excretion and the Urea Cycle",
+              "title_he": "הפרשת חנקן ומעגל האוריאה",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-18-sec-18-3",
+              "area": "biochemistry",
+              "chapter": 18,
+              "chapter_id": "biochemistry-ch-18",
+              "section": "18.3",
+              "title_en": "Pathways of Amino Acid Degradation",
+              "title_he": "מסלולי פירוק חומצות אמינו",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ],
+          "includes_unlisted_chapter_material": true
+        },
+        {
+          "id": "biochemistry-ch-19",
+          "number": 19,
+          "title_en": "Oxidative Phosphorylation",
+          "title_he": "זרחון חמצוני",
+          "scope": "full-chapter",
+          "official_source_id": "tau-official",
+          "toc_source_id": "lehninger-library",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-19-sec-19-1",
+              "area": "biochemistry",
+              "chapter": 19,
+              "chapter_id": "biochemistry-ch-19",
+              "section": "19.1",
+              "title_en": "The Mitochondrial Respiratory Chain",
+              "title_he": "שרשרת הנשימה המיטוכונדריאלית",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-19-sec-19-2",
+              "area": "biochemistry",
+              "chapter": 19,
+              "chapter_id": "biochemistry-ch-19",
+              "section": "19.2",
+              "title_en": "ATP Synthesis",
+              "title_he": "סינתזת ATP",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-19-sec-19-3",
+              "area": "biochemistry",
+              "chapter": 19,
+              "chapter_id": "biochemistry-ch-19",
+              "section": "19.3",
+              "title_en": "Regulation of Oxidative Phosphorylation",
+              "title_he": "בקרת הזרחון החמצוני",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-19-sec-19-4",
+              "area": "biochemistry",
+              "chapter": 19,
+              "chapter_id": "biochemistry-ch-19",
+              "section": "19.4",
+              "title_en": "Mitochondria in Thermogenesis, Steroid Synthesis, and Apoptosis",
+              "title_he": "מיטוכונדריה בייצור חום, סינתזת סטרואידים ו-Apoptosis",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 4,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-19-sec-19-5",
+              "area": "biochemistry",
+              "chapter": 19,
+              "chapter_id": "biochemistry-ch-19",
+              "section": "19.5",
+              "title_en": "Mitochondrial Genes: Their Origin and the Effects of Mutations",
+              "title_he": "גנים מיטוכונדריאליים: מקורם והשפעות מוטציות",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 5,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ],
+          "includes_unlisted_chapter_material": true
+        },
+        {
+          "id": "biochemistry-ch-21",
+          "number": 21,
+          "title_en": "Lipid Biosynthesis",
+          "title_he": "סינתזה של ליפידים",
+          "scope": "full-chapter",
+          "official_source_id": "tau-official",
+          "toc_source_id": "lehninger-library",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-21-sec-21-1",
+              "area": "biochemistry",
+              "chapter": 21,
+              "chapter_id": "biochemistry-ch-21",
+              "section": "21.1",
+              "title_en": "Biosynthesis of Fatty Acids and Eicosanoids",
+              "title_he": "סינתזת חומצות שומן ו-Eicosanoids",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-21-sec-21-2",
+              "area": "biochemistry",
+              "chapter": 21,
+              "chapter_id": "biochemistry-ch-21",
+              "section": "21.2",
+              "title_en": "Biosynthesis of Triacylglycerols",
+              "title_he": "סינתזת Triacylglycerols",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-21-sec-21-3",
+              "area": "biochemistry",
+              "chapter": 21,
+              "chapter_id": "biochemistry-ch-21",
+              "section": "21.3",
+              "title_en": "Biosynthesis of Membrane Phospholipids",
+              "title_he": "סינתזת פוספוליפידים ממברנליים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-21-sec-21-4",
+              "area": "biochemistry",
+              "chapter": 21,
+              "chapter_id": "biochemistry-ch-21",
+              "section": "21.4",
+              "title_en": "Cholesterol, Steroids, and Isoprenoids: Biosynthesis, Regulation, and Transport",
+              "title_he": "Cholesterol, Steroids ו-Isoprenoids: סינתזה, בקרה והובלה",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "lehninger-library"
+              ],
+              "excluded": false,
+              "order": 4,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ],
+          "includes_unlisted_chapter_material": true
+        },
+        {
+          "id": "biochemistry-ch-22",
+          "number": 22,
+          "title_en": "Biosynthesis of Amino Acids, Nucleotides, and Related Molecules",
+          "title_he": "סינתזת חומצות אמינו, נוקלאוטידים ומולקולות קשורות",
+          "scope": "listed-subsections-and-introduction",
+          "official_source_id": "tau-official",
+          "toc_source_id": "lehninger-library",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-22-introduction",
+              "area": "biochemistry",
+              "chapter": 22,
+              "chapter_id": "biochemistry-ch-22",
+              "section": null,
+              "title_en": "Introduction",
+              "title_he": "מבוא לפרק",
+              "source": "official-subsection",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-22-sec-22-2",
+              "area": "biochemistry",
+              "chapter": 22,
+              "chapter_id": "biochemistry-ch-22",
+              "section": "22.2",
+              "title_en": "Biosynthesis of Amino Acids",
+              "title_he": "סינתזת חומצות אמינו",
+              "source": "official-subsection",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ]
+        },
+        {
+          "id": "biochemistry-ch-23",
+          "number": 23,
+          "title_en": "Hormonal Regulation and Integration of Mammalian Metabolism",
+          "title_he": "בקרה הורמונלית ואינטגרציה של מטבוליזם ביונקים",
+          "scope": "listed-subsections-and-introduction",
+          "official_source_id": "tau-official",
+          "toc_source_id": "lehninger-library",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-23-introduction",
+              "area": "biochemistry",
+              "chapter": 23,
+              "chapter_id": "biochemistry-ch-23",
+              "section": null,
+              "title_en": "Introduction",
+              "title_he": "מבוא לפרק",
+              "source": "official-subsection",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-23-sec-23-2",
+              "area": "biochemistry",
+              "chapter": 23,
+              "chapter_id": "biochemistry-ch-23",
+              "section": "23.2",
+              "title_en": "Tissue-Specific Metabolism",
+              "title_he": "מטבוליזם ייחודי לרקמות",
+              "source": "official-subsection",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "biochemistry-ch-23-sec-23-3",
+              "area": "biochemistry",
+              "chapter": 23,
+              "chapter_id": "biochemistry-ch-23",
+              "section": "23.3",
+              "title_en": "Hormonal Regulation of Fuel Metabolism",
+              "title_he": "בקרה הורמונלית של מטבוליזם מקורות אנרגיה",
+              "source": "official-subsection",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "chapters": 18,
+        "included_subtopics": 70,
+        "excluded_subtopics": 0
+      }
+    },
+    {
+      "id": "molecular-biology",
+      "title_en": "Molecular Biology",
+      "title_he": "ביולוגיה מולקולרית",
+      "exam_weight": 0.25,
+      "book_id": "alberts-7-international",
+      "chapters": [
+        {
+          "id": "molecular-biology-ch-01",
+          "number": 1,
+          "title_en": "Cells, Genomes, and the Diversity of Life",
+          "title_he": "תאים, גנומים ומגוון החיים",
+          "scope": "full-chapter",
+          "official_source_id": "tau-official",
+          "toc_source_id": "alberts-library-toc",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "molecular-biology-ch-01-the-universal-features-of-life-on-earth",
+              "area": "molecular-biology",
+              "chapter": 1,
+              "chapter_id": "molecular-biology-ch-01",
+              "section": null,
+              "title_en": "The Universal Features of Life on Earth",
+              "title_he": "המאפיינים האוניברסליים של החיים על פני כדור הארץ",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "molecular-biology-ch-01-genome-diversification-and-the-tree-of-life",
+              "area": "molecular-biology",
+              "chapter": 1,
+              "chapter_id": "molecular-biology-ch-01",
+              "section": null,
+              "title_en": "Genome Diversification and the Tree of Life",
+              "title_he": "התגוונות גנומים ועץ החיים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "molecular-biology-ch-01-eukaryotes-and-the-origin-of-the-eukaryotic-cell",
+              "area": "molecular-biology",
+              "chapter": 1,
+              "chapter_id": "molecular-biology-ch-01",
+              "section": null,
+              "title_en": "Eukaryotes and the Origin of the Eukaryotic Cell",
+              "title_he": "אאוקריוטים ומקור התא האאוקריוטי",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "molecular-biology-ch-01-model-organisms",
+              "area": "molecular-biology",
+              "chapter": 1,
+              "chapter_id": "molecular-biology-ch-01",
+              "section": null,
+              "title_en": "Model Organisms",
+              "title_he": "אורגניזמי מודל",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 4,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ],
+          "includes_unlisted_chapter_material": true
+        },
+        {
+          "id": "molecular-biology-ch-04",
+          "number": 4,
+          "title_en": "DNA, Chromosomes, and Genomes",
+          "title_he": "DNA, כרומוזומים וגנומים",
+          "scope": "full-chapter",
+          "official_source_id": "tau-official",
+          "toc_source_id": "alberts-library-toc",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "molecular-biology-ch-04-the-structure-and-function-of-dna",
+              "area": "molecular-biology",
+              "chapter": 4,
+              "chapter_id": "molecular-biology-ch-04",
+              "section": null,
+              "title_en": "The Structure and Function of DNA",
+              "title_he": "המבנה והתפקוד של DNA",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "molecular-biology-ch-04-chromosomal-dna-and-its-packaging-in-the-chromatin-fiber",
+              "area": "molecular-biology",
+              "chapter": 4,
+              "chapter_id": "molecular-biology-ch-04",
+              "section": null,
+              "title_en": "Chromosomal DNA and Its Packaging in the Chromatin Fiber",
+              "title_he": "DNA כרומוזומלי ואריזתו בסיב הכרומטין",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "molecular-biology-ch-04-the-effect-of-chromatin-structure-on-dna-function",
+              "area": "molecular-biology",
+              "chapter": 4,
+              "chapter_id": "molecular-biology-ch-04",
+              "section": null,
+              "title_en": "The Effect of Chromatin Structure on DNA Function",
+              "title_he": "השפעת מבנה הכרומטין על תפקוד DNA",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "molecular-biology-ch-04-the-global-structure-of-chromosomes",
+              "area": "molecular-biology",
+              "chapter": 4,
+              "chapter_id": "molecular-biology-ch-04",
+              "section": null,
+              "title_en": "The Global Structure of Chromosomes",
+              "title_he": "המבנה הכולל של כרומוזומים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 4,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "molecular-biology-ch-04-how-genomes-evolve",
+              "area": "molecular-biology",
+              "chapter": 4,
+              "chapter_id": "molecular-biology-ch-04",
+              "section": null,
+              "title_en": "How Genomes Evolve",
+              "title_he": "כיצד גנומים מתפתחים באבולוציה",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 5,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ],
+          "includes_unlisted_chapter_material": true
+        },
+        {
+          "id": "molecular-biology-ch-05",
+          "number": 5,
+          "title_en": "DNA Replication, Repair, and Recombination",
+          "title_he": "שכפול, תיקון ו-Recombination של DNA",
+          "scope": "full-chapter",
+          "official_source_id": "tau-official",
+          "toc_source_id": "alberts-library-toc",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "molecular-biology-ch-05-the-maintenance-of-dna-sequences",
+              "area": "molecular-biology",
+              "chapter": 5,
+              "chapter_id": "molecular-biology-ch-05",
+              "section": null,
+              "title_en": "The Maintenance of DNA Sequences",
+              "title_he": "שמירת רצפי DNA",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "molecular-biology-ch-05-dna-replication-mechanisms",
+              "area": "molecular-biology",
+              "chapter": 5,
+              "chapter_id": "molecular-biology-ch-05",
+              "section": null,
+              "title_en": "DNA Replication Mechanisms",
+              "title_he": "מנגנוני שכפול DNA",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "molecular-biology-ch-05-the-initiation-and-completion-of-dna-replication-in-chromosomes",
+              "area": "molecular-biology",
+              "chapter": 5,
+              "chapter_id": "molecular-biology-ch-05",
+              "section": null,
+              "title_en": "The Initiation and Completion of DNA Replication in Chromosomes",
+              "title_he": "התחלה והשלמה של שכפול DNA בכרומוזומים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "molecular-biology-ch-05-dna-repair",
+              "area": "molecular-biology",
+              "chapter": 5,
+              "chapter_id": "molecular-biology-ch-05",
+              "section": null,
+              "title_en": "DNA Repair",
+              "title_he": "תיקון DNA",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 4,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "molecular-biology-ch-05-homologous-recombination",
+              "area": "molecular-biology",
+              "chapter": 5,
+              "chapter_id": "molecular-biology-ch-05",
+              "section": null,
+              "title_en": "Homologous Recombination",
+              "title_he": "Recombination הומולוגית",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 5,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "molecular-biology-ch-05-transposition-and-conservative-site-specific-recombination",
+              "area": "molecular-biology",
+              "chapter": 5,
+              "chapter_id": "molecular-biology-ch-05",
+              "section": null,
+              "title_en": "Transposition and Conservative Site-Specific Recombination",
+              "title_he": "Transposition ו-Recombination שמרנית ייחודית לאתר",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 6,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ],
+          "includes_unlisted_chapter_material": true
+        },
+        {
+          "id": "molecular-biology-ch-06",
+          "number": 6,
+          "title_en": "How Cells Read the Genome: From DNA to Protein",
+          "title_he": "כיצד תאים קוראים את הגנום: מ-DNA לחלבון",
+          "scope": "full-chapter",
+          "official_source_id": "tau-official",
+          "toc_source_id": "alberts-library-toc",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "molecular-biology-ch-06-from-dna-to-rna",
+              "area": "molecular-biology",
+              "chapter": 6,
+              "chapter_id": "molecular-biology-ch-06",
+              "section": null,
+              "title_en": "From DNA to RNA",
+              "title_he": "מ-DNA ל-RNA",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "molecular-biology-ch-06-from-rna-to-protein",
+              "area": "molecular-biology",
+              "chapter": 6,
+              "chapter_id": "molecular-biology-ch-06",
+              "section": null,
+              "title_en": "From RNA to Protein",
+              "title_he": "מ-RNA לחלבון",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "molecular-biology-ch-06-the-rna-world-and-the-origins-of-life",
+              "area": "molecular-biology",
+              "chapter": 6,
+              "chapter_id": "molecular-biology-ch-06",
+              "section": null,
+              "title_en": "The RNA World and the Origins of Life",
+              "title_he": "עולם ה-RNA ומקור החיים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ],
+          "includes_unlisted_chapter_material": true
+        },
+        {
+          "id": "molecular-biology-ch-07",
+          "number": 7,
+          "title_en": "Control of Gene Expression",
+          "title_he": "בקרת ביטוי גנים",
+          "scope": "full-chapter",
+          "official_source_id": "tau-official",
+          "toc_source_id": "alberts-library-toc",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "molecular-biology-ch-07-an-overview-of-gene-control",
+              "area": "molecular-biology",
+              "chapter": 7,
+              "chapter_id": "molecular-biology-ch-07",
+              "section": null,
+              "title_en": "An Overview of Gene Control",
+              "title_he": "סקירת בקרת גנים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "molecular-biology-ch-07-control-of-transcription-by-sequence-specific-dna-binding-proteins",
+              "area": "molecular-biology",
+              "chapter": 7,
+              "chapter_id": "molecular-biology-ch-07",
+              "section": null,
+              "title_en": "Control of Transcription by Sequence-Specific DNA-Binding Proteins",
+              "title_he": "בקרת שעתוק באמצעות חלבונים קושרי DNA ייחודיים לרצף",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "molecular-biology-ch-07-transcription-regulators-switch-genes-on-and-off",
+              "area": "molecular-biology",
+              "chapter": 7,
+              "chapter_id": "molecular-biology-ch-07",
+              "section": null,
+              "title_en": "Transcription Regulators Switch Genes On and Off",
+              "title_he": "רגולטורים של שעתוק מפעילים ומשתיקים גנים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "molecular-biology-ch-07-molecular-genetic-mechanisms-that-create-and-maintain-specialized-cell-types",
+              "area": "molecular-biology",
+              "chapter": 7,
+              "chapter_id": "molecular-biology-ch-07",
+              "section": null,
+              "title_en": "Molecular Genetic Mechanisms That Create and Maintain Specialized Cell Types",
+              "title_he": "מנגנונים גנטיים מולקולריים ליצירה ולשמירה של סוגי תאים מתמחים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 4,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "molecular-biology-ch-07-mechanisms-that-reinforce-cell-memory-in-plants-and-animals",
+              "area": "molecular-biology",
+              "chapter": 7,
+              "chapter_id": "molecular-biology-ch-07",
+              "section": null,
+              "title_en": "Mechanisms That Reinforce Cell Memory in Plants and Animals",
+              "title_he": "מנגנונים המחזקים זיכרון תאי בצמחים ובבעלי חיים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 5,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "molecular-biology-ch-07-post-transcriptional-controls",
+              "area": "molecular-biology",
+              "chapter": 7,
+              "chapter_id": "molecular-biology-ch-07",
+              "section": null,
+              "title_en": "Post-Transcriptional Controls",
+              "title_he": "בקרה לאחר שעתוק",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 6,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "molecular-biology-ch-07-regulation-of-gene-expression-by-noncoding-rnas",
+              "area": "molecular-biology",
+              "chapter": 7,
+              "chapter_id": "molecular-biology-ch-07",
+              "section": null,
+              "title_en": "Regulation of Gene Expression by Noncoding RNAs",
+              "title_he": "בקרת ביטוי גנים באמצעות RNA לא מקודד",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 7,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ],
+          "includes_unlisted_chapter_material": true
+        },
+        {
+          "id": "molecular-biology-ch-08",
+          "number": 8,
+          "title_en": "Analyzing Cells, Molecules, and Systems",
+          "title_he": "ניתוח תאים, מולקולות ומערכות",
+          "scope": "full-chapter",
+          "official_source_id": "tau-official",
+          "toc_source_id": "alberts-library-toc",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "molecular-biology-ch-08-isolating-cells-and-growing-them-in-culture",
+              "area": "molecular-biology",
+              "chapter": 8,
+              "chapter_id": "molecular-biology-ch-08",
+              "section": null,
+              "title_en": "Isolating Cells and Growing Them in Culture",
+              "title_he": "בידוד תאים וגידולם בתרבית",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "molecular-biology-ch-08-purifying-proteins",
+              "area": "molecular-biology",
+              "chapter": 8,
+              "chapter_id": "molecular-biology-ch-08",
+              "section": null,
+              "title_en": "Purifying Proteins",
+              "title_he": "טיהור חלבונים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "molecular-biology-ch-08-analyzing-proteins",
+              "area": "molecular-biology",
+              "chapter": 8,
+              "chapter_id": "molecular-biology-ch-08",
+              "section": null,
+              "title_en": "Analyzing Proteins",
+              "title_he": "ניתוח חלבונים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "molecular-biology-ch-08-analyzing-and-manipulating-dna",
+              "area": "molecular-biology",
+              "chapter": 8,
+              "chapter_id": "molecular-biology-ch-08",
+              "section": null,
+              "title_en": "Analyzing and Manipulating DNA",
+              "title_he": "ניתוח DNA ושינויו",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 4,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "molecular-biology-ch-08-studying-gene-function-and-expression",
+              "area": "molecular-biology",
+              "chapter": 8,
+              "chapter_id": "molecular-biology-ch-08",
+              "section": null,
+              "title_en": "Studying Gene Function and Expression",
+              "title_he": "חקר תפקוד וביטוי גנים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 5,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "molecular-biology-ch-08-mathematical-analysis-of-cell-function",
+              "area": "molecular-biology",
+              "chapter": 8,
+              "chapter_id": "molecular-biology-ch-08",
+              "section": null,
+              "title_en": "Mathematical Analysis of Cell Function",
+              "title_he": "ניתוח מתמטי של תפקוד התא",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 6,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ],
+          "includes_unlisted_chapter_material": true
+        },
+        {
+          "id": "molecular-biology-ch-09",
+          "number": 9,
+          "title_en": "Visualizing Cells and Their Molecules",
+          "title_he": "הדמיית תאים והמולקולות שלהם",
+          "scope": "full-chapter",
+          "official_source_id": "tau-official",
+          "toc_source_id": "alberts-library-toc",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "molecular-biology-ch-09-looking-at-cells-and-molecules-in-the-light-microscope",
+              "area": "molecular-biology",
+              "chapter": 9,
+              "chapter_id": "molecular-biology-ch-09",
+              "section": null,
+              "title_en": "Looking at Cells and Molecules in the Light Microscope",
+              "title_he": "צפייה בתאים ובמולקולות במיקרוסקופ אור",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "molecular-biology-ch-09-looking-at-cells-and-molecules-in-the-electron-microscope",
+              "area": "molecular-biology",
+              "chapter": 9,
+              "chapter_id": "molecular-biology-ch-09",
+              "section": null,
+              "title_en": "Looking at Cells and Molecules in the Electron Microscope",
+              "title_he": "צפייה בתאים ובמולקולות במיקרוסקופ אלקטרונים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ],
+          "includes_unlisted_chapter_material": true
+        }
+      ],
+      "counts": {
+        "chapters": 7,
+        "included_subtopics": 33,
+        "excluded_subtopics": 0
+      }
+    },
+    {
+      "id": "cell-biology",
+      "title_en": "Cell Biology",
+      "title_he": "ביולוגיה של התא",
+      "exam_weight": 0.25,
+      "book_id": "alberts-7-international",
+      "chapters": [
+        {
+          "id": "cell-biology-ch-10",
+          "number": 10,
+          "title_en": "Membrane Structure",
+          "title_he": "מבנה הממברנה",
+          "scope": "full-chapter",
+          "official_source_id": "tau-official",
+          "toc_source_id": "alberts-library-toc",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "cell-biology-ch-10-the-lipid-bilayer",
+              "area": "cell-biology",
+              "chapter": 10,
+              "chapter_id": "cell-biology-ch-10",
+              "section": null,
+              "title_en": "The Lipid Bilayer",
+              "title_he": "הדו-שכבה הליפידית",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-10-membrane-proteins",
+              "area": "cell-biology",
+              "chapter": 10,
+              "chapter_id": "cell-biology-ch-10",
+              "section": null,
+              "title_en": "Membrane Proteins",
+              "title_he": "חלבוני ממברנה",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ],
+          "includes_unlisted_chapter_material": true
+        },
+        {
+          "id": "cell-biology-ch-12",
+          "number": 12,
+          "title_en": "Intracellular Organization and Protein Sorting",
+          "title_he": "ארגון תוך-תאי ומיון חלבונים",
+          "scope": "full-chapter",
+          "official_source_id": "tau-official",
+          "toc_source_id": "alberts-library-toc",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "cell-biology-ch-12-the-compartmentalization-of-cells",
+              "area": "cell-biology",
+              "chapter": 12,
+              "chapter_id": "cell-biology-ch-12",
+              "section": null,
+              "title_en": "The Compartmentalization of Cells",
+              "title_he": "החלוקה למדורים בתא",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-12-the-endoplasmic-reticulum",
+              "area": "cell-biology",
+              "chapter": 12,
+              "chapter_id": "cell-biology-ch-12",
+              "section": null,
+              "title_en": "The Endoplasmic Reticulum",
+              "title_he": "הרשת האנדופלזמטית",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-12-peroxisomes",
+              "area": "cell-biology",
+              "chapter": 12,
+              "chapter_id": "cell-biology-ch-12",
+              "section": null,
+              "title_en": "Peroxisomes",
+              "title_he": "Peroxisomes",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-12-the-transport-of-proteins-into-mitochondria-and-chloroplasts",
+              "area": "cell-biology",
+              "chapter": 12,
+              "chapter_id": "cell-biology-ch-12",
+              "section": null,
+              "title_en": "The Transport of Proteins into Mitochondria and Chloroplasts",
+              "title_he": "העברת חלבונים למיטוכונדריה ולכלורופלסטים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 4,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-12-the-transport-of-molecules-between-the-nucleus-and-the-cytosol",
+              "area": "cell-biology",
+              "chapter": 12,
+              "chapter_id": "cell-biology-ch-12",
+              "section": null,
+              "title_en": "The Transport of Molecules between the Nucleus and the Cytosol",
+              "title_he": "העברת מולקולות בין הגרעין לציטוזול",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 5,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ],
+          "includes_unlisted_chapter_material": true
+        },
+        {
+          "id": "cell-biology-ch-13",
+          "number": 13,
+          "title_en": "Intracellular Membrane Traffic",
+          "title_he": "תנועת ממברנות תוך-תאית",
+          "scope": "full-chapter",
+          "official_source_id": "tau-official",
+          "toc_source_id": "alberts-library-toc",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "cell-biology-ch-13-mechanisms-of-membrane-transport-and-compartment-identity",
+              "area": "cell-biology",
+              "chapter": 13,
+              "chapter_id": "cell-biology-ch-13",
+              "section": null,
+              "title_en": "Mechanisms of Membrane Transport and Compartment Identity",
+              "title_he": "מנגנוני הובלה ממברנלית וזהות מדורים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-13-transport-from-the-endoplasmic-reticulum-through-the-golgi-apparatus",
+              "area": "cell-biology",
+              "chapter": 13,
+              "chapter_id": "cell-biology-ch-13",
+              "section": null,
+              "title_en": "Transport from the Endoplasmic Reticulum through the Golgi Apparatus",
+              "title_he": "הובלה מהרשת האנדופלזמטית דרך מערכת Golgi",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-13-transport-from-the-trans-golgi-network-to-the-cell-exterior-and-endosomes",
+              "area": "cell-biology",
+              "chapter": 13,
+              "chapter_id": "cell-biology-ch-13",
+              "section": null,
+              "title_en": "Transport from the Trans Golgi Network to the Cell Exterior and Endosomes",
+              "title_he": "הובלה מרשת Trans Golgi אל מחוץ לתא ואל Endosomes",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-13-transport-into-the-cell-from-the-plasma-membrane-endocytosis",
+              "area": "cell-biology",
+              "chapter": 13,
+              "chapter_id": "cell-biology-ch-13",
+              "section": null,
+              "title_en": "Transport into the Cell from the Plasma Membrane: Endocytosis",
+              "title_he": "הובלה אל תוך התא מהממברנה: Endocytosis",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 4,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-13-the-degradation-and-recycling-of-macromolecules-in-lysosomes",
+              "area": "cell-biology",
+              "chapter": 13,
+              "chapter_id": "cell-biology-ch-13",
+              "section": null,
+              "title_en": "The Degradation and Recycling of Macromolecules in Lysosomes",
+              "title_he": "פירוק ומחזור של מקרומולקולות ב-Lysosomes",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 5,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ],
+          "includes_unlisted_chapter_material": true
+        },
+        {
+          "id": "cell-biology-ch-14",
+          "number": 14,
+          "title_en": "Energy Conversion and Metabolic Compartmentation: Mitochondria and Chloroplasts",
+          "title_he": "המרת אנרגיה וחלוקה מטבולית למדורים: מיטוכונדריה וכלורופלסטים",
+          "scope": "full-chapter",
+          "official_source_id": "tau-official",
+          "toc_source_id": "alberts-library-toc",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "cell-biology-ch-14-the-mitochondrion",
+              "area": "cell-biology",
+              "chapter": 14,
+              "chapter_id": "cell-biology-ch-14",
+              "section": null,
+              "title_en": "The Mitochondrion",
+              "title_he": "המיטוכונדריון",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-14-the-proton-pumps-of-the-electron-transport-chain",
+              "area": "cell-biology",
+              "chapter": 14,
+              "chapter_id": "cell-biology-ch-14",
+              "section": null,
+              "title_en": "The Proton Pumps of the Electron-Transport Chain",
+              "title_he": "משאבות הפרוטונים בשרשרת העברת האלקטרונים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-14-atp-production-in-mitochondria",
+              "area": "cell-biology",
+              "chapter": 14,
+              "chapter_id": "cell-biology-ch-14",
+              "section": null,
+              "title_en": "ATP Production in Mitochondria",
+              "title_he": "ייצור ATP במיטוכונדריה",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-14-chloroplasts-and-photosynthesis",
+              "area": "cell-biology",
+              "chapter": 14,
+              "chapter_id": "cell-biology-ch-14",
+              "section": null,
+              "title_en": "Chloroplasts and Photosynthesis",
+              "title_he": "כלורופלסטים ופוטוסינתזה",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 4,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-14-the-genetic-systems-of-mitochondria-and-chloroplasts",
+              "area": "cell-biology",
+              "chapter": 14,
+              "chapter_id": "cell-biology-ch-14",
+              "section": null,
+              "title_en": "The Genetic Systems of Mitochondria and Chloroplasts",
+              "title_he": "המערכות הגנטיות של מיטוכונדריה וכלורופלסטים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 5,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ],
+          "includes_unlisted_chapter_material": true
+        },
+        {
+          "id": "cell-biology-ch-15",
+          "number": 15,
+          "title_en": "Cell Signaling",
+          "title_he": "איתות תאי",
+          "scope": "full-chapter",
+          "official_source_id": "tau-official",
+          "toc_source_id": "alberts-library-toc",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "cell-biology-ch-15-principles-of-cell-signaling",
+              "area": "cell-biology",
+              "chapter": 15,
+              "chapter_id": "cell-biology-ch-15",
+              "section": null,
+              "title_en": "Principles of Cell Signaling",
+              "title_he": "עקרונות האיתות התאי",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-15-signaling-through-g-protein-coupled-receptors",
+              "area": "cell-biology",
+              "chapter": 15,
+              "chapter_id": "cell-biology-ch-15",
+              "section": null,
+              "title_en": "Signaling through G-Protein-Coupled Receptors",
+              "title_he": "איתות באמצעות קולטנים מצומדי G Protein",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-15-signaling-through-enzyme-coupled-receptors",
+              "area": "cell-biology",
+              "chapter": 15,
+              "chapter_id": "cell-biology-ch-15",
+              "section": null,
+              "title_en": "Signaling through Enzyme-Coupled Receptors",
+              "title_he": "איתות באמצעות קולטנים מצומדי אנזים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-15-alternative-signaling-routes-in-gene-regulation",
+              "area": "cell-biology",
+              "chapter": 15,
+              "chapter_id": "cell-biology-ch-15",
+              "section": null,
+              "title_en": "Alternative Signaling Routes in Gene Regulation",
+              "title_he": "מסלולי איתות חלופיים בבקרת גנים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 4,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-15-signaling-in-plants",
+              "area": "cell-biology",
+              "chapter": 15,
+              "chapter_id": "cell-biology-ch-15",
+              "section": null,
+              "title_en": "Signaling in Plants",
+              "title_he": "איתות בצמחים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 5,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ],
+          "includes_unlisted_chapter_material": true
+        },
+        {
+          "id": "cell-biology-ch-16",
+          "number": 16,
+          "title_en": "The Cytoskeleton",
+          "title_he": "שלד התא",
+          "scope": "full-chapter",
+          "official_source_id": "tau-official",
+          "toc_source_id": "alberts-library-toc",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "cell-biology-ch-16-function-and-dynamics-of-the-cytoskeleton",
+              "area": "cell-biology",
+              "chapter": 16,
+              "chapter_id": "cell-biology-ch-16",
+              "section": null,
+              "title_en": "Function and Dynamics of the Cytoskeleton",
+              "title_he": "תפקוד ודינמיקה של שלד התא",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-16-actin",
+              "area": "cell-biology",
+              "chapter": 16,
+              "chapter_id": "cell-biology-ch-16",
+              "section": null,
+              "title_en": "Actin",
+              "title_he": "Actin",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-16-myosin-and-actin",
+              "area": "cell-biology",
+              "chapter": 16,
+              "chapter_id": "cell-biology-ch-16",
+              "section": null,
+              "title_en": "Myosin and Actin",
+              "title_he": "Myosin ו-Actin",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-16-microtubules",
+              "area": "cell-biology",
+              "chapter": 16,
+              "chapter_id": "cell-biology-ch-16",
+              "section": null,
+              "title_en": "Microtubules",
+              "title_he": "Microtubules",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 4,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-16-intermediate-filaments-and-other-cytoskeletal-polymers",
+              "area": "cell-biology",
+              "chapter": 16,
+              "chapter_id": "cell-biology-ch-16",
+              "section": null,
+              "title_en": "Intermediate Filaments and Other Cytoskeletal Polymers",
+              "title_he": "סיבי ביניים ופולימרים אחרים של שלד התא",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 5,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-16-cell-polarity-and-coordination-of-the-cytoskeleton",
+              "area": "cell-biology",
+              "chapter": 16,
+              "chapter_id": "cell-biology-ch-16",
+              "section": null,
+              "title_en": "Cell Polarity and Coordination of the Cytoskeleton",
+              "title_he": "קוטביות התא ותיאום של שלד התא",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 6,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ],
+          "includes_unlisted_chapter_material": true
+        },
+        {
+          "id": "cell-biology-ch-17",
+          "number": 17,
+          "title_en": "The Cell Cycle",
+          "title_he": "מחזור התא",
+          "scope": "full-chapter",
+          "official_source_id": "tau-official",
+          "toc_source_id": "alberts-library-toc",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "cell-biology-ch-17-overview-of-the-cell-cycle",
+              "area": "cell-biology",
+              "chapter": 17,
+              "chapter_id": "cell-biology-ch-17",
+              "section": null,
+              "title_en": "Overview of the Cell Cycle",
+              "title_he": "סקירת מחזור התא",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-17-the-cell-cycle-control-system",
+              "area": "cell-biology",
+              "chapter": 17,
+              "chapter_id": "cell-biology-ch-17",
+              "section": null,
+              "title_en": "The Cell-Cycle Control System",
+              "title_he": "מערכת הבקרה של מחזור התא",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-17-s-phase",
+              "area": "cell-biology",
+              "chapter": 17,
+              "chapter_id": "cell-biology-ch-17",
+              "section": null,
+              "title_en": "S Phase",
+              "title_he": "שלב S",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-17-mitosis",
+              "area": "cell-biology",
+              "chapter": 17,
+              "chapter_id": "cell-biology-ch-17",
+              "section": null,
+              "title_en": "Mitosis",
+              "title_he": "מיטוזה",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 4,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-17-cytokinesis",
+              "area": "cell-biology",
+              "chapter": 17,
+              "chapter_id": "cell-biology-ch-17",
+              "section": null,
+              "title_en": "Cytokinesis",
+              "title_he": "Cytokinesis",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 5,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-17-meiosis",
+              "area": "cell-biology",
+              "chapter": 17,
+              "chapter_id": "cell-biology-ch-17",
+              "section": null,
+              "title_en": "Meiosis",
+              "title_he": "מיוזה",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 6,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-17-control-of-cell-division-and-cell-growth",
+              "area": "cell-biology",
+              "chapter": 17,
+              "chapter_id": "cell-biology-ch-17",
+              "section": null,
+              "title_en": "Control of Cell Division and Cell Growth",
+              "title_he": "בקרת חלוקת תאים וגדילת תאים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 7,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ],
+          "includes_unlisted_chapter_material": true
+        },
+        {
+          "id": "cell-biology-ch-18",
+          "number": 18,
+          "title_en": "Cell Death",
+          "title_he": "מוות תאי",
+          "scope": "full-chapter",
+          "official_source_id": "tau-official",
+          "toc_source_id": "alberts-library-toc",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "cell-biology-ch-18-apoptosis-eliminates-unwanted-cells",
+              "area": "cell-biology",
+              "chapter": 18,
+              "chapter_id": "cell-biology-ch-18",
+              "section": null,
+              "title_en": "Apoptosis Eliminates Unwanted Cells",
+              "title_he": "Apoptosis מסלקת תאים שאינם נחוצים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-18-apoptosis-depends-on-an-intracellular-proteolytic-cascade-mediated-by-caspases",
+              "area": "cell-biology",
+              "chapter": 18,
+              "chapter_id": "cell-biology-ch-18",
+              "section": null,
+              "title_en": "Apoptosis Depends on an Intracellular Proteolytic Cascade Mediated by Caspases",
+              "title_he": "Apoptosis תלויה במפל פרוטאוליטי תוך-תאי המתווך ב-Caspases",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-18-activation-of-cell-surface-death-receptors-initiates-the-extrinsic-pathway-of-apoptosis",
+              "area": "cell-biology",
+              "chapter": 18,
+              "chapter_id": "cell-biology-ch-18",
+              "section": null,
+              "title_en": "Activation of Cell-Surface Death Receptors Initiates the Extrinsic Pathway of Apoptosis",
+              "title_he": "הפעלת קולטני מוות על פני התא מתחילה את המסלול החיצוני של Apoptosis",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-18-the-intrinsic-pathway-of-apoptosis-depends-on-proteins-released-from-mitochondria",
+              "area": "cell-biology",
+              "chapter": 18,
+              "chapter_id": "cell-biology-ch-18",
+              "section": null,
+              "title_en": "The Intrinsic Pathway of Apoptosis Depends on Proteins Released from Mitochondria",
+              "title_he": "המסלול הפנימי של Apoptosis תלוי בחלבונים המשתחררים ממיטוכונדריה",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 4,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-18-bcl2-proteins-are-the-critical-controllers-of-the-intrinsic-pathway-of-apoptosis",
+              "area": "cell-biology",
+              "chapter": 18,
+              "chapter_id": "cell-biology-ch-18",
+              "section": null,
+              "title_en": "Bcl2 Proteins Are the Critical Controllers of the Intrinsic Pathway of Apoptosis",
+              "title_he": "חלבוני Bcl2 מבקרים את המסלול הפנימי של Apoptosis",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 5,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-18-an-inhibitor-of-apoptosis-an-iap-and-two-anti-iap-proteins-help-control-caspase-activation-in-the-cytosol-of-some-mammalian-cells",
+              "area": "cell-biology",
+              "chapter": 18,
+              "chapter_id": "cell-biology-ch-18",
+              "section": null,
+              "title_en": "An Inhibitor of Apoptosis (an IAP) and Two Anti-IAP Proteins Help Control Caspase Activation in the Cytosol of Some Mammalian Cells",
+              "title_he": "IAP וחלבוני Anti-IAP מבקרים הפעלת Caspases בציטוזול של חלק מתאי היונקים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 6,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-18-extracellular-survival-factors-inhibit-apoptosis-in-various-ways",
+              "area": "cell-biology",
+              "chapter": 18,
+              "chapter_id": "cell-biology-ch-18",
+              "section": null,
+              "title_en": "Extracellular Survival Factors Inhibit Apoptosis in Various Ways",
+              "title_he": "גורמי הישרדות חוץ-תאיים מעכבים Apoptosis בדרכים שונות",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 7,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-18-healthy-neighbors-phagocytose-and-digest-apoptotic-cells",
+              "area": "cell-biology",
+              "chapter": 18,
+              "chapter_id": "cell-biology-ch-18",
+              "section": null,
+              "title_en": "Healthy Neighbors Phagocytose and Digest Apoptotic Cells",
+              "title_he": "תאים שכנים בריאים בולעים ומעכלים תאים אפופטוטיים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 8,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-18-either-excessive-or-insufficient-apoptosis-can-contribute-to-disease",
+              "area": "cell-biology",
+              "chapter": 18,
+              "chapter_id": "cell-biology-ch-18",
+              "section": null,
+              "title_en": "Either Excessive or Insufficient Apoptosis Can Contribute to Disease",
+              "title_he": "עודף או מחסור ב-Apoptosis עלולים לתרום למחלה",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 9,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ],
+          "includes_unlisted_chapter_material": true
+        },
+        {
+          "id": "cell-biology-ch-19",
+          "number": 19,
+          "title_en": "Cell Junctions and the Extracellular Matrix",
+          "title_he": "צומתי תאים והמטריצה החוץ-תאית",
+          "scope": "full-chapter",
+          "official_source_id": "tau-official",
+          "toc_source_id": "alberts-library-toc",
+          "toc_verification": "institutional-library-verified",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "cell-biology-ch-19-cell-cell-junctions",
+              "area": "cell-biology",
+              "chapter": 19,
+              "chapter_id": "cell-biology-ch-19",
+              "section": null,
+              "title_en": "Cell-Cell Junctions",
+              "title_he": "צומתי תא-תא",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-19-the-extracellular-matrix-of-animals",
+              "area": "cell-biology",
+              "chapter": 19,
+              "chapter_id": "cell-biology-ch-19",
+              "section": null,
+              "title_en": "The Extracellular Matrix of Animals",
+              "title_he": "המטריצה החוץ-תאית בבעלי חיים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-19-cell-matrix-junctions",
+              "area": "cell-biology",
+              "chapter": 19,
+              "chapter_id": "cell-biology-ch-19",
+              "section": null,
+              "title_en": "Cell-Matrix Junctions",
+              "title_he": "צומתי תא-מטריצה",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "cell-biology-ch-19-the-plant-cell-wall",
+              "area": "cell-biology",
+              "chapter": 19,
+              "chapter_id": "cell-biology-ch-19",
+              "section": null,
+              "title_en": "The Plant Cell Wall",
+              "title_he": "דופן התא בצמחים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "alberts-library-toc"
+              ],
+              "excluded": false,
+              "order": 4,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ],
+          "includes_unlisted_chapter_material": true
+        }
+      ],
+      "counts": {
+        "chapters": 9,
+        "included_subtopics": 48,
+        "excluded_subtopics": 0
+      }
+    },
+    {
+      "id": "physiology",
+      "title_en": "Physiology",
+      "title_he": "פיזיולוגיה",
+      "exam_weight": 0.25,
+      "book_id": "berne-levy-8",
+      "chapters": [
+        {
+          "id": "physiology-ch-01",
+          "number": 1,
+          "title_en": "Principles of Cell and Membrane Function",
+          "title_he": "עקרונות תפקוד התא והממברנה",
+          "scope": "full-chapter-with-exclusions",
+          "official_source_id": "tau-official",
+          "toc_source_id": "physiology-detailed-toc",
+          "toc_verification": "third-party-only",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "physiology-ch-01-overview-of-eukaryotic-cells",
+              "area": "physiology",
+              "chapter": 1,
+              "chapter_id": "physiology-ch-01",
+              "section": null,
+              "title_en": "Overview of Eukaryotic Cells",
+              "title_he": "סקירת תאים אאוקריוטיים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "physiology-detailed-toc"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "physiology-ch-01-the-plasma-membrane",
+              "area": "physiology",
+              "chapter": 1,
+              "chapter_id": "physiology-ch-01",
+              "section": null,
+              "title_en": "The Plasma Membrane",
+              "title_he": "ממברנת הפלזמה",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "physiology-detailed-toc"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "physiology-ch-01-membrane-transport",
+              "area": "physiology",
+              "chapter": 1,
+              "chapter_id": "physiology-ch-01",
+              "section": null,
+              "title_en": "Membrane Transport",
+              "title_he": "הובלה ממברנלית",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "physiology-detailed-toc"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "physiology-ch-01-vesicular-transport",
+              "area": "physiology",
+              "chapter": 1,
+              "chapter_id": "physiology-ch-01",
+              "section": null,
+              "title_en": "Vesicular Transport",
+              "title_he": "הובלה בשלפוחיות",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "physiology-detailed-toc"
+              ],
+              "excluded": false,
+              "order": 4,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "physiology-ch-01-basic-principles-of-solute-and-water-transport",
+              "area": "physiology",
+              "chapter": 1,
+              "chapter_id": "physiology-ch-01",
+              "section": null,
+              "title_en": "Basic Principles of Solute and Water Transport",
+              "title_he": "עקרונות בסיסיים של הובלת מומסים ומים",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "physiology-detailed-toc"
+              ],
+              "excluded": false,
+              "order": 5,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "physiology-ch-01-exclude-oncotic-pressure",
+              "area": "physiology",
+              "chapter": 1,
+              "chapter_id": "physiology-ch-01",
+              "section": null,
+              "title_en": "Oncotic Pressure",
+              "title_he": "לחץ אונקוטי",
+              "source": "official-exclude",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": true,
+              "order": 6,
+              "coverage": "excluded-section-including-descendants",
+              "content_status": "excluded"
+            },
+            {
+              "id": "physiology-ch-01-exclude-specific-gravity",
+              "area": "physiology",
+              "chapter": 1,
+              "chapter_id": "physiology-ch-01",
+              "section": null,
+              "title_en": "Specific Gravity",
+              "title_he": "משקל סגולי",
+              "source": "official-exclude",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": true,
+              "order": 7,
+              "coverage": "excluded-section-including-descendants",
+              "content_status": "excluded"
+            }
+          ],
+          "includes_unlisted_chapter_material": true
+        },
+        {
+          "id": "physiology-ch-02",
+          "number": 2,
+          "title_en": "Homeostasis: Volume and Composition of Body Fluid Compartments",
+          "title_he": "הומאוסטזיס: נפח והרכב מדורי נוזלי הגוף",
+          "scope": "full-chapter",
+          "official_source_id": "tau-official",
+          "toc_source_id": "physiology-detailed-toc",
+          "toc_verification": "third-party-only",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "physiology-ch-02-concept-of-steady-state-balance",
+              "area": "physiology",
+              "chapter": 2,
+              "chapter_id": "physiology-ch-02",
+              "section": null,
+              "title_en": "Concept of Steady-State Balance",
+              "title_he": "מושג המאזן במצב יציב",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "physiology-detailed-toc"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "physiology-ch-02-volumes-and-composition-of-body-fluid-compartments",
+              "area": "physiology",
+              "chapter": 2,
+              "chapter_id": "physiology-ch-02",
+              "section": null,
+              "title_en": "Volumes and Composition of Body Fluid Compartments",
+              "title_he": "נפחים והרכב של מדורי נוזלי הגוף",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "physiology-detailed-toc"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "physiology-ch-02-maintenance-of-cellular-homeostasis",
+              "area": "physiology",
+              "chapter": 2,
+              "chapter_id": "physiology-ch-02",
+              "section": null,
+              "title_en": "Maintenance of Cellular Homeostasis",
+              "title_he": "שמירת הומאוסטזיס תאי",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "physiology-detailed-toc"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "physiology-ch-02-principles-of-epithelial-transport",
+              "area": "physiology",
+              "chapter": 2,
+              "chapter_id": "physiology-ch-02",
+              "section": null,
+              "title_en": "Principles of Epithelial Transport",
+              "title_he": "עקרונות ההובלה באפיתל",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "physiology-detailed-toc"
+              ],
+              "excluded": false,
+              "order": 4,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ],
+          "includes_unlisted_chapter_material": true
+        },
+        {
+          "id": "physiology-ch-04",
+          "number": 4,
+          "title_en": "The Nervous System: Introduction to Cells and Systems",
+          "title_he": "מערכת העצבים: מבוא לתאים ולמערכות",
+          "scope": "include-only",
+          "official_source_id": "tau-official",
+          "toc_source_id": "physiology-detailed-toc",
+          "toc_verification": "third-party-only",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "physiology-ch-04-cellular-components-of-the-nervous-system",
+              "area": "physiology",
+              "chapter": 4,
+              "chapter_id": "physiology-ch-04",
+              "section": null,
+              "title_en": "Cellular Components of the Nervous System",
+              "title_he": "המרכיבים התאיים של מערכת העצבים",
+              "source": "official-include",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            }
+          ]
+        },
+        {
+          "id": "physiology-ch-05",
+          "number": 5,
+          "title_en": "Generation and Conduction of Action Potentials",
+          "title_he": "יצירה והולכה של פוטנציאלי פעולה",
+          "scope": "full-chapter-with-exclusions",
+          "official_source_id": "tau-official",
+          "toc_source_id": "physiology-detailed-toc",
+          "toc_verification": "third-party-only",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "physiology-ch-05-membrane-potentials",
+              "area": "physiology",
+              "chapter": 5,
+              "chapter_id": "physiology-ch-05",
+              "section": null,
+              "title_en": "Membrane Potentials",
+              "title_he": "פוטנציאלי ממברנה",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "physiology-detailed-toc"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "physiology-ch-05-suprathreshold-response-the-action-potential",
+              "area": "physiology",
+              "chapter": 5,
+              "chapter_id": "physiology-ch-05",
+              "section": null,
+              "title_en": "Suprathreshold Response: The Action Potential",
+              "title_he": "תגובה מעל הסף: פוטנציאל הפעולה",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "physiology-detailed-toc"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "physiology-ch-05-conduction-of-action-potentials",
+              "area": "physiology",
+              "chapter": 5,
+              "chapter_id": "physiology-ch-05",
+              "section": null,
+              "title_en": "Conduction of Action Potentials",
+              "title_he": "הולכת פוטנציאלי פעולה",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "physiology-detailed-toc"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "physiology-ch-05-sensory-transduction",
+              "area": "physiology",
+              "chapter": 5,
+              "chapter_id": "physiology-ch-05",
+              "section": null,
+              "title_en": "Sensory Transduction",
+              "title_he": "התמרה חושית",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "physiology-detailed-toc"
+              ],
+              "excluded": false,
+              "order": 4,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "physiology-ch-05-exclude-receptive-fields",
+              "area": "physiology",
+              "chapter": 5,
+              "chapter_id": "physiology-ch-05",
+              "section": null,
+              "title_en": "Receptive Fields",
+              "title_he": "שדות קלט",
+              "source": "official-exclude",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": true,
+              "order": 5,
+              "coverage": "excluded-section-including-descendants",
+              "content_status": "excluded"
+            },
+            {
+              "id": "physiology-ch-05-exclude-coding-of-information-by-action-potentials",
+              "area": "physiology",
+              "chapter": 5,
+              "chapter_id": "physiology-ch-05",
+              "section": null,
+              "title_en": "Coding of Information by Action Potentials",
+              "title_he": "קידוד מידע באמצעות פוטנציאלי פעולה",
+              "source": "official-exclude",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": true,
+              "order": 6,
+              "coverage": "excluded-section-including-descendants",
+              "content_status": "excluded"
+            },
+            {
+              "id": "physiology-ch-05-exclude-sensory-coding",
+              "area": "physiology",
+              "chapter": 5,
+              "chapter_id": "physiology-ch-05",
+              "section": null,
+              "title_en": "Sensory Coding",
+              "title_he": "קידוד חושי",
+              "source": "official-exclude",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": true,
+              "order": 7,
+              "coverage": "excluded-section-including-descendants",
+              "content_status": "excluded"
+            }
+          ],
+          "includes_unlisted_chapter_material": true
+        },
+        {
+          "id": "physiology-ch-06",
+          "number": 6,
+          "title_en": "Synaptic Transmission",
+          "title_he": "העברה סינפטית",
+          "scope": "full-chapter-with-exclusions",
+          "official_source_id": "tau-official",
+          "toc_source_id": "physiology-detailed-toc",
+          "toc_verification": "third-party-only",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "physiology-ch-06-electrical-synapses",
+              "area": "physiology",
+              "chapter": 6,
+              "chapter_id": "physiology-ch-06",
+              "section": null,
+              "title_en": "Electrical Synapses",
+              "title_he": "סינפסות חשמליות",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "physiology-detailed-toc"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "physiology-ch-06-chemical-synapses",
+              "area": "physiology",
+              "chapter": 6,
+              "chapter_id": "physiology-ch-06",
+              "section": null,
+              "title_en": "Chemical Synapses",
+              "title_he": "סינפסות כימיות",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "physiology-detailed-toc"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "physiology-ch-06-synaptic-integration",
+              "area": "physiology",
+              "chapter": 6,
+              "chapter_id": "physiology-ch-06",
+              "section": null,
+              "title_en": "Synaptic Integration",
+              "title_he": "אינטגרציה סינפטית",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "physiology-detailed-toc"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "physiology-ch-06-modulation-of-synaptic-activity",
+              "area": "physiology",
+              "chapter": 6,
+              "chapter_id": "physiology-ch-06",
+              "section": null,
+              "title_en": "Modulation of Synaptic Activity",
+              "title_he": "ויסות פעילות סינפטית",
+              "source": "official-full-chapter",
+              "title_origin": "book-toc",
+              "source_ids": [
+                "tau-official",
+                "physiology-detailed-toc"
+              ],
+              "excluded": false,
+              "order": 4,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "physiology-ch-06-exclude-neurotransmitters",
+              "area": "physiology",
+              "chapter": 6,
+              "chapter_id": "physiology-ch-06",
+              "section": null,
+              "title_en": "Neurotransmitters",
+              "title_he": "מוליכים עצביים",
+              "source": "official-exclude",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": true,
+              "order": 5,
+              "coverage": "excluded-section-including-descendants",
+              "content_status": "excluded"
+            },
+            {
+              "id": "physiology-ch-06-exclude-neurotransmitter-receptors",
+              "area": "physiology",
+              "chapter": 6,
+              "chapter_id": "physiology-ch-06",
+              "section": null,
+              "title_en": "Neurotransmitter Receptors",
+              "title_he": "קולטני מוליכים עצביים",
+              "source": "official-exclude",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": true,
+              "order": 6,
+              "coverage": "excluded-section-including-descendants",
+              "content_status": "excluded"
+            }
+          ],
+          "includes_unlisted_chapter_material": true
+        },
+        {
+          "id": "physiology-ch-12",
+          "number": 12,
+          "title_en": "Skeletal Muscle Physiology",
+          "title_he": "פיזיולוגיה של שריר שלד",
+          "scope": "include-only",
+          "official_source_id": "tau-official",
+          "toc_source_id": "physiology-detailed-toc",
+          "toc_verification": "third-party-only",
+          "includes_all_descendant_material": true,
+          "subtopics": [
+            {
+              "id": "physiology-ch-12-organization-of-skeletal-muscle",
+              "area": "physiology",
+              "chapter": 12,
+              "chapter_id": "physiology-ch-12",
+              "section": null,
+              "title_en": "Organization of Skeletal Muscle",
+              "title_he": "ארגון שריר השלד",
+              "source": "official-include",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": false,
+              "order": 1,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "physiology-ch-12-control-of-skeletal-muscle-activity",
+              "area": "physiology",
+              "chapter": 12,
+              "chapter_id": "physiology-ch-12",
+              "section": null,
+              "title_en": "Control of Skeletal Muscle Activity",
+              "title_he": "בקרת פעילות שריר השלד",
+              "source": "official-include",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": false,
+              "order": 2,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "physiology-ch-12-skeletal-muscle-types",
+              "area": "physiology",
+              "chapter": 12,
+              "chapter_id": "physiology-ch-12",
+              "section": null,
+              "title_en": "Skeletal Muscle Types",
+              "title_he": "סוגי שריר שלד",
+              "source": "official-include",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": false,
+              "order": 3,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "physiology-ch-12-modulation-of-the-force-of-contraction",
+              "area": "physiology",
+              "chapter": 12,
+              "chapter_id": "physiology-ch-12",
+              "section": null,
+              "title_en": "Modulation of the Force of Contraction",
+              "title_he": "ויסות כוח הכיווץ",
+              "source": "official-include",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": false,
+              "order": 4,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "physiology-ch-12-skeletal-muscle-tone",
+              "area": "physiology",
+              "chapter": 12,
+              "chapter_id": "physiology-ch-12",
+              "section": null,
+              "title_en": "Skeletal Muscle Tone",
+              "title_he": "טונוס שריר השלד",
+              "source": "official-include",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": false,
+              "order": 5,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "physiology-ch-12-biophysical-properties-of-skeletal-muscle",
+              "area": "physiology",
+              "chapter": 12,
+              "chapter_id": "physiology-ch-12",
+              "section": null,
+              "title_en": "Biophysical Properties of Skeletal Muscle",
+              "title_he": "תכונות ביופיזיקליות של שריר השלד",
+              "source": "official-include",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": false,
+              "order": 6,
+              "coverage": "entire-section-including-descendants",
+              "content_status": "not-authored"
+            },
+            {
+              "id": "physiology-ch-12-exclude-modulation-of-force-by-reflex-arcs",
+              "area": "physiology",
+              "chapter": 12,
+              "chapter_id": "physiology-ch-12",
+              "section": null,
+              "title_en": "Modulation of Force by Reflex Arcs",
+              "title_he": "ויסות כוח באמצעות קשתות רפלקס",
+              "source": "official-exclude",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": true,
+              "order": 7,
+              "coverage": "excluded-section-including-descendants",
+              "content_status": "excluded"
+            },
+            {
+              "id": "physiology-ch-12-exclude-energy-sources-during-contraction",
+              "area": "physiology",
+              "chapter": 12,
+              "chapter_id": "physiology-ch-12",
+              "section": null,
+              "title_en": "Energy Sources During Contraction",
+              "title_he": "מקורות אנרגיה בזמן כיווץ",
+              "source": "official-exclude",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": true,
+              "order": 8,
+              "coverage": "excluded-section-including-descendants",
+              "content_status": "excluded"
+            },
+            {
+              "id": "physiology-ch-12-exclude-oxygen-debt",
+              "area": "physiology",
+              "chapter": 12,
+              "chapter_id": "physiology-ch-12",
+              "section": null,
+              "title_en": "Oxygen Debt",
+              "title_he": "חוב חמצן",
+              "source": "official-exclude",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": true,
+              "order": 9,
+              "coverage": "excluded-section-including-descendants",
+              "content_status": "excluded"
+            },
+            {
+              "id": "physiology-ch-12-exclude-fatigue",
+              "area": "physiology",
+              "chapter": 12,
+              "chapter_id": "physiology-ch-12",
+              "section": null,
+              "title_en": "Fatigue",
+              "title_he": "עייפות",
+              "source": "official-exclude",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": true,
+              "order": 10,
+              "coverage": "excluded-section-including-descendants",
+              "content_status": "excluded"
+            },
+            {
+              "id": "physiology-ch-12-exclude-growth-and-development",
+              "area": "physiology",
+              "chapter": 12,
+              "chapter_id": "physiology-ch-12",
+              "section": null,
+              "title_en": "Growth and Development",
+              "title_he": "גדילה והתפתחות",
+              "source": "official-exclude",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": true,
+              "order": 11,
+              "coverage": "excluded-section-including-descendants",
+              "content_status": "excluded"
+            },
+            {
+              "id": "physiology-ch-12-exclude-denervation-reinnervation-and-cross-innervation",
+              "area": "physiology",
+              "chapter": 12,
+              "chapter_id": "physiology-ch-12",
+              "section": null,
+              "title_en": "Denervation, Reinnervation, and Cross-Innervation",
+              "title_he": "Denervation, Reinnervation ו-Cross-Innervation",
+              "source": "official-exclude",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": true,
+              "order": 12,
+              "coverage": "excluded-section-including-descendants",
+              "content_status": "excluded"
+            },
+            {
+              "id": "physiology-ch-12-exclude-response-to-exercise",
+              "area": "physiology",
+              "chapter": 12,
+              "chapter_id": "physiology-ch-12",
+              "section": null,
+              "title_en": "Response to Exercise",
+              "title_he": "תגובה לפעילות גופנית",
+              "source": "official-exclude",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": true,
+              "order": 13,
+              "coverage": "excluded-section-including-descendants",
+              "content_status": "excluded"
+            },
+            {
+              "id": "physiology-ch-12-exclude-delayed-onset-muscle-soreness",
+              "area": "physiology",
+              "chapter": 12,
+              "chapter_id": "physiology-ch-12",
+              "section": null,
+              "title_en": "Delayed-Onset Muscle Soreness",
+              "title_he": "כאבי שרירים מאוחרים",
+              "source": "official-exclude",
+              "title_origin": "official-syllabus",
+              "source_ids": [
+                "tau-official"
+              ],
+              "excluded": true,
+              "order": 14,
+              "coverage": "excluded-section-including-descendants",
+              "content_status": "excluded"
+            }
+          ]
+        }
+      ],
+      "counts": {
+        "chapters": 6,
+        "included_subtopics": 24,
+        "excluded_subtopics": 15
+      }
+    }
+  ],
+  "books": [
+    {
+      "id": "lehninger-8",
+      "title": "Lehninger Principles of Biochemistry",
+      "edition": "8th",
+      "year_in_official_syllabus": 2021
+    },
+    {
+      "id": "alberts-7-international",
+      "title": "Molecular Biology of the Cell",
+      "edition": "Seventh International Edition",
+      "year_in_official_syllabus": 2022
+    },
+    {
+      "id": "berne-levy-8",
+      "title": "Berne & Levy Physiology",
+      "edition": "8th",
+      "year_in_official_syllabus": 2023,
+      "copyright_year_in_reproduced_book": 2024,
+      "note": "Official syllabus names 2023; reproduced eighth-edition copyright page says 2024. Same eighth-edition title and ISBN; no substitution of a different edition."
+    }
+  ]
+}

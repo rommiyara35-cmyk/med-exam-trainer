@@ -1,0 +1,37 @@
+{
+  "name": "מד-ידע | מבחן הידע הרפואי",
+  "short_name": "מד-ידע",
+  "description": "אפליקציית לימוד יומית למבחן הידע לרפואה ארבע-שנתי",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F2F2F7",
+  "theme_color": "#007AFF",
+  "orientation": "portrait",
+  "lang": "he",
+  "dir": "rtl",
+  "categories": ["education", "medical"],
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "לימוד יומי",
+      "short_name": "לימוד",
+      "description": "התחל את משימות היום",
+      "url": "/?shortcut=daily",
+      "icons": [{ "src": "icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}

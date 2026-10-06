@@ -1,0 +1,1088 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="מד-ידע">
+  <meta name="theme-color" content="#007AFF">
+  <title>מד-ידע | מבחן הידע הרפואי</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <style>
+    /* ===== DESIGN TOKENS ===== */
+    :root {
+      --accent: #007AFF;
+      --accent-light: #3395FF;
+      --success: #34C759;
+      --warning: #FF9500;
+      --danger: #FF3B30;
+      --bg: #F2F2F7;
+      --surface: #FFFFFF;
+      --surface2: #F2F2F7;
+      --surface3: #E5E5EA;
+      --label: #000000;
+      --label2: #3C3C43;
+      --label3: #636366;
+      --label4: #8E8E93;
+      --sep: rgba(60,60,67,0.12);
+      --r-sm: 10px; --r-md: 13px; --r-lg: 16px; --r-xl: 22px;
+      --shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.05);
+      --shadow-md: 0 4px 16px rgba(0,0,0,0.09), 0 2px 4px rgba(0,0,0,0.05);
+      --font: -apple-system,BlinkMacSystemFont,'SF Pro Display','Segoe UI',system-ui,sans-serif;
+      --tab-h: 83px;
+      --safe-b: env(safe-area-inset-bottom,0px);
+      --safe-t: env(safe-area-inset-top,0px);
+    }
+    @media (prefers-color-scheme:dark){
+      :root{
+        --bg:#000; --surface:#1C1C1E; --surface2:#2C2C2E; --surface3:#3A3A3C;
+        --label:#FFF; --label2:#EBEBF5; --label3:#EBEBF5CC; --label4:#EBEBF599;
+        --sep:rgba(84,84,88,0.65);
+      }
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%;overflow:hidden;font-family:var(--font);background:var(--bg);color:var(--label);-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent;overscroll-behavior:none}
+
+    #app{display:flex;flex-direction:column;height:100%;height:100dvh;max-width:430px;margin:0 auto;position:relative;overflow:hidden}
+    .screen{display:none;flex:1;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;padding-bottom:calc(var(--tab-h)+12px);padding-top:var(--safe-t)}
+    .screen.active{display:block}
+
+    /* TAB BAR */
+    #tab-bar{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:430px;height:var(--tab-h);padding-bottom:var(--safe-b);background:rgba(255,255,255,0.88);backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-top:.5px solid var(--sep);display:flex;align-items:flex-start;justify-content:space-around;padding-top:10px;z-index:100}
+    @media(prefers-color-scheme:dark){#tab-bar{background:rgba(28,28,30,0.88)}}
+    .tab-item{display:flex;flex-direction:column;align-items:center;gap:3px;flex:1;cursor:pointer;padding:2px 0;-webkit-user-select:none;user-select:none}
+    .tab-item:active{opacity:.6}
+    .tab-icon{font-size:22px;line-height:1;transition:transform .2s cubic-bezier(.34,1.56,.64,1)}
+    .tab-item.active .tab-icon{transform:scale(1.1)}
+    .tab-label{font-size:10px;font-weight:500;color:var(--label4)}
+    .tab-item.active .tab-label{color:var(--accent)}
+
+    /* TYPOGRAPHY */
+    .large-title{font-size:34px;font-weight:700;letter-spacing:-.7px;padding:16px 20px 4px;padding-top:calc(20px + var(--safe-t))}
+    .section-title{font-size:13px;font-weight:600;color:var(--label3);text-transform:uppercase;letter-spacing:.3px;margin-bottom:10px}
+    .nav-hdr{padding:16px 20px 8px;padding-top:calc(16px + var(--safe-t));display:flex;align-items:center;justify-content:space-between}
+
+    /* STREAK */
+    .streak{background:linear-gradient(135deg,#FF6B35,#FF3B30);border-radius:var(--r-xl);padding:18px 20px;display:flex;align-items:center;justify-content:space-between;margin:0 16px 14px;box-shadow:0 4px 20px rgba(255,59,48,.28);position:relative;overflow:hidden}
+    .streak::before{content:'';position:absolute;top:-30px;right:-30px;width:120px;height:120px;background:rgba(255,255,255,.1);border-radius:50%}
+    .streak-num{font-size:42px;font-weight:800;color:#fff;letter-spacing:-1px;line-height:1;z-index:1}
+    .streak-label{font-size:14px;color:rgba(255,255,255,.85);font-weight:500;margin-top:2px;z-index:1}
+    .streak-info{z-index:1}
+    .streak-flame{font-size:52px;animation:flicker 2s ease-in-out infinite alternate;z-index:1}
+    @keyframes flicker{from{transform:scale(1) rotate(-3deg)}to{transform:scale(1.08) rotate(3deg)}}
+
+    /* XP BAR */
+    .xp-wrap{padding:0 16px 14px}
+    .xp-card{background:var(--surface);border-radius:var(--r-lg);padding:14px 16px;box-shadow:var(--shadow)}
+    .xp-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+    .xp-title{font-size:14px;font-weight:600}
+    .xp-val{font-size:14px;font-weight:700;color:var(--accent)}
+    .xp-track{height:8px;background:var(--surface3);border-radius:99px;overflow:hidden}
+    .xp-fill{height:100%;background:linear-gradient(90deg,var(--accent),var(--accent-light));border-radius:99px;transition:width .9s cubic-bezier(.4,0,.2,1)}
+
+    /* MISSIONS */
+    .missions-wrap{padding:0 16px 14px}
+    .mission-list{display:flex;flex-direction:column;gap:10px}
+    .mission-item{display:flex;align-items:center;gap:12px;padding:13px 14px;background:var(--surface2);border-radius:var(--r-md);cursor:pointer;transition:all .2s;-webkit-user-select:none;user-select:none}
+    .mission-item:active{transform:scale(.98);opacity:.85}
+    .mission-item.done{opacity:.5}
+    .m-icon{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+    .m-icon.learn{background:rgba(0,122,255,.12)}
+    .m-icon.practice{background:rgba(52,199,89,.12)}
+    .m-icon.review{background:rgba(255,149,0,.12)}
+    .m-info{flex:1;min-width:0}
+    .m-title{font-size:15px;font-weight:600}
+    .m-meta{font-size:13px;color:var(--label4);margin-top:2px}
+    .m-badge{width:24px;height:24px;border-radius:50%;background:var(--success);display:flex;align-items:center;justify-content:center;font-size:12px;color:#fff;flex-shrink:0}
+    .m-xp{font-size:13px;color:var(--warning);font-weight:700;flex-shrink:0}
+
+    /* AREAS GRID */
+    .areas-wrap{padding:0 16px 16px}
+    .areas-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .area-card{border-radius:var(--r-lg);padding:14px;cursor:pointer;transition:transform .2s cubic-bezier(.4,0,.2,1);-webkit-user-select:none;user-select:none;position:relative;overflow:hidden}
+    .area-card:active{transform:scale(.96)}
+    .a-icon{font-size:28px;margin-bottom:8px}
+    .a-title{font-size:14px;font-weight:700;color:#fff;line-height:1.2;margin-bottom:2px}
+    .a-sub{font-size:11px;color:rgba(255,255,255,.8);margin-bottom:10px}
+    .a-track{height:4px;background:rgba(255,255,255,.3);border-radius:99px;overflow:hidden;margin-bottom:4px}
+    .a-fill{height:100%;background:#fff;border-radius:99px;transition:width .8s ease}
+    .a-pct{font-size:10px;color:rgba(255,255,255,.85)}
+
+    /* EXPLORE */
+    .search-wrap{padding:8px 16px 12px}
+    .search-bar{display:flex;align-items:center;gap:8px;background:var(--surface2);border-radius:var(--r-md);padding:10px 14px}
+    .search-input{flex:1;background:none;border:none;font-size:16px;color:var(--label);font-family:var(--font);outline:none;direction:rtl}
+    .search-input::placeholder{color:var(--label4)}
+    .explore-area{margin:0 16px 20px}
+    .ea-hdr{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+    .area-dot{width:12px;height:12px;border-radius:50%;flex-shrink:0}
+    .area-name-txt{font-size:17px;font-weight:700}
+    .chapter-card{background:var(--surface);border-radius:var(--r-md);margin-bottom:6px;box-shadow:var(--shadow);overflow:hidden}
+    .ch-hdr{display:flex;align-items:center;gap:12px;padding:13px 16px;cursor:pointer;transition:opacity .15s}
+    .ch-hdr:active{opacity:.75}
+    .ch-info{flex:1;min-width:0}
+    .ch-name{font-size:15px;font-weight:600;margin-bottom:2px}
+    .ch-meta{font-size:12px;color:var(--label4)}
+    .ch-ring{width:36px;height:36px;flex-shrink:0}
+    .ch-chev{font-size:11px;color:var(--label4);transition:transform .25s;margin-right:4px}
+    .ch-chev.open{transform:rotate(180deg)}
+    .ch-subs{padding:4px 16px 12px;display:none}
+    .ch-subs.open{display:block}
+    .sub-pill{display:inline-flex;align-items:center;gap:5px;padding:5px 12px;border-radius:99px;font-size:13px;font-weight:500;margin:3px 4px 3px 0;cursor:pointer;transition:transform .15s;-webkit-user-select:none;user-select:none}
+    .sub-pill:active{transform:scale(.95)}
+    .sub-pill.unseen{background:var(--surface3);color:var(--label4)}
+    .sub-pill.learning{background:rgba(255,149,0,.15);color:#FF9500}
+    .sub-pill.familiar{background:rgba(0,122,255,.12);color:var(--accent)}
+    .sub-pill.mastered{background:rgba(52,199,89,.12);color:var(--success)}
+    .sub-dot{width:6px;height:6px;border-radius:50%;background:currentColor;flex-shrink:0}
+    .practice-btn{display:inline-flex;align-items:center;gap:5px;padding:5px 12px;border-radius:99px;font-size:13px;font-weight:500;margin-top:8px;background:rgba(0,122,255,.1);color:var(--accent);cursor:pointer;-webkit-user-select:none;user-select:none;transition:transform .15s}
+    .practice-btn:active{transform:scale(.95)}
+
+    /* PROGRESS */
+    .prog-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;text-align:center;margin:0 16px 16px}
+    .stat-card{background:var(--surface);border-radius:var(--r-md);padding:14px 6px;box-shadow:var(--shadow)}
+    .stat-num{font-size:26px;font-weight:800}
+    .stat-lbl{font-size:12px;color:var(--label4);margin-top:2px}
+    .mastery-area{margin:0 16px 10px}
+    .ma-hdr{display:flex;align-items:center;gap:10px;padding:14px 16px;background:var(--surface);border-radius:var(--r-lg);cursor:pointer;transition:border-radius .25s}
+    .ma-hdr.open-hdr{border-radius:var(--r-lg) var(--r-lg) 0 0}
+    .ma-icon{font-size:22px}
+    .ma-name{flex:1;font-size:16px;font-weight:600}
+    .ma-pct{font-size:14px;font-weight:700}
+    .ma-ch{font-size:12px;color:var(--label4);transition:transform .25s}
+    .ma-ch.open{transform:rotate(180deg)}
+    .ma-body{background:var(--surface);border-radius:0 0 var(--r-lg) var(--r-lg);padding:0 16px 12px;display:none;border-top:.5px solid var(--sep)}
+    .ma-body.open{display:block}
+    .ch-row{padding:8px 0;border-bottom:.5px solid var(--sep)}
+    .ch-row:last-child{border-bottom:none}
+    .ch-row-name{font-size:14px;color:var(--label2);margin-bottom:6px;font-weight:500}
+    .pills-wrap{display:flex;flex-wrap:wrap;gap:4px}
+
+    /* PROFILE */
+    .settings-sec{margin:0 16px 20px}
+    .settings-card{background:var(--surface);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--shadow)}
+    .setting-row{display:flex;align-items:center;justify-content:space-between;padding:14px 16px;border-bottom:.5px solid var(--sep);cursor:pointer;transition:opacity .15s}
+    .setting-row:last-child{border-bottom:none}
+    .setting-row:active{opacity:.7}
+    .s-label{font-size:16px}
+    .s-val{font-size:16px;color:var(--label4)}
+    .ios-toggle{width:51px;height:31px;background:#E5E5EA;border-radius:99px;position:relative;cursor:pointer;transition:background .3s;flex-shrink:0}
+    .ios-toggle.on{background:var(--success)}
+    .ios-toggle::after{content:'';position:absolute;width:27px;height:27px;background:#fff;border-radius:50%;top:2px;right:2px;transition:transform .3s cubic-bezier(.4,0,.2,1);box-shadow:0 2px 6px rgba(0,0,0,.2)}
+    .ios-toggle.on::after{transform:translateX(-20px)}
+
+    /* OVERLAY */
+    .overlay{position:fixed;inset:0;background:var(--bg);z-index:200;display:flex;flex-direction:column;max-width:430px;margin:0 auto;left:50%;transform:translateX(-50%);width:100%}
+    .ov-hdr{padding:14px 20px;padding-top:calc(14px + var(--safe-t));display:flex;align-items:center;gap:12px;flex-shrink:0}
+    .close-btn{width:32px;height:32px;border-radius:50%;background:var(--surface3);border:none;display:flex;align-items:center;justify-content:center;font-size:16px;cursor:pointer;color:var(--label);flex-shrink:0;transition:opacity .15s;-webkit-user-select:none;user-select:none}
+    .close-btn:active{opacity:.6}
+    .prog-track{flex:1;height:6px;background:var(--surface3);border-radius:99px;overflow:hidden}
+    .prog-fill{height:100%;background:var(--accent);border-radius:99px;transition:width .45s cubic-bezier(.4,0,.2,1)}
+    .xp-badge{font-size:13px;font-weight:700;color:var(--warning);flex-shrink:0}
+    .ov-body{flex:1;overflow-y:auto;-webkit-overflow-scrolling:touch;padding:8px 20px 20px}
+    .ov-footer{padding:14px 20px;padding-bottom:calc(14px + var(--safe-b));background:var(--bg);flex-shrink:0}
+
+    /* CONCEPT CARD */
+    .concept-card{background:var(--surface);border-radius:var(--r-xl);padding:22px;margin-bottom:16px;box-shadow:var(--shadow-md);animation:slideUp .3s cubic-bezier(.4,0,.2,1)}
+    @keyframes slideUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+    .concept-card h2{font-size:19px;font-weight:700;letter-spacing:-.3px;margin-bottom:12px}
+    .concept-body{font-size:15px;line-height:1.65;color:var(--label2);white-space:pre-wrap}
+    .concept-body strong{font-weight:700;color:var(--label)}
+    .key-points{margin-top:14px;padding:12px 14px;background:rgba(0,122,255,.07);border-radius:var(--r-md);border-right:3px solid var(--accent)}
+    .kp{font-size:14px;color:var(--label2);padding:3px 0;display:flex;gap:8px}
+    .kp::before{content:'•';color:var(--accent);font-weight:700;flex-shrink:0}
+    .area-chip{display:inline-block;font-size:11px;color:var(--label4);background:var(--surface3);padding:2px 10px;border-radius:99px;margin-bottom:10px}
+
+    /* QUESTION */
+    .q-card{background:var(--surface);border-radius:var(--r-xl);padding:20px;margin-bottom:14px;box-shadow:var(--shadow-md);animation:slideUp .3s ease}
+    .q-meta{font-size:12px;font-weight:600;color:var(--label4);text-transform:uppercase;letter-spacing:.4px;margin-bottom:10px;display:flex;align-items:center;gap:6px}
+    .diff-badge{display:inline-block;padding:1px 7px;border-radius:99px;font-size:10px;font-weight:700}
+    .diff-1{background:rgba(52,199,89,.12);color:var(--success)}
+    .diff-2{background:rgba(255,149,0,.12);color:#FF9500}
+    .diff-3{background:rgba(255,59,48,.1);color:var(--danger)}
+    .q-text{font-size:17px;font-weight:600;line-height:1.5;margin-bottom:18px}
+    .options{display:flex;flex-direction:column;gap:9px}
+    .opt{width:100%;text-align:right;padding:13px 14px;border-radius:var(--r-md);border:1.5px solid var(--sep);background:var(--surface);font-size:15px;color:var(--label);cursor:pointer;transition:all .2s;font-family:var(--font);line-height:1.4;-webkit-user-select:none;user-select:none;display:flex;align-items:center;gap:10px}
+    .opt:active:not(.locked){transform:scale(.98);background:var(--surface2)}
+    .opt-letter{width:28px;height:28px;border-radius:50%;background:var(--surface3);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;flex-shrink:0;transition:all .2s}
+    .opt.correct{border-color:var(--success);background:rgba(52,199,89,.08)}
+    .opt.correct .opt-letter{background:var(--success);color:#fff}
+    .opt.wrong{border-color:var(--danger);background:rgba(255,59,48,.07)}
+    .opt.wrong .opt-letter{background:var(--danger);color:#fff}
+    .opt.locked:not(.correct):not(.wrong){opacity:.4}
+
+    /* EXPLANATION */
+    .exp-card{border-radius:var(--r-xl);padding:18px;margin-bottom:14px;animation:slideUp .35s ease}
+    .exp-card.ok{background:rgba(52,199,89,.09);border:1.5px solid rgba(52,199,89,.28)}
+    .exp-card.fail{background:rgba(255,59,48,.07);border:1.5px solid rgba(255,59,48,.22)}
+    .exp-hdr{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+    .exp-icon{font-size:22px}
+    .exp-title{font-size:16px;font-weight:700}
+    .exp-text{font-size:14px;line-height:1.6;color:var(--label2);white-space:pre-wrap}
+    .exp-text strong{font-weight:700;color:var(--label)}
+
+    /* BUTTONS */
+    .btn{width:100%;padding:15px;border-radius:var(--r-lg);font-size:17px;font-weight:600;border:none;cursor:pointer;font-family:var(--font);letter-spacing:-.2px;transition:all .2s;-webkit-user-select:none;user-select:none}
+    .btn:active{transform:scale(.98);opacity:.9}
+    .btn:disabled{background:var(--surface3);color:var(--label4);cursor:not-allowed;transform:none;opacity:1}
+    .btn-accent{background:var(--accent);color:#fff}
+    .btn-success{background:var(--success);color:#fff}
+    .btn-ghost{background:var(--surface2);color:var(--accent)}
+
+    /* COMPLETE */
+    .complete{position:fixed;inset:0;background:var(--bg);z-index:300;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:32px;text-align:center;max-width:430px;margin:0 auto;left:50%;transform:translateX(-50%)}
+    .complete-emoji{font-size:80px;margin-bottom:18px;animation:bounceIn .55s cubic-bezier(.34,1.56,.64,1)}
+    @keyframes bounceIn{from{transform:scale(0);opacity:0}to{transform:scale(1);opacity:1}}
+    .c-title{font-size:30px;font-weight:800;margin-bottom:6px;letter-spacing:-.5px}
+    .c-sub{font-size:16px;color:var(--label3);margin-bottom:28px}
+    .c-stats{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;width:100%;margin-bottom:28px}
+    .c-stat{background:var(--surface);border-radius:var(--r-md);padding:14px 6px;box-shadow:var(--shadow)}
+    .c-val{font-size:26px;font-weight:800;color:var(--accent)}
+    .c-lbl{font-size:12px;color:var(--label4);margin-top:2px}
+
+    /* TOAST */
+    .toast{position:fixed;top:calc(20px + var(--safe-t));left:50%;transform:translateX(-50%) translateY(-80px);background:rgba(50,50,55,.9);color:#fff;padding:11px 20px;border-radius:99px;font-size:14px;font-weight:600;z-index:500;transition:transform .4s cubic-bezier(.34,1.56,.64,1);backdrop-filter:blur(10px);white-space:nowrap;pointer-events:none;max-width:90vw;text-align:center}
+    .toast.show{transform:translateX(-50%) translateY(0)}
+
+    /* MISC */
+    .empty{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:48px 24px;text-align:center}
+    .empty-e{font-size:48px;margin-bottom:14px}
+    .empty-t{font-size:20px;font-weight:700;margin-bottom:8px}
+    .empty-d{font-size:15px;color:var(--label4);line-height:1.5}
+  </style>
+</head>
+<body>
+<div id="app">
+
+  <!-- ====== HOME ====== -->
+  <div class="screen active" id="screen-home">
+    <div class="nav-hdr">
+      <div>
+        <div style="font-size:28px;font-weight:700;letter-spacing:-.5px" id="greeting"></div>
+        <div style="font-size:14px;color:var(--label4);margin-top:2px" id="greeting-date"></div>
+      </div>
+      <span style="font-size:26px;cursor:pointer" onclick="switchTab('profile',document.querySelector('[data-tab=profile]'))">🎓</span>
+    </div>
+
+    <div class="streak">
+      <div class="streak-info">
+        <div class="streak-num" id="streak-num">0</div>
+        <div class="streak-label">ימי רצף 🔥</div>
+      </div>
+      <div class="streak-flame">🔥</div>
+    </div>
+
+    <div class="xp-wrap">
+      <div class="xp-card">
+        <div class="xp-header">
+          <span class="xp-title">⭐ XP היומי</span>
+          <span class="xp-val" id="xp-display">0 / 100</span>
+        </div>
+        <div class="xp-track"><div class="xp-fill" id="xp-fill" style="width:0%"></div></div>
+      </div>
+    </div>
+
+    <div class="missions-wrap">
+      <div class="section-title">משימות היום</div>
+      <div class="mission-list" id="missions"></div>
+    </div>
+
+    <div class="areas-wrap">
+      <div class="section-title">תחומי לימוד</div>
+      <div class="areas-grid" id="areas-grid"></div>
+    </div>
+  </div>
+
+  <!-- ====== EXPLORE ====== -->
+  <div class="screen" id="screen-explore">
+    <div class="large-title">גלה 🗺️</div>
+    <div class="search-wrap">
+      <div class="search-bar">
+        <span>🔍</span>
+        <input class="search-input" type="text" placeholder="חפש פרק, נושא, מונח..." id="search-input" oninput="filterExplore(this.value)">
+      </div>
+    </div>
+    <div id="explore-content"></div>
+  </div>
+
+  <!-- ====== PROGRESS ====== -->
+  <div class="screen" id="screen-progress">
+    <div class="large-title">התקדמות 📊</div>
+    <div class="prog-stats">
+      <div class="stat-card"><div class="stat-num" id="s-mastered" style="color:var(--success)">0</div><div class="stat-lbl">שולטים</div></div>
+      <div class="stat-card"><div class="stat-num" id="s-learning" style="color:var(--warning)">0</div><div class="stat-lbl">בלמידה</div></div>
+      <div class="stat-card"><div class="stat-num" id="s-unseen" style="color:var(--label4)">0</div><div class="stat-lbl">לא נראה</div></div>
+    </div>
+    <div id="mastery-map"></div>
+  </div>
+
+  <!-- ====== PROFILE ====== -->
+  <div class="screen" id="screen-profile">
+    <div class="large-title">פרופיל 🎓</div>
+    <div class="settings-sec">
+      <div class="section-title">סטטיסטיקות</div>
+      <div class="settings-card">
+        <div class="setting-row"><span class="s-label">🔥 רצף ימים</span><span class="s-val" id="p-streak">0</span></div>
+        <div class="setting-row"><span class="s-label">⭐ XP כולל</span><span class="s-val" id="p-xp">0</span></div>
+        <div class="setting-row"><span class="s-label">✅ שאלות שנענו</span><span class="s-val" id="p-ans">0</span></div>
+        <div class="setting-row"><span class="s-label">🎯 דיוק ממוצע</span><span class="s-val" id="p-acc">—</span></div>
+        <div class="setting-row"><span class="s-label">📚 נושאי משנה שנראו</span><span class="s-val" id="p-seen">0 / 175</span></div>
+      </div>
+    </div>
+    <div class="settings-sec">
+      <div class="section-title">הגדרות</div>
+      <div class="settings-card">
+        <div class="setting-row" onclick="toggleSetting('sounds')"><span class="s-label">🔊 צלילי משוב</span><div class="ios-toggle" id="tog-sounds"></div></div>
+        <div class="setting-row" onclick="toggleSetting('haptics')"><span class="s-label">📳 רטט</span><div class="ios-toggle" id="tog-haptics"></div></div>
+      </div>
+    </div>
+    <div class="settings-sec">
+      <div class="section-title">נתונים</div>
+      <div class="settings-card">
+        <div class="setting-row" onclick="exportData()"><span class="s-label">📤 ייצוא גיבוי</span><span class="s-val">›</span></div>
+        <div class="setting-row" onclick="resetConfirm()"><span class="s-label" style="color:var(--danger)">🗑️ איפוס נתונים</span><span class="s-val">›</span></div>
+      </div>
+    </div>
+    <div class="settings-sec">
+      <div class="section-title">ספרי לימוד</div>
+      <div class="settings-card">
+        <div class="setting-row" style="cursor:default;flex-direction:column;align-items:flex-start;gap:6px" id="books-list">
+          <span class="s-val">טוען...</span>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;padding:8px 16px 24px;color:var(--label4);font-size:13px">מד-ידע v2.0 · מבחן הידע הרפואי 2024-25</div>
+  </div>
+
+  <!-- TAB BAR -->
+  <div id="tab-bar">
+    <div class="tab-item active" onclick="switchTab('home',this)" data-tab="home"><div class="tab-icon">🏠</div><div class="tab-label">בית</div></div>
+    <div class="tab-item" onclick="switchTab('explore',this)" data-tab="explore"><div class="tab-icon">🗺️</div><div class="tab-label">גלה</div></div>
+    <div class="tab-item" onclick="switchTab('progress',this)" data-tab="progress"><div class="tab-icon">📊</div><div class="tab-label">התקדמות</div></div>
+    <div class="tab-item" onclick="switchTab('profile',this)" data-tab="profile"><div class="tab-icon">👤</div><div class="tab-label">פרופיל</div></div>
+  </div>
+
+  <!-- OVERLAY -->
+  <div id="overlay" style="display:none"></div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+</div>
+
+<script>
+// ============================================================
+// DATA
+// ============================================================
+let SYLLABUS = null;
+let QUESTIONS = [];
+let LESSONS = [];
+let OFFICIAL_RAW = null;
+
+async function loadData() {
+  try {
+    const [syl, qs, ls, raw] = await Promise.all([
+      fetch('data/syllabus.json').then(r => r.json()),
+      fetch('data/questions.json').then(r => r.json()).catch(() => []),
+      fetch('data/lessons.json').then(r => r.json()).catch(() => []),
+      fetch('data/official-syllabus.json').then(r => r.json()).catch(() => null),
+    ]);
+    SYLLABUS = syl;
+    QUESTIONS = Array.isArray(qs) ? qs : [];
+    LESSONS = Array.isArray(ls) ? ls : [];
+    OFFICIAL_RAW = raw;
+  } catch(e) {
+    console.error('Data load error', e);
+    showToast('שגיאה בטעינת נתונים');
+  }
+}
+
+// ============================================================
+// PERSISTENCE
+// ============================================================
+const NS = 'medexam2_';
+const DB = {
+  get(k, d = null) { try { return JSON.parse(localStorage.getItem(NS+k)) ?? d; } catch { return d; } },
+  set(k, v) { try { localStorage.setItem(NS+k, JSON.stringify(v)); } catch {} }
+};
+
+function getState() {
+  return DB.get('state', {
+    streak: 0, lastDate: null, xpToday: 0, xpTotal: 0,
+    totalAnswered: 0, totalCorrect: 0,
+    missionsCompleted: [],
+    mastery: {},  // subtopicId -> {level:0-3, correct, total, nextReview}
+    settings: { sounds: true, haptics: true },
+  });
+}
+function saveState(s) { DB.set('state', s); }
+
+// ============================================================
+// STREAK
+// ============================================================
+function todayStr() { return new Date().toISOString().split('T')[0]; }
+function yesterdayStr() { return new Date(Date.now()-86400000).toISOString().split('T')[0]; }
+
+function touchStreak(state) {
+  const t = todayStr();
+  if (state.lastDate === t) return state;
+  if (state.lastDate === yesterdayStr()) state.streak++;
+  else state.streak = 1;
+  state.lastDate = t;
+  state.xpToday = 0;
+  state.missionsCompleted = [];
+  return state;
+}
+
+// ============================================================
+// XP
+// ============================================================
+const XP_CORRECT = 10, XP_CARD = 5, XP_GOAL = 100;
+function addXP(state, n) {
+  state.xpToday = Math.min(state.xpToday + n, XP_GOAL * 3);
+  state.xpTotal += n;
+  return state;
+}
+
+// ============================================================
+// MASTERY / SPACED REPETITION
+// ============================================================
+const MASTERY_CLS = ['unseen','learning','familiar','mastered'];
+
+function getMastery(state, subId) {
+  return state.mastery[subId] || { level: 0, correct: 0, total: 0, nextReview: null };
+}
+
+function updateMastery(state, subId, correct) {
+  const m = getMastery(state, subId);
+  m.total++;
+  if (correct) m.correct++;
+  const acc = m.total > 0 ? m.correct / m.total : 0;
+  if (m.total >= 5 && acc >= 0.90) m.level = 3;
+  else if (m.total >= 3 && acc >= 0.70) m.level = 2;
+  else m.level = Math.max(1, m.level);
+  const days = [1,1,3,7][Math.min(m.level, 3)];
+  m.nextReview = new Date(Date.now() + (correct ? days : 1) * 86400000).toISOString().split('T')[0];
+  state.mastery[subId] = m;
+  return state;
+}
+
+function getAllSubtopics() {
+  if (!SYLLABUS) return [];
+  const out = [];
+  for (const area of SYLLABUS.areas)
+    for (const ch of area.chapters)
+      for (const sub of ch.subtopics)
+        out.push({ ...sub, chapterId: ch.id, areaId: area.id });
+  return out;
+}
+
+function getWeakSubtopics(state, limit = 6) {
+  const t = todayStr();
+  return getAllSubtopics()
+    .map(s => ({ ...s, m: getMastery(state, s.id) }))
+    .filter(s => s.m.level < 3)
+    .sort((a, b) => {
+      if (a.m.level !== b.m.level) return a.m.level - b.m.level;
+      const ad = !a.m.nextReview || a.m.nextReview <= t;
+      const bd = !b.m.nextReview || b.m.nextReview <= t;
+      if (ad && !bd) return -1;
+      if (!ad && bd) return 1;
+      return (a.m.correct / Math.max(a.m.total, 1)) - (b.m.correct / Math.max(b.m.total, 1));
+    })
+    .slice(0, limit);
+}
+
+// ============================================================
+// MISSIONS
+// ============================================================
+function buildMissions(state) {
+  const missions = [];
+
+  // 1. New lesson
+  const newLesson = LESSONS.find(l => {
+    const chSubs = getAllSubtopics().filter(s => s.chapterId === l.chapterId);
+    return chSubs.some(s => getMastery(state, s.id).level === 0);
+  }) || LESSONS[0];
+  missions.push({
+    id: 'learn_new', type: 'learn', icon: '📚',
+    title: 'שיעור חדש',
+    meta: newLesson ? `${newLesson.title} • ~${newLesson.estimatedMinutes} דק'` : 'כל השיעורים הושלמו!',
+    lessonId: newLesson?.id, xp: 30,
+  });
+
+  // 2. Weak review
+  const weakQs = QUESTIONS.filter(q => getMastery(state, q.subtopicId).level < 2)
+    .sort(() => Math.random() - .5).slice(0, 5);
+  missions.push({
+    id: 'review_weak', type: 'review', icon: '🎯',
+    title: 'חיזוק נקודות חולשה',
+    meta: `${weakQs.length} שאלות · נושאים חלשים`,
+    questionIds: weakQs.map(q => q.id), xp: 25,
+  });
+
+  // 3. Area-of-day
+  if (SYLLABUS) {
+    const areaIdx = new Date().getDay() % SYLLABUS.areas.length;
+    const area = SYLLABUS.areas[areaIdx];
+    const aQs = QUESTIONS.filter(q => q.areaId === area.id).sort(() => Math.random() - .5).slice(0, 5);
+    missions.push({
+      id: 'area_daily', type: 'practice', icon: area.icon,
+      title: `תרגול: ${area.title}`,
+      meta: `${aQs.length} שאלות · ${area.titleEn}`,
+      questionIds: aQs.map(q => q.id), xp: 20,
+    });
+  }
+  return missions;
+}
+
+// ============================================================
+// NAVIGATION
+// ============================================================
+function switchTab(name, el) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.tab-item').forEach(t => t.classList.remove('active'));
+  document.getElementById('screen-' + name).classList.add('active');
+  el.classList.add('active');
+  if (name === 'progress') renderProgress();
+  if (name === 'explore') renderExplore();
+  if (name === 'profile') renderProfile();
+}
+
+// ============================================================
+// HOME
+// ============================================================
+function renderHome() {
+  let state = getState();
+  state = touchStreak(state);
+  saveState(state);
+
+  const h = new Date().getHours();
+  document.getElementById('greeting').textContent = h<12?'בוקר טוב ☀️':h<18?'צהריים טובים 🌤️':'ערב טוב 🌙';
+  const DAYS=['ראשון','שני','שלישי','רביעי','חמישי','שישי','שבת'];
+  const MONTHS=['ינואר','פברואר','מרץ','אפריל','מאי','יוני','יולי','אוגוסט','ספטמבר','אוקטובר','נובמבר','דצמבר'];
+  const d = new Date();
+  document.getElementById('greeting-date').textContent = `יום ${DAYS[d.getDay()]}, ${d.getDate()} ${MONTHS[d.getMonth()]}`;
+  document.getElementById('streak-num').textContent = state.streak;
+
+  const pct = Math.min((state.xpToday / XP_GOAL) * 100, 100);
+  document.getElementById('xp-display').textContent = `${state.xpToday} / ${XP_GOAL} XP`;
+  document.getElementById('xp-fill').style.width = pct + '%';
+
+  // Missions
+  const missions = buildMissions(state);
+  document.getElementById('missions').innerHTML = missions.map(m => {
+    const done = state.missionsCompleted.includes(m.id);
+    return `<div class="mission-item ${done?'done':''}" onclick='startMission(${JSON.stringify(m)})'>
+      <div class="m-icon ${m.type}">${m.icon}</div>
+      <div class="m-info"><div class="m-title">${m.title}</div><div class="m-meta">${m.meta}</div></div>
+      ${done ? '<div class="m-badge">✓</div>' : `<div class="m-xp">⭐${m.xp}</div>`}
+    </div>`;
+  }).join('');
+
+  // Areas
+  if (!SYLLABUS) return;
+  document.getElementById('areas-grid').innerHTML = SYLLABUS.areas.map(area => {
+    const subs = area.chapters.flatMap(c => c.subtopics);
+    const mastered = subs.filter(s => getMastery(state, s.id).level >= 3).length;
+    const pctA = subs.length > 0 ? Math.round((mastered / subs.length) * 100) : 0;
+    return `<div class="area-card" style="background:linear-gradient(135deg,${area.color}CC,${area.color})" onclick="startAreaPractice('${area.id}')">
+      <div class="a-icon">${area.icon}</div>
+      <div class="a-title">${area.title}</div>
+      <div class="a-sub">${area.titleEn}</div>
+      <div class="a-track"><div class="a-fill" style="width:${pctA}%"></div></div>
+      <div class="a-pct">${pctA}% שולטים · ${subs.length} נושאים</div>
+    </div>`;
+  }).join('');
+}
+
+// ============================================================
+// EXPLORE
+// ============================================================
+let exploreQ = '';
+function renderExplore() {
+  if (!SYLLABUS) return;
+  const state = getState();
+  const q = exploreQ.toLowerCase().trim();
+  let html = '';
+  for (const area of SYLLABUS.areas) {
+    const filteredChs = area.chapters.filter(ch => {
+      if (!q) return true;
+      if (ch.title.includes(q) || ch.titleEn.toLowerCase().includes(q)) return true;
+      return ch.subtopics.some(s => s.title.includes(q) || s.titleEn.toLowerCase().includes(q));
+    });
+    if (!filteredChs.length) continue;
+    html += `<div class="explore-area">
+      <div class="ea-hdr">
+        <div class="area-dot" style="background:${area.color}"></div>
+        <div class="area-name-txt">${area.icon} ${area.title}</div>
+      </div>`;
+    for (const ch of filteredChs) {
+      const total = ch.subtopics.length;
+      const mastered = ch.subtopics.filter(s => getMastery(state, s.id).level >= 2).length;
+      const pct = Math.round((mastered / total) * 100);
+      html += `<div class="chapter-card">
+        <div class="ch-hdr" onclick="toggleChapter('${ch.id}')">
+          <div class="ch-info">
+            <div class="ch-name">${ch.title}</div>
+            <div class="ch-meta">${ch.titleEn} · ${total} נושאי משנה</div>
+          </div>
+          ${ringHTML(pct, area.color)}
+          <span class="ch-chev" id="chev-${ch.id}">▼</span>
+        </div>
+        <div class="ch-subs" id="csubs-${ch.id}">
+          ${ch.subtopics.map(s => {
+            const m = getMastery(state, s.id);
+            const cls = MASTERY_CLS[m.level];
+            return `<span class="sub-pill ${cls}" onclick="practiceSubtopic('${s.id}','${ch.id}','${area.id}')">
+              <span class="sub-dot"></span>${s.title}
+            </span>`;
+          }).join('')}
+          <div><span class="practice-btn" onclick="event.stopPropagation();startChapterPractice('${ch.id}','${area.id}')">📝 תרגל פרק זה</span></div>
+          <div><span class="practice-btn" style="background:rgba(52,199,89,.1);color:var(--success)" onclick="event.stopPropagation();startChapterLesson('${ch.id}')">📖 שיעור לפרק זה</span></div>
+        </div>
+      </div>`;
+    }
+    html += '</div>';
+  }
+  document.getElementById('explore-content').innerHTML = html || '<div class="empty"><div class="empty-e">🔍</div><div class="empty-t">לא נמצאו תוצאות</div></div>';
+}
+
+function filterExplore(v) { exploreQ = v; renderExplore(); }
+function toggleChapter(id) {
+  document.getElementById('csubs-'+id)?.classList.toggle('open');
+  document.getElementById('chev-'+id)?.classList.toggle('open');
+}
+
+function ringHTML(pct, color) {
+  const r = 14, circ = 2 * Math.PI * r, dash = (pct / 100) * circ;
+  return `<svg class="ch-ring" viewBox="0 0 36 36">
+    <circle cx="18" cy="18" r="${r}" fill="none" stroke="#E5E5EA" stroke-width="3"/>
+    <circle cx="18" cy="18" r="${r}" fill="none" stroke="${color}" stroke-width="3"
+      stroke-dasharray="${dash} ${circ}" stroke-linecap="round" transform="rotate(-90 18 18)"/>
+    <text x="18" y="22" text-anchor="middle" font-size="9" font-weight="700" fill="${color}">${pct}%</text>
+  </svg>`;
+}
+
+// ============================================================
+// PROGRESS
+// ============================================================
+function renderProgress() {
+  if (!SYLLABUS) return;
+  const state = getState();
+  let mastered = 0, learning = 0, unseen = 0;
+  for (const area of SYLLABUS.areas)
+    for (const ch of area.chapters)
+      for (const sub of ch.subtopics) {
+        const l = getMastery(state, sub.id).level;
+        if (l >= 3) mastered++;
+        else if (l >= 1) learning++;
+        else unseen++;
+      }
+  document.getElementById('s-mastered').textContent = mastered;
+  document.getElementById('s-learning').textContent = learning;
+  document.getElementById('s-unseen').textContent = unseen;
+
+  let html = '';
+  for (const area of SYLLABUS.areas) {
+    const subs = area.chapters.flatMap(c => c.subtopics);
+    const m = subs.filter(s => getMastery(state, s.id).level >= 3).length;
+    const pct = Math.round((m / subs.length) * 100);
+    html += `<div class="mastery-area">
+      <div class="ma-hdr" id="mahdr-${area.id}" onclick="toggleMasteryArea('${area.id}')">
+        <span class="ma-icon">${area.icon}</span>
+        <span class="ma-name">${area.title}</span>
+        <span class="ma-pct" style="color:${area.color}">${pct}%</span>
+        <span class="ma-ch" id="mach-${area.id}">▼</span>
+      </div>
+      <div class="ma-body" id="mabody-${area.id}">`;
+    for (const ch of area.chapters) {
+      html += `<div class="ch-row">
+        <div class="ch-row-name">${ch.title}</div>
+        <div class="pills-wrap">`;
+      for (const sub of ch.subtopics) {
+        const l = getMastery(state, sub.id).level;
+        html += `<span class="sub-pill ${MASTERY_CLS[l]}" onclick="practiceSubtopic('${sub.id}','${ch.id}','${area.id}')">
+          <span class="sub-dot"></span>${sub.title}
+        </span>`;
+      }
+      html += '</div></div>';
+    }
+    html += '</div></div>';
+  }
+  document.getElementById('mastery-map').innerHTML = html;
+}
+
+function toggleMasteryArea(id) {
+  const hdr = document.getElementById('mahdr-'+id);
+  const body = document.getElementById('mabody-'+id);
+  const ch = document.getElementById('mach-'+id);
+  const isOpen = body.classList.toggle('open');
+  ch.classList.toggle('open', isOpen);
+  hdr.classList.toggle('open-hdr', isOpen);
+}
+
+// ============================================================
+// PROFILE
+// ============================================================
+function renderProfile() {
+  const state = getState();
+  document.getElementById('p-streak').textContent = state.streak + ' ימים';
+  document.getElementById('p-xp').textContent = state.xpTotal.toLocaleString() + ' XP';
+  document.getElementById('p-ans').textContent = state.totalAnswered;
+  const acc = state.totalAnswered > 0 ? Math.round((state.totalCorrect/state.totalAnswered)*100) + '%' : '—';
+  document.getElementById('p-acc').textContent = acc;
+  const seen = Object.keys(state.mastery).length;
+  document.getElementById('p-seen').textContent = `${seen} / 175`;
+  ['sounds','haptics'].forEach(k => {
+    const el = document.getElementById('tog-'+k);
+    if (el) el.classList.toggle('on', !!state.settings?.[k]);
+  });
+  if (OFFICIAL_RAW?.books) {
+    document.getElementById('books-list').innerHTML = OFFICIAL_RAW.books.map(b =>
+      `<div style="font-size:14px;color:var(--label2);padding:4px 0;border-bottom:.5px solid var(--sep);line-height:1.4">
+        <strong>${b.title}</strong><br>
+        <span style="color:var(--label4)">${b.edition} · ${b.year_in_official_syllabus}</span>
+      </div>`
+    ).join('');
+  }
+}
+
+function toggleSetting(k) {
+  const state = getState();
+  if (!state.settings) state.settings = {};
+  state.settings[k] = !state.settings[k];
+  saveState(state);
+  renderProfile();
+  haptic();
+}
+
+// ============================================================
+// MISSION DISPATCH
+// ============================================================
+function startMission(mission) {
+  haptic();
+  if (mission.lessonId) {
+    const l = LESSONS.find(x => x.id === mission.lessonId);
+    if (l) { startLesson(l, mission); return; }
+  }
+  if (mission.questionIds?.length) {
+    const qs = mission.questionIds.map(id => QUESTIONS.find(q => q.id === id)).filter(Boolean);
+    if (qs.length) { startQuizSession(qs, mission); return; }
+  }
+  showToast('תוכן בהכנה — הוסף שאלות ל-questions.json');
+}
+
+function startAreaPractice(areaId) {
+  haptic();
+  const qs = QUESTIONS.filter(q => q.areaId === areaId).sort(() => Math.random() - .5).slice(0, 6);
+  if (!qs.length) { showToast('אין שאלות לתחום זה עדיין'); return; }
+  const area = SYLLABUS?.areas.find(a => a.id === areaId);
+  startQuizSession(qs, { id: 'area_'+areaId, title: `תרגול: ${area?.title||areaId}`, xp: 20 });
+}
+
+function startChapterPractice(chId, areaId) {
+  haptic();
+  const qs = QUESTIONS.filter(q => q.chapterId === chId).sort(() => Math.random() - .5).slice(0, 5);
+  if (!qs.length) { showToast('אין שאלות לפרק זה עדיין'); return; }
+  startQuizSession(qs, { id: 'ch_'+chId, title: 'תרגול פרק', xp: 15 });
+}
+
+function startChapterLesson(chId) {
+  haptic();
+  const lesson = LESSONS.find(l => l.chapterId === chId);
+  if (!lesson) { showToast('אין שיעור לפרק זה עדיין'); return; }
+  startLesson(lesson, { id: 'lesson_'+chId, title: lesson.title, xp: 20 });
+}
+
+function practiceSubtopic(subId, chId, areaId) {
+  haptic();
+  const qs = QUESTIONS.filter(q => q.subtopicId === subId);
+  if (!qs.length) {
+    const lesson = LESSONS.find(l => l.chapterId === chId);
+    if (lesson) { startLesson(lesson, { id: 'sub_'+subId, title: 'למידה', xp: 10 }); return; }
+    showToast('תוכן בהכנה לנושא זה');
+    return;
+  }
+  startQuizSession(qs, { id: 'sub_'+subId, title: 'תרגול נושא', xp: 15 });
+}
+
+// ============================================================
+// LESSON FLOW
+// ============================================================
+let CUR_LESSON = null, CUR_LESSON_IDX = 0, CUR_MISSION = null;
+
+function startLesson(lesson, mission) {
+  CUR_LESSON = lesson;
+  CUR_LESSON_IDX = 0;
+  CUR_MISSION = mission;
+  renderLessonSlide();
+}
+
+function renderLessonSlide() {
+  const lesson = CUR_LESSON, idx = CUR_LESSON_IDX;
+  const cards = lesson.cards || [];
+  if (idx >= cards.length) { startFollowUpQuestions(); return; }
+  const card = cards[idx];
+  if (card.type === 'quiz_prompt') {
+    let state = getState(); state = addXP(state, XP_CARD); saveState(state);
+    startFollowUpQuestions();
+    return;
+  }
+  const totalSteps = cards.length + (lesson.followUpQuestionIds?.length || 0);
+  const pct = Math.round((idx / Math.max(totalSteps, 1)) * 100);
+  const isLast = idx >= cards.length - 1;
+  const btnTxt = isLast && !(lesson.followUpQuestionIds?.length) ? 'סיום ✓' : 'הבא →';
+
+  openOverlay(`
+    <div class="ov-hdr">
+      <button class="close-btn" onclick="closeOverlay()">✕</button>
+      <div class="prog-track"><div class="prog-fill" style="width:${pct}%"></div></div>
+      <div class="xp-badge">⭐${CUR_MISSION?.xp||20}</div>
+    </div>
+    <div class="ov-body">
+      <div class="area-chip">${getAreaTitle(lesson.areaId)} · ${lesson.titleEn||lesson.title}</div>
+      ${buildConceptHTML(card)}
+    </div>
+    <div class="ov-footer">
+      <button class="btn btn-accent" onclick="lessonNext()">${btnTxt}</button>
+    </div>
+  `);
+}
+
+function buildConceptHTML(card) {
+  const content = (card.content||'').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+  const kps = (card.keyPoints||[]).map(kp => `<div class="kp">${kp}</div>`).join('');
+  return `<div class="concept-card">
+    <h2>${card.title||''}</h2>
+    <div class="concept-body">${content}</div>
+    ${kps ? `<div class="key-points">${kps}</div>` : ''}
+  </div>`;
+}
+
+function lessonNext() {
+  haptic();
+  let state = getState(); state = addXP(state, XP_CARD); saveState(state);
+  CUR_LESSON_IDX++;
+  renderLessonSlide();
+}
+
+// Follow-up questions
+let FUQ = [], FUQ_IDX = 0;
+function startFollowUpQuestions() {
+  const ids = CUR_LESSON?.followUpQuestionIds || [];
+  FUQ = ids.map(id => QUESTIONS.find(q => q.id === id)).filter(Boolean);
+  FUQ_IDX = 0;
+  if (!FUQ.length) { completeSession(0, 0, CUR_MISSION); return; }
+  renderQuestionSlide(FUQ[0], 'lesson');
+}
+
+// ============================================================
+// QUIZ SESSION
+// ============================================================
+let SESSION_QS = [], SESSION_IDX = 0, SESSION_CORRECT = 0, SESSION_MISSION = null;
+
+function startQuizSession(qs, mission) {
+  SESSION_QS = qs.sort(() => Math.random() - .5);
+  SESSION_IDX = 0; SESSION_CORRECT = 0; SESSION_MISSION = mission;
+  renderQuestionSlide(SESSION_QS[0], 'session');
+}
+
+function renderQuestionSlide(q, mode) {
+  const total = mode === 'lesson' ? FUQ.length : SESSION_QS.length;
+  const idx = mode === 'lesson' ? FUQ_IDX : SESSION_IDX;
+  const pct = total > 0 ? Math.round((idx / total) * 100) : 0;
+  const letters = ['א','ב','ג','ד'];
+  const diffCls = ['','diff-1','diff-2','diff-3'][q.difficulty] || 'diff-1';
+  const diffTxt = ['','קל','בינוני','מתקדם'][q.difficulty] || '';
+
+  openOverlay(`
+    <div class="ov-hdr">
+      <button class="close-btn" onclick="closeOverlay()">✕</button>
+      <div class="prog-track"><div class="prog-fill" style="width:${pct}%"></div></div>
+      <div class="xp-badge">⭐${XP_CORRECT}</div>
+    </div>
+    <div class="ov-body">
+      <div class="q-card">
+        <div class="q-meta">
+          ${getAreaTitle(q.areaId)}
+          <span class="diff-badge ${diffCls}">${diffTxt}</span>
+        </div>
+        <div class="q-text">${q.question}</div>
+        <div class="options" id="opts">
+          ${q.options.map((o,i) => `
+            <button class="opt" id="opt-${i}"
+              onclick="selectAnswer(${i},${q.correctIndex},'${q.id}','${q.subtopicId}','${mode}')">
+              <span class="opt-letter">${letters[i]}</span><span>${o}</span>
+            </button>`).join('')}
+        </div>
+      </div>
+      <div id="exp-area"></div>
+    </div>
+    <div class="ov-footer">
+      <button class="btn btn-accent" id="next-btn" style="display:none" onclick="nextQuestion('${mode}')">המשך →</button>
+    </div>
+  `);
+}
+
+function selectAnswer(chosen, correct, qId, subId, mode) {
+  if (document.querySelector('.opt.locked')) return;
+  haptic();
+  const isCorrect = (chosen === correct);
+  let state = getState();
+  state.totalAnswered++;
+  if (isCorrect) state.totalCorrect++;
+  state = updateMastery(state, subId, isCorrect);
+  if (isCorrect) state = addXP(state, XP_CORRECT);
+  saveState(state);
+  if (mode === 'session' && isCorrect) SESSION_CORRECT++;
+
+  document.querySelectorAll('.opt').forEach((btn, i) => {
+    btn.classList.add('locked');
+    if (i === correct) btn.classList.add('correct');
+    if (i === chosen && !isCorrect) btn.classList.add('wrong');
+  });
+
+  const q = QUESTIONS.find(x => x.id === qId);
+  const expArea = document.getElementById('exp-area');
+  if (expArea && q) {
+    const exp = (q.explanation||'').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+    expArea.innerHTML = `<div class="exp-card ${isCorrect?'ok':'fail'}">
+      <div class="exp-hdr"><span class="exp-icon">${isCorrect?'🎉':'💡'}</span>
+        <span class="exp-title">${isCorrect?'נכון!':'לא בדיוק'}</span></div>
+      <div class="exp-text">${exp}</div>
+    </div>`;
+    setTimeout(() => expArea.scrollIntoView({behavior:'smooth',block:'nearest'}), 50);
+  }
+  const nextBtn = document.getElementById('next-btn');
+  nextBtn.style.display = 'block';
+  nextBtn.className = `btn ${isCorrect?'btn-success':'btn-accent'}`;
+}
+
+function nextQuestion(mode) {
+  haptic();
+  if (mode === 'lesson') {
+    FUQ_IDX++;
+    if (FUQ_IDX < FUQ.length) renderQuestionSlide(FUQ[FUQ_IDX], 'lesson');
+    else completeSession(FUQ.length, FUQ.filter((_,i) => i < FUQ_IDX).length, CUR_MISSION);
+  } else {
+    SESSION_IDX++;
+    if (SESSION_IDX < SESSION_QS.length) renderQuestionSlide(SESSION_QS[SESSION_IDX], 'session');
+    else completeSession(SESSION_QS.length, SESSION_CORRECT, SESSION_MISSION);
+  }
+}
+
+// ============================================================
+// COMPLETE SCREEN
+// ============================================================
+function completeSession(total, correct, mission) {
+  const acc = total > 0 ? Math.round((correct / total) * 100) : 100;
+  const xpEarned = correct * XP_CORRECT;
+  const emoji = acc >= 80 ? '🏆' : acc >= 60 ? '🌟' : '💪';
+  const title = acc >= 80 ? 'מעולה!' : acc >= 60 ? 'כמעט שם!' : 'המשך להתאמן!';
+
+  if (mission) {
+    let state = getState();
+    if (!state.missionsCompleted.includes(mission.id)) {
+      state.missionsCompleted.push(mission.id);
+      state = addXP(state, mission.xp || 0);
+      saveState(state);
+    }
+  }
+
+  const el = document.getElementById('overlay');
+  el.style.display = 'flex';
+  el.innerHTML = `<div class="complete">
+    <div class="complete-emoji">${emoji}</div>
+    <div class="c-title">${title}</div>
+    <div class="c-sub">סיימת סשן לימוד בהצלחה</div>
+    <div class="c-stats">
+      <div class="c-stat"><div class="c-val">${correct}/${total}</div><div class="c-lbl">נכון</div></div>
+      <div class="c-stat"><div class="c-val">${acc}%</div><div class="c-lbl">דיוק</div></div>
+      <div class="c-stat"><div class="c-val" style="color:var(--warning)">+${xpEarned}</div><div class="c-lbl">XP</div></div>
+    </div>
+    <button class="btn btn-accent" style="margin-bottom:12px" onclick="closeOverlay()">חזרה לתרגול</button>
+    <button class="btn btn-ghost" onclick="switchTab('progress',document.querySelector('[data-tab=progress]'));closeOverlay()">ראה התקדמות →</button>
+  </div>`;
+}
+
+// ============================================================
+// OVERLAY
+// ============================================================
+function openOverlay(html) {
+  const el = document.getElementById('overlay');
+  el.style.display = 'flex';
+  el.className = 'overlay';
+  el.innerHTML = html;
+}
+function closeOverlay() {
+  document.getElementById('overlay').style.display = 'none';
+  CUR_LESSON = null; FUQ = []; SESSION_QS = [];
+  renderHome();
+}
+function getAreaTitle(areaId) {
+  return SYLLABUS?.areas.find(a => a.id === areaId)?.title || areaId || '';
+}
+
+// ============================================================
+// TOAST
+// ============================================================
+let toastT = null;
+function showToast(msg) {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.classList.add('show');
+  if (toastT) clearTimeout(toastT);
+  toastT = setTimeout(() => el.classList.remove('show'), 2800);
+}
+
+// ============================================================
+// HAPTICS
+// ============================================================
+function haptic() {
+  if (getState().settings?.haptics && navigator.vibrate) navigator.vibrate(10);
+}
+
+// ============================================================
+// PROFILE ACTIONS
+// ============================================================
+function exportData() {
+  const d = {};
+  for (let i = 0; i < localStorage.length; i++) {
+    const k = localStorage.key(i);
+    if (k?.startsWith(NS)) d[k] = localStorage.getItem(k);
+  }
+  const blob = new Blob([JSON.stringify(d, null, 2)], {type:'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a'); a.href = url; a.download = 'medexam-backup.json'; a.click();
+  URL.revokeObjectURL(url);
+  showToast('גיבוי הורד בהצלחה');
+}
+function resetConfirm() {
+  if (confirm('למחוק את כל הנתונים? פעולה זו אינה הפיכה.')) {
+    for (let i = localStorage.length - 1; i >= 0; i--) {
+      const k = localStorage.key(i); if (k?.startsWith(NS)) localStorage.removeItem(k);
+    }
+    showToast('הנתונים אופסו'); renderHome();
+  }
+}
+
+// ============================================================
+// SERVICE WORKER
+// ============================================================
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));
+}
+
+// ============================================================
+// INIT
+// ============================================================
+async function init() {
+  await loadData();
+  renderHome();
+}
+init();
+</script>
+</body>
+</html>

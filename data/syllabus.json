@@ -1,0 +1,1720 @@
+{
+  "areas": [
+    {
+      "id": "biochemistry",
+      "title": "ביוכימיה",
+      "titleEn": "Biochemistry",
+      "color": "#4F8EF7",
+      "icon": "🧪",
+      "chapters": [
+        {
+          "id": "biochemistry-ch-01",
+          "title": "יסודות הביוכימיה",
+          "titleEn": "The Foundations of Biochemistry",
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-01-introduction",
+              "title": "מבוא לפרק",
+              "titleEn": "Introduction",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "biochemistry-ch-01-sec-1-2",
+              "title": "יסודות כימיים",
+              "titleEn": "Chemical Foundations",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "biochemistry-ch-01-sec-1-3",
+              "title": "יסודות פיזיקליים",
+              "titleEn": "Physical Foundations",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            }
+          ]
+        },
+        {
+          "id": "biochemistry-ch-02",
+          "title": "מים, הממס של החיים",
+          "titleEn": "Water, the Solvent of Life",
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-02-sec-2-1",
+              "title": "אינטראקציות חלשות במערכות מימיות",
+              "titleEn": "Weak Interactions in Aqueous Systems",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "biochemistry-ch-02-sec-2-2",
+              "title": "יינון מים, חומצות חלשות ובסיסים חלשים",
+              "titleEn": "Ionization of Water, Weak Acids, and Weak Bases",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "biochemistry-ch-02-sec-2-3",
+              "title": "בופרים ומניעת שינויי pH במערכות ביולוגיות",
+              "titleEn": "Buffering against pH Changes in Biological Systems",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            }
+          ]
+        },
+        {
+          "id": "biochemistry-ch-03",
+          "title": "חומצות אמינו, פפטידים וחלבונים",
+          "titleEn": "Amino Acids, Peptides, and Proteins",
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-03-sec-3-1",
+              "title": "חומצות אמינו",
+              "titleEn": "Amino Acids",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "biochemistry-ch-03-sec-3-2",
+              "title": "פפטידים וחלבונים",
+              "titleEn": "Peptides and Proteins",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "biochemistry-ch-03-sec-3-3",
+              "title": "שיטות עבודה עם חלבונים",
+              "titleEn": "Working with Proteins",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            },
+            {
+              "id": "biochemistry-ch-03-sec-3-4",
+              "title": "מבנה חלבונים: מבנה ראשוני",
+              "titleEn": "The Structure of Proteins: Primary Structure",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 4
+            }
+          ]
+        },
+        {
+          "id": "biochemistry-ch-04",
+          "title": "המבנה התלת-ממדי של חלבונים",
+          "titleEn": "The Three-Dimensional Structure of Proteins",
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-04-sec-4-1",
+              "title": "סקירת מבנה חלבונים",
+              "titleEn": "Overview of Protein Structure",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "biochemistry-ch-04-sec-4-2",
+              "title": "מבנה שניוני של חלבונים",
+              "titleEn": "Protein Secondary Structure",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "biochemistry-ch-04-sec-4-3",
+              "title": "מבנים שלישוניים ורביעוניים של חלבונים",
+              "titleEn": "Protein Tertiary and Quaternary Structures",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            },
+            {
+              "id": "biochemistry-ch-04-sec-4-4",
+              "title": "דנטורציה וקיפול חלבונים",
+              "titleEn": "Protein Denaturation and Folding",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 4
+            },
+            {
+              "id": "biochemistry-ch-04-sec-4-5",
+              "title": "קביעת מבנים של חלבונים וביומולקולות",
+              "titleEn": "Determination of Protein and Biomolecular Structures",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 5
+            }
+          ]
+        },
+        {
+          "id": "biochemistry-ch-05",
+          "title": "תפקוד חלבונים",
+          "titleEn": "Protein Function",
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-05-sec-5-1",
+              "title": "קישור הפיך של חלבון לליגנד: חלבונים קושרי חמצן",
+              "titleEn": "Reversible Binding of a Protein to a Ligand: Oxygen-Binding Proteins",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "biochemistry-ch-05-sec-5-2",
+              "title": "אינטראקציות משלימות בין חלבונים לליגנדים: מערכת החיסון ו-Immunoglobulins",
+              "titleEn": "Complementary Interactions between Proteins and Ligands: The Immune System and Immunoglobulins",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "biochemistry-ch-05-sec-5-3",
+              "title": "אינטראקציות חלבונים המווסתות באנרגיה כימית: Actin, Myosin ומנועים מולקולריים",
+              "titleEn": "Protein Interactions Modulated by Chemical Energy: Actin, Myosin, and Molecular Motors",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            }
+          ]
+        },
+        {
+          "id": "biochemistry-ch-06",
+          "title": "אנזימים",
+          "titleEn": "Enzymes",
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-06-sec-6-1",
+              "title": "מבוא לאנזימים",
+              "titleEn": "An Introduction to Enzymes",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "biochemistry-ch-06-sec-6-2",
+              "title": "כיצד אנזימים פועלים",
+              "titleEn": "How Enzymes Work",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "biochemistry-ch-06-sec-6-3",
+              "title": "קינטיקה אנזימטית להבנת מנגנון הפעולה",
+              "titleEn": "Enzyme Kinetics as an Approach to Understanding Mechanism",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            },
+            {
+              "id": "biochemistry-ch-06-sec-6-4",
+              "title": "דוגמאות לתגובות אנזימטיות",
+              "titleEn": "Examples of Enzymatic Reactions",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 4
+            },
+            {
+              "id": "biochemistry-ch-06-sec-6-5",
+              "title": "אנזימים רגולטוריים",
+              "titleEn": "Regulatory Enzymes",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 5
+            }
+          ]
+        },
+        {
+          "id": "biochemistry-ch-07",
+          "title": "פחמימות ו-Glycobiology",
+          "titleEn": "Carbohydrates and Glycobiology",
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-07-sec-7-1",
+              "title": "חד-סוכרים ודו-סוכרים",
+              "titleEn": "Monosaccharides and Disaccharides",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "biochemistry-ch-07-sec-7-2",
+              "title": "רב-סוכרים",
+              "titleEn": "Polysaccharides",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "biochemistry-ch-07-sec-7-3",
+              "title": "Glycoconjugates: Proteoglycans, Glycoproteins ו-Glycolipids",
+              "titleEn": "Glycoconjugates: Proteoglycans, Glycoproteins, and Glycolipids",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            },
+            {
+              "id": "biochemistry-ch-07-sec-7-4",
+              "title": "פחמימות כמולקולות מידע: קוד הסוכרים",
+              "titleEn": "Carbohydrates as Informational Molecules: The Sugar Code",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 4
+            },
+            {
+              "id": "biochemistry-ch-07-sec-7-5",
+              "title": "שיטות עבודה עם פחמימות",
+              "titleEn": "Working with Carbohydrates",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 5
+            }
+          ]
+        },
+        {
+          "id": "biochemistry-ch-12",
+          "title": "איתות ביוכימי",
+          "titleEn": "Biochemical Signaling",
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-12-introduction",
+              "title": "מבוא לפרק",
+              "titleEn": "Introduction",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "biochemistry-ch-12-sec-12-1",
+              "title": "מאפיינים כלליים של העברת אותות",
+              "titleEn": "General Features of Signal Transduction",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "biochemistry-ch-12-sec-12-2",
+              "title": "קולטנים מצומדי G Protein ושליחים שניוניים",
+              "titleEn": "G Protein–Coupled Receptors and Second Messengers",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            },
+            {
+              "id": "biochemistry-ch-12-sec-12-4",
+              "title": "קולטני Tyrosine Kinase",
+              "titleEn": "Receptor Tyrosine Kinases",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 4
+            }
+          ]
+        },
+        {
+          "id": "biochemistry-ch-13",
+          "title": "מבוא למטבוליזם",
+          "titleEn": "Introduction to Metabolism",
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-13-introduction",
+              "title": "מבוא לפרק",
+              "titleEn": "Introduction",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "biochemistry-ch-13-sec-13-1",
+              "title": "ביואנרגטיקה ותרמודינמיקה",
+              "titleEn": "Bioenergetics and Thermodynamics",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "biochemistry-ch-13-sec-13-2",
+              "title": "היגיון כימי ותגובות ביוכימיות נפוצות",
+              "titleEn": "Chemical Logic and Common Biochemical Reactions",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            },
+            {
+              "id": "biochemistry-ch-13-sec-13-3",
+              "title": "העברת קבוצות Phosphoryl ו-ATP",
+              "titleEn": "Phosphoryl Group Transfers and ATP",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 4
+            },
+            {
+              "id": "biochemistry-ch-13-sec-13-4",
+              "title": "תגובות חמצון-חיזור ביולוגיות",
+              "titleEn": "Biological Oxidation-Reduction Reactions",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 5
+            }
+          ]
+        },
+        {
+          "id": "biochemistry-ch-14",
+          "title": "גליקוליזה, גלוקונאוגנזה ומסלול הפנטוזות",
+          "titleEn": "Glycolysis, Gluconeogenesis, and the Pentose Phosphate Pathway",
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-14-introduction",
+              "title": "מבוא לפרק",
+              "titleEn": "Introduction",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "biochemistry-ch-14-sec-14-1",
+              "title": "גליקוליזה",
+              "titleEn": "Glycolysis",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "biochemistry-ch-14-sec-14-3",
+              "title": "גורלות Pyruvate",
+              "titleEn": "Fates of Pyruvate",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            },
+            {
+              "id": "biochemistry-ch-14-sec-14-4",
+              "title": "גלוקונאוגנזה",
+              "titleEn": "Gluconeogenesis",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 4
+            },
+            {
+              "id": "biochemistry-ch-14-sec-14-5",
+              "title": "בקרה מתואמת של גליקוליזה וגלוקונאוגנזה",
+              "titleEn": "Coordinated Regulation of Glycolysis and Gluconeogenesis",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 5
+            },
+            {
+              "id": "biochemistry-ch-14-sec-14-6",
+              "title": "מסלול Pentose Phosphate לחמצון גלוקוז",
+              "titleEn": "Pentose Phosphate Pathway of Glucose Oxidation",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 6
+            }
+          ]
+        },
+        {
+          "id": "biochemistry-ch-15",
+          "title": "מטבוליזם של גליקוגן בבעלי חיים",
+          "titleEn": "The Metabolism of Glycogen in Animals",
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-15-sec-15-1",
+              "title": "מבנה ותפקוד של גליקוגן",
+              "titleEn": "The Structure and Function of Glycogen",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "biochemistry-ch-15-sec-15-2",
+              "title": "פירוק וסינתזה של גליקוגן",
+              "titleEn": "Breakdown and Synthesis of Glycogen",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "biochemistry-ch-15-sec-15-3",
+              "title": "בקרה מתואמת של פירוק וסינתזת גליקוגן",
+              "titleEn": "Coordinated Regulation of Glycogen Breakdown and Synthesis",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            }
+          ]
+        },
+        {
+          "id": "biochemistry-ch-16",
+          "title": "מעגל חומצת הלימון",
+          "titleEn": "The Citric Acid Cycle",
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-16-sec-16-1",
+              "title": "יצירת Acetyl-CoA",
+              "titleEn": "Production of Acetyl-CoA (Activated Acetate)",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "biochemistry-ch-16-sec-16-2",
+              "title": "תגובות מעגל חומצת הלימון",
+              "titleEn": "Reactions of the Citric Acid Cycle",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "biochemistry-ch-16-sec-16-3",
+              "title": "מוקד המטבוליזם הביניים",
+              "titleEn": "The Hub of Intermediary Metabolism",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            },
+            {
+              "id": "biochemistry-ch-16-sec-16-4",
+              "title": "בקרת מעגל חומצת הלימון",
+              "titleEn": "Regulation of the Citric Acid Cycle",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 4
+            }
+          ]
+        },
+        {
+          "id": "biochemistry-ch-17",
+          "title": "פירוק חומצות שומן",
+          "titleEn": "Fatty Acid Catabolism",
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-17-sec-17-1",
+              "title": "עיכול, גיוס והובלה של שומנים",
+              "titleEn": "Digestion, Mobilization, and Transport of Fats",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "biochemistry-ch-17-sec-17-2",
+              "title": "חמצון חומצות שומן",
+              "titleEn": "Oxidation of Fatty Acids",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "biochemistry-ch-17-sec-17-3",
+              "title": "גופי קטון",
+              "titleEn": "Ketone Bodies",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            }
+          ]
+        },
+        {
+          "id": "biochemistry-ch-18",
+          "title": "חמצון חומצות אמינו ויצירת אוריאה",
+          "titleEn": "Amino Acid Oxidation and the Production of Urea",
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-18-sec-18-1",
+              "title": "גורלות מטבוליים של קבוצות אמינו",
+              "titleEn": "Metabolic Fates of Amino Groups",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "biochemistry-ch-18-sec-18-2",
+              "title": "הפרשת חנקן ומעגל האוריאה",
+              "titleEn": "Nitrogen Excretion and the Urea Cycle",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "biochemistry-ch-18-sec-18-3",
+              "title": "מסלולי פירוק חומצות אמינו",
+              "titleEn": "Pathways of Amino Acid Degradation",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            }
+          ]
+        },
+        {
+          "id": "biochemistry-ch-19",
+          "title": "זרחון חמצוני",
+          "titleEn": "Oxidative Phosphorylation",
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-19-sec-19-1",
+              "title": "שרשרת הנשימה המיטוכונדריאלית",
+              "titleEn": "The Mitochondrial Respiratory Chain",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "biochemistry-ch-19-sec-19-2",
+              "title": "סינתזת ATP",
+              "titleEn": "ATP Synthesis",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "biochemistry-ch-19-sec-19-3",
+              "title": "בקרת הזרחון החמצוני",
+              "titleEn": "Regulation of Oxidative Phosphorylation",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            },
+            {
+              "id": "biochemistry-ch-19-sec-19-4",
+              "title": "מיטוכונדריה בייצור חום, סינתזת סטרואידים ו-Apoptosis",
+              "titleEn": "Mitochondria in Thermogenesis, Steroid Synthesis, and Apoptosis",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 4
+            },
+            {
+              "id": "biochemistry-ch-19-sec-19-5",
+              "title": "גנים מיטוכונדריאליים: מקורם והשפעות מוטציות",
+              "titleEn": "Mitochondrial Genes: Their Origin and the Effects of Mutations",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 5
+            }
+          ]
+        },
+        {
+          "id": "biochemistry-ch-21",
+          "title": "סינתזה של ליפידים",
+          "titleEn": "Lipid Biosynthesis",
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-21-sec-21-1",
+              "title": "סינתזת חומצות שומן ו-Eicosanoids",
+              "titleEn": "Biosynthesis of Fatty Acids and Eicosanoids",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "biochemistry-ch-21-sec-21-2",
+              "title": "סינתזת Triacylglycerols",
+              "titleEn": "Biosynthesis of Triacylglycerols",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "biochemistry-ch-21-sec-21-3",
+              "title": "סינתזת פוספוליפידים ממברנליים",
+              "titleEn": "Biosynthesis of Membrane Phospholipids",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            },
+            {
+              "id": "biochemistry-ch-21-sec-21-4",
+              "title": "Cholesterol, Steroids ו-Isoprenoids: סינתזה, בקרה והובלה",
+              "titleEn": "Cholesterol, Steroids, and Isoprenoids: Biosynthesis, Regulation, and Transport",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 4
+            }
+          ]
+        },
+        {
+          "id": "biochemistry-ch-22",
+          "title": "סינתזת חומצות אמינו, נוקלאוטידים ומולקולות קשורות",
+          "titleEn": "Biosynthesis of Amino Acids, Nucleotides, and Related Molecules",
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-22-introduction",
+              "title": "מבוא לפרק",
+              "titleEn": "Introduction",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "biochemistry-ch-22-sec-22-2",
+              "title": "סינתזת חומצות אמינו",
+              "titleEn": "Biosynthesis of Amino Acids",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            }
+          ]
+        },
+        {
+          "id": "biochemistry-ch-23",
+          "title": "בקרה הורמונלית ואינטגרציה של מטבוליזם ביונקים",
+          "titleEn": "Hormonal Regulation and Integration of Mammalian Metabolism",
+          "subtopics": [
+            {
+              "id": "biochemistry-ch-23-introduction",
+              "title": "מבוא לפרק",
+              "titleEn": "Introduction",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "biochemistry-ch-23-sec-23-2",
+              "title": "מטבוליזם ייחודי לרקמות",
+              "titleEn": "Tissue-Specific Metabolism",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "biochemistry-ch-23-sec-23-3",
+              "title": "בקרה הורמונלית של מטבוליזם מקורות אנרגיה",
+              "titleEn": "Hormonal Regulation of Fuel Metabolism",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "molecular-biology",
+      "title": "ביולוגיה מולקולרית",
+      "titleEn": "Molecular Biology",
+      "color": "#34C759",
+      "icon": "🧬",
+      "chapters": [
+        {
+          "id": "molecular-biology-ch-01",
+          "title": "תאים, גנומים ומגוון החיים",
+          "titleEn": "Cells, Genomes, and the Diversity of Life",
+          "subtopics": [
+            {
+              "id": "molecular-biology-ch-01-the-universal-features-of-life-on-earth",
+              "title": "המאפיינים האוניברסליים של החיים על פני כדור הארץ",
+              "titleEn": "The Universal Features of Life on Earth",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "molecular-biology-ch-01-genome-diversification-and-the-tree-of-life",
+              "title": "התגוונות גנומים ועץ החיים",
+              "titleEn": "Genome Diversification and the Tree of Life",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "molecular-biology-ch-01-eukaryotes-and-the-origin-of-the-eukaryotic-cell",
+              "title": "אאוקריוטים ומקור התא האאוקריוטי",
+              "titleEn": "Eukaryotes and the Origin of the Eukaryotic Cell",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            },
+            {
+              "id": "molecular-biology-ch-01-model-organisms",
+              "title": "אורגניזמי מודל",
+              "titleEn": "Model Organisms",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 4
+            }
+          ]
+        },
+        {
+          "id": "molecular-biology-ch-04",
+          "title": "DNA, כרומוזומים וגנומים",
+          "titleEn": "DNA, Chromosomes, and Genomes",
+          "subtopics": [
+            {
+              "id": "molecular-biology-ch-04-the-structure-and-function-of-dna",
+              "title": "המבנה והתפקוד של DNA",
+              "titleEn": "The Structure and Function of DNA",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "molecular-biology-ch-04-chromosomal-dna-and-its-packaging-in-the-chromatin-fiber",
+              "title": "DNA כרומוזומלי ואריזתו בסיב הכרומטין",
+              "titleEn": "Chromosomal DNA and Its Packaging in the Chromatin Fiber",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "molecular-biology-ch-04-the-effect-of-chromatin-structure-on-dna-function",
+              "title": "השפעת מבנה הכרומטין על תפקוד DNA",
+              "titleEn": "The Effect of Chromatin Structure on DNA Function",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            },
+            {
+              "id": "molecular-biology-ch-04-the-global-structure-of-chromosomes",
+              "title": "המבנה הכולל של כרומוזומים",
+              "titleEn": "The Global Structure of Chromosomes",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 4
+            },
+            {
+              "id": "molecular-biology-ch-04-how-genomes-evolve",
+              "title": "כיצד גנומים מתפתחים באבולוציה",
+              "titleEn": "How Genomes Evolve",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 5
+            }
+          ]
+        },
+        {
+          "id": "molecular-biology-ch-05",
+          "title": "שכפול, תיקון ו-Recombination של DNA",
+          "titleEn": "DNA Replication, Repair, and Recombination",
+          "subtopics": [
+            {
+              "id": "molecular-biology-ch-05-the-maintenance-of-dna-sequences",
+              "title": "שמירת רצפי DNA",
+              "titleEn": "The Maintenance of DNA Sequences",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "molecular-biology-ch-05-dna-replication-mechanisms",
+              "title": "מנגנוני שכפול DNA",
+              "titleEn": "DNA Replication Mechanisms",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "molecular-biology-ch-05-the-initiation-and-completion-of-dna-replication-in-chromosomes",
+              "title": "התחלה והשלמה של שכפול DNA בכרומוזומים",
+              "titleEn": "The Initiation and Completion of DNA Replication in Chromosomes",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            },
+            {
+              "id": "molecular-biology-ch-05-dna-repair",
+              "title": "תיקון DNA",
+              "titleEn": "DNA Repair",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 4
+            },
+            {
+              "id": "molecular-biology-ch-05-homologous-recombination",
+              "title": "Recombination הומולוגית",
+              "titleEn": "Homologous Recombination",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 5
+            },
+            {
+              "id": "molecular-biology-ch-05-transposition-and-conservative-site-specific-recombination",
+              "title": "Transposition ו-Recombination שמרנית ייחודית לאתר",
+              "titleEn": "Transposition and Conservative Site-Specific Recombination",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 6
+            }
+          ]
+        },
+        {
+          "id": "molecular-biology-ch-06",
+          "title": "כיצד תאים קוראים את הגנום: מ-DNA לחלבון",
+          "titleEn": "How Cells Read the Genome: From DNA to Protein",
+          "subtopics": [
+            {
+              "id": "molecular-biology-ch-06-from-dna-to-rna",
+              "title": "מ-DNA ל-RNA",
+              "titleEn": "From DNA to RNA",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "molecular-biology-ch-06-from-rna-to-protein",
+              "title": "מ-RNA לחלבון",
+              "titleEn": "From RNA to Protein",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "molecular-biology-ch-06-the-rna-world-and-the-origins-of-life",
+              "title": "עולם ה-RNA ומקור החיים",
+              "titleEn": "The RNA World and the Origins of Life",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            }
+          ]
+        },
+        {
+          "id": "molecular-biology-ch-07",
+          "title": "בקרת ביטוי גנים",
+          "titleEn": "Control of Gene Expression",
+          "subtopics": [
+            {
+              "id": "molecular-biology-ch-07-an-overview-of-gene-control",
+              "title": "סקירת בקרת גנים",
+              "titleEn": "An Overview of Gene Control",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "molecular-biology-ch-07-control-of-transcription-by-sequence-specific-dna-binding-proteins",
+              "title": "בקרת שעתוק באמצעות חלבונים קושרי DNA ייחודיים לרצף",
+              "titleEn": "Control of Transcription by Sequence-Specific DNA-Binding Proteins",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "molecular-biology-ch-07-transcription-regulators-switch-genes-on-and-off",
+              "title": "רגולטורים של שעתוק מפעילים ומשתיקים גנים",
+              "titleEn": "Transcription Regulators Switch Genes On and Off",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            },
+            {
+              "id": "molecular-biology-ch-07-molecular-genetic-mechanisms-that-create-and-maintain-specialized-cell-types",
+              "title": "מנגנונים גנטיים מולקולריים ליצירה ולשמירה של סוגי תאים מתמחים",
+              "titleEn": "Molecular Genetic Mechanisms That Create and Maintain Specialized Cell Types",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 4
+            },
+            {
+              "id": "molecular-biology-ch-07-mechanisms-that-reinforce-cell-memory-in-plants-and-animals",
+              "title": "מנגנונים המחזקים זיכרון תאי בצמחים ובבעלי חיים",
+              "titleEn": "Mechanisms That Reinforce Cell Memory in Plants and Animals",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 5
+            },
+            {
+              "id": "molecular-biology-ch-07-post-transcriptional-controls",
+              "title": "בקרה לאחר שעתוק",
+              "titleEn": "Post-Transcriptional Controls",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 6
+            },
+            {
+              "id": "molecular-biology-ch-07-regulation-of-gene-expression-by-noncoding-rnas",
+              "title": "בקרת ביטוי גנים באמצעות RNA לא מקודד",
+              "titleEn": "Regulation of Gene Expression by Noncoding RNAs",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 7
+            }
+          ]
+        },
+        {
+          "id": "molecular-biology-ch-08",
+          "title": "ניתוח תאים, מולקולות ומערכות",
+          "titleEn": "Analyzing Cells, Molecules, and Systems",
+          "subtopics": [
+            {
+              "id": "molecular-biology-ch-08-isolating-cells-and-growing-them-in-culture",
+              "title": "בידוד תאים וגידולם בתרבית",
+              "titleEn": "Isolating Cells and Growing Them in Culture",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "molecular-biology-ch-08-purifying-proteins",
+              "title": "טיהור חלבונים",
+              "titleEn": "Purifying Proteins",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "molecular-biology-ch-08-analyzing-proteins",
+              "title": "ניתוח חלבונים",
+              "titleEn": "Analyzing Proteins",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            },
+            {
+              "id": "molecular-biology-ch-08-analyzing-and-manipulating-dna",
+              "title": "ניתוח DNA ושינויו",
+              "titleEn": "Analyzing and Manipulating DNA",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 4
+            },
+            {
+              "id": "molecular-biology-ch-08-studying-gene-function-and-expression",
+              "title": "חקר תפקוד וביטוי גנים",
+              "titleEn": "Studying Gene Function and Expression",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 5
+            },
+            {
+              "id": "molecular-biology-ch-08-mathematical-analysis-of-cell-function",
+              "title": "ניתוח מתמטי של תפקוד התא",
+              "titleEn": "Mathematical Analysis of Cell Function",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 6
+            }
+          ]
+        },
+        {
+          "id": "molecular-biology-ch-09",
+          "title": "הדמיית תאים והמולקולות שלהם",
+          "titleEn": "Visualizing Cells and Their Molecules",
+          "subtopics": [
+            {
+              "id": "molecular-biology-ch-09-looking-at-cells-and-molecules-in-the-light-microscope",
+              "title": "צפייה בתאים ובמולקולות במיקרוסקופ אור",
+              "titleEn": "Looking at Cells and Molecules in the Light Microscope",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "molecular-biology-ch-09-looking-at-cells-and-molecules-in-the-electron-microscope",
+              "title": "צפייה בתאים ובמולקולות במיקרוסקופ אלקטרונים",
+              "titleEn": "Looking at Cells and Molecules in the Electron Microscope",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cell-biology",
+      "title": "ביולוגיה של התא",
+      "titleEn": "Cell Biology",
+      "color": "#FF9500",
+      "icon": "🔬",
+      "chapters": [
+        {
+          "id": "cell-biology-ch-10",
+          "title": "מבנה הממברנה",
+          "titleEn": "Membrane Structure",
+          "subtopics": [
+            {
+              "id": "cell-biology-ch-10-the-lipid-bilayer",
+              "title": "הדו-שכבה הליפידית",
+              "titleEn": "The Lipid Bilayer",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "cell-biology-ch-10-membrane-proteins",
+              "title": "חלבוני ממברנה",
+              "titleEn": "Membrane Proteins",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            }
+          ]
+        },
+        {
+          "id": "cell-biology-ch-12",
+          "title": "ארגון תוך-תאי ומיון חלבונים",
+          "titleEn": "Intracellular Organization and Protein Sorting",
+          "subtopics": [
+            {
+              "id": "cell-biology-ch-12-the-compartmentalization-of-cells",
+              "title": "החלוקה למדורים בתא",
+              "titleEn": "The Compartmentalization of Cells",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "cell-biology-ch-12-the-endoplasmic-reticulum",
+              "title": "הרשת האנדופלזמטית",
+              "titleEn": "The Endoplasmic Reticulum",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "cell-biology-ch-12-peroxisomes",
+              "title": "Peroxisomes",
+              "titleEn": "Peroxisomes",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            },
+            {
+              "id": "cell-biology-ch-12-the-transport-of-proteins-into-mitochondria-and-chloroplasts",
+              "title": "העברת חלבונים למיטוכונדריה ולכלורופלסטים",
+              "titleEn": "The Transport of Proteins into Mitochondria and Chloroplasts",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 4
+            },
+            {
+              "id": "cell-biology-ch-12-the-transport-of-molecules-between-the-nucleus-and-the-cytosol",
+              "title": "העברת מולקולות בין הגרעין לציטוזול",
+              "titleEn": "The Transport of Molecules between the Nucleus and the Cytosol",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 5
+            }
+          ]
+        },
+        {
+          "id": "cell-biology-ch-13",
+          "title": "תנועת ממברנות תוך-תאית",
+          "titleEn": "Intracellular Membrane Traffic",
+          "subtopics": [
+            {
+              "id": "cell-biology-ch-13-mechanisms-of-membrane-transport-and-compartment-identity",
+              "title": "מנגנוני הובלה ממברנלית וזהות מדורים",
+              "titleEn": "Mechanisms of Membrane Transport and Compartment Identity",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "cell-biology-ch-13-transport-from-the-endoplasmic-reticulum-through-the-golgi-apparatus",
+              "title": "הובלה מהרשת האנדופלזמטית דרך מערכת Golgi",
+              "titleEn": "Transport from the Endoplasmic Reticulum through the Golgi Apparatus",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "cell-biology-ch-13-transport-from-the-trans-golgi-network-to-the-cell-exterior-and-endosomes",
+              "title": "הובלה מרשת Trans Golgi אל מחוץ לתא ואל Endosomes",
+              "titleEn": "Transport from the Trans Golgi Network to the Cell Exterior and Endosomes",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            },
+            {
+              "id": "cell-biology-ch-13-transport-into-the-cell-from-the-plasma-membrane-endocytosis",
+              "title": "הובלה אל תוך התא מהממברנה: Endocytosis",
+              "titleEn": "Transport into the Cell from the Plasma Membrane: Endocytosis",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 4
+            },
+            {
+              "id": "cell-biology-ch-13-the-degradation-and-recycling-of-macromolecules-in-lysosomes",
+              "title": "פירוק ומחזור של מקרומולקולות ב-Lysosomes",
+              "titleEn": "The Degradation and Recycling of Macromolecules in Lysosomes",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 5
+            }
+          ]
+        },
+        {
+          "id": "cell-biology-ch-14",
+          "title": "המרת אנרגיה וחלוקה מטבולית למדורים: מיטוכונדריה וכלורופלסטים",
+          "titleEn": "Energy Conversion and Metabolic Compartmentation: Mitochondria and Chloroplasts",
+          "subtopics": [
+            {
+              "id": "cell-biology-ch-14-the-mitochondrion",
+              "title": "המיטוכונדריון",
+              "titleEn": "The Mitochondrion",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "cell-biology-ch-14-the-proton-pumps-of-the-electron-transport-chain",
+              "title": "משאבות הפרוטונים בשרשרת העברת האלקטרונים",
+              "titleEn": "The Proton Pumps of the Electron-Transport Chain",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "cell-biology-ch-14-atp-production-in-mitochondria",
+              "title": "ייצור ATP במיטוכונדריה",
+              "titleEn": "ATP Production in Mitochondria",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            },
+            {
+              "id": "cell-biology-ch-14-chloroplasts-and-photosynthesis",
+              "title": "כלורופלסטים ופוטוסינתזה",
+              "titleEn": "Chloroplasts and Photosynthesis",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 4
+            },
+            {
+              "id": "cell-biology-ch-14-the-genetic-systems-of-mitochondria-and-chloroplasts",
+              "title": "המערכות הגנטיות של מיטוכונדריה וכלורופלסטים",
+              "titleEn": "The Genetic Systems of Mitochondria and Chloroplasts",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 5
+            }
+          ]
+        },
+        {
+          "id": "cell-biology-ch-15",
+          "title": "איתות תאי",
+          "titleEn": "Cell Signaling",
+          "subtopics": [
+            {
+              "id": "cell-biology-ch-15-principles-of-cell-signaling",
+              "title": "עקרונות האיתות התאי",
+              "titleEn": "Principles of Cell Signaling",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "cell-biology-ch-15-signaling-through-g-protein-coupled-receptors",
+              "title": "איתות באמצעות קולטנים מצומדי G Protein",
+              "titleEn": "Signaling through G-Protein-Coupled Receptors",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "cell-biology-ch-15-signaling-through-enzyme-coupled-receptors",
+              "title": "איתות באמצעות קולטנים מצומדי אנזים",
+              "titleEn": "Signaling through Enzyme-Coupled Receptors",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            },
+            {
+              "id": "cell-biology-ch-15-alternative-signaling-routes-in-gene-regulation",
+              "title": "מסלולי איתות חלופיים בבקרת גנים",
+              "titleEn": "Alternative Signaling Routes in Gene Regulation",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 4
+            },
+            {
+              "id": "cell-biology-ch-15-signaling-in-plants",
+              "title": "איתות בצמחים",
+              "titleEn": "Signaling in Plants",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 5
+            }
+          ]
+        },
+        {
+          "id": "cell-biology-ch-16",
+          "title": "שלד התא",
+          "titleEn": "The Cytoskeleton",
+          "subtopics": [
+            {
+              "id": "cell-biology-ch-16-function-and-dynamics-of-the-cytoskeleton",
+              "title": "תפקוד ודינמיקה של שלד התא",
+              "titleEn": "Function and Dynamics of the Cytoskeleton",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "cell-biology-ch-16-actin",
+              "title": "Actin",
+              "titleEn": "Actin",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "cell-biology-ch-16-myosin-and-actin",
+              "title": "Myosin ו-Actin",
+              "titleEn": "Myosin and Actin",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            },
+            {
+              "id": "cell-biology-ch-16-microtubules",
+              "title": "Microtubules",
+              "titleEn": "Microtubules",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 4
+            },
+            {
+              "id": "cell-biology-ch-16-intermediate-filaments-and-other-cytoskeletal-polymers",
+              "title": "סיבי ביניים ופולימרים אחרים של שלד התא",
+              "titleEn": "Intermediate Filaments and Other Cytoskeletal Polymers",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 5
+            },
+            {
+              "id": "cell-biology-ch-16-cell-polarity-and-coordination-of-the-cytoskeleton",
+              "title": "קוטביות התא ותיאום של שלד התא",
+              "titleEn": "Cell Polarity and Coordination of the Cytoskeleton",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 6
+            }
+          ]
+        },
+        {
+          "id": "cell-biology-ch-17",
+          "title": "מחזור התא",
+          "titleEn": "The Cell Cycle",
+          "subtopics": [
+            {
+              "id": "cell-biology-ch-17-overview-of-the-cell-cycle",
+              "title": "סקירת מחזור התא",
+              "titleEn": "Overview of the Cell Cycle",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "cell-biology-ch-17-the-cell-cycle-control-system",
+              "title": "מערכת הבקרה של מחזור התא",
+              "titleEn": "The Cell-Cycle Control System",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "cell-biology-ch-17-s-phase",
+              "title": "שלב S",
+              "titleEn": "S Phase",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            },
+            {
+              "id": "cell-biology-ch-17-mitosis",
+              "title": "מיטוזה",
+              "titleEn": "Mitosis",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 4
+            },
+            {
+              "id": "cell-biology-ch-17-cytokinesis",
+              "title": "Cytokinesis",
+              "titleEn": "Cytokinesis",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 5
+            },
+            {
+              "id": "cell-biology-ch-17-meiosis",
+              "title": "מיוזה",
+              "titleEn": "Meiosis",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 6
+            },
+            {
+              "id": "cell-biology-ch-17-control-of-cell-division-and-cell-growth",
+              "title": "בקרת חלוקת תאים וגדילת תאים",
+              "titleEn": "Control of Cell Division and Cell Growth",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 7
+            }
+          ]
+        },
+        {
+          "id": "cell-biology-ch-18",
+          "title": "מוות תאי",
+          "titleEn": "Cell Death",
+          "subtopics": [
+            {
+              "id": "cell-biology-ch-18-apoptosis-eliminates-unwanted-cells",
+              "title": "Apoptosis מסלקת תאים שאינם נחוצים",
+              "titleEn": "Apoptosis Eliminates Unwanted Cells",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "cell-biology-ch-18-apoptosis-depends-on-an-intracellular-proteolytic-cascade-mediated-by-caspases",
+              "title": "Apoptosis תלויה במפל פרוטאוליטי תוך-תאי המתווך ב-Caspases",
+              "titleEn": "Apoptosis Depends on an Intracellular Proteolytic Cascade Mediated by Caspases",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "cell-biology-ch-18-activation-of-cell-surface-death-receptors-initiates-the-extrinsic-pathway-of-apoptosis",
+              "title": "הפעלת קולטני מוות על פני התא מתחילה את המסלול החיצוני של Apoptosis",
+              "titleEn": "Activation of Cell-Surface Death Receptors Initiates the Extrinsic Pathway of Apoptosis",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            },
+            {
+              "id": "cell-biology-ch-18-the-intrinsic-pathway-of-apoptosis-depends-on-proteins-released-from-mitochondria",
+              "title": "המסלול הפנימי של Apoptosis תלוי בחלבונים המשתחררים ממיטוכונדריה",
+              "titleEn": "The Intrinsic Pathway of Apoptosis Depends on Proteins Released from Mitochondria",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 4
+            },
+            {
+              "id": "cell-biology-ch-18-bcl2-proteins-are-the-critical-controllers-of-the-intrinsic-pathway-of-apoptosis",
+              "title": "חלבוני Bcl2 מבקרים את המסלול הפנימי של Apoptosis",
+              "titleEn": "Bcl2 Proteins Are the Critical Controllers of the Intrinsic Pathway of Apoptosis",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 5
+            },
+            {
+              "id": "cell-biology-ch-18-an-inhibitor-of-apoptosis-an-iap-and-two-anti-iap-proteins-help-control-caspase-activation-in-the-cytosol-of-some-mammalian-cells",
+              "title": "IAP וחלבוני Anti-IAP מבקרים הפעלת Caspases בציטוזול של חלק מתאי היונקים",
+              "titleEn": "An Inhibitor of Apoptosis (an IAP) and Two Anti-IAP Proteins Help Control Caspase Activation in the Cytosol of Some Mammalian Cells",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 6
+            },
+            {
+              "id": "cell-biology-ch-18-extracellular-survival-factors-inhibit-apoptosis-in-various-ways",
+              "title": "גורמי הישרדות חוץ-תאיים מעכבים Apoptosis בדרכים שונות",
+              "titleEn": "Extracellular Survival Factors Inhibit Apoptosis in Various Ways",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 7
+            },
+            {
+              "id": "cell-biology-ch-18-healthy-neighbors-phagocytose-and-digest-apoptotic-cells",
+              "title": "תאים שכנים בריאים בולעים ומעכלים תאים אפופטוטיים",
+              "titleEn": "Healthy Neighbors Phagocytose and Digest Apoptotic Cells",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 8
+            },
+            {
+              "id": "cell-biology-ch-18-either-excessive-or-insufficient-apoptosis-can-contribute-to-disease",
+              "title": "עודף או מחסור ב-Apoptosis עלולים לתרום למחלה",
+              "titleEn": "Either Excessive or Insufficient Apoptosis Can Contribute to Disease",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 9
+            }
+          ]
+        },
+        {
+          "id": "cell-biology-ch-19",
+          "title": "צומתי תאים והמטריצה החוץ-תאית",
+          "titleEn": "Cell Junctions and the Extracellular Matrix",
+          "subtopics": [
+            {
+              "id": "cell-biology-ch-19-cell-cell-junctions",
+              "title": "צומתי תא-תא",
+              "titleEn": "Cell-Cell Junctions",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "cell-biology-ch-19-the-extracellular-matrix-of-animals",
+              "title": "המטריצה החוץ-תאית בבעלי חיים",
+              "titleEn": "The Extracellular Matrix of Animals",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "cell-biology-ch-19-cell-matrix-junctions",
+              "title": "צומתי תא-מטריצה",
+              "titleEn": "Cell-Matrix Junctions",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            },
+            {
+              "id": "cell-biology-ch-19-the-plant-cell-wall",
+              "title": "דופן התא בצמחים",
+              "titleEn": "The Plant Cell Wall",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 4
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "physiology",
+      "title": "פיזיולוגיה",
+      "titleEn": "Physiology",
+      "color": "#FF2D55",
+      "icon": "⚡",
+      "chapters": [
+        {
+          "id": "physiology-ch-01",
+          "title": "עקרונות תפקוד התא והממברנה",
+          "titleEn": "Principles of Cell and Membrane Function",
+          "subtopics": [
+            {
+              "id": "physiology-ch-01-overview-of-eukaryotic-cells",
+              "title": "סקירת תאים אאוקריוטיים",
+              "titleEn": "Overview of Eukaryotic Cells",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "physiology-ch-01-the-plasma-membrane",
+              "title": "ממברנת הפלזמה",
+              "titleEn": "The Plasma Membrane",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "physiology-ch-01-membrane-transport",
+              "title": "הובלה ממברנלית",
+              "titleEn": "Membrane Transport",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            },
+            {
+              "id": "physiology-ch-01-vesicular-transport",
+              "title": "הובלה בשלפוחיות",
+              "titleEn": "Vesicular Transport",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 4
+            },
+            {
+              "id": "physiology-ch-01-basic-principles-of-solute-and-water-transport",
+              "title": "עקרונות בסיסיים של הובלת מומסים ומים",
+              "titleEn": "Basic Principles of Solute and Water Transport",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 5
+            }
+          ]
+        },
+        {
+          "id": "physiology-ch-02",
+          "title": "הומאוסטזיס: נפח והרכב מדורי נוזלי הגוף",
+          "titleEn": "Homeostasis: Volume and Composition of Body Fluid Compartments",
+          "subtopics": [
+            {
+              "id": "physiology-ch-02-concept-of-steady-state-balance",
+              "title": "מושג המאזן במצב יציב",
+              "titleEn": "Concept of Steady-State Balance",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "physiology-ch-02-volumes-and-composition-of-body-fluid-compartments",
+              "title": "נפחים והרכב של מדורי נוזלי הגוף",
+              "titleEn": "Volumes and Composition of Body Fluid Compartments",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "physiology-ch-02-maintenance-of-cellular-homeostasis",
+              "title": "שמירת הומאוסטזיס תאי",
+              "titleEn": "Maintenance of Cellular Homeostasis",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            },
+            {
+              "id": "physiology-ch-02-principles-of-epithelial-transport",
+              "title": "עקרונות ההובלה באפיתל",
+              "titleEn": "Principles of Epithelial Transport",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 4
+            }
+          ]
+        },
+        {
+          "id": "physiology-ch-04",
+          "title": "מערכת העצבים: מבוא לתאים ולמערכות",
+          "titleEn": "The Nervous System: Introduction to Cells and Systems",
+          "subtopics": [
+            {
+              "id": "physiology-ch-04-cellular-components-of-the-nervous-system",
+              "title": "המרכיבים התאיים של מערכת העצבים",
+              "titleEn": "Cellular Components of the Nervous System",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            }
+          ]
+        },
+        {
+          "id": "physiology-ch-05",
+          "title": "יצירה והולכה של פוטנציאלי פעולה",
+          "titleEn": "Generation and Conduction of Action Potentials",
+          "subtopics": [
+            {
+              "id": "physiology-ch-05-membrane-potentials",
+              "title": "פוטנציאלי ממברנה",
+              "titleEn": "Membrane Potentials",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "physiology-ch-05-suprathreshold-response-the-action-potential",
+              "title": "תגובה מעל הסף: פוטנציאל הפעולה",
+              "titleEn": "Suprathreshold Response: The Action Potential",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "physiology-ch-05-conduction-of-action-potentials",
+              "title": "הולכת פוטנציאלי פעולה",
+              "titleEn": "Conduction of Action Potentials",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            },
+            {
+              "id": "physiology-ch-05-sensory-transduction",
+              "title": "התמרה חושית",
+              "titleEn": "Sensory Transduction",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 4
+            }
+          ]
+        },
+        {
+          "id": "physiology-ch-06",
+          "title": "העברה סינפטית",
+          "titleEn": "Synaptic Transmission",
+          "subtopics": [
+            {
+              "id": "physiology-ch-06-electrical-synapses",
+              "title": "סינפסות חשמליות",
+              "titleEn": "Electrical Synapses",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "physiology-ch-06-chemical-synapses",
+              "title": "סינפסות כימיות",
+              "titleEn": "Chemical Synapses",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "physiology-ch-06-synaptic-integration",
+              "title": "אינטגרציה סינפטית",
+              "titleEn": "Synaptic Integration",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            },
+            {
+              "id": "physiology-ch-06-modulation-of-synaptic-activity",
+              "title": "ויסות פעילות סינפטית",
+              "titleEn": "Modulation of Synaptic Activity",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 4
+            }
+          ]
+        },
+        {
+          "id": "physiology-ch-12",
+          "title": "פיזיולוגיה של שריר שלד",
+          "titleEn": "Skeletal Muscle Physiology",
+          "subtopics": [
+            {
+              "id": "physiology-ch-12-organization-of-skeletal-muscle",
+              "title": "ארגון שריר השלד",
+              "titleEn": "Organization of Skeletal Muscle",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 1
+            },
+            {
+              "id": "physiology-ch-12-control-of-skeletal-muscle-activity",
+              "title": "בקרת פעילות שריר השלד",
+              "titleEn": "Control of Skeletal Muscle Activity",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 2
+            },
+            {
+              "id": "physiology-ch-12-skeletal-muscle-types",
+              "title": "סוגי שריר שלד",
+              "titleEn": "Skeletal Muscle Types",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 3
+            },
+            {
+              "id": "physiology-ch-12-modulation-of-the-force-of-contraction",
+              "title": "ויסות כוח הכיווץ",
+              "titleEn": "Modulation of the Force of Contraction",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 4
+            },
+            {
+              "id": "physiology-ch-12-skeletal-muscle-tone",
+              "title": "טונוס שריר השלד",
+              "titleEn": "Skeletal Muscle Tone",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 5
+            },
+            {
+              "id": "physiology-ch-12-biophysical-properties-of-skeletal-muscle",
+              "title": "תכונות ביופיזיקליות של שריר השלד",
+              "titleEn": "Biophysical Properties of Skeletal Muscle",
+              "content_status": "not-authored",
+              "coverage": "entire-section-including-descendants",
+              "order": 6
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1122 @@
+[
+  {
+    "id": "lesson_biochemistry-ch-01",
+    "chapterId": "biochemistry-ch-01",
+    "areaId": "biochemistry",
+    "title": "יסודות הביוכימיה",
+    "titleEn": "The Foundations of Biochemistry",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "יסודות הביוכימיה",
+        "content": "הסבר בעברית על The Foundations of Biochemistry עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_bc01-introduction_1",
+      "q_bc01-introduction_2",
+      "q_bc01-introduction_3"
+    ]
+  },
+  {
+    "id": "lesson_biochemistry-ch-02",
+    "chapterId": "biochemistry-ch-02",
+    "areaId": "biochemistry",
+    "title": "מים, הממס של החיים",
+    "titleEn": "Water, the Solvent of Life",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "מים, הממס של החיים",
+        "content": "הסבר בעברית על Water, the Solvent of Life עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_bc02-sec-2-1_1",
+      "q_bc02-sec-2-1_2",
+      "q_bc02-sec-2-1_3"
+    ]
+  },
+  {
+    "id": "lesson_biochemistry-ch-03",
+    "chapterId": "biochemistry-ch-03",
+    "areaId": "biochemistry",
+    "title": "חומצות אמינו, פפטידים וחלבונים",
+    "titleEn": "Amino Acids, Peptides, and Proteins",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "חומצות אמינו, פפטידים וחלבונים",
+        "content": "הסבר בעברית על Amino Acids, Peptides, and Proteins עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_bc03-sec-3-1_1",
+      "q_bc03-sec-3-1_2",
+      "q_bc03-sec-3-1_3"
+    ]
+  },
+  {
+    "id": "lesson_biochemistry-ch-04",
+    "chapterId": "biochemistry-ch-04",
+    "areaId": "biochemistry",
+    "title": "המבנה התלת-ממדי של חלבונים",
+    "titleEn": "The Three-Dimensional Structure of Proteins",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "המבנה התלת-ממדי של חלבונים",
+        "content": "הסבר בעברית על The Three-Dimensional Structure of Proteins עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_bc04-sec-4-1_1",
+      "q_bc04-sec-4-1_2",
+      "q_bc04-sec-4-1_3"
+    ]
+  },
+  {
+    "id": "lesson_biochemistry-ch-05",
+    "chapterId": "biochemistry-ch-05",
+    "areaId": "biochemistry",
+    "title": "תפקוד חלבונים",
+    "titleEn": "Protein Function",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "תפקוד חלבונים",
+        "content": "הסבר בעברית על Protein Function עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_bc05-sec-5-1_1",
+      "q_bc05-sec-5-1_2",
+      "q_bc05-sec-5-1_3"
+    ]
+  },
+  {
+    "id": "lesson_biochemistry-ch-06",
+    "chapterId": "biochemistry-ch-06",
+    "areaId": "biochemistry",
+    "title": "אנזימים",
+    "titleEn": "Enzymes",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "אנזימים",
+        "content": "הסבר בעברית על Enzymes עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_bc06-sec-6-1_1",
+      "q_bc06-sec-6-1_2",
+      "q_bc06-sec-6-1_3"
+    ]
+  },
+  {
+    "id": "lesson_biochemistry-ch-07",
+    "chapterId": "biochemistry-ch-07",
+    "areaId": "biochemistry",
+    "title": "פחמימות ו-Glycobiology",
+    "titleEn": "Carbohydrates and Glycobiology",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "פחמימות ו-Glycobiology",
+        "content": "הסבר בעברית על Carbohydrates and Glycobiology עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_bc07-sec-7-1_1",
+      "q_bc07-sec-7-1_2",
+      "q_bc07-sec-7-1_3"
+    ]
+  },
+  {
+    "id": "lesson_biochemistry-ch-12",
+    "chapterId": "biochemistry-ch-12",
+    "areaId": "biochemistry",
+    "title": "איתות ביוכימי",
+    "titleEn": "Biochemical Signaling",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "איתות ביוכימי",
+        "content": "הסבר בעברית על Biochemical Signaling עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_bc12-introduction_1",
+      "q_bc12-introduction_2",
+      "q_bc12-introduction_3"
+    ]
+  },
+  {
+    "id": "lesson_biochemistry-ch-13",
+    "chapterId": "biochemistry-ch-13",
+    "areaId": "biochemistry",
+    "title": "מבוא למטבוליזם",
+    "titleEn": "Introduction to Metabolism",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "מבוא למטבוליזם",
+        "content": "הסבר בעברית על Introduction to Metabolism עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_bc13-introduction_1",
+      "q_bc13-introduction_2",
+      "q_bc13-introduction_3"
+    ]
+  },
+  {
+    "id": "lesson_biochemistry-ch-14",
+    "chapterId": "biochemistry-ch-14",
+    "areaId": "biochemistry",
+    "title": "גליקוליזה, גלוקונאוגנזה ומסלול הפנטוזות",
+    "titleEn": "Glycolysis, Gluconeogenesis, and the Pentose Phosphate Pathway",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "גליקוליזה, גלוקונאוגנזה ומסלול הפנטוזות",
+        "content": "הסבר בעברית על Glycolysis, Gluconeogenesis, and the Pentose Phosphate Pathway עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_bc14-introduction_1",
+      "q_bc14-introduction_2",
+      "q_bc14-introduction_3"
+    ]
+  },
+  {
+    "id": "lesson_biochemistry-ch-15",
+    "chapterId": "biochemistry-ch-15",
+    "areaId": "biochemistry",
+    "title": "מטבוליזם של גליקוגן בבעלי חיים",
+    "titleEn": "The Metabolism of Glycogen in Animals",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "מטבוליזם של גליקוגן בבעלי חיים",
+        "content": "הסבר בעברית על The Metabolism of Glycogen in Animals עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_bc15-sec-15-1_1",
+      "q_bc15-sec-15-1_2",
+      "q_bc15-sec-15-1_3"
+    ]
+  },
+  {
+    "id": "lesson_biochemistry-ch-16",
+    "chapterId": "biochemistry-ch-16",
+    "areaId": "biochemistry",
+    "title": "מעגל חומצת הלימון",
+    "titleEn": "The Citric Acid Cycle",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "מעגל חומצת הלימון",
+        "content": "הסבר בעברית על The Citric Acid Cycle עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_bc16-sec-16-1_1",
+      "q_bc16-sec-16-1_2",
+      "q_bc16-sec-16-1_3"
+    ]
+  },
+  {
+    "id": "lesson_biochemistry-ch-17",
+    "chapterId": "biochemistry-ch-17",
+    "areaId": "biochemistry",
+    "title": "פירוק חומצות שומן",
+    "titleEn": "Fatty Acid Catabolism",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "פירוק חומצות שומן",
+        "content": "הסבר בעברית על Fatty Acid Catabolism עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_bc17-sec-17-1_1",
+      "q_bc17-sec-17-1_2",
+      "q_bc17-sec-17-1_3"
+    ]
+  },
+  {
+    "id": "lesson_biochemistry-ch-18",
+    "chapterId": "biochemistry-ch-18",
+    "areaId": "biochemistry",
+    "title": "חמצון חומצות אמינו ויצירת אוריאה",
+    "titleEn": "Amino Acid Oxidation and the Production of Urea",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "חמצון חומצות אמינו ויצירת אוריאה",
+        "content": "הסבר בעברית על Amino Acid Oxidation and the Production of Urea עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_bc18-sec-18-1_1",
+      "q_bc18-sec-18-1_2",
+      "q_bc18-sec-18-1_3"
+    ]
+  },
+  {
+    "id": "lesson_biochemistry-ch-19",
+    "chapterId": "biochemistry-ch-19",
+    "areaId": "biochemistry",
+    "title": "זרחון חמצוני",
+    "titleEn": "Oxidative Phosphorylation",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "זרחון חמצוני",
+        "content": "הסבר בעברית על Oxidative Phosphorylation עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_bc19-sec-19-1_1",
+      "q_bc19-sec-19-1_2",
+      "q_bc19-sec-19-1_3"
+    ]
+  },
+  {
+    "id": "lesson_biochemistry-ch-21",
+    "chapterId": "biochemistry-ch-21",
+    "areaId": "biochemistry",
+    "title": "סינתזה של ליפידים",
+    "titleEn": "Lipid Biosynthesis",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "סינתזה של ליפידים",
+        "content": "הסבר בעברית על Lipid Biosynthesis עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_bc21-sec-21-1_1",
+      "q_bc21-sec-21-1_2",
+      "q_bc21-sec-21-1_3"
+    ]
+  },
+  {
+    "id": "lesson_biochemistry-ch-22",
+    "chapterId": "biochemistry-ch-22",
+    "areaId": "biochemistry",
+    "title": "סינתזת חומצות אמינו, נוקלאוטידים ומולקולות קשורות",
+    "titleEn": "Biosynthesis of Amino Acids, Nucleotides, and Related Molecules",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "סינתזת חומצות אמינו, נוקלאוטידים ומולקולות קשורות",
+        "content": "הסבר בעברית על Biosynthesis of Amino Acids, Nucleotides, and Related Molecules עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_bc22-introduction_1",
+      "q_bc22-introduction_2",
+      "q_bc22-introduction_3"
+    ]
+  },
+  {
+    "id": "lesson_biochemistry-ch-23",
+    "chapterId": "biochemistry-ch-23",
+    "areaId": "biochemistry",
+    "title": "בקרה הורמונלית ואינטגרציה של מטבוליזם ביונקים",
+    "titleEn": "Hormonal Regulation and Integration of Mammalian Metabolism",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "בקרה הורמונלית ואינטגרציה של מטבוליזם ביונקים",
+        "content": "הסבר בעברית על Hormonal Regulation and Integration of Mammalian Metabolism עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_bc23-introduction_1",
+      "q_bc23-introduction_2",
+      "q_bc23-introduction_3"
+    ]
+  },
+  {
+    "id": "lesson_molecular-biology-ch-01",
+    "chapterId": "molecular-biology-ch-01",
+    "areaId": "molecular-biology",
+    "title": "תאים, גנומים ומגוון החיים",
+    "titleEn": "Cells, Genomes, and the Diversity of Life",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "תאים, גנומים ומגוון החיים",
+        "content": "הסבר בעברית על Cells, Genomes, and the Diversity of Life עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_mb01-the-universal-features-of-life-on-earth_1",
+      "q_mb01-the-universal-features-of-life-on-earth_2",
+      "q_mb01-the-universal-features-of-life-on-earth_3"
+    ]
+  },
+  {
+    "id": "lesson_molecular-biology-ch-04",
+    "chapterId": "molecular-biology-ch-04",
+    "areaId": "molecular-biology",
+    "title": "DNA, כרומוזומים וגנומים",
+    "titleEn": "DNA, Chromosomes, and Genomes",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "DNA, כרומוזומים וגנומים",
+        "content": "הסבר בעברית על DNA, Chromosomes, and Genomes עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_mb04-the-structure-and-function-of-dna_1",
+      "q_mb04-the-structure-and-function-of-dna_2",
+      "q_mb04-the-structure-and-function-of-dna_3"
+    ]
+  },
+  {
+    "id": "lesson_molecular-biology-ch-05",
+    "chapterId": "molecular-biology-ch-05",
+    "areaId": "molecular-biology",
+    "title": "שכפול, תיקון ו-Recombination של DNA",
+    "titleEn": "DNA Replication, Repair, and Recombination",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "שכפול, תיקון ו-Recombination של DNA",
+        "content": "הסבר בעברית על DNA Replication, Repair, and Recombination עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_mb05-the-maintenance-of-dna-sequences_1",
+      "q_mb05-the-maintenance-of-dna-sequences_2",
+      "q_mb05-the-maintenance-of-dna-sequences_3"
+    ]
+  },
+  {
+    "id": "lesson_molecular-biology-ch-06",
+    "chapterId": "molecular-biology-ch-06",
+    "areaId": "molecular-biology",
+    "title": "כיצד תאים קוראים את הגנום: מ-DNA לחלבון",
+    "titleEn": "How Cells Read the Genome: From DNA to Protein",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "כיצד תאים קוראים את הגנום: מ-DNA לחלבון",
+        "content": "הסבר בעברית על How Cells Read the Genome: From DNA to Protein עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_mb06-from-dna-to-rna_1",
+      "q_mb06-from-dna-to-rna_2",
+      "q_mb06-from-dna-to-rna_3"
+    ]
+  },
+  {
+    "id": "lesson_molecular-biology-ch-07",
+    "chapterId": "molecular-biology-ch-07",
+    "areaId": "molecular-biology",
+    "title": "בקרת ביטוי גנים",
+    "titleEn": "Control of Gene Expression",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "בקרת ביטוי גנים",
+        "content": "הסבר בעברית על Control of Gene Expression עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_mb07-an-overview-of-gene-control_1",
+      "q_mb07-an-overview-of-gene-control_2",
+      "q_mb07-an-overview-of-gene-control_3"
+    ]
+  },
+  {
+    "id": "lesson_molecular-biology-ch-08",
+    "chapterId": "molecular-biology-ch-08",
+    "areaId": "molecular-biology",
+    "title": "ניתוח תאים, מולקולות ומערכות",
+    "titleEn": "Analyzing Cells, Molecules, and Systems",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "ניתוח תאים, מולקולות ומערכות",
+        "content": "הסבר בעברית על Analyzing Cells, Molecules, and Systems עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_mb08-isolating-cells-and-growing-them-in-culture_1",
+      "q_mb08-isolating-cells-and-growing-them-in-culture_2",
+      "q_mb08-isolating-cells-and-growing-them-in-culture_3"
+    ]
+  },
+  {
+    "id": "lesson_molecular-biology-ch-09",
+    "chapterId": "molecular-biology-ch-09",
+    "areaId": "molecular-biology",
+    "title": "הדמיית תאים והמולקולות שלהם",
+    "titleEn": "Visualizing Cells and Their Molecules",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "הדמיית תאים והמולקולות שלהם",
+        "content": "הסבר בעברית על Visualizing Cells and Their Molecules עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_mb09-looking-at-cells-and-molecules-in-the-light-microscope_1",
+      "q_mb09-looking-at-cells-and-molecules-in-the-light-microscope_2",
+      "q_mb09-looking-at-cells-and-molecules-in-the-light-microscope_3"
+    ]
+  },
+  {
+    "id": "lesson_cell-biology-ch-10",
+    "chapterId": "cell-biology-ch-10",
+    "areaId": "cell-biology",
+    "title": "מבנה הממברנה",
+    "titleEn": "Membrane Structure",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "מבנה הממברנה",
+        "content": "הסבר בעברית על Membrane Structure עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_cb10-the-lipid-bilayer_1",
+      "q_cb10-the-lipid-bilayer_2",
+      "q_cb10-the-lipid-bilayer_3"
+    ]
+  },
+  {
+    "id": "lesson_cell-biology-ch-12",
+    "chapterId": "cell-biology-ch-12",
+    "areaId": "cell-biology",
+    "title": "ארגון תוך-תאי ומיון חלבונים",
+    "titleEn": "Intracellular Organization and Protein Sorting",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "ארגון תוך-תאי ומיון חלבונים",
+        "content": "הסבר בעברית על Intracellular Organization and Protein Sorting עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_cb12-the-compartmentalization-of-cells_1",
+      "q_cb12-the-compartmentalization-of-cells_2",
+      "q_cb12-the-compartmentalization-of-cells_3"
+    ]
+  },
+  {
+    "id": "lesson_cell-biology-ch-13",
+    "chapterId": "cell-biology-ch-13",
+    "areaId": "cell-biology",
+    "title": "תנועת ממברנות תוך-תאית",
+    "titleEn": "Intracellular Membrane Traffic",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "תנועת ממברנות תוך-תאית",
+        "content": "הסבר בעברית על Intracellular Membrane Traffic עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_cb13-mechanisms-of-membrane-transport-and-compartment-identity_1",
+      "q_cb13-mechanisms-of-membrane-transport-and-compartment-identity_2",
+      "q_cb13-mechanisms-of-membrane-transport-and-compartment-identity_3"
+    ]
+  },
+  {
+    "id": "lesson_cell-biology-ch-14",
+    "chapterId": "cell-biology-ch-14",
+    "areaId": "cell-biology",
+    "title": "המרת אנרגיה וחלוקה מטבולית למדורים: מיטוכונדריה וכלורופלסטים",
+    "titleEn": "Energy Conversion and Metabolic Compartmentation: Mitochondria and Chloroplasts",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "המרת אנרגיה וחלוקה מטבולית למדורים: מיטוכונדריה וכלורופלסטים",
+        "content": "הסבר בעברית על Energy Conversion and Metabolic Compartmentation: Mitochondria and Chloroplasts עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_cb14-the-mitochondrion_1",
+      "q_cb14-the-mitochondrion_2",
+      "q_cb14-the-mitochondrion_3"
+    ]
+  },
+  {
+    "id": "lesson_cell-biology-ch-15",
+    "chapterId": "cell-biology-ch-15",
+    "areaId": "cell-biology",
+    "title": "איתות תאי",
+    "titleEn": "Cell Signaling",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "איתות תאי",
+        "content": "הסבר בעברית על Cell Signaling עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_cb15-principles-of-cell-signaling_1",
+      "q_cb15-principles-of-cell-signaling_2",
+      "q_cb15-principles-of-cell-signaling_3"
+    ]
+  },
+  {
+    "id": "lesson_cell-biology-ch-16",
+    "chapterId": "cell-biology-ch-16",
+    "areaId": "cell-biology",
+    "title": "שלד התא",
+    "titleEn": "The Cytoskeleton",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "שלד התא",
+        "content": "הסבר בעברית על The Cytoskeleton עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_cb16-function-and-dynamics-of-the-cytoskeleton_1",
+      "q_cb16-function-and-dynamics-of-the-cytoskeleton_2",
+      "q_cb16-function-and-dynamics-of-the-cytoskeleton_3"
+    ]
+  },
+  {
+    "id": "lesson_cell-biology-ch-17",
+    "chapterId": "cell-biology-ch-17",
+    "areaId": "cell-biology",
+    "title": "מחזור התא",
+    "titleEn": "The Cell Cycle",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "מחזור התא",
+        "content": "הסבר בעברית על The Cell Cycle עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_cb17-overview-of-the-cell-cycle_1",
+      "q_cb17-overview-of-the-cell-cycle_2",
+      "q_cb17-overview-of-the-cell-cycle_3"
+    ]
+  },
+  {
+    "id": "lesson_cell-biology-ch-18",
+    "chapterId": "cell-biology-ch-18",
+    "areaId": "cell-biology",
+    "title": "מוות תאי",
+    "titleEn": "Cell Death",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "מוות תאי",
+        "content": "הסבר בעברית על Cell Death עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_cb18-apoptosis-eliminates-unwanted-cells_1",
+      "q_cb18-apoptosis-eliminates-unwanted-cells_2",
+      "q_cb18-apoptosis-eliminates-unwanted-cells_3"
+    ]
+  },
+  {
+    "id": "lesson_cell-biology-ch-19",
+    "chapterId": "cell-biology-ch-19",
+    "areaId": "cell-biology",
+    "title": "צומתי תאים והמטריצה החוץ-תאית",
+    "titleEn": "Cell Junctions and the Extracellular Matrix",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "צומתי תאים והמטריצה החוץ-תאית",
+        "content": "הסבר בעברית על Cell Junctions and the Extracellular Matrix עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_cb19-cell-cell-junctions_1",
+      "q_cb19-cell-cell-junctions_2",
+      "q_cb19-cell-cell-junctions_3"
+    ]
+  },
+  {
+    "id": "lesson_physiology-ch-01",
+    "chapterId": "physiology-ch-01",
+    "areaId": "physiology",
+    "title": "עקרונות תפקוד התא והממברנה",
+    "titleEn": "Principles of Cell and Membrane Function",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "עקרונות תפקוד התא והממברנה",
+        "content": "הסבר בעברית על Principles of Cell and Membrane Function עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_ph01-overview-of-eukaryotic-cells_1",
+      "q_ph01-overview-of-eukaryotic-cells_2",
+      "q_ph01-overview-of-eukaryotic-cells_3"
+    ]
+  },
+  {
+    "id": "lesson_physiology-ch-02",
+    "chapterId": "physiology-ch-02",
+    "areaId": "physiology",
+    "title": "הומאוסטזיס: נפח והרכב מדורי נוזלי הגוף",
+    "titleEn": "Homeostasis: Volume and Composition of Body Fluid Compartments",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "הומאוסטזיס: נפח והרכב מדורי נוזלי הגוף",
+        "content": "הסבר בעברית על Homeostasis: Volume and Composition of Body Fluid Compartments עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_ph02-concept-of-steady-state-balance_1",
+      "q_ph02-concept-of-steady-state-balance_2",
+      "q_ph02-concept-of-steady-state-balance_3"
+    ]
+  },
+  {
+    "id": "lesson_physiology-ch-04",
+    "chapterId": "physiology-ch-04",
+    "areaId": "physiology",
+    "title": "מערכת העצבים: מבוא לתאים ולמערכות",
+    "titleEn": "The Nervous System: Introduction to Cells and Systems",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "מערכת העצבים: מבוא לתאים ולמערכות",
+        "content": "הסבר בעברית על The Nervous System: Introduction to Cells and Systems עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_ph04-cellular-components-of-the-nervous-system_1",
+      "q_ph04-cellular-components-of-the-nervous-system_2",
+      "q_ph04-cellular-components-of-the-nervous-system_3"
+    ]
+  },
+  {
+    "id": "lesson_physiology-ch-05",
+    "chapterId": "physiology-ch-05",
+    "areaId": "physiology",
+    "title": "יצירה והולכה של פוטנציאלי פעולה",
+    "titleEn": "Generation and Conduction of Action Potentials",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "יצירה והולכה של פוטנציאלי פעולה",
+        "content": "הסבר בעברית על Generation and Conduction of Action Potentials עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_ph05-membrane-potentials_1",
+      "q_ph05-membrane-potentials_2",
+      "q_ph05-membrane-potentials_3"
+    ]
+  },
+  {
+    "id": "lesson_physiology-ch-06",
+    "chapterId": "physiology-ch-06",
+    "areaId": "physiology",
+    "title": "העברה סינפטית",
+    "titleEn": "Synaptic Transmission",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "העברה סינפטית",
+        "content": "הסבר בעברית על Synaptic Transmission עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_ph06-electrical-synapses_1",
+      "q_ph06-electrical-synapses_2",
+      "q_ph06-electrical-synapses_3"
+    ]
+  },
+  {
+    "id": "lesson_physiology-ch-12",
+    "chapterId": "physiology-ch-12",
+    "areaId": "physiology",
+    "title": "פיזיולוגיה של שריר שלד",
+    "titleEn": "Skeletal Muscle Physiology",
+    "estimatedMinutes": 7,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "פיזיולוגיה של שריר שלד",
+        "content": "הסבר בעברית על Skeletal Muscle Physiology עם **מושגי מפתח** מודגשים.",
+        "keyPoints": [
+          "נקודה חשובה ראשונה",
+          "נקודה חשובה שנייה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_ph12-organization-of-skeletal-muscle_1",
+      "q_ph12-organization-of-skeletal-muscle_2",
+      "q_ph12-organization-of-skeletal-muscle_3"
+    ]
+  }
+]
