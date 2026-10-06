@@ -408,13 +408,16 @@ const DB = {
 };
 
 function getState() {
-  return DB.get('state', {
+  const defState = {
     streak: 0, lastDate: null, xpToday: 0, xpTotal: 0,
     totalAnswered: 0, totalCorrect: 0,
     missionsCompleted: [],
-    mastery: {},  // subtopicId -> {level:0-3, correct, total, nextReview}
-    settings: { sounds: true, haptics: true },
-  });
+    mastery: {},
+    settings: { sounds: true, haptics: true }
+  };
+  const saved = DB.get('state');
+  if (!saved) return defState;
+  return { ...defState, ...saved, settings: { ...defState.settings, ...(saved.settings || {}) } };
 }
 function saveState(s) { DB.set('state', s); }
 
