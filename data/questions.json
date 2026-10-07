@@ -11923,5 +11923,45 @@
     "subtopicId": "cell-biology-ch-18-bcl2-proteins-are-the-critical-controllers-of-the-intrinsic-pathway-of-apoptosis",
     "chapterId": "cell-biology-ch-18",
     "areaId": "cell-biology"
+  },
+  {
+    "id": "q_physiology-ch-01-overview-of-eukaryotic-cells_1",
+    "subtopicId": "physiology-ch-01-overview-of-eukaryotic-cells",
+    "chapterId": "physiology-ch-01",
+    "areaId": "physiology",
+    "difficulty": 2,
+    "question": "איזה מהמאפיינים הבאים מייחד את הגרעינון (Nucleolus) בתוך גרעין התא האאוקריוטי?",
+    "options": [
+      "הוא מוקף בממברנה כפולה רציפה משלו, בנפרד ממעטפת הגרעין.",
+      "הוא מהווה את האתר המרכזי שבו מתבצע שעתוק של mRNA לייצור חלבונים ציטופלזמיים.",
+      "הוא מהווה אברון חסר ממברנה המוקדש בעיקר לשעתוק של rRNA והרכבת תת-יחידות של הריבוזום.",
+      "הוא מכיל את רוב הכרומטין הדחוס (הטרוכרומטין) של התא."
+    ],
+    "correctIndex": 2,
+    "explanation": "הגרעינון (Nucleolus) אינו מוקף בממברנה. תפקידו העיקרי הוא סינתזה של רוב ה-rRNA (פרט ל-5S) והרכבה ראשונית של תת-יחידות הריבוזום.",
+    "tags": [
+      "Nucleolus",
+      "Eukaryotes"
+    ]
+  },
+  {
+    "id": "q_physiology-ch-01-overview-of-eukaryotic-cells_2",
+    "subtopicId": "physiology-ch-01-overview-of-eukaryotic-cells",
+    "chapterId": "physiology-ch-01",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "במהלך תהליך של אנדוציטוזה מתווכת קולטן (Receptor-mediated endocytosis), איזה אברון אחראי על ניתוק הליגנד מהקולטן ומיחזור הקולטן לממברנת התא?",
+    "options": [
+      "Lysosome",
+      "Early Endosome",
+      "Golgi Apparatus",
+      "Late Endosome"
+    ],
+    "correctIndex": 1,
+    "explanation": "האנדוזום המוקדם (Early Endosome) הוא בעל סביבה מעט חומצית הגורמת לניתוק הליגנד מהקולטן, מה שמאפשר מיחזור (Recycling) של הקולטנים חזרה לממברנת התא.",
+    "tags": [
+      "Endosome",
+      "Receptor Recycling"
+    ]
   }
 ]

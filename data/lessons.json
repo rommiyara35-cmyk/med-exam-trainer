@@ -1952,5 +1952,35 @@
       "q_cell-biology-ch-18-bcl2-proteins-are-the-critical-controllers-of-the-intrinsic-pathway-of-apoptosis_3_1791371056",
       "q_cell-biology-ch-18-bcl2-proteins-are-the-critical-controllers-of-the-intrinsic-pathway-of-apoptosis_4_1791371056"
     ]
+  },
+  {
+    "id": "lesson_physiology-ch-01",
+    "chapterId": "physiology-ch-01",
+    "areaId": "physiology",
+    "title": "עקרונות תפקוד התא והממברנה",
+    "titleEn": "Cell and Membrane Function Principles",
+    "estimatedMinutes": 8,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "סקירת תאים אאוקריוטיים",
+        "content": "התא האאוקריוטי מכיל אברונים ממודרים, כאשר ה-**Nucleolus** (גרעינון) אחראי על הרכבת תת-יחידות הריבוזום ואינו מוקף ממברנה.",
+        "keyPoints": [
+          "הגרעינון אינו מוקף ממברנה ואחראי על שעתוק rRNA."
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "הובלה בשלפוחיות",
+        "content": "אנדוציטוזה מתווכת קולטן דורשת מחזור קולטנים. סביבת ה-**Early Endosome** חומצית מעט וגורמת לניתוק הליגנד מהקולטן, מה שמאפשר לו לחזור לממברנה.",
+        "keyPoints": [
+          "האנדוזום המוקדם מנתק את הליגנד מהקולטן בזכות סביבתו החומצית."
+        ]
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_physiology-ch-01-overview-of-eukaryotic-cells_1",
+      "q_physiology-ch-01-overview-of-eukaryotic-cells_2"
+    ]
   }
 ]
