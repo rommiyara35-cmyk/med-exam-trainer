@@ -11422,5 +11422,89 @@
     "subtopicId": "cell-biology-ch-17-meiosis",
     "chapterId": "cell-biology-ch-17",
     "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 1,
+    "question": "מהו תפקידו העיקרי של מנגנון ה‑G1 checkpoint במחזור התא?",
+    "options": [
+      "לוודא שה-DNA של התא שלם לפני כניסה ל‑S phase",
+      "להפעיל את קוֹסִין D לפני המיטוזה",
+      "לגרום לפירוק של פיברינוגן",
+      "לשחרר את ה‑c‑Myc מה‑nucleus"
+    ],
+    "correctIndex": 0,
+    "explanation": "ב‑G1 checkpoint התא בודק שלמות ה‑DNA, נזילות DNA ונוכחות גורמי גדילה לפני שהוא מתיר מעבר ל‑S phase. שאר האפשרויות אינן מתארות את תפקידו.",
+    "tags": [
+      "G1 checkpoint",
+      "DNA damage"
+    ],
+    "id": "q_cell-biology-ch-17-control-of-cell-division-and-cell-growth_1_1791366984",
+    "subtopicId": "cell-biology-ch-17-control-of-cell-division-and-cell-growth",
+    "chapterId": "cell-biology-ch-17",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 2,
+    "question": "תא שנפגע נזק DNA אך חלבון p53 אינו מתפקד. מה צפוי לקרות ברמת המעבר מ‑G1 ל‑S?",
+    "options": [
+      "המעבר יתקדם למרות נזק ה‑DNA",
+      "המעבר ייעצר לחלוטין",
+      "ה‑CDK2 יפגע ב‑Cyclin E",
+      "ה‑Rb ייפרק לפני ה‑E2F"
+    ],
+    "correctIndex": 0,
+    "explanation": "p53 משמש כמנגנון חישה של נזק DNA ומעורר ביטוי של p21, המעכב CDK2‑Cyclin E. ללא p53, אין עיכוב, ולכן התא יעבור ל‑S למרות הפגיעה. האפשרויות האחרות אינן משקפות את המנגנון.",
+    "tags": [
+      "p53",
+      "G1/S transition",
+      "DNA damage response"
+    ],
+    "id": "q_cell-biology-ch-17-control-of-cell-division-and-cell-growth_2_1791366984",
+    "subtopicId": "cell-biology-ch-17-control-of-cell-division-and-cell-growth",
+    "chapterId": "cell-biology-ch-17",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 2,
+    "question": "כיצד משמש mTORC1 לשילוב אותות גורמי גדילה וזמינות חומצות אמינו לקידום גדילת התא?",
+    "options": [
+      "מפעיל את S6K1 ו‑4E‑BP1, מה שמגביר תרגום חלבונים, ובכך מגדיל מסה תאית",
+      "מעכב את AKT ומקטין את ייצור ה‑ATP",
+      "מפעיל את CDK1 באופן ישיר",
+      "מונע את פעילות ה‑Ras"
+    ],
+    "correctIndex": 0,
+    "explanation": "mTORC1, כאשר הוא מופעל על‑ידי גורמי גדילה (PI3K/AKT) וזמינות חומצות אמינו, מווסת את S6K1 ו‑4E‑BP1, מה שמוביל להאצת תרגום חלבונים והרחבת המסה התאית. שאר האפשרויות אינן נכונות מבחינה ביולוגית.",
+    "tags": [
+      "mTORC1",
+      "cell growth",
+      "protein synthesis"
+    ],
+    "id": "q_cell-biology-ch-17-control-of-cell-division-and-cell-growth_3_1791366984",
+    "subtopicId": "cell-biology-ch-17-control-of-cell-division-and-cell-growth",
+    "chapterId": "cell-biology-ch-17",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 3,
+    "question": "תינוק בן 6 חודשים מציג ראטינובלסטומה דו‑צדדית. בדיקה גנטית מגלה מוטציה ב‑RB1 ב‑allele אחד בלבד. איזו מההסברים המולקולרייים הבאים מתארת במדויק את המנגנון המוביל להתפתחות הגידול?",
+    "options": [
+      "ה‑Rb הפוטנציאלי אינו מסוגל לקשור את E2F, ולכן E2F משוחרר באופן קבוע ומקדם ביטוי גנים של מחזור התא",
+      "ה‑p53 אינו מתבטא ולכן התא אינו עובר אפופטוזה",
+      "ה‑Cyclin D אינו מתבטא ולכן CDK4/6 אינו פעיל",
+      "ה‑mTORC2 מגביר את ייצור ה‑Akt באופן קבוע"
+    ],
+    "correctIndex": 0,
+    "explanation": "מוטציה ב‑RB1 גורמת לאיבוד הפונקציה של חלבון Rb, שמקושר ל‑E2F במצב ה‑hypophosphorylated. ללא Rb, E2F נשאר חופשי, מה שמוביל לביטוי מתמשך של גנים הדרושים למעבר מ‑G1 ל‑S ולפרוליפרציה בלתי מבוקרת – מנגנון מרכזי ברטינובלסטומה. האפשרויות האחרות מתארות מנגנונים שאינם קשורים ישירות למוטציה ב‑RB1.",
+    "tags": [
+      "RB1",
+      "retinoblastoma",
+      "E2F",
+      "cell cycle control"
+    ],
+    "id": "q_cell-biology-ch-17-control-of-cell-division-and-cell-growth_4_1791366984",
+    "subtopicId": "cell-biology-ch-17-control-of-cell-division-and-cell-growth",
+    "chapterId": "cell-biology-ch-17",
+    "areaId": "cell-biology"
   }
 ]
