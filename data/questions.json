@@ -11588,5 +11588,254 @@
     "subtopicId": "cell-biology-ch-18-apoptosis-eliminates-unwanted-cells",
     "chapterId": "cell-biology-ch-18",
     "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 1,
+    "question": "מהו התפקיד העיקרי של Caspase‑3 בתהליך האפופטוזיס?",
+    "options": [
+      "חיתוך חלבונים לאחר Asp והפעלה של תהליך הפירוק התאתי",
+      "פוספורילציה של חלבוני סיגנלינג",
+      "הפעלה של DNA‑Polimerase",
+      "העברת אותות דרך חלבוני G‑protein"
+    ],
+    "correctIndex": 0,
+    "explanation": "Caspase‑3 הוא אחד מה‑executioner caspases; הוא חותך חלבונים רבים אחרי חומצת האספרטית, מה שמוביל לדגרדציה של גרעין התא, קרטינוזומים ו‑cytoskeleton – שלב מרכזי באפופטוזיס.",
+    "tags": [
+      "Caspase‑3",
+      "executioner"
+    ],
+    "id": "q_cell-biology-ch-18-apoptosis-depends-on-an-intracellular-proteolytic-cascade-mediated-by-caspases_1_1791368706",
+    "subtopicId": "cell-biology-ch-18-apoptosis-depends-on-an-intracellular-proteolytic-cascade-mediated-by-caspases",
+    "chapterId": "cell-biology-ch-18",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 2,
+    "question": "איזה אירוע בתהליך האפופטוזיס הפנימי (intrinsic) מוביל ישירות להפעלת caspase‑9?",
+    "options": [
+      "שחרור של cytochrome c מהמיטוכונדר לתוך הציטופלזמה",
+      "פוספורילציה של Bad",
+      "הפעלה של caspase‑8 על‑ידי ריספטור Fas",
+      "חיתוך של PARP על‑ידי caspase‑3"
+    ],
+    "correctIndex": 0,
+    "explanation": "שחרור של cytochrome c גורם להרכבת Apaf‑1 עם dATP וליצירת apoptosome, שמקשרת ומפעילה את caspase‑9. יתר האפשרויות אינן קשורות ישירות להפעלת caspase‑9.",
+    "tags": [
+      "intrinsic pathway",
+      "cytochrome c",
+      "caspase‑9"
+    ],
+    "id": "q_cell-biology-ch-18-apoptosis-depends-on-an-intracellular-proteolytic-cascade-mediated-by-caspases_2_1791368706",
+    "subtopicId": "cell-biology-ch-18-apoptosis-depends-on-an-intracellular-proteolytic-cascade-mediated-by-caspases",
+    "chapterId": "cell-biology-ch-18",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 2,
+    "question": "איזו מההצהרות הבאות מתארת במדויק את מנגנון ההפעלה של executioner caspases (caspase‑3, ‑7)?",
+    "options": [
+      "הם מתורכבים כ‑zymogens ומופעלים על‑ידי חיתוך של initiator caspases",
+      "הם מתפצלים באופן אוטומטי לאחר דימריזציה",
+      "הפעלה מתרחשת רק לאחר פוספורילציה של תת‑יחידותיהם",
+      "הם דורשים חיבור ל‑Ca‑ATPase לפני חיתוך"
+    ],
+    "correctIndex": 0,
+    "explanation": "executioner caspases מיוצרים כ‑procaspases (inactive zymogens). הם נחתכים על‑ידי initiator caspases (כגון caspase‑8 או ‑9), מה שמאפשר שינוי קונפורמציה ופעילות אנזימטית. שאר האפשרויות אינן מתארות את המנגנון הידוע.",
+    "tags": [
+      "executioner caspases",
+      "activation",
+      "caspase cascade"
+    ],
+    "id": "q_cell-biology-ch-18-apoptosis-depends-on-an-intracellular-proteolytic-cascade-mediated-by-caspases_3_1791368706",
+    "subtopicId": "cell-biology-ch-18-apoptosis-depends-on-an-intracellular-proteolytic-cascade-mediated-by-caspases",
+    "chapterId": "cell-biology-ch-18",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 3,
+    "question": "חולה בן 45 עם מחלת זאבת מערכתית מטופל בתרופה ניסויית המדכאת באופן סלקטיבי את caspase‑8. לאחר שלושה חודשים נצפתה החמרה בתסמיני המחלה, אך גם ירידה בתופעות הלוואי הקשורות לנזק רקמות (כגון פגיעה בכליות). איזו מההסברות הבאות מסבירה בצורה הטובה ביותר את הממצאים?",
+    "options": [
+      "הדיכוי של caspase‑8 מפחית את המוות האפופטוטי של תאי B autoreactive, מה שמוביל להצטברותם והחמרת האוטואימוניות, ובמקביל מצמצם את הפגיעה ברקמות עקב אפופטוזיס יתר של תאים בריאים.",
+      "הדיכוי של caspase‑8 מגביר את פעילות caspase‑9, ולכן מתרחשת עליה במוות תאי T, מה שמקצר את משך המחלה.",
+      "התרופה מגבילה את שחרור ה‑cytochrome c ולכן מונעת את כל תהליך האפופטוזיס, כולל המוות של תאי דלקת, מה שמוביל לשיפור כולל במצב החולה.",
+      "הדיכוי של caspase‑8 גורם לעלייה ב‑NF‑κB, שמפחית את תגובת האימונולוגיה ולכן מתרחשת החמרה של המחלה."
+    ],
+    "correctIndex": 0,
+    "explanation": "caspase‑8 הוא ה‑initiator caspase של הנתיב החיצוני (extrinsic) וגם משמש כ‑‘checkpoint’ למניעת הפעלה מופרזת של תאי מערכת החיסון. חסימתו מפחיתה את האפופטוזיס של תאי B ו‑T autoreactive, מה שמוביל להצטברותם והחמרת האוטואימוניות. במקביל, הפחתת האפופטוזיס של תאים בריאים (כגון תאי רקמה) מצמצמת נזק רקמתי, ולכן נצפתה ירידה בתופעות הלוואי. האפשרויות האחרות אינן משקפות את ההשפעה הסלקטיבית של חסימת caspase‑8 על הנתיב החיצוני ולא מתארות את ההשפעה על NF‑κB בצורה מדויקת.",
+    "tags": [
+      "caspase‑8",
+      "extrinsic pathway",
+      "clinical implication",
+      "autoimmunity"
+    ],
+    "id": "q_cell-biology-ch-18-apoptosis-depends-on-an-intracellular-proteolytic-cascade-mediated-by-caspases_4_1791368706",
+    "subtopicId": "cell-biology-ch-18-apoptosis-depends-on-an-intracellular-proteolytic-cascade-mediated-by-caspases",
+    "chapterId": "cell-biology-ch-18",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 1,
+    "question": "איזה ליגנד נקשר לקולטן המוות Fas (CD95) כדי להפעיל את המסלול החיצוני של אפופטוזיס?",
+    "options": [
+      "FasL",
+      "TNF‑α",
+      "TRAIL",
+      "EGF"
+    ],
+    "correctIndex": 0,
+    "explanation": "FasL (Fas Ligand) הוא הליגנד הספציפי של קולטן Fas, וקישורו מוביל לגיבוש DISC והפעלת caspase‑8.",
+    "tags": [
+      "Fas",
+      "FasL"
+    ],
+    "id": "q_cell-biology-ch-18-activation-of-cell-surface-death-receptors-initiates-the-extrinsic-pathway-of-apoptosis_1_1791369500",
+    "subtopicId": "cell-biology-ch-18-activation-of-cell-surface-death-receptors-initiates-the-extrinsic-pathway-of-apoptosis",
+    "chapterId": "cell-biology-ch-18",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 2,
+    "question": "לאחר קישור של FasL ל‑Fas, איזה חלבון מתווך עיקרי נקשר ל‑death domain של הקולטן ליצירת DISC?",
+    "options": [
+      "FADD",
+      "MyD88",
+      "TRADD",
+      "ASC"
+    ],
+    "correctIndex": 0,
+    "explanation": "FADD (Fas‑Associated protein with Death Domain) הוא adaptor שמתחבר ל‑DD של Fas ומגייס את procaspase‑8 ל‑DISC.",
+    "tags": [
+      "FADD",
+      "DISC"
+    ],
+    "id": "q_cell-biology-ch-18-activation-of-cell-surface-death-receptors-initiates-the-extrinsic-pathway-of-apoptosis_2_1791369500",
+    "subtopicId": "cell-biology-ch-18-activation-of-cell-surface-death-receptors-initiates-the-extrinsic-pathway-of-apoptosis",
+    "chapterId": "cell-biology-ch-18",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 2,
+    "question": "איזה חלבון פנימי של התא יכול לחסום את הפעלת caspase‑8 ולמנוע אפופטוזיס חיצוני?",
+    "options": [
+      "c‑FLIP",
+      "Bcl‑2",
+      "IAP",
+      "Smac/DIABLO"
+    ],
+    "correctIndex": 0,
+    "explanation": "c‑FLIP (cellular FLICE‑like inhibitory protein) דומה במבנה ל‑caspase‑8 אך חסר את האתר הקטלי, ולכן מתחרה על הקשירה ל‑DISC ומונע את הפעלת caspase‑8.",
+    "tags": [
+      "c‑FLIP",
+      "caspase‑8"
+    ],
+    "id": "q_cell-biology-ch-18-activation-of-cell-surface-death-receptors-initiates-the-extrinsic-pathway-of-apoptosis_3_1791369500",
+    "subtopicId": "cell-biology-ch-18-activation-of-cell-surface-death-receptors-initiates-the-extrinsic-pathway-of-apoptosis",
+    "chapterId": "cell-biology-ch-18",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 3,
+    "question": "חולה בן 12 מציג לימפופרוליפרציה של תאי B ו‑T, אנימיה, והיסטוריה של פיברוזיס לימפוציטי. בדיקות גנטיות חשפו מוטציה ב‑Fas שמפחיתה את פעילותו. איזו מההצעות הבאות מסבירה בצורה המדויקת ביותר את הפתולוגיה של המחלה (ALPS)?",
+    "options": [
+      "הקמת DISC פגומה המובילה להפחתת הפעלת caspase‑8 וכשל באפופטוזיס של לימפוציטים",
+      "הפעלה יתר של caspase‑9 דרך המסלול הפנימי (intrinsic) וגרימת מוות יתר של תאי דם לבנים",
+      "הגברת הביטוי של TRAIL שמובילה לאפופטוזיס מופרז של תאי כבד",
+      "איבוד שחרור ציטוכרום‑c מהמיטוכונדריה וגרימת נקרוזיס בתאי הלימפה"
+    ],
+    "correctIndex": 0,
+    "explanation": "ב‑ALPS המוטציה ב‑Fas פוגעת בגיבוש DISC ולכן הפעלת caspase‑8 נחלשת. כתוצאה מכך תאי הלימפה אינם מתאבנים כראוי, מה שמוביל להצטברותם ולסימפטומים הקליניים המתוארים. האפשרויות האחרות מתארות מנגנונים שאינם קשורים למוטציה ב‑Fas.",
+    "tags": [
+      "ALPS",
+      "Fas mutation",
+      "extrinsic apoptosis"
+    ],
+    "id": "q_cell-biology-ch-18-activation-of-cell-surface-death-receptors-initiates-the-extrinsic-pathway-of-apoptosis_4_1791369500",
+    "subtopicId": "cell-biology-ch-18-activation-of-cell-surface-death-receptors-initiates-the-extrinsic-pathway-of-apoptosis",
+    "chapterId": "cell-biology-ch-18",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 1,
+    "question": "איזה חלבון משוחרר מהמיטוכונדריה ומאתחל את יצירת האפופטוזום?",
+    "options": [
+      "Cytochrome c",
+      "Bcl‑2",
+      "Smac/DIABLO",
+      "Apaf‑1"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cytochrome c משוחרר לאחר MOMP ונקשר ל‑Apaf‑1 בתנאי dATP/ATP, מה שמוביל להרכבת האפופטוזום.",
+    "tags": [
+      "Cytochrome c",
+      "Apoptosome"
+    ],
+    "id": "q_cell-biology-ch-18-the-intrinsic-pathway-of-apoptosis-depends-on-proteins-released-from-mitochondria_1_1791370253",
+    "subtopicId": "cell-biology-ch-18-the-intrinsic-pathway-of-apoptosis-depends-on-proteins-released-from-mitochondria",
+    "chapterId": "cell-biology-ch-18",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 2,
+    "question": "כיצד Cytochrome c תורם להרכבת האפופטוזום?",
+    "options": [
+      "הוא נקשר ל‑Apaf‑1 בתנאי dATP/ATP, גורם להומוטטרימריזציה של Apaf‑1 ומגייס procaspase‑9",
+      "הוא משמש כמחמצן במערכת הנשימה ומעלה את רמת ROS",
+      "הוא חוסם את IAPs ומאפשר פעילות של caspase‑3",
+      "הוא משחרר את Bcl‑2 מהמטבלה ומונע MOMP"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cytochrome c, יחד עם dATP/ATP, נקשר ל‑Apaf‑1, גורם להומוטטרימריזציה של Apaf‑1 ויוצר את האפופטוזום שמגייס procaspase‑9 להפעלה.",
+    "tags": [
+      "Cytochrome c",
+      "Apaf‑1",
+      "caspase‑9"
+    ],
+    "id": "q_cell-biology-ch-18-the-intrinsic-pathway-of-apoptosis-depends-on-proteins-released-from-mitochondria_2_1791370253",
+    "subtopicId": "cell-biology-ch-18-the-intrinsic-pathway-of-apoptosis-depends-on-proteins-released-from-mitochondria",
+    "chapterId": "cell-biology-ch-18",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 2,
+    "question": "מהו תפקידו של Smac/DIABLO במנגנון האפופטוזיס הפנימי?",
+    "options": [
+      "הוא קושר את IAPs, משחרר את העיכוב על caspase‑3/7 ומאפשר את ההפעלה המלאה של האפופטוזיס",
+      "הוא מגביר את ייצור ה‑Cytochrome c במיטוכונדריה",
+      "הוא משמש כ‑ATPase המטעין את Apaf‑1 באנרגיה",
+      "הוא מעכב את BAX ו‑BAK, ובכך מונע MOMP"
+    ],
+    "correctIndex": 0,
+    "explanation": "Smac/DIABLO משחרר את העיכוב של IAPs (כגון XIAP) על caspase‑3/7, ובכך מאפשר את ההפעלה המלאה של תהליך האפופטוזיס.",
+    "tags": [
+      "Smac/DIABLO",
+      "IAP",
+      "caspase‑3"
+    ],
+    "id": "q_cell-biology-ch-18-the-intrinsic-pathway-of-apoptosis-depends-on-proteins-released-from-mitochondria_3_1791370253",
+    "subtopicId": "cell-biology-ch-18-the-intrinsic-pathway-of-apoptosis-depends-on-proteins-released-from-mitochondria",
+    "chapterId": "cell-biology-ch-18",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 3,
+    "question": "חולה בן 58 מציג מחלה נוירודגנרטיבית. בדיקת DNA מגלה מוטציה חסרת תפקוד ב‑BAX, גורמת לירידה ב‑MOMP. איזו מההשלכות הבאות היא הסבירה ביותר?",
+    "options": [
+      "הפחתה משמעותית בשחרור Cytochrome c → הפחתה ב‑caspase‑9 → ירידה במוות תאי אפופטוטי של נוירונים פגומים",
+      "עלייה ב‑שחרור Smac/DIABLO → חיזוק פעילות IAPs → הפעלה מוגברת של caspase‑3",
+      "הפעלה יתר של Bcl‑2 → חיזוק MOMP → עלייה במוות תאי אפופטוטי",
+      "הגברת ייצור Endonuclease G → פגיעה ב‑DNA של תאי גלייה בלבד"
+    ],
+    "correctIndex": 0,
+    "explanation": "מוטציה ב‑BAX מפחיתה את חדירת המיטוכונדריה (MOMP), ולכן משחררת פחות Cytochrome c, מה שמוביל להפחתה ב‑caspase‑9 וב‑caspase‑3, ובכך מקטין את המוות האפופטוטי של נוירונים הפגועים. האפשרויות האחרות מכילות קשרים מוטעים (למשל, Smac משחרר IAPs ולא מחזק אותם).",
+    "tags": [
+      "BAX",
+      "MOMP",
+      "caspase‑9",
+      "clinical‑apoptosis"
+    ],
+    "id": "q_cell-biology-ch-18-the-intrinsic-pathway-of-apoptosis-depends-on-proteins-released-from-mitochondria_4_1791370253",
+    "subtopicId": "cell-biology-ch-18-the-intrinsic-pathway-of-apoptosis-depends-on-proteins-released-from-mitochondria",
+    "chapterId": "cell-biology-ch-18",
+    "areaId": "cell-biology"
   }
 ]

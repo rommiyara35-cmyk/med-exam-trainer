@@ -896,8 +896,8 @@ function sm2(card, grade) {
 
 function initFlashcards() {
   let data = DB.get('flashcards');
-  if (!data || data.version !== 3) {
-    data = { version: 3, decks: [] };
+  if (!data || data.version !== 4) {
+    data = { version: 4, decks: [] };
     if (SYLLABUS && SYLLABUS.areas) {
       for (const area of SYLLABUS.areas) {
         for (const ch of area.chapters) {
@@ -908,18 +908,22 @@ function initFlashcards() {
             const lesson = LESSONS.find(l => l.chapterId === ch.id);
             if (lesson && lesson.cards) {
               const matchingCard = lesson.cards.find(c => c.title && (c.title.includes(sub.title) || sub.title.includes(c.title)));
-              if (matchingCard && matchingCard.content) {
-                back = matchingCard.content.replace(/\*\*/g, '');
+              if (matchingCard && matchingCard.keyPoints && matchingCard.keyPoints.length > 0) {
+                back = matchingCard.keyPoints.join('\n\n');
               } else {
-                 const genericCard = lesson.cards.find(c => c.content && c.content.length > 20);
-                 if (genericCard) back = genericCard.content.replace(/\*\*/g, '');
+                 const genericCard = lesson.cards.find(c => c.keyPoints && c.keyPoints.length > 0);
+                 if (genericCard) back = genericCard.keyPoints.join('\n\n');
               }
             }
-            cards.push({
-              id: 'c_' + Math.random().toString(36).substr(2,9),
-              front: sub.title + (sub.titleEn ? `\n(${sub.titleEn})` : ''),
-              back: back,
-              deckId, interval: 1, repetitions: 0, easeFactor: 2.5, dueDate: Date.now(), createdAt: Date.now()
+            const concepts = sub.title.split(/,\s*|\s+ו(?=[א-ת])/);
+            concepts.forEach(concept => {
+              if (!concept.trim()) return;
+              cards.push({
+                id: 'c_' + Math.random().toString(36).substr(2,9),
+                front: concept.trim(),
+                back: back,
+                deckId, interval: 1, repetitions: 0, easeFactor: 2.5, dueDate: Date.now(), createdAt: Date.now()
+              });
             });
           }
           data.decks.push({ id: deckId, name: ch.title, subtopicId: null, chapterId: ch.id, areaId: area.id, cards });
@@ -930,7 +934,7 @@ function initFlashcards() {
         const tcards = termQs.map(q => ({
           id: 'c_' + Math.random().toString(36).substr(2,9),
           front: q.tags[0],
-          back: `תשובה: ${q.options[q.correctIndex]}\n\n${q.explanation || ''}`.trim(),
+          back: `תשובה: ${q.options[q.correctIndex]}\n\n${(q.explanation || '').split('.')[0]}.`.trim(),
           deckId: 'deck_terms', interval: 1, repetitions: 0, easeFactor: 2.5, dueDate: Date.now(), createdAt: Date.now()
         }));
         data.decks.push({ id: 'deck_terms', name: 'מונחים ואנזימים', subtopicId: null, chapterId: null, areaId: null, cards: tcards });
