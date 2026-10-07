@@ -1484,14 +1484,14 @@ function completeSession(total, correct, mission) {
   el.innerHTML = `<div class="complete">
     <div class="complete-emoji">${emoji}</div>
     <div class="c-title">${title}</div>
-    <div class="c-sub">סיימת סשן לימוד בהצלחה</div>
+    <div class="c-sub" style="margin-bottom: 24px; color: var(--label2);">סיימת סשן לימוד בהצלחה</div>
     <div class="c-stats">
       <div class="c-stat"><div class="c-val">${correct}/${total}</div><div class="c-lbl">נכון</div></div>
       <div class="c-stat"><div class="c-val">${acc}%</div><div class="c-lbl">דיוק</div></div>
       <div class="c-stat"><div class="c-val" style="color:var(--warning)">+${xpEarned}</div><div class="c-lbl">XP</div></div>
     </div>
-    <button class="btn btn-accent" style="margin-bottom:12px" onclick="closeOverlay()">חזרה לתרגול</button>
-    <button class="btn btn-ghost" onclick="switchTab('progress',document.querySelector('[data-tab=progress]'));closeOverlay()">ראה התקדמות →</button>
+    <button class="btn btn-accent" style="margin-bottom:12px; width:100%" onclick="closeOverlay()">חזרה לתרגול</button>
+    <button class="btn btn-ghost" style="width:100%" onclick="switchTab('progress',document.querySelector('[data-tab=progress]'));closeOverlay()">ראה התקדמות →</button>
   </div>`;
 }
 
