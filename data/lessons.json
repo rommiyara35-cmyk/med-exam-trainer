@@ -23,7 +23,22 @@
     ],
     "followUpQuestionIds": [
       "q_bc_amino_1",
-      "q_bc_amino_2"
+      "q_bc_amino_2",
+      "q_biochemistry-ch-03-sec-3-1_1_1791329231",
+      "q_biochemistry-ch-03-sec-3-1_2_1791329231",
+      "q_biochemistry-ch-03-sec-3-1_3_1791329231",
+      "q_biochemistry-ch-03-sec-3-2_1_1791329261",
+      "q_biochemistry-ch-03-sec-3-2_2_1791329261",
+      "q_biochemistry-ch-03-sec-3-2_3_1791329261",
+      "q_biochemistry-ch-03-sec-3-2_4_1791329261",
+      "q_biochemistry-ch-03-sec-3-3_1_1791329290",
+      "q_biochemistry-ch-03-sec-3-3_2_1791329290",
+      "q_biochemistry-ch-03-sec-3-3_3_1791329290",
+      "q_biochemistry-ch-03-sec-3-3_4_1791329290",
+      "q_biochemistry-ch-03-sec-3-4_1_1791329320",
+      "q_biochemistry-ch-03-sec-3-4_2_1791329320",
+      "q_biochemistry-ch-03-sec-3-4_3_1791329320",
+      "q_biochemistry-ch-03-sec-3-4_4_1791329320"
     ]
   },
   {
@@ -85,7 +100,11 @@
       "q_biochemistry-ch-02-sec-2-3_1_1791322901",
       "q_biochemistry-ch-02-sec-2-3_2_1791322901",
       "q_biochemistry-ch-02-sec-2-3_3_1791322901",
-      "q_biochemistry-ch-02-sec-2-3_4_1791322901"
+      "q_biochemistry-ch-02-sec-2-3_4_1791322901",
+      "q_biochemistry-ch-02-sec-2-2_1_1791329199",
+      "q_biochemistry-ch-02-sec-2-2_2_1791329199",
+      "q_biochemistry-ch-02-sec-2-2_3_1791329199",
+      "q_biochemistry-ch-02-sec-2-2_4_1791329199"
     ]
   },
   {
@@ -141,7 +160,15 @@
       "q_biochemistry-ch-05-sec-5-2_1_1791323202",
       "q_biochemistry-ch-05-sec-5-2_2_1791323202",
       "q_biochemistry-ch-05-sec-5-2_3_1791323202",
-      "q_biochemistry-ch-05-sec-5-2_4_1791323202"
+      "q_biochemistry-ch-05-sec-5-2_4_1791323202",
+      "q_biochemistry-ch-05-sec-5-1_1_1791329498",
+      "q_biochemistry-ch-05-sec-5-1_2_1791329498",
+      "q_biochemistry-ch-05-sec-5-1_3_1791329498",
+      "q_biochemistry-ch-05-sec-5-1_4_1791329498",
+      "q_biochemistry-ch-05-sec-5-3_1_1791329527",
+      "q_biochemistry-ch-05-sec-5-3_2_1791329527",
+      "q_biochemistry-ch-05-sec-5-3_3_1791329527",
+      "q_biochemistry-ch-05-sec-5-3_4_1791329527"
     ]
   },
   {
@@ -200,7 +227,1642 @@
       "q_biochemistry-ch-07-sec-7-5_1_1791323386",
       "q_biochemistry-ch-07-sec-7-5_2_1791323386",
       "q_biochemistry-ch-07-sec-7-5_3_1791323386",
-      "q_biochemistry-ch-07-sec-7-5_4_1791323386"
+      "q_biochemistry-ch-07-sec-7-5_4_1791323386",
+      "q_biochemistry-ch-07-sec-7-1_1_1791329703",
+      "q_biochemistry-ch-07-sec-7-1_2_1791329703",
+      "q_biochemistry-ch-07-sec-7-1_3_1791329703",
+      "q_biochemistry-ch-07-sec-7-1_4_1791329703",
+      "q_biochemistry-ch-07-sec-7-2_1_1791329732",
+      "q_biochemistry-ch-07-sec-7-2_2_1791329732",
+      "q_biochemistry-ch-07-sec-7-2_3_1791329732",
+      "q_biochemistry-ch-07-sec-7-2_4_1791329732",
+      "q_biochemistry-ch-07-sec-7-3_1_1791329762",
+      "q_biochemistry-ch-07-sec-7-3_2_1791329762",
+      "q_biochemistry-ch-07-sec-7-3_3_1791329762",
+      "q_biochemistry-ch-07-sec-7-3_4_1791329762",
+      "q_biochemistry-ch-07-sec-7-4_1_1791329791",
+      "q_biochemistry-ch-07-sec-7-4_2_1791329791",
+      "q_biochemistry-ch-07-sec-7-4_3_1791329791",
+      "q_biochemistry-ch-07-sec-7-4_4_1791329791"
+    ]
+  },
+  {
+    "title": "מבוא ליסודות הביוכימיה",
+    "titleEn": "Introduction to Biochemistry Fundamentals",
+    "estimatedMinutes": 8,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "הגדרה והיקף הביוכימיה",
+        "content": "הביוכימיה היא **המחקר של תהליכים כימיים המתרחשים בתאים חיים**. היא משלב את עקרונות ה‑**Chemistry** (כולל **Thermodynamics**, **Kinetics**, **Organic Chemistry**) עם מושגים של **Cell Biology** ו‑**Molecular Genetics**. הביוכימיה מתמקדת במולקולות גדולות (macromolecules) – **Proteins**, **Nucleic Acids**, **Carbohydrates**, **Lipids** – ובתהליכים מטבוליים כגון **Glycolysis**, **Citric Acid Cycle**, ו‑**Oxidative Phosphorylation**. בנוסף, היא חוקרת את **Enzymes** כמזרזים ביולוגיים, את ה‑**Regulation** של נתיבים, ואת האינטראקציות בין‑מולקולריות (לדוגמה **Protein‑Protein interactions**, **Ligand‑Receptor binding**).",
+        "keyPoints": [
+          "ביוכימיה = חקר הכימיה של החיים",
+          "מולקולות גדולות: חלבונים, חומצות גרעין, פחמימות, שומנים",
+          "נתיבים מטבוליים מרכזיים",
+          "תפקיד האנזימים והרגולציה"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "עקרונות תרמודינמיים וקינטיים בביו‑כימיה",
+        "content": "בביוכימיה, **ΔG°'** (Free Energy change under standard biochemical conditions) קובע אם תגובה מתרחשת ספונטנית (ΔG°' < 0). תאים משמרים אנרגיה באמצעות **ATP** – **adenosine triphosphate** – שמחזיק שני קשרי **phosphoanhydride** בעלי **high‑energy**. קינטיקה של תגובה מתוארת לעיתים קרובות על‑ידי משוואת **Michaelis‑Menten**: **v = (Vmax·[S])/(Km + [S])**, כאשר **Km** הוא ריכוז המצע שבו **v = Vmax/2**. אנזימים משפרים את **kcat** (turnover number) ומפחיתים את **Ea** (activation energy) מבלי לשנות את **ΔG°'** של התגובה.",
+        "keyPoints": [
+          "ΔG°' < 0 → תגובה ספונטנית",
+          "ATP – מקור אנרגיה מרכזי בתא",
+          "משוואת Michaelis‑Menten וקשר בין Km ל‑Vmax",
+          "אנזימים משנים רק Ea, לא ΔG°'"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "id": "lesson_biochemistry-ch-01",
+    "chapterId": "biochemistry-ch-01",
+    "areaId": "biochemistry",
+    "followUpQuestionIds": [
+      "q_biochemistry-ch-01-introduction_1_1791329110",
+      "q_biochemistry-ch-01-introduction_2_1791329110",
+      "q_biochemistry-ch-01-introduction_3_1791329110",
+      "q_biochemistry-ch-01-introduction_4_1791329110",
+      "q_biochemistry-ch-01-sec-1-2_1_1791329140",
+      "q_biochemistry-ch-01-sec-1-2_2_1791329140",
+      "q_biochemistry-ch-01-sec-1-2_3_1791329140",
+      "q_biochemistry-ch-01-sec-1-2_4_1791329140",
+      "q_biochemistry-ch-01-sec-1-3_1_1791329169",
+      "q_biochemistry-ch-01-sec-1-3_2_1791329169",
+      "q_biochemistry-ch-01-sec-1-3_3_1791329169",
+      "q_biochemistry-ch-01-sec-1-3_4_1791329169"
+    ]
+  },
+  {
+    "title": "סקירת מבנה חלבונים",
+    "titleEn": "Overview of Protein Structure",
+    "estimatedMinutes": 8,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "רמות מבנה של חלבון",
+        "content": "**Primary structure** הוא רצף חומצות אמינו המחובר בקשר **peptide bond**. **Secondary structure** נוצר מהקפלים החזקים של השרשרת הראשית באמצעות קשרי **hydrogen bond** ל‑α‑helix או **β‑sheet**. **Tertiary structure** הוא קיפול של אזורים משניים ל‑**domain** יחיד, מושפע מאינטראקציות **hydrophobic**, **ionic**, **van der Waals**, וקשרים **disulfide**. **Quaternary structure** הוא אסוציאציה של תת‑יחידות (subunits) ל‑**homo‑oligomer** או **hetero‑oligomer**, לדוגמה **hemoglobin** (α₂β₂).",
+        "keyPoints": [
+          "רצף חומצות אמינו = Primary",
+          "קשרי H‑bond = Secondary",
+          "אינטראקציות הידרופוביות וקשרים דיסולפידיים = Tertiary",
+          "תת‑יחידות = Quaternary"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "כוחות קיפול והקשר בין מבנים",
+        "content": "הקיפול הראשוני נובע מהתנגדות **steric hindrance** והקפדה על **Ramachandran plot**. ה‑**hydrophobic effect** דוחף חומצות אמינו בלתי‑פולאריות למרכז, בעוד **hydrogen bonds**, **salt bridges**, ו‑**π‑π stacking** תורמים ליציבות ה‑tertiary. שינוי pH או נוכחות של **denaturants** (urea, guanidinium chloride) משבשים את האיזון ומפרקים את המבנה הקוונטיני.",
+        "keyPoints": [
+          "Ramachandran plot",
+          "Hydrophobic effect",
+          "Denaturants"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "id": "lesson_biochemistry-ch-04",
+    "chapterId": "biochemistry-ch-04",
+    "areaId": "biochemistry",
+    "followUpQuestionIds": [
+      "q_biochemistry-ch-04-sec-4-1_1_1791329352",
+      "q_biochemistry-ch-04-sec-4-2_1_1791329382",
+      "q_biochemistry-ch-04-sec-4-2_2_1791329382",
+      "q_biochemistry-ch-04-sec-4-2_3_1791329382",
+      "q_biochemistry-ch-04-sec-4-2_4_1791329382",
+      "q_biochemistry-ch-04-sec-4-3_1_1791329411",
+      "q_biochemistry-ch-04-sec-4-3_2_1791329411",
+      "q_biochemistry-ch-04-sec-4-3_3_1791329411",
+      "q_biochemistry-ch-04-sec-4-3_4_1791329411",
+      "q_biochemistry-ch-04-sec-4-4_1_1791329440",
+      "q_biochemistry-ch-04-sec-4-4_2_1791329440",
+      "q_biochemistry-ch-04-sec-4-4_3_1791329440",
+      "q_biochemistry-ch-04-sec-4-4_4_1791329440",
+      "q_biochemistry-ch-04-sec-4-5_1_1791329469",
+      "q_biochemistry-ch-04-sec-4-5_2_1791329469",
+      "q_biochemistry-ch-04-sec-4-5_3_1791329469",
+      "q_biochemistry-ch-04-sec-4-5_4_1791329469"
+    ]
+  },
+  {
+    "title": "מבוא לאנזימים",
+    "titleEn": "Introduction to Enzymes",
+    "estimatedMinutes": 8,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "הגדרה ומבנה של אנזים",
+        "content": "אנזים הוא **קָטָלִיס** ביולוגי חלבוני (או ריבוזומלי) המאיץ תגובות כימיות על‑ידי הפחתת **activation energy**. רוב האנזימים הם **homodimers**, **homotetramers** או **heterodimers** המורכבים מתתי‑יחידות בעלות מבנה משולש‑על‑על (**α/β‑fold**). המבנה הפעיל כולל אתר קו-זימן (**active site**) שבו נקשר תת‑המוצר (**substrate**) ויוצר **enzyme‑substrate complex (ES)** לפני שהתגובה מתרחשת.",
+        "keyPoints": [
+          "אנזים הוא קָטָלִיס חלבוני",
+          "אתר קו‑זימן הוא המקום שבו מתרחשת הקשר עם תת‑המוצר",
+          "מבנה תתי‑היחידה משפיע על פעילות האנזים"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "קינטיקה של אנזימים – משוואת מייקליס‑מנטן",
+        "content": "הקינטיקה של רוב האנזימים מתוארת על‑ידי משוואת **Michaelis‑Menten**: **v = (Vmax·[S])/(Km + [S])**. **Vmax** הוא קצב הריאקציה המקסימלי כאשר כל אתרי הקו‑זימן תפוסים, ו‑**Km** הוא ריכוז התת‑המוצר שבו **v = Vmax/2**. גרף **Lineweaver‑Burk** (הפוך) מאפשר קביעת Vmax ו‑Km משיפוע ו‑חיתוך ציר y.",
+        "keyPoints": [
+          "Vmax – קצב ריאקציה מקסימלי",
+          "Km – ריכוז תת‑המוצר לחצי Vmax",
+          "גרף Lineweaver‑Burk משמש לקביעת פרמטרים קינטיים"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "גורמים המשפיעים על פעילות האנזים וסוגי דיכוי",
+        "content": "פעילות האנזים מושפעת מ‑**pH**, **temperature**, ריכוזי **cofactors** (מתכות כמו **Zn²⁺**, **Mg²⁺**) ו‑**coenzymes** (כמו **NAD⁺**, **PLP**). דיכוי אנזימי יכול להיות **competitive**, **non‑competitive**, **uncompetitive** או **mixed**. דיכוי תחרותי מעלה את **Km** מבלי לשנות את **Vmax**, בעוד דיכוי לא‑תחרותי מוריד את **Vmax** מבלי להשפיע על **Km**.",
+        "keyPoints": [
+          "pH וטמפרטורה משנים את צורת האתר הקו‑זימני",
+          "דיכוי תחרותי מעלה Km",
+          "דיכוי לא‑תחרותי מוריד Vmax"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "id": "lesson_biochemistry-ch-06",
+    "chapterId": "biochemistry-ch-06",
+    "areaId": "biochemistry",
+    "followUpQuestionIds": [
+      "q_biochemistry-ch-06-sec-6-1_1_1791329557",
+      "q_biochemistry-ch-06-sec-6-1_2_1791329557",
+      "q_biochemistry-ch-06-sec-6-1_3_1791329557",
+      "q_biochemistry-ch-06-sec-6-1_4_1791329557",
+      "q_biochemistry-ch-06-sec-6-2_1_1791329586",
+      "q_biochemistry-ch-06-sec-6-2_2_1791329586",
+      "q_biochemistry-ch-06-sec-6-2_3_1791329586",
+      "q_biochemistry-ch-06-sec-6-2_4_1791329586",
+      "q_biochemistry-ch-06-sec-6-3_1_1791329615",
+      "q_biochemistry-ch-06-sec-6-3_2_1791329615",
+      "q_biochemistry-ch-06-sec-6-3_3_1791329615",
+      "q_biochemistry-ch-06-sec-6-3_4_1791329615",
+      "q_biochemistry-ch-06-sec-6-4_1_1791329644",
+      "q_biochemistry-ch-06-sec-6-4_2_1791329644",
+      "q_biochemistry-ch-06-sec-6-4_3_1791329644",
+      "q_biochemistry-ch-06-sec-6-4_4_1791329644",
+      "q_biochemistry-ch-06-sec-6-5_1_1791329674",
+      "q_biochemistry-ch-06-sec-6-5_2_1791329674",
+      "q_biochemistry-ch-06-sec-6-5_3_1791329674",
+      "q_biochemistry-ch-06-sec-6-5_4_1791329674"
+    ]
+  },
+  {
+    "title": "מבוא לאיתות ביוכימי",
+    "titleEn": "Introduction to Biochemical Signaling",
+    "estimatedMinutes": 8,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "הגדרת איתות ביוכימי",
+        "content": "איתות ביוכימי הוא תהליך שבו **מולקולה חיצונית (ligand)** מתקשרת לקולט **(receptor)** על פני התא או בתוך התא, ומעוררת **שרשרת של אירועים מולקולריים** (signal transduction cascade) שמסתיימת בתגובה פיזיולוגית. המערכת כוללת שלושה מרכיבים מרכזיים: ligand, receptor, ו‑**second messenger** (לדוגמה cAMP, Ca²⁺, IP₃).",
+        "keyPoints": [
+          "Ligand – קולט – second messenger",
+          "העברת מידע ממקור חיצוני לתגובה פנימית",
+          "הקפדה על ספציפיות וזמן"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "סוגי תקשורת תאית",
+        "content": "התקשורת מחולקת ל‑**autocrine** (הקולט הוא אותו תא שמפריש), **paracrine** (הקולט בתא סמוך), **endocrine** (הקולט במרחק רב דרך זרם הדם), ו‑**juxtacrine** (קשר ישיר בין תאי שכנים, לדוגמה דרך **Notch**). לכל סוג יש משמעויות פיזיולוגיות שונות מבחינת ריכוז הליגנד והקצב של הפעלת הקולט.",
+        "keyPoints": [
+          "Autocrine – Paracrine – Endocrine – Juxtacrine",
+          "תלות במרחק ובזמינות הליגנד",
+          "הקשר למחלות כגון סרטן והפרעות חיסוניות"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "מרכיבי שרשרת האיתות",
+        "content": "במרבית המסלולים נצפים שלושה שלבים עיקריים: **קבלה (receptor activation)**, **העברה (signal propagation)**, ו‑**תגובה (cellular response)**. דוגמאות קלאסיות: **GPCR** → G‑protein → **adenylyl cyclase** → cAMP → **PKA**; **RTK** → **autophosphorylation** → **Grb2/SOS** → **Ras‑Raf‑MEK‑ERK**. המושג **amplification** מתאר כיצד מולקולה אחת של ליגנד יכולה לייצר אלפי אירועים של פוספורילציה.",
+        "keyPoints": [
+          "GPCR, RTK, ion channel",
+          "Kinase cascade – amplification",
+          "פוספורילציה כ‑switch"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "בקרת זמן ומרחב באיתות",
+        "content": "האותות מוגבלים בזמן על‑ידי **phosphodiesterases**, **phosphatases**, ו‑**GTPase‑activating proteins (GAPs)**. מרחבית – באמצעות **scaffolding proteins** (לדוגמה **AKAPs**) שמרכזים קינטזות ו‑substrates באותו מיקרו‑דומיין. כך מתאפשרת **specificity** של האות גם בתא רב‑תכליתי.",
+        "keyPoints": [
+          "Phosphodiesterase – GAP – phosphatase",
+          "Scaffold – AKAP",
+          "ספציפיות מרחבית"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק את ההבנה של המושגים המרכזיים לפני שנמשיך למעמקים."
+      }
+    ],
+    "id": "lesson_biochemistry-ch-12",
+    "chapterId": "biochemistry-ch-12",
+    "areaId": "biochemistry",
+    "followUpQuestionIds": [
+      "q_biochemistry-ch-12-introduction_1_1791329822",
+      "q_biochemistry-ch-12-introduction_2_1791329822",
+      "q_biochemistry-ch-12-introduction_3_1791329822",
+      "q_biochemistry-ch-12-introduction_4_1791329822",
+      "q_biochemistry-ch-12-sec-12-1_1_1791329851",
+      "q_biochemistry-ch-12-sec-12-1_2_1791329851",
+      "q_biochemistry-ch-12-sec-12-1_3_1791329851",
+      "q_biochemistry-ch-12-sec-12-1_4_1791329851",
+      "q_biochemistry-ch-12-sec-12-2_1_1791329881",
+      "q_biochemistry-ch-12-sec-12-2_2_1791329881",
+      "q_biochemistry-ch-12-sec-12-2_3_1791329881",
+      "q_biochemistry-ch-12-sec-12-2_4_1791329881",
+      "q_biochemistry-ch-12-sec-12-4_1_1791329910",
+      "q_biochemistry-ch-12-sec-12-4_2_1791329910",
+      "q_biochemistry-ch-12-sec-12-4_3_1791329910",
+      "q_biochemistry-ch-12-sec-12-4_4_1791329910"
+    ]
+  },
+  {
+    "title": "מבוא למטבוליזם ביוכימי",
+    "titleEn": "Introduction to Biochemical Metabolism",
+    "estimatedMinutes": 8,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "הגדרת מטבוליזם והקשר לתהליכים ביוכימיים",
+        "content": "מטבוליזם הוא **קבוצת תגובות כימיות** המתרחשות בתוך התא, המאפשרות **המרת חומרים** (substrates) ל‑**מוצרים** (products) תוך שחרור או שמירת **אנרגיה**. המטבוליזם מחולק לשתי קטגוריות עיקריות: **קאטבוליזם** (פירוק מולקולות ליצירת אנרגיה) ו‑**אנבוליזם** (סינתזה של מולקולות מורכבות בעזרת אנרגיה). שני תהליכים אלו משולבים במעגלים משובצים, כאשר **קצב התגובה** נקבע על‑ידי **קינזים** (enzyme) ו‑**קונצנטרציות** של חומרים מגיבים ומוצרים.",
+        "keyPoints": [
+          "מטבוליזם = סדרת תגובות כימיות בתא",
+          "קאטבוליזם מול אנבוליזם",
+          "קינזים מווסתים קצב תגובה",
+          "אנרגיה משוחררת או נשמרת בתהליכים"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "עקרונות האנרגיה במטבוליזם",
+        "content": "האנרגיה הזמינה לתהליכים מטבוליים נמדדת ב‑**ATP** (adenosine triphosphate). הידרוליזת ATP ל‑ADP + Pi משחררת **ΔG°' ≈ –30.5 kJ·mol⁻¹**, אך בתנאי התא האפקטיבי (ΔG) יכול להיות פחות שלילי בשל ריכוזי ATP/ADP גבוהים. בנוסף, **NAD⁺/NADH** ו‑**FAD/FADH₂** משמשים כנושאי אלקטרונים, כאשר יחס **NAD⁺/NADH** גבוה מעודד תהליכי קאטבוליזם, בעוד יחס נמוך מעודד אנבוליזם.",
+        "keyPoints": [
+          "ATP – מקור האנרגיה הראשי בתא",
+          "ΔG°' של הידרוליזת ATP ≈ –30.5 kJ·mol⁻¹",
+          "NAD⁺/NADH ו‑FAD/FADH₂ כנושאי אלקטרונים",
+          "יחס NAD⁺/NADH קובע כיוון המטבוליזם"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "קשר בין מבנה חלבון לתפקוד מטבולי",
+        "content": "קינזים מטבוליים הם **חלבונים** בעלי מבנה תלת‑ממדי מדויק, הכולל **אתרים פעילים** (active sites) המזהים **substrate** ספציפי. שינוי במבנה (למשל, מוטציה או פוספורילציה) עשוי לשנות את **קצב Vmax** או את **קבוע Michaelis‑Menten (Km)**, ובכך לשנות את ה‑**זרימת המטבוליזם** (metabolic flux).",
+        "keyPoints": [
+          "מבנה תלת‑ממדי של קינזים קובע ספציפיות",
+          "אתר פעיל – מקום קישור ה‑substrate",
+          "שינויים מבניים משנים Vmax ו‑Km",
+          "ה‑flux המטבולי תלוי בתכונות הקינזים"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "id": "lesson_biochemistry-ch-13",
+    "chapterId": "biochemistry-ch-13",
+    "areaId": "biochemistry",
+    "followUpQuestionIds": [
+      "q_biochemistry-ch-13-introduction_1_1791329941",
+      "q_biochemistry-ch-13-introduction_2_1791329941",
+      "q_biochemistry-ch-13-introduction_3_1791329941",
+      "q_biochemistry-ch-13-introduction_4_1791329941",
+      "q_biochemistry-ch-13-sec-13-1_1_1791329971",
+      "q_biochemistry-ch-13-sec-13-1_2_1791329971",
+      "q_biochemistry-ch-13-sec-13-1_3_1791329971",
+      "q_biochemistry-ch-13-sec-13-1_4_1791329971",
+      "q_biochemistry-ch-13-sec-13-2_1_1791330001",
+      "q_biochemistry-ch-13-sec-13-2_2_1791330001",
+      "q_biochemistry-ch-13-sec-13-2_3_1791330001",
+      "q_biochemistry-ch-13-sec-13-2_4_1791330001",
+      "q_biochemistry-ch-13-sec-13-3_1_1791330030",
+      "q_biochemistry-ch-13-sec-13-3_2_1791330030",
+      "q_biochemistry-ch-13-sec-13-3_3_1791330030",
+      "q_biochemistry-ch-13-sec-13-3_4_1791330030",
+      "q_biochemistry-ch-13-sec-13-4_1_1791330061",
+      "q_biochemistry-ch-13-sec-13-4_2_1791330061",
+      "q_biochemistry-ch-13-sec-13-4_3_1791330061",
+      "q_biochemistry-ch-13-sec-13-4_4_1791330061"
+    ]
+  },
+  {
+    "title": "מבוא לגליקוליזה, גלוקונאוגנזה ומסלול הפנטוזות",
+    "titleEn": "Introduction to Glycolysis, Gluconeogenesis and Pentose Phosphate Pathway",
+    "estimatedMinutes": 8,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "הקשר מטבולי כללי",
+        "content": "הגליקוליזה, הגלוקונאוגנזה ומסלול הפנטוזות (PPP) מהווים שלושה מסלולים מרכזיים במטבוליזם של גלוקוז. **גליקוליזה** מתרחשת בציטופלזמה, מפיקה 2 ATP ו-2 NADH לכל מולקולת גלוקוז. **גלוקונאוגנזה** מתרחשת ברקמת הכבד ובכליות, משמשת לייצור גלוקוז מ‑פרה‑קארבונים (לקטט, פירובט, גאלאקטון). **PPP** מחולק לשתי שלבים – חמצוני (מייצר NADPH) ולא‑חמצוני (מייצר ריבוז‑5‑פוספט ו‑סוכרים בעלי 3‑5 פחמנים המשמשים לסינתזת נוקלאוטידים).",
+        "keyPoints": [
+          "גליקוליזה – אנאירובית, 2 ATP נטו",
+          "גלוקונאוגנזה – אנבולית, דורשת אנזימים ייחודיים",
+          "PPP – מקור NADPH ו‑R5P"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "אנזימים מווסתים מרכזיים",
+        "content": "בגליקוליזה האנזים המהיר‑הקצב הוא **phosphofructokinase‑1 (PFK‑1)**, המווסת על‑ידי ATP, ADP, AMP, citrate ו‑fructose‑2,6‑bisphosphate. ב‑גלוקונאוגנזה האנזימים הבלעדיים הם **pyruvate carboxylase**, **PEP carboxykinase (PEPCK)**, **fructose‑1,6‑bisphosphatase** ו‑**glucose‑6‑phosphatase**. ב‑PPP האנזים הקובע הוא **glucose‑6‑phosphate dehydrogenase (G6PD)**, רגיש ל‑NADP⁺/NADPH.",
+        "keyPoints": [
+          "PFK‑1 – נקודת בקרה מרכזית בגליקוליזה",
+          "PEPCK – קו‑המרה OAA → PEP בגלוקונאוגנזה",
+          "G6PD – קובע קצב חמצוני של PPP"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "אינטגרציה של המסלולים",
+        "content": "הקשר בין המסלולים מתבצע דרך מטבוליטים משותפים: **glucose‑6‑phosphate (G6P)** הוא נקודת הצומת בין גליקוליזה ל‑PPP; **fructose‑6‑phosphate (F6P)** ו‑**fructose‑1,6‑bisphosphate (F1,6BP)** משמשים גם ב‑gluconeogenesis (הפיכת F1,6BP ל‑F6P על‑ידי fructose‑1,6‑bisphosphatase). רמות NADH/NAD⁺ ו‑NADPH/NADP⁺ משמשות כאינדיקטורים של מצב האנרגיה והחמצון, ומשפיעות על פעילות PFK‑1 ו‑G6PD בהתאמה.",
+        "keyPoints": [
+          "G6P – צומת גליקוליזה/PPP",
+          "F1,6BP ↔︎ F6P – שלב משותף בגליקוליזה ו‑גלוקונאוגנזה",
+          "NADH/NAD⁺ ו‑NADPH/NADP⁺ – משקלים את פעילות האנזימים"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "id": "lesson_biochemistry-ch-14",
+    "chapterId": "biochemistry-ch-14",
+    "areaId": "biochemistry",
+    "followUpQuestionIds": [
+      "q_biochemistry-ch-14-introduction_1_1791330092",
+      "q_biochemistry-ch-14-introduction_2_1791330092",
+      "q_biochemistry-ch-14-introduction_3_1791330092",
+      "q_biochemistry-ch-14-introduction_4_1791330092",
+      "q_biochemistry-ch-14-sec-14-1_1_1791330121",
+      "q_biochemistry-ch-14-sec-14-1_2_1791330121",
+      "q_biochemistry-ch-14-sec-14-1_3_1791330121",
+      "q_biochemistry-ch-14-sec-14-1_4_1791330121",
+      "q_biochemistry-ch-14-sec-14-3_1_1791330151",
+      "q_biochemistry-ch-14-sec-14-3_2_1791330151",
+      "q_biochemistry-ch-14-sec-14-3_3_1791330151",
+      "q_biochemistry-ch-14-sec-14-3_4_1791330151",
+      "q_biochemistry-ch-14-sec-14-4_1_1791330180",
+      "q_biochemistry-ch-14-sec-14-4_2_1791330180",
+      "q_biochemistry-ch-14-sec-14-4_3_1791330180",
+      "q_biochemistry-ch-14-sec-14-4_4_1791330180",
+      "q_biochemistry-ch-14-sec-14-5_1_1791330211",
+      "q_biochemistry-ch-14-sec-14-5_2_1791330211",
+      "q_biochemistry-ch-14-sec-14-5_3_1791330211",
+      "q_biochemistry-ch-14-sec-14-5_4_1791330211",
+      "q_biochemistry-ch-14-sec-14-6_1_1791330240",
+      "q_biochemistry-ch-14-sec-14-6_2_1791330240",
+      "q_biochemistry-ch-14-sec-14-6_3_1791330240",
+      "q_biochemistry-ch-14-sec-14-6_4_1791330240"
+    ]
+  },
+  {
+    "title": "מבנה ותפקוד של גליקוגן",
+    "titleEn": "Structure and Function of Glycogen",
+    "estimatedMinutes": 8,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "מבנה כימי של גליקוגן",
+        "content": "גליקוגן הוא פוליסכריד של **גלוקוז** המורכב משרשרת מרכזית של יחידות **α-D-Glucose** המקושרות בקשר **α(1→4)**. כל 8‑12 יחידות גלוקוז מתווספות קו ענף באמצעות קשר **α(1→6)**, מה שמקנה לו מבנה **הומוטטרמר** בעל ענפים מרובים. המבנה הרב-ענפי מאפשר גישה מהירה של **glycogen phosphorylase** ו-**glycogen synthase** למולקולות הקצה.",
+        "keyPoints": [
+          "שרשרת מרכזית של α(1→4)",
+          "קשר ענף α(1→6) כל 8‑12 יחידות",
+          "מבנה הומוטטרמרי מרובה ענפים"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "תפקוד מטבולי של גליקוגן",
+        "content": "במצבי **post‑prandial** גליקוגן מתמלא בכבד ובשריר בעזרת **glycogen synthase** (מופעל על‑ידי **insulin**). במצב **fasting** או **exercise**, **glycogen phosphorylase** (מופעל על‑ידי **glucagon** או **epinephrine** דרך **phosphorylase kinase**) מפרק את הגליקוגן ל‑**glucose‑1‑phosphate**, שמומר ל‑**glucose‑6‑phosphate** ומשמש ל‑**glycolysis** או לשחרור ל‑**blood glucose** בכבד. המבנה הרב‑ענפי מאפשר שחרור מהיר של גלוקוז, בעוד שהקיבולת הגבוהה של גליקוגן משמשת כמאגרים אנרגטיים.",
+        "keyPoints": [
+          "סינתזה על‑ידי glycogen synthase",
+          "פירוק על‑ידי glycogen phosphorylase",
+          "קיבולת גבוהה של מאגר אנרגיה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "id": "lesson_biochemistry-ch-15",
+    "chapterId": "biochemistry-ch-15",
+    "areaId": "biochemistry",
+    "followUpQuestionIds": [
+      "q_biochemistry-ch-15-sec-15-1_1_1791330270",
+      "q_biochemistry-ch-15-sec-15-1_2_1791330270",
+      "q_biochemistry-ch-15-sec-15-1_3_1791330270",
+      "q_biochemistry-ch-15-sec-15-1_4_1791330270",
+      "q_biochemistry-ch-15-sec-15-2_1_1791330299",
+      "q_biochemistry-ch-15-sec-15-2_2_1791330299",
+      "q_biochemistry-ch-15-sec-15-2_3_1791330299",
+      "q_biochemistry-ch-15-sec-15-2_4_1791330299",
+      "q_biochemistry-ch-15-sec-15-3_1_1791330329",
+      "q_biochemistry-ch-15-sec-15-3_2_1791330329",
+      "q_biochemistry-ch-15-sec-15-3_3_1791330329",
+      "q_biochemistry-ch-15-sec-15-3_4_1791330329"
+    ]
+  },
+  {
+    "title": "יצירת Acetyl‑CoA במעגל חומצת הלימון",
+    "titleEn": "Acetyl‑CoA Production in the Citric Acid Cycle",
+    "estimatedMinutes": 8,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "תהליך יצירת Acetyl‑CoA",
+        "content": "הקשר של **Acetyl‑CoA** למעגל חומצת הלימון מתבצע על‑ידי **Pyruvate Dehydrogenase Complex (PDC)**, מולקולה רב‑חלקית (הומוטטרמר) המורכבת משלושה חלבונים עיקריים – **E1 (pyruvate dehydrogenase, TPP‑dependent)**, **E2 (dihydrolipoamide acetyltransferase)** ו‑**E3 (dihydrolipoamide dehydrogenase, FAD‑dependent)**. בתהליך שני שלבים מרכזיים מתרחשים: 1) **דקארבוקסילציה חומצית** של פירובט ל‑**hydroxyethyl‑TPP**, תוך שחרור CO₂ והפחתת NAD⁺ ל‑NADH; 2) **העברת קבוצת אצטיל** מה‑hydroxyethyl ל‑CoA דרך ל‑lipoamide‑SH, מה שמייצר **Acetyl‑CoA** ו‑**NADH**. הקו‑קשר של **CoA‑SH** נוצר על‑ידי **Coenzyme A** (כולל ADP‑ribose, pantothenate ו‑cysteine). הקפיטליזציה של תהליך זה דורשת חומצות משניות: **TPP**, **lipoic acid**, **FAD**, **NAD⁺**, **CoA‑SH**, **Mg²⁺** ו‑**Ca²⁺**. הרגולציה האפקטיבית של PDC מתבצעת באמצעות **פוספורילציה** (PDH‑kinase) ו‑**דפוספורילציה** (PDH‑phosphatase) המגיבות לרמות NADH/acetyl‑CoA (מעכבות) ול‑ATP/acetyl‑CoA (מעכבות) או ל‑Ca²⁺ (מפעילות).",
+        "keyPoints": [
+          "PDC הוא קומפלקס רב‑חלקי (E1‑E3) עם קו‑קשר TPP‑dependent",
+          "הדקארבוקסילציה של פירובט מייצרת CO₂ + NADH",
+          "ה‑Acetyl‑CoA נוצר דרך העברת אצטיל ל‑CoA‑SH דרך ל‑lipoamide",
+          "הרגולציה העיקרית: פוספורילציה על‑ידי PDH‑kinase (מעכבת) ודפוספורילציה על‑ידי PDH‑phosphatase (מפעילה)"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "id": "lesson_biochemistry-ch-16",
+    "chapterId": "biochemistry-ch-16",
+    "areaId": "biochemistry",
+    "followUpQuestionIds": [
+      "q_biochemistry-ch-16-sec-16-1_1_1791330360",
+      "q_biochemistry-ch-16-sec-16-1_2_1791330360",
+      "q_biochemistry-ch-16-sec-16-1_3_1791330360",
+      "q_biochemistry-ch-16-sec-16-1_4_1791330360",
+      "q_biochemistry-ch-16-sec-16-2_1_1791330390",
+      "q_biochemistry-ch-16-sec-16-2_2_1791330390",
+      "q_biochemistry-ch-16-sec-16-2_3_1791330390",
+      "q_biochemistry-ch-16-sec-16-2_4_1791330390",
+      "q_biochemistry-ch-16-sec-16-3_1_1791330420",
+      "q_biochemistry-ch-16-sec-16-3_2_1791330420",
+      "q_biochemistry-ch-16-sec-16-3_3_1791330420",
+      "q_biochemistry-ch-16-sec-16-3_4_1791330420",
+      "q_biochemistry-ch-16-sec-16-4_1_1791330449",
+      "q_biochemistry-ch-16-sec-16-4_2_1791330449",
+      "q_biochemistry-ch-16-sec-16-4_3_1791330449",
+      "q_biochemistry-ch-16-sec-16-4_4_1791330449"
+    ]
+  },
+  {
+    "title": "עיכול, גיוס והובלה של שומנים",
+    "titleEn": "Digestion, Mobilization, and Transport of Fats",
+    "estimatedMinutes": 8,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "עיכול של טריגליצרידים במעי הדק",
+        "content": "במזון, הטריגליצרידים משוחררים מהקפסולות המיקרו‑גרנוליות בעזרת **bile salts** שמאדים את הטיפה ומאפשרים ל‑**pancreatic lipase** (בזוג עם **colipase**) להיגרם חיתוך של הקשרים האסטריים, משחררים **free fatty acids** ו‑**monoacylglycerol**. החומצות משמשות ליצירת מיקרו‑גרנולות בממברנת האנטרית לפני ספיגה.",
+        "keyPoints": [
+          "bile salts מייצרים אמולסיה",
+          "pancreatic lipase + colipase חותכים קישורים אסטריים",
+          "תוצרי העיכול: חומצות חופשיות ו‑monoacylglycerol"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "גיוס חומצות שומן מהשומן הטבעי",
+        "content": "במצב צום, ההורמון **catecholamines** (אדרנלין, נוראדרנלין) מפעילים את **hormone‑sensitive lipase (HSL)** ו‑**adipose triglyceride lipase (ATGL)** בתאי האדיפוז, מה שמוביל לשחרור **non‑esterified fatty acids (NEFA)** ל‑**plasma**. ה‑NEFA נצמדים ל‑**albumin** ומועברים אל רקמות בעלות צורך אנרגטי.",
+        "keyPoints": [
+          "צום → catecholamines → HSL/ATGL",
+          "NEFA נצמדים ל‑albumin ב‑plasma",
+          "ה‑NEFA משמשים כמקור אנרגיה"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "הובלה של חומצות שומן במערכת הדם",
+        "content": "חומצות השומן הדינמיות נישאות ב‑**chylomicrons** לאחר ספיגתן במעי, ו‑**very‑low‑density lipoproteins (VLDL)** משחררות חומצות משומן כבד. **lipoprotein lipase (LPL)** על פני אנדות קפילר חותך את ה‑triglycerides של ה‑chylomicrons, משחרר **fatty acids** שמקבלים כניסה לתאי שריר ושומן. חומצות שומן ארוכות‑שרשרת עוברים **carnitine shuttle** (CPT1, CPT2) למיטוכונדריה ל‑β‑oxidation.",
+        "keyPoints": [
+          "chylomicrons משמשים להובלת חומצות מהמעי",
+          "LPL חותך triglycerides ב‑capillary endothelium",
+          "carnitine shuttle מעביר FA למיטוכונדריה"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "id": "lesson_biochemistry-ch-17",
+    "chapterId": "biochemistry-ch-17",
+    "areaId": "biochemistry",
+    "followUpQuestionIds": [
+      "q_biochemistry-ch-17-sec-17-1_1_1791330479",
+      "q_biochemistry-ch-17-sec-17-1_2_1791330479",
+      "q_biochemistry-ch-17-sec-17-1_3_1791330479",
+      "q_biochemistry-ch-17-sec-17-1_4_1791330479",
+      "q_biochemistry-ch-17-sec-17-2_1_1791330509",
+      "q_biochemistry-ch-17-sec-17-2_2_1791330509",
+      "q_biochemistry-ch-17-sec-17-2_3_1791330509",
+      "q_biochemistry-ch-17-sec-17-2_4_1791330509",
+      "q_biochemistry-ch-17-sec-17-3_1_1791330539",
+      "q_biochemistry-ch-17-sec-17-3_2_1791330539",
+      "q_biochemistry-ch-17-sec-17-3_3_1791330539",
+      "q_biochemistry-ch-17-sec-17-3_4_1791330539"
+    ]
+  },
+  {
+    "title": "גורלות מטבוליים של קבוצות אמינו",
+    "titleEn": "Metabolic Fates of Amino Groups",
+    "estimatedMinutes": 8,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "טרנסאמינציה – העברת קבוצת אמינו ל‑α‑קינוזינאט",
+        "content": "בטרנסאמינציה קבוצת האמינו מועברת משתי‑אצטיל‑CoA‑תוצרים או חומצות אמינו למקבל קיבול – α‑קינוזינאט (α‑ketoglutarate) ליצירת גלוטמט. התהליך מתווך על‑ידי **pyridoxal‑5′‑phosphate (PLP)**, הקו‑פקטור של משפחת **aminotransferases** (למשל ALT, AST). ה‑reaction הוא הפוך, ולכן משמש כמנגנון מרכזי לאיזון רמות חומצות האמינו וה‑TCA‑cycle.",
+        "keyPoints": [
+          "הקואפקטור המרכזי הוא PLP",
+          "ALT ו‑AST מקשרים קבוצות אמינו ל‑α‑קינוזינאט",
+          "הטרנסאמינציה היא ריאקציה הפיכה"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "דקרבונילציה חמצונית – גלוטמט דהידרוגנאז",
+        "content": "ב‑**oxidative deamination** של גלוטמט, האנזים **glutamate dehydrogenase (GDH)** משתמש ב‑NAD(P)+ כדי להסיר את קבוצת האמינו כ‑NH4⁺ וליצור α‑קינוזינאט. בתאי הכבד (ולחלק מהכליות) תהליך זה הוא המקור העיקרי ל‑**free ammonia**, אשר מוזרק למעגל האוריאה. ה‑reaction הוא חד‑כיווני במצב פיזיולוגי, ומווסת על‑ידי יחס NADH/NAD⁺ ו‑ADP/ATP.",
+        "keyPoints": [
+          "GDH משמש לדקרבונילציה של גלוטמט",
+          "ה‑reaction מייצר NH4⁺ ו‑α‑קינוזינאט",
+          "הוא מרכזי לייצור אמוניה חופשית בכבד"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "שימושים נוספים של קבוצות אמינו – גלוטמין, heme, נוקלאוטידים",
+        "content": "קבוצות האמינו יכולות להיכנס ל‑**glutamine synthetase** ליצירת גלוטמין, שמסוגל לשאת שני אטומי חנקן. גלוטמין משמש כמקור חנקן לביוסינתזה של **purine** ו‑**pyrimidine** נוקלאוטידים, ל‑**heme** (דרך δ‑ALA synthase) ול‑**glutathione**. בכבד ובכליות, גלוטמין משוחרר ל‑דם, ובכליות הוא מפורק על‑ידי **renal glutaminase**, משחרר NH3 ו‑HCO₃⁻ לייצור שתן חומצי או בסיסי.",
+        "keyPoints": [
+          "גלוטמין נושא שני אטומי חנקן",
+          "משמש לביוסינתזה של נוקלאוטידים, heme ו‑glutathione",
+          "בכליות גלוטמין מפורק ל‑NH3 ו‑HCO₃⁻"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "id": "lesson_biochemistry-ch-18",
+    "chapterId": "biochemistry-ch-18",
+    "areaId": "biochemistry",
+    "followUpQuestionIds": [
+      "q_biochemistry-ch-18-sec-18-1_1_1791330571",
+      "q_biochemistry-ch-18-sec-18-1_2_1791330571",
+      "q_biochemistry-ch-18-sec-18-1_3_1791330571",
+      "q_biochemistry-ch-18-sec-18-1_4_1791330571",
+      "q_biochemistry-ch-18-sec-18-2_1_1791330603",
+      "q_biochemistry-ch-18-sec-18-2_2_1791330603",
+      "q_biochemistry-ch-18-sec-18-3_1_1791330632",
+      "q_biochemistry-ch-18-sec-18-3_2_1791330632",
+      "q_biochemistry-ch-18-sec-18-3_3_1791330632",
+      "q_biochemistry-ch-18-sec-18-3_4_1791330632"
+    ]
+  },
+  {
+    "title": "שרשרת הנשימה המיטוכונדריאלית",
+    "titleEn": "Mitochondrial Respiratory Chain",
+    "estimatedMinutes": 8,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "מבנה ותפקוד של Complex I (NADH:Ubiquinone Oxidoreductase)",
+        "content": "Complex I הוא הקומפלקס הגדול ביותר ב‑ETC (≈ 1 MDa) ומורכב מ‑~45 תתי‑יחידות, כולל 7 תתי‑יחידות המכילות Fe‑S clusters ו‑2 יחידות FMN. הוא מקבל אלקטרונים מ‑NADH, מעביר אותם ל‑Ubiquinone (CoQ) ומבצע שחרור של 4 פרוטונים ל‑matrix‑intermembrane space per 2 e⁻ transferred, באמצעות שינוי קונפורמציה של ה‑hydrophilic domain שמקושר ל‑membrane‑embedded antiporter domain.",
+        "keyPoints": [
+          "NADH → FMN → Fe‑S clusters → CoQ",
+          "4 H⁺ נשטפים למרחב הבין‑ממברנה לכל 2 e⁻",
+          "ה‑complex הוא הומוטטרמר עם subunits של‑α/β"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "Complex III – Q‑cycle והעברת פרוטונים",
+        "content": "Complex III (Cytochrome bc₁ complex) מעביר אלקטרונים מ‑Ubiquinol (QH₂) ל‑Cytochrome c תוך כדי הפעלת Q‑cycle: שני מולקולות Q משמשות – אחת כ‑donor (QH₂) והשנייה כ‑acceptor (Q). בתהליך משוחררים 2 פרוטונים למרחב הבין‑ממברנה ו‑2 נשמרים במטריצה, ובסך הכל 4 פרוטונים נשטפים לכל 2 e⁻. הקומפלקס מכיל 2 מרכזי heme‑b, 1 מרכז heme‑c₁ ו‑Fe‑S Rieske center.",
+        "keyPoints": [
+          "Q‑cycle מייצר 4 H⁺ למרחב לכל QH₂",
+          "Cytochrome c הוא נושא נייד של e⁻ במים",
+          "ה‑Rieske iron‑sulfur protein מעביר e⁻ מה‑QH₂ ל‑cyt c₁"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "Complex IV – Cytochrome c Oxidase והפחתת O₂",
+        "content": "Complex IV מקבל אלקטרונים מ‑Cytochrome c ומפחית O₂ ל‑H₂O (4 e⁻ + 4 H⁺ + O₂ → 2 H₂O). הוא מורכב מ‑13 תתי‑יחידות, כולל שני מרכזי heme‑a, מרכז Cu_A ו‑Cu_B. בנוסף לשחרור של 2 פרוטונים למרחב הבין‑ממברנה, הוא משחרר עוד 2 פרוטונים מה‑matrix, כך שסך הכל 4 H⁺ נשטפים לכל O₂ מופחת. הוא מהווה את הצעד המגביל בקצב ה‑ETC.",
+        "keyPoints": [
+          "הפחתת O₂ ל‑H₂O",
+          "4 H⁺ נשטפים למרחב + 2 H⁺ משוחררים למטריצה",
+          "Cu_A ו‑Cu_B משמשים כ‑centers של קבלה והעברת e⁻"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "ATP Synthase (Complex V) והקפיטליזציה של גרדיאנט פרוטוני",
+        "content": "ATP Synthase הוא מנוע רוטוריאלי המורכב משני חלקים: F₀ (membrane‑embedded proton channel) ו‑F₁ (catalytic α₃β₃ hexamer). זרימת פרוטונים מ‑intermembrane space אל‑matrix דרך F₀ גורמת לסיבוב של γ‑subunit, מה שמאפשר שינוי קונפורמציה של β‑subunits ל‑catalytic state, ובכך סינתזת ATP מ‑ADP + Pi (≈ 3 ATP לכל 10 H⁺). ההפך – ATP‑hydrolysis – משמש כמפזר פרוטונים במצב הפוך.",
+        "keyPoints": [
+          "F₀ – ערוץ פרוטונים",
+          "F₁ – אתר קאטליטי α₃β₃",
+          "≈ 3 ATP לכל 10 H⁺"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "id": "lesson_biochemistry-ch-19",
+    "chapterId": "biochemistry-ch-19",
+    "areaId": "biochemistry",
+    "followUpQuestionIds": [
+      "q_biochemistry-ch-19-sec-19-1_1_1791330662",
+      "q_biochemistry-ch-19-sec-19-1_2_1791330662",
+      "q_biochemistry-ch-19-sec-19-1_3_1791330662",
+      "q_biochemistry-ch-19-sec-19-1_4_1791330662",
+      "q_biochemistry-ch-19-sec-19-2_1_1791330692",
+      "q_biochemistry-ch-19-sec-19-2_2_1791330692",
+      "q_biochemistry-ch-19-sec-19-2_3_1791330692",
+      "q_biochemistry-ch-19-sec-19-2_4_1791330692",
+      "q_biochemistry-ch-19-sec-19-3_1_1791330723",
+      "q_biochemistry-ch-19-sec-19-3_2_1791330723",
+      "q_biochemistry-ch-19-sec-19-3_3_1791330723",
+      "q_biochemistry-ch-19-sec-19-3_4_1791330723",
+      "q_biochemistry-ch-19-sec-19-4_1_1791330752",
+      "q_biochemistry-ch-19-sec-19-4_2_1791330752",
+      "q_biochemistry-ch-19-sec-19-4_3_1791330752",
+      "q_biochemistry-ch-19-sec-19-4_4_1791330752",
+      "q_biochemistry-ch-19-sec-19-5_1_1791330781",
+      "q_biochemistry-ch-19-sec-19-5_2_1791330781",
+      "q_biochemistry-ch-19-sec-19-5_3_1791330781",
+      "q_biochemistry-ch-19-sec-19-5_4_1791330781"
+    ]
+  },
+  {
+    "title": "סינתזת חומצות שומן ו‑Eicosanoids",
+    "titleEn": "Biosynthesis of Fatty Acids and Eicosanoids",
+    "estimatedMinutes": 12,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "הבסיס של סינתזת חומצות שומן (De novo fatty‑acid synthesis)",
+        "content": "הסינתזה מתחילה ב‑Acetyl‑CoA המיוצר במיטוכונדריה. **Acetyl‑CoA carboxylase (ACC)** ממיר אותו ל‑Malonyl‑CoA בתהליך המצריך **Biotin** ו‑ATP – שלב מהיר‑קצב (rate‑limiting). ה‑Malonyl‑CoA נושא שני פחמימות ו‑NADPH (מ‑Pentose‑Phosphate Pathway או מ‑malic enzyme) משמשים כמקור הפחתה. **Fatty Acid Synthase (FAS)**, מרכיב מרובה‑תחומים, מבצע מחזור של חמש תגובות: 1) קונדנסציה (Acetyl‑CoA + Malonyl‑CoA → β‑ketoacyl‑ACP), 2) הפחתה (β‑keto → β‑hydroxy), 3) דה‑הידרציה (β‑hydroxy → trans‑enoyl), 4) הפחתה נוספת (enoyl → saturated acyl‑ACP). מחזור חוזר מוסיף יחידות של שני פחמימות עד לקבלת **Palmitate (C16:0)**. תהליך השחרור מתבצע על‑ידי **Thioesterase** שמפריד את ה‑Palmitoyl‑ACP ל‑Palmitate חופשי. הרגולציה כוללת פוספורילציה של ACC על‑ידי **AMP‑activated protein kinase (AMPK)** (דיכוי) והפעלה על‑ידי **Citrate** (הפעלה).",
+        "keyPoints": [
+          "ACC – שלב מהיר‑קצב, דורש Biotin ו‑ATP",
+          "FAS – מחזור של חמש תגובות, מוסיף Malonyl‑CoA",
+          "NADPH מסופק מ‑PPP או malic enzyme",
+          "Regulation: AMPK (inhibition), citrate (activation), insulin (de‑phosphorylation)"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "הרחבה, דה‑סטרציה והובלה של חומצות שומן",
+        "content": "לאחר יצירת **Palmitate**, חומצות שומן ארוכות יותר מתקבלות באמצעות **Elongation of Very Long‑Chain Fatty Acids (ELOVL)** בממברנת האנדופלזמטית. **Δ9‑Desaturase (Stearoyl‑CoA Desaturase, SCD)** מוסיף קו כפול **cis‑Δ9** ל‑Stearoyl‑CoA, יוצרת **Oleoyl‑CoA (C18:1cis‑Δ9)**. קו‑כפול נוסף נוצר על‑ידי **Δ6‑Desaturase** ו‑**Δ5‑Desaturase**, המובילים ל‑**Arachidonic acid (C20:4n‑6)**, קודמת ל‑Eicosanoids. חומצות שומן משוחררות לתוך **Plasma** בעזרת **Acyl‑CoA‑binding protein (ACBP)** ו‑**Fatty‑acid‑binding proteins (FABPs)**, והן מועברות ל‑**Mitochondria** ל‑β‑oxidation דרך **Carnitine palmitoyl‑transferase I (CPT‑I)** (תלוי ב‑Malonyl‑CoA כמכשול).",
+        "keyPoints": [
+          "ELOVL – הארכת שרשרת מעבר ל‑C16",
+          "Δ9‑Desaturase – יוצר קו‑כפול cis‑Δ9",
+          "Δ6/Δ5‑Desaturases – מייצרים Arachidonic acid",
+          "CPT‑I – כניסה למיטוכונדריה, מושפע מ‑Malonyl‑CoA"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "ביוסינתזת Eicosanoids",
+        "content": "ה‑**Eicosanoids** נגזרים מ‑**Arachidonic acid (AA)**, אשר משוחרר מממברנת הפוספוליפידים על‑ידי **cPLA₂** בתגובה ל‑Ca²⁺ ו‑פוספולין. שני נתיבים מרכזיים: **Cyclooxygenase (COX‑1/COX‑2)** ו‑**Lipoxygenase (5‑LOX, 12‑LOX, 15‑LOX)**. COX מעביר את AA ל‑**Prostaglandin H₂ (PGH₂)**, תחילתו של סדרת **Prostanoids** (Prostaglandins, Thromboxanes). 5‑LOX, במרכיב **5‑LOX‑activating protein (FLAP)**, מייצר **Leukotriene A₄ (LTA₄)**, שמומר ל‑**LTC₄, LTD₄, LTE₄** (cysteinyl‑LT) או ל‑**LTB₄** (potent neutrophil chemoattractant). **Lipoxin A₄** נוצר בתהליך **trans‑cellular** שבו 15‑LOX במקרופאג'ים יוצר 15‑HPETE, אשר משמש תשתית ל‑5‑LOX באנדותל לתוצר הסופי. אינביטורים של COX (NSAIDs) וחסמי 5‑LOX (zileuton) משמשים בטיפול בדלקת. Regulation כולל פוספורילציה של COX‑2, והפעלה של cPLA₂ על‑ידי MAPK ו‑CaMK.",
+        "keyPoints": [
+          "cPLA₂ – משחרר AA בתלות Ca²⁺",
+          "COX → PGH₂ → prostaglandins & thromboxanes",
+          "5‑LOX + FLAP → LTA₄ → leukotrienes",
+          "Lipoxin A₄ – תוצר trans‑cellular של 15‑LOX + 5‑LOX"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדתם עד כה."
+      }
+    ],
+    "id": "lesson_biochemistry-ch-21",
+    "chapterId": "biochemistry-ch-21",
+    "areaId": "biochemistry",
+    "followUpQuestionIds": [
+      "q_biochemistry-ch-21-sec-21-1_1_1791330814",
+      "q_biochemistry-ch-21-sec-21-1_2_1791330814",
+      "q_biochemistry-ch-21-sec-21-1_3_1791330814",
+      "q_biochemistry-ch-21-sec-21-2_1_1791330843",
+      "q_biochemistry-ch-21-sec-21-2_2_1791330843",
+      "q_biochemistry-ch-21-sec-21-2_3_1791330843",
+      "q_biochemistry-ch-21-sec-21-2_4_1791330843",
+      "q_biochemistry-ch-21-sec-21-3_1_1791330873",
+      "q_biochemistry-ch-21-sec-21-3_2_1791330873",
+      "q_biochemistry-ch-21-sec-21-3_3_1791330873",
+      "q_biochemistry-ch-21-sec-21-3_4_1791330873",
+      "q_biochemistry-ch-21-sec-21-4_1_1791330902",
+      "q_biochemistry-ch-21-sec-21-4_2_1791330902",
+      "q_biochemistry-ch-21-sec-21-4_3_1791330902",
+      "q_biochemistry-ch-21-sec-21-4_4_1791330902"
+    ]
+  },
+  {
+    "title": "מבוא לסינתזת חומצות אמינו, נוקלאוטידים ומולקולות קשורות",
+    "titleEn": "Introduction to Synthesis of Amino Acids, Nucleotides and Related Molecules",
+    "estimatedMinutes": 8,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "מקורות מטבוליים ראשוניים",
+        "content": "הסינתזה של חומצות אמינו ונוקלאוטידים מתחילה ממולקולות קארבון‑הידרוגן בסיסיות כגון **glucose‑6‑phosphate**, **ribose‑5‑phosphate**, ו‑**α‑ketoglutarate**. חומצות האמינו משולבות דרך **transamination**, **decarboxylation**, ו‑**amidation**, בעוד שהנוקלאוטידים נוצרים משילוב של **PRPP** (5‑phosphoribosyl‑1‑pyrophosphate) עם **nitrogenous bases**. ההבדל המרכזי הוא שהסינתזה של חומצות אמינו היא בדרך כלל אנאבורובית (דורשת אנרגיה), בעוד שהסינתזה של נוקלאוטידים דורשת **ATP** ו‑**GTP** בשל שלבי הפוספורילציה.",
+        "keyPoints": [
+          "הפחמימות, חומצות השומן וחומצות האמינו משמשות כקודקוד ל‑TCA cycle.",
+          "PRPP הוא מקדמה מרכזית לכל דרכי הסינתזה של נוקלאוטידים.",
+          "ה‑NAD⁺/NADH ו‑NADP⁺/NADPH משמשים כמקורות אלקטרונים בתהליכים אלו."
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "נתיבי סינתזה עיקריים",
+        "content": "ב‑**purine synthesis** מתחילים מ‑PRPP, עוברים דרך **5‑phosphoribosyl‑amine** (PRA) ו‑**IMP** לפני שמתקבלות **AMP** ו‑**GMP**. ב‑**pyrimidine synthesis** התהליך מתחיל מ‑**carbamoyl phosphate** (המתקבל מ‑**glutamine** + **CO₂**) וממשיך דרך **orotate** ו‑**OMP** ל‑**UMP**, משם ל‑**UTP** ו‑**CTP**. חומצות האמינו משולבות דרך **transamination** (תלויה ב‑**pyridoxal‑5′‑phosphate**, PLP) ו‑**amidation** (לדוגמה, **asparagine synthetase** משתמש ב‑**glutamine** כמקור חנקן).",
+        "keyPoints": [
+          "ה‑IMP הוא אינטרמידיאט משותף ל‑AMP ו‑GMP.",
+          "ב‑pyrimidine synthesis, **carbamoyl phosphate synthetase II** נמצא בציטופלזמה, בניגוד ל‑CPS I במיטוכונדריה.",
+          "תהליכי transamination דורשים קואפקטור PLP."
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "בקרת מטבוליזם וצריכת אנרגיה",
+        "content": "הסינתזה של חומצות אמינו ונוקלאוטידים מתואמת על‑ידי משוב של‑**end‑product inhibition** ו‑**allosteric regulation**. לדוגמה, **ATCase** (aspartate transcarbamoylase) מושפע מ‑**ATP** (מפעיל) ו‑**CTP** (מעכב). בנוסף, **AMP‑activated protein kinase (AMPK)** מדגיש את מצב האנרגיה של התא ומפחית פעילות של נתיבי אנאבורוביים במצב חוסר ATP. על‑פי חישוב, סינתזה חד‑שלבית של **phenylalanine** דורשת 4 ATP, 2 NADPH ו‑1 CO₂, בעוד שב‑salvage pathway נדרש רק ATP אחד ל‑**phenylalanine‑phosphate**.",
+        "keyPoints": [
+          "בקרת משוב של מוצר סופי מונעת הצטברות מיותרת של אינטרמידיאטים.",
+          "ה‑ATP/ADP ratio משמש כסמן מרכזי לבחירת נתיבים אנאבורוביים.",
+          "ה‑salvase pathways חוסכות משמעותית בצריכת אנרגיה."
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק את ההבנה של העקרונות המרכזיים לפני שנמשיך לפרק הבא."
+      }
+    ],
+    "id": "lesson_biochemistry-ch-22",
+    "chapterId": "biochemistry-ch-22",
+    "areaId": "biochemistry",
+    "followUpQuestionIds": [
+      "q_biochemistry-ch-22-introduction_1_1791330934",
+      "q_biochemistry-ch-22-introduction_2_1791330934",
+      "q_biochemistry-ch-22-introduction_3_1791330934",
+      "q_biochemistry-ch-22-introduction_4_1791330934",
+      "q_biochemistry-ch-22-sec-22-2_1_1791330963",
+      "q_biochemistry-ch-22-sec-22-2_2_1791330963",
+      "q_biochemistry-ch-22-sec-22-2_3_1791330963",
+      "q_biochemistry-ch-22-sec-22-2_4_1791330963"
+    ]
+  },
+  {
+    "title": "מבוא לבקרה הורמונלית ואינטגרציה של מטבוליזם ביונקים",
+    "titleEn": "Introduction to Hormonal Regulation and Metabolic Integration in Mammals",
+    "estimatedMinutes": 8,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "הקשר בין מערכת ההורמונים למטבוליזם",
+        "content": "המערכת האנדוקרינית משמשת כ‑**קונסול** מרכזי לשמירת הומאוסטזיס מטבולי. הורמונים משחררים ממקורות שונים (פנקראס, בלוטת יותרת הלבלב, בלוטת התריס, בלוטת יותרת הכליה) ומגיעים לתאים המטרה דרך **דפיניט** (receptor) בממברנה או בגרעין. העיקרון הבסיסי הוא **feedback** שלילי: עלייה ברמת גלוקוז ב‑plasma גורמת לשחרור אינסולין, שמפחית את הרמות על‑ידי קידום **GLUT4** translocation, גלאוקוניאוגנזה והפחתת גליקוגנוג'נזה. במקביל, הורמון **glucagon** פועל במצב היפוגליקמיה, מעודד **cAMP/PKA** pathway ו‑**glycogenolysis**. אינטגרציה של ההורמונים מאפשרת התאמה של **β‑oxidation**, **lipogenesis**, **proteolysis** ו‑**ureagenesis** לצרכים האנרגטיים של האורגניזם.",
+        "keyPoints": [
+          "הורמונים משמשים כמנגנוני בקרה מהירים וארוכי‑טווח",
+          "Feedback שלילי הוא העיקרון המרכזי לשמירת רמות מטבוליות",
+          "הקשר בין אינסולין, גלוקגון, קורטיזול ו‑thyroid hormones משולב ברשתות אותות משותפות"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "סוגי אותות והקשר למטבוליזם",
+        "content": "הורמונים נעים בין שלושה סוגי קבלה עיקריים: **גופי‑שומני** (steroid hormones – cortisol, aldosterone), **פפטידיים** (insulin, glucagon, GLP‑1) ו‑**הורמונים נגזרים** (thyroid hormones – T3/T4). ההבדל במנגנון הפעולה משפיע על קצב התגובה: פפטידיים פועלים דרך **RTK** או **GPCR** ומפעילים cascades של **MAPK** ו‑**PI3K/Akt**, בעוד סטרואידים חוצים את הממברנה ומתחברים ל‑**nuclear receptors** המשנים תעתיק גנים. ההבנה של מסלולי האותות מאפשרת ניתוח של מצבי פתולוגיה כגון **type‑2 diabetes**, **hyperthyroidism** ו‑**Cushing syndrome**.",
+        "keyPoints": [
+          "סטרואידים → נוירו‑רצפטורים גרעיניים, שינוי תעתיק",
+          "פפטידיים → RTK/GPCR → second messengers (cAMP, Ca²⁺, DAG/IP₃)",
+          "הורמונים נגזרים → תפקיד במטבוליזם הבסיסי של חמצון שומנים וחלבונים"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק את ההבנה של הקשרים ההורמונליים במטבוליזם."
+      }
+    ],
+    "id": "lesson_biochemistry-ch-23",
+    "chapterId": "biochemistry-ch-23",
+    "areaId": "biochemistry",
+    "followUpQuestionIds": [
+      "q_biochemistry-ch-23-introduction_1_1791330994",
+      "q_biochemistry-ch-23-introduction_2_1791330994",
+      "q_biochemistry-ch-23-introduction_3_1791330994",
+      "q_biochemistry-ch-23-introduction_4_1791330994",
+      "q_biochemistry-ch-23-sec-23-2_1_1791331024",
+      "q_biochemistry-ch-23-sec-23-2_2_1791331024",
+      "q_biochemistry-ch-23-sec-23-2_3_1791331024",
+      "q_biochemistry-ch-23-sec-23-2_4_1791331024",
+      "q_biochemistry-ch-23-sec-23-3_1_1791331054",
+      "q_biochemistry-ch-23-sec-23-3_2_1791331054",
+      "q_biochemistry-ch-23-sec-23-3_3_1791331054",
+      "q_biochemistry-ch-23-sec-23-3_4_1791331054"
+    ]
+  },
+  {
+    "title": "המאפיינים האוניברסליים של החיים על פני כדור הארץ",
+    "titleEn": "Universal Features of Life",
+    "estimatedMinutes": 10,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "מבנה התא והמטבוליזם",
+        "content": "החיים מבוססים על **תא** יחידתי בעל **קרום פוספוליפידי** דו-שכבתי המאפשר הפרדת סביבת התא מהסביבה החיצונית. בתוך התא מתרחשים תהליכי **מטבוליזם** המופעלים על‑ידי אנזימים (לדוגמה: **Kinase**, **ATP‑Synthase**) הממירים אנרגיה כימית ל‑**ATP**. כל התא חייב לשמר **הומאוסטזיס** של pH, אוסמוליות ויציבות תרמית.",
+        "keyPoints": [
+          "תא יחידתי עם קרום דו‑שכבתי",
+          "מטבוליזם מבוסס אנזימים",
+          "שימור הומאוסטזיס"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "העתקה גנטית והורשה",
+        "content": "כל יצור חי מכיל **DNA** (או **RNA** בחלק מהוירוסים) המאחסן את המידע התורשתי. המידע מועבר מדור לדור באמצעות **שכפול DNA**, **תעתוק** ל‑RNA ו**תרגום** לחלבונים. המנגנון כולל **Polymerase**, **Helicase**, **Ribosome** ו‑**tRNA**. קיום של קוד גנטי משותף (קוד שלושה‑בסיסי) הוא תכונה אוניברסלית.",
+        "keyPoints": [
+          "DNA או RNA כקוד גנטי",
+          "שכפול, תעתוק, תרגום",
+          "קוד שלושה‑בסיסי משותף"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "הסתגלות והתפתחות",
+        "content": "החיים מציגים **יכולת הסתגלות** דרך **מוטציות**, **ברירה טבעית** ו**העברת גנים** (Horizontal Gene Transfer). תהליכים אלו מאפשרים שינוי בתכונות הפיזיולוגיות והמבניות של האורגניזם בתגובה לשינויים סביבתיים, והם מהווים את הבסיס להתפתחות המגוון הביולוגי על פני כדור הארץ.",
+        "keyPoints": [
+          "מוטציות וברירה טבעית",
+          "העברת גנים אופקית",
+          "מגוון ביולוגי"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "id": "lesson_molecular-biology-ch-01",
+    "chapterId": "molecular-biology-ch-01",
+    "areaId": "molecular-biology",
+    "followUpQuestionIds": [
+      "q_molecular-biology-ch-01-the-universal-features-of-life-on-earth_1_1791331084",
+      "q_molecular-biology-ch-01-the-universal-features-of-life-on-earth_2_1791331084",
+      "q_molecular-biology-ch-01-the-universal-features-of-life-on-earth_3_1791331084",
+      "q_molecular-biology-ch-01-the-universal-features-of-life-on-earth_4_1791331084",
+      "q_molecular-biology-ch-01-genome-diversification-and-the-tree-of-life_1_1791331112",
+      "q_molecular-biology-ch-01-genome-diversification-and-the-tree-of-life_2_1791331112",
+      "q_molecular-biology-ch-01-genome-diversification-and-the-tree-of-life_3_1791331112",
+      "q_molecular-biology-ch-01-genome-diversification-and-the-tree-of-life_4_1791331112",
+      "q_molecular-biology-ch-01-eukaryotes-and-the-origin-of-the-eukaryotic-cell_1_1791331143",
+      "q_molecular-biology-ch-01-eukaryotes-and-the-origin-of-the-eukaryotic-cell_2_1791331143",
+      "q_molecular-biology-ch-01-eukaryotes-and-the-origin-of-the-eukaryotic-cell_3_1791331143",
+      "q_molecular-biology-ch-01-eukaryotes-and-the-origin-of-the-eukaryotic-cell_4_1791331143",
+      "q_molecular-biology-ch-01-model-organisms_1_1791331172",
+      "q_molecular-biology-ch-01-model-organisms_2_1791331172",
+      "q_molecular-biology-ch-01-model-organisms_3_1791331172",
+      "q_molecular-biology-ch-01-model-organisms_4_1791331172"
+    ]
+  },
+  {
+    "title": "המבנה והתפקוד של DNA",
+    "titleEn": "Structure and Function of DNA",
+    "estimatedMinutes": 8,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "מבנה דו‑סלילי של DNA",
+        "content": "DNA הוא מולקולה דו‑סלילית בעלת **אנטי‑פרלליות**: חוט אחד נע מ‑5' ל‑3' והשני מ‑3' ל‑5'. הבסיסים נצמדים לפי **חוק הצמדה** (A‑T, G‑C) באמצעות קשרי **hydrogen bonds**. הסליל מציג **major groove** ו‑**minor groove**, המאפשרים אינטראקציה ספציפית של חלבונים עם רצפי DNA.",
+        "keyPoints": [
+          "אנטי‑פרלליות 5'‑3' מול 3'‑5'",
+          "צמדות A‑T (2 H‑bonds) ו‑G‑C (3 H‑bonds)",
+          "קיימים major ו‑minor grooves"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "תפקוד DNA בתהליכים תאיים",
+        "content": "DNA משמש כ‑**template** ל‑**replication**, **transcription** ו‑**repair**. במהלך **replication** האנזים **DNA polymerase** מוסיף נוקלאוטידים ל‑3'‑OH של פריימר, בעוד **RNA polymerase** מסנתז mRNA מה‑template strand. **Topoisomerases** משחררות מתחים סופרקואיליים שנוצרים במהלך פתיחת הדו‑סליל.",
+        "keyPoints": [
+          "DNA polymerase דורש קצה 3'‑OH",
+          "RNA polymerase מסנתז mRNA",
+          "Topoisomerase I חותך חוט יחיד, Topoisomerase II חותך שני חוטים"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "id": "lesson_molecular-biology-ch-04",
+    "chapterId": "molecular-biology-ch-04",
+    "areaId": "molecular-biology",
+    "followUpQuestionIds": [
+      "q_molecular-biology-ch-04-the-structure-and-function-of-dna_1_1791331202",
+      "q_molecular-biology-ch-04-the-structure-and-function-of-dna_2_1791331202",
+      "q_molecular-biology-ch-04-the-structure-and-function-of-dna_3_1791331202",
+      "q_molecular-biology-ch-04-the-structure-and-function-of-dna_4_1791331202",
+      "q_molecular-biology-ch-04-chromosomal-dna-and-its-packaging-in-the-chromatin-fiber_1_1791331233",
+      "q_molecular-biology-ch-04-chromosomal-dna-and-its-packaging-in-the-chromatin-fiber_2_1791331233",
+      "q_molecular-biology-ch-04-chromosomal-dna-and-its-packaging-in-the-chromatin-fiber_3_1791331233",
+      "q_molecular-biology-ch-04-chromosomal-dna-and-its-packaging-in-the-chromatin-fiber_4_1791331233",
+      "q_molecular-biology-ch-04-the-effect-of-chromatin-structure-on-dna-function_1_1791331263",
+      "q_molecular-biology-ch-04-the-effect-of-chromatin-structure-on-dna-function_2_1791331263",
+      "q_molecular-biology-ch-04-the-effect-of-chromatin-structure-on-dna-function_3_1791331263",
+      "q_molecular-biology-ch-04-the-effect-of-chromatin-structure-on-dna-function_4_1791331263",
+      "q_molecular-biology-ch-04-the-global-structure-of-chromosomes_1_1791331292",
+      "q_molecular-biology-ch-04-the-global-structure-of-chromosomes_2_1791331292",
+      "q_molecular-biology-ch-04-the-global-structure-of-chromosomes_3_1791331292",
+      "q_molecular-biology-ch-04-the-global-structure-of-chromosomes_4_1791331292",
+      "q_molecular-biology-ch-04-how-genomes-evolve_1_1791331322",
+      "q_molecular-biology-ch-04-how-genomes-evolve_2_1791331322",
+      "q_molecular-biology-ch-04-how-genomes-evolve_3_1791331322",
+      "q_molecular-biology-ch-04-how-genomes-evolve_4_1791331322"
+    ]
+  },
+  {
+    "title": "שמירת רצפי DNA",
+    "titleEn": "Maintenance of DNA Sequences",
+    "estimatedMinutes": 8,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "אמתיות השכפול והוכחת נכונות",
+        "content": "במהלך שכפול ה‑DNA, **DNA polymerase** משתמש ב‑**3'→5' exonuclease** activity (proofreading) כדי להסיר נוקלאוטידים שגויים מייד לאחר הוספתם. בנוסף, **DNA ligase** מאחד קצוות נוקלאוטידיים (nicks) ומסיים את תהליך השכפול. במקביל, מערכות תיקון כמו **Mismatch Repair (MMR)**, **Base Excision Repair (BER)** ו‑**Nucleotide Excision Repair (NER)** משמרות את הרצף על‑ידי זיהוי וניקוי נזקים לפני שהם מתפזרים למולקולות חדשות.",
+        "keyPoints": [
+          "DNA polymerase בעל פעילות proofreading (3'→5' exonuclease) מבטיח רמת שגיאה של ~10⁻⁷/base.",
+          "MMR מזהה זוגות בסיסים לא תואמים ומפריד בין חוט ישן לחוט חדש בעזרת סימון מתילציה (ב‑E.coli) או נייקים (ב‑eukaryotes).",
+          "BER מתמקד בנזקים קטנים (כגון חמצון) באמצעות DNA glycosylase, AP endonuclease, DNA polymerase β ו‑DNA ligase I.",
+          "NER מסיר נזקים גדולים (כגון פוטו‑ליזיס) דרך XPC‑RAD23B, TFIIH, XPG, XPF‑ERCC1 ו‑DNA ligase I."
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "תיקון נזקי DNA באמצעות ריקומבינציה",
+        "content": "ריקומבינציה הומולוגית (HR) משמשת לתיקון שבירות דו‑גדיליות (DSBs) על‑ידי שימוש בתבנית של DNA אחיד. במקביל, **Non‑Homologous End Joining (NHEJ)** מחבר קצוות ללא תבנית, אך עלול לגרום למוטציות. בחירת המנגנון תלויה במצב התא וב‑**cell cycle phase** (HR דומיננטית ב‑S/G2).",
+        "keyPoints": [
+          "HR דורשת Rad51, BRCA1/2 ומספקת תיקון מדויק.",
+          "NHEJ משתמש ב‑Ku70/80, DNA‑PKcs, Ligase IV‑Xrcc4 ו‑DNA ligase I.",
+          "הקשר בין תיקון נזק ל‑checkpoint activation מתווך על‑ידי ATM/ATR kinases."
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק את הידע שלכם על שמירת רצפי DNA."
+      }
+    ],
+    "id": "lesson_molecular-biology-ch-05",
+    "chapterId": "molecular-biology-ch-05",
+    "areaId": "molecular-biology",
+    "followUpQuestionIds": [
+      "q_molecular-biology-ch-05-the-maintenance-of-dna-sequences_1_1791331352",
+      "q_molecular-biology-ch-05-the-maintenance-of-dna-sequences_2_1791331352",
+      "q_molecular-biology-ch-05-the-maintenance-of-dna-sequences_3_1791331352",
+      "q_molecular-biology-ch-05-the-maintenance-of-dna-sequences_4_1791331352",
+      "q_molecular-biology-ch-05-dna-replication-mechanisms_1_1791331501",
+      "q_molecular-biology-ch-05-dna-replication-mechanisms_2_1791331501",
+      "q_molecular-biology-ch-05-dna-replication-mechanisms_3_1791331501",
+      "q_molecular-biology-ch-05-dna-replication-mechanisms_4_1791331501",
+      "q_molecular-biology-ch-05-the-initiation-and-completion-of-dna-replication-in-chromosomes_1_1791331950",
+      "q_molecular-biology-ch-05-the-initiation-and-completion-of-dna-replication-in-chromosomes_2_1791331950",
+      "q_molecular-biology-ch-05-the-initiation-and-completion-of-dna-replication-in-chromosomes_3_1791331950",
+      "q_molecular-biology-ch-05-the-initiation-and-completion-of-dna-replication-in-chromosomes_4_1791331950",
+      "q_molecular-biology-ch-05-dna-repair_1_1791332459",
+      "q_molecular-biology-ch-05-dna-repair_2_1791332459",
+      "q_molecular-biology-ch-05-dna-repair_3_1791332459",
+      "q_molecular-biology-ch-05-dna-repair_4_1791332459",
+      "q_molecular-biology-ch-05-homologous-recombination_1_1791332962",
+      "q_molecular-biology-ch-05-homologous-recombination_2_1791332962",
+      "q_molecular-biology-ch-05-homologous-recombination_3_1791332962",
+      "q_molecular-biology-ch-05-homologous-recombination_4_1791332962",
+      "q_molecular-biology-ch-05-transposition-and-conservative-site-specific-recombination_1_1791333473",
+      "q_molecular-biology-ch-05-transposition-and-conservative-site-specific-recombination_2_1791333473",
+      "q_molecular-biology-ch-05-transposition-and-conservative-site-specific-recombination_3_1791333473",
+      "q_molecular-biology-ch-05-transposition-and-conservative-site-specific-recombination_4_1791333473"
+    ]
+  },
+  {
+    "title": "מתוך DNA ל‑RNA: תהליך השעתוק",
+    "titleEn": "From DNA to RNA: Transcription",
+    "estimatedMinutes": 8,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "שעתוק (Transcription) – עקרונות בסיסיים",
+        "content": "השעתוק הוא תהליך שבו **RNA polymerase** מסנתז מולקולת **RNA** משלים את המידע הגנטי שב‑DNA. בתאים אוקריוטיים, **RNA polymerase II** אחראי על סינתזת mRNA. התהליך מחולק לשלושה שלבים: **התחלה (initiation)** – זיהוי קופסאות ה‑promoter (‑35 ו‑10), חיבור גורמי **transcription factors**, והפרדת שני גדילי ה‑DNA; **הארכה (elongation)** – ה‑RNA polymerase מוסיף נוקלאוטידים לפי הכלל של **5'→3'**, תוך שמירה על תזרים של **NTPs**; **סיום (termination)** – במקביל למנגנוני **rho‑dependent** או **rho‑independent** באוקריוטים, וב‑eukaryotes על ידי זיהוי של **polyadenylation signal (AAUAAA)**. במקביל לשעתוק מתרחשת **capping** של קצה 5', **splicing** של אינטרונים, והוספת **poly‑A tail** לקצה 3'.",
+        "keyPoints": [
+          "RNA polymerase II דורש גורמי transcription factors למגע עם promoter",
+          "קופסאות promoter: ‑35 (TTGACA) ו‑10 (TATAAT) באוקריוטים",
+          "ה‑CTD של RNA polymerase II מכיל חזרות heptapeptide (YSPTSPS) שמווסתות שלבי השעתוק",
+          "עיבוד קו‑RNA כולל capping, splicing, ו‑polyadenylation"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "ה-CTD של RNA polymerase II והמעבר מהתחלה להארכה",
+        "content": "ה‑CTD (C‑terminal domain) של **RNA polymerase II** מורכב מחזרות **heptapeptide** (Y‑S‑P‑T‑S‑P‑S). בפאזת ההתחלה מתרחשת פוספורילציה של **Ser5**, שמקשרת גורמי **capping enzymes**. כאשר האנזים נכנס לשלב ההארכה, **Kinase** מסמן את **Ser2** ב‑CTD, מה שמאפשר חיבור גורמי **elongation** ו‑**splicing factors**. שינוי הפוספורילציה הוא קריטי ל‑**co‑transcriptional processing** של ה‑pre‑mRNA.",
+        "keyPoints": [
+          "Ser5‑phosphorylation – קידום capping",
+          "Ser2‑phosphorylation – חיבור גורמי elongation ו‑splicing",
+          "ה‑CTD משמש פלטפורמה משותפת לתהליכים שונים של עיבוד RNA"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק את ההבנה שלכם על שלבי השעתוק והעיבוד הקו‑RNA."
+      }
+    ],
+    "id": "lesson_molecular-biology-ch-06",
+    "chapterId": "molecular-biology-ch-06",
+    "areaId": "molecular-biology",
+    "followUpQuestionIds": [
+      "q_molecular-biology-ch-06-from-dna-to-rna_1_1791334013",
+      "q_molecular-biology-ch-06-from-dna-to-rna_2_1791334013",
+      "q_molecular-biology-ch-06-from-dna-to-rna_3_1791334013",
+      "q_molecular-biology-ch-06-from-dna-to-rna_4_1791334013",
+      "q_molecular-biology-ch-06-from-rna-to-protein_1_1791334504",
+      "q_molecular-biology-ch-06-from-rna-to-protein_2_1791334504",
+      "q_molecular-biology-ch-06-from-rna-to-protein_3_1791334504",
+      "q_molecular-biology-ch-06-from-rna-to-protein_4_1791334504",
+      "q_molecular-biology-ch-06-the-rna-world-and-the-origins-of-life_1_1791335165",
+      "q_molecular-biology-ch-06-the-rna-world-and-the-origins-of-life_2_1791335165",
+      "q_molecular-biology-ch-06-the-rna-world-and-the-origins-of-life_3_1791335165",
+      "q_molecular-biology-ch-06-the-rna-world-and-the-origins-of-life_4_1791335165"
+    ]
+  },
+  {
+    "title": "סקירת בקרת גנים",
+    "titleEn": "An Overview of Gene Control",
+    "estimatedMinutes": 8,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "רמות בקרת הביטוי הגנטי",
+        "content": "הביטוי של גן מתבצע ברמות שונות: **transcriptional control** (קידוד על ידי promoter, enhancer, silencer, insulator), **post‑transcriptional control** (splicing, 5'‑capping, poly‑A tail, RNA editing), **translational control** (initiation factors, upstream ORFs, miRNA), ו‑**post‑translational control** (phosphorylation, ubiquitination, proteolysis). כל רמה מאפשרת התאמה מהירה של רמת החלבון לתנאי התא.",
+        "keyPoints": [
+          "בקרת transcription היא החשובה ביותר",
+          "אלמנטים מרוחקים (enhancers) פועלים באמצעות לולאות DNA",
+          "miRNA פועלים ברמת translational repression"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "אלמנטים רגולטוריים ומרכיבי ה‑Transcription Machinery",
+        "content": "ה‑**promoter** מכיל את ה‑**TATA box** (‑25 עד ‑30 bp מה‑TSS) ו‑**Inr** (initiation region). **Transcription factors** מתחלקים ל‑**activators** (קשרים ל‑enhancer) ול‑**repressors** (קשרים ל‑silencer). חלבוני **co‑activators** כגון **Mediator** ו‑**Cohesin** מאפשרים קיפול של DNA כך שה‑enhancer יפגש עם ה‑promoter. **Chromatin remodelers** (SWI/SNF) משנים את נגישות ה‑DNA על‑ידי שינוי ה‑**histone acetylation**.",
+        "keyPoints": [
+          "TATA box ממוקם במרחק קבוע מה‑TSS",
+          "Mediator משמש כ‑bridge בין enhancer ל‑promoter",
+          "ה‑histone acetylation מקלה על קידוד transcription"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "id": "lesson_molecular-biology-ch-07",
+    "chapterId": "molecular-biology-ch-07",
+    "areaId": "molecular-biology",
+    "followUpQuestionIds": [
+      "q_molecular-biology-ch-07-an-overview-of-gene-control_1_1791335646",
+      "q_molecular-biology-ch-07-an-overview-of-gene-control_2_1791335646",
+      "q_molecular-biology-ch-07-an-overview-of-gene-control_3_1791335646",
+      "q_molecular-biology-ch-07-an-overview-of-gene-control_4_1791335646",
+      "q_molecular-biology-ch-07-control-of-transcription-by-sequence-specific-dna-binding-proteins_1_1791336639",
+      "q_molecular-biology-ch-07-control-of-transcription-by-sequence-specific-dna-binding-proteins_2_1791336639",
+      "q_molecular-biology-ch-07-control-of-transcription-by-sequence-specific-dna-binding-proteins_3_1791336639",
+      "q_molecular-biology-ch-07-control-of-transcription-by-sequence-specific-dna-binding-proteins_4_1791336639",
+      "q_molecular-biology-ch-07-transcription-regulators-switch-genes-on-and-off_1_1791337619",
+      "q_molecular-biology-ch-07-transcription-regulators-switch-genes-on-and-off_2_1791337619",
+      "q_molecular-biology-ch-07-transcription-regulators-switch-genes-on-and-off_3_1791337619",
+      "q_molecular-biology-ch-07-transcription-regulators-switch-genes-on-and-off_4_1791337619",
+      "q_molecular-biology-ch-07-molecular-genetic-mechanisms-that-create-and-maintain-specialized-cell-types_1_1791338130",
+      "q_molecular-biology-ch-07-molecular-genetic-mechanisms-that-create-and-maintain-specialized-cell-types_2_1791338130",
+      "q_molecular-biology-ch-07-molecular-genetic-mechanisms-that-create-and-maintain-specialized-cell-types_3_1791338130",
+      "q_molecular-biology-ch-07-molecular-genetic-mechanisms-that-create-and-maintain-specialized-cell-types_4_1791338130",
+      "q_molecular-biology-ch-07-mechanisms-that-reinforce-cell-memory-in-plants-and-animals_1_1791338562",
+      "q_molecular-biology-ch-07-mechanisms-that-reinforce-cell-memory-in-plants-and-animals_2_1791338562",
+      "q_molecular-biology-ch-07-mechanisms-that-reinforce-cell-memory-in-plants-and-animals_3_1791338562",
+      "q_molecular-biology-ch-07-mechanisms-that-reinforce-cell-memory-in-plants-and-animals_4_1791338562",
+      "q_molecular-biology-ch-07-post-transcriptional-controls_1_1791339355",
+      "q_molecular-biology-ch-07-post-transcriptional-controls_2_1791339355",
+      "q_molecular-biology-ch-07-post-transcriptional-controls_3_1791339355",
+      "q_molecular-biology-ch-07-post-transcriptional-controls_4_1791339355",
+      "q_molecular-biology-ch-07-regulation-of-gene-expression-by-noncoding-rnas_1_1791340375",
+      "q_molecular-biology-ch-07-regulation-of-gene-expression-by-noncoding-rnas_2_1791340375",
+      "q_molecular-biology-ch-07-regulation-of-gene-expression-by-noncoding-rnas_3_1791340375"
+    ]
+  },
+  {
+    "title": "בידוד תאים וגידולם בתרבית",
+    "titleEn": "Isolation and Culture of Cells",
+    "estimatedMinutes": 8,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "עקרונות הבידוד",
+        "content": "בידוד תאים מתחיל בבחירת רקמת המקור ובשיטת הפירוק המתאימה. **פירוק אנזימטי** (לדוגמה: Trypsin, Collagenase, Papain) משחרר תאים מהחיבורים החלבוניים של המטריצה החוץ‑תאית, בעוד **פירוק מכני** (triturations, חיתוך) משלים את התהליך. יש לשמור על תנאי **סטריליות** – עבודה תחת זרימת אוויר HEPA, שימוש ב‑PBS עם Ca²⁺/Mg²⁺ מתאימים, והוספת **אנטיביוטיקה** (Penicillin‑Streptomycin) למניעת זיהומים. לאחר הפירוק, התא נצבר במדיום **Culture Medium** המכיל **סרום** (FBS) או תחליפי סרום, **גורמי גדילה** (EGF, bFGF) ו‑**בופר** (NaHCO₃) לשמירה על pH 7.2‑7.4 במקרר CO₂ (5%). תאי **primary** משמרים את המאפיינים הפיזיולוגיים של הרקמה, אך מוגבלים במספר **passages** לפני שהם מתיישנים; תאי קו (cell lines) משמרים את יכולת ההתרבות בעזרת **immortalization** (SV40, hTERT).",
+        "keyPoints": [
+          "פירוק אנזימטי vs מכני",
+          "שמירה על סטריליות",
+          "תוספות למדיום: סרום, גורמי גדילה, בופר"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "תנאי גידול מתקדמים",
+        "content": "תאי **adherent** דורשים משטח מצופה (collagen, fibronectin) כדי להיצמד, בעוד תאי **suspension** גדלים במצב תלוי‑תלייה. **Confluency** מודד את אחוז השטח המכוסה בתאים; מעבר ל‑80‑90 % יש לבצע **passage** (split) כדי למנוע **contact inhibition** ושינוי בתכונות הפיזיולוגיות. בחירת **density** ראשונית משפיעה על קצב ההתרבות – צפיפות גבוהה יכולה לגרום ל‑**senescence** מוקדם. תנאי **incubator** (37 °C, 5 % CO₂, 95 % O₂) והקפדה על **mycoplasma‑free** מדיה חיוניים למניעת שינוי בתרבית. ניטור **morphology**, **growth curve**, ו‑**viability assay** (Trypan Blue, MTT) מאפשרים זיהוי בעיות בזמן אמת.",
+        "keyPoints": [
+          "adherent vs suspension",
+          "confluency ו‑passage",
+          "חשיבות תנאי incubator וניטור"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "id": "lesson_molecular-biology-ch-08",
+    "chapterId": "molecular-biology-ch-08",
+    "areaId": "molecular-biology",
+    "followUpQuestionIds": [
+      "q_molecular-biology-ch-08-isolating-cells-and-growing-them-in-culture_1_1791340859",
+      "q_molecular-biology-ch-08-isolating-cells-and-growing-them-in-culture_2_1791340859",
+      "q_molecular-biology-ch-08-isolating-cells-and-growing-them-in-culture_3_1791340859",
+      "q_molecular-biology-ch-08-isolating-cells-and-growing-them-in-culture_4_1791340859",
+      "q_molecular-biology-ch-08-purifying-proteins_1_1791341852",
+      "q_molecular-biology-ch-08-purifying-proteins_2_1791341852",
+      "q_molecular-biology-ch-08-purifying-proteins_3_1791341852",
+      "q_molecular-biology-ch-08-purifying-proteins_4_1791341852",
+      "q_molecular-biology-ch-08-analyzing-proteins_1_1791342445",
+      "q_molecular-biology-ch-08-analyzing-proteins_2_1791342445",
+      "q_molecular-biology-ch-08-analyzing-proteins_3_1791342445",
+      "q_molecular-biology-ch-08-analyzing-proteins_4_1791342445",
+      "q_molecular-biology-ch-08-analyzing-and-manipulating-dna_1_1791342952",
+      "q_molecular-biology-ch-08-analyzing-and-manipulating-dna_2_1791342952",
+      "q_molecular-biology-ch-08-analyzing-and-manipulating-dna_3_1791342952",
+      "q_molecular-biology-ch-08-analyzing-and-manipulating-dna_4_1791342952",
+      "q_molecular-biology-ch-08-studying-gene-function-and-expression_1_1791343458",
+      "q_molecular-biology-ch-08-studying-gene-function-and-expression_2_1791343458",
+      "q_molecular-biology-ch-08-studying-gene-function-and-expression_3_1791343458",
+      "q_molecular-biology-ch-08-studying-gene-function-and-expression_4_1791343458",
+      "q_molecular-biology-ch-08-mathematical-analysis-of-cell-function_1_1791343952",
+      "q_molecular-biology-ch-08-mathematical-analysis-of-cell-function_2_1791343952",
+      "q_molecular-biology-ch-08-mathematical-analysis-of-cell-function_3_1791343952",
+      "q_molecular-biology-ch-08-mathematical-analysis-of-cell-function_4_1791343952"
+    ]
+  },
+  {
+    "title": "צפייה בתאים ובמולקולות במיקרוסקופ אור",
+    "titleEn": "Viewing Cells and Molecules with Light Microscopy",
+    "estimatedMinutes": 8,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "עקרונות הפיזור וההפרשיות במיקרוסקופ אור",
+        "content": "היכולת לראות פרטים במיקרוסקופ אור מוגבלת על‑ידי **הפרשיות (resolution)**, שהיא פונקציה של אורך הגל **λ** של האור וה‑**Numerical Aperture (NA)** של האובייקטיב. לפי נוסחת **Abbe**: **d = λ/(2·NA)**, כאשר **d** הוא מרחק מינימלי שניתן להפריד בין שני נקודות. גורמים נוספים המשפיעים על איכות התמונה כוללים **קוהלר (Köhler) illumination**, שימוש במדיה מתאימה (שמן immersion) ותיקון של **spherical** ו‑**chromatic aberrations**. בנוסף, טכניקות מתקדמות כגון **Phase‑contrast**, **Differential Interference Contrast (DIC)** ו‑**Fluorescence microscopy** מאפשרות הדגשת מבנים שקשה לראותם בתאורת אור רגילה.",
+        "keyPoints": [
+          "הפרשיות תלויה ב‑λ וב‑NA",
+          "קוהלר illumination מבטיחה תאורה אחידה",
+          "שמן immersion מגדיל את NA ומפחית אברציות"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "מיקרוסקופיות פלורסצנטית ותיוג חלבונים",
+        "content": "ב‑**Fluorescence microscopy** משתמשים במולקולות **fluorophores** (לדוגמה **DAPI**, **FITC**, **GFP**) אשר נספגות אור באורך גל קצר ומשחררות אור באורך גל ארוך יותר. ה‑**Stokes shift** מאפשר הפרדה של האור המפוזר מהאור המשודר. תיוג ספציפי מתבצע על‑ידי קישור הפלוורופור למולקולות יעד (DNA, חלבונים, ליפידים) באמצעות **antibody‑fluorophore conjugates** או **fusion proteins**. בחירת **filter sets** (excitation, dichroic, emission) מדויקת קריטית למניעת **crosstalk** ולשיפור **signal‑to‑noise ratio**.",
+        "keyPoints": [
+          "Fluorophore פולט אור באורך גל ארוך יותר מהאורך שבו נספג",
+          "Stokes shift מאפשר הפרדת האותות",
+          "תיוג מתבצע באמצעות אנטיבודיות או חלבונים ממוזגים"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "id": "lesson_molecular-biology-ch-09",
+    "chapterId": "molecular-biology-ch-09",
+    "areaId": "molecular-biology",
+    "followUpQuestionIds": [
+      "q_molecular-biology-ch-09-looking-at-cells-and-molecules-in-the-light-microscope_1_1791344475",
+      "q_molecular-biology-ch-09-looking-at-cells-and-molecules-in-the-light-microscope_2_1791344475",
+      "q_molecular-biology-ch-09-looking-at-cells-and-molecules-in-the-light-microscope_3_1791344475",
+      "q_molecular-biology-ch-09-looking-at-cells-and-molecules-in-the-light-microscope_4_1791344475",
+      "q_molecular-biology-ch-09-looking-at-cells-and-molecules-in-the-electron-microscope_1_1791344979",
+      "q_molecular-biology-ch-09-looking-at-cells-and-molecules-in-the-electron-microscope_2_1791344979",
+      "q_molecular-biology-ch-09-looking-at-cells-and-molecules-in-the-electron-microscope_3_1791344979",
+      "q_molecular-biology-ch-09-looking-at-cells-and-molecules-in-the-electron-microscope_4_1791344979"
+    ]
+  },
+  {
+    "title": "הדו-שכבה הליפידית",
+    "titleEn": "Lipid Bilayer",
+    "estimatedMinutes": 8,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "מבנה ותכונות של דו-שכבה ליפידית",
+        "content": "הדו-שכבה הליפידית מורכבת משתי שכבות של **מולקולות אמפיפיליות** – חומצות שומן עם ראש פוספאט הידרופילי ושרשרת הידרופובית. במים, הראשים הפולריים פונים החוצה אל הסביבה המימית, בעוד שהשרשראות ההידרופוביות מתמקמות פנימה, יוצרות מחסום אנרגטי שמונע מעבר של חלקיקים הידרופיליים. **תכונות מרכזיות**: 1) **fluidity** – תזוזת הליפידים והחלבונים בממברנה; 2) **asymmetry** – פיזור לא סימטרי של סוגי הליפידים בין שני העלים; 3) **permeability** – חדירות סלקטיבית למולקולות קטנות בלתי‑ממעמדות; 4) **elasticity** – יכולת שינוי צורה ללא פגיעה במבנה. מרכיבים נוספים כגון **cholesterol** משנים את סדר הליפידים, משמרים את ה‑fluidity בטמפרטורות קיצוניות, ומסייעים ליציבות המבנית.",
+        "keyPoints": [
+          "חומצות שומן אמפיפיליות יוצרות דו‑שכבה",
+          "ה‑fluidity וה‑asymmetry הם מאפיינים חיוניים",
+          "ה‑cholesterol מודולציה של סדר הליפידים"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "id": "lesson_cell-biology-ch-10",
+    "chapterId": "cell-biology-ch-10",
+    "areaId": "cell-biology",
+    "followUpQuestionIds": [
+      "q_cell-biology-ch-10-the-lipid-bilayer_1_1791345490",
+      "q_cell-biology-ch-10-the-lipid-bilayer_2_1791345490",
+      "q_cell-biology-ch-10-the-lipid-bilayer_3_1791345490",
+      "q_cell-biology-ch-10-the-lipid-bilayer_4_1791345490",
+      "q_cell-biology-ch-10-membrane-proteins_1_1791346020",
+      "q_cell-biology-ch-10-membrane-proteins_2_1791346020",
+      "q_cell-biology-ch-10-membrane-proteins_3_1791346020",
+      "q_cell-biology-ch-10-membrane-proteins_4_1791346020"
+    ]
+  },
+  {
+    "title": "החלוקה למדורים בתא",
+    "titleEn": "Cellular Compartmentalization",
+    "estimatedMinutes": 8,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "מדורים ממברנתיים וארגון פנימי",
+        "content": "התא מחולק למדורים ממברנתיים (organelles) המאפשרים **ספציפיות ביוכימית** והפרדת תהליכים מטבוליים. כל מדור מוקף בממברנה דו‑שכבתית או חד‑שכבתית, כולל **plasma membrane**, **nuclear envelope**, **endoplasmic reticulum (ER)**, **Golgi apparatus**, **mitochondria**, **chloroplasts**, **lysosomes**, **peroxisomes** ועוד. הממברנות מכילות **lipid bilayers**, חלבונים משולבים (integral) ופרוטונים (peripheral) המשפיעים על **permeability**, **signal transduction**, ו**protein sorting**.",
+        "keyPoints": [
+          "ממברנות מגדירות מדורים עצמאיים",
+          "הפרדת תגובות מטבוליות מניעת אינטראקציות מזיקות"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "סיגנלים למיון חלבונים",
+        "content": "חלבונים ממוקמים למדורים ספציפיים בעזרת **signal sequences**. לדוגמה: **N‑terminal signal peptide** → SRP‑dependent קוֹטֶרֶשׁ ל‑ER; **KDEL** (C‑terminal) → שימור חלבונים מומסים ב‑ER; **NLS (nuclear localization signal)** → קישור ל‑importin α/β ול‑nuclear pore complex; **PTS1 (SKL)** ו‑**PTS2** → ייבוא לפרוקסיזומים; **mitochondrial targeting sequence** (α‑helix) → TOM/TIM; **chloroplast transit peptide** → TOC/TIC. המערכת מבוססת על **receptor‑mediated recognition**, **chaperones**, ו‑**energy-dependent translocation** (GTP, ATP).",
+        "keyPoints": [
+          "סיגנלים קצרים וקבועים קובעים יעד",
+          "קולטנים ספציפיים והפרדת תהליך קודד"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "תהליכי תעבורה ו‑vesicular trafficking",
+        "content": "העברת חלבונים בין מדורים מתבצעת באמצעות **vesicles** המצופות בחלבוני קופסה: **COPII** (ER→Golgi), **COPI** (Golgi→ER), **clathrin** (endocytosis, lysosome targeting). **SNARE proteins** (v‑SNARE, t‑SNARE) משמשים למיזוג ממברנות. **Rab GTPases** ו‑**tethering factors** מוודאים ספציפיות יעד. תהליך זה מאפשר **cargo selection**, **coat assembly**, **budding**, **transport**, ו‑**fusion** תוך שמירה על **compartmental identity**.",
+        "keyPoints": [
+          "קופסאות חלבוניות מווסתות תעבורה",
+          "SNAREs ו‑Rab GTPases קובעים ספציפיות המיזוג"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "id": "lesson_cell-biology-ch-12",
+    "chapterId": "cell-biology-ch-12",
+    "areaId": "cell-biology",
+    "followUpQuestionIds": [
+      "q_cell-biology-ch-12-the-compartmentalization-of-cells_1_1791346573",
+      "q_cell-biology-ch-12-the-compartmentalization-of-cells_2_1791346573",
+      "q_cell-biology-ch-12-the-compartmentalization-of-cells_3_1791346573",
+      "q_cell-biology-ch-12-the-compartmentalization-of-cells_4_1791346573",
+      "q_cell-biology-ch-12-the-endoplasmic-reticulum_1_1791347107",
+      "q_cell-biology-ch-12-the-endoplasmic-reticulum_2_1791347107",
+      "q_cell-biology-ch-12-the-endoplasmic-reticulum_3_1791347107",
+      "q_cell-biology-ch-12-the-endoplasmic-reticulum_4_1791347107",
+      "q_cell-biology-ch-12-peroxisomes_1_1791347647",
+      "q_cell-biology-ch-12-peroxisomes_2_1791347647",
+      "q_cell-biology-ch-12-peroxisomes_3_1791347647",
+      "q_cell-biology-ch-12-peroxisomes_4_1791347647",
+      "q_cell-biology-ch-12-the-transport-of-proteins-into-mitochondria-and-chloroplasts_1_1791348197",
+      "q_cell-biology-ch-12-the-transport-of-proteins-into-mitochondria-and-chloroplasts_2_1791348197",
+      "q_cell-biology-ch-12-the-transport-of-proteins-into-mitochondria-and-chloroplasts_3_1791348197",
+      "q_cell-biology-ch-12-the-transport-of-proteins-into-mitochondria-and-chloroplasts_4_1791348197",
+      "q_cell-biology-ch-12-the-transport-of-molecules-between-the-nucleus-and-the-cytosol_1_1791348704",
+      "q_cell-biology-ch-12-the-transport-of-molecules-between-the-nucleus-and-the-cytosol_2_1791348704",
+      "q_cell-biology-ch-12-the-transport-of-molecules-between-the-nucleus-and-the-cytosol_3_1791348704",
+      "q_cell-biology-ch-12-the-transport-of-molecules-between-the-nucleus-and-the-cytosol_4_1791348704"
+    ]
+  },
+  {
+    "title": "מנגנוני הובלה ממברנלית וזהות מדורים בתא",
+    "titleEn": "Membrane Transport Mechanisms and Compartment Identity",
+    "estimatedMinutes": 8,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "הובלה ממברנלית – סוגים ועקרונות",
+        "content": "הובלה ממברנלית מתרחשת במגוון דרכים: **פיזור פסיבי** (simple diffusion) תלוי במטען, בגודל ובתכונות ההידרופוביות של המולקולה; **פיזור מוּסדר** (facilitated diffusion) מתבצע דרך **קְרוֹמָטִינִים** (channel proteins) או **קְרוֹמָטִינִים נוֹשָׂאִים** (carrier proteins) ללא צורך באנרגיה; **הובלה פעילה ראשונית** (primary active transport) מנוהלת על‑ידי **ATP‑ases** כגון **Na⁺/K⁺‑ATPase** ו‑**Ca²⁺‑ATPase**; **הובלה פעילה משנית** (secondary active transport) מתבססת על גרדיאנט של יון (למשל **Na⁺‑symport** או **H⁺‑antiport**) לייצור זרם של מולקולה אחרת. בנוסף, קיימת **הובלה וְסִיקוּלָרִית** (vesicular transport) הכוללת **אֶנדוֹצִיטוֹזִיס** (endocytosis) – פִּינצ'רינג, **פִּינצ'רינג‑קְלוֹן**, **מאקרופגיה**, ו‑**אֶקְסוֹצִיטוֹזִיס** (exocytosis) המסתמכת על **SNARE‑complex** ו‑**Rab‑GTPases** לשחרור וקליטת וְסִיקוֹת.",
+        "keyPoints": [
+          "פיזור פסיבי vs מוּסדר",
+          "הובלה פעילה ראשונית vs משנית",
+          "תפקיד ה‑ATP‑ases וה‑symport/antiport",
+          "הובלה וְסִיקוּלָרִית ו‑SNARE/Rab"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "זהות מדורים – מרכיבי ממברנה וסימנים חלבוניים",
+        "content": "זהות של מדור תאים נקבעת על‑ידי **הרכב הליפידים** (phospholipid head‑group composition, cholesterol content) והימצאות **חלבוני מדור** (resident proteins) כגון **קְרוֹמָטִינִים** ספציפיים, **פִּרְטוֹקְסִינ** (peroxisomal) **PEX**‑proteins, **גולגי**‑**סִינְדְרִים** (Golgi) **GOLGIN**‑s, וכן **פוסְפוֹאִינוזִיטוֹלִידס** (PI3P, PI4P) המשמשים כסימני מיקום. **Rab‑GTPases** משמשים כמפענחי מדור, כאשר כל Rab מקושר למדור מסוים (Rab5 – אנדוזום מוקדם, Rab7 – אנדוזום מאוחר, Rab11 – ריסוס). בנוסף, **SNARE‑proteins** (v‑SNARE, t‑SNARE) מבטיחים התאמה מדור‑ל‑מדור בתהליכי מיזוג וְסִיקוֹת.",
+        "keyPoints": [
+          "הרכב ליפידי ייחודי לכל מדור",
+          "חלבוני מדור ספציפיים (Rab, SNARE, PEX)",
+          "פוסְפוֹאִינוזִיטוֹלִידס כסימני מדור"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדתם עד כה."
+      }
+    ],
+    "id": "lesson_cell-biology-ch-13",
+    "chapterId": "cell-biology-ch-13",
+    "areaId": "cell-biology",
+    "followUpQuestionIds": [
+      "q_cell-biology-ch-13-mechanisms-of-membrane-transport-and-compartment-identity_1_1791349190",
+      "q_cell-biology-ch-13-mechanisms-of-membrane-transport-and-compartment-identity_2_1791349190",
+      "q_cell-biology-ch-13-mechanisms-of-membrane-transport-and-compartment-identity_3_1791349190",
+      "q_cell-biology-ch-13-mechanisms-of-membrane-transport-and-compartment-identity_4_1791349190",
+      "q_cell-biology-ch-13-transport-from-the-endoplasmic-reticulum-through-the-golgi-apparatus_1_1791349734",
+      "q_cell-biology-ch-13-transport-from-the-endoplasmic-reticulum-through-the-golgi-apparatus_2_1791349734",
+      "q_cell-biology-ch-13-transport-from-the-endoplasmic-reticulum-through-the-golgi-apparatus_3_1791349734",
+      "q_cell-biology-ch-13-transport-from-the-endoplasmic-reticulum-through-the-golgi-apparatus_4_1791349734",
+      "q_cell-biology-ch-13-transport-from-the-trans-golgi-network-to-the-cell-exterior-and-endosomes_1_1791350324",
+      "q_cell-biology-ch-13-transport-from-the-trans-golgi-network-to-the-cell-exterior-and-endosomes_2_1791350324",
+      "q_cell-biology-ch-13-transport-from-the-trans-golgi-network-to-the-cell-exterior-and-endosomes_3_1791350324",
+      "q_cell-biology-ch-13-transport-from-the-trans-golgi-network-to-the-cell-exterior-and-endosomes_4_1791350324"
+    ]
+  },
+  {
+    "title": "המיטוכונדריון: מבנה, תפקוד והמרת אנרגיה",
+    "titleEn": "Mitochondrion: Structure, Function and Energy Conversion",
+    "estimatedMinutes": 10,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "מבנה המיטוכונדריון",
+        "content": "המיטוכונדריון הוא אורגן דו-קרומי בעל שני ממברנות – ממברנת חיצונית חלקה וממברנת פנימית מקופלת ל‑cristae. המרחב שבין הממברנות נקרא intermembrane space, בעוד שהמרחב הפנימי נקרא matrix ומכיל DNA של המיטוכונדריה, rRNA, tRNA, וחלבונים כגון **Cytochrome c oxidase** ו‑**ATP synthase**. לכל קריסטה יש תכולה של חלבוני‑קשר (Complex I‑IV) המהווים את שרשרת הנשימה האלקטרונית (ETC).",
+        "keyPoints": [
+          "ממברנה חיצונית חלקה",
+          "ממברנה פנימית עם cristae",
+          "matrix מכיל mtDNA וחלבונים"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "המרת אנרגיה – שרשרת הנשימה וה‑Chemiosmosis",
+        "content": "ב‑**oxidative phosphorylation** NADH ו‑FADH₂ מעבירים אלקטרונים ל‑Complex I ו‑Complex II בהתאמה, עד ל‑Complex IV (Cytochrome c oxidase) שבו מתרחשת הפחתת O₂ ל‑H₂O. תהליך זה יוצר גרדיאנט של פרוטונים (H⁺) במרחב הבין‑ממברנה. ה‑**ATP synthase (Complex V)** מנצל את זרם הפרוטונים חזרה למטריצה ל‑סינתזת ATP מ‑ADP + Pi. מודל ה‑chemiosmotic של Mitchell מדגיש שה‑Δp (potential electrochemical) הוא הכוח המניע.",
+        "keyPoints": [
+          "NADH → Complex I",
+          "FADH₂ → Complex II",
+          "פרוטון גרדיאנט → ATP synthase"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "DNA של המיטוכונדריה וההעתקה שלה",
+        "content": "mtDNA הוא מולקולה מעגלית של ‎16‑17 kb המכילה 37 גנים: 13 חלבוני‑שרשרת הנשימה, 22 tRNA ו‑2 rRNA. ה‑mtDNA אינו מכיל אינטרונים, אינו מקודד חלבוני‑היסטון, ומשתמש במנגנון **RNA polymerase γ**. מוטציות ב‑mtDNA גורמות למחלות מיטוכונדריאליות כגון Leber's hereditary optic neuropathy.",
+        "keyPoints": [
+          "קוד פתוח ללא אינטרונים",
+          "מתורגם במטריצה",
+          "מתקיימת רפליקציה עצמאית"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "תפקיד המיטוכונדריון באפופטוזיס",
+        "content": "במהלך אפופטוזיס, המיטוכונדריון משחרר **cytochrome c** למרחב הציטופלזמי, מה שמפעיל את הקאספז‑9 (Apaf‑1) ויוצר את ה‑**apoptosome**. בנוסף, שינוי במתח הממברנה הפנימית (ΔΨm) והפרשת **ROS** משמשים כסיגנלים משניים.",
+        "keyPoints": [
+          "שחרור cytochrome c",
+          "יצירת apoptosome",
+          "שינוי ΔΨm"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "id": "lesson_cell-biology-ch-14",
+    "chapterId": "cell-biology-ch-14",
+    "areaId": "cell-biology",
+    "followUpQuestionIds": [
+      "q_cell-biology-ch-14-the-mitochondrion_1_1791351935",
+      "q_cell-biology-ch-14-the-mitochondrion_2_1791351935",
+      "q_cell-biology-ch-14-the-mitochondrion_3_1791351935",
+      "q_cell-biology-ch-14-the-mitochondrion_4_1791351935",
+      "q_cell-biology-ch-14-the-proton-pumps-of-the-electron-transport-chain_1_1791352567",
+      "q_cell-biology-ch-14-the-proton-pumps-of-the-electron-transport-chain_2_1791352567",
+      "q_cell-biology-ch-14-the-proton-pumps-of-the-electron-transport-chain_3_1791352567",
+      "q_cell-biology-ch-14-the-proton-pumps-of-the-electron-transport-chain_4_1791352567",
+      "q_cell-biology-ch-14-atp-production-in-mitochondria_1_1791353082",
+      "q_cell-biology-ch-14-atp-production-in-mitochondria_2_1791353082",
+      "q_cell-biology-ch-14-atp-production-in-mitochondria_3_1791353082",
+      "q_cell-biology-ch-14-atp-production-in-mitochondria_4_1791353082",
+      "q_cell-biology-ch-14-chloroplasts-and-photosynthesis_1_1791353673",
+      "q_cell-biology-ch-14-chloroplasts-and-photosynthesis_2_1791353673",
+      "q_cell-biology-ch-14-chloroplasts-and-photosynthesis_3_1791353673",
+      "q_cell-biology-ch-14-chloroplasts-and-photosynthesis_4_1791353673",
+      "q_cell-biology-ch-14-the-genetic-systems-of-mitochondria-and-chloroplasts_1_1791354184",
+      "q_cell-biology-ch-14-the-genetic-systems-of-mitochondria-and-chloroplasts_2_1791354184",
+      "q_cell-biology-ch-14-the-genetic-systems-of-mitochondria-and-chloroplasts_3_1791354184",
+      "q_cell-biology-ch-14-the-genetic-systems-of-mitochondria-and-chloroplasts_4_1791354184"
+    ]
+  },
+  {
+    "title": "עקרונות האיתות התאי",
+    "titleEn": "Principles of Cell Signaling",
+    "estimatedMinutes": 10,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "מבוא לאיתות תאי",
+        "content": "איתות תאי הוא תהליך שבו **ליגנד** (ligand) חיצוני או פנימי מתקשר ל**קולטן** (receptor) על פני התא או בתוכו, ומעביר את המידע דרך **מסלול העברת אות** (signaling cascade). המנגנון מאפשר לתא להגיב לשינויים סביבתיים, לתאם פעילות עם תאים שכנים ולבצע תהליכים פנימיים כגון **פרוליפרציה**, **דיפרנציאציה** ו**אפופטוזיס**. שלושה מרכיבים מרכזיים: ליגנד, קולטן, ומנגנון פנימי (second messengers, kinases, phosphatases).",
+        "keyPoints": [
+          "ליגנד וקולטן",
+          "מסלולי העברת אות",
+          "תהליכים תאיים מתווכים"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "סוגי קולטנים",
+        "content": "קולטנים מחולקים למספר קבוצות עיקריות: **RTK** (Receptor Tyrosine Kinase) – קולטנים עם פעילות קינזית פנימית; **GPCR** (G‑protein‑coupled receptor) – מקשרים חלבוני G‑protein; **קולטני תעלות יוניות** (ligand‑gated ion channels) – פותחים תעלה בממברנה; וקולטנים פנימיים (nuclear receptors) הפועלים כתורכיות DNA‑binding. לכל קבוצה יש מנגנון הפעלה ייחודי, אך כולם מסתיימים בפוספורילציה, שינוי קונפורמציה או שינוי ברמות **second messengers** כגון cAMP, IP₃, DAG, Ca²⁺.",
+        "keyPoints": [
+          "RTK – דימריזציה ופוספורילציה",
+          "GPCR – חלבון G",
+          "תעלות יוניות – שינוי פוטנציאל ממברנה"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "מסלולי העברת אות פנימיים",
+        "content": "המסלולים המרכזיים כוללים את **MAPK cascade** (Ras → Raf → MEK → ERK), **PI3K/Akt pathway**, ו‑**JAK/STAT**. במרבית המסלולים מתרחשת **הגברה** (amplification) של האות: מולקולה אחת של ליגנד יכולה להפעיל אלפי חלבונים אנזימטיים. סיום האות מתבצע על‑ידי **פוספאטאזות**, **ריסטריקציה** של ליגנד, או **דגרדציה** של second messengers על‑ידי אנזימים כגון **phosphodiesterases**.",
+        "keyPoints": [
+          "MAPK cascade",
+          "הגברה של האות",
+          "סיום האות"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "id": "lesson_cell-biology-ch-15",
+    "chapterId": "cell-biology-ch-15",
+    "areaId": "cell-biology",
+    "followUpQuestionIds": [
+      "q_cell-biology-ch-15-principles-of-cell-signaling_1_1791354771",
+      "q_cell-biology-ch-15-principles-of-cell-signaling_2_1791354771",
+      "q_cell-biology-ch-15-principles-of-cell-signaling_3_1791354771",
+      "q_cell-biology-ch-15-principles-of-cell-signaling_4_1791354771",
+      "q_cell-biology-ch-15-signaling-through-g-protein-coupled-receptors_1_1791355441",
+      "q_cell-biology-ch-15-signaling-through-g-protein-coupled-receptors_2_1791355441",
+      "q_cell-biology-ch-15-signaling-through-g-protein-coupled-receptors_3_1791355441",
+      "q_cell-biology-ch-15-signaling-through-g-protein-coupled-receptors_4_1791355441",
+      "q_cell-biology-ch-15-signaling-through-enzyme-coupled-receptors_1_1791355951",
+      "q_cell-biology-ch-15-signaling-through-enzyme-coupled-receptors_2_1791355951",
+      "q_cell-biology-ch-15-signaling-through-enzyme-coupled-receptors_3_1791355951",
+      "q_cell-biology-ch-15-signaling-through-enzyme-coupled-receptors_4_1791355951",
+      "q_cell-biology-ch-15-alternative-signaling-routes-in-gene-regulation_1_1791356543",
+      "q_cell-biology-ch-15-alternative-signaling-routes-in-gene-regulation_2_1791356543",
+      "q_cell-biology-ch-15-alternative-signaling-routes-in-gene-regulation_3_1791356543",
+      "q_cell-biology-ch-15-alternative-signaling-routes-in-gene-regulation_4_1791356543",
+      "q_cell-biology-ch-15-signaling-in-plants_1_1791357058",
+      "q_cell-biology-ch-15-signaling-in-plants_2_1791357058",
+      "q_cell-biology-ch-15-signaling-in-plants_3_1791357058",
+      "q_cell-biology-ch-15-signaling-in-plants_4_1791357058"
+    ]
+  },
+  {
+    "title": "תפקוד ודינמיקה של שלד התא",
+    "titleEn": "Function and Dynamics of the Cytoskeleton",
+    "estimatedMinutes": 8,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "מיקרוטובולים – מבנה, פולימריזציה ו‑Dynamic Instability",
+        "content": "המיקרוטובולים מורכבים מ‑α‑ ו‑β‑Tubulin המתקבצים לצינוריות בעלות קוטר של 25 nm. כל יחידת β‑Tubulin קשורה ל‑GTP; לאחר ההוספה ל‑plus end מתרחשת הידרוליזה ל‑GDP, מה שמוביל ל‑**Dynamic Instability** – תהליך של קצב גדילה (polymerisation) וקצב קיצור (depolymerisation) המווסת על‑ידי קיום או היעדר **GTP‑cap**. חלבונים כגון **EB1**, **XMAP215** ו‑**Kinesin‑13** משנים את קצב ההתפתחות. המיקרוטובולים משמשים כ‑“מסילות” לתחבורה תוך‑תאית, מרכיב מרכזי במפולמטיקה (spindle) ובקביעת קוטב התא.",
+        "keyPoints": [
+          "ה‑plus end הוא קצה מהיר הצומח, ה‑minus end הוא קצה איטי יותר.",
+          "ה‑GTP‑cap מונע קיצור פתאומי של המיקרוטובול.",
+          "חלבוני MAPs (Microtubule‑Associated Proteins) מייצבים או מפעילים דינמיקה."
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "מיקרופילמנטים (Actin) – treadmilling ותנועה תאית",
+        "content": "פולימריזציית ה‑Actin מתרחשת על‑ידי הוספת **ATP‑Actin** ל‑plus end והפחתת **ADP‑Actin** ב‑minus end, תהליך המכונה **treadmilling**. חלבונים כמו **Profilin** מקדמים את הצמיחה ב‑plus end, בעוד **Cofilin** מזרז פגיעה של ADP‑Actin ב‑minus end. המערכת מאפשרת יצירת **lamellipodia** ו‑**filopodia**, קריטית למיגרציה תאית, פיצול ציטופלזמה (cytokinesis) והקשר לממברנה דרך **integrins** ו‑**focal adhesions**.",
+        "keyPoints": [
+          "ATP‑hydrolysis של Actin גורם לשינוי קונפורמציה ל‑ADP‑Actin.",
+          "Profilin ו‑Cofilin מווסתים את קצב ה‑treadmilling.",
+          "Myosin‑II משמש כמנוע שמייצר כוח על רשת ה‑Actin."
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "סיבי ביניים – יציבות מכנית ומחלות",
+        "content": "סיבי ביניים (Intermediate Filaments) הם חלבונים בעלים מבנה α‑helical coiled‑coil, קוטר של 10 nm, והם המספקים **חוזק מכני** לתא. סוגי הסיבים כוללים **Keratin** באפיתל, **Vimentin** בתאים פיברובלסטיים, **Neurofilament** בתאי עצב ו‑**Lamins** ברשת הליבה (nuclear lamina). מוטציות ב‑Keratin גורמות ל‑**Epidermolysis Bullosa Simplex**, בעוד פגמים ב‑Lamins מובילים ל‑**Progeria**. סיבי ביניים אינם דינמיים כמו מיקרוטובולים או Actin, אך הם מתארגנים מחדש במהלך שינוי צורת התא או אפופטוזה.",
+        "keyPoints": [
+          "ה‑Intermediate Filaments אינם תלויים ב‑GTP/ATP להיווצרותם.",
+          "ה‑Lamins תומכים במבנה גרעיני ומווסתים DNA replication.",
+          "מוטציות ב‑Keratin משפיעות על חוזק העור."
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק את ההבנה של תהליכי הדינמיקה והפונקציות של שלד התא."
+      }
+    ],
+    "id": "lesson_cell-biology-ch-16",
+    "chapterId": "cell-biology-ch-16",
+    "areaId": "cell-biology",
+    "followUpQuestionIds": [
+      "q_cell-biology-ch-16-function-and-dynamics-of-the-cytoskeleton_1_1791357551",
+      "q_cell-biology-ch-16-function-and-dynamics-of-the-cytoskeleton_2_1791357551",
+      "q_cell-biology-ch-16-function-and-dynamics-of-the-cytoskeleton_3_1791357551",
+      "q_cell-biology-ch-16-function-and-dynamics-of-the-cytoskeleton_4_1791357551",
+      "q_cell-biology-ch-16-actin_1_1791358073",
+      "q_cell-biology-ch-16-actin_2_1791358073",
+      "q_cell-biology-ch-16-actin_3_1791358073",
+      "q_cell-biology-ch-16-actin_4_1791358073",
+      "q_cell-biology-ch-16-myosin-and-actin_1_1791358615",
+      "q_cell-biology-ch-16-myosin-and-actin_2_1791358615",
+      "q_cell-biology-ch-16-myosin-and-actin_3_1791358615",
+      "q_cell-biology-ch-16-myosin-and-actin_4_1791358615",
+      "q_cell-biology-ch-16-microtubules_1_1791359289",
+      "q_cell-biology-ch-16-microtubules_2_1791359289",
+      "q_cell-biology-ch-16-intermediate-filaments-and-other-cytoskeletal-polymers_1_1791359836",
+      "q_cell-biology-ch-16-intermediate-filaments-and-other-cytoskeletal-polymers_2_1791359836",
+      "q_cell-biology-ch-16-intermediate-filaments-and-other-cytoskeletal-polymers_3_1791359836",
+      "q_cell-biology-ch-16-intermediate-filaments-and-other-cytoskeletal-polymers_4_1791359836",
+      "q_cell-biology-ch-16-cell-polarity-and-coordination-of-the-cytoskeleton_1_1791360387",
+      "q_cell-biology-ch-16-cell-polarity-and-coordination-of-the-cytoskeleton_2_1791360387",
+      "q_cell-biology-ch-16-cell-polarity-and-coordination-of-the-cytoskeleton_3_1791360387",
+      "q_cell-biology-ch-16-cell-polarity-and-coordination-of-the-cytoskeleton_4_1791360387"
+    ]
+  },
+  {
+    "title": "סקירת מחזור התא",
+    "titleEn": "Overview of the Cell Cycle",
+    "estimatedMinutes": 8,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "שלבי מחזור התא והמאפיינים המרכזיים",
+        "content": "מחזור התא מחולק לשישה שלבים עיקריים: **G1** – גדילה והכנת התא לתהליך השכפול; **S** – שכפול DNA (DNA replication) על ידי DNA polymerase δ ו‑ε; **G2** – הכנה למיטוזה, תיקון נזקי DNA; **M** – חלוקת התא (מיטוזה) המחולקת ל‑Prophase, Metaphase, Anaphase, Telophase; **Cytokinesis** – פיצול הציטופלזמה; ובנוסף שלב **G0** שבו תאים נציבים את פעילותן. כל שלב מוּקף ברמת ה‑**Cyclin‑CDK** ספציפית: Cyclin D‑CDK4/6 (G1), Cyclin E‑CDK2 (מעבר G1→S), Cyclin A‑CDK2 (S), Cyclin B‑CDK1 (G2/M).",
+        "keyPoints": [
+          "שלבי G1‑S‑G2‑M",
+          "תפקידי Cyclin‑CDK בכל שלב"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "בקרות מחזור התא (Checkpoints)",
+        "content": "בקרות מרכזיות מוודאות שלמות הגנום לפני מעבר לשלב הבא: **G1/S checkpoint** – תלוי ב‑p53 ו‑p21, מווסת את פעילות ה‑Cyclin D‑CDK4/6; **G2/M checkpoint** – מופעל על‑ידי ATM/ATR, Chk1/Chk2, מבטיח תיקון נזקי DNA לפני מיטוזה; **Spindle Assembly Checkpoint (SAC)** – מבטיח שכל הכרומוזומים מחוברים למיקרוטובול באמצעות kinetochores לפני אנאפזה, באמצעות חלבון **Mad2** ו‑**BubR1**. הפעלה של **APC/C‑Cdc20** מובילה לפרק את **Securin** ולשחרר את **Separase**, שמאפשר פיצול כרומטידים אחיו.",
+        "keyPoints": [
+          "G1/S – p53‑p21",
+          "G2/M – ATM/ATR‑Chk1/2",
+          "SAC – Mad2‑BubR1",
+          "APC/C‑Cdc20 – Securin‑Separase"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק מה למדנו עד כה."
+      }
+    ],
+    "id": "lesson_cell-biology-ch-17",
+    "chapterId": "cell-biology-ch-17",
+    "areaId": "cell-biology",
+    "followUpQuestionIds": [
+      "q_cell-biology-ch-17-overview-of-the-cell-cycle_1_1791360918",
+      "q_cell-biology-ch-17-overview-of-the-cell-cycle_2_1791360918",
+      "q_cell-biology-ch-17-overview-of-the-cell-cycle_3_1791360918",
+      "q_cell-biology-ch-17-overview-of-the-cell-cycle_4_1791360918"
     ]
   }
 ]
