@@ -1,0 +1,1290 @@
+{
+  "version": 1,
+  "cards": [
+    {
+      "deckId": "biochemistry-ch-01",
+      "front": "חומצות אמינו",
+      "back": "חומצות אמינו הן היחידות המבניות הבסיסיות של חלבונים. הן נקשרות יחד ליצירת שרשראות פפטידיות."
+    },
+    {
+      "deckId": "biochemistry-ch-01",
+      "front": "משוואת ΔG",
+      "back": "המשוואה היא ΔG = ΔG°' + RT ln(Q). Q מייצג את יחס ריכוז התוצרים לריכוז המגיבים."
+    },
+    {
+      "deckId": "biochemistry-ch-01",
+      "front": "חישוב pKa",
+      "back": "ה‑pKa מחושב לפי הנוסחה pKa = -log10(Ka). ערך זה מציין את חוזק החומצה."
+    },
+    {
+      "deckId": "biochemistry-ch-01",
+      "front": "תנאי ספונטניות",
+      "back": "תגובה ספונטנית דורשת ש‑ΔG יהיה שלילי. זה קורה כאשר האנרגיה החופשית של האנטרופיה (TΔS) גדולה מהאנתלפיה (ΔH)."
+    },
+    {
+      "deckId": "biochemistry-ch-02",
+      "front": "גשר מלח",
+      "back": "גשרי מלח יציבים יותר בליבת החלבון. הקבוע הדיאלקטרי הנמוך שם מונע מסך מטענים על ידי מים."
+    },
+    {
+      "deckId": "biochemistry-ch-02",
+      "front": "אפקט הידרופובי",
+      "back": "האפקט ההידרופובי מונע על ידי עלייה באנטרופיה. מולקולות מים משוחררות מ'כלובים' סביב קבוצות לא-פולריות."
+    },
+    {
+      "deckId": "biochemistry-ch-02",
+      "front": "פירוק חומצה חלשה",
+      "back": "חומצה חלשה מתפרקת חלקית במים. ריכוז הידרוגנים ניתן לחישוב בקירוב x ≈ √(Ka·C)."
+    },
+    {
+      "deckId": "biochemistry-ch-02",
+      "front": "בופר ביקרבונט",
+      "back": "ה‑pKa האפקטיבי משקלל את הידרציה של CO2 ל‑H2CO3. ריכוז ה‑CO2 הגבוה מאפשר בופר יעיל ב‑pH גבוה."
+    },
+    {
+      "deckId": "biochemistry-ch-02",
+      "front": "כושר בופר",
+      "back": "כושר הבופר תלוי בקרבה של ה‑pH ל‑pKa. הוא תלוי גם בריכוז המרכיבים, כגון פוספט או ביקרבונט."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "חומצה אספרטית",
+      "back": "חומצה אספרטית מכילה קבוצת COOH בקבוצת ה‑R. ה‑pKa של קבוצה זו הוא בערך 3.9."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "תגובת הצמדה",
+      "back": "קבוצת האמינו תוקפת את פחמן הקרבוניל של חומצה אחרת. נוצר אינטרמידיאט טטרהדרלי לפני שחרור מים ויצירת קשר פפטידי."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "ריבוזים",
+      "back": "מרכז ה‑peptidyl-transferase הוא ריבוזים. הקשר הפפטידי נוצר ללא צורך באנזים חלבוני נוסף."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "SDS-PAGE",
+      "back": "בתנאים non-reducing קשרים דיסולפידיים נשמרים. החלבון נע מהר יותר בגלל שמסתו הכוללת נשמרת."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "Ni-NTA",
+      "back": "Ni-NTA קושר את ה‑His-tag. הקישור מתרחש באמצעות קשרים קוורדינטים עם יוני ניקל."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "מבחן ברדפורד",
+      "back": "המבחן מבוסס על שינוי צבע של Coomassie Blue. השינוי מתרחש בעקבות קישור לחלבון."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "קשר פפטידי",
+      "back": "הקשר הפפטידי הוא קשר אמיד עם רזוננס. הוא נמצא במישור ואין בו חופש סיבובית סביב ציר C-N."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "נקודת איזואלקטרית",
+      "back": "ה‑pI מחושב כממוצע של שני ערכי pKa. אלו הערכים שמסביב לנקודת האיזואלקטרית של הפפטיד."
+    },
+    {
+      "deckId": "biochemistry-ch-04",
+      "front": "משקל חומצות אמינו",
+      "back": "חומצות אמינו שונות במשקל המולקולרי שלהן. לדוגמה, גליצין שוקל 57 Da ואלנין 71 Da."
+    },
+    {
+      "deckId": "biochemistry-ch-04",
+      "front": "אלפא-הליקס",
+      "back": "קשרי מימן נוצרים בין C=O של שארית i ל‑N-H של i+4. מבנה זה יוצר ספירלה ימנית יציבה."
+    },
+    {
+      "deckId": "biochemistry-ch-04",
+      "front": "בטא-שיט אנטי-מקביל",
+      "back": "קשרי המימן הם כמעט קו ישר (180 מעלות). זה מאפשר אריזה יעילה ויציבות גבוהה יותר."
+    },
+    {
+      "deckId": "biochemistry-ch-04",
+      "front": "SDS-PAGE דימר",
+      "back": "ב‑SDS-PAGE מתפרקות קשרים לא-קובלטיים. נצפה רק את המשקל של תת-היחידה הבודדת."
+    },
+    {
+      "deckId": "biochemistry-ch-04",
+      "front": "קשרי דיסולפידיים",
+      "back": "במבנה שלישי הם מקבעים קיפול פנימי. במבנה רביעי הם משמשים כמפסקי חיבור בין תת-יחידות."
+    },
+    {
+      "deckId": "biochemistry-ch-04",
+      "front": "קיפול חלבון",
+      "back": "האפקט ההידרופובי הוא הכוח העיקרי לקיפול. קבוצות לא-פולריות נצברות במרכז החלבון."
+    },
+    {
+      "deckId": "biochemistry-ch-04",
+      "front": "דנטורציה ב-Urea",
+      "back": "Urea יוצר קשרי מימן עם קבוצות קוטביות. זה מחליש קשרים פנימיים ומוביל לפתיחת המבנה."
+    },
+    {
+      "deckId": "biochemistry-ch-05",
+      "front": "תופעת Bohr",
+      "back": "הורדת pH מזיזה את עקומת הדיסוציה ימינה. זה גורם לירידה באפינרון של החמוגלובין לחמצן."
+    },
+    {
+      "deckId": "biochemistry-ch-05",
+      "front": "קואופרטיביות במיוגלובין",
+      "back": "מיוגלובין אינו מציג קואופרטיביות. הוא מונומר ולכן קישור החמצן הוא חד-אתרי."
+    },
+    {
+      "deckId": "biochemistry-ch-05",
+      "front": "בקע Papain",
+      "back": "האנזים Papain מבקע את ה-IgG באזור הציר. זה מפריד את השרשראות הכבדות מעל הקשרים הדי-סולפידיים."
+    },
+    {
+      "deckId": "biochemistry-ch-05",
+      "front": "אנטרופיה בקישור נוגדן",
+      "back": "קישור נוגדן לאנטיגן מוריד את האנטרופיה הקונפורמטיבית. הירידה מופצת על ידי שינויים אנתלפיים נוחים ואפקט הידרופובי."
+    },
+    {
+      "deckId": "biochemistry-ch-05",
+      "front": "הידרוליזה ATP ב-Myosin",
+      "back": "הידרוליזה של ATP ל-ADP ו-Pi גורמת לשינוי קונפורמציה. השינוי מאפשר שחרור של Myosin מה-Actin."
+    },
+    {
+      "deckId": "biochemistry-ch-05",
+      "front": "קישור ATP ל-Myosin",
+      "back": "קישור ATP לראש ה-Myosin גורם להתנתקותו מה-Actin. המצב נקרא Detached state."
+    },
+    {
+      "deckId": "biochemistry-ch-06",
+      "front": "משמעות Km גבוה",
+      "back": "Km גבוה מצביע על צורך בריכוז גבוה של סובסטרט. האנזים פחות אפקטיבי בריכוזים נמוכים."
+    },
+    {
+      "deckId": "biochemistry-ch-06",
+      "front": "דיכוי תחרותי",
+      "back": "בדיכוי תחרותי ה-Km עולה וה-Vmax נשאר קבוע. המעכב מתחרה על אתר הפעולה עם הסובסטרט."
+    },
+    {
+      "deckId": "biochemistry-ch-06",
+      "front": "הגדרת Km",
+      "back": "Km הוא ריכוז הסובסטרט שבו מהירות התגובה היא חצי מה-Vmax. זהו מדד לאפינרון של האנזים לסובסטרט."
+    },
+    {
+      "deckId": "biochemistry-ch-06",
+      "front": "Induced Fit",
+      "back": "קישור הסובסטרט גורם לשינוי קונפורמציה באנזים. השינוי מאופטימיזציה את סביבת הפעולה לקירוב קבוצות קטליטיות."
+    },
+    {
+      "deckId": "biochemistry-ch-06",
+      "front": "מעכב תחרותי",
+      "back": "המעכב מתחרה על אתר הפעולה עם הסובסטרט. ה-Vmax נשאר קבוע וה-Km האפקטיבי גדל."
+    },
+    {
+      "deckId": "biochemistry-ch-06",
+      "front": "Ordered Sequential",
+      "back": "מנגנון שבו סובסטרט A חייב לקשור לפני B. שינוי ב-kcat/Km של A מצביע על מנגנון זה."
+    },
+    {
+      "deckId": "biochemistry-ch-06",
+      "front": "Hexokinase",
+      "back": "Hexokinase שייך למחלקת ה-Transferases. הוא מעביר קבוצת פוספט מ-ATP לגלוקוז."
+    },
+    {
+      "deckId": "biochemistry-ch-06",
+      "front": "Aspartate aminotransferase",
+      "back": "AST הוא אנזים שמצריך PLP כקו-פקטור. הוא יוצר קשר Schiff base עם קבוצת האמינו."
+    },
+    {
+      "deckId": "biochemistry-ch-06",
+      "front": "Allosteric vs Phosphorylation",
+      "back": "Allosteric מתבסס על קישור לאתר רגולטורי. Phosphorylation מוסיפה קבוצת פוספט קוולנטית לשרשרת האמינו."
+    },
+    {
+      "deckId": "biochemistry-ch-06",
+      "front": "HMG-CoA reductase",
+      "back": "Cholesterol מקשר לאתר allosteric ומקטין את ה-Vmax. ה-Km נשאר ללא שינוי, מה שמייצג דיכוי non-competitive."
+    },
+    {
+      "deckId": "biochemistry-ch-07",
+      "front": "D-סוכרים",
+      "back": "ב-D-סוכרים קבוצת ה-OH של הפחמן הציראלי הגבוה ביותר נמצאת מימין. זה נקבע לפי פרויקציית Fischer."
+    },
+    {
+      "deckId": "biochemistry-ch-07",
+      "front": "סוכרוז",
+      "back": "סוכרוז הוא דיסכריד לא-מופחת. שני הפחמנים האנומריים משולבים בקישור α1→β2, לכן אין קבוצה חופשית."
+    },
+    {
+      "deckId": "biochemistry-ch-07",
+      "front": "עמילן",
+      "back": "עמילן מורכב מיחידות α-D-Glucose. הקשרים הם α-1,4 ו-α-1,6."
+    },
+    {
+      "deckId": "biochemistry-ch-07",
+      "front": "ענפים בגליקוגן",
+      "back": "קשרים α-1,6 יוצרים ענפים במולקולה. זה מאפשר גישה מהירה של אנזימים ומגביר קצב שחרור הגלוקוז."
+    },
+    {
+      "deckId": "biochemistry-ch-07",
+      "front": "Proteoglycans",
+      "back": "GAG מצורף לחלבון בקישור O-linked ל-Ser או Thr. הקישור מתרחש דרך רצף טטרא-סוכר (Xyl-Gal-GlcA-GlcA)."
+    },
+    {
+      "deckId": "biochemistry-ch-07",
+      "front": "N-glycosylation",
+      "back": "מתרחשת בקו-התרגום במרחב ה-ER. הקישור מתבצע על Asn במוטיב Asn-X-Ser/Thr."
+    },
+    {
+      "deckId": "biochemistry-ch-07",
+      "front": "Siglec-7",
+      "back": "מזהה סיאלית בקישור α2-3 ל-Gal. זהו קוד סוכרים ספציפי לזיהוי."
+    },
+    {
+      "deckId": "biochemistry-ch-07",
+      "front": "OGT",
+      "back": "OGT הוא האנזים שמעביר קבוצת O-GlcNAc. הקישור מתרחש על שאריות Ser/Thr בחלבונים גרעיניים."
+    },
+    {
+      "deckId": "biochemistry-ch-12",
+      "front": "הפעלת GPCR",
+      "back": "קישור הליגנד משנה את קונפורמציה הקולטן. זה מאפשר החלפת GDP ב‑GTP על תת‑יחידת α."
+    },
+    {
+      "deckId": "biochemistry-ch-12",
+      "front": "תפקוד Gs ו‑Gi",
+      "back": "Gs מפעיל Adenylyl Cyclase ומעלה cAMP. Gi מדכא את האנזים ומוריד cAMP."
+    },
+    {
+      "deckId": "biochemistry-ch-12",
+      "front": "מבנה RTK",
+      "back": "כולל דומיין חיצוני, אלפא‑הליקל בממברנה ודומיין קינאז פנימי. הליגנד נקשר בחלק החיצוני."
+    },
+    {
+      "deckId": "biochemistry-ch-12",
+      "front": "הפעלת RTK",
+      "back": "קישור הליגנד גורם לדימריזציה של הקולטנים. מתרחשת פוספורילציה טרנס‑אוטו של יתרות טירוזין."
+    },
+    {
+      "deckId": "biochemistry-ch-13",
+      "front": "קאטבוליזם ואנבוליזם",
+      "back": "קאטבוליזם פורק מולקולות ומשחרר אנרגיה. אנבוליזם בונה מולקולות וצורך אנרגיה."
+    },
+    {
+      "deckId": "biochemistry-ch-13",
+      "front": "ATP ו‑ΔG",
+      "back": "רמת ATP גבוהה מגדילה את היחס ATP/ADP. זה הופך את ΔG של הידרוליזת ATP לפחות שלילי."
+    },
+    {
+      "deckId": "biochemistry-ch-13",
+      "front": "משוואת ΔG",
+      "back": "ΔG תלוי בריכוזי החומרים (Q). הוא שונה מ‑ΔG°' בתנאי התא."
+    },
+    {
+      "deckId": "biochemistry-ch-13",
+      "front": "קופלינג אנרגטי",
+      "back": "תגובות נקשרות רק אם הסכום הכולל של ΔG שלילי. זה מבטיח שהתהליך כולו תרמודינמית אפשרי."
+    },
+    {
+      "deckId": "biochemistry-ch-13",
+      "front": "Substrate-level Phosphorylation",
+      "back": "האנרגיה מועברת ישירות מהסובסטרט ל‑ADP. לדוגמה, המרת PEP לפירובט על ידי Pyruvate Kinase."
+    },
+    {
+      "deckId": "biochemistry-ch-13",
+      "front": "טרנסאמינציה",
+      "back": "העברת קבוצת אמין מ‑α‑ketoacid לאמינו‑חומצה. בדרך כלל Glutamate נותן את הקבוצה ל‑Pyruvate."
+    },
+    {
+      "deckId": "biochemistry-ch-13",
+      "front": "Phosphoglycerate Kinase",
+      "back": "מעביר קבוצת Phosphoryl מ‑1,3‑bisphosphoglycerate ל‑ADP. נוצרים 3‑phosphoglycerate ו‑ATP."
+    },
+    {
+      "deckId": "biochemistry-ch-13",
+      "front": "אתר F₁",
+      "back": "תת‑יחידות β מכילות את אתר הקשירה של ADP ו‑Pi. שם מתרחשת הפוספורילציה ל‑ATP."
+    },
+    {
+      "deckId": "biochemistry-ch-13",
+      "front": "Complex I",
+      "back": "מעביר אלקטרונים עם פוטנציאל E°' גבוה יותר. תורם יותר ל‑Δp מאשר Complex II."
+    },
+    {
+      "deckId": "biochemistry-ch-13",
+      "front": "יחס NAD⁺/NADH",
+      "back": "יחס גבוה מעודד גליקוליזה על ידי הפעלת PFK‑1. במצב אנאירובי נשמר NAD⁺ על ידי יצירת Lactate."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "Net ATP בגליקוליזה",
+      "back": "משקיעים 2 ATP ומקבלים 4 ATP. הרווח הנקי הוא 2 ATP."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "PEPCK",
+      "back": "מקטלזת המרת OAA ל‑PEP. משתמשת ב‑GTP או ATP וב‑CO₂."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "בקרת PFK‑1",
+      "back": "ATP גבוה מעכב את PFK‑1. AMP ו‑fructose‑2,6‑bisphosphate מעודדים את פעילותו."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "PDC",
+      "back": "קומפלקס שמבצע דה‑קרבוקסילציה של פירובט. מוסיף CoA ומעביר את האקציל ל‑TCA."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "LDH ו‑NADH",
+      "back": "LDH מחזיר פירובט ל‑Lactate. בתהליך זה NADH מתחדש ל‑NAD⁺."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "PEPCK בגלוקונאוגנזה",
+      "back": "ממלא את הצעד הראשון בהמרת OAA ל‑PEP. מקפץ את שלב ה‑phosphoenolpyruvate של גליקוליזה."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "Hexokinase",
+      "back": "מבצע פוספורילציה של גלוקוז בגליקוליזה. אין לו תפקיד הפוך בגלוקונאוגנזה."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "PFK‑1",
+      "back": "האנזים המהיר והבלתי‑הפיך הראשון בגליקוליזה. מווסת את קצב המסלול."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "גלוקגון ו‑PFK‑2",
+      "back": "גלוקגון מפעיל קינאז‑2 של PFK‑2/FBPase‑2. זה מוריד את פעילות PFK‑2 ומעלה Fructose‑2,6‑bisphosphate."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "G6PD",
+      "back": "מבצע את הצעד הראשון במסלול PPP. מחמצן glucose‑6‑phosphate ל‑6‑phosphoglucono‑δ‑lactone."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "Transketolase",
+      "back": "מעביר קבוצה של שני פחמימות. מייצר סדיר‑5‑פוספט ו‑G3P."
+    },
+    {
+      "deckId": "biochemistry-ch-15",
+      "front": "ענפי גליקוגן",
+      "back": "נוצרים כל 8‑12 יחידות גלוקוז. נוצרים על ידי branching enzyme בקשר α(1→6)."
+    },
+    {
+      "deckId": "biochemistry-ch-15",
+      "front": "AMP על Phosphorylase",
+      "back": "AMP הוא אלוסטריק אקטיבטור שממיר את Phosphorylase b לצורה הפעילה a. השינוי הקונפורמציוני מאפשר פירוק גליקוגן."
+    },
+    {
+      "deckId": "biochemistry-ch-15",
+      "front": "אינסולין על אנזימים",
+      "back": "אינסולין גורם לדה-פוספורילציה של Glycogen Synthase ומפעיל אותו. הוא גם מדכא את Glycogen Phosphorylase דרך דה-פוספורילציה."
+    },
+    {
+      "deckId": "biochemistry-ch-16",
+      "front": "קו-קשרים של PDC",
+      "back": "ה-PDC דורש TPP, lipoic acid, FAD, NAD⁺, CoA-SH ו-Mg²⁺. חומרים אלו חיוניים לתפקוד הקומפלקס."
+    },
+    {
+      "deckId": "biochemistry-ch-16",
+      "front": "PDH-Kinase פעולה",
+      "back": "NADH מפעיל את PDH-Kinase שמבצע פוספורילציה של E1. פעולה זו מעכבת את פעילות ה-PDC."
+    },
+    {
+      "deckId": "biochemistry-ch-16",
+      "front": "Aconitase תפקיד",
+      "back": "Aconitase מבצע איזומריזציה של Citrate ל-Isocitrate. התהליך עובר דרך תווך של cis-aconitate."
+    },
+    {
+      "deckId": "biochemistry-ch-16",
+      "front": "α-KG Dehydrogenase",
+      "back": "האנזים מבצע חמצון-דחיסה של α-ketoglutarate. התהליך משחרר CO₂ ומייצר NADH."
+    },
+    {
+      "deckId": "biochemistry-ch-16",
+      "front": "יצירת Citrate",
+      "back": "Citrate synthase מחבר את Acetyl-CoA עם Oxaloacetate. התוצר הוא Citrate, שלב ראשון במחזור."
+    },
+    {
+      "deckId": "biochemistry-ch-16",
+      "front": "IDH בקרה",
+      "back": "Isocitrate Dehydrogenase הוא האנזים המגביל את קצב המחזור. ADP ממריץ אותו, בעוד ATP ו-NADH מעכבים."
+    },
+    {
+      "deckId": "biochemistry-ch-16",
+      "front": "NADH על IDH",
+      "back": "NADH משמש כמשוב שלילי חזק ל-IDH. הוא נקשר לאתר אלוסטרי ומאט את קצב המחזור."
+    },
+    {
+      "deckId": "biochemistry-ch-16",
+      "front": "Ca²⁺ על אנזימים",
+      "back": "Ca²⁺ מגביר את פעילות Isocitrate Dehydrogenase ו-α-KG Dehydrogenase. הוא משמש כקואפקטור להאצת ההמרה."
+    },
+    {
+      "deckId": "biochemistry-ch-17",
+      "front": "Pancreatic Lipase",
+      "back": "האנזים פועל יחד עם Colipase במעי הדק. הוא חותך קשרים אסטריים של טריגליצרידים."
+    },
+    {
+      "deckId": "biochemistry-ch-17",
+      "front": "HSL בצום",
+      "back": "קטכולאמינים מפעילים את HSL דרך פוספורילציה. התהליך מוביל לשחרור NEFA ל-plasma."
+    },
+    {
+      "deckId": "biochemistry-ch-17",
+      "front": "Acyl-CoA Synthetase",
+      "back": "האנזים מקשר חומצת שומן ל-CoA תוך שימוש ב-ATP. ה-ATP מומר ל-AMP ו-PPi, מה שמקנה אנרגיה גבוהה."
+    },
+    {
+      "deckId": "biochemistry-ch-17",
+      "front": "חסר CPT I",
+      "back": "חסר CPT I מונע מעבר חומצות שומן למטריקס. התוצאה היא היפוגליקמיה היפוקטית בשל חוסר ב-β-oxidation."
+    },
+    {
+      "deckId": "biochemistry-ch-17",
+      "front": "HMG-CoA Synthase",
+      "back": "האנזים הוא הראשון והקובע ביצירת HMG-CoA. הוא שלב מקדים ליצירת Acetoacetate."
+    },
+    {
+      "deckId": "biochemistry-ch-17",
+      "front": "יחס גופי קטון",
+      "back": "β-Hydroxybutyrate Dehydrogenase מקשר את ההמרה ל-β-Hydroxybutyrate. היחס Acetoacetate/β-Hydroxybutyrate תלוי ב-NAD⁺/NADH."
+    },
+    {
+      "deckId": "biochemistry-ch-18",
+      "front": "ALT קואפקטור",
+      "back": "ALT מבצע טרנסאמינציית אלנין. הקואפקטור החיוני שלו הוא PLP."
+    },
+    {
+      "deckId": "biochemistry-ch-18",
+      "front": "GDH פעולה",
+      "back": "GDH מבצע דהאמינציה חמצונית של גלוטמט במיטוכונדריה. הוא משתמש ב-NAD⁺ או NADP⁺ ומייצר NH₄⁺."
+    },
+    {
+      "deckId": "biochemistry-ch-18",
+      "front": "CPS I הפעלה",
+      "back": "CPS I מייצר Carbamoyl Phosphate במיטוכונדריה. הוא מופעל אלוסטרי על ידי N-acetylglutamate."
+    },
+    {
+      "deckId": "biochemistry-ch-18",
+      "front": "חסר OTC",
+      "back": "חסר OTC מונע שימוש ב-Carbamoyl Phosphate. החומר מצטבר במיטוכונדריה."
+    },
+    {
+      "deckId": "biochemistry-ch-18",
+      "front": "Valine פירוק",
+      "back": "Valine היא חומצת אמינו גליקוגנית. היא מפולקת ל-Succinyl-CoA ותורמת למחזור TCA."
+    },
+    {
+      "deckId": "biochemistry-ch-18",
+      "front": "מקור אמוניה",
+      "back": "החנקן הראשון ב-Carbamoyl Phosphate מגיע מאמוניה חופשית. האמוניה היא תוצר של דהאמינציה של Glutamate."
+    },
+    {
+      "deckId": "biochemistry-ch-19",
+      "front": "FMN ב-Complex I",
+      "back": "FMN הוא הקו-פקטור הראשון ב-Complex I. הוא מקבל אלקטרונים מ-NADH לפני העברתם ל-Fe-S."
+    },
+    {
+      "deckId": "biochemistry-ch-19",
+      "front": "Q-Cycle",
+      "back": "כל QH₂ מספק שני אלקטרונים ב-Q-Cycle. אחד מועבר ל-Cytochrome c והשני נצבר על Q."
+    },
+    {
+      "deckId": "biochemistry-ch-19",
+      "front": "Binding-Change",
+      "back": "סיבוב הציר γ גורם לשינוי קונפורמציה ב-β-subunits. השינוי מאפשר קיבוע ADP ו-Pi ל-ATP."
+    },
+    {
+      "deckId": "biochemistry-ch-19",
+      "front": "DNA מיטוכונדריאלי",
+      "back": "ה‑DNA המיטוכונדריאלי הוא מעגלי. הוא דומה לפלסמידים חיידקיים ומחזק את תיאורית האנדוסימביוזה."
+    },
+    {
+      "deckId": "biochemistry-ch-19",
+      "front": "סף מוטנטי",
+      "back": "הפנומנולוגיה של מחלות כמו MELAS מתגלה רק כאשר אחוז המיטוכונדריות המוטנטיות חורג מ‑60‑80%. העומס המוטנטי חייב לעלות על הסף הזה כדי לגרום לתסמינים."
+    },
+    {
+      "deckId": "biochemistry-ch-21",
+      "front": "Acetyl-CoA carboxylase",
+      "back": "ACC ממיר Acetyl-CoA ל‑Malonyl-CoA. התהליך דורש Biotin ו‑ATP והוא הצעד המגביל קצב."
+    },
+    {
+      "deckId": "biochemistry-ch-21",
+      "front": "Malonyl-CoA",
+      "back": "Malonyl-CoA נושא שני פחמימות. הדצארבוקסילציה שלו מספקת את האנרגיה הדרושה להרחבת שרשרת חומצת השומן."
+    },
+    {
+      "deckId": "biochemistry-ch-21",
+      "front": "DGAT",
+      "back": "DGAT מבצע את השלב האחרון בסינתזת TAG. הוא מעביר קבוצת acyl-CoA ל‑DAG ליצירת טריאצילגליצרול."
+    },
+    {
+      "deckId": "biochemistry-ch-21",
+      "front": "Monoacylglycerol pathway",
+      "back": "במעי הדק, חומצות שומן משוחררות כ‑monoacylglycerol. השחרור מתבצע על ידי pancreatic lipase."
+    },
+    {
+      "deckId": "biochemistry-ch-21",
+      "front": "CDP-diacylglycerol synthase",
+      "back": "CDS הוא האנזים שמקשר CTP ל‑DAG. התוצר הוא CDP-diacylglycerol."
+    },
+    {
+      "deckId": "biochemistry-ch-21",
+      "front": "CDP-diacylglycerol",
+      "back": "CDP-DAG משמש כ‑substrate ל‑phosphatidylinositol synthase. האנזים מקשר קבוצת אינוזיטול ל‑DAG."
+    },
+    {
+      "deckId": "biochemistry-ch-21",
+      "front": "HMG-CoA Reductase",
+      "back": "HMG-CoA Reductase ממיר HMG-CoA ל‑Mevalonate. זהו השלב המגביל קצב בסינתזת קולסטרול."
+    },
+    {
+      "deckId": "biochemistry-ch-21",
+      "front": "PCSK9",
+      "back": "PCSK9 נקשר ל‑LDLR ומוביל לפירוקו בליזוזום. תהליך זה מפחית ספיגת LDL ומעלה את רמתו בדם."
+    },
+    {
+      "deckId": "biochemistry-ch-22",
+      "front": "PRPP",
+      "back": "PRPP מקדם את הפוספורילציה של ribose-5-phosphate. הוא משמש בסינתזת IMP (פירימדינים) ו‑UMP (פירימדינים)."
+    },
+    {
+      "deckId": "biochemistry-ch-22",
+      "front": "תראונין",
+      "back": "תראונין אינו נוצר רק ב‑transamination. הוא נוצר דרך intermediates מפוספורלים כמו O-phosphohomoserine."
+    },
+    {
+      "deckId": "biochemistry-ch-22",
+      "front": "Phosphoglycerate dehydrogenase",
+      "back": "PGDH הוא האנזים הראשון בנתיב הסרין. הוא מחמצן 3-phosphoglycerate ל‑3-phosphohydroxypyruvate."
+    },
+    {
+      "deckId": "biochemistry-ch-22",
+      "front": "DAHP synthase",
+      "back": "DAHP synthase הוא האנזים הראשון בנתיב השייקימט. הוא משלב PEP עם erythrose-4-phosphate ל‑DAHP."
+    },
+    {
+      "deckId": "biochemistry-ch-23",
+      "front": "אינסולין",
+      "back": "אינסולין מקשר ל‑RTK ומפעיל את מסלול PI3K/Akt. זה מוביל ל‑translocation של GLUT4 לתא."
+    },
+    {
+      "deckId": "biochemistry-ch-23",
+      "front": "גלוקגון",
+      "back": "גלוקגון מעלה רמות cAMP בתאי הכבד. זה מפעיל PKA ומוביל להפעלת glycogen phosphorylase."
+    },
+    {
+      "deckId": "biochemistry-ch-23",
+      "front": "Phosphocreatine kinase",
+      "back": "CK מאפשר חידוש מהיר של ATP בשריר. הוא מעביר פוספט מ‑phosphocreatine ל‑ADP."
+    },
+    {
+      "deckId": "biochemistry-ch-23",
+      "front": "PEPCK",
+      "back": "PEPCK הוא הצעד המהיר ב‑gluconeogenesis בכבד. הוא מופעל על ידי גלוקגון דרך מסלול cAMP-PKA."
+    },
+    {
+      "deckId": "biochemistry-ch-23",
+      "front": "PFK-2",
+      "back": "אינסולין מפעיל PFK-2 דרך protein phosphatase. זה מעלה את רמת F2,6-BP ומגביר גליקוליזה."
+    },
+    {
+      "deckId": "biochemistry-ch-23",
+      "front": "HSL",
+      "back": "HSL מופעל על ידי פוספורילציה של PKA. זה מוביל לשחרור חומצות שומן."
+    },
+    {
+      "deckId": "molecular-biology-ch-01",
+      "front": "חומצות גרעין",
+      "back": "כל היצורים החיים מכילים DNA או RNA. הן משמשות לאחסון והעברת מידע גנטי."
+    },
+    {
+      "deckId": "molecular-biology-ch-01",
+      "front": "ATP",
+      "back": "ATP הוא המטבע האנרגטי המרכזי. הוא משמש בתהליכי מטבוליזם כמו נשימה תאית וסינתזת חלבונים."
+    },
+    {
+      "deckId": "molecular-biology-ch-01",
+      "front": "Horizontal Gene Transfer",
+      "back": "HGT הוא רכישת גנים ממקור חיצוני. תכונות כמו %GC חריג מצביעות על תהליך זה."
+    },
+    {
+      "deckId": "molecular-biology-ch-01",
+      "front": "Orthologs",
+      "back": "Orthologs נוצרים באירוע ספציפיקציה. הם המועמדים הטובים ביותר להערכת יחסי קרבה בין מינים."
+    },
+    {
+      "deckId": "molecular-biology-ch-01",
+      "front": "אנדוסימביוזה",
+      "back": "מיטוכונדריה מכילות DNA מעגלי וממברנה כפולה. תכונות אלו משקפות מקור חיידקי ומחזקות את התיאוריה."
+    },
+    {
+      "deckId": "molecular-biology-ch-04",
+      "front": "נוקלאוזום",
+      "back": "מורכב מ‑octamer של היסטונים סביב 147 bp של DNA. חלבון H1 נקשר ל‑linker DNA."
+    },
+    {
+      "deckId": "molecular-biology-ch-04",
+      "front": "מודל ה‑zigzag",
+      "back": "ה‑linker DNA חוצה את הציר בזווית חדה. זה מאפשר קיפול של 30 nm."
+    },
+    {
+      "deckId": "molecular-biology-ch-04",
+      "front": "H3K27ac",
+      "back": "סימן לכרומטין פתוח (euchromatin). מגביר קישור של חלבוני bromodomain ומעודד הבעה גנים."
+    },
+    {
+      "deckId": "molecular-biology-ch-04",
+      "front": "SWI/SNF",
+      "back": "ATP‑dependent chromatin remodeler שמחליק נוקלאוזומים. מאפשר לגורמי NER לגשת ל‑DNA פגוע."
+    },
+    {
+      "deckId": "molecular-biology-ch-04",
+      "front": "כרומטיד",
+      "back": "במיטוזה הכרומוזום מורכב משני כרומטידים אחידים. כל אחד הוא העותק המלא של ה‑DNA."
+    },
+    {
+      "deckId": "molecular-biology-ch-04",
+      "front": "Condensin I",
+      "back": "מקדם קיפול של לופים ל‑30 nm fiber. מסייע לדחיסת הכרומוזום."
+    },
+    {
+      "deckId": "molecular-biology-ch-04",
+      "front": "Neofunctionalization",
+      "back": "מתרחש לאחר שכפול גנים. הצטברות של non‑synonymous substitutions מעניקה פעילות חדשה."
+    },
+    {
+      "deckId": "molecular-biology-ch-04",
+      "front": "Synteny",
+      "back": "שמירת סדר גנים בקרב מינים קרובים. אינה מהווה עדות ל‑HGT."
+    },
+    {
+      "deckId": "molecular-biology-ch-05",
+      "front": "DNA pol ε",
+      "back": "האנזים העיקרי בעל פעילות 3'→5' exonuclease. מסירה נוקלאוטידים שגויים בזמן השכפול."
+    },
+    {
+      "deckId": "molecular-biology-ch-05",
+      "front": "מתילציה GATC",
+      "back": "מתרחשת על החוט הישן ב‑E. coli. משמשת לזיהוי החוט הישן בתיקון."
+    },
+    {
+      "deckId": "molecular-biology-ch-05",
+      "front": "DNA pol δ",
+      "back": "האנזים המרכזי לסינתזת חוט האחורי. פועל באורגניזמים איקריוטיים."
+    },
+    {
+      "deckId": "molecular-biology-ch-05",
+      "front": "DnaB Helicase",
+      "back": "מתנועע 5'→3' על תבנית החוט האחורי. פותח את הדו‑גדיל."
+    },
+    {
+      "deckId": "molecular-biology-ch-05",
+      "front": "Pre‑RC",
+      "back": "נוצר בטעינת MCM2‑7 על ידי ORC. מוקדם לפני פוספורילציה על ידי CDK/DDK."
+    },
+    {
+      "deckId": "molecular-biology-ch-05",
+      "front": "Cdc45",
+      "back": "מרכיב מרכזי של מורכבות ה‑CMG. לייצב את ה‑helicase ומספק קישוריות ל‑DNA."
+    },
+    {
+      "deckId": "molecular-biology-ch-05",
+      "front": "DNA glycosylase",
+      "back": "האנזים הראשון ב‑BER. מזהה ומסיר בסיס פגום, משאיר AP site."
+    },
+    {
+      "deckId": "molecular-biology-ch-05",
+      "front": "CSA",
+      "back": "משתתף ב‑TC‑NER. מתבצע כאשר RNA polymerase II נתקע על פגיעה."
+    },
+    {
+      "deckId": "molecular-biology-ch-05",
+      "front": "Exo1",
+      "back": "מבצע ריסקשן 5'→3' של קצוות DSB. מייצר קצוות 3' ssDNA להיווצרות Rad51 filament."
+    },
+    {
+      "deckId": "molecular-biology-ch-05",
+      "front": "DSBR",
+      "back": "מתרחשת יצירת צמתים דו‑צדדיים (Holliday junctions). החוט המוזרק נשאר קשור ל‑D‑loop."
+    },
+    {
+      "deckId": "molecular-biology-ch-05",
+      "front": "Transposase",
+      "back": "מכיל מוטיב DDE שמבצע חיתוך דו‑גדילי. יוצר duplication של אתר ה‑target באורך 5 bp."
+    },
+    {
+      "deckId": "molecular-biology-ch-05",
+      "front": "Serine recombinases",
+      "back": "חותכים DNA במרכז רצף של 2 bp. מבצעים סיבוב של 180° של תתי‑יחידות לפני ריבוי קשרים."
+    },
+    {
+      "deckId": "molecular-biology-ch-06",
+      "front": "Pribnow box",
+      "back": "הרצף TATAAT בחיידקים. מאפשר פתיחת דו‑גדיל ה‑DNA בשעתוק."
+    },
+    {
+      "deckId": "molecular-biology-ch-06",
+      "front": "CTD Phosphorylation",
+      "back": "פוספורילציה של Ser2 ב‑CTD. חלק מתהליך השעתוק על ידי RNA pol II."
+    },
+    {
+      "deckId": "molecular-biology-ch-06",
+      "front": "Kozak sequence",
+      "back": "הרצף (A/G)CCACCaugG. מקדם זיהוי יעיל של קודון ההתחלה על ידי הריבוזום."
+    },
+    {
+      "deckId": "molecular-biology-ch-06",
+      "front": "eIF2α Phosphorylation",
+      "back": "מונעת החלפת GDP ל‑GTP. מדכאת את תחילת התרגום."
+    },
+    {
+      "deckId": "molecular-biology-ch-06",
+      "front": "ריבוזימים",
+      "back": "מקצרים יצירת קשר פפטידי. מראים ש‑RNA יכול לשאת תפקיד קאטלי מרכזי."
+    },
+    {
+      "deckId": "molecular-biology-ch-06",
+      "front": "Formose reaction",
+      "back": "מייצרת ריבוז בתנאים פריביו‑ביולוגיים. משולבת עם cyanamide ו‑phosphorylation ליצירת ריבונוקלאוטידים."
+    },
+    {
+      "deckId": "molecular-biology-ch-07",
+      "front": "TATA box",
+      "back": "נמצא 25‑30 bp לפני ה‑TSS. מאפשר חיבור של TBP והקמת ה‑pre‑initiation complex."
+    },
+    {
+      "deckId": "molecular-biology-ch-07",
+      "front": "מפעילים (Activators)",
+      "back": "מקשרים לאנסרים ומגבירים את קיבוצו של Mediator ל‑RNA polymerase II. זה מקל על פתיחת הכרומטין על ידי HATs ו‑SWI/SNF."
+    },
+    {
+      "deckId": "molecular-biology-ch-07",
+      "front": "קולט גלוקוקורטיקואיד",
+      "back": "לאחר קישור ליגנד, נודד לגרעין ונקשר ל‑GRE. מזמין HATs (כגון p300) שמאדירים את השעתוק."
+    },
+    {
+      "deckId": "molecular-biology-ch-07",
+      "front": "Pioneer factors",
+      "back": "מסוגלים לקשר DNA גם כאשר היא עטופה בנוקלאוזום. משמשים כפתחים ראשוניים שמזמינים קומפלקסי remodelers."
+    },
+    {
+      "deckId": "molecular-biology-ch-07",
+      "front": "DNMT1",
+      "back": "הוא ה‑maintenance methyltransferase שמזהה DNA hemimethylated לאחר שכפול. מוסיף קבוצת מתיל ל‑cytosine בצד החדש."
+    },
+    {
+      "deckId": "molecular-biology-ch-07",
+      "front": "MET1",
+      "back": "הוא ה‑DNA methyltransferase האחראי על תחזוקת מתילציית CG בצמחים. פועל בדומה ל‑DNMT1 בבעלי חיים."
+    },
+    {
+      "deckId": "molecular-biology-ch-07",
+      "front": "H3K27me3",
+      "back": "מוסיף את המתיולציה של H3K27 על ידי PRC2. מסמן כרומטין מדוכא."
+    },
+    {
+      "deckId": "molecular-biology-ch-07",
+      "front": "חלבוני SR",
+      "back": "מקדמים את ההגדרה של אקזונים על ידי קישור ל‑5' ו‑3' splice sites. מאפשרים הוספת האקזון למולקולת ה‑mRNA."
+    },
+    {
+      "deckId": "molecular-biology-ch-07",
+      "front": "miRNA ו‑RISC",
+      "back": "miRNA מנחה את RISC לקשור את ה‑3'UTR של mRNA דרך ה‑seed region. זה מוביל ל‑deadenylation ו‑decapping של המולקולה."
+    },
+    {
+      "deckId": "molecular-biology-ch-07",
+      "front": "Seed region",
+      "back": "הוא נוקלאוטידים 2‑8 מהקצה 5' של miRNA. התאמה למקטע משלים ב‑3'UTR קובעת את הספציפיות."
+    },
+    {
+      "deckId": "molecular-biology-ch-07",
+      "front": "עיבוד miRNA",
+      "back": "pri‑miRNA מעובד על ידי Drosha במעבה גרעין ל‑pre‑miRNA. לאחר מכן Dicer מעבד אותו בציטופלזמה."
+    },
+    {
+      "deckId": "molecular-biology-ch-08",
+      "front": "Papain",
+      "back": "אנזים קזאיני בעל פעילות עדינה המפרק חלבוני ECM במוח. משמש בבידוד תאי מוח מבלי לפגוע בממברנות הנוירונים."
+    },
+    {
+      "deckId": "molecular-biology-ch-08",
+      "front": "Anion-exchange (SAX)",
+      "back": "ב‑pH 8, חלבונים טעונים שלילית נקשרים לרזין. משמש לטיהור חלבונים על פי מטענם."
+    },
+    {
+      "deckId": "molecular-biology-ch-08",
+      "front": "חלבון 150 kDa",
+      "back": "גדול מה‑75 kDa ולכן יאלץ לעבור דרך חורים גדולים יותר. י‑elute לפני חלבונים קטנים יותר, במרכז הטווח."
+    },
+    {
+      "deckId": "molecular-biology-ch-08",
+      "front": "SDS-PAGE ללא חיזוק",
+      "back": "הקשרים הדיסולפידיים נשמרים. דימר של 2x40 kDa רץ כ‑80 kDa."
+    },
+    {
+      "deckId": "molecular-biology-ch-08",
+      "front": "פוספורילציה",
+      "back": "הוספת קבוצת פוספט ל‑Ser/Thr/Tyr מגדילה את המסה המדויקת. ההגדלה היא כ‑80 Da."
+    },
+    {
+      "deckId": "molecular-biology-ch-08",
+      "front": "חוק וולס (Tm)",
+      "back": "נוסחה: 2°C לכל A או T ו‑4°C לכל G או C. מחשב את טמפרטורת ההיתוך של DNA."
+    },
+    {
+      "deckId": "molecular-biology-ch-08",
+      "front": "crRNA spacer",
+      "back": "רצף של 20 נוקלאוטידים המשלים למיקום הרצוי ב‑DNA. קובע את הספציפיות של CRISPR."
+    },
+    {
+      "deckId": "molecular-biology-ch-08",
+      "front": "CRISPR-Cas9",
+      "back": "יוצר שבירת DNA דו‑גדילית שמובילה ל‑frameshift. מבטל את הפונקציה של הגן."
+    },
+    {
+      "deckId": "molecular-biology-ch-08",
+      "front": "CRISPRi",
+      "back": "משתמש ב‑dCas9‑KRAB לדיכוי תעתוק. לא חותך את ה‑DNA."
+    },
+    {
+      "deckId": "molecular-biology-ch-08",
+      "front": "Ct value",
+      "back": "מספר המחזורים הדרושים כדי שהפלורוסנס יעבור את סף זיהוי. Ct נמוך יותר מצביע על כמות גבוהה יותר של תעתיק ראשוני."
+    },
+    {
+      "deckId": "molecular-biology-ch-08",
+      "front": "קואופרטיביות חיובית",
+      "back": "מקדם Hill n>1 מצביע על קואופרטיביות חיובית. קשירה של ליגנד ראשון מגבירה את הקיבוע של ליגנד נוסף."
+    },
+    {
+      "deckId": "molecular-biology-ch-09",
+      "front": "רזולוציה (Abbe)",
+      "back": "הנוסחה d = λ/(2·NA) נותנת רזולוציה של כ‑196 nm. זהו הגבול התחתון לרזולוציה במיקרוסקופ אור קונבנציונלי."
+    },
+    {
+      "deckId": "molecular-biology-ch-09",
+      "front": "SIM",
+      "back": "משתמשת בתבניות אור מודולריות ומחלקת את המידע בתדר גבוה. מאפשרת רזולוציה של כ‑100 nm, מתחת למגבלה הקונבנציונלית."
+    },
+    {
+      "deckId": "molecular-biology-ch-09",
+      "front": "TEM",
+      "back": "האלקטרונים עוברים דרך הדגימה ומתפזרים בהתאם למבנה הפנימי. מאפשר לתעד פרטים של כמה אנגסטרומים."
+    },
+    {
+      "deckId": "cell-biology-ch-12",
+      "front": "SRP",
+      "back": "מזהה את ה-signal peptide בזמן תרגום ומשבית את ההארכה. מכוון את הריבוזום לממברנת ה-ER."
+    },
+    {
+      "deckId": "cell-biology-ch-12",
+      "front": "KDEL",
+      "back": "סיגנל C-terminal שמזוהה על ידי קולטן בגולג'י. משמר את החלבון ב-ER."
+    },
+    {
+      "deckId": "cell-biology-ch-12",
+      "front": "Rough ER",
+      "back": "מכיל אתרי קישור ל-signal peptide. תהליך הקישור מתרחש בריבוזומים שלו."
+    },
+    {
+      "deckId": "cell-biology-ch-12",
+      "front": "Ribosome pause",
+      "back": "SRP משאיר את הריבוזום במצב רדוד. מתרחש עד שהריבוזום מצורף ל-Sec61."
+    },
+    {
+      "deckId": "cell-biology-ch-12",
+      "front": "Acyl-CoA oxidase",
+      "back": "האנזים הראשון ב-β-אוקסידציה של VLCFA. ממוקם בפרוקסיזומים."
+    },
+    {
+      "deckId": "cell-biology-ch-12",
+      "front": "PTS1",
+      "back": "רצף של שלושה חומצות אמינו (SKL) ב-C-terminal. מזוהה על ידי חלבוני PEX ליבוא לפרוקסיזום."
+    },
+    {
+      "deckId": "cell-biology-ch-12",
+      "front": "Presequence",
+      "back": "קטע N-terminal קצר עשיר ב-Arg, Ser ו-Thr. חסר כמעט לחלוטין חומצות אמינו חומציות."
+    },
+    {
+      "deckId": "cell-biology-ch-12",
+      "front": "Tom40",
+      "back": "חלבון β-barrel בממברנה החיצונית של המיטוכונדריה. מרכיב את תעלת הממברנה."
+    },
+    {
+      "deckId": "cell-biology-ch-12",
+      "front": "NPC",
+      "back": "מאפשר חצייה פאסיבית של מולקולות עד 40-60 kDa. ללא צורך באותות NLS או NES."
+    },
+    {
+      "deckId": "cell-biology-ch-12",
+      "front": "RanGTP",
+      "back": "גרדיאנט גבוה בגרעין מול RanGDP בציטוזול. CRM1 יוצר קומפלקס עם חלבון בעל NES ו-RanGTP."
+    },
+    {
+      "deckId": "cell-biology-ch-13",
+      "front": "Na+/K+-ATPase",
+      "back": "משאבה ראשונית שמשתמשת באנרגיית ATP ישירות. מעבירה 3 Na+ החוצה ו-2 K+ פנימה."
+    },
+    {
+      "deckId": "cell-biology-ch-13",
+      "front": "PI(4,5)P2",
+      "back": "נמצא בממברנת הפלזמה. מזוהה על ידי AP-2 להקמת קליפת clathrin."
+    },
+    {
+      "deckId": "cell-biology-ch-13",
+      "front": "Sar1-GTP",
+      "back": "Small GTPase שמתחיל את היווצרות vesicle-ים של COPII. מתרחש על גבי רשת ER."
+    },
+    {
+      "deckId": "cell-biology-ch-13",
+      "front": "Cisternal maturation",
+      "back": "הקיסטרולה מתחדשת על ידי קבלת חלבונים חדשים מ-ER. חלבונים ישנים מועברים חזרה ב-COPI vesicles."
+    },
+    {
+      "deckId": "cell-biology-ch-13",
+      "front": "AP-1",
+      "back": "מתמקד במעבר חלבונים עם מוטיב YXXΦ. ממעבר מרשת TGN אל אנדוזומים מוקדיים."
+    },
+    {
+      "deckId": "cell-biology-ch-13",
+      "front": "Rab8",
+      "back": "מקושר לתנועה של וסתיקולות TGN-ל-ממברנת פלזמה. מעורב ברגולציית SNARE ו-exocyst."
+    },
+    {
+      "deckId": "cell-biology-ch-13",
+      "front": "Endocytosis",
+      "back": "תהליך אקטיבי לקליטת חומרים חיצוניים. מתבצע בעזרת קיפול הממברנה ליצירת וסתיקולה."
+    },
+    {
+      "deckId": "cell-biology-ch-13",
+      "front": "Clathrin",
+      "back": "יוצר רשת סביב הקופסה באנדוציטוזיס. AP-2 משמש כמקשר לקולטנים ול-clathrin."
+    },
+    {
+      "deckId": "cell-biology-ch-13",
+      "front": "Lysosomes",
+      "back": "מכילים הידרולאזות חומציות שמפרקות מקרומולקולות. מפרקות חלבונים, ליפידים ונוקלאידים למרכיבים קטנים."
+    },
+    {
+      "deckId": "cell-biology-ch-13",
+      "front": "Receptor-mediated",
+      "back": "חומר נקשר לקולטור ונלקח בפוקטולית. מתמזג עם ליזוזום לפירוק המקרומולקולה."
+    },
+    {
+      "deckId": "cell-biology-ch-14",
+      "front": "ATP synthase",
+      "back": "מנוצל על ידי זרם הפרוטונים. נוצר במרחב הבין-ממברנה."
+    },
+    {
+      "deckId": "cell-biology-ch-14",
+      "front": "NuoF",
+      "back": "תת-יחידה המקבלת אלקטרונים מ-NADH. מכילה את קבוצת ה-FAD."
+    },
+    {
+      "deckId": "cell-biology-ch-14",
+      "front": "Complex I",
+      "back": "מקבל אלקטרונים מ-NADH ומעבירם ל-ubiquinone. מעביר 4 פרוטונים מה-matrix אל-IMS."
+    },
+    {
+      "deckId": "cell-biology-ch-14",
+      "front": "Qo site",
+      "back": "מתרחשת בו אוקסידציית ubiquinol. משחרר שני פרוטונים אל-IMS ויוצר Q-semiquinone."
+    },
+    {
+      "deckId": "cell-biology-ch-14",
+      "front": "P/O ratio",
+      "back": "יחס של 2.5 ATP לכל NADH. מייצג את היעילות של ייצור האנרגיה."
+    },
+    {
+      "deckId": "cell-biology-ch-14",
+      "front": "Oligomycin",
+      "back": "חוסם את ערוץ הפרוטון של Complex V. מונע את סינתזת ATP ומקטין צריכה."
+    },
+    {
+      "deckId": "cell-biology-ch-14",
+      "front": "P680",
+      "back": "Chlorophyll במרכז ה-Reaction Center של Photosystem II. מעביר אלקטרון ל-pheophytin ומוביל לפוטוליזה של מים."
+    },
+    {
+      "deckId": "cell-biology-ch-15",
+      "front": "אות אוטוקריני",
+      "back": "האות משפיע על אותו התא שמייצר אותו. התא המשחרר את הליגנד הוא גם היעד של האות."
+    },
+    {
+      "deckId": "cell-biology-ch-15",
+      "front": "דימריזציה של RTK",
+      "back": "קישור הליגנד גורם ליצירת דימר של הקולטן. זה מאפשר פעילות קינזית של קבוצות ה-Tyrosine."
+    },
+    {
+      "deckId": "cell-biology-ch-15",
+      "front": "הפעלת GPCR",
+      "back": "קישור הליגנד גורם לחילופי GDP ל-GTP ב-Gα. תת-יחידת Gαs מפעילה adenylyl cyclase ומעלה רמות cAMP."
+    },
+    {
+      "deckId": "cell-biology-ch-15",
+      "front": "Autophosphorylation",
+      "back": "דימריזציה מקרבת תחומי Kinase ומאפשרת פוספורילציה עצמית. זה מתרחש בקישור ליגנד ל-RTK."
+    },
+    {
+      "deckId": "cell-biology-ch-15",
+      "front": "חלבון Grb2",
+      "back": "Grb2 מכיל תחום SH2 המקשר ל-RTK ותחומי SH3 המקשרים ל-SOS. זה מוביל להחלפת GDP ל-GTP ב-Ras."
+    },
+    {
+      "deckId": "cell-biology-ch-15",
+      "front": "ייצוא FOXO",
+      "back": "פוספורילציה של FOXO על ידי Akt מאפשרת קישור של 14-3-3. זה גורם לייצוא של FOXO מהגרעין."
+    },
+    {
+      "deckId": "cell-biology-ch-15",
+      "front": "אפקטורי cAMP",
+      "back": "PKA מפוספוריל את CREB ישירות. EPAC משמש GEF ל-Rap1 ומפעיל ERK ללא פוספורילציה של CREB."
+    },
+    {
+      "deckId": "cell-biology-ch-15",
+      "front": "העברת אוקסין",
+      "back": "ההעברה הפולרית מתבצעת דרך תעלות PIN בקצה התא. זה מאפשר זרימה חד-כיוונית של ההורמון."
+    },
+    {
+      "deckId": "cell-biology-ch-15",
+      "front": "כניסת Ca2+ בצמח",
+      "back": "הקולטן PRR מפעיל תעלות CNGC בממברנה. זה מאפשר כניסת Ca2+ מהחלל החיצוני לציטופלזמה."
+    },
+    {
+      "deckId": "cell-biology-ch-16",
+      "front": "GTP-cap",
+      "back": "ה-GTP-cap יוצר מבנה יציב בקצה ה-plus. הוא מונע קיצור פתאומי (catastrophe) של המיקרוטובול."
+    },
+    {
+      "deckId": "cell-biology-ch-16",
+      "front": "Treadmilling",
+      "back": "הקצה ה-plus מקבל ATP-Actin בקצב גבוה. הקצה ה-minus מאבד ADP-Actin בקצב נמוך יותר."
+    },
+    {
+      "deckId": "cell-biology-ch-16",
+      "front": "קישור G-actin",
+      "back": "G-actin הקשור ל-ATP מצטרף בעיקר לקצה ה-barbed. הקצב של הצטרפות לקצה ה-plus גבוה יותר."
+    },
+    {
+      "deckId": "cell-biology-ch-16",
+      "front": "קישור Troponin T",
+      "back": "Troponin T קושר ישירות ל-tropomyosin. הוא לא קושר ישירות ל-actin."
+    },
+    {
+      "deckId": "cell-biology-ch-16",
+      "front": "Power stroke",
+      "back": "מתרחש עם שחרור Pi בזמן שה-Myosin קשור ל-Actin. זה מאפשר שינוי קונפורמציה שמושך את ה-actin."
+    },
+    {
+      "deckId": "cell-biology-ch-16",
+      "front": "כיוון Myosin V",
+      "back": "Myosin V מתקדם מהקצה ה-barbed אל הקצה ה-pointed. זהו מנוע תנועה תהליכי על actin filament."
+    },
+    {
+      "deckId": "cell-biology-ch-16",
+      "front": "Catastrophe",
+      "back": "נגרם מהידרוליזה של GTP ל-GDP ב-β-Tubulin. זה מפחית affinity ומוביל לדפרמנטציה של הצינור."
+    },
+    {
+      "deckId": "cell-biology-ch-16",
+      "front": "MTOC בשמרים",
+      "back": "ה-MTOC בשמרים הוא ה-spindle pole body (SPB). הוא מקשר מיקרוטובולות בדומה ל-centrosome בבעלי חוליות."
+    },
+    {
+      "deckId": "cell-biology-ch-16",
+      "front": "בניית סיבי ביניים",
+      "back": "המסלול הוא דימר, טטרמר, proto-filament ולבסוף IF בשלם. מתרחשת חציית proto-filaments ליצירת מבנה בוגר."
+    },
+    {
+      "deckId": "cell-biology-ch-16",
+      "front": "Actin ו-IF",
+      "back": "Actin הוא חלבון של מיקרו-אקטין. הוא לא חלק מסיבי הביניים (Intermediate Filaments)."
+    },
+    {
+      "deckId": "cell-biology-ch-16",
+      "front": "Par complex",
+      "back": "מתמקם ב-tight junctions של תאי אפיתל. aPKC מפוספוריל חלבוני Crumbs להפרדה בין ממברנות."
+    },
+    {
+      "deckId": "cell-biology-ch-16",
+      "front": "Kinesin-1",
+      "back": "מוטור קוטבי שמזוהה עם תנועה לכיוון ה-plus-end. הוא אחראי להובלת וסיקלים לקצה האקסון."
+    },
+    {
+      "deckId": "cell-biology-ch-17",
+      "front": "Cyclin B-CDK1",
+      "back": "מופעל לאחר מעבר בנקודת הבקרה G2/M. הוא מפעיל תהליכי פירוק של Nuclear Envelope."
+    },
+    {
+      "deckId": "cell-biology-ch-17",
+      "front": "p53 ו-p21",
+      "back": "p53 הוא גורם משמר מרכזי בבקרת G1/S. חוסר הפעלת p21 מאפשר המשך מחזור התא."
+    },
+    {
+      "deckId": "cell-biology-ch-17",
+      "front": "Cyclin E-CDK2",
+      "back": "הקומפלקס המרכזי ב-G1-S transition. הוא מרפף את Rb ומשחרר את E2F לסינתזת DNA."
+    },
+    {
+      "deckId": "cell-biology-ch-17",
+      "front": "פירוק Securin",
+      "back": "APC/C-Cdc20 מפירק את securin באנאפזה. זה משחרר separase לחיתוך קוהזורים ופרדת כרומוזומים."
+    },
+    {
+      "deckId": "cell-biology-ch-17",
+      "front": "ציטוקינזה",
+      "back": "חלוקת הציטופלזמה לשתי תאי בת. זהו תהליך נפרד מחלוקת הגרעין (מיטוזה)."
+    },
+    {
+      "deckId": "cell-biology-ch-17",
+      "front": "טבעת התכווצות",
+      "back": "מבנה מ-actin ו-myosin II המתכווץ תחת שליטת RhoA. יוצר את שקע החיתוך (cleavage furrow) בחלוקת התא."
+    },
+    {
+      "deckId": "cell-biology-ch-17",
+      "front": "חילופי חומרים",
+      "back": "מתרחש בשלב ה-pachytene של Prophase I במיוזה. מוביל ליצירת כרומוזומים רקומביננטיים ומגביר שונות גנטית."
+    },
+    {
+      "deckId": "cell-biology-ch-17",
+      "front": "G1 Checkpoint",
+      "back": "בודק שלמות ה-DNA ונוכחות גורמי גדילה. מונע מעבר ל-S phase אם יש נזק או חוסר תנאים."
+    },
+    {
+      "deckId": "cell-biology-ch-17",
+      "front": "p53 ו-p21",
+      "back": "p53 מזהה נזק DNA ומפעיל ביטוי של p21. p21 מעכב את CDK2-Cyclin E ומעצור את מחזור התא."
+    },
+    {
+      "deckId": "cell-biology-ch-18",
+      "front": "אפופטוזיס",
+      "back": "מות תאי מתוכנת (programmed cell death). מנוגד לנקרוזיס, שהוא מוות תאי אקראי ופגיע."
+    },
+    {
+      "deckId": "cell-biology-ch-18",
+      "front": "חלבון Bax",
+      "back": "חלבון פרו-אפופטי המשתייך למשפחת Bcl-2. גורם לשינוי נفاצות בממברנת המיטוכונדריה ושחרור cytochrome c."
+    },
+    {
+      "deckId": "cell-biology-ch-18",
+      "front": "Caspase-3",
+      "back": "אחד ה-executioner caspases המרכזיים באפופטוזיס. חותך חלבונים תאיים ומוביל לדגרדציה של הגרעין והשלד התאי."
+    },
+    {
+      "deckId": "cell-biology-ch-18",
+      "front": "אפופטוזום",
+      "back": "מבנה הנוצר מהרכבת Apaf-1 עם cytochrome c ו-dATP. מגייס ומפעיל את procaspase-9."
+    },
+    {
+      "deckId": "cell-biology-ch-18",
+      "front": "FasL",
+      "back": "ליגנד ספציפי לקולטן Fas על פני התא. קישורו מוביל להרכבת DISC והפעלת caspase-8 במסלול החיצוני."
+    },
+    {
+      "deckId": "cell-biology-ch-18",
+      "front": "FADD",
+      "back": "חלבון adaptor עם תחום מוות (Death Domain). מתווך בין קולטן Fas ל-procaspase-8 בהרכבת ה-DISC."
+    },
+    {
+      "deckId": "cell-biology-ch-18",
+      "front": "Cytochrome c",
+      "back": "משוחרר מהמיטוכונדריה לאחר MOMP. נקשר ל-Apaf-1 ומוביל להרכבת האפופטוזום."
+    },
+    {
+      "deckId": "cell-biology-ch-18",
+      "front": "Bcl-2",
+      "back": "חלבון אנטי-אפופטי. חוסם את פעילות Bax/Bak ומונע שחרור cytochrome c מהמיטוכונדריה."
+    },
+    {
+      "deckId": "cell-biology-ch-18",
+      "front": "BH3-only",
+      "back": "חלבוני מפעיל (כגון Bim, Puma). משחררים את Bax/Bak מהדיכוי ומאפשרים להם להפעיל אפופטוזיס."
+    },
+    {
+      "deckId": "cell-biology-ch-19",
+      "front": "דופן התא",
+      "back": "מבנה קשיח המורכב בעיקר מציולוז. הוא מספק תמיכה מכנית ומגן על התא הצמחי."
+    },
+    {
+      "deckId": "physiology-ch-01",
+      "front": "תא אאוקריוטי",
+      "back": "תא המכיל גרעין מוגדר ומברנים. הוא מאפיין את התאים של בעלי חיים, צמחים ופטריות."
+    },
+    {
+      "deckId": "physiology-ch-01",
+      "front": "ממברנת הפלזמה",
+      "back": "ממברנה דו-שכבתית ליפידית המפרידה בין פלזמה התא לסביבה. היא שומרת על אינטגרליות התא ומאפשרת תקשורת."
+    },
+    {
+      "deckId": "physiology-ch-01",
+      "front": "הובלה ממברנלית",
+      "back": "מעבר של חומרים דרך ממברנת התא. היא מתבצעת באמצעות דיפוזיה או משאבות אקטיביות."
+    },
+    {
+      "deckId": "physiology-ch-01",
+      "front": "הובלה בשלפוחיות",
+      "back": "העברת חומרים באמצעות שלפוחיות תאיות. היא כוללת אנדוציטוזיס ואקסוציטוזיס."
+    },
+    {
+      "deckId": "physiology-ch-01",
+      "front": "דיפוזיה",
+      "back": "תנועה פסיבית של מומסים מאזור ריכוז גבוה לנמוך. היא מתרחשת ללא צריכת אנרגיה."
+    },
+    {
+      "deckId": "physiology-ch-01",
+      "front": "אוסמוזה",
+      "back": "התנועה הפסיבית של מים דרך ממברנה בררנית. היא מתרחשת עד להשוואת ריכוזי המומסים."
+    },
+    {
+      "deckId": "physiology-ch-02",
+      "front": "מצב יציב",
+      "back": "מצב שבו משתנים פיזיולוגיים נשמרים בטווח קבוע. הוא מתקיים למרות שינויים בסביבה."
+    },
+    {
+      "deckId": "physiology-ch-02",
+      "front": "נוזלי גוף",
+      "back": "נוזלים המצויים בתוך ובחוץ לתאים. הם מחולקים למדור תאי ומדור חוץ-תאי."
+    },
+    {
+      "deckId": "physiology-ch-02",
+      "front": "הומאוסטזיס",
+      "back": "יכולת הגוף לשמור על סביבה פנימית יציבה. היא קריטית לתפקוד תקין של התאים."
+    },
+    {
+      "deckId": "physiology-ch-02",
+      "front": "הובלה אפיתלית",
+      "back": "מעבר של חומרים דרך שכבת תאים אפיתלית. היא מאפשרת ספיגה או הפרשה מכוונת."
+    },
+    {
+      "deckId": "physiology-ch-04",
+      "front": "מערכת העצבים",
+      "back": "רשת של תאים מיוחדים המעבירים מידע. היא כוללת נוירונים ותאי גליה."
+    },
+    {
+      "deckId": "physiology-ch-05",
+      "front": "פוטנציאל ממברנה",
+      "back": "הפרש פוטנציאל חשמלי בין פנים לחוץ התא. הוא נוצר עקב פיזור יונים לא שוויוני."
+    },
+    {
+      "deckId": "physiology-ch-05",
+      "front": "פוטנציאל פעולה",
+      "back": "שינוי מהיר וקצר בפוטנציאל הממברנה. הוא מאפשר העברת אותות עצביים."
+    },
+    {
+      "deckId": "physiology-ch-05",
+      "front": "הולכת אות",
+      "back": "תעבורת פוטנציאל הפעולה לאורך האקסון. היא מתרחשת באמצעות שינויים בחדירות הממברנה."
+    },
+    {
+      "deckId": "physiology-ch-05",
+      "front": "התמרה חושית",
+      "back": "המרת גירוי חיצוני לאות חשמלי. היא מתרחשת בתאי חוש מיוחדים."
+    }
+  ]
+}

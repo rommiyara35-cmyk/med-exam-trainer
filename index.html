@@ -894,56 +894,34 @@ function sm2(card, grade) {
   return { ...card, interval, repetitions, easeFactor, dueDate };
 }
 
-function initFlashcards() {
+async function initFlashcards() {
   let data = DB.get('flashcards');
-  if (!data || data.version !== 5) {
-    data = { version: 5, decks: [] };
-    if (SYLLABUS && SYLLABUS.areas) {
-      for (const area of SYLLABUS.areas) {
-        for (const ch of area.chapters) {
-          const deckId = 'deck_' + ch.id;
-          const cards = [];
-          for (const sub of ch.subtopics) {
-            let back = sub.titleEn;
-            const lesson = LESSONS.find(l => l.chapterId === ch.id);
-            if (lesson && lesson.cards) {
-              const matchingCard = lesson.cards.find(c => c.title && (c.title.includes(sub.title) || sub.title.includes(c.title)));
-              if (matchingCard && matchingCard.keyPoints && matchingCard.keyPoints.length > 0) {
-                back = matchingCard.keyPoints.join('\n\n');
-              } else {
-                 const subQ = QUESTIONS.find(q => q.subtopicId === sub.id);
-                 if (subQ && subQ.options && subQ.options[subQ.correctIndex]) {
-                     let cleanExp = (subQ.explanation || '').split('.')[0] + '.';
-                     back = `${subQ.options[subQ.correctIndex]}\n${cleanExp}`;
-                 }
-              }
-            }
-            const concepts = sub.title.split(/,\s*|\s+ו(?=[א-ת])/);
-            concepts.forEach(concept => {
-              if (!concept.trim()) return;
-              cards.push({
-                id: 'c_' + Math.random().toString(36).substr(2,9),
-                front: concept.trim(),
-                back: back,
-                deckId, interval: 1, repetitions: 0, easeFactor: 2.5, dueDate: Date.now(), createdAt: Date.now()
-              });
-            });
+  if (!data || data.version !== 6) {
+    try {
+      const res = await fetch('data/flashcards_generated.json');
+      const genData = await res.json();
+      
+      data = { version: 6, decks: [] };
+      if (SYLLABUS && SYLLABUS.areas) {
+        for (const area of SYLLABUS.areas) {
+          for (const ch of area.chapters) {
+            const deckId = 'deck_' + ch.id;
+            const chCards = genData.cards.filter(c => c.deckId === ch.id);
+            const formattedCards = chCards.map(c => ({
+              id: 'c_' + Math.random().toString(36).substr(2,9),
+              front: c.front,
+              back: c.back,
+              deckId, interval: 1, repetitions: 0, easeFactor: 2.5, dueDate: Date.now(), createdAt: Date.now()
+            }));
+            data.decks.push({ id: deckId, name: ch.title, subtopicId: null, chapterId: ch.id, areaId: area.id, cards: formattedCards });
           }
-          data.decks.push({ id: deckId, name: ch.title, subtopicId: null, chapterId: ch.id, areaId: area.id, cards });
         }
       }
-      const termQs = QUESTIONS.filter(q => q.tags && q.tags.length > 0 && (q.tags.includes('Enzyme') || q.tags.includes('Term') || q.question.includes('אנזים')));
-      if (termQs.length > 0) {
-        const tcards = termQs.map(q => ({
-          id: 'c_' + Math.random().toString(36).substr(2,9),
-          front: q.tags[0],
-          back: `תשובה: ${q.options[q.correctIndex]}\n\n${(q.explanation || '').split('.')[0]}.`.trim(),
-          deckId: 'deck_terms', interval: 1, repetitions: 0, easeFactor: 2.5, dueDate: Date.now(), createdAt: Date.now()
-        }));
-        data.decks.push({ id: 'deck_terms', name: 'מונחים ואנזימים', subtopicId: null, chapterId: null, areaId: null, cards: tcards });
-      }
+      DB.set('flashcards', data);
+      renderFlashcards();
+    } catch (e) {
+      console.error("Failed to load generated flashcards", e);
     }
-    DB.set('flashcards', data);
   }
 }
 
@@ -1625,7 +1603,7 @@ if ('serviceWorker' in navigator) {
 // ============================================================
 async function init() {
   await loadData();
-  initFlashcards();
+  await initFlashcards();
   renderHome();
 }
 init();
