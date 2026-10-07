@@ -611,10 +611,10 @@ function renderHome() {
   document.getElementById('xp-fill').style.width = pct + '%';
 
   // Missions
-  const missions = buildMissions(state);
-  document.getElementById('missions').innerHTML = missions.map(m => {
+  CURRENT_MISSIONS = buildMissions(state);
+  document.getElementById('missions').innerHTML = CURRENT_MISSIONS.map(m => {
     const done = state.missionsCompleted.includes(m.id);
-    return `<button class="mission-item ${done?'done':''}" onclick='startMission(${JSON.stringify(m).replace(/"/g, "&quot;").replace(/'/g, "&#39;")})' style="border:none; text-align:inherit; font-family:inherit; width:100%">
+    return `<button class="mission-item ${done?'done':''}" onclick="startMissionById('${m.id}')" style="border:none; text-align:inherit; font-family:inherit; width:100%">
       <div class="m-icon ${m.type}">${m.icon}</div>
       <div class="m-info"><div class="m-title">${m.title}</div><div class="m-meta">${m.meta}</div></div>
       ${done ? '<div class="m-badge">✓</div>' : `<div class="m-xp">⭐${m.xp}</div>`}
@@ -801,6 +801,13 @@ function toggleSetting(k) {
 // ============================================================
 // MISSION DISPATCH
 // ============================================================
+let CURRENT_MISSIONS = [];
+
+function startMissionById(id) {
+  const m = CURRENT_MISSIONS.find(x => x.id === id);
+  if (m) startMission(m);
+}
+
 function startMission(mission) {
   haptic();
   if (mission.lessonId) {
@@ -815,14 +822,17 @@ function startMission(mission) {
     }
     if (l) { startLesson(l, mission); return; }
   }
-  if (mission.questionIds?.length) {
+  if (mission.questionIds) {
     const qs = mission.questionIds.map(id => QUESTIONS.find(q => q.id === id)).filter(Boolean);
     if (qs.length) { startQuizSession(qs, mission); return; }
+    else { showToast('אין מספיק תוכן למשימה זו עדיין'); return; }
   }
   // Fallback: if this is a "learn_new" mission and we have lessons, just start the first one
-  // If nothing worked, just open the first available lesson
-  if (LESSONS.length > 0) { startLesson(LESSONS[0], mission); return; }
-  showToast('תוכן בהכנה — הוסף שאלות ל-questions.json');
+  if (mission.id === 'learn_new' && LESSONS.length > 0) { 
+    startLesson(LESSONS[0], mission); 
+    return; 
+  }
+  showToast('תוכן בהכנה — חסרים נתונים');
 }
 
 function startAreaPractice(areaId) {

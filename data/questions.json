@@ -2717,11 +2717,11 @@
     "options": [
       "יחס NAD⁺/NADH גבוה מעודד את הפיכת פירובט ל‑לקטט.",
       "יחס NAD⁺/NADH גבוה מעודד את שלב ה‑glyceraldehyde‑3‑phosphate dehydrogenase, ולכן מגביר את קצב הגליקוליזה.",
-      "יחס NAD⁺/NADH גבוה מעכב את הפוספורילציה של Phosphofructokinase-1 (PFK-1).",
+      "יחס NAD⁺/NADH גבוה מעכב את הפוספורילציה של פוספוצינזת פרוקטוז‑6‑פוספט.",
       "יחס NAD⁺/NADH גבוה אינו משפיע על גליקוליזה, אלא רק על מעגל קרבס."
     ],
     "correctIndex": 1,
-    "explanation": "בשלב ה‑glyceraldehyde‑3‑phosphate dehydrogenase (GAPDH) מתרחשת חמצון של G3P ל‑1,3‑ביספוספוגליצרט (1,3-BPG) עם חיזור NAD⁺ ל‑NADH. כאשר היחס NAD⁺/NADH גבוה, יש יותר NAD⁺ זמין, מה שמקדם את תגובת GAPDH ומאיץ את גליקוליזה. האפשרות הראשונה מתארת מצב של יחס NADH גבוה (לקטט), השלישית והרביעית אינן מדויקות.",
+    "explanation": "בשלב ה‑glyceraldehyde‑3‑phosphate dehydrogenase (GAPDH) מתרחשת חמצון של G3P ל‑1,3‑ביספוגלט עם הפחתת NAD⁺ ל‑NADH. כאשר היחס NAD⁺/NADH גבוה, יש יותר NAD⁺ זמין, מה שמקדם את תגובת GAPDH ומאיץ את גליקוליזה. האפשרות הראשונה מתארת מצב של יחס NADH גבוה (לקטט), השלישית והרביעית אינן מדויקות.",
     "tags": [
       "NAD⁺",
       "גליקוליזה",
@@ -11336,6 +11336,90 @@
     ],
     "id": "q_cell-biology-ch-17-cytokinesis_4_1791365383",
     "subtopicId": "cell-biology-ch-17-cytokinesis",
+    "chapterId": "cell-biology-ch-17",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 1,
+    "question": "איזה שלב במיוזה מתאפיין בחילופי קטעי DNA בין הכרומוזומים ההומולוגיים?",
+    "options": [
+      "Prophase I",
+      "Metaphase I",
+      "Anaphase II",
+      "Telophase I"
+    ],
+    "correctIndex": 0,
+    "explanation": "ב‑**Prophase I**, ובמיוחד בתת‑שלב ה‑**pachytene**, מתרחשת תופעת ה‑**crossing over** שבה קטעי DNA מוחלפים בין הכרומוזומים ההומולוגיים, מה שמגביר את השונות הגנטית.",
+    "tags": [
+      "מיוזה",
+      "crossing over"
+    ],
+    "id": "q_cell-biology-ch-17-meiosis_1_1791366190",
+    "subtopicId": "cell-biology-ch-17-meiosis",
+    "chapterId": "cell-biology-ch-17",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 2,
+    "question": "ב‑Prophase I, תהליך ה‑crossing over מתרחש בתת‑שלב ה‑pachytene. כיצד תהליך זה משפיע על ההולכה של אללים בתא הבן?",
+    "options": [
+      "יוצר קונפיגורציות חדשות של אללים, מה שמגדיל את ההסתברות לקבל אללים שונים בתא הבן",
+      "מונע כל שינוי באללים ומבטיח שמירה על רצף DNA המקורי",
+      "גורם להפרדת הכרומוזומים ההומולוגיים לפני ה‑Metaphase I",
+      "מוביל להיווצרות של כרומוזומים כפולים (tetrads) בלבד ללא שינוי באללים"
+    ],
+    "correctIndex": 0,
+    "explanation": "ה‑**crossing over** יוצר קונפיגורציות חדשות של אללים (recombinant chromatids), כך שכל כרומוזום בתא הבן יכול לשאת שילוב אללים שונה מההורה, מה שמגביר את המגוון הגנטי של הדור הבא.",
+    "tags": [
+      "מיוזה",
+      "crossing over",
+      "אללים"
+    ],
+    "id": "q_cell-biology-ch-17-meiosis_2_1791366190",
+    "subtopicId": "cell-biology-ch-17-meiosis",
+    "chapterId": "cell-biology-ch-17",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 2,
+    "question": "ב‑Meiosis I, מה קורה למספר הכרומוזומים בתא הבן וכיצד זה שונה מ‑Meiosis II?",
+    "options": [
+      "ב‑Meiosis I מספר הכרומוזומים ההומולוגיים נשמר, אך הם מופרדים לשתי תאים, בעוד שב‑Meosis II מתבצע הפרדת כרומטידס של כל כרומוזום",
+      "ב‑Meiosis I מתבצעת הפחתת מספר הכרומוזומים בחצי (haploid), וב‑Meiosis II אין שינוי במספר הכרומוזומים",
+      "ב‑Meiosis I מתבצעת הפרדת כרומטידס של כל כרומוזום, וב‑Meiosis II מתבצעת הפחתת מספר הכרומוזומים",
+      "ב‑Meiosis I מתבצעת עצירת התא לפני הפרדת הכרומוזומים, וב‑Meiosis II מתבצעת הפרדת הכרומוזומים ההומולוגיים"
+    ],
+    "correctIndex": 1,
+    "explanation": "ב‑**Meiosis I** (חלוקה הפחתתית) מתבצעת הפרדת הכרומוזומים ההומולוגיים, ולכן כל תא בן מקבל חצי מספר הכרומוזומים (haploid). ב‑**Meiosis II** מתבצעת רק הפרדת הכרומטידס של כל כרומוזום, ללא שינוי במספר הכרומוזומים.",
+    "tags": [
+      "מיוזה",
+      "הפחתה",
+      "חלוקת תאים"
+    ],
+    "id": "q_cell-biology-ch-17-meiosis_3_1791366190",
+    "subtopicId": "cell-biology-ch-17-meiosis",
+    "chapterId": "cell-biology-ch-17",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 3,
+    "question": "זוג נשוי נושא תסמונת של ה‑balanced reciprocal translocation בין כרומוזום 14 ל‑21. במהלך המיוזה של הגבר, איזו תוצאה גנטית היא הסבירה ביותר לגרום לתינוק עם תסמונת דאון (Trisomy 21)?",
+    "options": [
+      "יצירת gamete עם שני כרומוזומי 21 ו‑14 (der(14;21) + 21) שמוביל ל‑trisomy 21 לאחר ההפריה",
+      "יצירת gamete עם רק כרומוזום 21 רגיל, ללא der(14;21)",
+      "יצירת gamete עם שני der(14;21) בלבד, מה שמוביל ל‑monosomy 21",
+      "יצירת gamete עם שני כרומוזומי 14 רגילים, ללא der(14;21)"
+    ],
+    "correctIndex": 0,
+    "explanation": "ב‑balanced reciprocal translocation בין 14 ל‑21, במהלך המיוזה יכולים להיווצר gametes עם תצורות שונות של הכרומוזומים. ה‑gamete שמכיל את ה‑der(14;21) יחד עם כרומוזום 21 רגיל יכיל שלושה עותקים של 21 לאחר ההפריה (2 מה‑mother + 1 מה‑father), מה שמוביל ל‑Trisomy 21 (תסמונת דאון). שאר האפשרויות אינן יוצרות את המצב הזה: אפשרות ב‑‑ אין תוספת של 21; אפשרות ג‑‑ גורמת ל‑monosomy; אפשרות ד‑‑ אין תוספת של 21 כלל.",
+    "tags": [
+      "מיוזה",
+      "translocation",
+      "Trisomy 21",
+      "תסמונת דאון"
+    ],
+    "id": "q_cell-biology-ch-17-meiosis_4_1791366190",
+    "subtopicId": "cell-biology-ch-17-meiosis",
     "chapterId": "cell-biology-ch-17",
     "areaId": "cell-biology"
   }
