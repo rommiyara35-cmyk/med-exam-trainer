@@ -10925,5 +10925,89 @@
     "subtopicId": "cell-biology-ch-17-the-cell-cycle-control-system",
     "chapterId": "cell-biology-ch-17",
     "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 3,
+    "question": "איזה קומפלקס חלבונים אחראי על זיהוי והצמדה של ה‑helicase למקומות ההתחלה (origins) של שכפול DNA באורגניזמים איקריוטיים?",
+    "options": [
+      "Origin Recognition Complex (ORC)",
+      "MCM2‑7 helicase complex",
+      "CDC45",
+      "PCNA"
+    ],
+    "correctIndex": 0,
+    "explanation": "ה‑ORC הוא הקומפלקס הראשון שמזהה את ה‑origin של DNA ומקשר אותו לממברנת הכרומטין, ובכך מאפשר טעינת ה‑MCM helicase. MCM2‑7 הוא ה‑helicase עצמו, CDC45 משמש כמפעיל של MCM, ו‑PCNA הוא קלאמפ משמש ב‑DNA polymerase, ולכן אינם נכונים.",
+    "tags": [
+      "DNA replication",
+      "origin recognition",
+      "ORC"
+    ],
+    "id": "q_cell-biology-ch-17-s-phase_1_1791362299",
+    "subtopicId": "cell-biology-ch-17-s-phase",
+    "chapterId": "cell-biology-ch-17",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 3,
+    "question": "במהלך שלב S, איזו אנזים מרכזי מווסת את ייצור dNTP על‑ידי הפחתת ריבונוקלאוטידים ל‑deoxyribonucleotides?",
+    "options": [
+      "Ribonucleotide reductase (RNR)",
+      "DNA polymerase δ",
+      "Thymidylate synthase",
+      "DNA ligase I"
+    ],
+    "correctIndex": 0,
+    "explanation": "RNR הוא האנזים היחיד שממיר ריבונוקלאוטידים (NDP) לדאוקסיריבונוקלאוטידים (dNDP), ובכך מספק את תת‑המלאים (dNTP) לשכפול DNA. DNA polymerase δ משכפל את ה‑DNA, Thymidylate synthase מייצר dTMP בלבד, ו‑DNA ligase I מאחד את קצוות ה‑Okazaki – כולם אינם אחראים לייצור dNTP.",
+    "tags": [
+      "dNTP synthesis",
+      "RNR",
+      "S phase metabolism"
+    ],
+    "id": "q_cell-biology-ch-17-s-phase_2_1791362299",
+    "subtopicId": "cell-biology-ch-17-s-phase",
+    "chapterId": "cell-biology-ch-17",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 3,
+    "question": "איזה קינטאז‑checkpoint הוא העיקרי במעקב אחרי מתחים (stress) של שכפול DNA במהלך שלב S?",
+    "options": [
+      "ATM",
+      "ATR",
+      "CHK1",
+      "CHK2"
+    ],
+    "correctIndex": 1,
+    "explanation": "ATR (Ataxia Telangiectasia and Rad3 related) מופעל על‑ידי DNA single‑stranded regions שנוצרות במהלך רפליקציה ומפעיל את מסלול ה‑CHK1. ATM מגיב בעיקר לנזקי double‑strand break, CHK2 הוא ממוקד ב‑ATM, ולכן ATR הוא הבחירה הנכונה.",
+    "tags": [
+      "DNA damage checkpoint",
+      "ATR",
+      "S phase"
+    ],
+    "id": "q_cell-biology-ch-17-s-phase_3_1791362299",
+    "subtopicId": "cell-biology-ch-17-s-phase",
+    "chapterId": "cell-biology-ch-17",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 3,
+    "question": "איזו מנגנון מבטיח שספק ההיסטונים יתואם עם קצב שכפול ה‑DNA במהלך שלב S?",
+    "options": [
+      "הפעלת NPAT על‑ידי Cyclin E/CDK2",
+      "פוליאדנילציה של mRNA ההיסטון",
+      "שימוש בחומרי חלבון צ'אפר CAF‑1",
+      "פעילות של histone acetyltransferase p300"
+    ],
+    "correctIndex": 0,
+    "explanation": "ב‑S‑phase, Cyclin E/CDK2 מאפיין את ההפעלה של NPAT, גורם לתעתוק מהיר של גני ההיסטון ללא פוליאדנילציה (histone mRNAs הם ללא פוליאדניל). CAF‑1 משמש כ‑chaperone להצבת ההיסטונים על DNA, אך אינו קובע את ייצור ההיסטונים. פוליאדנילציה של mRNA ההיסטון אינה מתרחשת (ה‑mRNA הוא ללא פוליאדניל), ו‑p300 הוא acetyltransferase שאינו מרכזי בתיאום ייצור ההיסטון עם רפליקציה.",
+    "tags": [
+      "histone supply",
+      "NPAT",
+      "S phase regulation"
+    ],
+    "id": "q_cell-biology-ch-17-s-phase_4_1791362299",
+    "subtopicId": "cell-biology-ch-17-s-phase",
+    "chapterId": "cell-biology-ch-17",
+    "areaId": "cell-biology"
   }
 ]

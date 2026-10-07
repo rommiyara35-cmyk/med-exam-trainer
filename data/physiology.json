@@ -1,0 +1,243 @@
+{
+  "id": "physiology",
+  "title": "פיזיולוגיה",
+  "titleEn": "Physiology",
+  "color": "#FF2D55",
+  "icon": "⚡",
+  "chapters": [
+    {
+      "id": "physiology-ch-01",
+      "title": "עקרונות תפקוד התא והממברנה",
+      "titleEn": "Principles of Cell and Membrane Function",
+      "subtopics": [
+        {
+          "id": "physiology-ch-01-overview-of-eukaryotic-cells",
+          "title": "סקירת תאים אאוקריוטיים",
+          "titleEn": "Overview of Eukaryotic Cells",
+          "content_status": "not-authored",
+          "coverage": "entire-section-including-descendants",
+          "order": 1
+        },
+        {
+          "id": "physiology-ch-01-the-plasma-membrane",
+          "title": "ממברנת הפלזמה",
+          "titleEn": "The Plasma Membrane",
+          "content_status": "not-authored",
+          "coverage": "entire-section-including-descendants",
+          "order": 2
+        },
+        {
+          "id": "physiology-ch-01-membrane-transport",
+          "title": "הובלה ממברנלית",
+          "titleEn": "Membrane Transport",
+          "content_status": "not-authored",
+          "coverage": "entire-section-including-descendants",
+          "order": 3
+        },
+        {
+          "id": "physiology-ch-01-vesicular-transport",
+          "title": "הובלה בשלפוחיות",
+          "titleEn": "Vesicular Transport",
+          "content_status": "not-authored",
+          "coverage": "entire-section-including-descendants",
+          "order": 4
+        },
+        {
+          "id": "physiology-ch-01-basic-principles-of-solute-and-water-transport",
+          "title": "עקרונות בסיסיים של הובלת מומסים ומים",
+          "titleEn": "Basic Principles of Solute and Water Transport",
+          "content_status": "not-authored",
+          "coverage": "entire-section-including-descendants",
+          "order": 5
+        }
+      ]
+    },
+    {
+      "id": "physiology-ch-02",
+      "title": "הומאוסטזיס: נפח והרכב מדורי נוזלי הגוף",
+      "titleEn": "Homeostasis: Volume and Composition of Body Fluid Compartments",
+      "subtopics": [
+        {
+          "id": "physiology-ch-02-concept-of-steady-state-balance",
+          "title": "מושג המאזן במצב יציב",
+          "titleEn": "Concept of Steady-State Balance",
+          "content_status": "not-authored",
+          "coverage": "entire-section-including-descendants",
+          "order": 1
+        },
+        {
+          "id": "physiology-ch-02-volumes-and-composition-of-body-fluid-compartments",
+          "title": "נפחים והרכב של מדורי נוזלי הגוף",
+          "titleEn": "Volumes and Composition of Body Fluid Compartments",
+          "content_status": "not-authored",
+          "coverage": "entire-section-including-descendants",
+          "order": 2
+        },
+        {
+          "id": "physiology-ch-02-maintenance-of-cellular-homeostasis",
+          "title": "שמירת הומאוסטזיס תאי",
+          "titleEn": "Maintenance of Cellular Homeostasis",
+          "content_status": "not-authored",
+          "coverage": "entire-section-including-descendants",
+          "order": 3
+        },
+        {
+          "id": "physiology-ch-02-principles-of-epithelial-transport",
+          "title": "עקרונות ההובלה באפיתל",
+          "titleEn": "Principles of Epithelial Transport",
+          "content_status": "not-authored",
+          "coverage": "entire-section-including-descendants",
+          "order": 4
+        }
+      ]
+    },
+    {
+      "id": "physiology-ch-04",
+      "title": "מערכת העצבים: מבוא לתאים ולמערכות",
+      "titleEn": "The Nervous System: Introduction to Cells and Systems",
+      "subtopics": [
+        {
+          "id": "physiology-ch-04-cellular-components-of-the-nervous-system",
+          "title": "המרכיבים התאיים של מערכת העצבים",
+          "titleEn": "Cellular Components of the Nervous System",
+          "content_status": "not-authored",
+          "coverage": "entire-section-including-descendants",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "id": "physiology-ch-05",
+      "title": "יצירה והולכה של פוטנציאלי פעולה",
+      "titleEn": "Generation and Conduction of Action Potentials",
+      "subtopics": [
+        {
+          "id": "physiology-ch-05-membrane-potentials",
+          "title": "פוטנציאלי ממברנה",
+          "titleEn": "Membrane Potentials",
+          "content_status": "not-authored",
+          "coverage": "entire-section-including-descendants",
+          "order": 1
+        },
+        {
+          "id": "physiology-ch-05-suprathreshold-response-the-action-potential",
+          "title": "תגובה מעל הסף: פוטנציאל הפעולה",
+          "titleEn": "Suprathreshold Response: The Action Potential",
+          "content_status": "not-authored",
+          "coverage": "entire-section-including-descendants",
+          "order": 2
+        },
+        {
+          "id": "physiology-ch-05-conduction-of-action-potentials",
+          "title": "הולכת פוטנציאלי פעולה",
+          "titleEn": "Conduction of Action Potentials",
+          "content_status": "not-authored",
+          "coverage": "entire-section-including-descendants",
+          "order": 3
+        },
+        {
+          "id": "physiology-ch-05-sensory-transduction",
+          "title": "התמרה חושית",
+          "titleEn": "Sensory Transduction",
+          "content_status": "not-authored",
+          "coverage": "entire-section-including-descendants",
+          "order": 4
+        }
+      ]
+    },
+    {
+      "id": "physiology-ch-06",
+      "title": "העברה סינפטית",
+      "titleEn": "Synaptic Transmission",
+      "subtopics": [
+        {
+          "id": "physiology-ch-06-electrical-synapses",
+          "title": "סינפסות חשמליות",
+          "titleEn": "Electrical Synapses",
+          "content_status": "not-authored",
+          "coverage": "entire-section-including-descendants",
+          "order": 1
+        },
+        {
+          "id": "physiology-ch-06-chemical-synapses",
+          "title": "סינפסות כימיות",
+          "titleEn": "Chemical Synapses",
+          "content_status": "not-authored",
+          "coverage": "entire-section-including-descendants",
+          "order": 2
+        },
+        {
+          "id": "physiology-ch-06-synaptic-integration",
+          "title": "אינטגרציה סינפטית",
+          "titleEn": "Synaptic Integration",
+          "content_status": "not-authored",
+          "coverage": "entire-section-including-descendants",
+          "order": 3
+        },
+        {
+          "id": "physiology-ch-06-modulation-of-synaptic-activity",
+          "title": "ויסות פעילות סינפטית",
+          "titleEn": "Modulation of Synaptic Activity",
+          "content_status": "not-authored",
+          "coverage": "entire-section-including-descendants",
+          "order": 4
+        }
+      ]
+    },
+    {
+      "id": "physiology-ch-12",
+      "title": "פיזיולוגיה של שריר שלד",
+      "titleEn": "Skeletal Muscle Physiology",
+      "subtopics": [
+        {
+          "id": "physiology-ch-12-organization-of-skeletal-muscle",
+          "title": "ארגון שריר השלד",
+          "titleEn": "Organization of Skeletal Muscle",
+          "content_status": "not-authored",
+          "coverage": "entire-section-including-descendants",
+          "order": 1
+        },
+        {
+          "id": "physiology-ch-12-control-of-skeletal-muscle-activity",
+          "title": "בקרת פעילות שריר השלד",
+          "titleEn": "Control of Skeletal Muscle Activity",
+          "content_status": "not-authored",
+          "coverage": "entire-section-including-descendants",
+          "order": 2
+        },
+        {
+          "id": "physiology-ch-12-skeletal-muscle-types",
+          "title": "סוגי שריר שלד",
+          "titleEn": "Skeletal Muscle Types",
+          "content_status": "not-authored",
+          "coverage": "entire-section-including-descendants",
+          "order": 3
+        },
+        {
+          "id": "physiology-ch-12-modulation-of-the-force-of-contraction",
+          "title": "ויסות כוח הכיווץ",
+          "titleEn": "Modulation of the Force of Contraction",
+          "content_status": "not-authored",
+          "coverage": "entire-section-including-descendants",
+          "order": 4
+        },
+        {
+          "id": "physiology-ch-12-skeletal-muscle-tone",
+          "title": "טונוס שריר השלד",
+          "titleEn": "Skeletal Muscle Tone",
+          "content_status": "not-authored",
+          "coverage": "entire-section-including-descendants",
+          "order": 5
+        },
+        {
+          "id": "physiology-ch-12-biophysical-properties-of-skeletal-muscle",
+          "title": "תכונות ביופיזיקליות של שריר השלד",
+          "titleEn": "Biophysical Properties of Skeletal Muscle",
+          "content_status": "not-authored",
+          "coverage": "entire-section-including-descendants",
+          "order": 6
+        }
+      ]
+    }
+  ]
+}
