@@ -11009,5 +11009,88 @@
     "subtopicId": "cell-biology-ch-17-s-phase",
     "chapterId": "cell-biology-ch-17",
     "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 1,
+    "question": "מהו תהליך האנדוציטוזיס?",
+    "options": [
+      "קבלת חומרים חיצוניים על‑ידי יצירת וסתיקולה ממברנה פלזמתית",
+      "שחרור חומרים פנימיים אל מחוץ לתא",
+      "העברת חומרים דרך תעלות יוניות ללא צורך באנרגיה",
+      "פיזור חלבונים בממברנה ללא שינוי מבני"
+    ],
+    "correctIndex": 0,
+    "explanation": "אנדוציטוזיס הוא תהליך אקטיבי שבו התא קולט חומרים חיצוניים בעזרת קיפול של הממברנה ליצירת וסתיקולה.",
+    "tags": [
+      "הגדרה",
+      "אנדוציטוזיס"
+    ],
+    "id": "q_cell-biology-ch-13-transport-into-the-cell-from-the-plasma-membrane-endocytosis_1_1791363051",
+    "subtopicId": "cell-biology-ch-13-transport-into-the-cell-from-the-plasma-membrane-endocytosis",
+    "chapterId": "cell-biology-ch-13",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 2,
+    "question": "אילו חלבונים נדרשים ל‑**clathrin‑mediated endocytosis**?",
+    "options": [
+      "Clathrin ו‑Adaptor Protein 2 (AP‑2)",
+      "Caveolin‑1 בלבד",
+      "Actin בלבד",
+      "Na⁺/K⁺‑ATPase"
+    ],
+    "correctIndex": 0,
+    "explanation": "ב‑clathrin‑mediated endocytosis חלבון הקלאתרין יוצר רשת סביב הקופסה, וה‑AP‑2 משמש כמקשר לקולטנים ול‑clathrin. שאר האפשרויות אינן קשורות לתהליך זה.",
+    "tags": [
+      "clathrin",
+      "AP‑2",
+      "אנדוציטוזיס"
+    ],
+    "id": "q_cell-biology-ch-13-transport-into-the-cell-from-the-plasma-membrane-endocytosis_2_1791363051",
+    "subtopicId": "cell-biology-ch-13-transport-into-the-cell-from-the-plasma-membrane-endocytosis",
+    "chapterId": "cell-biology-ch-13",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 2,
+    "question": "איזה מההבדלים הבאים נכון לגבי **phagocytosis** ו‑**receptor‑mediated endocytosis**?",
+    "options": [
+      "Phagocytosis קולט חלקיקים גדולים (>0.5 µm) ללא חלבון קווט, בעוד receptor‑mediated endocytosis קולט מולקולות קטנות (<200 nm) בעזרת קווט של clathrin.",
+      "Phagocytosis מתבצע רק בתאי עצב, בעוד receptor‑mediated endocytosis מתרחש רק בתאי שריר.",
+      "שני התהליכים משתמשים באותו חלבון coat – caveolin.",
+      "Receptor‑mediated endocytosis דורש חלבון dynamin, בעוד phagocytosis אינו דורש חלבונים כלל."
+    ],
+    "correctIndex": 0,
+    "explanation": "Phagocytosis מתמקד בחלקיקים גדולים (בקרב תאי חיסון) ואין צורך בחלבון coat, בעוד receptor‑mediated endocytosis מתמקד במולקולות קטנות וכולל קווט של clathrin. שאר הטענות שגויות.",
+    "tags": [
+      "phagocytosis",
+      "receptor‑mediated",
+      "clathrin"
+    ],
+    "id": "q_cell-biology-ch-13-transport-into-the-cell-from-the-plasma-membrane-endocytosis_3_1791363051",
+    "subtopicId": "cell-biology-ch-13-transport-into-the-cell-from-the-plasma-membrane-endocytosis",
+    "chapterId": "cell-biology-ch-13",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 3,
+    "question": "גבר בן 45 מגיע לביקור רופא עם רמות LDL גבוהות מאוד. בדיקות גנטיות מצביעות על מוטציה ב‑LDL receptor. באיזה שלב של **receptor‑mediated endocytosis** מתרחשת הפגיעה העיקרית במטופל?",
+    "options": [
+      "קישור של LDL ל‑LDL receptor בממברנה וביצירת קופסה מצופה clathrin",
+      "יצירת קווט של caveolin סביב LDL",
+      "פיצול ה‑vesicle על‑ידי dynamin",
+      "מיחזור של transferrin receptor לאחר השחרור"
+    ],
+    "correctIndex": 0,
+    "explanation": "ב‑familial hypercholesterolemia עם חוסר תפקוד של LDL‑R, הפגיעה היא בקישור של LDL לרצפטור ובקיבוע הקווט של clathrin, ולכן ה‑vesicle אינו נוצר כראוי. האפשרות (ב) מתייחסת ל‑caveolin, שאינו קשור ל‑LDL uptake. האפשרות (ג) מתארת שלב אחרי הקווט, והאפשרות (ד) מתייחסת למנגנון שונה לגמרי.",
+    "tags": [
+      "LDL receptor",
+      "receptor‑mediated endocytosis",
+      "פיזיולוגיה קלינית"
+    ],
+    "id": "q_cell-biology-ch-13-transport-into-the-cell-from-the-plasma-membrane-endocytosis_4_1791363051",
+    "subtopicId": "cell-biology-ch-13-transport-into-the-cell-from-the-plasma-membrane-endocytosis",
+    "chapterId": "cell-biology-ch-13",
+    "areaId": "cell-biology"
   }
 ]
