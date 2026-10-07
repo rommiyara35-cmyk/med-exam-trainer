@@ -896,8 +896,8 @@ function sm2(card, grade) {
 
 function initFlashcards() {
   let data = DB.get('flashcards');
-  if (!data || data.version !== 4) {
-    data = { version: 4, decks: [] };
+  if (!data || data.version !== 5) {
+    data = { version: 5, decks: [] };
     if (SYLLABUS && SYLLABUS.areas) {
       for (const area of SYLLABUS.areas) {
         for (const ch of area.chapters) {
@@ -911,8 +911,11 @@ function initFlashcards() {
               if (matchingCard && matchingCard.keyPoints && matchingCard.keyPoints.length > 0) {
                 back = matchingCard.keyPoints.join('\n\n');
               } else {
-                 const genericCard = lesson.cards.find(c => c.keyPoints && c.keyPoints.length > 0);
-                 if (genericCard) back = genericCard.keyPoints.join('\n\n');
+                 const subQ = QUESTIONS.find(q => q.subtopicId === sub.id);
+                 if (subQ && subQ.options && subQ.options[subQ.correctIndex]) {
+                     let cleanExp = (subQ.explanation || '').split('.')[0] + '.';
+                     back = `${subQ.options[subQ.correctIndex]}\n${cleanExp}`;
+                 }
               }
             }
             const concepts = sub.title.split(/,\s*|\s+ו(?=[א-ת])/);

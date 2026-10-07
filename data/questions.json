@@ -11837,5 +11837,91 @@
     "subtopicId": "cell-biology-ch-18-the-intrinsic-pathway-of-apoptosis-depends-on-proteins-released-from-mitochondria",
     "chapterId": "cell-biology-ch-18",
     "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 1,
+    "question": "מהו תפקידו העיקרי של חלבון Bcl‑2 במשפחת Bcl2?",
+    "options": [
+      "מעכב את האפופטוזיס על‑ידי חסימת פעילות Bax/Bak",
+      "מעורר את האפופטוזיס על‑ידי הפעלת Caspase‑9",
+      "פועל כגורם תמלול (transcription factor)",
+      "מתווך תעלות יוני (ion channel) בממברנת הפלזמה"
+    ],
+    "correctIndex": 0,
+    "explanation": "חלבון Bcl‑2 הוא חלבון אנטי‑אפופטי; הוא נקשר ל‑BH3 של Bax/Bak ומונע את האגגרגציה שלהם בממברנת המיטוכונדריה, ובכך מעכב את שחרור Cytochrome c והפעלת המסלול הפנימי של אפופטוזיס.",
+    "tags": [
+      "Bcl2",
+      "anti‑apoptotic"
+    ],
+    "id": "q_cell-biology-ch-18-bcl2-proteins-are-the-critical-controllers-of-the-intrinsic-pathway-of-apoptosis_1_1791371056",
+    "subtopicId": "cell-biology-ch-18-bcl2-proteins-are-the-critical-controllers-of-the-intrinsic-pathway-of-apoptosis",
+    "chapterId": "cell-biology-ch-18",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 2,
+    "question": "באיזה שלב של המסלול הפנימי של אפופטוזיס חלבון Bax משוחרר מה‑cytosol ומתחבר לממברנת המיטוכונדריה?",
+    "options": [
+      "לאחר פגיעה ב‑DNA על‑ידי קרינת UV",
+      "לאחר ירידה במתח הממברנה של המיטוכונדריה",
+      "לאחר הפעלת חלבוני BH3‑only (כגון Bim, Puma)",
+      "לאחר פגיעה במערכת ה‑ER ושחרור Ca2+"
+    ],
+    "correctIndex": 2,
+    "explanation": "חלבוני BH3‑only משמשים כמפעילים של Bax ו‑Bak; הם משחררים את ההדחקה של Bax מה‑cytosol, מאפשרים לו לעבור לממברנת המיטוכונדריה ולהתאגד, מה שמוביל לשחרור Cytochrome c.",
+    "tags": [
+      "Bax",
+      "BH3‑only",
+      "intrinsic pathway"
+    ],
+    "id": "q_cell-biology-ch-18-bcl2-proteins-are-the-critical-controllers-of-the-intrinsic-pathway-of-apoptosis_2_1791371056",
+    "subtopicId": "cell-biology-ch-18-bcl2-proteins-are-the-critical-controllers-of-the-intrinsic-pathway-of-apoptosis",
+    "chapterId": "cell-biology-ch-18",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 2,
+    "question": "איזה מהבאים מתאר נכון את המנגנון שבו חלבון Bcl‑XL מונע פריקת Cytochrome c?",
+    "options": [
+      "קישור ישיר ל‑Cytochrome c במיטוכונדריה",
+      "חסימת oligomerization של Bax/Bak בממברנת המיטוכונדריה",
+      "שחרור גורמי BH3 שמפעילים Caspase‑8",
+      "הגברת פעילות Caspase‑9 על‑ידי פוספורילציה"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bcl‑XL מקשר את תת‑יחידות ה‑BH3 של Bax ו‑Bak, מונע את האגגרגציה שלהם בממברנת המיטוכונדריה ולכן חוסם את יצירת הפורט (pore) שמאפשר שחרור Cytochrome c. הוא אינו קשור ישירות ל‑Cytochrome c ולא משפיע על Caspase‑8 או Caspase‑9 באופן ישיר.",
+    "tags": [
+      "Bcl‑XL",
+      "Bax",
+      "Bak",
+      "Cytochrome c"
+    ],
+    "id": "q_cell-biology-ch-18-bcl2-proteins-are-the-critical-controllers-of-the-intrinsic-pathway-of-apoptosis_3_1791371056",
+    "subtopicId": "cell-biology-ch-18-bcl2-proteins-are-the-critical-controllers-of-the-intrinsic-pathway-of-apoptosis",
+    "chapterId": "cell-biology-ch-18",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 3,
+    "question": "חולה בן 58 עם לוקמיה לימפוציטית כרונית (CLL) מטופל במקביל עם כימותרפיה מבוססת פלורואורוסיל (Fludarabine). ניתוח גנטי מגלה העתקה מרובה של גן BCL2. איזו אסטרטגיה טיפולית היא המתאימה ביותר להפחתת עמידות לתרופה במצב זה?",
+    "options": [
+      "שימוש במעכב Bcl‑2 ספציפי (Venetoclax) במינון משלים",
+      "מתן מעכב Caspase‑3 (z‑VAD‑fmk) יחד עם Fludarabine",
+      "החדרת וקטור גן p53 (gene therapy) לתאי הלימפה",
+      "שימוש במעכב mTOR (Everolimus) במקביל"
+    ],
+    "correctIndex": 0,
+    "explanation": "העתקה מרובה של BCL2 גורמת לעמידות לתרופות המפעילות אפופטוזיס, מכיוון שהחלבון האנטי‑אפופטי מונע את השחרור של Cytochrome c. Venetoclax הוא מעכב ספציפי של Bcl‑2 (BH3‑mimetic) שמקשר את האתר BH3 של Bcl‑2, משחרר את ההדחקה של Bax/Bak ומאפשר אפופטוזיס של תאי הלוקמיה. מעכבי Caspase, p53 gene therapy או mTOR אינם מתמקדים במנגנון העיקרי של העמידות כאן.",
+    "tags": [
+      "BCL2 amplification",
+      "Venetoclax",
+      "CLL",
+      "intrinsic apoptosis",
+      "clinical therapy"
+    ],
+    "id": "q_cell-biology-ch-18-bcl2-proteins-are-the-critical-controllers-of-the-intrinsic-pathway-of-apoptosis_4_1791371056",
+    "subtopicId": "cell-biology-ch-18-bcl2-proteins-are-the-critical-controllers-of-the-intrinsic-pathway-of-apoptosis",
+    "chapterId": "cell-biology-ch-18",
+    "areaId": "cell-biology"
   }
 ]
