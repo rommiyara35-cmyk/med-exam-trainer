@@ -446,7 +446,11 @@ function getState() {
   };
   const saved = DB.get('state');
   if (!saved) return defState;
-  return { ...defState, ...saved, settings: { ...defState.settings, ...(saved.settings || {}) } };
+  const finalState = { ...defState, ...saved, settings: { ...defState.settings, ...(saved.settings || {}) } };
+  if (!finalState.missionsCompleted || !Array.isArray(finalState.missionsCompleted)) finalState.missionsCompleted = [];
+  if (!finalState.mastery) finalState.mastery = {};
+  return finalState;
+
 }
 function saveState(s) { DB.set('state', s); }
 
@@ -677,40 +681,51 @@ function renderHome() {
 // ============================================================
 let exploreQ = '';
 function renderExplore() {
-  if (!SYLLABUS) return;
+  if (!SYLLABUS || !SYLLABUS.areas) return;
   const state = getState();
   const q = (exploreQ || '').toLowerCase().trim();
   let html = '';
+  
   for (const area of SYLLABUS.areas) {
+    if (!area.chapters) continue;
+    
     const filteredChs = area.chapters.filter(ch => {
       if (!q) return true;
-      if (ch.title.includes(q) || ch.titleEn.toLowerCase().includes(q)) return true;
-      return ch.subtopics.some(s => s.title.includes(q) || s.titleEn.toLowerCase().includes(q));
+      if (ch.title && ch.title.toLowerCase().includes(q)) return true;
+      if (ch.titleEn && ch.titleEn.toLowerCase().includes(q)) return true;
+      if (ch.subtopics) {
+        return ch.subtopics.some(s => (s.title && s.title.toLowerCase().includes(q)) || (s.titleEn && s.titleEn.toLowerCase().includes(q)));
+      }
+      return false;
     });
+    
     if (!filteredChs.length) continue;
+    
     html += `<div class="explore-area">
       <div class="ea-hdr">
-        <div class="area-dot" style="background:${area.color}"></div>
-        <div class="area-name-txt">${area.icon} ${area.title}</div>
+        <div class="area-dot" style="background:${area.color || '#000'}"></div>
+        <div class="area-name-txt">${area.icon || ''} ${area.title || ''}</div>
       </div>`;
     
     let isPrevLessonCompleted = true; // First chapter is unlocked
+    const completedMissions = state.missionsCompleted || [];
+    
     for (const ch of area.chapters) {
+      const isCompleted = completedMissions.includes(`lesson_${ch.id}`);
+      
       if (!filteredChs.includes(ch)) {
-        // Still need to track progression even if filtered out!
-        if (state.missionsCompleted.includes(`lesson_${ch.id}`)) {
-          isPrevLessonCompleted = true;
-        } else {
-          isPrevLessonCompleted = false;
-        }
+        isPrevLessonCompleted = isCompleted;
         continue;
       }
 
-      const total = ch.subtopics.length;
-      const mastered = ch.subtopics.filter(s => getMastery(state, s.id).level >= 2).length;
-      const pct = Math.round((mastered / total) * 100);
+      const subs = ch.subtopics || [];
+      const total = subs.length;
+      let mastered = 0;
+      subs.forEach(s => {
+         if (getMastery(state, s.id).level >= 2) mastered++;
+      });
+      const pct = total > 0 ? Math.round((mastered / total) * 100) : 0;
       
-      const isCompleted = state.missionsCompleted.includes(`lesson_${ch.id}`);
       const isUnlocked = isPrevLessonCompleted || isCompleted;
       
       const opacity = isUnlocked ? "1" : "0.5";
@@ -720,18 +735,18 @@ function renderExplore() {
       html += `<div class="chapter-card" style="opacity: ${opacity}; pointer-events: ${pointerEvents}">
         <div class="ch-hdr" onclick="toggleChapter('${ch.id}')">
           <div class="ch-info">
-            <div class="ch-name">${lockIcon}${ch.title}</div>
-            <div class="ch-meta">${ch.titleEn} · ${total} נושאי משנה</div>
+            <div class="ch-name">${lockIcon}${ch.title || ''}</div>
+            <div class="ch-meta">${ch.titleEn || ''} · ${total} נושאי משנה</div>
           </div>
-          ${ringHTML(pct, area.color)}
+          ${ringHTML(pct, area.color || '#000')}
           <span class="ch-chev" id="chev-${ch.id}">▼</span>
         </div>
         <div class="ch-subs" id="csubs-${ch.id}">
-          ${ch.subtopics.map(s => {
+          ${subs.map(s => {
             const m = getMastery(state, s.id);
-            const cls = MASTERY_CLS[m.level];
+            const cls = MASTERY_CLS[m.level] || 'unseen';
             return `<span class="sub-pill ${cls}" onclick="practiceSubtopic('${s.id}','${ch.id}','${area.id}')">
-              <span class="sub-dot"></span>${s.title}
+              <span class="sub-dot"></span>${s.title || ''}
             </span>`;
           }).join('')}
           <div><span class="practice-btn" onclick="event.stopPropagation();startChapterPractice('${ch.id}','${area.id}')">📝 תרגל פרק זה</span></div>
@@ -743,7 +758,27 @@ function renderExplore() {
     }
     html += '</div>';
   }
-  document.getElementById('explore-content').innerHTML = html || '<div class="empty"><div class="empty-e">🔍</div><div class="empty-t">לא נמצאו תוצאות</div></div>';
+  const container = document.getElementById('explore-content');
+  if (container) {
+    container.innerHTML = html || '<div class="empty"><div class="empty-e">🔍</div><div class="empty-t">לא נמצאו תוצאות</div></div>';
+  }
+}
+function filterExplore(v) { exploreQ = v; renderExplore(); }
+function toggleChapter(id) {
+  const el1 = document.getElementById('csubs-'+id);
+  if (el1) el1.classList.toggle('open');
+  const el2 = document.getElementById('chev-'+id);
+  if (el2) el2.classList.toggle('open');
+}
+
+function ringHTML(pct, color) {
+  const r = 14, circ = 2 * Math.PI * r, dash = ((pct||0) / 100) * circ;
+  return `<svg class="ch-ring" viewBox="0 0 36 36">
+    <circle cx="18" cy="18" r="${r}" fill="none" stroke="#E5E5EA" stroke-width="3"/>
+    <circle cx="18" cy="18" r="${r}" fill="none" stroke="${color}" stroke-width="3"
+      stroke-dasharray="${dash} ${circ}" stroke-linecap="round" transform="rotate(-90 18 18)"/>
+    <text x="18" y="22" text-anchor="middle" font-size="9" font-weight="700" fill="${color}">${pct||0}%</text>
+  </svg>`;
 }
 
 // ============================================================
@@ -943,12 +978,12 @@ function sm2(card, grade) {
 
 async function initFlashcards() {
   let data = DB.get('flashcards');
-  if (!data || data.version !== 8) {
+  if (!data || data.version !== 9) {
     try {
       const res = await fetch('data/flashcards_generated.json');
       const genData = await res.json();
       
-      data = { version: 8, decks: [] };
+      data = { version: 9, decks: [] };
       if (SYLLABUS && SYLLABUS.areas) {
         for (const area of SYLLABUS.areas) {
           for (const ch of area.chapters) {
