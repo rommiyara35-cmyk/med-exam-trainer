@@ -891,6 +891,13 @@ function startChapterPractice(chId, areaId) {
   startQuizSession(qs, { id: 'ch_'+chId, title: 'תרגול פרק', xp: 15 });
 }
 
+function startLessonById(id) {
+  const l = LESSONS.find(x => x.id === id);
+  if (l) {
+    startLesson(l, { id: 'lesson_' + l.chapterId, title: l.title, xp: 30 });
+  }
+}
+
 function startChapterLesson(chId) {
   haptic();
   const lesson = LESSONS.find(l => l.chapterId === chId);
