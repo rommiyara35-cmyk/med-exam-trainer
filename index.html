@@ -1148,6 +1148,7 @@ let TOTAL_ERRORS = 0;
 function buildGameChallenges(lesson) {
   const teachPhase = [];
   const practicePhase = [];
+  const taughtConcepts = new Set();
   
   const cards = lesson.cards || [];
   
@@ -1158,6 +1159,7 @@ function buildGameChallenges(lesson) {
     if (!text) continue;
     
     // TEACH phase
+    taughtConcepts.add(card.title.trim().toLowerCase());
     teachPhase.push({
       type: 'TEACH',
       title: card.title,
@@ -1196,7 +1198,32 @@ function buildGameChallenges(lesson) {
   ids.forEach(id => {
     const q = QUESTIONS.find(x => x.id === id);
     if (q) {
-      practicePhase.push({ type: 'TAP_CORRECT', text: q.question, options: q.options, answerIndex: q.correctIndex, reteach: q.explanation, conceptTitle: q.tags?.[0] || 'מושג כללי' });
+      const conceptName = (q.tags && q.tags.length > 0) ? q.tags[0] : 'מושג נוסף';
+      const conceptKey = conceptName.trim().toLowerCase();
+      
+      // ENFORCE THE DEPENDENCY RULE:
+      // If the question tests an untaught concept, auto-generate a TEACH screen for it!
+      if (!taughtConcepts.has(conceptKey)) {
+        let cleanExp = (q.explanation || '').split('.')[0] + '.';
+        let teachText = q.options[q.correctIndex] + ' – ' + cleanExp;
+        
+        teachPhase.push({
+          type: 'TEACH',
+          title: conceptName,
+          text: teachText,
+          reteach: teachText
+        });
+        taughtConcepts.add(conceptKey);
+      }
+      
+      practicePhase.push({ 
+        type: 'TAP_CORRECT', 
+        text: q.question, 
+        options: q.options, 
+        answerIndex: q.correctIndex, 
+        reteach: q.explanation, 
+        conceptTitle: conceptName 
+      });
     }
   });
 
