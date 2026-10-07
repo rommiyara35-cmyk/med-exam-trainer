@@ -11092,5 +11092,171 @@
     "subtopicId": "cell-biology-ch-13-transport-into-the-cell-from-the-plasma-membrane-endocytosis",
     "chapterId": "cell-biology-ch-13",
     "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 1,
+    "question": "מהו התפקיד העיקרי של האנזימים הליזוזומליים?",
+    "options": [
+      "פירוק של מקרומולקולות למרכיביהן הבסיסיים",
+      "סינתזת חלבונים חדשים",
+      "העברת יונים דרך ממברנת התא",
+      "ייצור ATP במיטוכונדריה"
+    ],
+    "correctIndex": 0,
+    "explanation": "האנזימים הליזוזומליים הם הידרולאזות חומציות שמפרקות חלבונים, ליפידים, נוקלאידים ופוליסכרידים למרכיבים קטנים יותר לשימוש מטבולי.",
+    "tags": [
+      "ליזוזום",
+      "הידרולאזות"
+    ],
+    "id": "q_cell-biology-ch-13-the-degradation-and-recycling-of-macromolecules-in-lysosomes_1_1791363883",
+    "subtopicId": "cell-biology-ch-13-the-degradation-and-recycling-of-macromolecules-in-lysosomes",
+    "chapterId": "cell-biology-ch-13",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 2,
+    "question": "איזו סדרת אירועים מתארת נכון את המסלול של חומר חיצוני שנקלט בתא באמצעות אנדוציטוזה עד לפירוקו בליזוזום?",
+    "options": [
+      "קיבוע לקולטור על פני הממברנה → פוספורילציה של קולטור → פגיעה בממברנה → פיזור במיטוכונדריה",
+      "קיבוע לקולטור → היווצרות פוקטולית → מיזוג עם אנדוסום → מיזוג עם ליזוזום → פגיעה של חומצות הליזוזום",
+      "קיבוע לקולטור → היווצרות פוקטולית → מיזוג עם ליזוזום ישירות → פירוק המקרומולקולה",
+      "קיבוע לקולטור → פוספורילציה → הובלה דרך Golgi → פיזור בליזוזום"
+    ],
+    "correctIndex": 2,
+    "explanation": "החומר נקשר לקולטור, נלקח פנימה בפוקטולית (endocytic vesicle), מתמזג ישירות עם ליזוזום (או דרך early endosome) והחומצות הליזוזומליות מפרקות אותו.",
+    "tags": [
+      "אנדוציטוזה",
+      "ליזוזום"
+    ],
+    "id": "q_cell-biology-ch-13-the-degradation-and-recycling-of-macromolecules-in-lysosomes_2_1791363883",
+    "subtopicId": "cell-biology-ch-13-the-degradation-and-recycling-of-macromolecules-in-lysosomes",
+    "chapterId": "cell-biology-ch-13",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 2,
+    "question": "איזה מהבאים נכון לגבי הקשר בין מאקרו-אוטופגיה למחזור הליזוזומי?",
+    "options": [
+      "מאקרו-אוטופגיה מסירה חלבונים ישירות למרכז התא ללא צורך בליזוזום",
+      "במהלך מאקרו-אוטופגיה, האוטופאגוס מתמזג עם ליזוזום ליצירת אוטוליזוזום שבו מתרחשת הפירוק",
+      "המאקרו-אוטופגיה מתרחשת רק במיקרו-אורגנלות אחרות כמו פרוקריוטים",
+      "הפירוק בליזוזום מתבצע לפני היווצרות האוטופאגוס"
+    ],
+    "correctIndex": 1,
+    "explanation": "במאקרו-אוטופגיה, חלקי ציטופלזמה מוקפים בממברנה ליצירת אוטופאגוס, שמאוחר יותר מתמזג עם ליזוזום ליצירת אוטוליזוזום שבו מתבצע הפירוק של הרכיבים.",
+    "tags": [
+      "מאקרו-אוטופגיה",
+      "אוטוליזוזום"
+    ],
+    "id": "q_cell-biology-ch-13-the-degradation-and-recycling-of-macromolecules-in-lysosomes_3_1791363883",
+    "subtopicId": "cell-biology-ch-13-the-degradation-and-recycling-of-macromolecules-in-lysosomes",
+    "chapterId": "cell-biology-ch-13",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 3,
+    "question": "חולה בן 12 עם קרדיומיופתיה, חוסר פעילות של LAMP2 וצבירת וקומות אוטופגיים בתאי שריר. איזו תהליך ליזוזומי נפגע בעיקר במצב זה?",
+    "options": [
+      "פירוק חלבונים באמצעות חומצת חלבון (proteasome)",
+      "הזרמת חומצות שומן למיטוכונדריה ל-β‑oxidation",
+      "זרימת מאקרו‑אוטופגיה (autophagic flux) עד לליזוזום",
+      "העברת גלוקוז דרך GLUT4 לממברנת התא"
+    ],
+    "correctIndex": 2,
+    "explanation": "הפגם ב‑LAMP2 פוגע ב‑fusion של האוטופאגוס עם הליזוזום, ולכן זרימת המאקרו‑אוטופגיה (autophagic flux) נפסקת, מה שמוביל לצבירת וקומות בתאים. שאר האפשרויות אינן קשורות ישירות ל‑LAMP2 או לליזוזום.",
+    "tags": [
+      "LAMP2",
+      "מאקרו‑אוטופגיה",
+      "ליזוזום"
+    ],
+    "id": "q_cell-biology-ch-13-the-degradation-and-recycling-of-macromolecules-in-lysosomes_4_1791363883",
+    "subtopicId": "cell-biology-ch-13-the-degradation-and-recycling-of-macromolecules-in-lysosomes",
+    "chapterId": "cell-biology-ch-13",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 1,
+    "question": "מהו הסדר הנכון של שלבי המיטוזה?",
+    "options": [
+      "פרופאזה, מטאפזה, אנאפזה, טלופזה",
+      "אנאפזה, פרופאזה, מטאפזה, טלופזה",
+      "טלופזה, אנאפזה, מטאפזה, פרופאזה",
+      "מטאפזה, פרופאזה, אנאפזה, טלופזה"
+    ],
+    "correctIndex": 0,
+    "explanation": "הסדר הקלאסי של מיטוזה הוא פרופאזה → מטאפזה → אנאפזה → טלופזה, ולאחריה ציטוקינזה.",
+    "tags": [
+      "שלבי מיטוזה"
+    ],
+    "id": "q_cell-biology-ch-17-mitosis_1_1791364660",
+    "subtopicId": "cell-biology-ch-17-mitosis",
+    "chapterId": "cell-biology-ch-17",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 2,
+    "question": "איזה מהבאים מתאר את תפקידו של Mad2 במנגנון ה‑Spindle Assembly Checkpoint?",
+    "options": [
+      "מעכב את פעילות APC/C עד שכל הכרומוזומים מחוברים נכון לקוטלי המיקרוטובול",
+      "מפעיל את Cdk1 על‑ידי פוספורילציה של Cyclin B",
+      "מזרז את פירוק ה‑Cohesin לפני אנאפזה",
+      "גורם לשחרור מוקדם של Separase",
+      ""
+    ],
+    "correctIndex": 0,
+    "explanation": "Mad2 הוא חלבון מפתח במנגנון ה‑SAC; הוא קושר את Cdc20 ומונע את הפעלת APC/C עד שהקוטלים מקושרים לכל הכרומוזומים.",
+    "tags": [
+      "Spindle Assembly Checkpoint",
+      "Mad2"
+    ],
+    "id": "q_cell-biology-ch-17-mitosis_2_1791364660",
+    "subtopicId": "cell-biology-ch-17-mitosis",
+    "chapterId": "cell-biology-ch-17",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 2,
+    "question": "פירוק של Cyclin B/Cdk1 מוביל לאיזו תהליך מרכזי במיטוזה?",
+    "options": [
+      "כניסת התא למצב G1 והתחלת ציטוקינזה",
+      "הפעלה של APC/C וכניסה לשלב G2",
+      "הפעלה של phosphatase Cdc25 ותחילת פרופאזה",
+      "דיכוי פעילות ה‑Spindle Apparatus",
+      ""
+    ],
+    "correctIndex": 0,
+    "explanation": "פירוק של Cyclin B/Cdk1 (באמצעות APC/C‑mediated ubiquitination) משבית את Cdk1, מה שמאפשר יציאה משלב המיטוזה, ריבוי קרום גרעיני והתחלת ציטוקינזה, ובכך מחזיר את התא למצב G1.",
+    "tags": [
+      "Cyclin B",
+      "Cdk1",
+      "Exit from Mitosis"
+    ],
+    "id": "q_cell-biology-ch-17-mitosis_3_1791364660",
+    "subtopicId": "cell-biology-ch-17-mitosis",
+    "chapterId": "cell-biology-ch-17",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 3,
+    "question": "חולה בן 45 מתלונן על גידול במעי הגס. ניתוח של תאי הגידול מגלה מוטציה ב‑APC שמונעת את פעילותו של ה‑β‑catenin ומפחיתה את ה‑Spindle Checkpoint. איזו מהתוצאות הבאות צפויה כתוצאה ישירה של המוטציה על חלוקת התא?",
+    "options": [
+      "הגברת תדירות של אנאפזה עם חוסר הפרדה של כרומוזומים (aneuploidy)",
+      "הפחתת קצב החלוקה של תאים עקב עצירה ב‑G1",
+      "הפעלה מופרזת של Cyclin D ו‑CDK4/6",
+      "הגברת קיבוע של קו‑ה‑טור של DNA במהלך S‑phase",
+      ""
+    ],
+    "correctIndex": 0,
+    "explanation": "מוטציה ב‑APC משבית את ה‑Spindle Assembly Checkpoint, מה שמוביל לכניסה לאנאפזה לפני שכל הכרומוזומים מחוברים כראוי, ובכך גורמת ל‑aneuploidy – תכונה נפוצה בגידולים קודקודיים.",
+    "tags": [
+      "APC",
+      "Spindle Checkpoint",
+      "Aneuploidy",
+      "גידול"
+    ],
+    "id": "q_cell-biology-ch-17-mitosis_4_1791364660",
+    "subtopicId": "cell-biology-ch-17-mitosis",
+    "chapterId": "cell-biology-ch-17",
+    "areaId": "cell-biology"
   }
 ]

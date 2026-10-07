@@ -1481,18 +1481,61 @@ function completeSession(total, correct, mission) {
 
   const el = document.getElementById('overlay');
   el.style.display = 'flex';
-  el.innerHTML = `<div class="complete">
-    <div class="complete-emoji">${emoji}</div>
-    <div class="c-title">${title}</div>
-    <div class="c-sub" style="margin-bottom: 24px; color: var(--label2);">סיימת סשן לימוד בהצלחה</div>
-    <div class="c-stats">
-      <div class="c-stat"><div class="c-val">${correct}/${total}</div><div class="c-lbl">נכון</div></div>
-      <div class="c-stat"><div class="c-val">${acc}%</div><div class="c-lbl">דיוק</div></div>
-      <div class="c-stat"><div class="c-val" style="color:var(--warning)">+${xpEarned}</div><div class="c-lbl">XP</div></div>
-    </div>
-    <button class="btn btn-accent" style="margin-bottom:12px; width:100%" onclick="closeOverlay()">חזרה לתרגול</button>
-    <button class="btn btn-ghost" style="width:100%" onclick="switchTab('progress',document.querySelector('[data-tab=progress]'));closeOverlay()">ראה התקדמות →</button>
-  </div>`;
+  el.innerHTML = '';
+  
+  const comp = document.createElement('div');
+  comp.className = 'complete';
+  
+  const em = document.createElement('div');
+  em.className = 'complete-emoji';
+  em.textContent = emoji;
+  comp.appendChild(em);
+  
+  const ti = document.createElement('div');
+  ti.className = 'c-title';
+  ti.textContent = title;
+  comp.appendChild(ti);
+  
+  const su = document.createElement('div');
+  su.className = 'c-sub';
+  su.style.marginBottom = '24px';
+  su.style.color = 'var(--label2)';
+  su.textContent = 'סיימת סשן לימוד בהצלחה';
+  comp.appendChild(su);
+  
+  const st = document.createElement('div');
+  st.className = 'c-stats';
+  
+  const st1 = document.createElement('div'); st1.className = 'c-stat';
+  st1.innerHTML = '<div class="c-val">' + correct + '/' + total + '</div><div class="c-lbl">נכון</div>';
+  st.appendChild(st1);
+  
+  const st2 = document.createElement('div'); st2.className = 'c-stat';
+  st2.innerHTML = '<div class="c-val">' + acc + '%</div><div class="c-lbl">דיוק</div>';
+  st.appendChild(st2);
+  
+  const st3 = document.createElement('div'); st3.className = 'c-stat';
+  st3.innerHTML = '<div class="c-val" style="color:var(--warning)">+' + xpEarned + '</div><div class="c-lbl">XP</div>';
+  st.appendChild(st3);
+  
+  comp.appendChild(st);
+  
+  const b1 = document.createElement('button');
+  b1.className = 'btn btn-accent';
+  b1.style.marginBottom = '12px';
+  b1.style.width = '100%';
+  b1.textContent = 'חזרה לתרגול';
+  b1.onclick = function() { closeOverlay(); };
+  comp.appendChild(b1);
+  
+  const b2 = document.createElement('button');
+  b2.className = 'btn btn-ghost';
+  b2.style.width = '100%';
+  b2.textContent = 'ראה התקדמות →';
+  b2.onclick = function() { switchTab('progress', document.querySelector('[data-tab=progress]')); closeOverlay(); };
+  comp.appendChild(b2);
+  
+  el.appendChild(comp);
 }
 
 // ============================================================
