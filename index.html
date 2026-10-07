@@ -330,53 +330,1385 @@
 
   <!-- ====== PROGRESS ====== -->
   <div class="screen" id="screen-progress">
-    <div class="large-title">התקדמות 📈</div>
-    <div class="pg-chart">
-      <div class="pg-bar" style="height:60%"></div>
-      <div class="pg-bar" style="height:30%"></div>
-      <div class="pg-bar" style="height:80%"></div>
-      <div class="pg-bar" style="height:40%"></div>
-      <div class="pg-bar" style="height:90%"></div>
-      <div class="pg-bar" style="height:50%"></div>
-      <div class="pg-bar" style="height:70%"></div>
+    <div class="large-title">התקדמות 📊</div>
+    <div class="prog-stats">
+      <div class="stat-card"><div class="stat-num" id="s-mastered" style="color:var(--success)">0</div><div class="stat-lbl">שולטים</div></div>
+      <div class="stat-card"><div class="stat-num" id="s-learning" style="color:var(--warning)">0</div><div class="stat-lbl">בלמידה</div></div>
+      <div class="stat-card"><div class="stat-num" id="s-unseen" style="color:var(--label4)">0</div><div class="stat-lbl">לא נראה</div></div>
     </div>
-    <div id="progress-content" style="padding-bottom:120px"></div>
+    <div id="mastery-map"></div>
   </div>
 
+  
   <!-- ====== FLASHCARDS ====== -->
   <div class="screen" id="screen-flashcards">
+    <div class="large-title">כרטיסיות 🃏</div>
+    <div id="flashcards-content" style="padding: 16px"></div>
   </div>
 
   <!-- ====== PROFILE ====== -->
   <div class="screen" id="screen-profile">
-    <div class="large-title">פרופיל 👤</div>
+    <div class="large-title">פרופיל 🎓</div>
     <div class="settings-sec">
-      <div class="section-title">הגדרות מתקדמות</div>
+      <div class="section-title">סטטיסטיקות</div>
       <div class="settings-card">
-        <div class="setting-row" onclick="document.getElementById(\'theme-toggle\').classList.toggle(\'on\')">
-          <div class="s-label">מצב כהה</div>
-          <div class="ios-toggle" id="theme-toggle"></div>
-        </div>
-        <div class="setting-row" onclick="exportData()">
-          <div class="s-label">ייצוא נתונים 📥</div>
-          <div class="s-val">גיבוי</div>
-        </div>
-        <div class="setting-row" style="color:var(--danger)" onclick="resetData()">
-          <div class="s-label">איפוס נתונים 🗑️</div>
+        <div class="setting-row"><span class="s-label">🔥 רצף ימים</span><span class="s-val" id="p-streak">0</span></div>
+        <div class="setting-row"><span class="s-label">⭐ XP כולל</span><span class="s-val" id="p-xp">0</span></div>
+        <div class="setting-row"><span class="s-label">✅ שאלות שנענו</span><span class="s-val" id="p-ans">0</span></div>
+        <div class="setting-row"><span class="s-label">🎯 דיוק ממוצע</span><span class="s-val" id="p-acc">—</span></div>
+        <div class="setting-row"><span class="s-label">📚 נושאי משנה שנראו</span><span class="s-val" id="p-seen">0 / 175</span></div>
+      </div>
+    </div>
+    <div class="settings-sec">
+      <div class="section-title">הגדרות</div>
+      <div class="settings-card">
+        <div class="setting-row" onclick="toggleSetting('sounds')"><span class="s-label">🔊 צלילי משוב</span><div class="ios-toggle" id="tog-sounds"></div></div>
+        <div class="setting-row" onclick="toggleSetting('haptics')"><span class="s-label">📳 רטט</span><div class="ios-toggle" id="tog-haptics"></div></div>
+      </div>
+    </div>
+    <div class="settings-sec">
+      <div class="section-title">נתונים</div>
+      <div class="settings-card">
+        <div class="setting-row" onclick="exportData()"><span class="s-label">📤 ייצוא גיבוי</span><span class="s-val">›</span></div>
+        <div class="setting-row" onclick="resetConfirm()"><span class="s-label" style="color:var(--danger)">🗑️ איפוס נתונים</span><span class="s-val">›</span></div>
+      </div>
+    </div>
+    <div class="settings-sec">
+      <div class="section-title">ספרי לימוד</div>
+      <div class="settings-card">
+        <div class="setting-row" style="cursor:default;flex-direction:column;align-items:flex-start;gap:6px" id="books-list">
+          <span class="s-val">טוען...</span>
         </div>
       </div>
     </div>
+    <div style="text-align:center;padding:8px 16px 24px;color:var(--label4);font-size:13px">מד-ידע v2.0 · מבחן הידע הרפואי 2024-25</div>
   </div>
 
   <!-- TAB BAR -->
-  <div class="tab-bar">
-    <div class="tab-item active" onclick="switchTab(\'home\',this)" data-tab="home"><div class="tab-icon">🏠</div><div class="tab-label">בית</div></div>
-    <div class="tab-item" onclick="switchTab(\'explore\',this)" data-tab="explore"><div class="tab-icon">🗺️</div><div class="tab-label">גלה</div></div>
-    <div class="tab-item" onclick="switchTab(\'progress\',this)" data-tab="progress"><div class="tab-icon">📈</div><div class="tab-label">התקדמות</div></div>
-    <div class="tab-item" onclick="switchTab(\'flashcards\',this)" data-tab="flashcards"><div class="tab-icon">🃏</div><div class="tab-label">כרטיסיות</div></div>
-    <div class="tab-item" onclick="switchTab(\'profile\',this)" data-tab="profile"><div class="tab-icon">👤</div><div class="tab-label">פרופיל</div></div>
+  <div id="tab-bar">
+    <div class="tab-item active" onclick="switchTab('home',this)" data-tab="home"><div class="tab-icon">🏠</div><div class="tab-label">בית</div></div>
+    <div class="tab-item" onclick="switchTab('explore',this)" data-tab="explore"><div class="tab-icon">🗺️</div><div class="tab-label">גלה</div></div>
+    <div class="tab-item" onclick="switchTab('progress',this)" data-tab="progress"><div class="tab-icon">📊</div><div class="tab-label">התקדמות</div></div>
+        <div class="tab-item" onclick="switchTab('flashcards',this)" data-tab="flashcards"><div class="tab-icon">🃏</div><div class="tab-label">כרטיסיות</div></div>
+    <div class="tab-item" onclick="switchTab('profile',this)" data-tab="profile"><div class="tab-icon">👤</div><div class="tab-label">פרופיל</div></div>
   </div>
 
+  <!-- OVERLAY -->
+  <div id="overlay" style="display:none"></div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+</div>
+
 <script>
+// ============================================================
+// DATA
+// ============================================================
+let SYLLABUS = null;
+let QUESTIONS = [];
+let LESSONS = [];
+let OFFICIAL_RAW = null;
+
+async function loadData() {
+  try {
+    const [syl, qs, ls, raw] = await Promise.all([
+      fetch('data/syllabus.json').then(r => r.json()),
+      fetch('data/questions.json').then(r => r.json()).catch(() => []),
+      fetch('data/lessons.json').then(r => r.json()).catch(() => []),
+      fetch('data/official-syllabus.json').then(r => r.json()).catch(() => null),
+    ]);
+    SYLLABUS = syl;
+    QUESTIONS = Array.isArray(qs) ? qs : [];
+    LESSONS = Array.isArray(ls) ? ls : [];
+    OFFICIAL_RAW = raw;
+  } catch(e) {
+    console.error('Data load error', e);
+    showToast('שגיאה בטעינת נתונים');
+  }
+}
+
+// ============================================================
+// PERSISTENCE
+// ============================================================
+const NS = 'medexam2_';
+const DB = {
+  get(k, d = null) { try { return JSON.parse(localStorage.getItem(NS+k)) ?? d; } catch { return d; } },
+  set(k, v) { try { localStorage.setItem(NS+k, JSON.stringify(v)); } catch {} }
+};
+
+function getState() {
+  const defState = {
+    streak: 0, lastDate: null, xpToday: 0, xpTotal: 0,
+    totalAnswered: 0, totalCorrect: 0,
+    missionsCompleted: [],
+    mastery: {},
+    settings: { sounds: true, haptics: true }
+  };
+  const saved = DB.get('state');
+  if (!saved) return defState;
+  return { ...defState, ...saved, settings: { ...defState.settings, ...(saved.settings || {}) } };
+}
+function saveState(s) { DB.set('state', s); }
+
+// ============================================================
+// STREAK
+// ============================================================
+function todayStr() { return new Date().toISOString().split('T')[0]; }
+function yesterdayStr() { return new Date(Date.now()-86400000).toISOString().split('T')[0]; }
+
+function touchStreak(state) {
+  const t = todayStr();
+  if (state.lastDate === t) return state;
+  if (state.lastDate === yesterdayStr()) state.streak++;
+  else state.streak = 1;
+  state.lastDate = t;
+  state.xpToday = 0;
+  state.missionsCompleted = [];
+  return state;
+}
+
+// ============================================================
+// XP
+// ============================================================
+const XP_CORRECT = 10, XP_CARD = 5, XP_GOAL = 100;
+function addXP(state, n) {
+  state.xpToday = Math.min(state.xpToday + n, XP_GOAL * 3);
+  state.xpTotal += n;
+  return state;
+}
+
+// ============================================================
+// MASTERY / SPACED REPETITION
+// ============================================================
+const MASTERY_CLS = ['unseen','learning','familiar','mastered'];
+
+function getMastery(state, subId) {
+  return state.mastery[subId] || { level: 0, correct: 0, total: 0, nextReview: null };
+}
+
+function updateMastery(state, subId, correct) {
+  const m = getMastery(state, subId);
+  m.total++;
+  if (correct) m.correct++;
+  const acc = m.total > 0 ? m.correct / m.total : 0;
+  if (m.total >= 5 && acc >= 0.90) m.level = 3;
+  else if (m.total >= 3 && acc >= 0.70) m.level = 2;
+  else m.level = Math.max(1, m.level);
+  const days = [1,1,3,7][Math.min(m.level, 3)];
+  m.nextReview = new Date(Date.now() + (correct ? days : 1) * 86400000).toISOString().split('T')[0];
+  state.mastery[subId] = m;
+  return state;
+}
+
+function getAllSubtopics() {
+  if (!SYLLABUS) return [];
+  const out = [];
+  for (const area of SYLLABUS.areas)
+    for (const ch of area.chapters)
+      for (const sub of ch.subtopics)
+        out.push({ ...sub, chapterId: ch.id, areaId: area.id });
+  return out;
+}
+
+function getWeakSubtopics(state, limit = 6) {
+  const t = todayStr();
+  return getAllSubtopics()
+    .map(s => ({ ...s, m: getMastery(state, s.id) }))
+    .filter(s => s.m.level < 3)
+    .sort((a, b) => {
+      if (a.m.level !== b.m.level) return a.m.level - b.m.level;
+      const ad = !a.m.nextReview || a.m.nextReview <= t;
+      const bd = !b.m.nextReview || b.m.nextReview <= t;
+      if (ad && !bd) return -1;
+      if (!ad && bd) return 1;
+      return (a.m.correct / Math.max(a.m.total, 1)) - (b.m.correct / Math.max(b.m.total, 1));
+    })
+    .slice(0, limit);
+}
+
+// ============================================================
+// MISSIONS
+// ============================================================
+function buildMissions(state) {
+  const missions = [];
+
+  // 1. New lesson
+  const newLesson = LESSONS.find(l => {
+    const chSubs = getAllSubtopics().filter(s => s.chapterId === l.chapterId);
+    return chSubs.some(s => getMastery(state, s.id).level === 0);
+  }) || LESSONS[0];
+  missions.push({
+    id: 'learn_new', type: 'learn', icon: '📚',
+    title: 'שיעור חדש',
+    meta: newLesson ? `${newLesson.title} • ~${newLesson.estimatedMinutes} דק'` : 'כל השיעורים הושלמו!',
+    lessonId: newLesson?.id, xp: 30,
+  });
+
+  // 2. Weak review
+  const weakQs = QUESTIONS.filter(q => getMastery(state, q.subtopicId).level < 2)
+    .sort(() => Math.random() - .5).slice(0, 5);
+  missions.push({
+    id: 'review_weak', type: 'review', icon: '🎯',
+    title: 'חיזוק נקודות חולשה',
+    meta: `${weakQs.length} שאלות · נושאים חלשים`,
+    questionIds: weakQs.map(q => q.id), xp: 25,
+  });
+
+  // 3. Area-of-day
+  if (SYLLABUS) {
+    const areaIdx = new Date().getDay() % SYLLABUS.areas.length;
+    const area = SYLLABUS.areas[areaIdx];
+    const aQs = QUESTIONS.filter(q => q.areaId === area.id).sort(() => Math.random() - .5).slice(0, 5);
+    missions.push({
+      id: 'area_daily', type: 'practice', icon: area.icon,
+      title: `תרגול: ${area.title}`,
+      meta: `${aQs.length} שאלות · ${area.titleEn}`,
+      questionIds: aQs.map(q => q.id), xp: 20,
+    });
+  }
+  return missions;
+}
+
+// ============================================================
+// NAVIGATION
+// ============================================================
+function switchTab(name, el) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.tab-item').forEach(t => t.classList.remove('active'));
+  document.getElementById('screen-' + name).classList.add('active');
+  el.classList.add('active');
+  if (name === 'progress') renderProgress();
+  if (name === 'explore') renderExplore();
+  if (name === 'profile') renderProfile();
+  if (name === 'flashcards') renderFlashcards();
+}
+
+// ============================================================
+// HOME
+// ============================================================
+function renderHome() {
+  let state = getState();
+  state = touchStreak(state);
+  saveState(state);
+
+  const h = new Date().getHours();
+  document.getElementById('greeting').textContent = h<12?'בוקר טוב ☀️':h<18?'צהריים טובים 🌤️':'ערב טוב 🌙';
+  const DAYS=['ראשון','שני','שלישי','רביעי','חמישי','שישי','שבת'];
+  const MONTHS=['ינואר','פברואר','מרץ','אפריל','מאי','יוני','יולי','אוגוסט','ספטמבר','אוקטובר','נובמבר','דצמבר'];
+  const d = new Date();
+  document.getElementById('greeting-date').textContent = `יום ${DAYS[d.getDay()]}, ${d.getDate()} ${MONTHS[d.getMonth()]}`;
+  document.getElementById('streak-num').textContent = state.streak;
+
+  const pct = Math.min((state.xpToday / XP_GOAL) * 100, 100);
+  document.getElementById('xp-display').textContent = `${state.xpToday} / ${XP_GOAL} XP`;
+  document.getElementById('xp-fill').style.width = pct + '%';
+
+  let nextLesson = null;
+  let nextAreaColor = 'var(--accent)';
+  
+  if (window.SYLLABUS) {
+    // Determine last progressing area
+    let lastAreaId = null;
+    const completedLessons = state.missionsCompleted.filter(m => m.startsWith('lesson_'));
+    if (completedLessons.length > 0) {
+      const lastCompleted = completedLessons[completedLessons.length - 1];
+      const chId = lastCompleted.replace('lesson_', '');
+      const l = LESSONS.find(x => x.chapterId === chId);
+      if (l) lastAreaId = l.areaId;
+    }
+    
+    // Sort areas so lastAreaId is checked first
+    const sortedAreas = [...window.SYLLABUS.areas].sort((a, b) => {
+      if (a.id === lastAreaId) return -1;
+      if (b.id === lastAreaId) return 1;
+      return 0;
+    });
+
+    for (const area of sortedAreas) {
+      for (const ch of area.chapters) {
+        if (!state.missionsCompleted.includes(`lesson_${ch.id}`)) {
+          const l = LESSONS.find(x => x.chapterId === ch.id);
+          if (l && !nextLesson) {
+             nextLesson = l;
+             nextAreaColor = area.color;
+          }
+          break;
+        }
+      }
+      if (nextLesson) break;
+    }
+  }
+
+  let html = `<div style="padding: 20px 16px; display:flex; flex-direction:column; gap:16px;">`;
+  
+  html += `
+    <button class="btn" style="height: 70px; font-size: 18px; border-radius: 20px; background: var(--surface2); color: var(--label); display: flex; align-items: center; justify-content: center; gap: 12px; box-shadow: var(--shadow);" onclick="startGlobalPractice()">
+      <span style="font-size: 24px;">🏋️</span>
+      <div style="text-align: right; flex: 1;">
+        <div style="font-weight: 700;">תרגול</div>
+        <div style="font-size: 13px; color: var(--label4); font-weight: 500;">שאלות מתוך החומר שנלמד</div>
+      </div>
+    </button>
+  `;
+
+  if (nextLesson) {
+    html += `
+      <button class="btn" style="height: 70px; font-size: 18px; border-radius: 20px; background: ${nextAreaColor}; color: #fff; display: flex; align-items: center; justify-content: center; gap: 12px; box-shadow: 0 4px 12px ${nextAreaColor}66; margin-top: 10px;" onclick="startLessonById('${nextLesson.id}')">
+        <span style="font-size: 24px;">🚀</span>
+        <div style="text-align: right; flex: 1;">
+          <div style="font-weight: 700;">המשך למידה</div>
+          <div style="font-size: 13px; opacity: 0.9; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 200px;">${nextLesson.title}</div>
+        </div>
+      </button>
+    `;
+  } else {
+    html += `
+      <div style="text-align:center; color: var(--success); font-weight: 600; padding: 20px; background: rgba(52,199,89,0.1); border-radius: 20px; margin-top: 10px;">
+        🎉 סיימת את כל השיעורים במסלול!
+      </div>
+    `;
+  }
+  html += `</div>`;
+  
+  document.getElementById('home-actions-container').innerHTML = html;
+}
+// ============================================================
+// EXPLORE
+// ============================================================
+let exploreQ = '';
+function renderExplore() {
+  if (!window.SYLLABUS) return;
+  const state = getState();
+  const q = (window.exploreQ || '').toLowerCase().trim();
+  let html = '';
+  for (const area of window.SYLLABUS.areas) {
+    const filteredChs = area.chapters.filter(ch => {
+      if (!q) return true;
+      if (ch.title.includes(q) || ch.titleEn.toLowerCase().includes(q)) return true;
+      return ch.subtopics.some(s => s.title.includes(q) || s.titleEn.toLowerCase().includes(q));
+    });
+    if (!filteredChs.length) continue;
+    html += `<div class="explore-area">
+      <div class="ea-hdr">
+        <div class="area-dot" style="background:${area.color}"></div>
+        <div class="area-name-txt">${area.icon} ${area.title}</div>
+      </div>`;
+    
+    let isPrevLessonCompleted = true; // First chapter is unlocked
+    for (const ch of area.chapters) {
+      if (!filteredChs.includes(ch)) {
+        // Still need to track progression even if filtered out!
+        if (state.missionsCompleted.includes(`lesson_${ch.id}`)) {
+          isPrevLessonCompleted = true;
+        } else {
+          isPrevLessonCompleted = false;
+        }
+        continue;
+      }
+
+      const total = ch.subtopics.length;
+      const mastered = ch.subtopics.filter(s => getMastery(state, s.id).level >= 2).length;
+      const pct = Math.round((mastered / total) * 100);
+      
+      const isCompleted = state.missionsCompleted.includes(`lesson_${ch.id}`);
+      const isUnlocked = isPrevLessonCompleted || isCompleted;
+      
+      const opacity = isUnlocked ? "1" : "0.5";
+      const lockIcon = isUnlocked ? "" : "🔒 ";
+      const pointerEvents = isUnlocked ? "auto" : "none";
+
+      html += `<div class="chapter-card" style="opacity: ${opacity}; pointer-events: ${pointerEvents}">
+        <div class="ch-hdr" onclick="toggleChapter('${ch.id}')">
+          <div class="ch-info">
+            <div class="ch-name">${lockIcon}${ch.title}</div>
+            <div class="ch-meta">${ch.titleEn} · ${total} נושאי משנה</div>
+          </div>
+          ${ringHTML(pct, area.color)}
+          <span class="ch-chev" id="chev-${ch.id}">▼</span>
+        </div>
+        <div class="ch-subs" id="csubs-${ch.id}">
+          ${ch.subtopics.map(s => {
+            const m = getMastery(state, s.id);
+            const cls = MASTERY_CLS[m.level];
+            return `<span class="sub-pill ${cls}" onclick="practiceSubtopic('${s.id}','${ch.id}','${area.id}')">
+              <span class="sub-dot"></span>${s.title}
+            </span>`;
+          }).join('')}
+          <div><span class="practice-btn" onclick="event.stopPropagation();startChapterPractice('${ch.id}','${area.id}')">📝 תרגל פרק זה</span></div>
+          <div><span class="practice-btn" style="background:rgba(52,199,89,.1);color:var(--success)" onclick="event.stopPropagation();startChapterLesson('${ch.id}')">📖 שיעור לפרק זה</span></div>
+        </div>
+      </div>`;
+      
+      isPrevLessonCompleted = isCompleted;
+    }
+    html += '</div>';
+  }
+  document.getElementById('explore-content').innerHTML = html || '<div class="empty"><div class="empty-e">🔍</div><div class="empty-t">לא נמצאו תוצאות</div></div>';
+}
+
+// ============================================================
+// PROGRESS
+// ============================================================
+function renderProgress() {
+  if (!SYLLABUS) return;
+  const state = getState();
+  let mastered = 0, learning = 0, unseen = 0;
+  for (const area of SYLLABUS.areas)
+    for (const ch of area.chapters)
+      for (const sub of ch.subtopics) {
+        const l = getMastery(state, sub.id).level;
+        if (l >= 3) mastered++;
+        else if (l >= 1) learning++;
+        else unseen++;
+      }
+  document.getElementById('s-mastered').textContent = mastered;
+  document.getElementById('s-learning').textContent = learning;
+  document.getElementById('s-unseen').textContent = unseen;
+
+  let html = '';
+  for (const area of SYLLABUS.areas) {
+    const subs = area.chapters.flatMap(c => c.subtopics);
+    const m = subs.filter(s => getMastery(state, s.id).level >= 3).length;
+    const pct = Math.round((m / subs.length) * 100);
+    html += `<div class="mastery-area">
+      <div class="ma-hdr" id="mahdr-${area.id}" onclick="toggleMasteryArea('${area.id}')">
+        <span class="ma-icon">${area.icon}</span>
+        <span class="ma-name">${area.title}</span>
+        <span class="ma-pct" style="color:${area.color}">${pct}%</span>
+        <span class="ma-ch" id="mach-${area.id}">▼</span>
+      </div>
+      <div class="ma-body" id="mabody-${area.id}">`;
+    for (const ch of area.chapters) {
+      html += `<div class="ch-row">
+        <div class="ch-row-name">${ch.title}</div>
+        <div class="pills-wrap">`;
+      for (const sub of ch.subtopics) {
+        const l = getMastery(state, sub.id).level;
+        html += `<span class="sub-pill ${MASTERY_CLS[l]}" onclick="practiceSubtopic('${sub.id}','${ch.id}','${area.id}')">
+          <span class="sub-dot"></span>${sub.title}
+        </span>`;
+      }
+      html += '</div></div>';
+    }
+    html += '</div></div>';
+  }
+  document.getElementById('mastery-map').innerHTML = html;
+}
+
+function toggleMasteryArea(id) {
+  const hdr = document.getElementById('mahdr-'+id);
+  const body = document.getElementById('mabody-'+id);
+  const ch = document.getElementById('mach-'+id);
+  const isOpen = body.classList.toggle('open');
+  ch.classList.toggle('open', isOpen);
+  hdr.classList.toggle('open-hdr', isOpen);
+}
+
+// ============================================================
+// PROFILE
+// ============================================================
+function renderProfile() {
+  const state = getState();
+  document.getElementById('p-streak').textContent = state.streak + ' ימים';
+  document.getElementById('p-xp').textContent = state.xpTotal.toLocaleString() + ' XP';
+  document.getElementById('p-ans').textContent = state.totalAnswered;
+  const acc = state.totalAnswered > 0 ? Math.round((state.totalCorrect/state.totalAnswered)*100) + '%' : '—';
+  document.getElementById('p-acc').textContent = acc;
+  const seen = Object.keys(state.mastery).length;
+  document.getElementById('p-seen').textContent = `${seen} / 175`;
+  ['sounds','haptics'].forEach(k => {
+    const el = document.getElementById('tog-'+k);
+    if (el) el.classList.toggle('on', !!state.settings?.[k]);
+  });
+  if (OFFICIAL_RAW?.books) {
+    document.getElementById('books-list').innerHTML = OFFICIAL_RAW.books.map(b =>
+      `<div style="font-size:14px;color:var(--label2);padding:4px 0;border-bottom:.5px solid var(--sep);line-height:1.4">
+        <strong>${b.title}</strong><br>
+        <span style="color:var(--label4)">${b.edition} · ${b.year_in_official_syllabus}</span>
+      </div>`
+    ).join('');
+  }
+}
+
+function toggleSetting(k) {
+  const state = getState();
+  if (!state.settings) state.settings = {};
+  state.settings[k] = !state.settings[k];
+  saveState(state);
+  renderProfile();
+  haptic();
+}
+
+// ============================================================
+// MISSION DISPATCH
+// ============================================================
+let CURRENT_MISSIONS = [];
+
+function startMissionById(id) {
+  const m = CURRENT_MISSIONS.find(x => x.id === id);
+  if (m) startMission(m);
+}
+
+function startMission(mission) {
+  haptic();
+  if (mission.lessonId) {
+    // Try exact ID first, then fallback to chapterId match
+    let l = LESSONS.find(x => x.id === mission.lessonId);
+    if (!l) {
+      // lessonId may be like "learn_new" – find first unstarted lesson
+      l = LESSONS.find(lesson => {
+        const chSubs = getAllSubtopics().filter(s => s.chapterId === lesson.chapterId);
+        return chSubs.some(s => getMastery(getState(), s.id).level === 0);
+      }) || LESSONS[0];
+    }
+    if (l) { startLesson(l, mission); return; }
+  }
+  if (mission.questionIds) {
+    const qs = mission.questionIds.map(id => QUESTIONS.find(q => q.id === id)).filter(Boolean);
+    if (qs.length) { startQuizSession(qs, mission); return; }
+    else { showToast('אין מספיק תוכן למשימה זו עדיין'); return; }
+  }
+  // Fallback: if this is a "learn_new" mission and we have lessons, just start the first one
+  if (mission.id === 'learn_new' && LESSONS.length > 0) { 
+    startLesson(LESSONS[0], mission); 
+    return; 
+  }
+  showToast('תוכן בהכנה — חסרים נתונים');
+}
+
+function startAreaPractice(areaId) {
+  haptic();
+  const qs = QUESTIONS.filter(q => q.areaId === areaId).sort(() => Math.random() - .5).slice(0, 6);
+  if (!qs.length) { showToast('אין שאלות לתחום זה עדיין'); return; }
+  const area = SYLLABUS?.areas.find(a => a.id === areaId);
+  startQuizSession(qs, { id: 'area_'+areaId, title: `תרגול: ${area?.title||areaId}`, xp: 20 });
+}
+
+function startChapterPractice(chId, areaId) {
+  haptic();
+  const qs = QUESTIONS.filter(q => q.chapterId === chId).sort(() => Math.random() - .5).slice(0, 5);
+  if (!qs.length) { showToast('אין שאלות לפרק זה עדיין'); return; }
+  startQuizSession(qs, { id: 'ch_'+chId, title: 'תרגול פרק', xp: 15 });
+}
+
+function startChapterLesson(chId) {
+  haptic();
+  const lesson = LESSONS.find(l => l.chapterId === chId);
+  if (!lesson) { showToast('אין שיעור לפרק זה עדיין'); return; }
+  startLesson(lesson, { id: 'lesson_'+chId, title: lesson.title, xp: 20 });
+}
+
+function practiceSubtopic(subId, chId, areaId) {
+  haptic();
+  const qs = QUESTIONS.filter(q => q.subtopicId === subId);
+  if (!qs.length) {
+    const lesson = LESSONS.find(l => l.chapterId === chId);
+    if (lesson) { startLesson(lesson, { id: 'sub_'+subId, title: 'למידה', xp: 10 }); return; }
+    showToast('תוכן בהכנה לנושא זה');
+    return;
+  }
+  startQuizSession(qs, { id: 'sub_'+subId, title: 'תרגול נושא', xp: 15 });
+}
+
+// ============================================================
+// LESSON FLOW
+// ============================================================
+
+// ============================================================
+// FLASHCARDS
+// ============================================================
+function sm2(card, grade) {
+  const quality = [1, 2, 4, 5][grade];
+  let { interval, repetitions, easeFactor } = card;
+  if (quality < 3) {
+    repetitions = 0;
+    interval = 1;
+  } else {
+    if (repetitions === 0) interval = 1;
+    else if (repetitions === 1) interval = 6;
+    else interval = Math.round(interval * easeFactor);
+    repetitions++;
+  }
+  easeFactor = Math.max(1.3, easeFactor + 0.1 - (5-quality)*(0.08 + (5-quality)*0.02));
+  const dueDate = Date.now() + interval * 24 * 60 * 60 * 1000;
+  return { ...card, interval, repetitions, easeFactor, dueDate };
+}
+
+async function initFlashcards() {
+  let data = DB.get('flashcards');
+  if (!data || data.version !== 7) {
+    try {
+      const res = await fetch('data/flashcards_generated.json');
+      const genData = await res.json();
+      
+      data = { version: 7, decks: [] };
+      if (window.SYLLABUS && window.SYLLABUS.areas) {
+        for (const area of window.SYLLABUS.areas) {
+          for (const ch of area.chapters) {
+            const deckId = 'deck_' + ch.id;
+            const chCards = genData.cards.filter(c => c.deckId === ch.id);
+            if (chCards.length === 0) continue;
+            const formattedCards = chCards.map(c => ({
+              id: 'c_' + Math.random().toString(36).substr(2,9),
+              front: c.front,
+              back: c.back,
+              deckId, interval: 1, repetitions: 0, easeFactor: 2.5, dueDate: Date.now(), createdAt: Date.now()
+            }));
+            data.decks.push({ id: deckId, name: ch.title, subtopicId: null, chapterId: ch.id, areaId: area.id, cards: formattedCards });
+          }
+        }
+      }
+      DB.set('flashcards', data);
+      renderFlashcards();
+    } catch (e) {
+      console.error("Failed to load generated flashcards", e);
+    }
+  }
+}
+function renderFlashcards() {
+  const data = DB.get('flashcards', { decks: [] });
+  const now = Date.now();
+  let totalDue = 0;
+  
+  let html = `<div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+    <h2 style="font-size:20px;font-weight:700;">חפיסות</h2>
+    <button class="btn btn-ghost" style="width:auto;padding:8px 16px" onclick="createDeckPrompt()">+ חדש</button>
+  </div>`;
+  
+  const decksHtml = data.decks.map(deck => {
+    const dueCount = deck.cards.filter(c => c.dueDate <= now).length;
+    totalDue += dueCount;
+    return `
+      <div class="deck-row" onclick="viewDeck('${deck.id}')">
+        <div>
+          <div style="font-weight:600;font-size:16px">${deck.name}</div>
+          <div style="font-size:13px;color:var(--label4)">${deck.cards.length} כרטיסיות</div>
+        </div>
+        ${dueCount > 0 ? `<div class="deck-due-badge">${dueCount} להיום</div>` : '<div style="color:var(--label4);font-size:12px">הכל תורגל</div>'}
+      </div>
+    `;
+  }).join('');
+
+  let hero = `
+    <div style="background:var(--surface);border-radius:var(--r-xl);padding:24px;text-align:center;margin-bottom:24px;box-shadow:var(--shadow)">
+      <div style="font-size:40px;margin-bottom:8px">🃏</div>
+      <div style="font-size:18px;font-weight:700;margin-bottom:4px">כרטיסיות להיום</div>
+      <div style="font-size:14px;color:var(--label3);margin-bottom:16px">${totalDue} כרטיסיות ממתינות לחזרה</div>
+      <button class="btn btn-accent" ${totalDue===0?'disabled':''} onclick="startDueSession()">התחל חזרה</button>
+    </div>
+  `;
+
+  document.getElementById('flashcards-content').innerHTML = hero + html + decksHtml;
+}
+
+function createDeckPrompt() {
+  const name = prompt('שם החפיסה:');
+  if (name) {
+    const data = DB.get('flashcards');
+    data.decks.push({ id: 'deck_'+Date.now(), name, cards: [] });
+    DB.set('flashcards', data);
+    renderFlashcards();
+  }
+}
+
+function viewDeck(deckId) {
+  const data = DB.get('flashcards');
+  const deck = data.decks.find(d => d.id === deckId);
+  if (!deck) return;
+  const now = Date.now();
+  const dueCards = deck.cards.filter(c => c.dueDate <= now);
+  
+  let cardsList = deck.cards.map(c => `
+    <div style="padding:12px;border-bottom:1px solid var(--sep);display:flex;justify-content:space-between;align-items:center">
+      <div style="flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:14px;margin-left:10px">${c.front}</div>
+      <div style="display:flex;gap:8px">
+        <button onclick="editCard('${deckId}', '${c.id}')" style="background:none;border:none;font-size:16px">✏️</button>
+        <button onclick="deleteCard('${deckId}', '${c.id}')" style="background:none;border:none;font-size:16px">🗑️</button>
+      </div>
+    </div>
+  `).join('');
+  
+  openOverlay(`
+    <div class="ov-hdr">
+      <button class="close-btn" onclick="closeOverlay(); renderFlashcards()">✕</button>
+      <div style="flex:1;text-align:center;font-weight:600">${deck.name}</div>
+      <button class="btn btn-ghost" style="width:auto;padding:4px 8px;font-size:20px" onclick="createCard('${deckId}')">+</button>
+    </div>
+    <div class="ov-body">
+      <button class="btn btn-accent" style="margin-bottom:16px" ${dueCards.length===0?'disabled':''} onclick="playFlashcardSession('${deckId}')">
+        תרגל ${dueCards.length} כרטיסיות
+      </button>
+      <div style="background:var(--surface);border-radius:var(--r-md)">
+        ${cardsList}
+      </div>
+      <button class="btn btn-ghost" style="margin-top:16px;color:var(--danger)" onclick="deleteDeck('${deckId}')">מחק חפיסה</button>
+    </div>
+  `);
+}
+
+function createCard(deckId) {
+  const front = prompt('צד קדמי (שאלה/מונח):');
+  if (!front) return;
+  const back = prompt('צד אחורי (תשובה/הסבר):');
+  if (!back) return;
+  const data = DB.get('flashcards');
+  const deck = data.decks.find(d => d.id === deckId);
+  deck.cards.push({
+    id: 'c_'+Date.now(), front, back, deckId,
+    interval: 1, repetitions: 0, easeFactor: 2.5, dueDate: Date.now(), createdAt: Date.now()
+  });
+  DB.set('flashcards', data);
+  viewDeck(deckId);
+}
+
+function editCard(deckId, cardId) {
+  const data = DB.get('flashcards');
+  const deck = data.decks.find(d => d.id === deckId);
+  const card = deck.cards.find(c => c.id === cardId);
+  const front = prompt('צד קדמי:', card.front);
+  if (front!==null) card.front = front;
+  const back = prompt('צד אחורי:', card.back);
+  if (back!==null) card.back = back;
+  DB.set('flashcards', data);
+  viewDeck(deckId);
+}
+
+function deleteCard(deckId, cardId) {
+  if (!confirm('למחוק כרטיסיה זו?')) return;
+  const data = DB.get('flashcards');
+  const deck = data.decks.find(d => d.id === deckId);
+  deck.cards = deck.cards.filter(c => c.id !== cardId);
+  DB.set('flashcards', data);
+  viewDeck(deckId);
+}
+
+function deleteDeck(deckId) {
+  if (!confirm('למחוק את כל החפיסה?')) return;
+  const data = DB.get('flashcards');
+  data.decks = data.decks.filter(d => d.id !== deckId);
+  DB.set('flashcards', data);
+  closeOverlay();
+  renderFlashcards();
+}
+
+let FC_SESSION = [];
+let FC_IDX = 0;
+
+function startDueSession() {
+  const data = DB.get('flashcards', { decks: [] });
+  const now = Date.now();
+  let due = [];
+  data.decks.forEach(d => {
+    d.cards.forEach(c => {
+      if (c.dueDate <= now) due.push({...c, _deckId: d.id});
+    });
+  });
+  if (due.length === 0) { showToast('אין כרטיסיות לתרגול'); return; }
+  due.sort(() => Math.random() - 0.5);
+  FC_SESSION = due;
+  FC_IDX = 0;
+  playFlashcard();
+}
+
+function playFlashcardSession(deckId) {
+  const data = DB.get('flashcards');
+  const deck = data.decks.find(d => d.id === deckId);
+  const now = Date.now();
+  let due = deck.cards.filter(c => c.dueDate <= now).map(c => ({...c, _deckId: deckId}));
+  if (due.length === 0) return;
+  due.sort(() => Math.random() - 0.5);
+  FC_SESSION = due;
+  FC_IDX = 0;
+  playFlashcard();
+}
+
+function playFlashcard() {
+  if (FC_IDX >= FC_SESSION.length) {
+    closeOverlay();
+    renderFlashcards();
+    showToast('התרגול הושלם! 🎉');
+    return;
+  }
+  const c = FC_SESSION[FC_IDX];
+  const pct = Math.round((FC_IDX / FC_SESSION.length) * 100);
+  
+  openOverlay(`
+    <div class="ov-hdr">
+      <button class="close-btn" onclick="closeOverlay(); renderFlashcards()">✕</button>
+      <div class="prog-track"><div class="prog-fill" style="width:${pct}%"></div></div>
+      <div style="font-size:14px;font-weight:600;margin-right:12px">${FC_IDX+1}/${FC_SESSION.length}</div>
+    </div>
+    <div class="ov-body" style="display:flex;flex-direction:column;justify-content:center">
+      <div class="fc-scene" onclick="document.getElementById('fc-inner').classList.toggle('flipped'); document.getElementById('fc-grades').classList.add('show')">
+        <div class="fc-card" id="fc-inner">
+          <div class="fc-face fc-front">${c.front}</div>
+          <div class="fc-face fc-back">${c.back}</div>
+        </div>
+      </div>
+      <div class="grade-btns" id="fc-grades">
+        <button class="grade-btn grade-again" onclick="gradeCard(0)">שוב 🔁</button>
+        <button class="grade-btn grade-hard" onclick="gradeCard(1)">קשה 😬</button>
+        <button class="grade-btn grade-good" onclick="gradeCard(2)">טוב 👍</button>
+        <button class="grade-btn grade-easy" onclick="gradeCard(3)">קל ⭐</button>
+      </div>
+    </div>
+  `);
+}
+
+function gradeCard(grade) {
+  const c = FC_SESSION[FC_IDX];
+  const updated = sm2(c, grade);
+  
+  // Save
+  const data = DB.get('flashcards');
+  const deck = data.decks.find(d => d.id === c._deckId);
+  if (deck) {
+    const idx = deck.cards.findIndex(x => x.id === c.id);
+    if (idx !== -1) {
+      deck.cards[idx] = { ...deck.cards[idx], ...updated };
+      delete deck.cards[idx]._deckId;
+    }
+  }
+  DB.set('flashcards', data);
+  
+  FC_IDX++;
+  playFlashcard();
+}
+
+let CUR_LESSON = null, CUR_LESSON_IDX = 0, CUR_MISSION = null;
+
+let GAME_CHALLENGES = [];
+let GAME_IDX = 0;
+let GAME_COMBO = 0;
+let GAME_MISSION = null;
+let REMEDIATION_QUEUE = [];
+let TOTAL_INITIAL_CHALLENGES = 0;
+let TOTAL_ERRORS = 0;
+
+function buildGameChallenges(lesson) {
+  const teachPhase = [];
+  const practicePhase = [];
+  const taughtConcepts = new Set();
+  
+  const cards = lesson.cards || [];
+  
+  for (const card of cards) {
+    if (card.type !== 'concept') continue;
+    const kps = card.keyPoints || [];
+    const text = kps.length > 0 ? kps.join(' ') : card.content;
+    if (!text) continue;
+    
+    // TEACH phase
+    taughtConcepts.add(card.title.trim().toLowerCase());
+    teachPhase.push({
+      type: 'TEACH',
+      title: card.title,
+      text: text,
+      reteach: text
+    });
+    
+    // PRACTICE phase
+    if (kps.length > 0) {
+      practicePhase.push({ type: 'TRUE_FALSE', text: kps[0], answer: true, reteach: text, conceptTitle: card.title });
+      if (kps.length > 1 && Math.random() > 0.5) {
+        practicePhase.push({ type: 'TRUE_FALSE', text: kps[1], answer: true, reteach: text, conceptTitle: card.title });
+      }
+    }
+    
+    if (card.content) {
+      const boldMatch = card.content.match(/\*\*(.*?)\*\*/);
+      if (boldMatch) {
+         let term = boldMatch[1];
+         let sentence = card.content.split('. ').find(s => s.includes(`**${term}**`));
+         if (sentence) {
+             sentence = sentence.replace(`**${term}**`, '___');
+             let options = [term, 'מולקולה אחרת', 'תא חי'].sort(() => Math.random() - 0.5);
+             practicePhase.push({ type: 'FILL_BLANK', text: sentence, options, answer: term, reteach: text, conceptTitle: card.title });
+         }
+      }
+    }
+    
+    if (kps.length >= 3) {
+      let shuffled = [...kps].sort(() => Math.random() - 0.5);
+      practicePhase.push({ type: 'SORT_ORDER', text: 'סדר את השלבים:', items: kps, shuffledItems: shuffled, reteach: text, conceptTitle: card.title });
+    }
+  }
+
+  const ids = lesson.followUpQuestionIds || [];
+  ids.forEach(id => {
+    const q = QUESTIONS.find(x => x.id === id);
+    if (q) {
+      const conceptName = (q.tags && q.tags.length > 0) ? q.tags[0] : 'מושג נוסף';
+      const conceptKey = conceptName.trim().toLowerCase();
+      
+      // ENFORCE THE DEPENDENCY RULE:
+      // If the question tests an untaught concept, auto-generate a TEACH screen for it!
+      if (!taughtConcepts.has(conceptKey)) {
+        let cleanExp = (q.explanation || '').split('.')[0] + '.';
+        let teachText = q.options[q.correctIndex] + ' – ' + cleanExp;
+        
+        teachPhase.push({
+          type: 'TEACH',
+          title: conceptName,
+          text: teachText,
+          reteach: teachText
+        });
+        taughtConcepts.add(conceptKey);
+      }
+      
+      practicePhase.push({ 
+        type: 'TAP_CORRECT', 
+        text: q.question, 
+        options: q.options, 
+        answerIndex: q.correctIndex, 
+        reteach: q.explanation, 
+        conceptTitle: conceptName 
+      });
+    }
+  });
+
+  practicePhase.sort(() => Math.random() - 0.5);
+
+  return [...teachPhase, ...practicePhase];
+}
+
+function startLesson(lesson, mission) {
+  CUR_LESSON = lesson;
+  GAME_MISSION = mission;
+  GAME_CHALLENGES = buildGameChallenges(lesson);
+  GAME_IDX = 0;
+  GAME_COMBO = 0;
+  REMEDIATION_QUEUE = [];
+  TOTAL_INITIAL_CHALLENGES = GAME_CHALLENGES.filter(c => c.type !== 'TEACH').length;
+  TOTAL_ERRORS = 0;
+  
+  if (GAME_CHALLENGES.length === 0) {
+      showToast('אין תוכן לשיעור זה');
+      return;
+  }
+  renderGameChallenge();
+}
+
+function renderGameChallenge() {
+  if (GAME_IDX >= GAME_CHALLENGES.length) {
+    if (REMEDIATION_QUEUE.length > 0) {
+      const newLoop = [];
+      for (const ch of REMEDIATION_QUEUE) {
+        newLoop.push({
+          type: 'TEACH',
+          title: 'חזרה: ' + (ch.conceptTitle || 'מושג'),
+          text: ch.reteach || 'נסה להתרכז בפרטים הקטנים כדי לענות נכון.',
+          reteach: ch.reteach
+        });
+        newLoop.push(ch);
+      }
+      GAME_CHALLENGES = newLoop;
+      GAME_IDX = 0;
+      REMEDIATION_QUEUE = [];
+      showToast('זמן לחזרה על טעויות!');
+    } else {
+      const correct = Math.max(0, TOTAL_INITIAL_CHALLENGES - TOTAL_ERRORS);
+      completeSession(correct, TOTAL_INITIAL_CHALLENGES, GAME_MISSION);
+      return;
+    }
+  }
+  
+  const ch = GAME_CHALLENGES[GAME_IDX];
+  const pct = Math.round((GAME_IDX / GAME_CHALLENGES.length) * 100);
+  let contentHtml = '';
+  
+  if (ch.type === 'TEACH') {
+    contentHtml = `
+      <div style="font-size:22px;font-weight:800;color:var(--accent);margin-bottom:16px">${ch.title}</div>
+      <div style="font-size:16px;line-height:1.6;color:var(--text);margin-bottom:30px">${ch.text.replace(/\*\*(.*?)\*\*/g, '<span style="color:var(--accent);font-weight:700">$1</span>')}</div>
+      <button class="btn btn-accent" style="width:100%" onclick="GAME_IDX++; renderGameChallenge()">הבנתי, המשך</button>
+    `;
+  } else if (ch.type === 'TRUE_FALSE') {
+    contentHtml = `
+      <div style="font-size:18px;font-weight:600;text-align:center;margin:30px 0">${ch.text}</div>
+      <div class="game-chips">
+        <button class="game-chip" onclick="checkGameAnswer(true, ${ch.answer})">✓ נכון</button>
+        <button class="game-chip" onclick="checkGameAnswer(false, ${ch.answer})">✗ שקר</button>
+      </div>
+    `;
+  } else if (ch.type === 'TAP_CORRECT') {
+    contentHtml = `
+      <div style="font-size:18px;font-weight:600;margin-bottom:20px">${ch.text}</div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        ${ch.options.map((o,i) => `<button class="game-chip" onclick="checkGameAnswer(${i}, ${ch.answerIndex})">${o}</button>`).join('')}
+      </div>
+    `;
+  } else if (ch.type === 'FILL_BLANK') {
+    contentHtml = `
+      <div style="font-size:18px;font-weight:600;text-align:center;margin:30px 0;line-height:1.5">${ch.text.replace('___', '<span style="display:inline-block;width:60px;border-bottom:2px solid var(--accent)"></span>')}</div>
+      <div class="game-chips">
+        ${ch.options.map(o => `<button class="game-chip" onclick="checkGameAnswer('${o}', '${ch.answer}')">${o}</button>`).join('')}
+      </div>
+    `;
+  } else if (ch.type === 'SORT_ORDER') {
+    contentHtml = `
+      <div style="font-size:18px;font-weight:600;margin-bottom:20px">${ch.text}</div>
+      <div id="sort-slots" style="display:flex;flex-direction:column;gap:8px;margin-bottom:20px;min-height:120px;background:var(--surface2);border-radius:12px;padding:10px">
+      </div>
+      <div class="game-chips" id="sort-chips">
+        ${ch.shuffledItems.map((item, i) => `<button class="game-chip" onclick="handleSortClick(this, ${i})">${item}</button>`).join('')}
+      </div>
+      <button class="btn btn-accent" style="margin-top:20px;display:none" id="sort-submit" onclick="checkSortOrder()">בדוק תשובה</button>
+    `;
+    window.currentSortItems = ch.shuffledItems;
+    window.correctSortOrder = ch.items;
+    window.selectedSort = [];
+  }
+  
+  openOverlay(`
+    <div class="ov-hdr">
+      <button class="close-btn" onclick="closeOverlay()">✕</button>
+      <div class="prog-track"><div class="prog-fill" style="width:${pct}%"></div></div>
+      <div class="xp-badge" style="color:var(--label4)">🔥 ${GAME_COMBO}</div>
+    </div>
+    <div class="ov-body">
+      <div style="font-size:13px;font-weight:600;color:var(--label3);margin-bottom:10px;text-transform:uppercase">
+        ${ch.type === 'TEACH' ? 'לימוד' : ch.type === 'TRUE_FALSE' ? 'נכון או שקר?' : ch.type === 'FILL_BLANK' ? 'השלם את החסר' : ch.type === 'SORT_ORDER' ? 'סדר את השלבים' : 'בחר את התשובה הנכונה'}
+      </div>
+      ${contentHtml}
+      <div id="reteach-area"></div>
+    </div>
+  `);
+}
+
+function handleSortClick(btn, i) {
+  if (btn.classList.contains('locked')) return;
+  btn.classList.add('locked');
+  btn.style.opacity = '0.5';
+  window.selectedSort.push(window.currentSortItems[i]);
+  const slots = document.getElementById('sort-slots');
+  slots.innerHTML += '<div style="padding:10px;background:var(--surface);border-radius:8px;font-size:14px">' + window.currentSortItems[i] + '</div>';
+  if (window.selectedSort.length === window.currentSortItems.length) {
+    document.getElementById('sort-submit').style.display = 'block';
+  }
+}
+
+function checkSortOrder() {
+  const isCorrect = window.selectedSort.join('|') === window.correctSortOrder.join('|');
+  checkGameAnswer(isCorrect, true);
+}
+
+function checkGameAnswer(given, correct) {
+  const isCorrect = given === correct;
+  const ch = GAME_CHALLENGES[GAME_IDX];
+  
+  if (isCorrect) {
+    GAME_COMBO++;
+    let state = getState(); state = addXP(state, 5); saveState(state);
+    
+    const xpPop = document.createElement('div');
+    xpPop.className = 'xp-pop';
+    xpPop.textContent = '+5 XP';
+    document.body.appendChild(xpPop);
+    setTimeout(() => xpPop.remove(), 1000);
+    
+    if (GAME_COMBO >= 3) {
+      const comboPop = document.createElement('div');
+      comboPop.className = 'combo-pop';
+      comboPop.textContent = '🔥 Combo!';
+      document.body.appendChild(comboPop);
+      setTimeout(() => comboPop.remove(), 1000);
+    }
+    
+    haptic();
+    setTimeout(() => {
+      GAME_IDX++;
+      renderGameChallenge();
+    }, 600);
+  } else {
+    GAME_COMBO = 0;
+    TOTAL_ERRORS++;
+    haptic();
+    const reteach = document.getElementById('reteach-area');
+    reteach.innerHTML = `
+      <div class="reteach">
+        <strong>לא נכון.</strong><br>
+        ${ch.reteach || 'נסה לזכור את העובדות מהשיעור ולהתרכז בפרטים הקטנים.'}
+      </div>
+      <button class="btn btn-accent" style="margin-top:10px;width:100%" onclick="GAME_IDX++; renderGameChallenge()">המשך</button>
+    `;
+    REMEDIATION_QUEUE.push({...ch});
+  }
+}
+// Follow-up questions
+let FUQ = [], FUQ_IDX = 0;
+function startFollowUpQuestions() {
+  const ids = CUR_LESSON?.followUpQuestionIds || [];
+  FUQ = ids.map(id => QUESTIONS.find(q => q.id === id)).filter(Boolean);
+  FUQ_IDX = 0;
+  if (!FUQ.length) { completeSession(0, 0, CUR_MISSION); return; }
+  renderQuestionSlide(FUQ[0], 'lesson');
+}
+
+// ============================================================
+// QUIZ SESSION
+// ============================================================
+let SESSION_QS = [], SESSION_IDX = 0, SESSION_CORRECT = 0, SESSION_MISSION = null;
+
+function getAdaptiveMaxDifficulty() {
+  // Starts at difficulty 1 (easy), climbs to 3 (hard) as user gains XP
+  const state = getState();
+  const xp = state.xpTotal || 0;
+  const correct = state.totalCorrect || 0;
+  if (xp < 50 || correct < 10) return 1;   // Total beginner → only easy
+  if (xp < 200 || correct < 40) return 2;  // Intermediate → easy + medium
+  return 3;                                  // Advanced → all difficulties
+}
+
+function startQuizSession(qs, mission) {
+  const maxDiff = getAdaptiveMaxDifficulty();
+  // Filter to max allowed difficulty, fallback to all if none pass
+  let filtered = qs.filter(q => (q.difficulty || 1) <= maxDiff);
+  if (!filtered.length) filtered = qs;
+  // Sort: easy first, hard last (within the allowed range)
+  SESSION_QS = filtered.sort((a, b) => (a.difficulty || 1) - (b.difficulty || 1));
+  SESSION_IDX = 0; SESSION_CORRECT = 0; SESSION_MISSION = mission;
+  renderQuestionSlide(SESSION_QS[0], 'session');
+}
+
+function renderQuestionSlide(q, mode) {
+  const total = mode === 'lesson' ? FUQ.length : SESSION_QS.length;
+  const idx = mode === 'lesson' ? FUQ_IDX : SESSION_IDX;
+  const pct = total > 0 ? Math.round((idx / total) * 100) : 0;
+  const letters = ['א','ב','ג','ד'];
+  const diffCls = ['','diff-1','diff-2','diff-3'][q.difficulty] || 'diff-1';
+  const diffTxt = ['','קל','בינוני','מתקדם'][q.difficulty] || '';
+
+  openOverlay(`
+    <div class="ov-hdr">
+      <button class="close-btn" onclick="closeOverlay()">✕</button>
+      <div class="prog-track"><div class="prog-fill" style="width:${pct}%"></div></div>
+      <div class="xp-badge">⭐${XP_CORRECT}</div>
+    </div>
+    <div class="ov-body">
+      <div class="q-card">
+        <div class="q-meta">
+          ${getAreaTitle(q.areaId)}
+          <span class="diff-badge ${diffCls}">${diffTxt}</span>
+        </div>
+        <div class="q-text">${q.question}</div>
+        <div class="options" id="opts">
+          ${q.options.map((o,i) => `
+            <button class="opt" id="opt-${i}"
+              onclick="selectAnswer(${i},${q.correctIndex},'${q.id}','${q.subtopicId}','${mode}')">
+              <span class="opt-letter">${letters[i]}</span><span>${o}</span>
+            </button>`).join('')}
+        </div>
+      </div>
+      <div id="exp-area"></div>
+    </div>
+    <div class="ov-footer">
+      <button class="btn btn-accent" id="next-btn" style="display:none" onclick="nextQuestion('${mode}')">המשך →</button>
+    </div>
+  `);
+}
+
+function selectAnswer(chosen, correct, qId, subId, mode) {
+  if (document.querySelector('.opt.locked')) return;
+  haptic();
+  const isCorrect = (chosen === correct);
+  let state = getState();
+  state.totalAnswered++;
+  if (isCorrect) state.totalCorrect++;
+  state = updateMastery(state, subId, isCorrect);
+  if (isCorrect) state = addXP(state, XP_CORRECT);
+  saveState(state);
+  if (mode === 'session' && isCorrect) SESSION_CORRECT++;
+
+  document.querySelectorAll('.opt').forEach((btn, i) => {
+    btn.classList.add('locked');
+    if (i === correct) btn.classList.add('correct');
+    if (i === chosen && !isCorrect) btn.classList.add('wrong');
+  });
+
+  const q = QUESTIONS.find(x => x.id === qId);
+  const expArea = document.getElementById('exp-area');
+  if (expArea && q) {
+    const exp = (q.explanation||'').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+    expArea.innerHTML = `<div class="exp-card ${isCorrect?'ok':'fail'}">
+      <div class="exp-hdr"><span class="exp-icon">${isCorrect?'🎉':'💡'}</span>
+        <span class="exp-title">${isCorrect?'נכון!':'לא בדיוק'}</span></div>
+      <div class="exp-text">${exp}</div>
+    </div>`;
+    setTimeout(() => expArea.scrollIntoView({behavior:'smooth',block:'nearest'}), 50);
+  }
+  const nextBtn = document.getElementById('next-btn');
+  nextBtn.style.display = 'block';
+  nextBtn.className = `btn ${isCorrect?'btn-success':'btn-accent'}`;
+}
+
+function nextQuestion(mode) {
+  haptic();
+  if (mode === 'lesson') {
+    FUQ_IDX++;
+    if (FUQ_IDX < FUQ.length) renderQuestionSlide(FUQ[FUQ_IDX], 'lesson');
+    else completeSession(FUQ.length, FUQ.filter((_,i) => i < FUQ_IDX).length, CUR_MISSION);
+  } else {
+    SESSION_IDX++;
+    if (SESSION_IDX < SESSION_QS.length) renderQuestionSlide(SESSION_QS[SESSION_IDX], 'session');
+    else completeSession(SESSION_QS.length, SESSION_CORRECT, SESSION_MISSION);
+  }
+}
+
+// ============================================================
+// COMPLETE SCREEN
+// ============================================================
+function completeSession(total, correct, mission) {
+  const acc = total > 0 ? Math.round((correct / total) * 100) : 100;
+  const xpEarned = correct * XP_CORRECT;
+  const emoji = acc >= 80 ? '🏆' : acc >= 60 ? '🌟' : '💪';
+  const title = acc >= 80 ? 'מעולה!' : acc >= 60 ? 'כמעט שם!' : 'המשך להתאמן!';
+
+  if (mission) {
+    let state = getState();
+    if (!state.missionsCompleted.includes(mission.id)) {
+      state.missionsCompleted.push(mission.id);
+      state = addXP(state, mission.xp || 0);
+      saveState(state);
+    }
+  }
+
+  const el = document.getElementById('overlay');
+  el.style.display = 'flex';
+  el.innerHTML = '';
+  
+  const comp = document.createElement('div');
+  comp.className = 'complete';
+  
+  const em = document.createElement('div');
+  em.className = 'complete-emoji';
+  em.textContent = emoji;
+  comp.appendChild(em);
+  
+  const ti = document.createElement('div');
+  ti.className = 'c-title';
+  ti.textContent = title;
+  comp.appendChild(ti);
+  
+  const su = document.createElement('div');
+  su.className = 'c-sub';
+  su.style.marginBottom = '24px';
+  su.style.color = 'var(--label2)';
+  su.textContent = 'סיימת סשן לימוד בהצלחה';
+  comp.appendChild(su);
+  
+  const st = document.createElement('div');
+  st.className = 'c-stats';
+  
+  const st1 = document.createElement('div'); st1.className = 'c-stat';
+  st1.innerHTML = '<div class="c-val">' + correct + '/' + total + '</div><div class="c-lbl">נכון</div>';
+  st.appendChild(st1);
+  
+  const st2 = document.createElement('div'); st2.className = 'c-stat';
+  st2.innerHTML = '<div class="c-val">' + acc + '%</div><div class="c-lbl">דיוק</div>';
+  st.appendChild(st2);
+  
+  const st3 = document.createElement('div'); st3.className = 'c-stat';
+  st3.innerHTML = '<div class="c-val" style="color:var(--warning)">+' + xpEarned + '</div><div class="c-lbl">XP</div>';
+  st.appendChild(st3);
+  
+  comp.appendChild(st);
+  
+  const b1 = document.createElement('button');
+  b1.className = 'btn btn-accent';
+  b1.style.marginBottom = '12px';
+  b1.style.width = '100%';
+  b1.textContent = 'חזרה לתרגול';
+  b1.onclick = function() { closeOverlay(); };
+  comp.appendChild(b1);
+  
+  const b2 = document.createElement('button');
+  b2.className = 'btn btn-ghost';
+  b2.style.width = '100%';
+  b2.textContent = 'ראה התקדמות →';
+  b2.onclick = function() { switchTab('progress', document.querySelector('[data-tab=progress]')); closeOverlay(); };
+  comp.appendChild(b2);
+  
+  el.appendChild(comp);
+}
+
+// ============================================================
+// OVERLAY
+// ============================================================
+function openOverlay(html) {
+  const el = document.getElementById('overlay');
+  el.style.display = 'flex';
+  el.className = 'overlay';
+  el.innerHTML = html;
+}
+function closeOverlay() {
+  document.getElementById('overlay').style.display = 'none';
+  CUR_LESSON = null; FUQ = []; SESSION_QS = [];
+  renderHome();
+}
+function getAreaTitle(areaId) {
+  return SYLLABUS?.areas.find(a => a.id === areaId)?.title || areaId || '';
+}
+
+// ============================================================
+// TOAST
+// ============================================================
+let toastT = null;
+function showToast(msg) {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.classList.add('show');
+  if (toastT) clearTimeout(toastT);
+  toastT = setTimeout(() => el.classList.remove('show'), 2800);
+}
+
+// ============================================================
+// HAPTICS
+// ============================================================
+function haptic() {
+  if (getState().settings?.haptics && navigator.vibrate) navigator.vibrate(10);
+}
+
+// ============================================================
+// PROFILE ACTIONS
+// ============================================================
+function exportData() {
+  const d = {};
+  for (let i = 0; i < localStorage.length; i++) {
+    const k = localStorage.key(i);
+    if (k?.startsWith(NS)) d[k] = localStorage.getItem(k);
+  }
+  const blob = new Blob([JSON.stringify(d, null, 2)], {type:'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a'); a.href = url; a.download = 'medexam-backup.json'; a.click();
+  URL.revokeObjectURL(url);
+  showToast('גיבוי הורד בהצלחה');
+}
+function resetConfirm() {
+  if (confirm('למחוק את כל הנתונים? פעולה זו אינה הפיכה.')) {
+    for (let i = localStorage.length - 1; i >= 0; i--) {
+      const k = localStorage.key(i); if (k?.startsWith(NS)) localStorage.removeItem(k);
+    }
+    showToast('הנתונים אופסו'); renderHome();
+  }
+}
+
+// ============================================================
+// SERVICE WORKER
+// ============================================================
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));
+}
+
+// ============================================================
+// INIT
+// ============================================================
+async function init() {
+  await loadData();
+  await initFlashcards();
+  renderHome();
+}
+init();
+</script>
 </body>
 </html>
