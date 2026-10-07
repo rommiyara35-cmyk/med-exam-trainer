@@ -11258,5 +11258,85 @@
     "subtopicId": "cell-biology-ch-17-mitosis",
     "chapterId": "cell-biology-ch-17",
     "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 1,
+    "question": "מהי הפעולה העיקרית של ציטוקינזה?",
+    "options": [
+      "חלוקת הציטופלזמה לשתי בתים",
+      "חלוקת גרעין",
+      "סינתזת DNA",
+      "פוטוסינתזה"
+    ],
+    "correctIndex": 0,
+    "explanation": "ציטוקינזה מתייחסת לחלוקת הציטופלזמה, ולא לגרעין (זהו קינטיק).",
+    "tags": [
+      "ציטוקינזה"
+    ],
+    "id": "q_cell-biology-ch-17-cytokinesis_1_1791365383",
+    "subtopicId": "cell-biology-ch-17-cytokinesis",
+    "chapterId": "cell-biology-ch-17",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 2,
+    "question": "איזה מבנה מרכזי אחראי על קיצור הממברנה במהלך ציטוקינזה בתאים היוקריוטיים?",
+    "options": [
+      "Contractile ring (actin‑myosin)",
+      "Spindle apparatus",
+      "Centrosome",
+      "Nuclear envelope"
+    ],
+    "correctIndex": 0,
+    "explanation": "ה‑contractile ring, המורכב מתאי actin ו‑myosin II, מתכווץ תחת שליטת RhoA ויוצר את ה‑cleavage furrow.",
+    "tags": [
+      "actin‑myosin",
+      "RhoA"
+    ],
+    "id": "q_cell-biology-ch-17-cytokinesis_2_1791365383",
+    "subtopicId": "cell-biology-ch-17-cytokinesis",
+    "chapterId": "cell-biology-ch-17",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 2,
+    "question": "בציטוקינזה של צמח, מהו המבנה שמקורו במיקרוטובולים ומוביל להיווצרות חומת התא החדשה?",
+    "options": [
+      "Phragmoplast",
+      "Contractile ring",
+      "Midbody",
+      "Cleavage furrow"
+    ],
+    "correctIndex": 0,
+    "explanation": "בצמחים, ה‑phragmoplast הוא רשת של מיקרוטובולים שמכוונת את ה‑vesicles ליצירת ה‑cell plate, המהווה חומת התא החדשה.",
+    "tags": [
+      "phragmoplast",
+      "cell plate"
+    ],
+    "id": "q_cell-biology-ch-17-cytokinesis_3_1791365383",
+    "subtopicId": "cell-biology-ch-17-cytokinesis",
+    "chapterId": "cell-biology-ch-17",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 3,
+    "question": "חולה בן 45 מציג חולשת שריר שלדית מתקדמת. ביופסיה של רקמת שריר מראה סיבים מרובי גרעינים (multinucleated) ללא ראיות של פגיעה בממברנה התא. איזו חלבון מוטציה בו היא הסבירה ביותר לכשל בציטוקינזה?",
+    "options": [
+      "Non‑muscle Myosin II (MYH9)",
+      "Actin",
+      "β‑Tubulin",
+      "Dynein"
+    ],
+    "correctIndex": 0,
+    "explanation": "MYH9 קודד ל‑Non‑muscle Myosin II, מרכיב קריטי של ה‑contractile ring. מוטציה בו פוגעת בקיצור הרינג, גורמת לכשל בציטוקינזה וליצירת תאים מרובי גרעינים, כפי שנצפה בביו‑פסיה. Actin, β‑Tubulin ו‑Dynein גם חשובים, אך פגיעה ב‑Myosin II היא ההסבר הישיר לכשל ברינג הקונטרקטילי.",
+    "tags": [
+      "Myosin II",
+      "Cytokinesis failure",
+      "Multinucleated cells"
+    ],
+    "id": "q_cell-biology-ch-17-cytokinesis_4_1791365383",
+    "subtopicId": "cell-biology-ch-17-cytokinesis",
+    "chapterId": "cell-biology-ch-17",
+    "areaId": "cell-biology"
   }
 ]

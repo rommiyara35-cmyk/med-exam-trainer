@@ -1259,27 +1259,10 @@ function renderGameChallenge() {
         ${ch.shuffledItems.map((item, i) => `<button class="game-chip" onclick="handleSortClick(this, ${i})">${item}</button>`).join('')}
       </div>
       <button class="btn btn-accent" style="margin-top:20px;display:none" id="sort-submit" onclick="checkSortOrder()">בדוק תשובה</button>
-      <script>
-        window.currentSortItems = ${JSON.stringify(ch.shuffledItems)};
-        window.correctSortOrder = ${JSON.stringify(ch.items)};
-        window.selectedSort = [];
-        function handleSortClick(btn, i) {
-          if (btn.classList.contains('locked')) return;
-          btn.classList.add('locked');
-          btn.style.opacity = '0.5';
-          window.selectedSort.push(window.currentSortItems[i]);
-          const slots = document.getElementById('sort-slots');
-          slots.innerHTML += '<div style="padding:10px;background:var(--surface);border-radius:8px;font-size:14px">' + window.currentSortItems[i] + '</div>';
-          if (window.selectedSort.length === window.currentSortItems.length) {
-            document.getElementById('sort-submit').style.display = 'block';
-          }
-        }
-        function checkSortOrder() {
-          const isCorrect = window.selectedSort.join('|') === window.correctSortOrder.join('|');
-          checkGameAnswer(isCorrect, true);
-        }
-      </script>
     `;
+    window.currentSortItems = ch.shuffledItems;
+    window.correctSortOrder = ch.items;
+    window.selectedSort = [];
   }
   
   openOverlay(`
@@ -1296,6 +1279,23 @@ function renderGameChallenge() {
       <div id="reteach-area"></div>
     </div>
   `);
+}
+
+function handleSortClick(btn, i) {
+  if (btn.classList.contains('locked')) return;
+  btn.classList.add('locked');
+  btn.style.opacity = '0.5';
+  window.selectedSort.push(window.currentSortItems[i]);
+  const slots = document.getElementById('sort-slots');
+  slots.innerHTML += '<div style="padding:10px;background:var(--surface);border-radius:8px;font-size:14px">' + window.currentSortItems[i] + '</div>';
+  if (window.selectedSort.length === window.currentSortItems.length) {
+    document.getElementById('sort-submit').style.display = 'block';
+  }
+}
+
+function checkSortOrder() {
+  const isCorrect = window.selectedSort.join('|') === window.correctSortOrder.join('|');
+  checkGameAnswer(isCorrect, true);
 }
 
 function checkGameAnswer(given, correct) {
