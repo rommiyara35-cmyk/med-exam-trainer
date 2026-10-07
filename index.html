@@ -606,7 +606,7 @@ function renderHome() {
   let nextLesson = null;
   let nextAreaColor = 'var(--accent)';
   
-  if (window.SYLLABUS) {
+  if (SYLLABUS) {
     // Determine last progressing area
     let lastAreaId = null;
     const completedLessons = state.missionsCompleted.filter(m => m.startsWith('lesson_'));
@@ -618,7 +618,7 @@ function renderHome() {
     }
     
     // Sort areas so lastAreaId is checked first
-    const sortedAreas = [...window.SYLLABUS.areas].sort((a, b) => {
+    const sortedAreas = [...SYLLABUS.areas].sort((a, b) => {
       if (a.id === lastAreaId) return -1;
       if (b.id === lastAreaId) return 1;
       return 0;
@@ -677,11 +677,11 @@ function renderHome() {
 // ============================================================
 let exploreQ = '';
 function renderExplore() {
-  if (!window.SYLLABUS) return;
+  if (!SYLLABUS) return;
   const state = getState();
-  const q = (window.exploreQ || '').toLowerCase().trim();
+  const q = (exploreQ || '').toLowerCase().trim();
   let html = '';
-  for (const area of window.SYLLABUS.areas) {
+  for (const area of SYLLABUS.areas) {
     const filteredChs = area.chapters.filter(ch => {
       if (!q) return true;
       if (ch.title.includes(q) || ch.titleEn.toLowerCase().includes(q)) return true;
@@ -943,14 +943,14 @@ function sm2(card, grade) {
 
 async function initFlashcards() {
   let data = DB.get('flashcards');
-  if (!data || data.version !== 7) {
+  if (!data || data.version !== 8) {
     try {
       const res = await fetch('data/flashcards_generated.json');
       const genData = await res.json();
       
-      data = { version: 7, decks: [] };
-      if (window.SYLLABUS && window.SYLLABUS.areas) {
-        for (const area of window.SYLLABUS.areas) {
+      data = { version: 8, decks: [] };
+      if (SYLLABUS && SYLLABUS.areas) {
+        for (const area of SYLLABUS.areas) {
           for (const ch of area.chapters) {
             const deckId = 'deck_' + ch.id;
             const chCards = genData.cards.filter(c => c.deckId === ch.id);
