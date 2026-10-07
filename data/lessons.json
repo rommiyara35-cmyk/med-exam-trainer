@@ -1896,5 +1896,45 @@
       "q_cell-biology-ch-17-control-of-cell-division-and-cell-growth_3_1791366984",
       "q_cell-biology-ch-17-control-of-cell-division-and-cell-growth_4_1791366984"
     ]
+  },
+  {
+    "title": "Apoptosis – מסלקת תאים שאינם נחוצים",
+    "titleEn": "Apoptosis – Elimination of Unwanted Cells",
+    "estimatedMinutes": 8,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "הגדרת אפופטוזיס והמאפיינים המולקולריים",
+        "content": "Apoptosis הוא תהליך **programmed cell death** המתבצע בצורה מבוקרת, ללא שחרור תכנים תאים למרחב החוץ. המאפיינים העיקריים כוללים קונפיגורציה של הכרומטין, פגיעה בממברנת הפלזמה, והפעלת **caspases** (Caspase‑3, Caspase‑7, Caspase‑9). חלבונים ממשפחת **Bcl‑2** (Bcl‑2, Bcl‑XL) משמשים כאנטי‑אפופטוטיים, בעוד **Bax** ו‑**Bak** מקדמים פריקה של המיטוכונדריה (MOMP) ושחרור **cytochrome c**.",
+        "keyPoints": [
+          "Apoptosis הוא תהליך תכנותי, לא דלקתי.",
+          "הפעלת caspases היא הצעד המרכזי בפירוק התא.",
+          "המאזן בין Bcl‑2 (אנטי‑אפופטוטי) ל‑Bax/Bak (פרו‑אפופטוטי) קובע את קבלת האות."
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "המסלולים הפנימי והחיצוני של אפופטוזיס",
+        "content": "המסלול **intrinsic** (מיטוכונדריאלי) מתחיל ב‑**DNA damage**, **p53** או חוסר גורמי הישרדות, ומוביל ל‑MOMP, שחרור **cytochrome c**, הרכבת **Apoptosome** (Apaf‑1 + dATP + procaspase‑9) והפעלה של Caspase‑9. המסלול **extrinsic** (חיצוני) מתחיל בקישור של **death receptors** (Fas/CD95, TRAIL‑R, TNFR1) לליגנדים, גיבוש קומפלקס **DISC** (FADD + procaspase‑8) והפעלה של Caspase‑8, שיכול לפעול ישירות על Caspase‑3 או לחצות למיטוכונדריה דרך חיתוך **Bid** ל‑tBid.",
+        "keyPoints": [
+          "Extrinsic: Fas → FADD → Caspase‑8 → Caspase‑3.",
+          "Intrinsic: DNA damage → p53 → Bax/Bak → MOMP → Apoptosome → Caspase‑9 → Caspase‑3.",
+          "Crosstalk: Caspase‑8 חותך Bid → tBid → מגביר את המהלך המיטוכונדריאלי."
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "בואו נבדוק את ההבנה שלכם על אפופטוזיס."
+      }
+    ],
+    "id": "lesson_cell-biology-ch-18",
+    "chapterId": "cell-biology-ch-18",
+    "areaId": "cell-biology",
+    "followUpQuestionIds": [
+      "q_cell-biology-ch-18-apoptosis-eliminates-unwanted-cells_1_1791367892",
+      "q_cell-biology-ch-18-apoptosis-eliminates-unwanted-cells_2_1791367892",
+      "q_cell-biology-ch-18-apoptosis-eliminates-unwanted-cells_3_1791367892",
+      "q_cell-biology-ch-18-apoptosis-eliminates-unwanted-cells_4_1791367892"
+    ]
   }
 ]

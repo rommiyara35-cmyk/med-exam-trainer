@@ -11506,5 +11506,87 @@
     "subtopicId": "cell-biology-ch-17-control-of-cell-division-and-cell-growth",
     "chapterId": "cell-biology-ch-17",
     "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 1,
+    "question": "מהו תהליך האפופטוזיס?",
+    "options": [
+      "תהליך מותכנת של מוות תאי (programmed cell death)",
+      "תהליך של נקרוזיס (necrosis)",
+      "תהליך של אוטופגיה (autophagy)",
+      "תהליך של פרוליפרציה תאית"
+    ],
+    "correctIndex": 0,
+    "explanation": "Apoptosis הוא מוות תאי מתוכנת, מנוגד לנקרוזיס האקראי.",
+    "tags": [
+      "הגדרה"
+    ],
+    "id": "q_cell-biology-ch-18-apoptosis-eliminates-unwanted-cells_1_1791367892",
+    "subtopicId": "cell-biology-ch-18-apoptosis-eliminates-unwanted-cells",
+    "chapterId": "cell-biology-ch-18",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 2,
+    "question": "איזה חלבון משפיע על פתיחת תעלות K⁺ בתא אפופטוטי ומקדם את קריסת הממברנה?",
+    "options": [
+      "Bcl‑2",
+      "Bax",
+      "Caspase‑8",
+      "p53"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bax (וחלבון המשפחה של Bax/Bak) משחרר את הממברנה המיטוכונדריאלית, גורם לשינוי באלקטרופורטיביות של הממברנה והופעת תעלות K⁺ שמובילות לאפופטוזיס.",
+    "tags": [
+      "Bcl‑2 family",
+      "MOMP"
+    ],
+    "id": "q_cell-biology-ch-18-apoptosis-eliminates-unwanted-cells_2_1791367892",
+    "subtopicId": "cell-biology-ch-18-apoptosis-eliminates-unwanted-cells",
+    "chapterId": "cell-biology-ch-18",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 2,
+    "question": "קולטת Fas (CD95) מקבלת אות חיצוני. איזו סדרת אירועים מובילה להפעלת Caspase‑3?",
+    "options": [
+      "Fas → FADD → Caspase‑8 → Bid חיתוך → MOMP → Caspase‑9 → Caspase‑3",
+      "Fas → TRADD → הפעלת NF‑κB → Caspase‑3",
+      "Fas → FADD → Caspase‑8 → הפעלה ישירה של Caspase‑3",
+      "Fas → MyD88 → MAPK → Caspase‑3"
+    ],
+    "correctIndex": 2,
+    "explanation": "במסלול החיצוני, קישור Fas יוצר את קומפלקס DISC (FADD + procaspase‑8). Caspase‑8 מופעל ויכול לחתוך ישירות את procaspase‑3 ל‑Caspase‑3 הפעיל, ללא צורך במעורבות של המיטוכונדריה.",
+    "tags": [
+      "extrinsic pathway",
+      "Fas",
+      "Caspase‑8"
+    ],
+    "id": "q_cell-biology-ch-18-apoptosis-eliminates-unwanted-cells_3_1791367892",
+    "subtopicId": "cell-biology-ch-18-apoptosis-eliminates-unwanted-cells",
+    "chapterId": "cell-biology-ch-18",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 3,
+    "question": "חולה בן 12 מציג היפרפלזיה של לימפוציטים, הגדלה של הלימפה והספלה, והופעת אנמיה של קבועים. בדיקות גנטיות מגלה מוטציה ב‑Fas (CD95). איזו מהתופעות הבאות צפויה להיות נוכחת במטופל כתוצאה מפגם באפופטוזיס?",
+    "options": [
+      "רמת סרום גבוהה של IL‑2",
+      "חוסר בתאי CD8⁺ ציטוטוקסיים",
+      "הצטברות של תאי T דו‑שליליים (CD4⁻ CD8⁻) בדם",
+      "פעילות מוגברת של Caspase‑9"
+    ],
+    "correctIndex": 2,
+    "explanation": "מוטציה ב‑Fas פוגעת במסלול החיצוני של אפופטוזיס, מה שמוביל להצטברות של תאי T דו‑שליליים (CD4⁻ CD8⁻) – סימן קלאסי של Autoimmune Lymphoproliferative Syndrome (ALPS). שאר האפשרויות אינן קשורות ישירות לפגם ב‑Fas.",
+    "tags": [
+      "clinical",
+      "Fas mutation",
+      "ALPS",
+      "apoptosis defect"
+    ],
+    "id": "q_cell-biology-ch-18-apoptosis-eliminates-unwanted-cells_4_1791367892",
+    "subtopicId": "cell-biology-ch-18-apoptosis-eliminates-unwanted-cells",
+    "chapterId": "cell-biology-ch-18",
+    "areaId": "cell-biology"
   }
 ]

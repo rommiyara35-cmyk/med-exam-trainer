@@ -264,13 +264,14 @@
     .reteach { background:var(--surface); border-radius:12px; padding:12px 16px; margin:12px 0; border-right:4px solid #ff9500; font-size:14px; color:var(--text-secondary); }
 
     /* FLASHCARDS */
-    .fc-scene { perspective: 1000px; width: 100%; max-width: 340px; margin: 0 auto; height: 220px; }
-    .fc-card { width:100%; height:100%; position:relative; transform-style:preserve-3d; transition:transform .5s; border-radius:18px; }
-    .fc-card.flipped { transform: rotateY(180deg); }
-    .fc-face { position:absolute; width:100%; height:100%; backface-visibility:hidden; border-radius:18px; display:flex; align-items:center; justify-content:center; padding:20px; text-align:center; }
-    .fc-front { background: var(--surface); border: 1.5px solid var(--sep); font-size:18px; font-weight:600; }
-    .fc-back { background: var(--accent); color: #fff; font-size:16px; transform: rotateY(180deg); }
-    .grade-btns { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:24px; }
+    .fc-scene { perspective: 1000px; -webkit-perspective: 1000px; width: 100%; max-width: 340px; margin: 0 auto; height: 220px; }
+    .fc-card { width:100%; height:100%; position:relative; transform-style:preserve-3d; -webkit-transform-style:preserve-3d; transition:transform .5s, -webkit-transform .5s; border-radius:18px; }
+    .fc-card.flipped { transform: rotateY(180deg); -webkit-transform: rotateY(180deg); }
+    .fc-face { position:absolute; top:0; left:0; width:100%; height:100%; backface-visibility:hidden; -webkit-backface-visibility:hidden; border-radius:18px; display:flex; align-items:center; justify-content:center; padding:20px; text-align:center; box-sizing: border-box; }
+    .fc-front { background: var(--surface); border: 1.5px solid var(--sep); font-size:18px; font-weight:600; z-index: 2; transform: rotateY(0deg); -webkit-transform: rotateY(0deg); }
+    .fc-back { background: var(--accent); color: #fff; font-size:16px; transform: rotateY(180deg); -webkit-transform: rotateY(180deg); }
+    .grade-btns { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:24px; opacity:0; pointer-events:none; transition:opacity 0.3s; }
+    .grade-btns.show { opacity:1; pointer-events:auto; }
     .grade-btn { padding:14px; border-radius:14px; border:none; font-size:14px; font-weight:600; cursor:pointer; }
     .grade-again { background:#ff3b30; color:#fff; }
     .grade-hard { background:#ff9500; color:#fff; }
@@ -895,8 +896,8 @@ function sm2(card, grade) {
 
 function initFlashcards() {
   let data = DB.get('flashcards');
-  if (!data) {
-    data = { decks: [] };
+  if (!data || data.version !== 2) {
+    data = { version: 2, decks: [] };
     if (SYLLABUS && SYLLABUS.areas) {
       for (const area of SYLLABUS.areas) {
         for (const ch of area.chapters) {
@@ -904,36 +905,32 @@ function initFlashcards() {
           const cards = [];
           for (const sub of ch.subtopics) {
             let back = sub.titleEn;
-            // Try to find a lesson card
             const lesson = LESSONS.find(l => l.chapterId === ch.id);
             if (lesson && lesson.cards) {
-              const matchingCard = lesson.cards.find(c => c.title && c.title.includes(sub.title));
-              if (matchingCard && matchingCard.keyPoints && matchingCard.keyPoints.length > 0) {
-                back = matchingCard.keyPoints[0];
+              const matchingCard = lesson.cards.find(c => c.title && (c.title.includes(sub.title) || sub.title.includes(c.title)));
+              if (matchingCard && matchingCard.content) {
+                back = matchingCard.content.replace(/\*\*/g, '');
               } else {
-                 const genericCard = lesson.cards.find(c => c.keyPoints && c.keyPoints.length > 0);
-                 if (genericCard) back = genericCard.keyPoints[0];
+                 const genericCard = lesson.cards.find(c => c.content && c.content.length > 20);
+                 if (genericCard) back = genericCard.content.replace(/\*\*/g, '');
               }
             }
             cards.push({
               id: 'c_' + Math.random().toString(36).substr(2,9),
-              front: sub.title,
+              front: sub.title + (sub.titleEn ? `\n(${sub.titleEn})` : ''),
               back: back,
               deckId, interval: 1, repetitions: 0, easeFactor: 2.5, dueDate: Date.now(), createdAt: Date.now()
             });
           }
-          data.decks.push({
-            id: deckId, name: ch.title, subtopicId: null, chapterId: ch.id, areaId: area.id, cards
-          });
+          data.decks.push({ id: deckId, name: ch.title, subtopicId: null, chapterId: ch.id, areaId: area.id, cards });
         }
       }
-      // Add questions-based deck for terms/enzymes
       const termQs = QUESTIONS.filter(q => q.tags && (q.tags.includes('Enzyme') || q.tags.includes('Term') || q.question.includes('אנזים')));
       if (termQs.length > 0) {
         const tcards = termQs.map(q => ({
           id: 'c_' + Math.random().toString(36).substr(2,9),
-          front: q.question.substring(0, 50) + '...',
-          back: (q.explanation || q.options[q.correctIndex] || '').substring(0, 100),
+          front: q.question,
+          back: `תשובה: ${q.options[q.correctIndex]}\n\n${q.explanation || ''}`,
           deckId: 'deck_terms', interval: 1, repetitions: 0, easeFactor: 2.5, dueDate: Date.now(), createdAt: Date.now()
         }));
         data.decks.push({ id: 'deck_terms', name: 'מונחים ואנזימים', subtopicId: null, chapterId: null, areaId: null, cards: tcards });
@@ -1117,13 +1114,13 @@ function playFlashcard() {
       <div style="font-size:14px;font-weight:600;margin-right:12px">${FC_IDX+1}/${FC_SESSION.length}</div>
     </div>
     <div class="ov-body" style="display:flex;flex-direction:column;justify-content:center">
-      <div class="fc-scene" onclick="document.getElementById('fc-inner').classList.toggle('flipped'); document.getElementById('fc-grades').style.display='grid'">
+      <div class="fc-scene" onclick="document.getElementById('fc-inner').classList.toggle('flipped'); document.getElementById('fc-grades').classList.add('show')">
         <div class="fc-card" id="fc-inner">
           <div class="fc-face fc-front">${c.front}</div>
           <div class="fc-face fc-back">${c.back}</div>
         </div>
       </div>
-      <div class="grade-btns" id="fc-grades" style="display:none">
+      <div class="grade-btns" id="fc-grades">
         <button class="grade-btn grade-again" onclick="gradeCard(0)">שוב 🔁</button>
         <button class="grade-btn grade-hard" onclick="gradeCard(1)">קשה 😬</button>
         <button class="grade-btn grade-good" onclick="gradeCard(2)">טוב 👍</button>
