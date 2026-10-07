@@ -1137,30 +1137,42 @@ function gradeCard(grade) {
 
 let CUR_LESSON = null, CUR_LESSON_IDX = 0, CUR_MISSION = null;
 
-
 let GAME_CHALLENGES = [];
 let GAME_IDX = 0;
 let GAME_COMBO = 0;
 let GAME_MISSION = null;
+let REMEDIATION_QUEUE = [];
+let TOTAL_INITIAL_CHALLENGES = 0;
+let TOTAL_ERRORS = 0;
 
 function buildGameChallenges(lesson) {
-  const challenges = [];
+  const teachPhase = [];
+  const practicePhase = [];
+  
   const cards = lesson.cards || [];
   
   for (const card of cards) {
     if (card.type !== 'concept') continue;
     const kps = card.keyPoints || [];
+    const text = kps.length > 0 ? kps.join(' ') : card.content;
+    if (!text) continue;
     
-    // TRUE_FALSE
+    // TEACH phase
+    teachPhase.push({
+      type: 'TEACH',
+      title: card.title,
+      text: text,
+      reteach: text
+    });
+    
+    // PRACTICE phase
     if (kps.length > 0) {
-      challenges.push({ type: 'TRUE_FALSE', text: kps[0], answer: true });
+      practicePhase.push({ type: 'TRUE_FALSE', text: kps[0], answer: true, reteach: text, conceptTitle: card.title });
       if (kps.length > 1 && Math.random() > 0.5) {
-        // Create a fake false by reversing the sentence roughly, or just push true
-        challenges.push({ type: 'TRUE_FALSE', text: kps[1], answer: true });
+        practicePhase.push({ type: 'TRUE_FALSE', text: kps[1], answer: true, reteach: text, conceptTitle: card.title });
       }
     }
     
-    // FILL_BLANK
     if (card.content) {
       const boldMatch = card.content.match(/\*\*(.*?)\*\*/);
       if (boldMatch) {
@@ -1169,15 +1181,14 @@ function buildGameChallenges(lesson) {
          if (sentence) {
              sentence = sentence.replace(`**${term}**`, '___');
              let options = [term, 'מולקולה אחרת', 'תא חי'].sort(() => Math.random() - 0.5);
-             challenges.push({ type: 'FILL_BLANK', text: sentence, options, answer: term, reteach: card.content.substring(0, 150) });
+             practicePhase.push({ type: 'FILL_BLANK', text: sentence, options, answer: term, reteach: text, conceptTitle: card.title });
          }
       }
     }
     
-    // SORT_ORDER
     if (kps.length >= 3) {
       let shuffled = [...kps].sort(() => Math.random() - 0.5);
-      challenges.push({ type: 'SORT_ORDER', text: 'סדר את השלבים:', items: kps, shuffledItems: shuffled });
+      practicePhase.push({ type: 'SORT_ORDER', text: 'סדר את השלבים:', items: kps, shuffledItems: shuffled, reteach: text, conceptTitle: card.title });
     }
   }
 
@@ -1185,11 +1196,13 @@ function buildGameChallenges(lesson) {
   ids.forEach(id => {
     const q = QUESTIONS.find(x => x.id === id);
     if (q) {
-      challenges.push({ type: 'TAP_CORRECT', text: q.question, options: q.options, answerIndex: q.correctIndex, reteach: q.explanation });
+      practicePhase.push({ type: 'TAP_CORRECT', text: q.question, options: q.options, answerIndex: q.correctIndex, reteach: q.explanation, conceptTitle: q.tags?.[0] || 'מושג כללי' });
     }
   });
 
-  return challenges.sort(() => Math.random() - 0.5); // shuffle some
+  practicePhase.sort(() => Math.random() - 0.5);
+
+  return [...teachPhase, ...practicePhase];
 }
 
 function startLesson(lesson, mission) {
@@ -1198,8 +1211,10 @@ function startLesson(lesson, mission) {
   GAME_CHALLENGES = buildGameChallenges(lesson);
   GAME_IDX = 0;
   GAME_COMBO = 0;
+  REMEDIATION_QUEUE = [];
+  TOTAL_INITIAL_CHALLENGES = GAME_CHALLENGES.filter(c => c.type !== 'TEACH').length;
+  TOTAL_ERRORS = 0;
   
-  console.log("Generated challenges: ", GAME_CHALLENGES.length);
   if (GAME_CHALLENGES.length === 0) {
       showToast('אין תוכן לשיעור זה');
       return;
@@ -1209,16 +1224,39 @@ function startLesson(lesson, mission) {
 
 function renderGameChallenge() {
   if (GAME_IDX >= GAME_CHALLENGES.length) {
-    completeSession(GAME_CHALLENGES.length, GAME_CHALLENGES.length, GAME_MISSION);
-    return;
+    if (REMEDIATION_QUEUE.length > 0) {
+      const newLoop = [];
+      for (const ch of REMEDIATION_QUEUE) {
+        newLoop.push({
+          type: 'TEACH',
+          title: 'חזרה: ' + (ch.conceptTitle || 'מושג'),
+          text: ch.reteach || 'נסה להתרכז בפרטים הקטנים כדי לענות נכון.',
+          reteach: ch.reteach
+        });
+        newLoop.push(ch);
+      }
+      GAME_CHALLENGES = newLoop;
+      GAME_IDX = 0;
+      REMEDIATION_QUEUE = [];
+      showToast('זמן לחזרה על טעויות!');
+    } else {
+      const correct = Math.max(0, TOTAL_INITIAL_CHALLENGES - TOTAL_ERRORS);
+      completeSession(correct, TOTAL_INITIAL_CHALLENGES, GAME_MISSION);
+      return;
+    }
   }
   
   const ch = GAME_CHALLENGES[GAME_IDX];
   const pct = Math.round((GAME_IDX / GAME_CHALLENGES.length) * 100);
-  
   let contentHtml = '';
   
-  if (ch.type === 'TRUE_FALSE') {
+  if (ch.type === 'TEACH') {
+    contentHtml = `
+      <div style="font-size:22px;font-weight:800;color:var(--accent);margin-bottom:16px">${ch.title}</div>
+      <div style="font-size:16px;line-height:1.6;color:var(--text);margin-bottom:30px">${ch.text.replace(/\*\*(.*?)\*\*/g, '<span style="color:var(--accent);font-weight:700">$1</span>')}</div>
+      <button class="btn btn-accent" style="width:100%" onclick="GAME_IDX++; renderGameChallenge()">הבנתי, המשך</button>
+    `;
+  } else if (ch.type === 'TRUE_FALSE') {
     contentHtml = `
       <div style="font-size:18px;font-weight:600;text-align:center;margin:30px 0">${ch.text}</div>
       <div class="game-chips">
@@ -1241,8 +1279,6 @@ function renderGameChallenge() {
       </div>
     `;
   } else if (ch.type === 'SORT_ORDER') {
-    // For simplicity, just render a modified tap correct or skip real sort and just display text
-    // A true sort order requires drag-drop or click-to-slot. Let's do click-to-slot.
     contentHtml = `
       <div style="font-size:18px;font-weight:600;margin-bottom:20px">${ch.text}</div>
       <div id="sort-slots" style="display:flex;flex-direction:column;gap:8px;margin-bottom:20px;min-height:120px;background:var(--surface2);border-radius:12px;padding:10px">
@@ -1265,7 +1301,7 @@ function renderGameChallenge() {
     </div>
     <div class="ov-body">
       <div style="font-size:13px;font-weight:600;color:var(--label3);margin-bottom:10px;text-transform:uppercase">
-        ${ch.type === 'TRUE_FALSE' ? 'נכון או שקר?' : ch.type === 'FILL_BLANK' ? 'השלם את החסר' : ch.type === 'SORT_ORDER' ? 'סדר את השלבים' : 'בחר את התשובה הנכונה'}
+        ${ch.type === 'TEACH' ? 'לימוד' : ch.type === 'TRUE_FALSE' ? 'נכון או שקר?' : ch.type === 'FILL_BLANK' ? 'השלם את החסר' : ch.type === 'SORT_ORDER' ? 'סדר את השלבים' : 'בחר את התשובה הנכונה'}
       </div>
       ${contentHtml}
       <div id="reteach-area"></div>
@@ -1298,7 +1334,6 @@ function checkGameAnswer(given, correct) {
     GAME_COMBO++;
     let state = getState(); state = addXP(state, 5); saveState(state);
     
-    // Show correct UI
     const xpPop = document.createElement('div');
     xpPop.className = 'xp-pop';
     xpPop.textContent = '+5 XP';
@@ -1320,17 +1355,17 @@ function checkGameAnswer(given, correct) {
     }, 600);
   } else {
     GAME_COMBO = 0;
+    TOTAL_ERRORS++;
     haptic();
     const reteach = document.getElementById('reteach-area');
     reteach.innerHTML = `
       <div class="reteach">
-        <strong>לא מדויק.</strong><br>
+        <strong>לא נכון.</strong><br>
         ${ch.reteach || 'נסה לזכור את העובדות מהשיעור ולהתרכז בפרטים הקטנים.'}
       </div>
-      <button class="btn btn-accent" style="margin-top:10px" onclick="GAME_IDX++; renderGameChallenge()">המשך</button>
+      <button class="btn btn-accent" style="margin-top:10px;width:100%" onclick="GAME_IDX++; renderGameChallenge()">המשך</button>
     `;
-    // Push the question to the end to try again
-    GAME_CHALLENGES.push({...ch});
+    REMEDIATION_QUEUE.push({...ch});
   }
 }
 // Follow-up questions
