@@ -10838,5 +10838,92 @@
     "subtopicId": "cell-biology-ch-17-overview-of-the-cell-cycle",
     "chapterId": "cell-biology-ch-17",
     "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 3,
+    "question": "איזה קומפלקס Cyclin‑CDK אחראי בעיקר על המעבר מ‑G1 ל‑S?",
+    "options": [
+      "Cyclin D‑CDK4/6",
+      "Cyclin E‑CDK2",
+      "Cyclin A‑CDK2",
+      "Cyclin B‑CDK1"
+    ],
+    "correctIndex": 1,
+    "explanation": "ב‑G1‑S transition הקומפלקס המרכזי הוא Cyclin E‑CDK2, אשר מרפח את Rb, משחרר את E2F ומאפשר תחילת סינתזת DNA. Cyclin D‑CDK4/6 פועל מוקדם יותר ב‑G1, Cyclin A‑CDK2 פועל ב‑S וב‑G2, ו‑Cyclin B‑CDK1 משמש במעבר G2‑M.",
+    "tags": [
+      "Cyclin",
+      "CDK",
+      "G1/S checkpoint"
+    ],
+    "id": "q_cell-biology-ch-17-the-cell-cycle-control-system_1_1791361713",
+    "subtopicId": "cell-biology-ch-17-the-cell-cycle-control-system",
+    "chapterId": "cell-biology-ch-17",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 4,
+    "question": "מהו תפקידו של Anaphase Promoting Complex/Cyclosome (APC/C) כאשר הוא מופעל על‑ידי Cdc20?",
+    "options": [
+      "פירוק של securin לשחרור של separase ולפרדת כרומוזומים",
+      "פוספורילציה של histone H3",
+      "עיכוב פעילות CDK1",
+      "קידום סינתזת Cyclin D"
+    ],
+    "correctIndex": 0,
+    "explanation": "ב‑anaphase, APC/C‑Cdc20 מתמקד בפירוק securin, מה שמאפשר ל‑separase לחתוך את הקוהזורים ולשחרר את הכרומוזומים. הפוספורילציה של histone H3 מתרחשת במאוחר יותר, והעיכוב של CDK1 מתבצע על‑ידי APC/C‑Cdh1 לאחר האנאפזה. סינתזת Cyclin D אינה קשורה לפעילות APC/C.",
+    "tags": [
+      "APC/C",
+      "Cdc20",
+      "anaphase",
+      "securin"
+    ],
+    "id": "q_cell-biology-ch-17-the-cell-cycle-control-system_2_1791361713",
+    "subtopicId": "cell-biology-ch-17-the-cell-cycle-control-system",
+    "chapterId": "cell-biology-ch-17",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 4,
+    "question": "מוטציה מאבדת‑פונקציה באיזה גן משבית את נקודת הביקורת של G1 על‑ידי חוסר יכולת להפעיל p21?",
+    "options": [
+      "TP53",
+      "RB1",
+      "CDKN2A (p16)",
+      "PTEN"
+    ],
+    "correctIndex": 0,
+    "explanation": "p53 הוא גורם משמר DNA שמגיב לנזק DNA על‑ידי הפעלת ה‑transcription של p21 (CKI). מוטציה מאבדת‑פונקציה ב‑TP53 מונעת את העלאת רמות p21, ולכן ה‑G1 checkpoint נפגע. RB1 פועל בתחתית המסלול, CDKN2A (p16) מעכב CDK4/6, ו‑PTEN הוא פוספטיד‑phosphatase של מסלול PI3K/AKT ולא קשור ישירות ל‑p21.",
+    "tags": [
+      "p53",
+      "p21",
+      "G1 checkpoint",
+      "tumor suppressor"
+    ],
+    "id": "q_cell-biology-ch-17-the-cell-cycle-control-system_3_1791361713",
+    "subtopicId": "cell-biology-ch-17-the-cell-cycle-control-system",
+    "chapterId": "cell-biology-ch-17",
+    "areaId": "cell-biology"
+  },
+  {
+    "difficulty": 3,
+    "question": "איזו מההצהרות הבאות על נקודת ההגבלה (restriction point) במחזור התא היא שגויה?",
+    "options": [
+      "היא נקודה שבה התא מתחייב לחלוקה גם אם גורמי צמיחה מוסרים",
+      "היא מוסדרת על‑ידי פעילות של Cyclin D‑CDK4/6",
+      "היא דורשת איתות נזק DNA כדי לעבור אותה",
+      "היא כוללת פוספורילציה של Rb על‑ידי CDK4/6"
+    ],
+    "correctIndex": 2,
+    "explanation": "נקודת ההגבלה (R) אינה דורשת איתות נזק DNA; היא נקודה קריטית שבה התא מחליט אם להמשיך למחזור או להיכנס למצב מנוחה (G0) על‑פי זמינות גורמי צמיחה. שאר האופציות נכונות: Cyclin D‑CDK4/6 פוספוריל את Rb, והפוספורילציה של Rb משחררת את E2F ומאפשרת מעבר ל‑S.",
+    "tags": [
+      "restriction point",
+      "G1 checkpoint",
+      "Cyclin D",
+      "Rb"
+    ],
+    "id": "q_cell-biology-ch-17-the-cell-cycle-control-system_4_1791361713",
+    "subtopicId": "cell-biology-ch-17-the-cell-cycle-control-system",
+    "chapterId": "cell-biology-ch-17",
+    "areaId": "cell-biology"
   }
 ]

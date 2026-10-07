@@ -767,12 +767,26 @@ function toggleSetting(k) {
 function startMission(mission) {
   haptic();
   if (mission.lessonId) {
-    const l = LESSONS.find(x => x.id === mission.lessonId);
+    // Try exact ID first, then fallback to chapterId match
+    let l = LESSONS.find(x => x.id === mission.lessonId);
+    if (!l) {
+      // lessonId may be like "learn_new" – find first unstarted lesson
+      l = LESSONS.find(lesson => {
+        const chSubs = getAllSubtopics().filter(s => s.chapterId === lesson.chapterId);
+        return chSubs.some(s => getMastery(getState(), s.id).level === 0);
+      }) || LESSONS[0];
+    }
     if (l) { startLesson(l, mission); return; }
   }
   if (mission.questionIds?.length) {
     const qs = mission.questionIds.map(id => QUESTIONS.find(q => q.id === id)).filter(Boolean);
     if (qs.length) { startQuizSession(qs, mission); return; }
+  }
+  // Fallback: if this is a "learn_new" mission and we have lessons, just start the first one
+  if (mission.id === 'learn_new' && LESSONS.length > 0) {
+    const l = LESSONS[0];
+    startLesson(l, mission);
+    return;
   }
   showToast('תוכן בהכנה — הוסף שאלות ל-questions.json');
 }
@@ -886,8 +900,23 @@ function startFollowUpQuestions() {
 // ============================================================
 let SESSION_QS = [], SESSION_IDX = 0, SESSION_CORRECT = 0, SESSION_MISSION = null;
 
+function getAdaptiveMaxDifficulty() {
+  // Starts at difficulty 1 (easy), climbs to 3 (hard) as user gains XP
+  const state = getState();
+  const xp = state.xpTotal || 0;
+  const correct = state.totalCorrect || 0;
+  if (xp < 50 || correct < 10) return 1;   // Total beginner → only easy
+  if (xp < 200 || correct < 40) return 2;  // Intermediate → easy + medium
+  return 3;                                  // Advanced → all difficulties
+}
+
 function startQuizSession(qs, mission) {
-  SESSION_QS = qs.sort(() => Math.random() - .5);
+  const maxDiff = getAdaptiveMaxDifficulty();
+  // Filter to max allowed difficulty, fallback to all if none pass
+  let filtered = qs.filter(q => (q.difficulty || 1) <= maxDiff);
+  if (!filtered.length) filtered = qs;
+  // Sort: easy first, hard last (within the allowed range)
+  SESSION_QS = filtered.sort((a, b) => (a.difficulty || 1) - (b.difficulty || 1));
   SESSION_IDX = 0; SESSION_CORRECT = 0; SESSION_MISSION = mission;
   renderQuestionSlide(SESSION_QS[0], 'session');
 }
