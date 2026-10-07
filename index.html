@@ -614,7 +614,7 @@ function renderHome() {
   const missions = buildMissions(state);
   document.getElementById('missions').innerHTML = missions.map(m => {
     const done = state.missionsCompleted.includes(m.id);
-    return `<button class="mission-item ${done?'done':''}" onclick='startMission(${JSON.stringify(m).replace(/"/g, "&quot;")})' style="border:none; text-align:inherit; font-family:inherit; width:100%">
+    return `<button class="mission-item ${done?'done':''}" onclick='startMission(${JSON.stringify(m).replace(/"/g, "&quot;").replace(/'/g, "&#39;")})' style="border:none; text-align:inherit; font-family:inherit; width:100%">
       <div class="m-icon ${m.type}">${m.icon}</div>
       <div class="m-info"><div class="m-title">${m.title}</div><div class="m-meta">${m.meta}</div></div>
       ${done ? '<div class="m-badge">✓</div>' : `<div class="m-xp">⭐${m.xp}</div>`}
