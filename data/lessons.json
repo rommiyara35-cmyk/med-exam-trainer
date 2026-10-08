@@ -1982,5 +1982,202 @@
       "q_physiology-ch-01-overview-of-eukaryotic-cells_1",
       "q_physiology-ch-01-overview-of-eukaryotic-cells_2"
     ]
+  },
+  {
+    "id": "lesson_physiology-ch-02",
+    "chapterId": "physiology-ch-02",
+    "areaId": "physiology",
+    "title": "הומאוסטזיס: נפח והרכב מדורי נוזלי הגוף",
+    "titleEn": "Homeostasis: Volume and Composition of Body Fluid Compartments",
+    "estimatedMinutes": 10,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "הומאוסטזיס ומדורי נוזלים",
+        "content": "המושג **steady state balance** מתייחס ליכולת הגוף לשמור על סביבה פנימית יציבה. נוזלי הגוף מחולקים למדורים שונים: ה-**intracellular fluid** (ICF) וה-**extracellular fluid** (ECF), השונים בהרכבם היוני.",
+        "keyPoints": [
+          "מושג ה-steady state",
+          "חלוקת נוזלי הגוף ל-ICF ו-ECF"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "העברה אפיתליאלית",
+        "content": "שמירה על ה-**cellular homeostasis** תלויה במנגנונים מורכבים של העברה. עקרונות ה-**epithelial transport** מאפשרים מעבר מבוקר של מומסים ומים דרך שכבות תאים אפיתליאליים במערכות כמו הכליות והעיכול.",
+        "keyPoints": [
+          "שמירה על cellular homeostasis",
+          "עקרונות ה-epithelial transport"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "Let's practice."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_6_1",
+      "q_6_2",
+      "q_7_1",
+      "q_7_2",
+      "q_8_1",
+      "q_8_2",
+      "q_9_1",
+      "q_9_2"
+    ]
+  },
+  {
+    "id": "lesson_physiology-ch-04",
+    "chapterId": "physiology-ch-04",
+    "areaId": "physiology",
+    "title": "מערכת העצבים: מבוא לתאים ולמערכות",
+    "titleEn": "The Nervous System: Introduction to Cells and Systems",
+    "estimatedMinutes": 10,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "מרכיבים תאיים במערכת העצבים",
+        "content": "מערכת העצבים בנויה משני סוגי תאים עיקריים: ה-**neurons**, שאחראים על העברת אותות חשמליים, וה-**glial cells** התומכים בהם. ל-**neurons** יש מבנה ייחודי הכולל **dendrites**, **soma**, ו-**axon**.",
+        "keyPoints": [
+          "סוגי התאים העיקריים: neurons ו-glial cells",
+          "מבנה ה-neuron"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "מבוא למערכות",
+        "content": "הפעילות העצבית מתאפשרת הודות לאינטראקציה המורכבת בין ה-**cellular components** של מערכת העצבים. תאים אלו מתארגנים לרשתות ליצירת המערכת המרכזית (CNS) וההיקפית (PNS).",
+        "keyPoints": [
+          "ארגון ה-cellular components",
+          "רשתות עצביות"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "Let's practice."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_10_1",
+      "q_10_2"
+    ]
+  },
+  {
+    "id": "lesson_physiology-ch-05",
+    "chapterId": "physiology-ch-05",
+    "areaId": "physiology",
+    "title": "יצירה והולכה של פוטנציאלי פעולה",
+    "titleEn": "Generation and Conduction of Action Potentials",
+    "estimatedMinutes": 10,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "פוטנציאל מנוחה ופוטנציאל פעולה",
+        "content": "לתאים חיים יש **membrane potential** שלילי במנוחה הנוצר הודות למפל הריכוזים של יונים כמו **Potassium** ו-**Sodium**. כאשר גירוי עולה על סף מסוים, מתפתח **action potential** המאופיין בדה-פולריזציה מהירה.",
+        "keyPoints": [
+          "יצירת membrane potential",
+          "שלבי ה-action potential"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "הולכה והתמרה חושית",
+        "content": "תהליך ה-**conduction of action potentials** מתרחש לאורך האקסון ויכול להיות רציף או בקפיצות (Saltatory conduction). במקביל, מתבצעת **sensory transduction** הממירה גירויים מהסביבה לאותות חשמליים.",
+        "keyPoints": [
+          "מנגנוני conduction",
+          "תהליך ה-sensory transduction"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "Let's practice."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_11_1",
+      "q_11_2",
+      "q_12_1",
+      "q_12_2",
+      "q_13_1",
+      "q_13_2",
+      "q_14_1",
+      "q_14_2"
+    ]
+  },
+  {
+    "id": "lesson_physiology-ch-06",
+    "chapterId": "physiology-ch-06",
+    "areaId": "physiology",
+    "title": "העברה סינפטית",
+    "titleEn": "Synaptic Transmission",
+    "estimatedMinutes": 10,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "סוגי סינפסות",
+        "content": "העברת מידע בין תאים יכולה להתרחש דרך **electrical synapses** המאפשרות מעבר יונים ישיר, או דרך **chemical synapses** המסתמכות על שחרור **neurotransmitters** אל המרווח הסינפטי.",
+        "keyPoints": [
+          "הבדל בין electrical ו-chemical synapses"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "אינטגרציה ומודולציה",
+        "content": "בגוף התא מתרחשת **synaptic integration** שבה מחושבים הסכומים של כל האותות המעוררים והמעכבים (EPSP ו-IPSP). בנוסף, תהליכי **modulation of synaptic activity** משנים את עוצמת האות הסינפטי בהתאם לצרכים.",
+        "keyPoints": [
+          "תהליך ה-synaptic integration",
+          "מנגנוני modulation"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "Let's practice."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_15_1",
+      "q_15_2",
+      "q_16_1",
+      "q_16_2",
+      "q_17_1",
+      "q_17_2",
+      "q_18_1",
+      "q_18_2"
+    ]
+  },
+  {
+    "id": "lesson_physiology-ch-12",
+    "chapterId": "physiology-ch-12",
+    "areaId": "physiology",
+    "title": "פיזיולוגיה של שריר שלד",
+    "titleEn": "Skeletal Muscle Physiology",
+    "estimatedMinutes": 10,
+    "cards": [
+      {
+        "type": "concept",
+        "title": "ארגון ובקרת שריר שלד",
+        "content": "ה-**organization of skeletal muscle** כולל סיבי שריר המסודרים בסרקומרים. תהליך ה-**control of skeletal muscle activity** מתבצע על ידי המערכת המוטורית, המעוררת כיווץ דרך צימוד התרגשות-כיווץ (Excitation-contraction coupling).",
+        "keyPoints": [
+          "מבנה הסרקומר",
+          "בקרת המערכת המוטורית"
+        ]
+      },
+      {
+        "type": "concept",
+        "title": "סוגי שרירים ומודולציה של הכוח",
+        "content": "קיימים מספר **skeletal muscle types** הנבדלים במהירות הכיווץ ובמטבוליזם שלהם. ניתן לווסת את העוצמה באמצעות **modulation of the force of contraction** (גיוס יחידות מוטוריות ותדר הגירוי), תוך שמירה על ה-**skeletal muscle tone** הבסיסי.",
+        "keyPoints": [
+          "הבדלים בין skeletal muscle types",
+          "מנגנוני modulation ו-tone"
+        ]
+      },
+      {
+        "type": "quiz_prompt",
+        "content": "Let's practice."
+      }
+    ],
+    "followUpQuestionIds": [
+      "q_19_1",
+      "q_19_2"
+    ]
   }
 ]

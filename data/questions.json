@@ -11963,5 +11963,768 @@
       "Endosome",
       "Receptor Recycling"
     ]
+  },
+  {
+    "id": "q_1_1",
+    "subtopicId": "physiology-ch-01-overview-of-eukaryotic-cells",
+    "chapterId": "physiology-ch-01",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "איזה מהאברונים הבאים אחראי בעיקר על סינתזה של ליפידים וסטרואידים בתא האאוקריוטי?",
+    "options": [
+      "הרשת האנדופלזמטית החלקה (Smooth ER).",
+      "הרשת האנדופלזמטית המגורגרת (Rough ER).",
+      "מנגנון גולג'י (Golgi apparatus).",
+      "הליזוזום (Lysosome)."
+    ],
+    "correctIndex": 0,
+    "explanation": "הרשת האנדופלזמטית החלקה מעורבת בסינתזת ליפידים, חילוף חומרים של פחמימות וסילוק רעלים, בעוד שהמגורגרת אחראית על סינתזת חלבונים.",
+    "tags": [
+      "Eukaryotic cells",
+      "Organelles"
+    ]
+  },
+  {
+    "id": "q_1_2",
+    "subtopicId": "physiology-ch-01-overview-of-eukaryotic-cells",
+    "chapterId": "physiology-ch-01",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "מהו התפקיד המרכזי של הגרעינון (Nucleolus) בתוך גרעין התא?",
+    "options": [
+      "סינתזה והרכבה של תת-יחידות של הריבוזום (Ribosome).",
+      "אחסון עיקרי של מולקולות ATP למקרי חירום.",
+      "חלוקת התא במהלך המיטוזה.",
+      "אריזת ה-DNA על גבי היסטונים."
+    ],
+    "correctIndex": 0,
+    "explanation": "הגרעינון הוא אתר בגרעין שבו משועתק rRNA ומתחברת תת-יחידות הריבוזומים לפני יציאתן לציטופלזמה.",
+    "tags": [
+      "Nucleolus",
+      "Eukaryotic cells"
+    ]
+  },
+  {
+    "id": "q_2_1",
+    "subtopicId": "physiology-ch-01-the-plasma-membrane",
+    "chapterId": "physiology-ch-01",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "למה תורם הכולסטרול בממברנת הפלזמה בטמפרטורות פיזיולוגיות?",
+    "options": [
+      "הוא מקטין את נזילות הממברנה ומייצב אותה.",
+      "הוא מגדיל את חדירות הממברנה ליונים חיוביים.",
+      "הוא מתפקד כתעלה עבור מולקולות מים (Aquaporin).",
+      "הוא מונע אינטראקציה בין חלבוני ממברנה."
+    ],
+    "correctIndex": 0,
+    "explanation": "כולסטרול נכנס בין זנבות חומצות השומן ובטמפרטורת הגוף מגביל את התנועתיות שלהן, ובכך מקטין את נזילות הממברנה ותורם לייצובה.",
+    "tags": [
+      "Plasma membrane",
+      "Cholesterol"
+    ]
+  },
+  {
+    "id": "q_2_2",
+    "subtopicId": "physiology-ch-01-the-plasma-membrane",
+    "chapterId": "physiology-ch-01",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "איזה מהרכיבים הבאים נמצא בדרך כלל באופן בלעדי בצד החוץ-תאי (Extracellular) של ממברנת הפלזמה?",
+    "options": [
+      "גליקוליפידים (Glycolipids).",
+      "פוספטידיל-סרין (Phosphatidylserine).",
+      "סיבי אקטין מחוברים לממברנה.",
+      "קינאזות ציטוזוליות (Cytosolic kinases)."
+    ],
+    "correctIndex": 0,
+    "explanation": "פחמימות (הקשורות לליפידים או חלבונים) מופנות תמיד כלפי חוץ התא, שם הן משתתפות בהיכרות תא-תא והגנה.",
+    "tags": [
+      "Plasma membrane",
+      "Asymmetry"
+    ]
+  },
+  {
+    "id": "q_3_1",
+    "subtopicId": "physiology-ch-01-membrane-transport",
+    "chapterId": "physiology-ch-01",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "על פי קינטיקת מיכאליס-מנטן, מהו ההבדל העיקרי בין דיפוזיה פשוטה (Simple diffusion) לדיפוזיה מזורזת (Facilitated diffusion)?",
+    "options": [
+      "דיפוזיה מזורזת מגיעה לרוויה (Saturation) בריכוזים גבוהים, בעוד דיפוזיה פשוטה לא.",
+      "דיפוזיה מזורזת דורשת אנרגיית ATP, ודיפוזיה פשוטה אינה דורשת.",
+      "דיפוזיה פשוטה יכולה להעביר מולקולות נגד מפל הריכוזים.",
+      "דיפוזיה מזורזת מתרחשת רק בתאי עצב."
+    ],
+    "correctIndex": 0,
+    "explanation": "בדיפוזיה מזורזת מעורב נשא חלבוני שיש לו מספר מוגבל של אתרי קישור. לכן, כאשר כל הנשאים תפוסים (רוויה), קצב המעבר מגיע למקסימום (Vmax).",
+    "tags": [
+      "Membrane transport",
+      "Facilitated diffusion"
+    ]
+  },
+  {
+    "id": "q_3_2",
+    "subtopicId": "physiology-ch-01-membrane-transport",
+    "chapterId": "physiology-ch-01",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "איזה מנגנון הובלה מנצל את מפל ריכוזי הנתרן להעברת גלוקוז לתוך תאי אפיתל במעי (Enterocytes)?",
+    "options": [
+      "הובלה פעילה שניונית (Secondary active transport) בסימפורט (Symport).",
+      "הובלה פעילה ראשונית (Primary active transport) תלוית ATP.",
+      "דיפוזיה פשוטה דרך תעלות יונים.",
+      "הובלה בפאגוציטוזה (Phagocytosis)."
+    ],
+    "correctIndex": 0,
+    "explanation": "הנשא SGLT-1 מעביר נתרן וגלוקוז באותו כיוון (סימפורט). הוא מנצל את האנרגיה הפוטנציאלית הטמונה במפל ריכוזי הנתרן, שנוצר על ידי משאבת Na+/K+ (הובלה שניונית).",
+    "tags": [
+      "Membrane transport",
+      "Secondary active transport"
+    ]
+  },
+  {
+    "id": "q_4_1",
+    "subtopicId": "physiology-ch-01-vesicular-transport",
+    "chapterId": "physiology-ch-01",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "במהלך תהליך האנדוציטוזה מתווכת קולטן (Receptor-mediated endocytosis), איזה חלבון עיקרי מצפה את השלפוחית הנוצרת?",
+    "options": [
+      "Clathrin.",
+      "SNARE.",
+      "Actin.",
+      "Tubulin."
+    ],
+    "correctIndex": 0,
+    "explanation": "שלפוחיות אנדוציטוזה הנוצרות בממברנת הפלזמה מצופות לרוב בחלבון קלתרין (Clathrin), שמסייע בעיצוב השלפוחית.",
+    "tags": [
+      "Vesicular transport",
+      "Clathrin"
+    ]
+  },
+  {
+    "id": "q_4_2",
+    "subtopicId": "physiology-ch-01-vesicular-transport",
+    "chapterId": "physiology-ch-01",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "איזה משפחת חלבונים חיונית לאיחוי (Fusion) תקין בין שלפוחית ההפרשה לבין ממברנת המטרה?",
+    "options": [
+      "SNAREs.",
+      "Aquaporins.",
+      "Na+/K+ ATPases.",
+      "Integrins."
+    ],
+    "correctIndex": 0,
+    "explanation": "חלבוני SNARE (v-SNARE על השלפוחית ו-t-SNARE על ממברנת המטרה) מתווכים את הקישור והאיחוי הסופי של הממברנות באקסוציטוזה.",
+    "tags": [
+      "Vesicular transport",
+      "SNARE"
+    ]
+  },
+  {
+    "id": "q_5_1",
+    "subtopicId": "physiology-ch-01-basic-principles-of-solute-and-water-transport",
+    "chapterId": "physiology-ch-01",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "אם תא דם אדום יוכנס לתמיסה היפרטונית (Hypertonic), מה צפוי לקרות לנפח התא?",
+    "options": [
+      "התא יתכווץ עקב יציאת מים באוסמוזה.",
+      "התא יתנפח ואולי יתפוצץ עקב כניסת מים.",
+      "נפח התא לא ישתנה.",
+      "התא יספוג מומסים מהתמיסה ויתנפח."
+    ],
+    "correctIndex": 0,
+    "explanation": "בתמיסה היפרטונית, הריכוז האוסמוטי בחוץ גבוה יותר מאשר בפנים התא. מים ינועו החוצה מהתא באוסמוזה, והתא יתכווץ.",
+    "tags": [
+      "Water transport",
+      "Osmosis"
+    ]
+  },
+  {
+    "id": "q_5_2",
+    "subtopicId": "physiology-ch-01-basic-principles-of-solute-and-water-transport",
+    "chapterId": "physiology-ch-01",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "מקדם ההשתקפות (Reflection coefficient, σ) של חלבוני אלבומין בממברנת נימה עומד על כמעט 1. מה המשמעות הפיזיולוגית של ערך זה?",
+    "options": [
+      "האלבומין אינו חודר את הממברנה ויוצר לחץ אוסמוטי (אונקוטי) מקסימלי.",
+      "האלבומין עובר בחופשיות את הממברנה ולא יוצר מפל אוסמוטי.",
+      "מים אינם יכולים לעבור דרך הממברנה בנוכחות אלבומין.",
+      "אלבומין נשאב אקטיבית החוצה מהנימה."
+    ],
+    "correctIndex": 0,
+    "explanation": "מקדם השתקפות שווה 1 אומר שהמומס לא יכול לעבור את הממברנה כלל (אינו חדיר). לכן, הוא מפעיל לחץ אוסמוטי יעיל (Effective osmotic pressure).",
+    "tags": [
+      "Solute transport",
+      "Reflection coefficient"
+    ]
+  },
+  {
+    "id": "q_6_1",
+    "subtopicId": "physiology-ch-02-concept-of-steady-state-balance",
+    "chapterId": "physiology-ch-02",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "במצב יציב (Steady-state) של נתרן בגוף אדם בוגר ובריא, איזה מהמשפטים הבאים מתאר בצורה הטובה ביותר את המאזן?",
+    "options": [
+      "כמות הנתרן הנכנסת (Intake) שווה לכמות המופרשת (Excretion), תוך שמירה על ריכוז קבוע בדם.",
+      "אין הפרשה של נתרן כלל, כדי למנוע ירידה בלחץ הדם.",
+      "ריכוז הנתרן בדם עולה בהדרגה לאורך היום ויורד בלילה.",
+      "הכליה מפרישה נתרן רק כאשר יש צריכה מוגברת של אשלגן."
+    ],
+    "correctIndex": 0,
+    "explanation": "במצב של הומאוסטזיס ומצב יציב (Steady-state), צריכת החומר שווה להפרשתו (בעיקר דרך השתן), והריכוז שלו בנוזל החוץ-תאי נשאר קבוע לאורך זמן.",
+    "tags": [
+      "Steady-state",
+      "Sodium balance"
+    ]
+  },
+  {
+    "id": "q_6_2",
+    "subtopicId": "physiology-ch-02-concept-of-steady-state-balance",
+    "chapterId": "physiology-ch-02",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "מהו ההבדל העיקרי בין שיווי משקל (Equilibrium) למצב יציב (Steady-state) במערכות ביולוגיות?",
+    "options": [
+      "מצב יציב דורש לרוב השקעת אנרגיה מתמשכת לשמירתו, בעוד שיווי משקל לא.",
+      "שיווי משקל מתרחש רק כאשר אין מים במערכת.",
+      "במצב יציב אין שום תנועה של מולקולות, בניגוד לשיווי משקל.",
+      "שניהם מונחים נרדפים המתארים בדיוק את אותו מצב פיזיקלי."
+    ],
+    "correctIndex": 0,
+    "explanation": "שיווי משקל תרמודינמי הוא מצב בעל אנרגיה חופשית מינימלית ללא השקעת אנרגיה. מצב יציב פיזיולוגי, כגון ריכוז יונים, נשמר על ידי משאבות הדורשות ATP באופן מתמיד.",
+    "tags": [
+      "Steady-state",
+      "Equilibrium"
+    ]
+  },
+  {
+    "id": "q_7_1",
+    "subtopicId": "physiology-ch-02-volumes-and-composition-of-body-fluid-compartments",
+    "chapterId": "physiology-ch-02",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "איזה חומר סמן (Marker) ישמש באופן המיטבי למדידת נפח הנוזל החוץ-תאי (ECF) בגוף?",
+    "options": [
+      "אינולין (Inulin) או מניטול.",
+      "מים מסומנים באיזוטופ (Tritiated water).",
+      "כחול אוונס (Evans blue) הנקשר לאלבומין.",
+      "איזוטופ אשלגן רדיואקטיבי."
+    ],
+    "correctIndex": 0,
+    "explanation": "אינולין, סוכרוז ומניטול מפזרים את עצמם בכל הנוזל החוץ-תאי אך אינם חודרים לממברנת התא, ולכן מודדים את נפח ה-ECF. מים מסומנים מודדים סך המים בגוף (TBW). כחול אוונס מודד פלזמה.",
+    "tags": [
+      "Body fluids",
+      "ECF",
+      "Markers"
+    ]
+  },
+  {
+    "id": "q_7_2",
+    "subtopicId": "physiology-ch-02-volumes-and-composition-of-body-fluid-compartments",
+    "chapterId": "physiology-ch-02",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "באדם שמשקלו 70 ק\"ג, מהו בקירוב הנפח הכולל של נוזל תוך-תאי (ICF)?",
+    "options": [
+      "28 ליטר.",
+      "42 ליטר.",
+      "14 ליטר.",
+      "5 ליטר."
+    ],
+    "correctIndex": 0,
+    "explanation": "סך המים בגוף (TBW) הוא כ-60% ממשקל הגוף (42 ליטר ב-70 ק\"ג). שני שלישים מכך (כ-28 ליטר) הם הנוזל התוך-תאי (ICF), ושליש אחד (14 ליטר) הוא הנוזל החוץ-תאי (ECF).",
+    "tags": [
+      "Body fluids",
+      "ICF"
+    ]
+  },
+  {
+    "id": "q_8_1",
+    "subtopicId": "physiology-ch-02-maintenance-of-cellular-homeostasis",
+    "chapterId": "physiology-ch-02",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "איזה תהליך מרכזי מסייע בייצוב הנפח התאי בעת חשיפה אקוטית לתמיסה היפוטונית?",
+    "options": [
+      "הפעלה של תעלות K+ ו-Cl- להוצאת יונים ולהורדת הלחץ האוסמוטי התוך-תאי.",
+      "הגברת פעילות משאבת Na+/K+ ליצירת ATP.",
+      "סגירה מוחלטת של כל תעלות המים (Aquaporins).",
+      "כניסת סידן מהירה שגורמת להתכווצות שלד התא."
+    ],
+    "correctIndex": 0,
+    "explanation": "כשתא מתנפח (Regulatory Volume Decrease - RVD), הוא פותח תעלות אשלגן וכלור. יציאת אוסמוליטים אלו גוררת מים החוצה, ומחזירה את הנפח לתקין.",
+    "tags": [
+      "Cellular homeostasis",
+      "Cell volume regulation"
+    ]
+  },
+  {
+    "id": "q_8_2",
+    "subtopicId": "physiology-ch-02-maintenance-of-cellular-homeostasis",
+    "chapterId": "physiology-ch-02",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "כיצד תא שריר לב מווסת באופן טבעי עלייה בריכוז ה-Ca2+ התוך-תאי, כדי לשמור על הומאוסטזיס?",
+    "options": [
+      "על ידי משאף Na+/Ca2+ מחליף (NCX) ומשאבות Ca2+-ATPase בממברנה וברשת הסרקופלזמטית (SERCA).",
+      "על ידי דיפוזיה פשוטה של סידן החוצה.",
+      "על ידי קישור כל הסידן לאקטין באופן בלתי הפיך.",
+      "על ידי אנדוציטוזה של יוני סידן."
+    ],
+    "correctIndex": 0,
+    "explanation": "התא מוציא סידן ל-ECF בעזרת משאבת סידן ולמערך NCX (מוציא 1 סידן על כל 3 נתרן נכנסים), ושואב אותו למאגרים התוך תאיים בעזרת SERCA.",
+    "tags": [
+      "Cellular homeostasis",
+      "Calcium regulation"
+    ]
+  },
+  {
+    "id": "q_9_1",
+    "subtopicId": "physiology-ch-02-principles-of-epithelial-transport",
+    "chapterId": "physiology-ch-02",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "כיצד פועלות תאי אפיתל (Epithelial cells) לספיגת נתרן באופן כיווני (Vectorial transport)?",
+    "options": [
+      "על ידי חלוקה אסימטרית של חלבונים - תעלות נתרן בצד האפיקלי ומשאבות Na+/K+ בצד הבזולטרלי.",
+      "על ידי מיקום משאבות Na+/K+ בשני צדי הממברנה באותה צפיפות.",
+      "הן אינן מסוגלות לבצע ספיגה כיוונית אלא רק להפריש.",
+      "על ידי מעבר פרא-סלולרי המבוקר על ידי מיטוכונדריה בתוך ה-Tight junctions."
+    ],
+    "correctIndex": 0,
+    "explanation": "הספיגה הכיוונית באפיתל מתאפשרת בזכות הקוטביות (Polarity) התאית: תעלות וקו-טרנספורטרים אפיקליים מאפשרים כניסה, ומשאבות בזולטרליות שומרות על מפל ריכוזים ומוציאות את החומר לדם.",
+    "tags": [
+      "Epithelial transport",
+      "Vectorial transport"
+    ]
+  },
+  {
+    "id": "q_9_2",
+    "subtopicId": "physiology-ch-02-principles-of-epithelial-transport",
+    "chapterId": "physiology-ch-02",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "מה תפקידם של הצמתים האטומים (Tight junctions) בהובלה באפיתל?",
+    "options": [
+      "הפרדת הממברנה האפיקלית מהבזולטרלית ויצירת מחסום בררני למעבר פרא-סלולרי של מומסים ומים.",
+      "יצירת תעלה גדולה למעבר מהיר של חלבונים בין תאים סמוכים.",
+      "ייצור ATP לאספקת אנרגיה למשאבות בממברנה האפיקלית.",
+      "שינוע אקטיבי של גלוקוז מהלומן לזרם הדם."
+    ],
+    "correctIndex": 0,
+    "explanation": "ה-Tight junctions (Zonula occludens) מתפקדים כ'גדר' (מניעת תנועת חלבוני ממברנה) וכ'שער' המאפשר מעבר חלקי ובררני (Paracellular transport) בין התאים.",
+    "tags": [
+      "Epithelial transport",
+      "Tight junctions"
+    ]
+  },
+  {
+    "id": "q_10_1",
+    "subtopicId": "physiology-ch-04-cellular-components-of-the-nervous-system",
+    "chapterId": "physiology-ch-04",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "מהו התפקיד העיקרי של תאי אוליגודנדרוציטים (Oligodendrocytes) במערכת העצבים המרכזית (CNS)?",
+    "options": [
+      "יצירת מעטפת המיאלין (Myelin sheath) סביב אקסונים במספר תאי עצב במקביל.",
+      "פגוציטוזה של תאים פגועים ושאריות רקמה כחלק ממערכת החיסון.",
+      "ייצור ושאיבה של נוזל מוח-שדרה (CSF) אל החדרים.",
+      "יצירת מחסום דם-מוח (BBB) על ידי עטיפת נימי הדם."
+    ],
+    "correctIndex": 0,
+    "explanation": "אוליגודנדרוציטים הם תאי גליה ב-CNS המייצרים מיאלין, וענפיהם יכולים לעטוף מספר אקסונים. (האסטרוציטים תורמים ל-BBB, מיקרוגליה עוסקים בפגוציטוזה, ותאי אפנדימה ב-CSF).",
+    "tags": [
+      "Nervous system",
+      "Glia",
+      "Oligodendrocytes"
+    ]
+  },
+  {
+    "id": "q_10_2",
+    "subtopicId": "physiology-ch-04-cellular-components-of-the-nervous-system",
+    "chapterId": "physiology-ch-04",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "איזה סוג של תאי גליה פועל כמאקרופאג מקומי של מערכת העצבים המרכזית ומתעורר במצבי פציעה או דלקת?",
+    "options": [
+      "מיקרוגליה (Microglia).",
+      "תאי שוואן (Schwann cells).",
+      "אסטרוציטים (Astrocytes).",
+      "אוליגודנדרוציטים (Oligodendrocytes)."
+    ],
+    "correctIndex": 0,
+    "explanation": "מיקרוגליה הם תאי חיסון ממקור מזודרמלי (בניגוד לשאר התאים שהם אקטודרמליים), והם משמשים כפגוציטים מרכזיים ב-CNS שמסלקים פסולת ותאים מתים.",
+    "tags": [
+      "Nervous system",
+      "Microglia"
+    ]
+  },
+  {
+    "id": "q_11_1",
+    "subtopicId": "physiology-ch-05-membrane-potentials",
+    "chapterId": "physiology-ch-05",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "על פי משוואת גולדמן (Goldman-Hodgkin-Katz), אילו מהיונים הבאים משפיעים באופן המשמעותי ביותר על פוטנציאל המנוחה של תא עצב אופייני?",
+    "options": [
+      "אשלגן (K+), בגלל החדירות הגבוהה שלו במצב מנוחה.",
+      "נתרן (Na+), בגלל מפל הריכוזים התלול שלו.",
+      "סידן (Ca2+), בגלל המטען החשמלי הכפול שלו.",
+      "כלור (Cl-), בגלל שהוא דוחף את הפוטנציאל לפלוס."
+    ],
+    "correctIndex": 0,
+    "explanation": "במצב מנוחה, חדירות הממברנה לאשלגן גבוהה בהרבה מאשר לנתרן בגלל קיום תעלות K+ 'דלף' (Leak channels). לכן, פוטנציאל המנוחה קרוב יותר לפוטנציאל שיווי המשקל של אשלגן (-90 mV).",
+    "tags": [
+      "Membrane potential",
+      "Goldman equation"
+    ]
+  },
+  {
+    "id": "q_11_2",
+    "subtopicId": "physiology-ch-05-membrane-potentials",
+    "chapterId": "physiology-ch-05",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "אם משאבת Na+/K+-ATPase הייתה מושבתת לחלוטין על ידי רעלן כגון דיגיטליס, מה תהיה ההשפעה המיידית (בשניות הראשונות) על פוטנציאל הממברנה?",
+    "options": [
+      "דפולריזציה קלה מאוד (כמה מילי-וולטים) עקב אובדן התרומה האלקטרוגנית של המשאבה.",
+      "דפולריזציה מלאה מיד ל-0 mV בגלל התמוטטות מידית של מפל הריכוזים.",
+      "היפרפולריזציה משמעותית לכיוון -90 mV.",
+      "ירידה מידית ביכולת התא לייצר פוטנציאל פעולה מבלי שינוי בפוטנציאל המנוחה."
+    ],
+    "correctIndex": 0,
+    "explanation": "משאבת נתרן/אשלגן היא אלקטרוגנית (מוציאה 3 Na+ ומכניסה 2 K+), ולכן תורמת כמה מילי-וולטים (-4mV) לפוטנציאל המנוחה. השבתתה המיידית מבטלת תרומה זו, אך מפל הריכוזים עצמו שוקע לאט יותר.",
+    "tags": [
+      "Membrane potential",
+      "Na+/K+ pump"
+    ]
+  },
+  {
+    "id": "q_12_1",
+    "subtopicId": "physiology-ch-05-suprathreshold-response-the-action-potential",
+    "chapterId": "physiology-ch-05",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "במהלך שלב הרפולריזציה (Repolarization) של פוטנציאל הפעולה באקסון, מהו המצב השולט של התעלות תלויות המתח (Voltage-gated)?",
+    "options": [
+      "תעלות הנתרן במצב אינאקטיבציה (Inactivated) ותעלות האשלגן פתוחות.",
+      "תעלות הנתרן סגורות (אך ניתנות להפעלה) ותעלות האשלגן סגורות.",
+      "תעלות הנתרן פתוחות ותעלות האשלגן פתוחות.",
+      "תעלות הנתרן במצב אינאקטיבציה ותעלות האשלגן במצב אינאקטיבציה."
+    ],
+    "correctIndex": 0,
+    "explanation": "לאחר שיא פוטנציאל הפעולה, שער האינאקטיבציה של תעלות הנתרן נסגר במהירות, ומונע כניסת נתרן (תקופה רפרקטורית מוחלטת). תעלות האשלגן תלויות המתח (שנפתחות לאט יותר) נשארות פתוחות, ואשלגן יוצא ומרפלרז את התא.",
+    "tags": [
+      "Action potential",
+      "Ion channels"
+    ]
+  },
+  {
+    "id": "q_12_2",
+    "subtopicId": "physiology-ch-05-suprathreshold-response-the-action-potential",
+    "chapterId": "physiology-ch-05",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "מה קובע בעיקר את סף פוטנציאל הפעולה (Threshold)?",
+    "options": [
+      "המתח שבו הזרם הנכנס של Na+ עולה על הזרם היוצא של K+, וכך מתחיל משוב חיובי.",
+      "המתח המדויק של -55 mV, הזהה בכל תאי הגוף ללא יוצא מן הכלל.",
+      "פעילות מוגברת של משאבת Na+/K+.",
+      "פתיחת תעלות סידן תלויות מתח בקצה האקסון."
+    ],
+    "correctIndex": 0,
+    "explanation": "סף הפעולה הוא נקודת האל-חזור שבה קצב הדפולריזציה כתוצאה מכניסת נתרן מתגבר על קצב יציאת האשלגן. אז מתחיל משוב חיובי המוביל לפתיחת כל תעלות הנתרן ופוטנציאל פעולה מלא.",
+    "tags": [
+      "Action potential",
+      "Threshold"
+    ]
+  },
+  {
+    "id": "q_13_1",
+    "subtopicId": "physiology-ch-05-conduction-of-action-potentials",
+    "chapterId": "physiology-ch-05",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "מדוע הולכת פוטנציאל הפעולה בכיוון אחד בלבד (Orthodromic) באופן טבעי לאורך האקסון?",
+    "options": [
+      "בגלל התקופה הרפרקטורית של תעלות הנתרן שנותרות באינאקטיבציה מאחורי חזית גל הפעולה.",
+      "בגלל היעדר תעלות נתרן בכיוון ההפוך.",
+      "בגלל שמשאבות Na+/K+ שואבות את היונים רק בכיוון הסינפסה.",
+      "בגלל גרדיאנט חומציות מיוחד שקיים רק בכיוון הדנדריטים אל הטרמינל."
+    ],
+    "correctIndex": 0,
+    "explanation": "כאשר פוטנציאל פעולה מתקדם, האזור הממברנלי שעבר דפולריזציה הרגע נמצא בתקופה רפרקטורית מוחלטת (תעלות הנתרן אינאקטיביות), מה שמונע מהזרם החשמלי לעורר פוטנציאל פעולה לאחור.",
+    "tags": [
+      "Action potential",
+      "Conduction"
+    ]
+  },
+  {
+    "id": "q_13_2",
+    "subtopicId": "physiology-ch-05-conduction-of-action-potentials",
+    "chapterId": "physiology-ch-05",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "כיצד מעטפת המיאלין מגדילה את מהירות ההולכה של פוטנציאל הפעולה באקסונים?",
+    "options": [
+      "היא מקטינה את הקיבוליות (Capacitance) ומגדילה את התנגדות הממברנה למעבר יונים.",
+      "היא מגדילה את הקיבוליות, מה שמאפשר אגירת יותר מטען חשמלי.",
+      "היא מגבירה את הפעילות של תעלות אשלגן תלויות מתח ב-Nodes of Ranvier.",
+      "היא מחממת את האקסון ובכך מאיצה את הדיפוזיה של יונים."
+    ],
+    "correctIndex": 0,
+    "explanation": "המיאלין מהווה מבודד חשמלי. הוא מגדיל את התנגדות הממברנה (מונע זליגת יונים) ומקטין את הקיבוליות (פחות מטען נאגר על הממברנה), מה שמאפשר לזרם האלקטרוטוני לנוע מהר יותר אל ה-Node of Ranvier הבא (Saltatory conduction).",
+    "tags": [
+      "Action potential",
+      "Myelin",
+      "Conduction velocity"
+    ]
+  },
+  {
+    "id": "q_14_1",
+    "subtopicId": "physiology-ch-05-sensory-transduction",
+    "chapterId": "physiology-ch-05",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "במהלך התמרה חושית ברצפטור לחץ (Pacinian corpuscle), מה מתרחש כתוצאה מלחץ מכני על הקפסולה?",
+    "options": [
+      "פתיחת תעלות יונים רגישות למתיחה (Mechanosensitive channels) הגורמת לפוטנציאל קולטן (Receptor potential) מקומי מסוג דפולריזציה.",
+      "יצירת פוטנציאל פעולה הכל-או-כלום מיד באתר ההתמרה.",
+      "עיכוב בשחרור נוירוטרנסמיטר מהרצפטור, הגורם להיפרפולריזציה של הנוירון הבא.",
+      "הפעלת חלבוני G המובילה לפתיחת תעלות אשלגן ולדפולריזציה."
+    ],
+    "correctIndex": 0,
+    "explanation": "הלחץ פותח תעלות יונים לקטיונים באופן ישיר, מה שגורם לזרם מדורג (Receptor potential). אם הדפולריזציה הזו עוברת את הסף באזור המעורר (Trigger zone), ייווצר פוטנציאל פעולה.",
+    "tags": [
+      "Sensory transduction",
+      "Receptor potential"
+    ]
+  },
+  {
+    "id": "q_14_2",
+    "subtopicId": "physiology-ch-05-sensory-transduction",
+    "chapterId": "physiology-ch-05",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "איזו מתופעות ההתאמה (Adaptation) מאפיינת קולטנים טוניים (Tonic receptors)?",
+    "options": [
+      "הסתגלות איטית - הם ממשיכים לירות פוטנציאלי פעולה כל עוד הגירוי נמשך.",
+      "הסתגלות מהירה מאוד - הם יורים רק בעת התחלת וסיום הגירוי.",
+      "חוסר מוחלט של יכולת ליצור פוטנציאל רצפטור בגירוי מתמשך.",
+      "הם מגיבים רק לגירויים מזיקים (Nociceptive) ונוטים להגביר את התגובה (Sensitization)."
+    ],
+    "correctIndex": 0,
+    "explanation": "קולטנים טוניים עוברים אדפטציה איטית מאוד ולכן חשובים להעברת מידע על גירויים מתמשכים כמו כאב, תנוחת גוף ולחץ דם, בניגוד לקולטנים פאזיים (Phasic) שמגיבים לשינויים בגירוי.",
+    "tags": [
+      "Sensory transduction",
+      "Adaptation"
+    ]
+  },
+  {
+    "id": "q_15_1",
+    "subtopicId": "physiology-ch-06-electrical-synapses",
+    "chapterId": "physiology-ch-06",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "מהו היתרון הפיזיולוגי המרכזי של סינפסות חשמליות (Gap junctions) לעומת סינפסות כימיות?",
+    "options": [
+      "הולכה דו-כיוונית מהירה מאוד המאפשרת סנכרון מושלם של קבוצת תאים.",
+      "יכולת הגברה משמעותית (Amplification) של האות מהנוירון הפרה-סינפטי אל הפוסט-סינפטי.",
+      "יכולת גבוהה מאוד לפלסטיות ולשינוי בעוצמת הקשר לצורכי למידה וזיכרון.",
+      "שחרור מבוקר של מגוון נוירוטרנסמיטורים באותה סינפסה."
+    ],
+    "correctIndex": 0,
+    "explanation": "סינפסות חשמליות מורכבות מקונקסונים המחברים ישירות את הציטופלזמה. הזרם עובר ללא עיכוב סינפטי, ולרוב בשני הכיוונים, מה שאידיאלי לתגובות מהירות ולסנכרון תאים (כמו בשריר לב).",
+    "tags": [
+      "Synapses",
+      "Gap junctions"
+    ]
+  },
+  {
+    "id": "q_15_2",
+    "subtopicId": "physiology-ch-06-electrical-synapses",
+    "chapterId": "physiology-ch-06",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "איזה מהיונים הבאים, כאשר ריכוזו התוך-תאי עולה באופן משמעותי, גורם לרוב לסגירה של Gap junctions כדי להגן על תאים שכנים?",
+    "options": [
+      "סידן (Ca2+).",
+      "אשלגן (K+).",
+      "נתרן (Na+).",
+      "מגנזיום (Mg2+)."
+    ],
+    "correctIndex": 0,
+    "explanation": "עליה קיצונית בסידן התוך-תאי, או ירידה דרסטית ב-pH (חמצת), לרוב מעידים על נזק תאי או מוות קרב. מנגנון הגנה סוגר את תעלות הקונקסון כדי למנוע מעבר החומרים המזיקים לתאים שכנים.",
+    "tags": [
+      "Gap junctions",
+      "Calcium"
+    ]
+  },
+  {
+    "id": "q_16_1",
+    "subtopicId": "physiology-ch-06-chemical-synapses",
+    "chapterId": "physiology-ch-06",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "מהו הטריגר העיקרי הגורם לאקסוציטוזה של נוירוטרנסמיטר מהטרמינל הפרה-סינפטי?",
+    "options": [
+      "כניסת יוני סידן (Ca2+) דרך תעלות תלויות-מתח.",
+      "כניסת יוני נתרן (Na+) מתעלות הדלף.",
+      "יציאת יוני אשלגן (K+) מחוץ לתא.",
+      "כניסת יוני כלור (Cl-) היוצרת היפרפולריזציה בטרמינל."
+    ],
+    "correctIndex": 0,
+    "explanation": "פוטנציאל הפעולה המגיע לטרמינל גורם לדפולריזציה הפותחת תעלות סידן תלויות-מתח. כניסת הסידן נקשרת לחלבון Synaptotagmin, המעורר את איחוי השלפוחיות (SNARE complex) ושחרור הטרנסמיטר.",
+    "tags": [
+      "Chemical synapses",
+      "Neurotransmitter release"
+    ]
+  },
+  {
+    "id": "q_16_2",
+    "subtopicId": "physiology-ch-06-chemical-synapses",
+    "chapterId": "physiology-ch-06",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "כיצד פועל הקולטן הניקוטיני של אצטילכולין (nAChR) בצומת העצב-שריר?",
+    "options": [
+      "כקולטן יונוטרופי הפותח תעלה קטיונית לא-סלקטיבית לנתרן ולאשלגן.",
+      "כקולטן מטאבוטרופי (G-protein coupled) המעכב אדניליל ציקלאז.",
+      "כמשאבה השואבת אצטילכולין חזרה לתא הפרה-סינפטי.",
+      "כתעלת כלור המעכבת את השריר ומונעת כיווץ יתר."
+    ],
+    "correctIndex": 0,
+    "explanation": "הרצפטור הניקוטיני הוא תעלה מופעלת-ליגנד המאפשרת מעבר של נתרן ואשלגן (חדירה יותר לנתרן). כניסת הנתרן גורמת לדפולריזציה חזקה (EPP) המביאה לפוטנציאל פעולה בשריר.",
+    "tags": [
+      "Chemical synapses",
+      "Nicotinic receptor"
+    ]
+  },
+  {
+    "id": "q_17_1",
+    "subtopicId": "physiology-ch-06-synaptic-integration",
+    "chapterId": "physiology-ch-06",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "מה מתאר המושג Spatial summation (סכימה מרחבית) באינטגרציה סינפטית?",
+    "options": [
+      "הצטברות של פוטנציאלים מדורגים מכמה סינפסות שונות המופעלות בו זמנית על פני אותו נוירון.",
+      "הצטברות של פוטנציאלים המגיעים בתדירות גבוהה מאותה סינפסה בדיוק.",
+      "ביטול הדדי בין EPSP ל-IPSP המתרחשים באותו דנדריט.",
+      "פיזור המידע מנוירון בודד לאלפי נוירוני מטרה באזורים שונים במוח."
+    ],
+    "correctIndex": 0,
+    "explanation": "סכימה מרחבית מתרחשת כאשר מספר סינפסות נפרדות מופעלות בו-זמנית, והסיגנלים שלהן (EPSPs או IPSPs) מצטרפים יחד באזור ה-Axon hillock כדי לקבוע אם ייווצר פוטנציאל פעולה.",
+    "tags": [
+      "Synaptic integration",
+      "Spatial summation"
+    ]
+  },
+  {
+    "id": "q_17_2",
+    "subtopicId": "physiology-ch-06-synaptic-integration",
+    "chapterId": "physiology-ch-06",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "בסינפסה מעכבת, פתיחת תעלות כלור (Cl-) יוצרת IPSP. בהנחה שפוטנציאל המנוחה הוא -70mV ופוטנציאל שיווי המשקל של כלור הוא -70mV, איזו תופעה תמנע יצירת פוטנציאל פעולה?",
+    "options": [
+      "Shunting inhibition - הגדלת מוליכות הממברנה שמחלישה או מנקזת את הזרם של ה-EPSP.",
+      "היפרפולריזציה חדה לכיוון -90mV.",
+      "דפולריזציה של ממברנת הגוף מעבר לסף.",
+      "הפעלה כפויה של תעלות נתרן בקרבת מקום."
+    ],
+    "correctIndex": 0,
+    "explanation": "גם אם הכלור לא משנה את המתח (כי Vm שווה ל-Ecl), פתיחת התעלות מקטינה את התנגדות הממברנה. לפי חוק אוהם (V=IR), כל זרם חיובי (EPSP) שיגיע יגרום לשינוי מתח קטן יותר, תופעה הנקראת Shunting.",
+    "tags": [
+      "Synaptic integration",
+      "Shunting inhibition"
+    ]
+  },
+  {
+    "id": "q_18_1",
+    "subtopicId": "physiology-ch-06-modulation-of-synaptic-activity",
+    "chapterId": "physiology-ch-06",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "כיצד פועל קולטן מטאבוטרופי, כגון קולטן מוסקריני (Muscarinic), לוויסות פעילות סינפטית?",
+    "options": [
+      "על ידי קישור ישיר לליגנד ופתיחה מיידית של תעלה כחלק מאותו חלבון.",
+      "על ידי הפעלת חלבוני G ושליחים שניוניים (כמו cAMP או IP3) שיכולים לפתוח תעלות יונים או להפעיל קינאזות.",
+      "על ידי תנועה אל תוך הגרעין וויסות שעתוק גנים באופן ישיר בדומה להורמונים סטרואידים.",
+      "על ידי פירוק הטרנסמיטר במרווח הסינפטי ומניעת הפעלת קולטנים יונוטרופיים."
+    ],
+    "correctIndex": 1,
+    "explanation": "קולטנים מטאבוטרופיים מפעילים каскדות תוך-תאיות באמצעות חלבוני G. פעולה זו יכולה לווסת לאורך זמן את מוליכות התעלות ואת רגישות התא, בניגוד לקולטנים יונוטרופיים הפועלים כמהירים.",
+    "tags": [
+      "Synaptic modulation",
+      "Metabotropic receptors"
+    ]
+  },
+  {
+    "id": "q_18_2",
+    "subtopicId": "physiology-ch-06-modulation-of-synaptic-activity",
+    "chapterId": "physiology-ch-06",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "מנגנון של Facilitation (הקלה) לטווח קצר בסינפסה מתרחש לרוב בשל גירויים תדירים. מהו המנגנון התאי העיקרי לכך?",
+    "options": [
+      "הצטברות של יוני סידן (Ca2+) בטרמינל הפרה-סינפטי המגבירה שחרור שלפוחיות בגירוי הבא.",
+      "דילול (Depletion) של מאגר השלפוחיות המוכנות לשחרור.",
+      "ירידה במספר הקולטנים הפוסט-סינפטיים עקב אינטרנליזציה.",
+      "עלייה בביטוי של אנזימים המפרקים נוירוטרנסמיטורים בסינפסה."
+    ],
+    "correctIndex": 0,
+    "explanation": "בגירויים צפופים (High-frequency), משאבות הסידן אינן מספיקות לפנות את הסידן מהר מספיק. הרמה הבסיסית של סידן עולה, ולכן בגירוי הבא משתחרר יותר טרנסמיטר (Facilitation).",
+    "tags": [
+      "Synaptic plasticity",
+      "Facilitation"
+    ]
+  },
+  {
+    "id": "q_19_1",
+    "subtopicId": "physiology-ch-12-organization-of-skeletal-muscle",
+    "chapterId": "physiology-ch-12",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "במבנה הסרקומר בשריר השלד, אילו רכיבים נמצאים ב-A band (הרצועה הכהה)?",
+    "options": [
+      "חפיפה של סיבי אקטין ומיוזין לכל רוחבה, כולל אזור מרכזי (H zone) המכיל רק מיוזין.",
+      "סיבי אקטין (Actin) וחלבוני ה-Z-line בלבד.",
+      "רק מולקולות מיוזין (Myosin) לאורך כל ה-A band, ללא אקטין בכלל.",
+      "קו ה-M המכיל חלבונים המחזיקים את האקטין במקומו."
+    ],
+    "correctIndex": 0,
+    "explanation": "רצועת A מוגדרת לפי אורך סיבי המיוזין (העבים). בקצוות ה-A band ישנה חפיפה עם אקטין (Thin filaments), בעוד שבמרכזה (H zone) יש רק מיוזין.",
+    "tags": [
+      "Skeletal muscle",
+      "Sarcomere"
+    ]
+  },
+  {
+    "id": "q_19_2",
+    "subtopicId": "physiology-ch-12-organization-of-skeletal-muscle",
+    "chapterId": "physiology-ch-12",
+    "areaId": "physiology",
+    "difficulty": 3,
+    "question": "מהו התפקיד העיקרי של חלבון הטיטין (Titin) בסרקומר השריר?",
+    "options": [
+      "הוא מתפקד כקפיץ אלסטי התורם למתח הפסיבי (Passive tension) ומחזיק את המיוזין במרכז הסרקומר.",
+      "הוא קושר יוני סידן כדי לאפשר את כיפוף ראש המיוזין.",
+      "הוא חוסם את אתרי הקישור למיוזין על גבי האקטין במצב מנוחה.",
+      "הוא אנזים המפרק ATP לאספקת אנרגיה לכיווץ השריר."
+    ],
+    "correctIndex": 0,
+    "explanation": "טיטין הוא החלבון הגדול ביותר בגוף, והוא מחבר את סיב המיוזין מקו ה-Z ועד לקו ה-M. הוא אלסטי, מתנגד למתיחת יתר, ואחראי למתח המנוחה של שריר שלד.",
+    "tags": [
+      "Skeletal muscle",
+      "Titin"
+    ]
   }
 ]
