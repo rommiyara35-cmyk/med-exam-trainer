@@ -13,23 +13,34 @@
   <style>
     /* ===== DESIGN TOKENS ===== */
     :root {
-      --accent: #007AFF;
-      --accent-light: #3395FF;
-      --success: #34C759;
-      --warning: #FF9500;
-      --danger: #FF3B30;
+      --accent: #00696F;
+      --accent-light: #0E8A91;
+      --on-accent: #FFFFFF;
+      --success: #1D7A38;
+      --warning: #8F5200;
+      --danger: #C0261B;
+      --fill-accent: #00696F;
+      --fill-success: #1D7A38;
+      --fill-warning: #8F5200;
+      --fill-danger: #C0261B;
+      --toggle-on: #34C759;
+      --tint-accent: rgba(0,105,111,.10);
+      --tint-success: rgba(29,122,56,.12);
+      --tint-warning: rgba(143,82,0,.12);
+      --tint-danger: rgba(192,38,27,.10);
       --bg: #F2F2F7;
       --surface: #FFFFFF;
       --surface2: #F2F2F7;
       --surface3: #E5E5EA;
+      --bar-bg: rgba(255,255,255,0.88);
       --label: #000000;
       --label2: #3C3C43;
-      --label3: #636366;
-      --label4: #8E8E93;
-      --sep: rgba(60,60,67,0.12);
-      --r-sm: 10px; --r-md: 13px; --r-lg: 16px; --r-xl: 22px;
-      --shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.05);
-      --shadow-md: 0 4px 16px rgba(0,0,0,0.09), 0 2px 4px rgba(0,0,0,0.05);
+      --label3: #48484A;
+      --label4: #636366;
+      --sep: rgba(60,60,67,0.18);
+      --r-sm: 10px; --r-md: 14px; --r-lg: 18px; --r-xl: 24px;
+      --shadow: 0 1px 2px rgba(0,0,0,0.06), 0 2px 8px rgba(0,0,0,0.04);
+      --shadow-md: 0 2px 6px rgba(0,0,0,0.06), 0 8px 24px rgba(0,0,0,0.06);
       --font: -apple-system,BlinkMacSystemFont,'SF Pro Display','Segoe UI',system-ui,sans-serif;
       --tab-h: 60px;
       --safe-b: env(safe-area-inset-bottom, 0px);
@@ -37,9 +48,15 @@
     }
     @media (prefers-color-scheme:dark){
       :root{
+        --accent:#4FD1D9; --accent-light:#7BE0E6; --on-accent:#00292C;
+        --success:#5BD27D; --warning:#FFB340; --danger:#FF6B62;
+        --tint-accent:rgba(79,209,217,.16); --tint-success:rgba(91,210,125,.16);
+        --tint-warning:rgba(255,179,64,.16); --tint-danger:rgba(255,107,98,.16);
         --bg:#000; --surface:#1C1C1E; --surface2:#2C2C2E; --surface3:#3A3A3C;
-        --label:#FFF; --label2:#EBEBF5; --label3:#EBEBF5CC; --label4:#EBEBF599;
+        --bar-bg:rgba(28,28,30,0.88);
+        --label:#FFF; --label2:#EBEBF5; --label3:#D1D1D6; --label4:#A1A1A8;
         --sep:rgba(84,84,88,0.65);
+        --shadow:0 0 0 .5px rgba(255,255,255,.06); --shadow-md:0 0 0 .5px rgba(255,255,255,.08);
       }
     }
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -254,20 +271,24 @@
   
     /* GAME CHIPS */
     .game-chips { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-top:20px; }
-    .game-chip { padding:12px 20px; border-radius:14px; border:2px solid var(--sep); background:var(--card); font-size:15px; cursor:pointer; transition:all .15s; }
+    .game-chip { padding:12px 20px; border-radius:14px; border:2px solid var(--sep); background:var(--surface); color:var(--label); font-family:var(--font); font-size:15px; line-height:1.45; cursor:pointer; transition:all .15s; direction:rtl; }
+    .tap-correct-list { display:flex; flex-direction:column; gap:10px; }
+    .tap-correct-list .game-chip { width:100%; text-align:right; justify-content:flex-start; }
     .game-chip.correct { background:#34c759; color:#fff; border-color:#34c759; }
     .game-chip.wrong { background:#ff3b30; color:#fff; border-color:#ff3b30; }
     .game-chip.selected { border-color:var(--accent); }
-    .xp-pop { position:fixed; top:40%; left:50%; transform:translate(-50%,-50%); font-size:28px; font-weight:800; color:#34c759; pointer-events:none; animation:popUp .8s ease forwards; z-index:999; }
+    .xp-pop { position:fixed; top:40%; left:50%; transform:translate(-50%,-50%); font-size:28px; font-weight:800; color:#34c759; pointer-events:none; animation:popUp .8s ease forwards; z-index:999; direction:ltr; }
     @keyframes popUp { 0%{opacity:1;transform:translate(-50%,-50%)} 100%{opacity:0;transform:translate(-50%,-120%)} }
-    .combo-pop { position:fixed; top:35%; left:50%; transform:translateX(-50%); font-size:22px; font-weight:800; color:#ff9500; pointer-events:none; animation:popUp .9s ease forwards; z-index:999; }
-    .reteach { background:var(--surface); border-radius:12px; padding:12px 16px; margin:12px 0; border-right:4px solid #ff9500; font-size:14px; color:var(--text-secondary); }
+    .combo-pop { position:fixed; top:35%; left:50%; transform:translateX(-50%); font-size:22px; font-weight:800; color:#ff9500; pointer-events:none; animation:popUp .9s ease forwards; z-index:999; direction:ltr; }
+    .reteach { background:var(--surface); border-radius:12px; padding:12px 16px; margin:12px 0; border-right:4px solid #ff9500; font-size:14px; line-height:1.55; color:var(--label2); direction:rtl; text-align:right; }
+    .concept-card, .q-card, .exp-card { direction:rtl; text-align:right; }
+    bdi { unicode-bidi:isolate; }
 
     /* FLASHCARDS */
     .fc-scene { perspective: 1000px; -webkit-perspective: 1000px; width: 100%; max-width: 340px; margin: 0 auto; height: 220px; }
     .fc-card { width:100%; height:100%; position:relative; transform-style:preserve-3d; -webkit-transform-style:preserve-3d; transition:transform .5s, -webkit-transform .5s; border-radius:18px; }
     .fc-card.flipped { transform: rotateY(180deg); -webkit-transform: rotateY(180deg); }
-    .fc-face { position:absolute; top:0; left:0; width:100%; height:100%; backface-visibility:hidden; -webkit-backface-visibility:hidden; border-radius:18px; display:flex; align-items:center; justify-content:center; padding:20px; text-align:center; box-sizing: border-box; overflow-y: auto; }
+    .fc-face { position:absolute; top:0; left:0; width:100%; height:100%; backface-visibility:hidden; -webkit-backface-visibility:hidden; border-radius:18px; display:flex; align-items:center; justify-content:center; padding:20px; text-align:center; direction:rtl; line-height:1.5; box-sizing: border-box; overflow-y: auto; }
     .fc-front { background: var(--surface); border: 1.5px solid var(--sep); font-size:18px; font-weight:600; z-index: 2; transform: rotateY(0deg); -webkit-transform: rotateY(0deg); }
     .fc-back { background: var(--accent); color: #fff; font-size:16px; transform: rotateY(180deg); -webkit-transform: rotateY(180deg); }
     .grade-btns { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:24px; opacity:0; pointer-events:none; transition:opacity 0.3s; }
@@ -280,6 +301,139 @@
     .deck-row { display:flex; align-items:center; justify-content:space-between; padding:14px 16px; background:var(--surface); border-radius:14px; margin-bottom:10px; }
     .deck-due-badge { background:var(--accent); color:#fff; border-radius:20px; padding:3px 10px; font-size:12px; font-weight:700; }
 
+    /* ===== REDESIGN LAYER (visual only) ===== */
+    ::-webkit-scrollbar{display:none}
+    *{scrollbar-width:none}
+    :focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:8px}
+
+    /* Typography: no tracking / forced caps on Hebrew + mixed text */
+    .large-title{font-size:32px;letter-spacing:0;padding:12px 20px 8px;padding-top:calc(16px + var(--safe-t))}
+    .ti-emoji{display:none}
+    .section-title,.q-meta{text-transform:none;letter-spacing:0;font-size:13px;color:var(--label3)}
+    .btn,.c-title,.concept-card h2{letter-spacing:0}
+
+    /* Tab bar: one icon language, filled when active */
+    #tab-bar{background:var(--bar-bg)}
+    .tab-item{justify-content:flex-start;gap:2px;min-height:48px}
+    .tab-icon{width:28px;height:28px;display:flex;align-items:center;justify-content:center;color:var(--label4);transition:color .2s}
+    .tab-icon svg{width:25px;height:25px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+    .tab-item.active .tab-icon{color:var(--accent);transform:none}
+    .tab-item.active .tab-icon svg{fill:currentColor;fill-opacity:.18;stroke-width:2}
+    .tab-label{font-size:11px;font-weight:600;color:var(--label4)}
+    .tab-item.active .tab-label{color:var(--accent)}
+
+    /* Home: quiet streak, bold primary action, thumb-zone actions */
+    #screen-home.active{display:flex;flex-direction:column}
+    #home-actions-container{margin-top:auto}
+    .home-actions{padding:16px;display:flex;flex-direction:column;gap:12px}
+    .streak{background:var(--surface);box-shadow:var(--shadow);padding:16px 22px;margin-bottom:12px}
+    .streak::before{display:none}
+    .streak-num{color:var(--label);font-size:44px}
+    .streak-label{color:var(--label3);font-size:15px;font-weight:600}
+    .streak-flame{font-size:40px;animation:none;filter:saturate(.9)}
+    .xp-card{box-shadow:var(--shadow)}
+    .xp-title{font-size:15px}
+    .xp-val{color:var(--accent);font-size:15px}
+    .xp-track{height:8px}
+    .xp-fill{background:var(--accent)}
+    .cta{display:flex;align-items:center;gap:14px;width:100%;min-height:76px;padding:14px 18px;border:none;border-radius:var(--r-xl);font-family:var(--font);cursor:pointer;text-align:right;transition:transform .15s,opacity .15s}
+    .cta:active{transform:scale(.98);opacity:.92}
+    .cta-primary{background:var(--accent);color:var(--on-accent)}
+    .cta-secondary{background:var(--surface);color:var(--label);box-shadow:var(--shadow)}
+    .cta-icon{width:44px;height:44px;border-radius:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .cta-primary .cta-icon{background:rgba(255,255,255,.18)}
+    .cta-secondary .cta-icon{background:var(--tint-accent);color:var(--accent)}
+    .cta-icon svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+    .cta-text{flex:1;min-width:0;text-align:right}
+    .cta-title{font-size:18px;font-weight:700;line-height:1.3}
+    .cta-sub{font-size:14px;font-weight:500;line-height:1.35;margin-top:2px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+    .cta-primary .cta-sub{opacity:.88}
+    .cta-secondary .cta-sub{color:var(--label4)}
+    .cta-done{text-align:center;color:var(--success);font-weight:600;padding:20px;background:var(--tint-success);border-radius:var(--r-xl)}
+
+    /* Buttons */
+    .btn{min-height:52px;border-radius:var(--r-lg);font-weight:600}
+    .btn-accent{background:var(--fill-accent);color:#fff}
+    .btn-success{background:var(--fill-success);color:#fff}
+    .btn-ghost{background:var(--surface);color:var(--accent);box-shadow:var(--shadow)}
+    .close-btn{width:44px;height:44px;font-size:18px;background:var(--surface);box-shadow:var(--shadow)}
+
+    /* Explore */
+    .search-bar{min-height:48px;border-radius:var(--r-md)}
+    .area-name-txt{font-size:20px}
+    .chapter-card{border-radius:var(--r-lg);margin-bottom:10px}
+    .ch-hdr{padding:14px 16px;min-height:68px}
+    .ch-name{font-size:17px;line-height:1.35}
+    .ch-meta{font-size:13px;color:var(--label4);margin-top:2px}
+    .ch-chev{font-size:12px}
+    .ch-ring circle:first-child{stroke:var(--surface3)}
+    .sub-pill{min-height:36px;padding:6px 14px;font-size:14px;margin:4px 0 4px 6px}
+    .sub-pill.unseen{background:var(--surface3);color:var(--label3)}
+    .sub-pill.learning{background:var(--tint-warning);color:var(--warning)}
+    .sub-pill.familiar{background:var(--tint-accent);color:var(--accent)}
+    .sub-pill.mastered{background:var(--tint-success);color:var(--success)}
+    .practice-btn{min-height:44px;padding:0 16px;font-size:15px;font-weight:600;margin-top:8px;background:var(--tint-accent);color:var(--accent)}
+
+    /* Progress */
+    .stat-card{border-radius:var(--r-lg)}
+    .stat-num{font-size:30px}
+    .stat-lbl{font-size:13px;color:var(--label3)}
+    .ma-hdr{min-height:60px}
+    .ma-name{font-size:17px}
+    .ma-pct{font-size:15px;color:var(--accent)!important}
+    .ch-row-name{font-size:15px}
+
+    /* Profile */
+    .setting-row{min-height:54px}
+    .setting-arr{font-size:20px;line-height:1}
+    .ios-toggle{background:var(--surface3)}
+    .ios-toggle.on{background:var(--toggle-on)}
+
+    /* Question / lesson */
+    .opt{min-height:56px;border-radius:var(--r-md);font-size:16px;border-width:1.5px}
+    .opt.correct{border-color:var(--success);background:var(--tint-success)}
+    .opt.correct .opt-letter{background:var(--fill-success);color:#fff}
+    .opt.wrong{border-color:var(--danger);background:var(--tint-danger)}
+    .opt.wrong .opt-letter{background:var(--fill-danger);color:#fff}
+    .opt.locked:not(.correct):not(.wrong){opacity:.55}
+    .q-text{font-size:18px}
+    .diff-badge{font-size:11px;padding:2px 9px}
+    .diff-1{background:var(--tint-success);color:var(--success)}
+    .diff-2{background:var(--tint-warning);color:var(--warning)}
+    .diff-3{background:var(--tint-danger);color:var(--danger)}
+    .exp-card.ok{background:var(--tint-success);border-color:var(--success)}
+    .exp-card.fail{background:var(--tint-danger);border-color:var(--danger)}
+    .exp-text{font-size:15px}
+    .game-chip{min-height:52px;border-radius:var(--r-md);font-size:16px;font-weight:500}
+    .game-chip.correct{background:var(--fill-success);border-color:var(--fill-success);color:#fff}
+    .game-chip.wrong{background:var(--fill-danger);border-color:var(--fill-danger);color:#fff}
+    .xp-pop{color:var(--success)}
+    .combo-pop{color:var(--warning)}
+    .reteach{border-right-color:var(--warning);font-size:15px}
+    .xp-badge{font-size:14px;color:var(--warning)}
+    .key-points{background:var(--tint-accent)}
+    .c-lbl{font-size:13px;color:var(--label3)}
+    .c-val{font-size:28px}
+
+    /* Flashcards */
+    .fc-back{background:var(--fill-accent);color:#fff}
+    .grade-btns{gap:12px}
+    .grade-btn{min-height:52px;font-size:16px;font-weight:600;color:#fff;border-radius:var(--r-md);font-family:var(--font)}
+    .grade-again{background:var(--fill-danger)}
+    .grade-hard{background:var(--fill-warning)}
+    .grade-good{background:var(--fill-success)}
+    .grade-easy{background:var(--fill-accent)}
+    .deck-row{min-height:68px;border-radius:var(--r-md);box-shadow:var(--shadow)}
+    .deck-due-badge{background:var(--fill-accent);color:#fff;font-size:13px;padding:4px 12px}
+    .ov-body button[onclick^="editCard"],.ov-body button[onclick^="deleteCard"]{min-width:44px;min-height:44px}
+
+    /* Motion + transparency preferences */
+    @media (prefers-reduced-motion:reduce){
+      *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+    }
+    @media (prefers-reduced-transparency:reduce){
+      #tab-bar{-webkit-backdrop-filter:none;backdrop-filter:none;background:var(--surface)}
+    }
   </style>
 </head>
 <body>
@@ -307,7 +461,7 @@
       <div class="xp-card">
         <div class="xp-header">
           <span class="xp-title">⭐ XP היומי</span>
-          <span class="xp-val" id="xp-display">0 / 100</span>
+          <span class="xp-val" id="xp-display" dir="ltr">0 / 100</span>
         </div>
         <div class="xp-track"><div class="xp-fill" id="xp-fill" style="width:0%"></div></div>
       </div>
@@ -318,7 +472,7 @@
 
   <!-- ====== EXPLORE ====== -->
   <div class="screen" id="screen-explore">
-    <div class="large-title">גלה 🗺️</div>
+    <div class="large-title">גלה <span class="ti-emoji">🗺️</span></div>
     <div class="search-wrap">
       <div class="search-bar">
         <span>🔍</span>
@@ -330,7 +484,7 @@
 
   <!-- ====== PROGRESS ====== -->
   <div class="screen" id="screen-progress">
-    <div class="large-title">התקדמות 📊</div>
+    <div class="large-title">התקדמות <span class="ti-emoji">📊</span></div>
     <div class="prog-stats">
       <div class="stat-card"><div class="stat-num" id="s-mastered" style="color:var(--success)">0</div><div class="stat-lbl">שולטים</div></div>
       <div class="stat-card"><div class="stat-num" id="s-learning" style="color:var(--warning)">0</div><div class="stat-lbl">בלמידה</div></div>
@@ -342,21 +496,21 @@
   
   <!-- ====== FLASHCARDS ====== -->
   <div class="screen" id="screen-flashcards">
-    <div class="large-title">כרטיסיות 🃏</div>
+    <div class="large-title">כרטיסיות <span class="ti-emoji">🃏</span></div>
     <div id="flashcards-content" style="padding: 16px"></div>
   </div>
 
   <!-- ====== PROFILE ====== -->
   <div class="screen" id="screen-profile">
-    <div class="large-title">פרופיל 🎓</div>
+    <div class="large-title">פרופיל <span class="ti-emoji">🎓</span></div>
     <div class="settings-sec">
       <div class="section-title">סטטיסטיקות</div>
       <div class="settings-card">
         <div class="setting-row"><span class="s-label">🔥 רצף ימים</span><span class="s-val" id="p-streak">0</span></div>
-        <div class="setting-row"><span class="s-label">⭐ XP כולל</span><span class="s-val" id="p-xp">0</span></div>
-        <div class="setting-row"><span class="s-label">✅ שאלות שנענו</span><span class="s-val" id="p-ans">0</span></div>
-        <div class="setting-row"><span class="s-label">🎯 דיוק ממוצע</span><span class="s-val" id="p-acc">—</span></div>
-        <div class="setting-row"><span class="s-label">📚 נושאי משנה שנראו</span><span class="s-val" id="p-seen">0 / 175</span></div>
+        <div class="setting-row"><span class="s-label">⭐ XP כולל</span><span class="s-val" id="p-xp" dir="ltr">0</span></div>
+        <div class="setting-row"><span class="s-label">✅ שאלות שנענו</span><span class="s-val" id="p-ans" dir="ltr">0</span></div>
+        <div class="setting-row"><span class="s-label">🎯 דיוק ממוצע</span><span class="s-val" id="p-acc" dir="ltr">—</span></div>
+        <div class="setting-row"><span class="s-label">📚 נושאי משנה שנראו</span><span class="s-val" id="p-seen" dir="ltr">0 / 175</span></div>
       </div>
     </div>
     <div class="settings-sec">
@@ -386,11 +540,11 @@
 
   <!-- TAB BAR -->
   <div id="tab-bar">
-    <div class="tab-item active" onclick="switchTab('home',this)" data-tab="home"><div class="tab-icon">🏠</div><div class="tab-label">בית</div></div>
-    <div class="tab-item" onclick="switchTab('explore',this)" data-tab="explore"><div class="tab-icon">🗺️</div><div class="tab-label">גלה</div></div>
-    <div class="tab-item" onclick="switchTab('progress',this)" data-tab="progress"><div class="tab-icon">📊</div><div class="tab-label">התקדמות</div></div>
-        <div class="tab-item" onclick="switchTab('flashcards',this)" data-tab="flashcards"><div class="tab-icon">🃏</div><div class="tab-label">כרטיסיות</div></div>
-    <div class="tab-item" onclick="switchTab('profile',this)" data-tab="profile"><div class="tab-icon">👤</div><div class="tab-label">פרופיל</div></div>
+    <div class="tab-item active" onclick="switchTab('home',this)" data-tab="home"><div class="tab-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3.5 11.2 12 4l8.5 7.2V19a1.5 1.5 0 0 1-1.5 1.5h-3.5v-5.5h-7v5.5H5A1.5 1.5 0 0 1 3.5 19z"/></svg></div><div class="tab-label">בית</div></div>
+    <div class="tab-item" onclick="switchTab('explore',this)" data-tab="explore"><div class="tab-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="m15.6 8.4-2 5.2-5.2 2 2-5.2z"/></svg></div><div class="tab-label">גלה</div></div>
+    <div class="tab-item" onclick="switchTab('progress',this)" data-tab="progress"><div class="tab-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="12" width="4" height="8" rx="1"/><rect x="10" y="4" width="4" height="16" rx="1"/><rect x="16" y="9" width="4" height="11" rx="1"/></svg></div><div class="tab-label">התקדמות</div></div>
+        <div class="tab-item" onclick="switchTab('flashcards',this)" data-tab="flashcards"><div class="tab-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="3.5" width="13" height="14" rx="2.5"/><path d="M4 7.5v10A3.5 3.5 0 0 0 7.5 21H16"/></svg></div><div class="tab-label">כרטיסיות</div></div>
+    <div class="tab-item" onclick="switchTab('profile',this)" data-tab="profile"><div class="tab-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8.5" r="3.8"/><path d="M4.5 20c.6-3.6 3.6-5.6 7.5-5.6s6.9 2 7.5 5.6z"/></svg></div><div class="tab-label">פרופיל</div></div>
   </div>
 
   <!-- OVERLAY -->
@@ -455,6 +609,78 @@ function getState() {
 function saveState(s) { DB.set('state', s); }
 
 // ============================================================
+// RTL / BIDI FORMATTING HELPER
+// ============================================================
+function renderLatexInline(tex) {
+  let t = tex.replace(/^\$\$|\$\$$|^\$|\$$/g, '').trim();
+  t = t.replace(/\\left\s*([()[\]])/g, '$1').replace(/\\right\s*([()[\]])/g, '$1');
+  t = t.replace(/\\text\{([^}]*)\}/g, '$1').replace(/\\mathrm\{([^}]*)\}/g, '$1');
+  t = t.replace(/\\frac\{([^}]*)\}\{([^}]*)\}/g, '($1/$2)');
+  const greek = {
+    alpha:'α', beta:'β', gamma:'γ', delta:'δ', epsilon:'ε', zeta:'ζ', eta:'η', theta:'θ',
+    kappa:'κ', lambda:'λ', mu:'µ', nu:'ν', xi:'ξ', pi:'π', rho:'ρ', sigma:'σ', tau:'τ',
+    phi:'φ', chi:'χ', psi:'ψ', omega:'ω', Delta:'Δ', Gamma:'Γ', Lambda:'Λ', Omega:'Ω',
+    Phi:'Φ', Pi:'Π', Sigma:'Σ', Theta:'Θ',
+    times:'×', cdot:'·', to:'→', rightarrow:'→', leftarrow:'←', leftrightarrow:'↔',
+    rightleftharpoons:'⇌', approx:'≈', ge:'≥', le:'≤', pm:'±', infty:'∞', log:'log', ln:'ln'
+  };
+  t = t.replace(/\\([A-Za-z]+)/g, (m, name) => greek[name] ?? name);
+  t = t.replace(/\_\{([^}]*)\}/g, '<sub>$1</sub>').replace(/\_([A-Za-z0-9+\-]+)/g, '<sub>$1</sub>');
+  t = t.replace(/\^\{([^}]*)\}/g, '<sup>$1</sup>').replace(/\^([A-Za-z0-9+\-]+)/g, '<sup>$1</sup>');
+  return t;
+}
+
+function formatRTL(str, accentBold = false) {
+  if (str === null || str === undefined) return '';
+  let s = String(str);
+  // Fix corrupted "$ eta$" in lesson text at display time
+  s = s.replace(/\$\s*eta\$/g, 'β');
+  // Extract **bold** markers using Private Use Area codepoints (\uE000-\uE0FF)
+  const boldPlaceholders = [];
+  s = s.replace(/\*\*(.*?)\*\*/g, (_, inner) => {
+    const idx = boldPlaceholders.length;
+    boldPlaceholders.push(inner);
+    return String.fromCharCode(0xE000 + idx);
+  });
+  // Wrap LTR tokens using Private Use Area codepoints (\uE100-\uE4FF)
+  const bdiPlaceholders = [];
+  const saveBdi = (content) => {
+    const idx = bdiPlaceholders.length;
+    bdiPlaceholders.push(`<bdi dir="ltr">${content}</bdi>`);
+    return String.fromCharCode(0xE100 + idx);
+  };
+  // 1. Render and wrap LaTeX math ($...$ or $$...$$) in <bdi dir="ltr">
+  s = s.replace(/\$\$[^$]+\$\$|\$[^$]+\$/g, m => saveBdi(renderLatexInline(m)));
+  // 2. Wrap parenthesized expressions that contain no Hebrew characters and have Latin/digits/symbols
+  s = s.replace(/\(([^()\u0590-\u05FF\uE000-\uE4FF]*[A-Za-z0-9α-ωΑ-ΩΔ±+\-/%][^()\u0590-\u05FF\uE000-\uE4FF]*)\)/g, m => saveBdi(m));
+  // 3. Wrap signed numbers with units/symbols (e.g. -70mV, -70 mV, +30mV) when preceded by space/start/paren
+  s = s.replace(/(^|[\s(])([+-]\d+(?:\.\d+)?\s*(?:mV|mM|µM|nM|pM|kDa|Da|nm|µm|mm|cm|mL|dL|L|mg|g|kg|kcal|kJ|mol|mmol|µmol|s|ms|Hz|%|°C)(?:\/[A-Za-z]+)?)/g,
+    (m, pre, token) => pre + saveBdi(token));
+  // 4. Wrap English/Latin/scientific/numeric-unit phrases (excluding Hebrew characters and PUA placeholders)
+  s = s.replace(/[A-Za-zα-ωΑ-ΩΔ][A-Za-z0-9α-ωΑ-ΩΔ₂₃₄⁺⁻°'’\-\/.,+:;]*(\s+[A-Za-z0-9α-ωΑ-ΩΔ₂₃₄⁺⁻°'’\-\/.,+:;]+)*|\d+(?:[.,]\d+)?(?:\s*(?:mV|mM|µM|nM|pM|kDa|Da|nm|µm|mm|cm|mL|dL|L|mg|g|kg|kcal|kJ|mol|mmol|µmol|s|ms|Hz|%|°C|טור|mmHg)(?:\/[A-Za-z0-9]+)?)/g,
+    m => {
+      // Keep trailing sentence punctuation (period/comma/colon/semicolon) outside <bdi> so RTL sentence flow stays natural
+      const trailMatch = m.match(/([.,:;]+)$/);
+      if (trailMatch) {
+        const core = m.slice(0, -trailMatch[1].length);
+        return core ? saveBdi(core) + trailMatch[1] : m;
+      }
+      return saveBdi(m);
+    });
+  // Restore BDI placeholders
+  s = s.replace(/[\uE100-\uE4FF]/g, ch => bdiPlaceholders[ch.charCodeAt(0) - 0xE100] ?? ch);
+  // Restore bold placeholders with recursive formatRTL on inner content
+  s = s.replace(/[\uE000-\uE0FF]/g, ch => {
+    const inner = boldPlaceholders[ch.charCodeAt(0) - 0xE000] ?? '';
+    const innerFormatted = formatRTL(inner, false);
+    return accentBold
+      ? `<span style="color:var(--accent);font-weight:700">${innerFormatted}</span>`
+      : `<strong>${innerFormatted}</strong>`;
+  });
+  return s;
+}
+
+// ============================================================
 // STREAK
 // ============================================================
 function todayStr() { return new Date().toISOString().split('T')[0]; }
@@ -467,7 +693,7 @@ function touchStreak(state) {
   else state.streak = 1;
   state.lastDate = t;
   state.xpToday = 0;
-  state.missionsCompleted = [];
+  state.missionsCompleted = (state.missionsCompleted || []).filter(m => m.startsWith('lesson_'));
   return state;
 }
 
@@ -643,31 +869,31 @@ function renderHome() {
     }
   }
 
-  let html = `<div style="padding: 20px 16px; display:flex; flex-direction:column; gap:16px;">`;
+  let html = `<div class="home-actions">`;
   
   html += `
-    <button class="btn" style="height: 70px; font-size: 18px; border-radius: 20px; background: var(--surface2); color: var(--label); display: flex; align-items: center; justify-content: center; gap: 12px; box-shadow: var(--shadow);" onclick="startGlobalPractice()">
-      <span style="font-size: 24px;">🏋️</span>
-      <div style="text-align: right; flex: 1;">
-        <div style="font-weight: 700;">תרגול</div>
-        <div style="font-size: 13px; color: var(--label4); font-weight: 500;">שאלות מתוך החומר שנלמד</div>
+    <button class="btn cta cta-secondary" onclick="startGlobalPractice()">
+      <span class="cta-icon">🏋️</span>
+      <div class="cta-text">
+        <div class="cta-title">תרגול</div>
+        <div class="cta-sub">שאלות מתוך החומר שנלמד</div>
       </div>
     </button>
   `;
 
   if (nextLesson) {
     html += `
-      <button class="btn" style="height: 70px; font-size: 18px; border-radius: 20px; background: ${nextAreaColor}; color: #fff; display: flex; align-items: center; justify-content: center; gap: 12px; box-shadow: 0 4px 12px ${nextAreaColor}66; margin-top: 10px;" onclick="startLessonById('${nextLesson.id}')">
-        <span style="font-size: 24px;">🚀</span>
-        <div style="text-align: right; flex: 1;">
-          <div style="font-weight: 700;">המשך למידה</div>
-          <div style="font-size: 13px; opacity: 0.9; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 200px;">${nextLesson.title}</div>
+      <button class="btn cta cta-primary" onclick="startLessonById('${nextLesson.id}')">
+        <span class="cta-icon">🚀</span>
+        <div class="cta-text">
+          <div class="cta-title">המשך למידה</div>
+          <div class="cta-sub">${nextLesson.title}</div>
         </div>
       </button>
     `;
   } else {
     html += `
-      <div style="text-align:center; color: var(--success); font-weight: 600; padding: 20px; background: rgba(52,199,89,0.1); border-radius: 20px; margin-top: 10px;">
+      <div class="cta-done">
         🎉 סיימת את כל השיעורים במסלול!
       </div>
     `;
@@ -735,8 +961,8 @@ function renderExplore() {
       html += `<div class="chapter-card" style="opacity: ${opacity}; pointer-events: ${pointerEvents}">
         <div class="ch-hdr" onclick="toggleChapter('${ch.id}')">
           <div class="ch-info">
-            <div class="ch-name">${lockIcon}${ch.title || ''}</div>
-            <div class="ch-meta">${ch.titleEn || ''} · ${total} נושאי משנה</div>
+            <div class="ch-name">${lockIcon}${formatRTL(ch.title || '')}</div>
+            <div class="ch-meta"><bdi dir="ltr">${ch.titleEn || ''}</bdi> · ${total} נושאי משנה</div>
           </div>
           ${ringHTML(pct, area.color || '#000')}
           <span class="ch-chev" id="chev-${ch.id}">▼</span>
@@ -746,7 +972,7 @@ function renderExplore() {
             const m = getMastery(state, s.id);
             const cls = MASTERY_CLS[m.level] || 'unseen';
             return `<span class="sub-pill ${cls}" onclick="practiceSubtopic('${s.id}','${ch.id}','${area.id}')">
-              <span class="sub-dot"></span>${s.title || ''}
+              <span class="sub-dot"></span>${formatRTL(s.title || '')}
             </span>`;
           }).join('')}
           <div><span class="practice-btn" onclick="event.stopPropagation();startChapterPractice('${ch.id}','${area.id}')">📝 תרגל פרק זה</span></div>
@@ -774,10 +1000,10 @@ function toggleChapter(id) {
 function ringHTML(pct, color) {
   const r = 14, circ = 2 * Math.PI * r, dash = ((pct||0) / 100) * circ;
   return `<svg class="ch-ring" viewBox="0 0 36 36">
-    <circle cx="18" cy="18" r="${r}" fill="none" stroke="#E5E5EA" stroke-width="3"/>
-    <circle cx="18" cy="18" r="${r}" fill="none" stroke="${color}" stroke-width="3"
+    <circle cx="18" cy="18" r="${r}" fill="none" stroke="var(--surface3)" stroke-width="3"/>
+    <circle cx="18" cy="18" r="${r}" fill="none" stroke="var(--accent)" stroke-width="3"
       stroke-dasharray="${dash} ${circ}" stroke-linecap="round" transform="rotate(-90 18 18)"/>
-    <text x="18" y="22" text-anchor="middle" font-size="9" font-weight="700" fill="${color}">${pct||0}%</text>
+    <text x="18" y="22" text-anchor="middle" font-size="11" font-weight="700" fill="var(--label)">${pct||0}%</text>
   </svg>`;
 }
 
@@ -803,24 +1029,24 @@ function renderProgress() {
   let html = '';
   for (const area of SYLLABUS.areas) {
     const subs = area.chapters.flatMap(c => c.subtopics);
-    const m = subs.filter(s => getMastery(state, s.id).level >= 3).length;
+    const m = subs.filter(s => getMastery(state, s.id).level >= 2).length;
     const pct = Math.round((m / subs.length) * 100);
     html += `<div class="mastery-area">
       <div class="ma-hdr" id="mahdr-${area.id}" onclick="toggleMasteryArea('${area.id}')">
         <span class="ma-icon">${area.icon}</span>
         <span class="ma-name">${area.title}</span>
-        <span class="ma-pct" style="color:${area.color}">${pct}%</span>
+        <span class="ma-pct" style="color:${area.color}" dir="ltr">${pct}%</span>
         <span class="ma-ch" id="mach-${area.id}">▼</span>
       </div>
       <div class="ma-body" id="mabody-${area.id}">`;
     for (const ch of area.chapters) {
       html += `<div class="ch-row">
-        <div class="ch-row-name">${ch.title}</div>
+        <div class="ch-row-name">${formatRTL(ch.title)}</div>
         <div class="pills-wrap">`;
       for (const sub of ch.subtopics) {
         const l = getMastery(state, sub.id).level;
         html += `<span class="sub-pill ${MASTERY_CLS[l]}" onclick="practiceSubtopic('${sub.id}','${ch.id}','${area.id}')">
-          <span class="sub-dot"></span>${sub.title}
+          <span class="sub-dot"></span>${formatRTL(sub.title)}
         </span>`;
       }
       html += '</div></div>';
@@ -857,7 +1083,7 @@ function renderProfile() {
   });
   if (OFFICIAL_RAW?.books) {
     document.getElementById('books-list').innerHTML = OFFICIAL_RAW.books.map(b =>
-      `<div style="font-size:14px;color:var(--label2);padding:4px 0;border-bottom:.5px solid var(--sep);line-height:1.4">
+      `<div dir="ltr" style="text-align:left;font-size:14px;color:var(--label2);padding:4px 0;border-bottom:.5px solid var(--sep);line-height:1.4">
         <strong>${b.title}</strong><br>
         <span style="color:var(--label4)">${b.edition} · ${b.year_in_official_syllabus}</span>
       </div>`
@@ -909,6 +1135,32 @@ function startMission(mission) {
     return; 
   }
   showToast('תוכן בהכנה — חסרים נתונים');
+}
+
+function startGlobalPractice() {
+  haptic();
+  const state = getState();
+  const completedChIds = new Set(
+    (state.missionsCompleted || [])
+      .filter(m => m.startsWith('lesson_'))
+      .map(m => m.replace('lesson_', ''))
+  );
+  let pool = QUESTIONS.filter(q =>
+    completedChIds.has(q.chapterId) || getMastery(state, q.subtopicId).level >= 1
+  );
+  if (!pool.length && SYLLABUS?.areas) {
+    const firstChIds = new Set(
+      SYLLABUS.areas.map(a => a.chapters?.[0]?.id).filter(Boolean)
+    );
+    pool = QUESTIONS.filter(q => firstChIds.has(q.chapterId));
+  }
+  if (!pool.length) pool = [...QUESTIONS];
+  if (!pool.length) {
+    showToast('אין שאלות זמינות לתרגול');
+    return;
+  }
+  const qs = pool.sort(() => Math.random() - 0.5).slice(0, 10);
+  startQuizSession(qs, { id: 'global_practice', title: 'תרגול כללי', xp: 20 });
 }
 
 function startAreaPractice(areaId) {
@@ -978,7 +1230,7 @@ function sm2(card, grade) {
 
 async function initFlashcards() {
   let data = DB.get('flashcards');
-  if (!data || data.version !== 9) {
+  if (!data || data.version !== 9 || !Array.isArray(data.decks) || data.decks.length === 0) {
     try {
       const res = await fetch('data/flashcards_generated.json');
       const genData = await res.json();
@@ -1023,7 +1275,7 @@ function renderFlashcards() {
     return `
       <div class="deck-row" onclick="viewDeck('${deck.id}')">
         <div>
-          <div style="font-weight:600;font-size:16px">${deck.name}</div>
+          <div style="font-weight:600;font-size:16px">${formatRTL(deck.name)}</div>
           <div style="font-size:13px;color:var(--label4)">${deck.cards.length} כרטיסיות</div>
         </div>
         ${dueCount > 0 ? `<div class="deck-due-badge">${dueCount} להיום</div>` : '<div style="color:var(--label4);font-size:12px">הכל תורגל</div>'}
@@ -1062,7 +1314,7 @@ function viewDeck(deckId) {
   
   let cardsList = deck.cards.map(c => `
     <div style="padding:12px;border-bottom:1px solid var(--sep);display:flex;justify-content:space-between;align-items:center">
-      <div style="flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:14px;margin-left:10px">${c.front}</div>
+      <div style="flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:14px;margin-left:10px">${formatRTL(c.front)}</div>
       <div style="display:flex;gap:8px">
         <button onclick="editCard('${deckId}', '${c.id}')" style="background:none;border:none;font-size:16px">✏️</button>
         <button onclick="deleteCard('${deckId}', '${c.id}')" style="background:none;border:none;font-size:16px">🗑️</button>
@@ -1073,7 +1325,7 @@ function viewDeck(deckId) {
   openOverlay(`
     <div class="ov-hdr">
       <button class="close-btn" onclick="closeOverlay(); renderFlashcards()">✕</button>
-      <div style="flex:1;text-align:center;font-weight:600">${deck.name}</div>
+      <div style="flex:1;text-align:center;font-weight:600">${formatRTL(deck.name)}</div>
       <button class="btn btn-ghost" style="width:auto;padding:4px 8px;font-size:20px" onclick="createCard('${deckId}')">+</button>
     </div>
     <div class="ov-body">
@@ -1178,13 +1430,13 @@ function playFlashcard() {
     <div class="ov-hdr">
       <button class="close-btn" onclick="closeOverlay(); renderFlashcards()">✕</button>
       <div class="prog-track"><div class="prog-fill" style="width:${pct}%"></div></div>
-      <div style="font-size:14px;font-weight:600;margin-right:12px">${FC_IDX+1}/${FC_SESSION.length}</div>
+      <div dir="ltr" style="font-size:14px;font-weight:600;margin-right:12px">${FC_IDX+1}/${FC_SESSION.length}</div>
     </div>
     <div class="ov-body" style="display:flex;flex-direction:column;justify-content:center">
       <div class="fc-scene" onclick="document.getElementById('fc-inner').classList.toggle('flipped'); document.getElementById('fc-grades').classList.add('show')">
         <div class="fc-card" id="fc-inner">
-          <div class="fc-face fc-front">${c.front}</div>
-          <div class="fc-face fc-back">${c.back}</div>
+          <div class="fc-face fc-front" dir="rtl"><div style="width:100%;line-height:1.45">${formatRTL(c.front)}</div></div>
+          <div class="fc-face fc-back" dir="rtl"><div style="width:100%;line-height:1.45">${formatRTL(c.back)}</div></div>
         </div>
       </div>
       <div class="grade-btns" id="fc-grades">
@@ -1226,53 +1478,61 @@ let GAME_MISSION = null;
 let REMEDIATION_QUEUE = [];
 let TOTAL_INITIAL_CHALLENGES = 0;
 let TOTAL_ERRORS = 0;
+let GAME_ANSWERED = false;
 
 function buildGameChallenges(lesson) {
   const teachPhase = [];
   const practicePhase = [];
   const taughtConcepts = new Set();
+  const taughtCorpus = [];
   
   const cards = lesson.cards || [];
   
   for (const card of cards) {
     if (card.type !== 'concept') continue;
     const kps = card.keyPoints || [];
-    const text = kps.length > 0 ? kps.join(' ') : card.content;
-    if (!text) continue;
+    const contentText = (card.content || '').trim();
+    const kpText = kps.join(' ');
+    const fullText = [contentText, kpText].filter(Boolean).join('\n\n');
+    if (!fullText) continue;
     
     // TEACH phase
-    taughtConcepts.add(card.title.trim().toLowerCase());
+    const normTitle = (card.title || '').trim().toLowerCase();
+    if (normTitle) taughtConcepts.add(normTitle);
+    taughtCorpus.push((card.title + ' ' + fullText).toLowerCase());
     teachPhase.push({
       type: 'TEACH',
       title: card.title,
-      text: text,
-      reteach: text
+      text: fullText,
+      keyPoints: kps,
+      content: contentText,
+      reteach: fullText
     });
     
     // PRACTICE phase
     if (kps.length > 0) {
-      practicePhase.push({ type: 'TRUE_FALSE', text: kps[0], answer: true, reteach: text, conceptTitle: card.title });
+      practicePhase.push({ type: 'TRUE_FALSE', text: kps[0], answer: true, reteach: fullText, conceptTitle: card.title });
       if (kps.length > 1 && Math.random() > 0.5) {
-        practicePhase.push({ type: 'TRUE_FALSE', text: kps[1], answer: true, reteach: text, conceptTitle: card.title });
+        practicePhase.push({ type: 'TRUE_FALSE', text: kps[1], answer: true, reteach: fullText, conceptTitle: card.title });
       }
     }
     
-    if (card.content) {
-      const boldMatch = card.content.match(/\*\*(.*?)\*\*/);
+    if (contentText) {
+      const boldMatch = contentText.match(/\*\*(.*?)\*\*/);
       if (boldMatch) {
          let term = boldMatch[1];
-         let sentence = card.content.split('. ').find(s => s.includes(`**${term}**`));
+         let sentence = contentText.split('. ').find(s => s.includes(`**${term}**`));
          if (sentence) {
              sentence = sentence.replace(`**${term}**`, '___');
              let options = [term, 'מולקולה אחרת', 'תא חי'].sort(() => Math.random() - 0.5);
-             practicePhase.push({ type: 'FILL_BLANK', text: sentence, options, answer: term, reteach: text, conceptTitle: card.title });
+             practicePhase.push({ type: 'FILL_BLANK', text: sentence, options, answer: term, reteach: fullText, conceptTitle: card.title });
          }
       }
     }
     
     if (kps.length >= 3) {
       let shuffled = [...kps].sort(() => Math.random() - 0.5);
-      practicePhase.push({ type: 'SORT_ORDER', text: 'סדר את השלבים:', items: kps, shuffledItems: shuffled, reteach: text, conceptTitle: card.title });
+      practicePhase.push({ type: 'SORT_ORDER', text: 'סדר את השלבים:', items: kps, shuffledItems: shuffled, reteach: fullText, conceptTitle: card.title });
     }
   }
 
@@ -1280,22 +1540,25 @@ function buildGameChallenges(lesson) {
   ids.forEach(id => {
     const q = QUESTIONS.find(x => x.id === id);
     if (q) {
-      const conceptName = (q.tags && q.tags.length > 0) ? q.tags[0] : 'מושג נוסף';
-      const conceptKey = conceptName.trim().toLowerCase();
+      const subObj = getAllSubtopics().find(s => s.id === q.subtopicId);
+      const conceptName = (q.tags && q.tags.length > 0) ? q.tags[0] : (subObj?.title || 'מושג נוסף');
+      const ansText = (q.options?.[q.correctIndex] || '').toLowerCase();
+      const coveredInCorpus = taughtCorpus.some(c => ansText && ansText.length > 3 && c.includes(ansText));
       
       // ENFORCE THE DEPENDENCY RULE:
-      // If the question tests an untaught concept, auto-generate a TEACH screen for it!
-      if (!taughtConcepts.has(conceptKey)) {
-        let cleanExp = (q.explanation || '').split('.')[0] + '.';
-        let teachText = q.options[q.correctIndex] + ' – ' + cleanExp;
+      // Ensure every follow-up question has its underlying concept explicitly taught first
+      if (!coveredInCorpus && !taughtConcepts.has(q.id)) {
+        let cleanExp = (q.explanation || '').trim();
+        let teachText = `**${q.options[q.correctIndex]}** — ${cleanExp}`;
         
         teachPhase.push({
           type: 'TEACH',
-          title: conceptName,
+          title: subObj ? `${subObj.title} (${conceptName})` : conceptName,
           text: teachText,
           reteach: teachText
         });
-        taughtConcepts.add(conceptKey);
+        taughtConcepts.add(q.id);
+        taughtCorpus.push(teachText.toLowerCase());
       }
       
       practicePhase.push({ 
@@ -1304,7 +1567,8 @@ function buildGameChallenges(lesson) {
         options: q.options, 
         answerIndex: q.correctIndex, 
         reteach: q.explanation, 
-        conceptTitle: conceptName 
+        conceptTitle: conceptName,
+        subtopicId: q.subtopicId
       });
     }
   });
@@ -1331,7 +1595,14 @@ function startLesson(lesson, mission) {
   renderGameChallenge();
 }
 
+function checkFillBlank(idx) {
+  const ch = GAME_CHALLENGES[GAME_IDX];
+  if (!ch || !ch.options) return;
+  checkGameAnswer(ch.options[idx], ch.answer);
+}
+
 function renderGameChallenge() {
+  GAME_ANSWERED = false;
   if (GAME_IDX >= GAME_CHALLENGES.length) {
     if (REMEDIATION_QUEUE.length > 0) {
       const newLoop = [];
@@ -1350,7 +1621,7 @@ function renderGameChallenge() {
       showToast('זמן לחזרה על טעויות!');
     } else {
       const correct = Math.max(0, TOTAL_INITIAL_CHALLENGES - TOTAL_ERRORS);
-      completeSession(correct, TOTAL_INITIAL_CHALLENGES, GAME_MISSION);
+      completeSession(TOTAL_INITIAL_CHALLENGES, correct, GAME_MISSION);
       return;
     }
   }
@@ -1360,14 +1631,27 @@ function renderGameChallenge() {
   let contentHtml = '';
   
   if (ch.type === 'TEACH') {
+    let bodyHtml = '';
+    if (ch.content || (ch.keyPoints && ch.keyPoints.length)) {
+      if (ch.content) {
+        bodyHtml += `<div style="margin-bottom:14px">${formatRTL(ch.content, true)}</div>`;
+      }
+      if (ch.keyPoints && ch.keyPoints.length) {
+        bodyHtml += `<ul style="padding-right:20px;margin:0;display:flex;flex-direction:column;gap:8px">` +
+          ch.keyPoints.map(kp => `<li>${formatRTL(kp, true)}</li>`).join('') +
+          `</ul>`;
+      }
+    } else {
+      bodyHtml = formatRTL(ch.text, true);
+    }
     contentHtml = `
-      <div style="font-size:22px;font-weight:800;color:var(--accent);margin-bottom:16px">${ch.title}</div>
-      <div style="font-size:16px;line-height:1.6;color:var(--text);margin-bottom:30px">${ch.text.replace(/\*\*(.*?)\*\*/g, '<span style="color:var(--accent);font-weight:700">$1</span>')}</div>
+      <div style="font-size:22px;font-weight:800;color:var(--accent);margin-bottom:16px">${formatRTL(ch.title)}</div>
+      <div style="font-size:16px;line-height:1.6;color:var(--label);margin-bottom:30px">${bodyHtml}</div>
       <button class="btn btn-accent" style="width:100%" onclick="GAME_IDX++; renderGameChallenge()">הבנתי, המשך</button>
     `;
   } else if (ch.type === 'TRUE_FALSE') {
     contentHtml = `
-      <div style="font-size:18px;font-weight:600;text-align:center;margin:30px 0">${ch.text}</div>
+      <div style="font-size:18px;font-weight:600;text-align:center;margin:30px 0;line-height:1.5">${formatRTL(ch.text)}</div>
       <div class="game-chips">
         <button class="game-chip" onclick="checkGameAnswer(true, ${ch.answer})">✓ נכון</button>
         <button class="game-chip" onclick="checkGameAnswer(false, ${ch.answer})">✗ שקר</button>
@@ -1375,25 +1659,26 @@ function renderGameChallenge() {
     `;
   } else if (ch.type === 'TAP_CORRECT') {
     contentHtml = `
-      <div style="font-size:18px;font-weight:600;margin-bottom:20px">${ch.text}</div>
-      <div style="display:flex;flex-direction:column;gap:10px">
-        ${ch.options.map((o,i) => `<button class="game-chip" onclick="checkGameAnswer(${i}, ${ch.answerIndex})">${o}</button>`).join('')}
+      <div style="font-size:18px;font-weight:600;margin-bottom:20px;line-height:1.5">${formatRTL(ch.text)}</div>
+      <div class="tap-correct-list">
+        ${ch.options.map((o,i) => `<button class="game-chip" onclick="checkGameAnswer(${i}, ${ch.answerIndex})">${formatRTL(o)}</button>`).join('')}
       </div>
     `;
   } else if (ch.type === 'FILL_BLANK') {
+    const formattedSentence = formatRTL(ch.text).replace('___', '<span style="display:inline-block;width:60px;border-bottom:2px solid var(--accent)"></span>');
     contentHtml = `
-      <div style="font-size:18px;font-weight:600;text-align:center;margin:30px 0;line-height:1.5">${ch.text.replace('___', '<span style="display:inline-block;width:60px;border-bottom:2px solid var(--accent)"></span>')}</div>
+      <div style="font-size:18px;font-weight:600;text-align:center;margin:30px 0;line-height:1.5">${formattedSentence}</div>
       <div class="game-chips">
-        ${ch.options.map(o => `<button class="game-chip" onclick="checkGameAnswer('${o}', '${ch.answer}')">${o}</button>`).join('')}
+        ${ch.options.map((o, i) => `<button class="game-chip" onclick="checkFillBlank(${i})">${formatRTL(o)}</button>`).join('')}
       </div>
     `;
   } else if (ch.type === 'SORT_ORDER') {
     contentHtml = `
-      <div style="font-size:18px;font-weight:600;margin-bottom:20px">${ch.text}</div>
+      <div style="font-size:18px;font-weight:600;margin-bottom:20px">${formatRTL(ch.text)}</div>
       <div id="sort-slots" style="display:flex;flex-direction:column;gap:8px;margin-bottom:20px;min-height:120px;background:var(--surface2);border-radius:12px;padding:10px">
       </div>
       <div class="game-chips" id="sort-chips">
-        ${ch.shuffledItems.map((item, i) => `<button class="game-chip" onclick="handleSortClick(this, ${i})">${item}</button>`).join('')}
+        ${ch.shuffledItems.map((item, i) => `<button class="game-chip" onclick="handleSortClick(this, ${i})">${formatRTL(item)}</button>`).join('')}
       </div>
       <button class="btn btn-accent" style="margin-top:20px;display:none" id="sort-submit" onclick="checkSortOrder()">בדוק תשובה</button>
     `;
@@ -1406,7 +1691,7 @@ function renderGameChallenge() {
     <div class="ov-hdr">
       <button class="close-btn" onclick="closeOverlay()">✕</button>
       <div class="prog-track"><div class="prog-fill" style="width:${pct}%"></div></div>
-      <div class="xp-badge" style="color:var(--label4)">🔥 ${GAME_COMBO}</div>
+      <div class="xp-badge" dir="ltr" style="color:var(--label4)">🔥 ${GAME_COMBO}</div>
     </div>
     <div class="ov-body">
       <div style="font-size:13px;font-weight:600;color:var(--label3);margin-bottom:10px;text-transform:uppercase">
@@ -1424,7 +1709,7 @@ function handleSortClick(btn, i) {
   btn.style.opacity = '0.5';
   window.selectedSort.push(window.currentSortItems[i]);
   const slots = document.getElementById('sort-slots');
-  slots.innerHTML += '<div style="padding:10px;background:var(--surface);border-radius:8px;font-size:14px">' + window.currentSortItems[i] + '</div>';
+  slots.innerHTML += '<div style="padding:10px;background:var(--surface);border-radius:8px;font-size:14px">' + formatRTL(window.currentSortItems[i]) + '</div>';
   if (window.selectedSort.length === window.currentSortItems.length) {
     document.getElementById('sort-submit').style.display = 'block';
   }
@@ -1436,15 +1721,25 @@ function checkSortOrder() {
 }
 
 function checkGameAnswer(given, correct) {
+  if (GAME_ANSWERED) return;
+  GAME_ANSWERED = true;
   const isCorrect = given === correct;
   const ch = GAME_CHALLENGES[GAME_IDX];
   
+  let state = getState();
+  state.totalAnswered++;
+  if (isCorrect) state.totalCorrect++;
+  if (ch && ch.subtopicId) {
+    state = updateMastery(state, ch.subtopicId, isCorrect);
+  }
   if (isCorrect) {
     GAME_COMBO++;
-    let state = getState(); state = addXP(state, 5); saveState(state);
+    state = addXP(state, 5);
+    saveState(state);
     
     const xpPop = document.createElement('div');
     xpPop.className = 'xp-pop';
+    xpPop.dir = 'ltr';
     xpPop.textContent = '+5 XP';
     document.body.appendChild(xpPop);
     setTimeout(() => xpPop.remove(), 1000);
@@ -1452,6 +1747,7 @@ function checkGameAnswer(given, correct) {
     if (GAME_COMBO >= 3) {
       const comboPop = document.createElement('div');
       comboPop.className = 'combo-pop';
+      comboPop.dir = 'ltr';
       comboPop.textContent = '🔥 Combo!';
       document.body.appendChild(comboPop);
       setTimeout(() => comboPop.remove(), 1000);
@@ -1463,6 +1759,7 @@ function checkGameAnswer(given, correct) {
       renderGameChallenge();
     }, 600);
   } else {
+    saveState(state);
     GAME_COMBO = 0;
     TOTAL_ERRORS++;
     haptic();
@@ -1470,7 +1767,7 @@ function checkGameAnswer(given, correct) {
     reteach.innerHTML = `
       <div class="reteach">
         <strong>לא נכון.</strong><br>
-        ${ch.reteach || 'נסה לזכור את העובדות מהשיעור ולהתרכז בפרטים הקטנים.'}
+        ${formatRTL(ch.reteach || 'נסה לזכור את העובדות מהשיעור ולהתרכז בפרטים הקטנים.', true)}
       </div>
       <button class="btn btn-accent" style="margin-top:10px;width:100%" onclick="GAME_IDX++; renderGameChallenge()">המשך</button>
     `;
@@ -1525,7 +1822,7 @@ function renderQuestionSlide(q, mode) {
     <div class="ov-hdr">
       <button class="close-btn" onclick="closeOverlay()">✕</button>
       <div class="prog-track"><div class="prog-fill" style="width:${pct}%"></div></div>
-      <div class="xp-badge">⭐${XP_CORRECT}</div>
+      <div class="xp-badge" dir="ltr">⭐${XP_CORRECT}</div>
     </div>
     <div class="ov-body">
       <div class="q-card">
@@ -1533,19 +1830,19 @@ function renderQuestionSlide(q, mode) {
           ${getAreaTitle(q.areaId)}
           <span class="diff-badge ${diffCls}">${diffTxt}</span>
         </div>
-        <div class="q-text">${q.question}</div>
+        <div class="q-text">${formatRTL(q.question)}</div>
         <div class="options" id="opts">
           ${q.options.map((o,i) => `
             <button class="opt" id="opt-${i}"
               onclick="selectAnswer(${i},${q.correctIndex},'${q.id}','${q.subtopicId}','${mode}')">
-              <span class="opt-letter">${letters[i]}</span><span>${o}</span>
+              <span class="opt-letter">${letters[i]}</span><span>${formatRTL(o)}</span>
             </button>`).join('')}
         </div>
       </div>
       <div id="exp-area"></div>
     </div>
     <div class="ov-footer">
-      <button class="btn btn-accent" id="next-btn" style="display:none" onclick="nextQuestion('${mode}')">המשך →</button>
+      <button class="btn btn-accent" id="next-btn" style="display:none" onclick="nextQuestion('${mode}')">המשך ←</button>
     </div>
   `);
 }
@@ -1571,7 +1868,7 @@ function selectAnswer(chosen, correct, qId, subId, mode) {
   const q = QUESTIONS.find(x => x.id === qId);
   const expArea = document.getElementById('exp-area');
   if (expArea && q) {
-    const exp = (q.explanation||'').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+    const exp = formatRTL(q.explanation || '');
     expArea.innerHTML = `<div class="exp-card ${isCorrect?'ok':'fail'}">
       <div class="exp-hdr"><span class="exp-icon">${isCorrect?'🎉':'💡'}</span>
         <span class="exp-title">${isCorrect?'נכון!':'לא בדיוק'}</span></div>
@@ -1606,13 +1903,29 @@ function completeSession(total, correct, mission) {
   const emoji = acc >= 80 ? '🏆' : acc >= 60 ? '🌟' : '💪';
   const title = acc >= 80 ? 'מעולה!' : acc >= 60 ? 'כמעט שם!' : 'המשך להתאמן!';
 
+  let state = getState();
   if (mission) {
-    let state = getState();
     if (!state.missionsCompleted.includes(mission.id)) {
       state.missionsCompleted.push(mission.id);
       state = addXP(state, mission.xp || 0);
-      saveState(state);
     }
+    const chId = CUR_LESSON?.chapterId || (mission.id?.startsWith('lesson_') ? mission.id.replace('lesson_', '') : null);
+    if (chId) {
+      const lessonKey = 'lesson_' + chId;
+      if (!state.missionsCompleted.includes(lessonKey)) {
+        state.missionsCompleted.push(lessonKey);
+      }
+      const chSubs = getAllSubtopics().filter(s => s.chapterId === chId);
+      chSubs.forEach(s => {
+        const m = getMastery(state, s.id);
+        m.total = Math.max(m.total, 3);
+        m.correct = Math.max(m.correct, 3);
+        m.level = Math.max(m.level, 2);
+        m.nextReview = new Date(Date.now() + 3 * 86400000).toISOString().split('T')[0];
+        state.mastery[s.id] = m;
+      });
+    }
+    saveState(state);
   }
 
   const el = document.getElementById('overlay');
@@ -1643,15 +1956,15 @@ function completeSession(total, correct, mission) {
   st.className = 'c-stats';
   
   const st1 = document.createElement('div'); st1.className = 'c-stat';
-  st1.innerHTML = '<div class="c-val">' + correct + '/' + total + '</div><div class="c-lbl">נכון</div>';
+  st1.innerHTML = '<div class="c-val" dir="ltr">' + correct + '/' + total + '</div><div class="c-lbl">נכון</div>';
   st.appendChild(st1);
   
   const st2 = document.createElement('div'); st2.className = 'c-stat';
-  st2.innerHTML = '<div class="c-val">' + acc + '%</div><div class="c-lbl">דיוק</div>';
+  st2.innerHTML = '<div class="c-val" dir="ltr">' + acc + '%</div><div class="c-lbl">דיוק</div>';
   st.appendChild(st2);
   
   const st3 = document.createElement('div'); st3.className = 'c-stat';
-  st3.innerHTML = '<div class="c-val" style="color:var(--warning)">+' + xpEarned + '</div><div class="c-lbl">XP</div>';
+  st3.innerHTML = '<div class="c-val" dir="ltr" style="color:var(--warning)">+' + xpEarned + '</div><div class="c-lbl">XP</div>';
   st.appendChild(st3);
   
   comp.appendChild(st);
@@ -1667,7 +1980,7 @@ function completeSession(total, correct, mission) {
   const b2 = document.createElement('button');
   b2.className = 'btn btn-ghost';
   b2.style.width = '100%';
-  b2.textContent = 'ראה התקדמות →';
+  b2.textContent = 'ראה התקדמות ←';
   b2.onclick = function() { switchTab('progress', document.querySelector('[data-tab=progress]')); closeOverlay(); };
   comp.appendChild(b2);
   
@@ -1687,6 +2000,10 @@ function closeOverlay() {
   document.getElementById('overlay').style.display = 'none';
   CUR_LESSON = null; FUQ = []; SESSION_QS = [];
   renderHome();
+  renderExplore();
+  renderProgress();
+  renderProfile();
+  renderFlashcards();
 }
 function getAreaTitle(areaId) {
   return SYLLABUS?.areas.find(a => a.id === areaId)?.title || areaId || '';
@@ -1726,12 +2043,18 @@ function exportData() {
   URL.revokeObjectURL(url);
   showToast('גיבוי הורד בהצלחה');
 }
-function resetConfirm() {
+async function resetConfirm() {
   if (confirm('למחוק את כל הנתונים? פעולה זו אינה הפיכה.')) {
     for (let i = localStorage.length - 1; i >= 0; i--) {
       const k = localStorage.key(i); if (k?.startsWith(NS)) localStorage.removeItem(k);
     }
-    showToast('הנתונים אופסו'); renderHome();
+    await initFlashcards();
+    renderHome();
+    renderExplore();
+    renderProgress();
+    renderFlashcards();
+    renderProfile();
+    showToast('הנתונים אופסו');
   }
 }
 
