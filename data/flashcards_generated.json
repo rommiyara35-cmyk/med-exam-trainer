@@ -48,8 +48,8 @@
     },
     {
       "deckId": "biochemistry-ch-03",
-      "front": "חומצה אספרטית",
-      "back": "חומצה אספרטית מכילה קבוצת COOH בקבוצת ה-R. ה-pKa של קבוצה זו הוא בערך 3.9."
+      "front": "Aspartate (אספרטט, Asp, D) ו-Glutamate (גלוטמט, Glu, E) — ערכי pKa ו-pI",
+      "back": "שתיהן בעלות negatively charged (acidic) R groups ב-pH 7.0. עבור Asp (קבוצת β-carboxyl): pK1 = 1.88, pKR = 3.65, pK2 = 9.60, ולכן pI = (1.88 + 3.65)/2 = 2.77. עבור Glu (קבוצת γ-carboxyl): pK1 = 2.19, pKR = 4.25, pK2 = 9.67, ולכן pI = (2.19 + 4.25)/2 = 3.22 [Lehninger 8e, Table 3-1, pp. 72–73]."
     },
     {
       "deckId": "biochemistry-ch-03",
@@ -83,8 +83,8 @@
     },
     {
       "deckId": "biochemistry-ch-03",
-      "front": "נקודת איזואלקטרית",
-      "back": "ה-pI מחושב כממוצע של שני ערכי pKa. אלו הערכים שמסביב לנקודת האיזואלקטרית של הפפטיד."
+      "front": "Isoelectric point (pI, נקודה איזואלקטרית) — נוסחאות לחומצות דיפרוטיות וטריפרוטיות",
+      "back": "ה-pH שבו המטען החשמלי נטו הוא 0: ללא R מתיינן (Gly): pI = (pK1+pK2)/2 = 5.97; חומציות (Asp, Glu): pI = (pK1+pKR)/2; בסיסיות (His 7.59, Lys 9.74, Arg 10.76): pI = (pKR+pK2)/2; ב-Cys (pKR=8.18 < pK2=10.28): pI = (pK1+pKR)/2 = 5.07; ב-Tyr (pK2=9.11 < pKR=10.07): pI = (pK1+pK2)/2 = 5.66 [Lehninger 8e, Table 3-1 & pp. 79–81]."
     },
     {
       "deckId": "biochemistry-ch-04",
@@ -1285,6 +1285,21 @@
       "deckId": "physiology-ch-05",
       "front": "התמרה חושית",
       "back": "המרת גירוי פיזיקלי או כימי מהסביבה לאות חשמלי (פוטנציאל קולטן) בתאי חישה ייעודיים."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "Histidine (היסטידין, His, H) — קבוצת צד, pKR, pI וכושר בופרי ב-pH 7.0",
+      "back": "בעלת טבעת imidazole (אימידזול) ארומטית עם pK1 = 1.82, pKR = 6.00, pK2 = 9.17 ו-pI = (6.00 + 9.17)/2 = 7.59. חומצת האמינו היחידה המשמשת כבופר יעיל סביב pH פיזיולוגי ניטרלי (ב-pH 7.0 כ-9.1% מקבוצות ה-imidazole טעונות +1 וכ-90.9% ניטרליות לפי משוואת Henderson-Hasselbalch) [Lehninger 8e, pp. 72–73, 75–76, 81]."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "Aromatic R groups (קבוצות צד ארומטיות) ובליעת UV ב-280 nm (Lambert-Beer law)",
+      "back": "Phe (F, בנזיל), Tyr (Y, פנול עם -OH, pKR = 10.07) ו-Trp (W, טבעת indole דו-טבעתית). לפי חוק Lambert-Beer (A = εcl), הבליעה ב-280 nm נובעת בעיקר מ-Trp (ε280 ≈ 5,600 M⁻¹cm⁻¹) ומ-Tyr (ε280 ≈ 1,400 M⁻¹cm⁻¹, יחס של ~4:1), בעוד Phe בולעת סביב 257 nm [Lehninger 8e, Box 3-1, pp. 74–75]."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "כיראליות בחומצות אמינו: Glycine מול Isoleucine ו-Threonine",
+      "back": "Glycine (גליצין, Gly, G, R = -H) היא היחידה מתוך ה-20 שאינה כיראלית (achiral). ל-19 האחרות יש Cα כיראלי (ב-L-configuration בחלבונים ביחס ל-L-glyceraldehyde), ולשתיים בלבד — Isoleucine (Ile, I) ו-Threonine (Thr, T) — יש 2 מרכזים כיראליים (Cα ו-Cβ, 4 סטריאואיזומרים) [Lehninger 8e, pp. 71–73]."
     }
   ]
 }

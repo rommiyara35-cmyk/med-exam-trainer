@@ -4,19 +4,20 @@
     "subtopicId": "biochemistry-ch-03-amino-acids",
     "chapterId": "biochemistry-ch-03",
     "areaId": "biochemistry",
-    "difficulty": 2,
-    "question": "איזו חומצת אמינו מבין הבאות אינה כיראלית (Achiral, א-כיראלית)?",
+    "difficulty": 3,
+    "question": "אילו מחומצות האמינו הסטנדרטיות מתאפיינות בסטריאוכימיה ייחודית של ה-chiral centers (המרכזים הכיראליים) שלהן לפי Lehninger (Table 3-1)?",
     "options": [
-      "Glycine",
-      "Alanine",
-      "Valine",
-      "Leucine"
+      "Glycine (גליצין, Gly, G) היא היחידה שאינה כיראלית (achiral, 0 מרכזים כיראליים), ואילו ל-Isoleucine (איזולאוצין, Ile, I) ול-Threonine (תראונין, Thr, T) יש 2 chiral centers (שני מרכזים כיראליים: Cα ו-Cβ, ולכן 4 סטריאואיזומרים)",
+      "Proline (פרולין, Pro, P) ו-Glycine (גליצין, Gly, G) הן שתיהן achiral (א-כיראליות), ול-Leucine (לאוצין, Leu, L) יש 2 מרכזים כיראליים",
+      "Alanine (אלנין, Ala, A) היא היחידה שאינה כיראלית, ואילו ל-Valine (ואלין, Val, V) ול-Isoleucine (איזולאוצין, Ile, I) יש 2 מרכזים כיראליים",
+      "כל 20 חומצות האמינו מכילות מרכז כיראלי יחיד על Cα, אך בחלבונים מופיעות תערובות רצמיות של D ו-L"
     ],
     "correctIndex": 0,
-    "explanation": "Glycine (גליצין) היא חומצת האמינו היחידה שאינה כיראלית משום שקבוצת הצד (R group, שייר צדדי) שלה היא אטום מימן, מה שאומר שיש לה שני מתמירים זהים (אטומי מימן) על פחמן האלפא.",
+    "explanation": "ב-Glycine (גליצין, R = -H) קשורים לפחמן האלפא (Cα) שני אטומי מימן זהים ולכן היא חומצת האמינו היחידה שאינה כיראלית (achiral) וחסרת פעילות אופטית. מתוך 19 חומצות האמינו הכיראליות, לשתיים בלבד — Isoleucine (איזולאוצין, Ile) ו-Threonine (תראונין, Thr) — יש מרכז כיראלי נוסף בפחמן ה-Cβ (סה\"כ 2 מרכזים כיראליים ו-2² = 4 סטריאואיזומרים). בחלבונים מופיעים באופן בלעדי איזומרי L (L-stereoisomers) ביחס ל-L-glyceraldehyde [מקור: Lehninger 8e, Ch. 3, Sec. 3.1 & Table 3-1, pp. 71–73 (eBook pp. 360–366)].",
     "tags": [
       "Amino Acids",
-      "Chirality"
+      "Chirality",
+      "Stereochemistry"
     ]
   },
   {
@@ -24,19 +25,21 @@
     "subtopicId": "biochemistry-ch-03-amino-acids",
     "chapterId": "biochemistry-ch-03",
     "areaId": "biochemistry",
-    "difficulty": 2,
-    "question": "באיזה pH חומצת אמינו עם שייר לא נטען תימצא בעיקר בצורת Zwitterion (צוויטריון)?",
+    "difficulty": 3,
+    "question": "מדוע ה-pK1 של קבוצת ה-α-carboxyl ב-Glycine (גליצין, pK1 = 2.34) נמוך ביותר מ-2 יחידות pH (חומצי פי >100) לעומת ה-pKa של acetic acid (חומצה אצטית, pKa = 4.76), ומהם ערכי ה-pI והמטען הממוצע של Glycine ב-pH 2.34?",
     "options": [
-      "ב-pH השווה ל-pK1",
-      "ב-pH השווה ל-pK2",
-      "ב-pH השווה ל-pI (הנקודה האיזואלקטרית)",
-      "ב-pH פיזיולוגי (7.4) תמיד"
+      "בגלל intramolecular electron withdrawal (משיכת אלקטרונים תוך-מולקולרית) על-ידי קבוצת ה-α-NH3+ הטעונה חיובית הסמוכה על פחמן ה-Cα וייצוב ה-zwitterion (הצוויטריון); ה-pI הוא (2.34 + 9.60)/2 = 5.97, וב-pH 2.34 המטען הממוצע הוא +0.5",
+      "בגלל קשר מימן קוולנטי עם קבוצת הצד R; ה-pI של Glycine הוא 7.40, וב-pH 2.34 המטען הממוצע הוא 0",
+      "בגלל דחייה אלקטרוסטטית בין שתי קבוצות קרבוקסיל; ה-pI של Glycine הוא 4.76, וב-pH 2.34 המטען הממוצע הוא +1.0",
+      "בגלל שה-pK2 של Glycine הוא 10.6 כמו ב-methylamine; ה-pI הוא 6.47, וב-pH 2.34 המטען הממוצע הוא −0.5"
     ],
-    "correctIndex": 2,
-    "explanation": "הנקודה האיזואלקטרית (pI) היא ערך ה-pH בו המטען החשמלי נטו של המולקולה הוא אפס, והיא נמצאת כ-Zwitterion (צוויטריון). זהו הממוצע של pK1 ו-pK2 עבור חומצות אמינו ללא שייר נטען.",
+    "correctIndex": 0,
+    "explanation": "לפי Lehninger (Fig. 3-10 ו-Fig. 3-11), קבוצת ה-α-NH3+ הטעונה חיובית על פחמן ה-Cα מושכת אליה אלקטרונים (electron withdrawal) ומייצבת את יון ה-COO⁻ ב-zwitterion (צוויטריון), ולכן מורידה את ה-pK1 ל-2.34 לעומת 4.76 בחומצה אצטית (ובאופן דומה חמצני הקרבוקסיל מורידים את ה-pK2 ל-9.60 לעומת 10.6 במתילאמין). ה-pI של Glycine הוא הממוצע החשבוני (2.34 + 9.60)/2 = 5.97, ובנקודת האמצע הראשונה (pH = pK1 = 2.34) קיימת תערובת שווה (1:1) של הצורה בעלת מטען +1 והצוויטריון בעל מטען 0, כך שהמטען הממוצע הוא +0.5 [מקור: Lehninger 8e, Sec. 3.1, pp. 78–79 (eBook pp. 374–376)].",
     "tags": [
       "pI",
-      "Zwitterion"
+      "Zwitterion",
+      "Titration",
+      "pKa perturbation"
     ]
   },
   {
@@ -719,25 +722,26 @@
     "areaId": "biochemistry"
   },
   {
-    "difficulty": 3,
-    "question": "איזו חומצת אמינו בעלת קבוצה צדדית עם pKa≈4.5, ולכן היא נחשבת לחומצה חזקה יחסית ב-physiological pH (ב-pH פיזיולוגי)?",
-    "options": [
-      "Aspartic acid (Asp)",
-      "Glutamic acid (Glu)",
-      "Cysteine (Cys)",
-      "Tyrosine (Tyr)"
-    ],
-    "correctIndex": 0,
-    "explanation": "ה-Aspartic acid מכילה קבוצת-COOH ב-R-group עם pKa≈3.9-4.5, ולכן מתרוקנת בטווח pH הפיזיולוגי (7.4) ונותנת מטען שלילי. Glutamic acid בעלת pKa≈4.3-4.5 גם חומצית, אך השאלה מתייחסת ל-pKa המדויק 4.5 – זהו ערך טיפוסי ל-Asp. Cysteine ו-Tyrosine הן חומצות בעלות קבוצת-SH ו-OH עם pKa גבוה יותר (≈8.3 ו-10.1).",
-    "tags": [
-      "pKa",
-      "חומצות אמינו חומציות",
-      "R‑group"
-    ],
     "id": "q_biochemistry-ch-03-sec-3-1_1_1791329231",
     "subtopicId": "biochemistry-ch-03-sec-3-1",
     "chapterId": "biochemistry-ch-03",
-    "areaId": "biochemistry"
+    "areaId": "biochemistry",
+    "difficulty": 4,
+    "question": "מהם ערכי ה-pKa וה-pI המדויקים של שתי חומצות האמינו בעלות negatively charged (acidic) R groups (קבוצות צד טעונות שלילית / חומציות ב-pH 7.0) לפי Table 3-1 ב-Lehninger, וכיצד מחושב ה-pI שלהן?",
+    "options": [
+      "Aspartate (Asp, D): pK1 = 1.88, pKR = 3.65, pK2 = 9.60 → pI = (1.88 + 3.65)/2 = 2.77; Glutamate (Glu, E): pK1 = 2.19, pKR = 4.25, pK2 = 9.67 → pI = (2.19 + 4.25)/2 = 3.22",
+      "Aspartate (Asp, D): pK1 = 2.19, pKR = 4.25, pK2 = 9.67 → pI = (4.25 + 9.67)/2 = 6.96; Glutamate (Glu, E): pK1 = 1.88, pKR = 3.65, pK2 = 9.60 → pI = 5.74",
+      "Aspartate (Asp, D): pK1 = 1.96, pKR = 8.18, pK2 = 10.28 → pI = 5.07; Glutamate (Glu, E): pK1 = 2.20, pKR = 10.07, pK2 = 9.11 → pI = 5.66",
+      "Aspartate (Asp, D) ו-Glutamate (Glu, E) הן בעלות pKR זהה של 4.50 ו-pI זהה של 5.97"
+    ],
+    "correctIndex": 0,
+    "explanation": "לפי Lehninger Table 3-1 ו-Fig. 3-12a, לשתי חומצות האמינו החומציות יש קבוצת קרבוקסיל נוספת בקבוצת ה-R: ב-Aspartate (אספרטט, Asp, D) קבוצת β-carboxyl עם pK1 = 1.88, pKR = 3.65, pK2 = 9.60, וב-Glutamate (גלוטמט, Glu, E) קבוצת γ-carboxyl עם pK1 = 2.19, pKR = 4.25, pK2 = 9.67. צורת ה-zwitterion (מטען נטו 0) נמצאת בין שני שלבי ה-pKa החומציים (pK1 ו-pKR, שבהם שתי קבוצות הקרבוקסיל תורמות יחד מטען ממוצע של −1 המאזן את ה-+1 של קבוצת ה-α-NH3+), ולכן pI(Asp) = (1.88 + 3.65)/2 = 2.77 ו-pI(Glu) = (2.19 + 4.25)/2 = 3.22 [מקור: Lehninger 8e, Table 3-1 & Fig. 3-12a, pp. 72–73, 80–81 (eBook pp. 365–366, 377–378)].",
+    "tags": [
+      "pKa",
+      "Acidic amino acids",
+      "pI calculation",
+      "Table 3-1"
+    ]
   },
   {
     "difficulty": 4,
@@ -761,25 +765,26 @@
     "areaId": "biochemistry"
   },
   {
-    "difficulty": 5,
-    "question": "איזו חומצת אמינו נחשבת ל-essential (חיונית) עבור בני אדם, אך בעלת קודון יחיד בלבד בתהליך התרגום?",
-    "options": [
-      "Tryptophan (Trp)",
-      "Methionine (Met)",
-      "Leucine (Leu)",
-      "Phenylalanine (Phe)"
-    ],
-    "correctIndex": 0,
-    "explanation": "Tryptophan (טריפטופן) היא חומצת אמינו essential (חיונית) ובעלת קודון יחיד – UGG. Methionine (מתיונין) גם essential אך קודון אחד (AUG) משמש גם כ-start codon (קודון התחלה), ולכן היא לא היחידה עם קודון יחיד בלבד. Leucine (לאוצין) ו-Phenylalanine (פנילאלנין) הן non-essential (אינן חיוניות) או בעלות יותר מקודון אחד.",
-    "tags": [
-      "essential amino acids",
-      "codon usage",
-      "genetic code"
-    ],
     "id": "q_biochemistry-ch-03-sec-3-1_3_1791329231",
     "subtopicId": "biochemistry-ch-03-sec-3-1",
     "chapterId": "biochemistry-ch-03",
-    "areaId": "biochemistry"
+    "areaId": "biochemistry",
+    "difficulty": 4,
+    "question": "מדוע ה-pI של Cysteine (ציסטאין, Cys: pK1 = 1.96, pKR = 8.18, pK2 = 10.28) מחושב כממוצע של pK1 ו-pKR (5.07), בעוד ה-pI של Tyrosine (טירוזין, Tyr: pK1 = 2.20, pK2 = 9.11, pKR = 10.07) מחושב כממוצע של pK1 ו-pK2 (5.66)?",
+    "options": [
+      "משום שגם קבוצת ה-thiol (-SH) ב-Cys וגם קבוצת ה-phenol (-OH) ב-Tyr הן ניטרליות (0) בצורתן המו-protonated וטעונות −1 לאחר דה-פרוטונציה; לכן צורת המטען 0 תחומה תמיד בין pK1 לבין ה-pKa השני בגודלו (ב-Cys זהו pKR = 8.18 < pK2 = 10.28, ואילו ב-Tyr זהו pK2 = 9.11 < pKR = 10.07)",
+      "משום שקבוצת ה-thiol ב-Cys טעונה +1 ב-pH ניטרלי בעוד קבוצת ה-phenol ב-Tyr טעונה −1 ב-pH ניטרלי",
+      "משום ש-Cys יוצרת קשר disulfide bond (-S-S-) ב-pH 5.07 ואילו Tyr יוצרת קשר פפטידי ב-pH 5.66",
+      "משום שבכל חומצת אמינו ארומטית ה-pKR אינו מתיינן לעולם בתמיסה מימית"
+    ],
+    "correctIndex": 0,
+    "explanation": "ב-pH נמוך מאוד (מתחת ל-pK1), גם Cysteine וגם Tyrosine נמצאות במטען נטו +1 (כי -COOH, -SH ו--OH ניטרליים, ורק -NH3+ טעון +1). איבוד הפרוטון הראשון מ-α-COOH ב-pK1 מעביר את המולקולה למטען נטו 0 (zwitterion). היציאה ממצב מטען 0 למצב מטען −1 מתרחשת בשלב היוניזציה הבא לפי סדר ערכי ה-pKa: ב-Cysteine קבוצת ה-thiol (-SH) מתייננת ב-pKR = 8.18 לפני ה-α-NH3+ (pK2 = 10.28), ולכן pI(Cys) = (1.96 + 8.18)/2 = 5.07; לעומת זאת ב-Tyrosine קבוצת ה-α-NH3+ מתייננת ב-pK2 = 9.11 לפני ה-OH הפנולי (pKR = 10.07), ולכן pI(Tyr) = (2.20 + 9.11)/2 = 5.66 [מקור: Lehninger 8e, Table 3-1, pp. 72–73 (eBook pp. 365–366)].",
+    "tags": [
+      "Cysteine",
+      "Tyrosine",
+      "pI calculation",
+      "pKa"
+    ]
   },
   {
     "difficulty": 3,
@@ -971,25 +976,25 @@
     "areaId": "biochemistry"
   },
   {
-    "difficulty": 4,
-    "question": "פפטיד קצר בעל רצף Asp-Lys-His-Glu-Cys (pKa של קבוצות צדדיות: Asp 3.9, Lys 10.5, His 6.0, Glu 4.3, Cys 8.3). מהו ה-pI המשוער של הפפטיד?",
-    "options": [
-      "pI ≈ 5.6",
-      "pI ≈ 7.2",
-      "pI ≈ 8.9",
-      "pI ≈ 10.1"
-    ],
-    "correctIndex": 0,
-    "explanation": "ה-pI של פפטיד מחושב כממוצע של שני ערכי ה-pKa המגדירים את המעבר דרך מטען אפס. קבוצות הקרבוקסיל (Asp, Glu וקצה ה-C) עוברות דה-פרוטונציה (מוסרות פרוטון) בטווח החומצי (pKa ≈ 3.9-4.3), בעוד אמינים בסיסיים (Lys, קצה ה-N) עוברים דה-פרוטונציה ב-pH בסיסי. הנוכחות של מספר קבוצות חומציות מטה את ה-pI סביב 5.6.",
-    "tags": [
-      "isoelectric point",
-      "pKa",
-      "peptide"
-    ],
     "id": "q_biochemistry-ch-03-sec-3-4_2_1791329320",
     "subtopicId": "biochemistry-ch-03-sec-3-4",
     "chapterId": "biochemistry-ch-03",
-    "areaId": "biochemistry"
+    "areaId": "biochemistry",
+    "difficulty": 4,
+    "question": "פפטיד קצר בעל הרצף Asp-Lys-His-Glu-Cys נמצא בתמיסה. בהנחה שערכי ה-pKR של קבוצות הצד קרובים לאלו של חומצות האמינו החופשיות ב-Table 3-1 (Asp 3.65, Glu 4.25, His 6.00, Cys 8.18, Lys 10.53; וכן α-COOH בקצה ה-C כ-2.1 ו-α-NH3+ בקצה ה-N כ-9.0), מהו ה-pI המשוער של הפפטיד?",
+    "options": [
+      "pI ≈ 5.1 (ממוצע בין pKR של Glu = 4.25 לבין pKR של His = 6.00, התוחמים את המצב שבו המטען נטו של הפפטיד הוא 0)",
+      "pI ≈ 7.2 (ממוצע בין His = 6.00 לבין Cys = 8.18)",
+      "pI ≈ 8.6 (ממוצע בין Cys = 8.18 לבין קצה ה-N = 9.0)",
+      "pI ≈ 3.0 (ממוצע בין קצה ה-C = 2.1 לבין Asp = 3.65)"
+    ],
+    "correctIndex": 0,
+    "explanation": "ב-pH נמוך מאוד (מתחת ל-2), לפפטיד יש 3 קבוצות טעונות חיובית (קצה N-terminal α-NH3+, קבוצת ε-NH3+ של Lys, וקבוצת ה-imidazole של His), ולכן המטען נטו ההתחלתי הוא +3. כדי להגיע למטען נטו 0 נדרשות 3 דה-פרוטונציות בדיוק לפי סדר ערכי ה-pKa מהנמוך לגבוה: (1) קצה C-terminal α-COOH (pKa ≈ 2.1 → מטען +2); (2) Asp β-COOH (pKR = 3.65 → מטען +1); (3) Glu γ-COOH (pKR = 4.25 → מטען 0!). המעבר ממטען 0 למטען −1 מתרחש בדה-פרוטונציה הרביעית, שהיא קבוצת ה-imidazole של His (pKR = 6.00). לכן ה-pI נמצא בדיוק באמצע בין Glu (4.25) ל-His (6.00): pI ≈ (4.25 + 6.00)/2 = 5.13 [מקור: Lehninger 8e, Sec. 3.1 & 3.2, Table 3-1, pp. 72–73, 80–82 (eBook pp. 365–366, 377–382)].",
+    "tags": [
+      "isoelectric point",
+      "pKa",
+      "peptide charge"
+    ]
   },
   {
     "difficulty": 5,
@@ -12698,6 +12703,117 @@
     "tags": [
       "Skeletal muscle",
       "Titin"
+    ]
+  },
+  {
+    "id": "q_bc_amino_calc_pi_glu_his",
+    "subtopicId": "biochemistry-ch-03-sec-3-1",
+    "chapterId": "biochemistry-ch-03",
+    "areaId": "biochemistry",
+    "difficulty": 4,
+    "question": "לפי עקומות הטיטרציה ב-Lehninger (Fig. 3-12 ו-Table 3-1), מהם ערכי ה-pI המדויקים של שלוש חומצות האמינו בעלות positively charged (basic) R groups (קבוצות צד טעונות חיובית / בסיסיות ב-pH 7.0) — Histidine (His), Lysine (Lys) ו-Arginine (Arg) — ולאיזו אלקטרודה תנדוד Histidine בבופר בעל pH 7.0?",
+    "options": [
+      "pI(His) = (6.00 + 9.17)/2 = 7.59; pI(Lys) = (8.95 + 10.53)/2 = 9.74; pI(Arg) = (9.04 + 12.48)/2 = 10.76 — ב-pH 7.0 (< 7.59) ל-His יש מטען נטו חיובי קל והיא תנדוד אל ה-cathode (הקתודה, האלקטרודה השלילית)",
+      "pI(His) = (1.82 + 6.00)/2 = 3.91; pI(Lys) = (2.18 + 8.95)/2 = 5.57; pI(Arg) = (2.17 + 9.04)/2 = 5.61 — ב-pH 7.0 ל-His יש מטען שלילי והיא תנדוד אל ה-anode (האנודה)",
+      "pI(His) = 6.00; pI(Lys) = 10.53; pI(Arg) = 12.48 — ב-pH 7.0 ל-His יש מטען 0 והיא לא תנדוד כלל",
+      "pI(His) = 7.59; pI(Lys) = 9.74; pI(Arg) = 10.76 — ב-pH 7.0 ל-His יש מטען חיובי ולכן היא תנדוד אל ה-anode (האנודה, האלקטרודה החיובית)"
+    ],
+    "correctIndex": 0,
+    "explanation": "בחומצות אמינו בסיסיות (His, Lys, Arg), ב-pH נמוך מאוד המטען הוא +2. לאחר דה-פרוטונציה של קבוצת ה-α-COOH ב-pK1 המטען הוא +1, ורק בין שני ערכי ה-pKa של הקבוצות הטעונות חיובית (pKR ו-pK2) מתקבלת צורת ה-zwitterion המאוזנת (מטען נטו 0). לכן ממצעים את pKR ו-pK2: עבור His: (6.00 + 9.17)/2 = 7.59; עבור Lys: (8.95 + 10.53)/2 = 9.74; עבור Arg: (9.04 + 12.48)/2 = 10.76. ב-pH 7.0, הנמוך מ-pI(His) = 7.59, המטען הממוצע של His הוא חיובי (+0.09) ולכן היא נודדת אל האלקטרודה השלילית — ה-cathode (קתודה) [מקור: Lehninger 8e, Table 3-1 & Fig. 3-12b, pp. 72–73, 79–81 (eBook pp. 365–366, 376–378)].",
+    "tags": [
+      "Basic amino acids",
+      "pI calculation",
+      "Electrophoresis",
+      "Histidine"
+    ]
+  },
+  {
+    "id": "q_bc_amino_calc_cys_tyr",
+    "subtopicId": "biochemistry-ch-03-sec-3-1",
+    "chapterId": "biochemistry-ch-03",
+    "areaId": "biochemistry",
+    "difficulty": 4,
+    "question": "איזו תגובה כימית עוברים שני שיירי Cysteine (ציסטאין, Cys, C) בחלבונים, מהי התכונה הפיזיקוכימית של התוצר הנוצר, ומהו ההבדל בינו לבין קבוצת הצד של Methionine (מתיונין, Met, M)?",
+    "options": [
+      "שני שיירי Cysteine בעלי קבוצת sulfhydryl / thiol (-SH, קוטבית וחומצית חלשה עם pKR = 8.18) עוברים חמצון הפיך ליצירת דימר קוולנטי בשם Cystine (ציסטין) המחובר ב-disulfide bond (-S-S-) שהוא strongly hydrophobic (nonpolar); לעומתם, Methionine מכילה גופרית בקבוצת thioether (-S-CH3) לא-קוטבית שאינה מתייננת ואינה יוצרת קשרי דיסולפיד",
+      "שני שיירי Methionine עוברים חמצון ליצירת Cystine, בעוד Cysteine מכילה קבוצת thioether שאינה מתייננת",
+      "חמצון שני שיירי Cysteine יוצר קשר יוני (salt bridge) הידרופילי מאוד המייצב חלבונים בציטוזול המחזר",
+      "Cysteine ו-Methionine שתיהן שייכות לקבוצת ה-Nonpolar, aliphatic R groups ושתיהן בעלות pKR = 8.18"
+    ],
+    "correctIndex": 0,
+    "explanation": "לפי Lehninger (Sec. 3.1, pp. 74–75), יש שתי חומצות אמינו סטנדרטיות המכילות גופרית: Methionine (מתיונין, Met, M) השייכת לקבוצת ה-Nonpolar, aliphatic R groups ומכילה קבוצת thioether לא-קוטבית (-CH2CH2-S-CH3) שאינה מתייננת, ו-Cysteine (ציסטאין, Cys, C) השייכת לקבוצת ה-Polar, uncharged R groups ומכילה קבוצת thiol / sulfhydryl (-CH2SH) חומצית חלשה (pKR = 8.18). חמצון הפיך של שני שיירי Cys יוצר דימר קוולנטי בשם Cystine (ציסטין) המחובר ב-disulfide bond (-S-S-), שהוא בעצמו הידרופובי מאוד (nonpolar) ומייצב מבנה שלישוני ורביעוני בחלבונים חוץ-תאיים [מקור: Lehninger 8e, Sec. 3.1, pp. 74–75 (eBook pp. 367–371)].",
+    "tags": [
+      "Cysteine",
+      "Cystine",
+      "Disulfide bond",
+      "Methionine"
+    ]
+  },
+  {
+    "id": "q_bc_amino_uv_lambert_beer",
+    "subtopicId": "biochemistry-ch-03-sec-3-1",
+    "chapterId": "biochemistry-ch-03",
+    "areaId": "biochemistry",
+    "difficulty": 3,
+    "question": "כיצד מוסברת בליעת האור האולטרה-סגול של חלבונים באורך גל 280 nm לפי Lehninger (Box 3-1), ומהו היחס בין מקדמי הבליעה המולריים (molar absorptivity, ε280) של חומצות האמינו הארומטיות?",
+    "options": [
+      "לפי Lambert-Beer law (חוק למברט-ביר, A = log(I0/I) = εcl), הבליעה ב-280 nm נובעת בעיקר מטבעת ה-indole (אינדול) של Tryptophan (Trp, W) שבה ε280 ≈ 5,600 M⁻¹cm⁻¹, ובמידה פחותה (פי ~4 פחות) מטבעת ה-phenol (פנול) של Tyrosine (Tyr, Y) שבה ε280 ≈ 1,400 M⁻¹cm⁻¹, בעוד Phenylalanine (Phe, F) בולעת סביב 257 nm ותורמת מעט מאוד ב-280 nm",
+      "כל שלוש חומצות האמינו הארומטיות (Phe, Tyr, Trp) בולעות ב-280 nm עם מקדם בליעה זהה של ε280 = 5,600 M⁻¹cm⁻¹",
+      "הבליעה ב-280 nm נובעת מקבוצת ה-imidazole הארומטית של Histidine (His, H) ומהקשר הפפטידי בלבד",
+      "Phenylalanine (Phe) היא התורמת העיקרית לבליעה ב-280 nm (ε280 ≈ 5,600 M⁻¹cm⁻¹), בעוד Tryptophan בולעת רק ב-257 nm"
+    ],
+    "correctIndex": 0,
+    "explanation": "לפי Lehninger Box 3-1 (p. 75), מדידת ריכוז חלבונים ב-280 nm מבוססת על חוק Lambert-Beer: A = log(I0/I) = εcl. Tryptophan (טריפטופן, Trp, W, בעלת טבעת indole דו-טבעתית) בולעת בעוצמה גבוהה פי ~4 מ-Tyrosine (טירוזין, Tyr, Y, בעלת טבעת פנול): ε280(Trp) ≈ 5,600 M⁻¹cm⁻¹ לעומת ε280(Tyr) ≈ 1,400 M⁻¹cm⁻¹. Phenylalanine (פנילאלנין, Phe, F, בעלת טבעת בנזיל) בולעת באורכי גל קצרים יותר (סביב 257 nm) ותורמת מעט מאוד לבליעה ב-280 nm [מקור: Lehninger 8e, Sec. 3.1 & Box 3-1, pp. 74–75 (eBook pp. 367–370)].",
+    "tags": [
+      "UV absorbance",
+      "Lambert-Beer law",
+      "Tryptophan",
+      "Tyrosine",
+      "Aromatic amino acids"
+    ]
+  },
+  {
+    "id": "q_bc_amino_his_henderson",
+    "subtopicId": "biochemistry-ch-03-sec-3-1",
+    "chapterId": "biochemistry-ch-03",
+    "areaId": "biochemistry",
+    "difficulty": 4,
+    "question": "מדוע Histidine (היסטידין, His, H) היא חומצת האמינו הסטנדרטית היחידה שקבוצת הצד שלה משמשת כבופר יעיל ב-pH פיזיולוגי ניטרלי, ומהו אחוז קבוצות הצד של Histidine חופשית הטעונות חיובית (+1) ב-pH 7.0 לפי משוואת Henderson-Hasselbalch?",
+    "options": [
+      "משום שלקבוצת ה-imidazole (אימידזול) של Histidine יש pKR = 6.00 (קרוב ל-pH ניטרלי); ב-pH 7.0 מתקיים log([His⁰]/[HisH⁺]) = 7.0 − 6.00 = 1.0 ← יחס [His⁰]/[HisH⁺] = 10:1, ולכן שבר הקבוצות הטעונות חיובית (+1) הוא 1/(1+10) = 1/11 ≈ 9.1% (וכ-90.9% ניטרליות)",
+      "משום שלקבוצת ה-imidazole יש pKR = 7.59; ב-pH 7.0 בדיוק 50% מקבוצות הצד של Histidine טעונות +1 ו-50% ניטרליות",
+      "משום שלקבוצת ה-imidazole יש pKR = 6.00; ב-pH 7.0 יחס [His⁰]/[HisH⁺] הוא 1:10 ולכן כ-90.9% מקבוצות הצד טעונות +1",
+      "משום שגם Glycine (גליצין) וגם Histidine הן בעלות pKR = 6.00 ומשמשות כבופר ב-pH 7.4"
+    ],
+    "correctIndex": 0,
+    "explanation": "לפי Lehninger (Table 3-1, pp. 72–73, 75–76, 81), Histidine היא חומצת האמינו היחידה מבין ה-20 שקבוצת ה-R שלה (טבעת ה-imidazole) היא בעלת pKR = 6.00 הקרוב ל-pH הפיזיולוגי. הצבת pH = 7.0 ו-pKa = 6.00 במשוואת Henderson-Hasselbalch נותנת: 7.0 = 6.00 + log([His⁰]/[HisH⁺]), כלומר [His⁰]/[HisH⁺] = 10¹ = 10. מכאן שהשבר הטעון חיובית (+1) הוא 1/(1 + 10) = 1/11 ≈ 9.1%, והשבר הניטרלי (0) הוא 10/11 ≈ 90.9% (בחלבון שלם ה-pKR של His יכול לעלות או לרדת בהתאם לסביבה הכימית באתר הפעיל) [מקור: Lehninger 8e, Sec. 3.1, pp. 75–76, 81 (eBook pp. 371, 378)].",
+    "tags": [
+      "Histidine",
+      "Imidazole",
+      "Henderson-Hasselbalch",
+      "Buffering"
+    ]
+  },
+  {
+    "id": "q_bc_amino_uncommon_mods",
+    "subtopicId": "biochemistry-ch-03-sec-3-1",
+    "chapterId": "biochemistry-ch-03",
+    "areaId": "biochemistry",
+    "difficulty": 3,
+    "question": "איזו מההתאמות הבאות בין חומצת אמינו לא-שכיחה (uncommon amino acid) לבין מקורה ותפקידה הביולוגי נכונה במלואה לפי Lehninger (Sec. 3.1, Fig. 3-8)?",
+    "options": [
+      "γ-carboxyglutamate (גמא-קרבוקסיגלוטמט) קושרת יוני Ca²⁺ ב-prothrombin (פרותרומבין); Desmosine (דסמוזין) נוצרת מ-4 שיירי Lysine ב-elastin (אלסטין); Selenocysteine (סלנוציסטאין, החומצה ה-21) נגזרת מ-Serine ומוכנסת ישירות במהלך סינתזת החלבון; ו-Ornithine ו-Citrulline הם מטבוליטים חופשיים במעגל האוריאה (urea cycle)",
+      "4-hydroxyproline ו-5-hydroxylysine מצויות ב-prothrombin; Selenocysteine נוצרת לאחר התרגום מחמצון של Cysteine; ו-Ornithine מרכיבה את סיבי ה-collagen",
+      "Desmosine נוצרת מ-4 שיירי Proline ב-collagen; ו-γ-carboxyglutamate היא מטבוליט חופשי במעגל האוריאה שאינו מופיע בחלבונים",
+      "Selenocysteine ו-Pyrrolysine נוצרות רק לאחר התרגום (post-translationally) מ-Methionine ומ-Lysine"
+    ],
+    "correctIndex": 0,
+    "explanation": "לפי Lehninger (Sec. 3.1, pp. 76–77 ו-Fig. 3-8): (1) 4-hydroxyproline ו-5-hydroxylysine מצויות ב-collagen; (2) 6-N-methyllysine מצויה ב-myosin; (3) γ-carboxyglutamate מצויה ב-prothrombin וקושרת יוני Ca²⁺; (4) Desmosine נוצרת מחיבור של 4 שיירי Lysine ב-elastin; (5) Selenocysteine (החומצה ה-21, מכילה סלניום במקום גופרית ונגזרת מ-Serine) ו-Pyrrolysine (החומצה ה-22) מוכנסות ישירות תוך כדי תרגום החלבון בריבוזום; ו-(6) Ornithine ו-Citrulline הן חומצות אמינו חופשיות (אינן מרכיבות חלבונים) המשמשות כתוצרי ביניים במעגל האוריאה ובביוסינתזה של Arginine [מקור: Lehninger 8e, Sec. 3.1, pp. 76–77 (eBook pp. 371–374)].",
+    "tags": [
+      "Uncommon amino acids",
+      "Selenocysteine",
+      "Post-translational modification",
+      "Urea cycle"
     ]
   }
 ]

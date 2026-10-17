@@ -5,20 +5,453 @@
     "areaId": "biochemistry",
     "title": "חומצות אמינו ופפטידים",
     "titleEn": "Amino Acids, Peptides, and Proteins",
-    "estimatedMinutes": 5,
+    "estimatedMinutes": 25,
     "cards": [
       {
         "type": "concept",
-        "title": "מבנה חומצות אמינו",
-        "content": "כל חומצות האמינו (מלבד Proline, פרולין) מורכבות מפחמן אלפא אליו קשורים קבוצת אמינו, קבוצת קרבוקסיל, אטום מימן וקבוצת צד (R group, שייר צדדי) המייחדת אותן. ה**כיראליות** של פחמן האלפא קיימת בכולן מלבד Glycine (גליצין).",
+        "title": "1. מבנה כללי, מספור פחמנים וסטריאוכימיה (General Structure, Carbon Numbering & Stereochemistry)",
+        "content": "כל 20 ה-**standard amino acids** (חומצות האמינו הסטנדרטיות) המצויות בחלבונים הן **α-amino acids** (חומצות אלפא-אמינו): לאטום ה-**α-carbon (Cα)** (פחמן אלפא) קשורים קבוצת **α-carboxyl group** (קבוצת אלפא-קרבוקסיל, $-\\text{COOH}$), קבוצת **α-amino group** (קבוצת אלפא-אמינו, $-\\text{NH}_2$), אטום **hydrogen atom** (אטום מימן, $-\\text{H}$) ו-**side chain / R group** (קבוצת צד / שייר צדדי) ייחודית (יוצאת הדופן היא **Proline** [פרולין], שבה קבוצת ה-R סגורה לטבעת עם קבוצת ה-α-amino המהווה אמין שניוני) [מקור: Lehninger 8e, Sec. 3.1, p. 71 (eBook p. 359)]. בשיטת המספור הביוכימית, פחמני קבוצת ה-R מסומנים באותיות יווניות החל מ-Cα: **β, γ, δ, ε** (למשל ב-**Lysine** [ליזין] קבוצת האמינו הצדדית יושבת על פחמן **ε** שהוא **C-6** כשהקרבוקסיל הוא **C-1**) [מקור: Lehninger 8e, Sec. 3.1, p. 71 (eBook p. 360)]. בכל חומצות האמינו הסטנדרטיות **מלבד Glycine** (גליצין, שבה $R = -\\text{H}$ ולכן ל-Cα קשורים שני אטומי מימן זהים), אטום ה-Cα קשור לארבע קבוצות שונות ומהווה **chiral center** (מרכז כיראלי / אסימטרי) המקנה **optical activity** (פעילות אופטית — סיבוב מישור אור מקוטב) וקיום שני **enantiomers** (אננטיומרים, סטריאואיזומרים שהם תמונת ראי לא-חופפת) [מקור: Lehninger 8e, Sec. 3.1, p. 71 (eBook p. 360)]. לשתי חומצות אמינו בלבד מבין ה-20 — **Isoleucine (Ile)** (איזולאוצין) ו-**Threonine (Thr)** (תראונין) — יש **שני מרכזים כיראליים** ($C_\\alpha$ ו-$C_\\beta$, ולכן $2^2 = 4$ סטריאואיזומרים) [מקור: Lehninger 8e, Table 3-1 & Sec. 3.1, pp. 72–73 (eBook pp. 365–366)]. לפי שיטת המינוח של **Emil Fischer** (1891), ה-**absolute configuration** (הקונפיגורציה המוחלטת) מסומנת כ-**D** או **L** ביחס לתרכובת הייחוס **L-glyceraldehyde** (L-גליצראלדהיד), בלי קשר לכיוון סיבוב האור המקוטב ($+$ או $-$); שיירי חומצות האמינו בחלבונים ריבוזומליים הם **באופן בלעדי L-stereoisomers** (איזומרי L), בעוד **D-amino acids** (חומצות אמינו מסוג D) מופיעות רק במספר פפטידים קצרים המסונתזים אנזימתית (לא בריבוזום) בדופן התא החיידקי (**bacterial cell envelope peptidoglycan**) ובאנטיביוטיקות פפטידיות [מקור: Lehninger 8e, Sec. 3.1, pp. 71–73 (eBook pp. 361–363)].",
         "keyPoints": [
-          "L-amino acids הן הנפוצות בטבע",
-          "Glycine (גליצין) אינה כיראלית"
-        ]
+          "כל 20 חומצות האמינו הסטנדרטיות בנויות סביב α-carbon (Cα) הקשור ל-α-carboxyl, α-amino, H ו-R group (ב-Proline ה-R סגור לטבעת פירולידין עם ה-α-amino) [Lehninger 8e, p. 71]",
+          "Glycine (גליצין, R = H) היא חומצת האמינו היחידה מבין ה-20 שאינה כיראלית (achiral); ל-19 האחרות יש Cα כיראלי ופעילות אופטית [Lehninger 8e, p. 71]",
+          "ל-Isoleucine (Ile, איזולאוצין) ול-Threonine (Thr, תראונין) יש 2 מרכזים כיראליים (Cα ו-Cβ) ולכן 4 סטריאואיזומרים (2² = 4) [Lehninger 8e, Table 3-1, pp. 72–73]",
+          "שיטת D/L נקבעת לפי התאמה מרחבית ל-L-glyceraldehyde (ולא לפי כיוון סיבוב האור); בחלבונים מופיעים אך ורק L-stereoisomers [Lehninger 8e, pp. 71–73]"
+        ],
+        "sourceNote": "Lehninger Principles of Biochemistry 8e, Ch. 3, Sec. 3.1, pp. 70–74 (eBook pp. 358–367)"
+      },
+      {
+        "type": "concept",
+        "title": "2. סיווג ב-pH 7.0 (חלק א'): קבוצות אליפטיות לא-קוטביות (Nonpolar Aliphatic) וארומטיות (Aromatic) + בליעת UV ב-280 nm",
+        "content": "לפי Lehninger, 20 חומצות האמינו מסווגות ל-**5 מחלקות** על בסיס הקוטביות (**polarity**) והמטען החשמלי ב-**pH 7.0** של קבוצת ה-R [מקור: Lehninger 8e, Sec. 3.1, p. 72 (eBook p. 364)]. **מחלקה 1 — Nonpolar, aliphatic R groups (קבוצות R אליפטיות לא-קוטביות, 7 חומצות אמינו):** **Glycine (Gly, G)**, **Alanine (Ala, A)**, **Proline (Pro, P)**, **Valine (Val, V)**, **Leucine (Leu, L)**, **Isoleucine (Ile, I)** ו-**Methionine (Met, M)**. השרשראות של **Ala, Val, Leu, Ile** מתקבצות בליבת החלבון ומייצבות את המבנה התלת-ממדי באמצעות ה-**hydrophobic effect** (האפקט ההידרופובי); ל-**Glycine** ($R = -\\text{H}$) אין תרומה ממשית לאפקט ההידרופובי והיא מאפשרת גמישות מבנית מרבית ללא הפרעה סטרית; ל-**Proline** יש קבוצת אמינו שניונית (**imino group**) הכלואה בטבעת פירולידין קשיחה המפחיתה את הגמישות המבנית של הפוליפפטיד; ו-**Methionine** מכילה אטום גופרית בקבוצת **thioether** (תיואתר לא-קוטבי, $-\\text{CH}_2\\text{CH}_2-\\text{S}-\\text{CH}_3$) [מקור: Lehninger 8e, Sec. 3.1, p. 74 (eBook p. 367)]. **מחלקה 2 — Aromatic R groups (קבוצות R ארומטיות, 3 חומצות אמינו):** **Phenylalanine (Phe, F)** (טבעת בנזיל הידרופובית מאוד), **Tyrosine (Tyr, Y)** (טבעת פנול עם קבוצת $-\\text{OH}$ היוצרת קשרי מימן ומתייננת ב-$pK_R = 10.07$), ו-**Tryptophan (Trp, W)** (טבעת **indole** [אינדול] דו-טבעתית חנקנית; קוטבית יותר מ-Phe). **בליעת אור UV ב-280 nm (Box 3-1):** **Tryptophan** ו-**Tyrosine** (ובמידה מועטה מאוד **Phenylalanine** שבולעת סביב $257\\text{ nm}$) בולעות אור אולטרה-סגול סביב אורך גל **$280\\text{ nm}$**; לפי **Lambert-Beer law** (חוק למברט-ביר): $$A = \\log\\frac{I_0}{I} = \\varepsilon c l$$ מקדם הבליעה המולרי (**molar absorptivity**, $\\varepsilon$) ב-$280\\text{ nm}$ של **Trp** הוא **$\\varepsilon_{280} \\approx 5,600\\text{ M}^{-1}\\text{cm}^{-1}$** — פי 4 משל **Tyr** (**$\\varepsilon_{280} \\approx 1,400\\text{ M}^{-1}\\text{cm}^{-1}$**) [מקור: Lehninger 8e, Sec. 3.1 & Box 3-1, pp. 74–75 (eBook pp. 367–370)].",
+        "keyPoints": [
+          "7 חומצות Nonpolar, aliphatic: Gly (G), Ala (A), Pro (P, טבעת imino קשיחה), Val (V), Leu (L), Ile (I), Met (M, קבוצת thioether עם גופרית) [Lehninger 8e, Table 3-1 & p. 74]",
+          "3 חומצות Aromatic: Phe (F, בנזיל הידרופובי), Tyr (Y, פנול עם -OH, pKR = 10.07), Trp (W, טבעת indole דו-טבעתית) [Lehninger 8e, Table 3-1 & p. 74]",
+          "בליעת UV ב-280 nm לפי חוק Lambert-Beer (A = εcl): Trp בולעת בעוצמה הגבוהה ביותר (ε280 ≈ 5,600 M⁻¹cm⁻¹) לעומת Tyr (ε280 ≈ 1,400 M⁻¹cm⁻¹, יחס של ~4:1), בעוד Phe בולעת סביב 257 nm ותורמת מעט מאוד ב-280 nm [Lehninger 8e, Box 3-1, p. 75]",
+          "הערת מקור (Missing from sources): העמודות Hydropathy index ו-Occurrence in proteins (%) ב-Table 3-1 קטועות בקובץ ה-PDF שב-Drive (eBook pp. 365–366) ולכן סומנו כ-missing from sources"
+        ],
+        "table": {
+          "id": "table_3_1_nonpolar_aromatic",
+          "title": "Table 3-1 (חלק א'): 10 חומצות האמינו בעלות קבוצות צד (R groups) אליפטיות לא-קוטביות וארומטיות (ב-pH 7.0)",
+          "source": "Lehninger Principles of Biochemistry 8e, Ch. 3, Sec. 3.1, Table 3-1, pp. 72–73 (eBook pp. 365–366)",
+          "headers": [
+            "Amino Acid (חומצת אמינו)",
+            "3-Letter (קיצור 3 אותיות)",
+            "1-Letter (אות יחידה)",
+            "Mr",
+            "Group at pH 7.0 (קבוצה ב-pH 7.0)",
+            "Side-Chain Property (מאפיין קבוצת הצד)",
+            "pK1 (-COOH)",
+            "pK2 (-NH3+)",
+            "pKR (R group)",
+            "pI"
+          ],
+          "rows": [
+            [
+              "Glycine (גליצין)",
+              "Gly",
+              "G",
+              "75",
+              "Nonpolar, aliphatic (לא-קוטבית, אליפטית)",
+              "R = -H; achiral (א-כיראלית היחידה, ללא מרכז אסימטרי); הפרעה סטרית מינימלית",
+              "2.34",
+              "9.60",
+              "—",
+              "5.97"
+            ],
+            [
+              "Alanine (אלנין)",
+              "Ala",
+              "A",
+              "89",
+              "Nonpolar, aliphatic (לא-קוטבית, אליפטית)",
+              "Methyl group (קבוצת מתיל, -CH3); אליפטית פשוטה",
+              "2.34",
+              "9.69",
+              "—",
+              "6.01"
+            ],
+            [
+              "Proline (פרולין)",
+              "Pro",
+              "P",
+              "115",
+              "Nonpolar, aliphatic (לא-קוטבית, אליפטית)",
+              "Pyrrolidine ring / imino acid (טבעת פירולידין קשיחה / קבוצת α-amino שניונית); מפחיתה גמישות מבנית",
+              "1.99",
+              "10.96",
+              "—",
+              "6.48"
+            ],
+            [
+              "Valine (ואלין)",
+              "Val",
+              "V",
+              "117",
+              "Nonpolar, aliphatic (לא-קוטבית, אליפטית)",
+              "Branched-chain isopropyl (שרשרת מסועפת איזופרופיל, -CH(CH3)2); הידרופובית",
+              "2.32",
+              "9.62",
+              "—",
+              "5.97"
+            ],
+            [
+              "Leucine (לאוצין)",
+              "Leu",
+              "L",
+              "131",
+              "Nonpolar, aliphatic (לא-קוטבית, אליפטית)",
+              "Branched-chain isobutyl (שרשרת מסועפת איזובוטיל, -CH2CH(CH3)2); מתייצבת בליבה ההידרופובית",
+              "2.36",
+              "9.60",
+              "—",
+              "5.98"
+            ],
+            [
+              "Isoleucine (איזולאוצין)",
+              "Ile",
+              "I",
+              "131",
+              "Nonpolar, aliphatic (לא-קוטבית, אליפטית)",
+              "Branched-chain sec-butyl (שרשרת מסועפת); בעלת 2 chiral centers (שני מרכזים כיראליים: Cα ו-Cβ, 4 סטריאואיזומרים)",
+              "2.36",
+              "9.68",
+              "—",
+              "6.02"
+            ],
+            [
+              "Methionine (מתיונין)",
+              "Met",
+              "M",
+              "149",
+              "Nonpolar, aliphatic (לא-קוטבית, אליפטית)",
+              "Nonpolar thioether group (קבוצת תיואתר לא-קוטבית, -CH2CH2-S-CH3); אחת מ-2 חומצות האמינו המכילות גופרית",
+              "2.28",
+              "9.21",
+              "—",
+              "5.74"
+            ],
+            [
+              "Phenylalanine (פנילאלנין)",
+              "Phe",
+              "F",
+              "165",
+              "Aromatic (ארומטית)",
+              "Benzyl group (קבוצת בנזיל, -CH2-C6H5); הידרופובית מאוד; בליעת UV חלשה סביב 257 nm",
+              "1.83",
+              "9.13",
+              "—",
+              "5.48"
+            ],
+            [
+              "Tyrosine (טירוזין)",
+              "Tyr",
+              "Y",
+              "181",
+              "Aromatic (ארומטית)",
+              "Phenol group (קבוצת פנול עם -OH היוצרת קשרי מימן); בליעת UV ב-280 nm (ε280 ≈ 1,400 M⁻¹cm⁻¹)",
+              "2.20",
+              "9.11",
+              "10.07",
+              "5.66"
+            ],
+            [
+              "Tryptophan (טריפטופן)",
+              "Trp",
+              "W",
+              "204",
+              "Aromatic (ארומטית)",
+              "Bicyclic indole ring (טבעת אינדול דו-טבעתית); התורמת הראשית לבליעת UV ב-280 nm (ε280 ≈ 5,600 M⁻¹cm⁻¹)",
+              "2.38",
+              "9.39",
+              "—",
+              "5.89"
+            ]
+          ],
+          "footnote": "* הערת מקור (Missing from sources): העמודות Hydropathy index (מדד הידרופתיות) ו-Occurrence in proteins (%) (שכיחות בחלבונים) ב-Table 3-1 קטועות בקובץ ה-PDF שבתיקיית ה-Drive (eBook pp. 365–366) ואינן מופיעות באינדקס הטקסט, ולכן סומנו כ-missing from sources ולא הומצאו מהזיכרון."
+        },
+        "sourceNote": "Lehninger Principles of Biochemistry 8e, Ch. 3, Sec. 3.1, Table 3-1 & Box 3-1, pp. 72–75 (eBook pp. 365–370)"
+      },
+      {
+        "type": "concept",
+        "title": "3. סיווג ב-pH 7.0 (חלק ב'): קבוצות קוטביות לא-טעונות (Polar Uncharged), בסיסיות (+1) וחומציות (-1)",
+        "content": "**מחלקה 3 — Polar, uncharged R groups (קבוצות R קוטביות לא-טעונות ב-pH 7.0, 5 חומצות אמינו):** **Serine (Ser, S)** ו-**Threonine (Thr, T)** (בעלות קבוצת **hydroxyl** [הידרוקסיל, $-\\text{OH}$] היוצרת קשרי מימן), **Asparagine (Asn, N)** ו-**Glutamine (Gln, Q)** (נגזרות ה-**amide** [אמיד, $-\\text{CONH}_2$] של אספרטט וגלוטמט — קוטביות אך אינן מתייננות), ו-**Cysteine (Cys, C)** (בעלת קבוצת **sulfhydryl / thiol** [סולפהידריל / תיול, $-\\text{SH}$] חומצית חלשה עם $pK_R = 8.18$). שני שיירי **Cysteine** עוברים חמצון הפיך ליצירת דימר בשם **Cystine** (ציסטין) המחובר בקשר קוולנטי **disulfide bond** (קשר דיסולפידי, $-\\text{S}-\\text{S}-$); ה-**Cystine** עצמו הוא הידרופובי (nonpolar) ומייצב מבנה שלישוני ורביעוני בחלבונים חוץ-תאיים [מקור: Lehninger 8e, Sec. 3.1, p. 75 (eBook pp. 368–371)]. **מחלקה 4 — Positively charged (basic) R groups (קבוצות R טעונות חיובית / בסיסיות ב-pH 7.0, 3 חומצות אמינו):** **Lysine (Lys, K)** (קבוצת **ε-amino** ראשונית על פחמן C-6, $pK_R = 10.53$, $pI = 9.74$), **Arginine (Arg, R)** (קבוצת **guanidinium** [גואנידיניום], $pK_R = 12.48$, הבסיסית ביותר עם $pI = 10.76$), ו-**Histidine (His, H)** (קבוצת **imidazole** [אימידזול] ארומטית עם **$pK_R = 6.00$** ו-$pI = 7.59$). **Histidine** היא חומצת האמינו הסטנדרטית **היחידה** בעלת קבוצת צד עם $pK_a$ קרוב ל-pH ניטרלי, ולכן היא היחידה בעלת כושר בופרי משמעותי ב-pH פיזיולוגי (ב-pH 7.0 כ-9% משיירי ה-His החופשיים טעונים $+1$ וכ-91% ניטרליים, ובאתרים פעילים של אנזימים היא משמשת כתורם ומקבל פרוטון) [מקור: Lehninger 8e, Sec. 3.1, pp. 75–76, 81 (eBook pp. 371, 378)]. **מחלקה 5 — Negatively charged (acidic) R groups (קבוצות R טעונות שלילית / חומציות ב-pH 7.0, 2 חומצות אמינו):** **Aspartate (Asp, D)** (קבוצת **β-carboxyl**, $pK_R = 3.65$, $pI = 2.77$) ו-**Glutamate (Glu, E)** (קבוצת **γ-carboxyl**, $pK_R = 4.25$, $pI = 3.22$) [מקור: Lehninger 8e, Table 3-1 & Sec. 3.1, pp. 72–73, 76 (eBook pp. 365–366, 371)].",
+        "keyPoints": [
+          "5 חומצות Polar, uncharged: Ser (S, -OH), Thr (T, -OH), Cys (C, -SH עם pKR = 8.18), Asn (N, β-amide), Gln (Q, γ-amide); חמצון שני שיירי Cys יוצר דימר Cystine בקשר קוולנטי disulfide bond (-S-S-) הידרופובי [Lehninger 8e, p. 75]",
+          "3 חומצות Positively charged (basic): Lys (K, ε-amino בעמדה C-6, pKR = 10.53, pI = 9.74), Arg (R, guanidinium, pKR = 12.48, pI = 10.76), His (H, imidazole, pKR = 6.00, pI = 7.59) [Lehninger 8e, Table 3-1 & pp. 75–76]",
+          "Histidine (His) היא חומצת האמינו היחידה שבה קבוצת הצד (pKR = 6.00) משמשת כבופר יעיל וכתורם/מקבל פרוטון סביב pH פיזיולוגי ניטרלי [Lehninger 8e, pp. 76, 81]",
+          "2 חומצות Negatively charged (acidic): Asp (D, β-carboxyl, pKR = 3.65, pI = 2.77) ו-Glu (E, γ-carboxyl, pKR = 4.25, pI = 3.22) [Lehninger 8e, Table 3-1 & p. 76]"
+        ],
+        "table": {
+          "id": "table_3_1_polar_charged",
+          "title": "Table 3-1 (חלק ב'): 10 חומצות האמינו בעלות קבוצות צד (R groups) קוטביות לא-טעונות, בסיסיות (+1) וחומציות (-1) ב-pH 7.0",
+          "source": "Lehninger Principles of Biochemistry 8e, Ch. 3, Sec. 3.1, Table 3-1, pp. 72–73 (eBook pp. 365–366)",
+          "headers": [
+            "Amino Acid (חומצת אמינו)",
+            "3-Letter (קיצור 3 אותיות)",
+            "1-Letter (אות יחידה)",
+            "Mr",
+            "Group at pH 7.0 (קבוצה ב-pH 7.0)",
+            "Side-Chain Property (מאפיין קבוצת הצד)",
+            "pK1 (-COOH)",
+            "pK2 (-NH3+)",
+            "pKR (R group)",
+            "pI"
+          ],
+          "rows": [
+            [
+              "Serine (סרין)",
+              "Ser",
+              "S",
+              "105",
+              "Polar, uncharged (קוטבית, לא-טעונה)",
+              "Primary hydroxyl group (קבוצת הידרוקסיל ראשונית, -CH2OH); יוצרת קשרי מימן",
+              "2.21",
+              "9.15",
+              "—",
+              "5.68"
+            ],
+            [
+              "Threonine (תראונין)",
+              "Thr",
+              "T",
+              "119",
+              "Polar, uncharged (קוטבית, לא-טעונה)",
+              "Secondary hydroxyl group (-CH(OH)CH3); בעלת 2 chiral centers (שני מרכזים כיראליים: Cα ו-Cβ, 4 סטריאואיזומרים)",
+              "2.11",
+              "9.62",
+              "—",
+              "5.87"
+            ],
+            [
+              "Cysteine (ציסטאין)",
+              "Cys",
+              "C",
+              "121",
+              "Polar, uncharged (קוטבית, לא-טעונה)",
+              "Sulfhydryl / thiol group (קבוצת תיול חומצית חלשה, -CH2SH); חמצון הפיך של שני שיירי Cys יוצר דימר Cystine (ציסטין) בקשר קוולנטי disulfide bond (-S-S-) הידרופובי",
+              "1.96",
+              "10.28",
+              "8.18",
+              "5.07"
+            ],
+            [
+              "Asparagine (אספרגין)",
+              "Asn",
+              "N",
+              "132",
+              "Polar, uncharged (קוטבית, לא-טעונה)",
+              "β-Amide of aspartate (קבוצת אמיד של אספרטט, -CH2CONH2); קוטבית ואינה מתייננת",
+              "2.02",
+              "8.80",
+              "—",
+              "5.41"
+            ],
+            [
+              "Glutamine (גלוטמין)",
+              "Gln",
+              "Q",
+              "146",
+              "Polar, uncharged (קוטבית, לא-טעונה)",
+              "γ-Amide of glutamate (קבוצת אמיד של גלוטמט, -CH2CH2CONH2); קוטבית ואינה מתייננת",
+              "2.17",
+              "9.13",
+              "—",
+              "5.65"
+            ],
+            [
+              "Lysine (ליזין)",
+              "Lys",
+              "K",
+              "146",
+              "Positively charged / basic (טעונה חיובית / בסיסית)",
+              "Primary ε-amino group (קבוצת ε-אמינו ראשונית בעמדה C-6, -(CH2)4NH3+); מטען +1 ב-pH 7.0",
+              "2.18",
+              "8.95",
+              "10.53",
+              "9.74"
+            ],
+            [
+              "Arginine (ארגינין)",
+              "Arg",
+              "R",
+              "174",
+              "Positively charged / basic (טעונה חיובית / בסיסית)",
+              "Guanidinium group (קבוצת גואנידיניום חיובית, -(CH2)3NH-C(NH2)=NH2+); הבסיסית ביותר (pI = 10.76)",
+              "2.17",
+              "9.04",
+              "12.48",
+              "10.76"
+            ],
+            [
+              "Histidine (היסטידין)",
+              "His",
+              "H",
+              "155",
+              "Positively charged / basic (טעונה חיובית / בסיסית)",
+              "Aromatic imidazole group (טבעת אימידזול ארומטית); היחידה עם pKR = 6.00 קרוב ל-pH ניטרלי ומשמשת כבופר וכתורם/מקבל פרוטון באתרים פעילים (ב-pH 7.0: כ-9% טעונה +1 וכ-91% ניטרלית)",
+              "1.82",
+              "9.17",
+              "6.00",
+              "7.59"
+            ],
+            [
+              "Aspartate (אספרטט)",
+              "Asp",
+              "D",
+              "133",
+              "Negatively charged / acidic (טעונה שלילית / חומצית)",
+              "β-Carboxyl group (קבוצת β-קרבוקסיל, -CH2COO-); מטען -1 ב-pH 7.0; בעלת ה-pI הנמוך ביותר (2.77)",
+              "1.88",
+              "9.60",
+              "3.65",
+              "2.77"
+            ],
+            [
+              "Glutamate (גלוטמט)",
+              "Glu",
+              "E",
+              "147",
+              "Negatively charged / acidic (טעונה שלילית / חומצית)",
+              "γ-Carboxyl group (קבוצת γ-קרבוקסיל, -CH2CH2COO-); מטען -1 ב-pH 7.0",
+              "2.19",
+              "9.67",
+              "4.25",
+              "3.22"
+            ]
+          ],
+          "footnote": "* הערת מקור: כל ערכי ה-Mr, pK1, pK2, pKR ו-pI נלקחו במדויק מ-Lehninger 8e, Table 3-1, pp. 72–73 (eBook pp. 365–366)."
+        },
+        "sourceNote": "Lehninger Principles of Biochemistry 8e, Ch. 3, Sec. 3.1, Table 3-1 & pp. 72–76, 81 (eBook pp. 365–371, 378)"
+      },
+      {
+        "type": "concept",
+        "title": "4. חומצות אמינו לא-שכיחות ומותאמות (Uncommon & Modified Amino Acids) ומטבוליטים חופשיים",
+        "content": "מעבר ל-20 חומצות האמינו הסטנדרטיות, חלבונים רבים מכילים שיירי חומצות אמינו שנוצרו על-ידי **post-translational modification** (התאמה שלאחר התרגום) של שיירים סטנדרטיים כבר בתוך הפוליפפטיד [מקור: Lehninger 8e, Sec. 3.1, pp. 76–77 (eBook pp. 371–374)]: (1) **4-hydroxyproline** (4-הידרוקסיפרולין) ו-**5-hydroxylysine** (5-הידרוקסיליזין) — מצויות בסיבי **collagen** (קולגן) של רקמת חיבור (וגם בדופן תא הצמח); (2) **6-N-methyllysine** (6-N-מתיל-ליזין) — מצויה ב-**myosin** (מיוזין), חלבון מתכווץ בשריר; (3) **γ-carboxyglutamate** (גמא-קרבוקסיגלוטמט) — מצויה בחלבון קרישת הדם **prothrombin** (פרותרומבין) ובחלבונים נוספים הקושרים יוני **$Ca^{2+}$** בתפקידם הביולוגי; (4) **Desmosine** (דסמוזין) — נגזרת מורכבת הנוצרת מחיבור של **ארבעה שיירי Lysine** בחלבון הסיבי **elastin** (אלסטין); (5) **Selenocysteine (Sec, U)** (סלנוציסטאין, חומצת האמינו ה-21) ו-**Pyrrolysine (Pyl, O)** (פירוליזין, חומצת האמינו ה-22) — אינן נוצרות לאחר התרגום אלא מוכנסות **ישירות במהלך סינתזת החלבון**; **Selenocysteine** מכילה אטום **selenium** (סלניום) במקום הגופרית של ציסטאין אך נגזרת ביוכימית מ-**Serine** (סרין) ונמצאת במספר קטן של חלבונים (כגון glutathione peroxidase), ו-**Pyrrolysine** מצויה במספר חלבונים בארכאונים מייצרי מתאן (**methanogenic archaea**); (6) מודיפיקציות הפיכות לבקרת פעילות חלבונים (**reversible regulatory modifications**): **phosphorylation** (זרחון), **acetylation** (אצטילציה), **methylation** (מתילציה), **ubiquitination** (אוביקוויטינציה) ו-**ADP-ribosylation** (ADP-ריבוזילציה). בנוסף, כ-300 חומצות אמינו נוספות מתפקדות בתאים כמטבוליטים חופשיים (**free metabolites**) שאינם מרכיבים חלבונים, ובהן **Ornithine** (אורניתין) ו-**Citrulline** (ציטרולין) — תוצרי ביניים מרכזיים בביוסינתזה של **Arginine** וב-**urea cycle** (מעגל האוריאה) [מקור: Lehninger 8e, Sec. 3.1, Fig. 3-8 & pp. 76–77 (eBook pp. 371–374)].",
+        "keyPoints": [
+          "4-hydroxyproline ו-5-hydroxylysine ב-collagen (קולגן); 6-N-methyllysine ב-myosin (מיוזין); γ-carboxyglutamate קושרת Ca²⁺ ב-prothrombin (פרותרומבין); Desmosine נוצרת מ-4 שיירי Lys ב-elastin (אלסטין) [Lehninger 8e, pp. 76–77]",
+          "Selenocysteine (החומצה ה-21, מכילה Selenium במקום גופרית ונגזרת מ-Serine) ו-Pyrrolysine (החומצה ה-22, בארכאונים מתאנוגניים) מוכנסות ישירות תוך כדי התרגום בריבוזום [Lehninger 8e, pp. 76–77]",
+          "מודיפיקציות הפיכות לבקרת פעילות חלבונים: phosphorylation, acetylation, methylation, ubiquitination ו-ADP-ribosylation [Lehninger 8e, p. 77]",
+          "Ornithine (אורניתין) ו-Citrulline (ציטרולין) הן חומצות אמינו חופשיות (אינן מרכיבות חלבונים) המשמשות כתוצרי ביניים במעגל האוריאה (urea cycle) ובביוסינתזה של Arginine [Lehninger 8e, p. 77]"
+        ],
+        "sourceNote": "Lehninger Principles of Biochemistry 8e, Ch. 3, Sec. 3.1, Fig. 3-8 & pp. 76–77 (eBook pp. 371–374)"
+      },
+      {
+        "type": "concept",
+        "title": "5. תכונות חומצה-בסיס, Zwitterion, היסט ערכי pKa ועקומת הטיטרציה של Glycine",
+        "content": "בתמיסה מימית ב-pH ניטרלי, חומצת אמינו חופשית קיימת כ-**dipolar ion / zwitterion** (יון דו-קוטבי / צוויטריון): קבוצת הקרבוקסיל מיוננת שלילית ($-\\text{COO}^-$) וקבוצת האמינו מיוננת חיובית ($-\\text{NH}_3^+$), כך שהיון מיונן במלואו אך בעל **מטען חשמלי נטו 0** ויכול לתפקד הן כחומצה (תורם פרוטון) והן כבסיס (מקבל פרוטון) — תכונה הנקראת **amphoteric** (אמפוטריות) והמולקולה נקראת **ampholyte** (אמפוליט) [מקור: Lehninger 8e, Sec. 3.1, p. 77 (eBook pp. 374–375)]. **מדוע ערכי ה-$pK_a$ של השלד ב-Glycine נמוכים משל חומצה אצטית ומתילאמין? (Fig. 3-11):** ב-**Glycine**, ה-$pK_1$ של קבוצת ה-α-carboxyl הוא **$2.34$** — חומצי פי יותר מ-100 לעומת **acetic acid** (חומצה אצטית, $\\text{CH}_3\\text{COOH}$, שבה $pK_a = 4.76$). הסיבה לכך היא **intramolecular electron withdrawal** (משיכת אלקטרונים תוך-מולקולרית / השראה אלקטרושלילית) על-ידי קבוצת ה-$-\\text{NH}_3^+$ הטעונה חיובית הסמוכה על פחמן ה-$C_\\alpha$, המושכת אלקטרונים ומתייצבת כצוויטריון דו-קוטבי ומקלה על שחרור הפרוטון מהקרבוקסיל. באופן דומה, ה-$pK_2$ של קבוצת ה-α-amino ב-Glycine הוא **$9.60$** — נמוך מזה של **methylamine** (מתילאמין, $\\text{CH}_3\\text{NH}_3^+$, שבו $pK_a = 10.6$) — בגלל משיכת אלקטרונים על-ידי אטומי החמצן האלקטרושליליים של קבוצת הקרבוקסיל [מקור: Lehninger 8e, Sec. 3.1, Fig. 3-11, p. 79 (eBook pp. 375–376)]. בכל 13 חומצות האמינו ללא קבוצת צד מתייננת, טווח ה-$pK_1$ של ה-$\\alpha\\text{-COOH}$ הוא **$1.8\\text{–}2.4$**, וטווח ה-$pK_2$ של ה-$\\alpha\\text{-NH}_3^+$ הוא **$8.8\\text{–}11.0$** [מקור: Lehninger 8e, Sec. 3.1, p. 80 (eBook p. 376)]. **עקומת הטיטרציה של Glycine (Fig. 3-10):** ל-Glycine שני שלבי טיטרציה ושני אזורי בופר (**buffering regions** ברוחב $\\text{pH} = pK_a \\pm 1$): אזור בופר ראשון סביב **$pK_1 = 2.34$** (טווח $\\text{pH } 1.34\\text{–}3.34$, שבו בנקודת האמצע $\\text{pH } 2.34$ יש ריכוזים שווים של $^{+}\\text{H}_3\\text{N}-\\text{CH}_2-\\text{COOH}$ ו-$^{+}\\text{H}_3\\text{N}-\\text{CH}_2-\\text{COO}^-$ והמטען הממוצע הוא **$+0.5$**), ואזור בופר שני סביב **$pK_2 = 9.60$** (טווח $\\text{pH } 8.60\\text{–}10.60$, שבו ב-$\text{pH } 9.60$ יש יחס 1:1 בין הצוויטריון לבין $\\text{H}_2\\text{N}-\\text{CH}_2-\\text{COO}^-$ והמטען הממוצע הוא **$-0.5$**). לכן **Glycine אינה בופר טוב ב-pH פיזיולוגי של דם או נוזל תוך-תאי ($\\text{pH } 7.4$)** [מקור: Lehninger 8e, Sec. 3.1, Fig. 3-10, pp. 78–79 (eBook pp. 374–376)].",
+        "keyPoints": [
+          "ב-pH ניטרלי חומצת אמינו קיימת כ-zwitterion (צוויטריון דו-קוטבי: -COO⁻ ו--NH3⁺) ומתפקדת כ-ampholyte (אמפוליט אמפוטרי) [Lehninger 8e, p. 77]",
+          "אפקט Electron withdrawal (Fig. 3-11): ב-Glycine ה-pK1 = 2.34 נמוך ב->2 יחידות מ-acetic acid (pKa = 4.76, חומצי פי >100) בגלל משיכת אלקטרונים ע\"י קבוצת ה--NH3⁺ הסמוכה; ה-pK2 = 9.60 נמוך מ-methylamine (pKa = 10.6) בגלל משיכת אלקטרונים ע\"י חמצני הקרבוקסיל [Lehninger 8e, p. 79]",
+          "בכל חומצות האמינו ללא R מתיינן: pK1 של α-COOH בטווח 1.8–2.4, ו-pK2 של α-NH3⁺ בטווח 8.8–11.0 [Lehninger 8e, p. 80]",
+          "אזורי הבופר של Glycine הם pKa ± 1 סביב pK1 = 2.34 (pH 1.34–3.34) וסביב pK2 = 9.60 (pH 8.60–10.60); ב-pH 7.4 ל-Glycine אין כושר בופרי [Lehninger 8e, pp. 78–79]"
+        ],
+        "sourceNote": "Lehninger Principles of Biochemistry 8e, Ch. 3, Sec. 3.1, Fig. 3-10 & Fig. 3-11, pp. 77–80 (eBook pp. 374–377)"
+      },
+      {
+        "type": "concept",
+        "title": "6. חישובים ברמת מבחן: נקודה איזואלקטרית (pI), מטען נטו ב-pH נתון, משוואת Henderson-Hasselbalch ואלקטרופורזה",
+        "content": "ה-**isoelectric point / isoelectric pH (pI)** (הנקודה האיזואלקטרית) היא ערך ה-pH האופייני שבו המטען החשמלי נטו של מולקולת חומצת האמינו הוא **אפס בדיוק ($0$)** והיא אינה נודדת בשדה חשמלי [מקור: Lehninger 8e, Sec. 3.1, p. 79 (eBook p. 376)]. **כלל הזהב לחישוב $pI$:** מדרגים את צורות היוניזציה של המולקולה מ-pH נמוך מאוד (כולן ב-protonation מלא) ל-pH גבוה, מוצאים את שני שלבי ה-$pK_a$ התוחמים משני הצדדים את צורת ה-**zwitterion** בעלת המטען נטו **$0$**, ומחשבים את הממוצע החשבוני שלהם: **(א) חומצת אמינו דיפרוטית (ללא R מתיינן, 13 חומצות — כגון Glycine):** הצורה בעלת מטען $0$ נמצאת בין $pK_1$ ל-$pK_2$: $$pI_{\\text{Gly}} = \\frac{pK_1 + pK_2}{2} = \\frac{2.34 + 9.60}{2} = 5.97$$ **(ב) חומצת אמינו חומצית טריפרוטית (Glu ו-Asp, Fig. 3-12a):** ב-pH נמוך מאוד המטען הוא $+1$ ($-\\text{COOH}, -\\text{COOH}, -\\text{NH}_3^+$); איבוד הפרוטון הראשון מ-α-carboxyl ב-$pK_1$ מביא למטען נטו **$0$**, ואיבוד הפרוטון השני מקבוצת ה-R ב-$pK_R$ מביא למטען $-1$ (שבו שתי קבוצות הקרבוקסיל תורמות יחד מטען ממוצע של $-1$ המאזן בדיוק את ה-$+1$ של ה-$\\alpha\\text{-NH}_3^+$ בנקודת האמצע שביניהן). לכן ממצעים את **שני ערכי ה-$pK_a$ החומציים ($pK_1$ ו-$pK_R$)**: $$pI_{\\text{Glu}} = \\frac{pK_1 + pK_R}{2} = \\frac{2.19 + 4.25}{2} = 3.22, \\quad pI_{\\text{Asp}} = \\frac{1.88 + 3.65}{2} = 2.77$$ **(ג) חומצת אמינו בסיסית טריפרוטית (His, Lys, Arg, Fig. 3-12b):** ב-pH נמוך מאוד המטען הוא **$+2$**; לאחר $pK_1$ המטען הוא $+1$, ורק לאחר דה-פרוטונציה של הקבוצה השנייה (ב-His זו קבוצת ה-imidazole ב-$pK_R = 6.00$; ב-Lys ו-Arg זו קבוצת ה-$\\alpha\\text{-NH}_3^+$ ב-$pK_2$) מתקבלת צורת ה-$0$ עד ל-$pK_a$ השלישי. לכן ממצעים את **שני ערכי ה-$pK_a$ של הקבוצות הטעונות חיובית ($pK_R$ ו-$pK_2$)**: $$pI_{\\text{His}} = \\frac{6.00 + 9.17}{2} = 7.59, \\quad pI_{\\text{Lys}} = \\frac{8.95 + 10.53}{2} = 9.74, \\quad pI_{\\text{Arg}} = \\frac{9.04 + 12.48}{2} = 10.76$$ **(ד) חומצות טריפרוטיות בעלות תיול או פנול (Cys ו-Tyr):** מכיוון ש-$-\\text{SH}$ ($pK_R = 8.18$) ו-$-\\text{OH}$ פנולי ($pK_R = 10.07$) הם ניטרליים ($0$) בצורתם המו-protonated וטעונים $-1$ לאחר דה-פרוטונציה, צורת ה-$0$ נמצאת בין $pK_1$ לבין ה-$pK_a$ השני בגודלו: ב-**Cys** ($pK_R = 8.18 < pK_2 = 10.28$) לוקחים $$pI_{\\text{Cys}} = \\frac{pK_1 + pK_R}{2} = \\frac{1.96 + 8.18}{2} = 5.07$$ ואילו ב-**Tyr** ($pK_2 = 9.11 < pK_R = 10.07$) לוקחים $$pI_{\\text{Tyr}} = \\frac{pK_1 + pK_2}{2} = \\frac{2.20 + 9.11}{2} = 5.66$$ **(ה) חישוב שבר מיונן ומטען ממוצע ב-pH נתון באמצעות משוואת Henderson-Hasselbalch:** עבור **Histidine** ($pK_R = 6.00$) ב-**$\\text{pH } 7.0$**: $$\\text{pH} = pK_a + \\log\\frac{[\\text{His}^0]}{[\\text{HisH}^+]} \\implies 7.0 = 6.00 + \\log\\frac{[\\text{His}^0]}{[\\text{HisH}^+]} \\implies \\frac{[\\text{His}^0]}{[\\text{HisH}^+]} = 10^1 = 10$$ לכן שבר קבוצות ה-imidazole הטעונות $+1$ ב-$\\text{pH } 7.0$ הוא $\\frac{1}{1+10} = \\frac{1}{11} \\approx 9.1\\%$ (והמטען הממוצע של His חופשית ב-$\\text{pH } 7.0$ הוא $\\approx +0.09$) [מקור: Lehninger 8e, Sec. 3.1, Fig. 3-12 & Table 3-1, pp. 72–73, 79–81 (eBook pp. 365–366, 376–378)].",
+        "keyPoints": [
+          "כלל הזהב ל-pI: ממצעים את שני ערכי ה-pKa התוחמים משני הצדדים את צורת ה-zwitterion המאוזנת (מטען נטו 0) [Lehninger 8e, pp. 79–81]",
+          "חישוב pI בחומציות (Asp, Glu): pI = (pK1 + pKR)/2 → עבור Glu: (2.19 + 4.25)/2 = 3.22; עבור Asp: (1.88 + 3.65)/2 = 2.77 [Lehninger 8e, Fig. 3-12a & Table 3-1]",
+          "חישוב pI בבסיסיות (His, Lys, Arg): pI = (pKR + pK2)/2 → עבור His: (6.00 + 9.17)/2 = 7.59; עבור Lys: (8.95 + 10.53)/2 = 9.74; עבור Arg: (9.04 + 12.48)/2 = 10.76 [Lehninger 8e, Fig. 3-12b & Table 3-1]",
+          "חישוב pI ב-Cys מול Tyr: ב-Cys התיול (pKR = 8.18) מתיינן לפני α-NH3⁺ (pK2 = 10.28) ולכן pI = (1.96 + 8.18)/2 = 5.07; ב-Tyr ה-α-NH3⁺ (pK2 = 9.11) מתיינן לפני הפנול (pKR = 10.07) ולכן pI = (2.20 + 9.11)/2 = 5.66 [Lehninger 8e, Table 3-1, pp. 72–73]",
+          "נדידה בשדה חשמלי (Electrophoresis): ב-pH < pI המטען נטו חיובי (+) והמולקולה נודדת ל-cathode (קתודה, שלילית); ב-pH > pI המטען נטו שלילי (-) והמולקולה נודדת ל-anode (אנודה, חיובית) [Lehninger 8e, p. 79]"
+        ],
+        "table": {
+          "id": "table_3_1_ionizable_pi_rules",
+          "title": "טבלת סיכום לחישוב pI ומטען נטו: 7 חומצות האמינו בעלות קבוצת צד מתייננת (Ionizable R group) מול חומצה דיפרוטית (Glycine)",
+          "source": "Lehninger Principles of Biochemistry 8e, Ch. 3, Sec. 3.1, Table 3-1 & Fig. 3-10 / 3-12, pp. 72–73, 78–81 (eBook pp. 365–366, 375–378)",
+          "headers": [
+            "Amino Acid (חומצת אמינו)",
+            "Ionizable Group (קבוצה מתייננת ב-R)",
+            "Protonated / Deprotonated (צורה מוprotonated ← deprotonated)",
+            "pK1 / pK2 / pKR",
+            "Neutral Zwitterion Stage (תחום ה-Zwitterion בעל מטען 0)",
+            "pI Formula (נוסחת חישוב pI)",
+            "Exact pI (ערך pI מדויק)"
+          ],
+          "rows": [
+            [
+              "Glycine (גליצין - מודל ל-13 ללא R מתיינן)",
+              "None (אין קבוצת R מתייננת)",
+              "+H3N-CH2-COOH (+1) ← +H3N-CH2-COO- (0) ← H2N-CH2-COO- (-1)",
+              "2.34 / 9.60 / —",
+              "בין pK1 (2.34) ל-pK2 (9.60)",
+              "pI = (pK1 + pK2) / 2 = (2.34 + 9.60) / 2",
+              "5.97"
+            ],
+            [
+              "Aspartate (אספרטט, Asp, D)",
+              "β-Carboxyl (β-קרבוקסיל)",
+              "-COOH (0) ← -COO- (-1)",
+              "1.88 / 9.60 / 3.65",
+              "בין שתי הקבוצות החומציות: pK1 (1.88) ו-pKR (3.65)",
+              "pI = (pK1 + pKR) / 2 = (1.88 + 3.65) / 2",
+              "2.77"
+            ],
+            [
+              "Glutamate (גלוטמט, Glu, E)",
+              "γ-Carboxyl (γ-קרבוקסיל)",
+              "-COOH (0) ← -COO- (-1)",
+              "2.19 / 9.67 / 4.25",
+              "בין שתי הקבוצות החומציות: pK1 (2.19) ו-pKR (4.25)",
+              "pI = (pK1 + pKR) / 2 = (2.19 + 4.25) / 2",
+              "3.22"
+            ],
+            [
+              "Histidine (היסטידין, His, H)",
+              "Imidazole (טבעת אימידזול)",
+              "Imidazolium +1 (-NH+=) ← Neutral 0 (-N=)",
+              "1.82 / 9.17 / 6.00",
+              "בין שתי הקבוצות הבסיסיות: pKR (6.00) ו-pK2 (9.17)",
+              "pI = (pKR + pK2) / 2 = (6.00 + 9.17) / 2",
+              "7.59"
+            ],
+            [
+              "Cysteine (ציסטאין, Cys, C)",
+              "Sulfhydryl / Thiol (תיול)",
+              "-SH (0) ← -S- (-1)",
+              "1.96 / 10.28 / 8.18",
+              "בין pK1 (1.96) ל-pKR של התיול (8.18, שמתיינן לפני pK2=10.28)",
+              "pI = (pK1 + pKR) / 2 = (1.96 + 8.18) / 2",
+              "5.07"
+            ],
+            [
+              "Tyrosine (טירוזין, Tyr, Y)",
+              "Phenol (הידרוקסיל פנולי)",
+              "-OH (0) ← -O- (-1)",
+              "2.20 / 9.11 / 10.07",
+              "בין pK1 (2.20) ל-pK2 (9.11, שמתיינן לפני ה-OH הפנולי pKR=10.07)",
+              "pI = (pK1 + pK2) / 2 = (2.20 + 9.11) / 2",
+              "5.66"
+            ],
+            [
+              "Lysine (ליזין, Lys, K)",
+              "ε-Amino (קבוצת ε-אמינו)",
+              "-NH3+ (+1) ← -NH2 (0)",
+              "2.18 / 8.95 / 10.53",
+              "בין שתי הקבוצות הבסיסיות: pK2 (8.95) ו-pKR (10.53)",
+              "pI = (pK2 + pKR) / 2 = (8.95 + 10.53) / 2",
+              "9.74"
+            ],
+            [
+              "Arginine (ארגינין, Arg, R)",
+              "Guanidinium (גואנידיניום)",
+              "=NH2+ (+1) ← =NH (0)",
+              "2.17 / 9.04 / 12.48",
+              "בין שתי הקבוצות הבסיסיות: pK2 (9.04) ו-pKR (12.48)",
+              "pI = (pK2 + pKR) / 2 = (9.04 + 12.48) / 2",
+              "10.76"
+            ]
+          ],
+          "footnote": "* כלל אלקטרופורזה (Electrophoresis rule): כאשר pH < pI המטען נטו חיובי (+) והמולקולה נודדת אל ה-cathode (קתודה, האלקטרודה השלילית); כאשר pH > pI המטען נטו שלילי (-) והמולקולה נודדת אל ה-anode (אנודה, האלקטרודה החיובית) [מקור: Lehninger 8e, Sec. 3.1, pp. 79–81 (eBook pp. 376–378)]."
+        },
+        "sourceNote": "Lehninger Principles of Biochemistry 8e, Ch. 3, Sec. 3.1, Table 3-1 & Fig. 3-12, pp. 72–73, 79–81 (eBook pp. 365–366, 376–378)"
       },
       {
         "type": "quiz_prompt",
-        "content": "כעת נתרגל את מה שלמדנו על חומצות אמינו."
+        "content": "כעת נתרגל את מה שלמדנו על חומצות אמינו, ערכי pKa, חישובי pI ומטען נטו ברמת מבחן."
       }
     ],
     "followUpQuestionIds": [
@@ -27,6 +460,11 @@
       "q_biochemistry-ch-03-sec-3-1_1_1791329231",
       "q_biochemistry-ch-03-sec-3-1_2_1791329231",
       "q_biochemistry-ch-03-sec-3-1_3_1791329231",
+      "q_bc_amino_calc_pi_glu_his",
+      "q_bc_amino_calc_cys_tyr",
+      "q_bc_amino_uv_lambert_beer",
+      "q_bc_amino_his_henderson",
+      "q_bc_amino_uncommon_mods",
       "q_biochemistry-ch-03-sec-3-2_1_1791329261",
       "q_biochemistry-ch-03-sec-3-2_2_1791329261",
       "q_biochemistry-ch-03-sec-3-2_3_1791329261",
@@ -39,7 +477,405 @@
       "q_biochemistry-ch-03-sec-3-4_2_1791329320",
       "q_biochemistry-ch-03-sec-3-4_3_1791329320",
       "q_biochemistry-ch-03-sec-3-4_4_1791329320"
-    ]
+    ],
+    "mustKnow": {
+      "topicId": "biochemistry-ch-03",
+      "lessonId": "lesson_biochemistry-ch-03",
+      "sourceSummary": [
+        {
+          "book": "Lehninger Principles of Biochemistry, 8th Edition",
+          "chapter": "Chapter 3: Amino Acids, Peptides, and Proteins — Section 3.1: Amino Acids",
+          "pages": "pp. 70–81 (PDF / eBook pp. 358–379)"
+        }
+      ],
+      "tables": [
+        {
+          "id": "table_3_1_nonpolar_aromatic",
+          "title": "Table 3-1 (חלק א'): 10 חומצות האמינו בעלות קבוצות צד (R groups) אליפטיות לא-קוטביות וארומטיות (ב-pH 7.0)",
+          "source": "Lehninger Principles of Biochemistry 8e, Ch. 3, Sec. 3.1, Table 3-1, pp. 72–73 (eBook pp. 365–366)",
+          "headers": [
+            "Amino Acid (חומצת אמינו)",
+            "3-Letter (קיצור 3 אותיות)",
+            "1-Letter (אות יחידה)",
+            "Mr",
+            "Group at pH 7.0 (קבוצה ב-pH 7.0)",
+            "Side-Chain Property (מאפיין קבוצת הצד)",
+            "pK1 (-COOH)",
+            "pK2 (-NH3+)",
+            "pKR (R group)",
+            "pI"
+          ],
+          "rows": [
+            [
+              "Glycine (גליצין)",
+              "Gly",
+              "G",
+              "75",
+              "Nonpolar, aliphatic (לא-קוטבית, אליפטית)",
+              "R = -H; achiral (א-כיראלית היחידה, ללא מרכז אסימטרי); הפרעה סטרית מינימלית",
+              "2.34",
+              "9.60",
+              "—",
+              "5.97"
+            ],
+            [
+              "Alanine (אלנין)",
+              "Ala",
+              "A",
+              "89",
+              "Nonpolar, aliphatic (לא-קוטבית, אליפטית)",
+              "Methyl group (קבוצת מתיל, -CH3); אליפטית פשוטה",
+              "2.34",
+              "9.69",
+              "—",
+              "6.01"
+            ],
+            [
+              "Proline (פרולין)",
+              "Pro",
+              "P",
+              "115",
+              "Nonpolar, aliphatic (לא-קוטבית, אליפטית)",
+              "Pyrrolidine ring / imino acid (טבעת פירולידין קשיחה / קבוצת α-amino שניונית); מפחיתה גמישות מבנית",
+              "1.99",
+              "10.96",
+              "—",
+              "6.48"
+            ],
+            [
+              "Valine (ואלין)",
+              "Val",
+              "V",
+              "117",
+              "Nonpolar, aliphatic (לא-קוטבית, אליפטית)",
+              "Branched-chain isopropyl (שרשרת מסועפת איזופרופיל, -CH(CH3)2); הידרופובית",
+              "2.32",
+              "9.62",
+              "—",
+              "5.97"
+            ],
+            [
+              "Leucine (לאוצין)",
+              "Leu",
+              "L",
+              "131",
+              "Nonpolar, aliphatic (לא-קוטבית, אליפטית)",
+              "Branched-chain isobutyl (שרשרת מסועפת איזובוטיל, -CH2CH(CH3)2); מתייצבת בליבה ההידרופובית",
+              "2.36",
+              "9.60",
+              "—",
+              "5.98"
+            ],
+            [
+              "Isoleucine (איזולאוצין)",
+              "Ile",
+              "I",
+              "131",
+              "Nonpolar, aliphatic (לא-קוטבית, אליפטית)",
+              "Branched-chain sec-butyl (שרשרת מסועפת); בעלת 2 chiral centers (שני מרכזים כיראליים: Cα ו-Cβ, 4 סטריאואיזומרים)",
+              "2.36",
+              "9.68",
+              "—",
+              "6.02"
+            ],
+            [
+              "Methionine (מתיונין)",
+              "Met",
+              "M",
+              "149",
+              "Nonpolar, aliphatic (לא-קוטבית, אליפטית)",
+              "Nonpolar thioether group (קבוצת תיואתר לא-קוטבית, -CH2CH2-S-CH3); אחת מ-2 חומצות האמינו המכילות גופרית",
+              "2.28",
+              "9.21",
+              "—",
+              "5.74"
+            ],
+            [
+              "Phenylalanine (פנילאלנין)",
+              "Phe",
+              "F",
+              "165",
+              "Aromatic (ארומטית)",
+              "Benzyl group (קבוצת בנזיל, -CH2-C6H5); הידרופובית מאוד; בליעת UV חלשה סביב 257 nm",
+              "1.83",
+              "9.13",
+              "—",
+              "5.48"
+            ],
+            [
+              "Tyrosine (טירוזין)",
+              "Tyr",
+              "Y",
+              "181",
+              "Aromatic (ארומטית)",
+              "Phenol group (קבוצת פנול עם -OH היוצרת קשרי מימן); בליעת UV ב-280 nm (ε280 ≈ 1,400 M⁻¹cm⁻¹)",
+              "2.20",
+              "9.11",
+              "10.07",
+              "5.66"
+            ],
+            [
+              "Tryptophan (טריפטופן)",
+              "Trp",
+              "W",
+              "204",
+              "Aromatic (ארומטית)",
+              "Bicyclic indole ring (טבעת אינדול דו-טבעתית); התורמת הראשית לבליעת UV ב-280 nm (ε280 ≈ 5,600 M⁻¹cm⁻¹)",
+              "2.38",
+              "9.39",
+              "—",
+              "5.89"
+            ]
+          ],
+          "footnote": "* הערת מקור (Missing from sources): העמודות Hydropathy index (מדד הידרופתיות) ו-Occurrence in proteins (%) (שכיחות בחלבונים) ב-Table 3-1 קטועות בקובץ ה-PDF שבתיקיית ה-Drive (eBook pp. 365–366) ואינן מופיעות באינדקס הטקסט, ולכן סומנו כ-missing from sources ולא הומצאו מהזיכרון."
+        },
+        {
+          "id": "table_3_1_polar_charged",
+          "title": "Table 3-1 (חלק ב'): 10 חומצות האמינו בעלות קבוצות צד (R groups) קוטביות לא-טעונות, בסיסיות (+1) וחומציות (-1) ב-pH 7.0",
+          "source": "Lehninger Principles of Biochemistry 8e, Ch. 3, Sec. 3.1, Table 3-1, pp. 72–73 (eBook pp. 365–366)",
+          "headers": [
+            "Amino Acid (חומצת אמינו)",
+            "3-Letter (קיצור 3 אותיות)",
+            "1-Letter (אות יחידה)",
+            "Mr",
+            "Group at pH 7.0 (קבוצה ב-pH 7.0)",
+            "Side-Chain Property (מאפיין קבוצת הצד)",
+            "pK1 (-COOH)",
+            "pK2 (-NH3+)",
+            "pKR (R group)",
+            "pI"
+          ],
+          "rows": [
+            [
+              "Serine (סרין)",
+              "Ser",
+              "S",
+              "105",
+              "Polar, uncharged (קוטבית, לא-טעונה)",
+              "Primary hydroxyl group (קבוצת הידרוקסיל ראשונית, -CH2OH); יוצרת קשרי מימן",
+              "2.21",
+              "9.15",
+              "—",
+              "5.68"
+            ],
+            [
+              "Threonine (תראונין)",
+              "Thr",
+              "T",
+              "119",
+              "Polar, uncharged (קוטבית, לא-טעונה)",
+              "Secondary hydroxyl group (-CH(OH)CH3); בעלת 2 chiral centers (שני מרכזים כיראליים: Cα ו-Cβ, 4 סטריאואיזומרים)",
+              "2.11",
+              "9.62",
+              "—",
+              "5.87"
+            ],
+            [
+              "Cysteine (ציסטאין)",
+              "Cys",
+              "C",
+              "121",
+              "Polar, uncharged (קוטבית, לא-טעונה)",
+              "Sulfhydryl / thiol group (קבוצת תיול חומצית חלשה, -CH2SH); חמצון הפיך של שני שיירי Cys יוצר דימר Cystine (ציסטין) בקשר קוולנטי disulfide bond (-S-S-) הידרופובי",
+              "1.96",
+              "10.28",
+              "8.18",
+              "5.07"
+            ],
+            [
+              "Asparagine (אספרגין)",
+              "Asn",
+              "N",
+              "132",
+              "Polar, uncharged (קוטבית, לא-טעונה)",
+              "β-Amide of aspartate (קבוצת אמיד של אספרטט, -CH2CONH2); קוטבית ואינה מתייננת",
+              "2.02",
+              "8.80",
+              "—",
+              "5.41"
+            ],
+            [
+              "Glutamine (גלוטמין)",
+              "Gln",
+              "Q",
+              "146",
+              "Polar, uncharged (קוטבית, לא-טעונה)",
+              "γ-Amide of glutamate (קבוצת אמיד של גלוטמט, -CH2CH2CONH2); קוטבית ואינה מתייננת",
+              "2.17",
+              "9.13",
+              "—",
+              "5.65"
+            ],
+            [
+              "Lysine (ליזין)",
+              "Lys",
+              "K",
+              "146",
+              "Positively charged / basic (טעונה חיובית / בסיסית)",
+              "Primary ε-amino group (קבוצת ε-אמינו ראשונית בעמדה C-6, -(CH2)4NH3+); מטען +1 ב-pH 7.0",
+              "2.18",
+              "8.95",
+              "10.53",
+              "9.74"
+            ],
+            [
+              "Arginine (ארגינין)",
+              "Arg",
+              "R",
+              "174",
+              "Positively charged / basic (טעונה חיובית / בסיסית)",
+              "Guanidinium group (קבוצת גואנידיניום חיובית, -(CH2)3NH-C(NH2)=NH2+); הבסיסית ביותר (pI = 10.76)",
+              "2.17",
+              "9.04",
+              "12.48",
+              "10.76"
+            ],
+            [
+              "Histidine (היסטידין)",
+              "His",
+              "H",
+              "155",
+              "Positively charged / basic (טעונה חיובית / בסיסית)",
+              "Aromatic imidazole group (טבעת אימידזול ארומטית); היחידה עם pKR = 6.00 קרוב ל-pH ניטרלי ומשמשת כבופר וכתורם/מקבל פרוטון באתרים פעילים (ב-pH 7.0: כ-9% טעונה +1 וכ-91% ניטרלית)",
+              "1.82",
+              "9.17",
+              "6.00",
+              "7.59"
+            ],
+            [
+              "Aspartate (אספרטט)",
+              "Asp",
+              "D",
+              "133",
+              "Negatively charged / acidic (טעונה שלילית / חומצית)",
+              "β-Carboxyl group (קבוצת β-קרבוקסיל, -CH2COO-); מטען -1 ב-pH 7.0; בעלת ה-pI הנמוך ביותר (2.77)",
+              "1.88",
+              "9.60",
+              "3.65",
+              "2.77"
+            ],
+            [
+              "Glutamate (גלוטמט)",
+              "Glu",
+              "E",
+              "147",
+              "Negatively charged / acidic (טעונה שלילית / חומצית)",
+              "γ-Carboxyl group (קבוצת γ-קרבוקסיל, -CH2CH2COO-); מטען -1 ב-pH 7.0",
+              "2.19",
+              "9.67",
+              "4.25",
+              "3.22"
+            ]
+          ],
+          "footnote": "* הערת מקור: כל ערכי ה-Mr, pK1, pK2, pKR ו-pI נלקחו במדויק מ-Lehninger 8e, Table 3-1, pp. 72–73 (eBook pp. 365–366)."
+        },
+        {
+          "id": "table_3_1_ionizable_pi_rules",
+          "title": "טבלת סיכום לחישוב pI ומטען נטו: 7 חומצות האמינו בעלות קבוצת צד מתייננת (Ionizable R group) מול חומצה דיפרוטית (Glycine)",
+          "source": "Lehninger Principles of Biochemistry 8e, Ch. 3, Sec. 3.1, Table 3-1 & Fig. 3-10 / 3-12, pp. 72–73, 78–81 (eBook pp. 365–366, 375–378)",
+          "headers": [
+            "Amino Acid (חומצת אמינו)",
+            "Ionizable Group (קבוצה מתייננת ב-R)",
+            "Protonated / Deprotonated (צורה מוprotonated ← deprotonated)",
+            "pK1 / pK2 / pKR",
+            "Neutral Zwitterion Stage (תחום ה-Zwitterion בעל מטען 0)",
+            "pI Formula (נוסחת חישוב pI)",
+            "Exact pI (ערך pI מדויק)"
+          ],
+          "rows": [
+            [
+              "Glycine (גליצין - מודל ל-13 ללא R מתיינן)",
+              "None (אין קבוצת R מתייננת)",
+              "+H3N-CH2-COOH (+1) ← +H3N-CH2-COO- (0) ← H2N-CH2-COO- (-1)",
+              "2.34 / 9.60 / —",
+              "בין pK1 (2.34) ל-pK2 (9.60)",
+              "pI = (pK1 + pK2) / 2 = (2.34 + 9.60) / 2",
+              "5.97"
+            ],
+            [
+              "Aspartate (אספרטט, Asp, D)",
+              "β-Carboxyl (β-קרבוקסיל)",
+              "-COOH (0) ← -COO- (-1)",
+              "1.88 / 9.60 / 3.65",
+              "בין שתי הקבוצות החומציות: pK1 (1.88) ו-pKR (3.65)",
+              "pI = (pK1 + pKR) / 2 = (1.88 + 3.65) / 2",
+              "2.77"
+            ],
+            [
+              "Glutamate (גלוטמט, Glu, E)",
+              "γ-Carboxyl (γ-קרבוקסיל)",
+              "-COOH (0) ← -COO- (-1)",
+              "2.19 / 9.67 / 4.25",
+              "בין שתי הקבוצות החומציות: pK1 (2.19) ו-pKR (4.25)",
+              "pI = (pK1 + pKR) / 2 = (2.19 + 4.25) / 2",
+              "3.22"
+            ],
+            [
+              "Histidine (היסטידין, His, H)",
+              "Imidazole (טבעת אימידזול)",
+              "Imidazolium +1 (-NH+=) ← Neutral 0 (-N=)",
+              "1.82 / 9.17 / 6.00",
+              "בין שתי הקבוצות הבסיסיות: pKR (6.00) ו-pK2 (9.17)",
+              "pI = (pKR + pK2) / 2 = (6.00 + 9.17) / 2",
+              "7.59"
+            ],
+            [
+              "Cysteine (ציסטאין, Cys, C)",
+              "Sulfhydryl / Thiol (תיול)",
+              "-SH (0) ← -S- (-1)",
+              "1.96 / 10.28 / 8.18",
+              "בין pK1 (1.96) ל-pKR של התיול (8.18, שמתיינן לפני pK2=10.28)",
+              "pI = (pK1 + pKR) / 2 = (1.96 + 8.18) / 2",
+              "5.07"
+            ],
+            [
+              "Tyrosine (טירוזין, Tyr, Y)",
+              "Phenol (הידרוקסיל פנולי)",
+              "-OH (0) ← -O- (-1)",
+              "2.20 / 9.11 / 10.07",
+              "בין pK1 (2.20) ל-pK2 (9.11, שמתיינן לפני ה-OH הפנולי pKR=10.07)",
+              "pI = (pK1 + pK2) / 2 = (2.20 + 9.11) / 2",
+              "5.66"
+            ],
+            [
+              "Lysine (ליזין, Lys, K)",
+              "ε-Amino (קבוצת ε-אמינו)",
+              "-NH3+ (+1) ← -NH2 (0)",
+              "2.18 / 8.95 / 10.53",
+              "בין שתי הקבוצות הבסיסיות: pK2 (8.95) ו-pKR (10.53)",
+              "pI = (pK2 + pKR) / 2 = (8.95 + 10.53) / 2",
+              "9.74"
+            ],
+            [
+              "Arginine (ארגינין, Arg, R)",
+              "Guanidinium (גואנידיניום)",
+              "=NH2+ (+1) ← =NH (0)",
+              "2.17 / 9.04 / 12.48",
+              "בין שתי הקבוצות הבסיסיות: pK2 (9.04) ו-pKR (12.48)",
+              "pI = (pK2 + pKR) / 2 = (9.04 + 12.48) / 2",
+              "10.76"
+            ]
+          ],
+          "footnote": "* כלל אלקטרופורזה (Electrophoresis rule): כאשר pH < pI המטען נטו חיובי (+) והמולקולה נודדת אל ה-cathode (קתודה, האלקטרודה השלילית); כאשר pH > pI המטען נטו שלילי (-) והמולקולה נודדת אל ה-anode (אנודה, האלקטרודה החיובית) [מקור: Lehninger 8e, Sec. 3.1, pp. 79–81 (eBook pp. 376–378)]."
+        }
+      ],
+      "missingFromSources": [
+        {
+          "id": "missing_hydropathy_index",
+          "item": "Hydropathy index (מדד הידרופתיות של 20 חומצות האמינו ב-Table 3-1)",
+          "location": "Lehninger 8e, Ch. 3, Sec. 3.1, Table 3-1, pp. 72–73 (eBook pp. 365–366)",
+          "status": "missing from sources",
+          "issue": "missing from sources — העמודה הימנית של Table 3-1 קטועה פיזית בקובץ ה-PDF שבתיקיית ה-Drive (eBook pp. 365–366) ואינה מופיעה באינדקס הטקסט (lehninger-8e.bpac-book-index.json). לפי כלל הדיוק, המספרים לא הומצאו מהזיכרון."
+        },
+        {
+          "id": "missing_occurrence_in_proteins",
+          "item": "Occurrence in proteins (%) (אחוז שכיחות בחלבונים ב-Table 3-1)",
+          "location": "Lehninger 8e, Ch. 3, Sec. 3.1, Table 3-1, pp. 72–73 (eBook pp. 365–366)",
+          "status": "missing from sources",
+          "issue": "missing from sources — העמודה הימנית הקיצונית של Table 3-1 קטועה פיזית בקובץ ה-PDF שבתיקיית ה-Drive (eBook pp. 365–366) ואינה מופיעה באינדקס הטקסט (למעט אזכור בטקסט של Leu, Ala, Gly ו-Ser כנפוצות ביותר ב-p. 397). המספרים לא הומצאו מהזיכרון."
+        }
+      ]
+    }
   },
   {
     "title": "אינטראקציות חלשות במערכות מימיות",
