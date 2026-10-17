@@ -363,7 +363,8 @@
     .area-name-txt{font-size:20px}
     .chapter-card{border-radius:var(--r-lg);margin-bottom:10px}
     .ch-hdr{padding:14px 16px;min-height:68px}
-    .ch-name{font-size:17px;line-height:1.35}
+    .ch-name{font-size:17px;line-height:1.35;display:flex;align-items:center;gap:6px}
+    .ch-done-badge{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:var(--tint-success);color:var(--success);font-size:12px;font-weight:700}
     .ch-meta{font-size:13px;color:var(--label4);margin-top:2px}
     .ch-chev{font-size:12px}
     .ch-ring circle:first-child{stroke:var(--surface3)}
@@ -373,6 +374,7 @@
     .sub-pill.familiar{background:var(--tint-accent);color:var(--accent)}
     .sub-pill.mastered{background:var(--tint-success);color:var(--success)}
     .practice-btn{min-height:44px;padding:0 16px;font-size:15px;font-weight:600;margin-top:8px;background:var(--tint-accent);color:var(--accent)}
+    .practice-btn.lesson-btn{background:var(--tint-success);color:var(--success)}
 
     /* Progress */
     .stat-card{border-radius:var(--r-lg)}
@@ -933,14 +935,12 @@ function renderExplore() {
         <div class="area-name-txt">${area.icon || ''} ${area.title || ''}</div>
       </div>`;
     
-    let isPrevLessonCompleted = true; // First chapter is unlocked
     const completedMissions = state.missionsCompleted || [];
     
     for (const ch of area.chapters) {
       const isCompleted = completedMissions.includes(`lesson_${ch.id}`);
       
       if (!filteredChs.includes(ch)) {
-        isPrevLessonCompleted = isCompleted;
         continue;
       }
 
@@ -952,16 +952,12 @@ function renderExplore() {
       });
       const pct = total > 0 ? Math.round((mastered / total) * 100) : 0;
       
-      const isUnlocked = isPrevLessonCompleted || isCompleted;
-      
-      const opacity = isUnlocked ? "1" : "0.5";
-      const lockIcon = isUnlocked ? "" : "🔒 ";
-      const pointerEvents = isUnlocked ? "auto" : "none";
+      const doneBadge = isCompleted ? `<span class="ch-done-badge" title="הושלם">✓</span>` : '';
 
-      html += `<div class="chapter-card" style="opacity: ${opacity}; pointer-events: ${pointerEvents}">
+      html += `<div class="chapter-card">
         <div class="ch-hdr" onclick="toggleChapter('${ch.id}')">
           <div class="ch-info">
-            <div class="ch-name">${lockIcon}${formatRTL(ch.title || '')}</div>
+            <div class="ch-name">${formatRTL(ch.title || '')} ${doneBadge}</div>
             <div class="ch-meta"><bdi dir="ltr">${ch.titleEn || ''}</bdi> · ${total} נושאי משנה</div>
           </div>
           ${ringHTML(pct, area.color || '#000')}
@@ -976,11 +972,9 @@ function renderExplore() {
             </span>`;
           }).join('')}
           <div><span class="practice-btn" onclick="event.stopPropagation();startChapterPractice('${ch.id}','${area.id}')">📝 תרגל פרק זה</span></div>
-          <div><span class="practice-btn" style="background:rgba(52,199,89,.1);color:var(--success)" onclick="event.stopPropagation();startChapterLesson('${ch.id}')">📖 שיעור לפרק זה</span></div>
+          <div><span class="practice-btn lesson-btn" onclick="event.stopPropagation();startChapterLesson('${ch.id}')">📖 שיעור לפרק זה</span></div>
         </div>
       </div>`;
-      
-      isPrevLessonCompleted = isCompleted;
     }
     html += '</div>';
   }
