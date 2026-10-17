@@ -373,8 +373,84 @@
     .sub-pill.learning{background:var(--tint-warning);color:var(--warning)}
     .sub-pill.familiar{background:var(--tint-accent);color:var(--accent)}
     .sub-pill.mastered{background:var(--tint-success);color:var(--success)}
-    .practice-btn{min-height:44px;padding:0 16px;font-size:15px;font-weight:600;margin-top:8px;background:var(--tint-accent);color:var(--accent)}
+    .practice-btn{min-height:44px;padding:0 16px;font-size:15px;font-weight:600;margin-top:8px;background:var(--tint-accent);color:var(--accent);border:none;font-family:var(--font)}
     .practice-btn.lesson-btn{background:var(--tint-success);color:var(--success)}
+    .practice-btn.active-learn-btn{background:var(--fill-accent);color:#fff;box-shadow:var(--shadow)}
+    .ch-actions-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+    .ch-actions-row .practice-btn{margin-top:0}
+
+    /* Active Learn & Spaced Review (Apple HIG + RTL) */
+    .al-pilot-banner{margin:0 16px 16px;padding:16px;border-radius:var(--r-xl);background:var(--surface);box-shadow:var(--shadow-md);border:1.5px solid var(--accent);display:flex;flex-direction:column;gap:10px;direction:rtl;text-align:right}
+    .al-pilot-badge{display:inline-flex;align-items:center;gap:6px;align-self:flex-start;padding:4px 10px;border-radius:99px;font-size:12px;font-weight:700;background:var(--tint-accent);color:var(--accent);white-space:nowrap;flex-shrink:0}
+    .al-pilot-title{font-size:17px;font-weight:700;color:var(--label);line-height:1.35}
+    .al-pilot-sub{font-size:14px;color:var(--label3);line-height:1.45}
+    .al-pilot-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:2px}
+    .al-pilot-actions .btn{flex:1;min-width:140px;min-height:46px;padding:10px 14px;font-size:15px}
+
+    .al-steps-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;padding:0 20px 10px;direction:rtl}
+    .al-step-pill{display:flex;flex-direction:column;align-items:center;gap:4px;padding:6px 4px;border-radius:var(--r-sm);background:var(--surface2);color:var(--label3);font-size:11px;font-weight:600;text-align:center;border:1px solid transparent}
+    .al-step-pill.active{background:var(--tint-accent);color:var(--accent);border-color:var(--accent);font-weight:700}
+    .al-step-pill.done{background:var(--tint-success);color:var(--success)}
+    .al-step-hdr{margin-bottom:14px;direction:rtl;text-align:right}
+    .al-step-kicker{font-size:13px;font-weight:700;color:var(--accent);margin-bottom:4px}
+    .al-step-title{font-size:22px;font-weight:700;color:var(--label);line-height:1.3}
+    .al-step-desc{font-size:14px;color:var(--label3);line-height:1.5;margin-top:4px}
+
+    .al-field-card{background:var(--surface);border-radius:var(--r-xl);padding:18px;margin-bottom:16px;box-shadow:var(--shadow-md);direction:rtl;text-align:right}
+    .al-field-hdr{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:10px}
+    .al-field-label{font-size:16px;font-weight:700;color:var(--label)}
+    .al-clear-btn{min-height:44px;min-width:44px;padding:0 12px;border-radius:var(--r-sm);border:none;background:var(--surface2);color:var(--label3);font-family:var(--font);font-size:13px;font-weight:600;cursor:pointer}
+    .al-textarea{width:100%;min-height:132px;padding:14px;border-radius:var(--r-md);border:1.5px solid var(--sep);background:var(--surface2);color:var(--label);font-family:var(--font);font-size:16px;line-height:1.55;resize:vertical;direction:rtl;text-align:right}
+    .al-textarea:focus{outline:none;border-color:var(--accent);background:var(--surface)}
+    .al-textarea::placeholder{color:var(--label4)}
+    .al-field-hint{font-size:13px;color:var(--label3);margin-top:8px;display:flex;justify-content:space-between;align-items:center}
+
+    .al-compare-wrap{display:flex;flex-direction:column;gap:14px;margin-bottom:16px;direction:rtl}
+    .al-user-box,.al-ref-box{background:var(--surface);border-radius:var(--r-xl);padding:18px;box-shadow:var(--shadow);direction:rtl;text-align:right}
+    .al-user-box{border:1.5px solid var(--sep)}
+    .al-ref-box{border:1.5px solid var(--accent);background:var(--surface)}
+    .al-box-tag{display:inline-block;padding:3px 10px;border-radius:99px;font-size:12px;font-weight:700;margin-bottom:10px}
+    .al-user-box .al-box-tag{background:var(--surface3);color:var(--label2)}
+    .al-ref-box .al-box-tag{background:var(--tint-accent);color:var(--accent)}
+    .al-ref-concept{padding:10px 0;border-bottom:.5px solid var(--sep)}
+    .al-ref-concept:last-child{border-bottom:none;padding-bottom:0}
+    .al-ref-concept h3{font-size:16px;font-weight:700;color:var(--label);margin-bottom:6px}
+    .al-ref-concept p{font-size:15px;line-height:1.6;color:var(--label2)}
+
+    .al-checklist-card{background:var(--surface);border-radius:var(--r-xl);padding:18px;margin-bottom:16px;box-shadow:var(--shadow-md);direction:rtl;text-align:right}
+    .al-checklist-hdr{display:flex;align-items:flex-start;justify-content:space-between;gap:10px;margin-bottom:12px}
+    .al-checklist-prog{font-size:13px;font-weight:700;color:var(--accent);background:var(--tint-accent);padding:4px 10px;border-radius:99px;white-space:nowrap;flex-shrink:0}
+    .al-kp-group-title{font-size:14px;font-weight:700;color:var(--label3);margin:12px 0 8px;padding-bottom:4px;border-bottom:.5px solid var(--sep)}
+    .al-kp-item{background:var(--surface2);border-radius:var(--r-md);padding:14px;margin-bottom:10px;border:1.5px solid transparent;transition:border-color .15s}
+    .al-kp-item.marked-got{border-color:var(--success);background:var(--tint-success)}
+    .al-kp-item.marked-missed{border-color:var(--danger);background:var(--tint-danger)}
+    .al-kp-text{font-size:15px;line-height:1.55;color:var(--label);margin-bottom:12px;font-weight:500}
+    .al-kp-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .al-kp-btn{min-height:44px;padding:8px 12px;border-radius:var(--r-sm);border:1.5px solid var(--sep);background:var(--surface);color:var(--label);font-family:var(--font);font-size:14px;font-weight:700;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:6px;transition:all .15s}
+    .al-kp-btn:active{transform:scale(.98)}
+    .al-kp-btn.got.active{background:var(--fill-success);border-color:var(--fill-success);color:#fff}
+    .al-kp-btn.missed.active{background:var(--fill-danger);border-color:var(--fill-danger);color:#fff}
+
+    .al-reteach-card{background:var(--surface);border-radius:var(--r-xl);padding:18px;margin-bottom:14px;border:1.5px solid var(--warning);box-shadow:var(--shadow);direction:rtl;text-align:right;animation:slideUp .3s ease}
+    .al-reteach-tag{display:inline-flex;align-items:center;gap:6px;padding:4px 10px;border-radius:99px;font-size:12px;font-weight:700;background:var(--tint-warning);color:var(--warning);margin-bottom:8px}
+    .al-reteach-title{font-size:17px;font-weight:700;color:var(--label);margin-bottom:6px}
+    .al-reteach-body{font-size:15px;line-height:1.6;color:var(--label2);margin-bottom:10px}
+    .al-retry-badge{display:inline-flex;align-items:center;gap:4px;padding:3px 10px;border-radius:99px;font-size:12px;font-weight:700;background:var(--tint-warning);color:var(--warning)}
+
+    .al-queue-card{background:var(--surface);border-radius:var(--r-lg);padding:16px;margin-bottom:12px;box-shadow:var(--shadow);border-right:4px solid var(--accent);direction:rtl;text-align:right}
+    .al-queue-top{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:8px;flex-wrap:wrap}
+    .al-interval-badge{display:inline-flex;align-items:center;gap:4px;padding:4px 10px;border-radius:99px;font-size:12px;font-weight:700;background:var(--tint-accent);color:var(--accent);white-space:nowrap;flex-shrink:0}
+    .al-due-badge{font-size:12px;font-weight:600;color:var(--label3)}
+    .al-due-badge.due-now{color:var(--warning);font-weight:700}
+    .al-sched-steps{display:flex;align-items:center;gap:6px;margin-top:10px;flex-wrap:wrap}
+    .al-sched-chip{font-size:11px;font-weight:700;padding:3px 8px;border-radius:99px;background:var(--surface2);color:var(--label3)}
+    .al-sched-chip.current{background:var(--fill-accent);color:#fff}
+    .al-sched-chip.completed{background:var(--tint-success);color:var(--success)}
+
+    /* Compact Home CTAs when 3 buttons are shown */
+    .home-actions{padding:12px 16px;gap:10px}
+    .cta{min-height:66px;padding:12px 16px}
+    .cta-review-badge{padding:4px 10px;border-radius:99px;font-size:12px;font-weight:700;background:var(--tint-warning);color:var(--warning);flex-shrink:0}
 
     /* Progress */
     .stat-card{border-radius:var(--r-lg)}
@@ -871,7 +947,24 @@ function renderHome() {
     }
   }
 
+  const alState = getActiveLearnState();
+  const alStats = getActiveQueueStats();
+  const reviewSub = alStats.totalActive > 0
+    ? `${alStats.dueToday > 0 ? `${alStats.dueToday} לביצוע היום · ` : ''}${alStats.totalActive} בתור חזרה מרווחת (1, 3, 7 ו-14 ימים)`
+    : 'תור חזרה מרווחת (1, 3, 7 ו-14 ימים) לנקודות שפספסת';
+
   let html = `<div class="home-actions">`;
+
+  html += `
+    <button class="btn cta cta-secondary" id="home-review-today-btn" onclick="openActiveReviewToday()">
+      <span class="cta-icon" style="background:var(--tint-warning);color:var(--warning)">🗓️</span>
+      <div class="cta-text">
+        <div class="cta-title">חזרה להיום</div>
+        <div class="cta-sub">${reviewSub}</div>
+      </div>
+      ${alStats.totalActive > 0 ? `<span class="cta-review-badge">${alStats.dueToday > 0 ? alStats.dueToday + ' היום' : alStats.totalActive + ' בתור'}</span>` : ''}
+    </button>
+  `;
   
   html += `
     <button class="btn cta cta-secondary" onclick="startGlobalPractice()">
@@ -885,6 +978,13 @@ function renderHome() {
 
   if (nextLesson) {
     html += `
+      <button class="btn cta cta-secondary" id="home-active-learn-btn" onclick="startActiveLesson('${nextLesson.chapterId}')">
+        <span class="cta-icon" style="background:var(--tint-accent);color:var(--accent)">🧠</span>
+        <div class="cta-text">
+          <div class="cta-title">למד באופן פעיל</div>
+          <div class="cta-sub">${nextLesson.title} · הסבר במילים שלך ותיוג</div>
+        </div>
+      </button>
       <button class="btn cta cta-primary" onclick="startLessonById('${nextLesson.id}')">
         <span class="cta-icon">🚀</span>
         <div class="cta-text">
@@ -912,7 +1012,30 @@ function renderExplore() {
   if (!SYLLABUS || !SYLLABUS.areas) return;
   const state = getState();
   const q = (exploreQ || '').toLowerCase().trim();
+  const alState = getActiveLearnState();
+  const alStats = getActiveQueueStats();
+  const completedActiveSet = new Set(alState.completedLessons || []);
+  const allSyllabusChapters = SYLLABUS.areas.flatMap(a => a.chapters || []);
+  const nextActiveCh = allSyllabusChapters.find(ch => !completedActiveSet.has(`lesson_${ch.id}`)) || allSyllabusChapters[0];
+  const nextActiveLesson = nextActiveCh ? getOrBuildLessonForChapter(nextActiveCh.id) : LESSONS[0];
   let html = '';
+
+  if (!q && nextActiveLesson) {
+    html += `
+      <div class="al-pilot-banner" id="pilot-active-banner">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap">
+          <span class="al-pilot-badge">🧠 מצב למידה פעילה · זמין בכל השיעורים</span>
+          ${alStats.totalActive > 0 ? `<span class="al-interval-badge">🗓️ ${alStats.totalActive} נקודות בתור חזרה</span>` : `<span class="al-interval-badge">✓ ${completedActiveSet.size}/${allSyllabusChapters.length} הושלמו</span>`}
+        </div>
+        <div class="al-pilot-title">${formatRTL(nextActiveLesson.title)}</div>
+        <div class="al-pilot-sub">קריאת השיעור ← הסבר במילים שלך מול הסבר המקור ורשימת תיוג ← שאלות ממוקדות עם לימוד מחדש ← תור חזרה מרווחת (1, 3, 7 ו-14 ימים).</div>
+        <div class="al-pilot-actions">
+          <button class="btn btn-accent" id="pilot-start-btn" onclick="startActiveLesson('${nextActiveLesson.chapterId}')">🧠 למד באופן פעיל</button>
+          <button class="btn btn-ghost" id="pilot-review-btn" onclick="openActiveReviewToday()">🗓️ חזרה להיום (${alStats.totalActive})</button>
+        </div>
+      </div>
+    `;
+  }
   
   for (const area of SYLLABUS.areas) {
     if (!area.chapters) continue;
@@ -939,6 +1062,7 @@ function renderExplore() {
     
     for (const ch of area.chapters) {
       const isCompleted = completedMissions.includes(`lesson_${ch.id}`);
+      const isActiveDone = completedActiveSet.has(`lesson_${ch.id}`);
       
       if (!filteredChs.includes(ch)) {
         continue;
@@ -954,7 +1078,7 @@ function renderExplore() {
       
       const doneBadge = isCompleted ? `<span class="ch-done-badge" title="הושלם">✓</span>` : '';
 
-      html += `<div class="chapter-card">
+      html += `<div class="chapter-card" id="chcard-${ch.id}">
         <div class="ch-hdr" onclick="toggleChapter('${ch.id}')">
           <div class="ch-info">
             <div class="ch-name">${formatRTL(ch.title || '')} ${doneBadge}</div>
@@ -971,8 +1095,11 @@ function renderExplore() {
               <span class="sub-dot"></span>${formatRTL(s.title || '')}
             </span>`;
           }).join('')}
-          <div><span class="practice-btn" onclick="event.stopPropagation();startChapterPractice('${ch.id}','${area.id}')">📝 תרגל פרק זה</span></div>
-          <div><span class="practice-btn lesson-btn" onclick="event.stopPropagation();startChapterLesson('${ch.id}')">📖 שיעור לפרק זה</span></div>
+          <div class="ch-actions-row">
+            <button type="button" class="practice-btn" onclick="event.stopPropagation();startChapterPractice('${ch.id}','${area.id}')">📝 תרגל פרק זה</button>
+            <button type="button" class="practice-btn lesson-btn" onclick="event.stopPropagation();startChapterLesson('${ch.id}')">📖 שיעור לפרק זה</button>
+            <button type="button" class="practice-btn active-learn-btn" id="al-btn-${ch.id}" onclick="event.stopPropagation();startActiveLesson('${ch.id}')">🧠 למד באופן פעיל${isActiveDone ? ' ✓' : ''}</button>
+          </div>
         </div>
       </div>`;
     }
@@ -1172,8 +1299,47 @@ function startChapterPractice(chId, areaId) {
   startQuizSession(qs, { id: 'ch_'+chId, title: 'תרגול פרק', xp: 15 });
 }
 
+function getOrBuildLessonForChapter(chIdOrLessonId) {
+  let lesson = LESSONS.find(l => l.chapterId === chIdOrLessonId || l.id === chIdOrLessonId);
+  if (lesson) return lesson;
+  // Syllabus-only fallback for cell-biology-ch-19 (no invented facts: strictly from SYLLABUS / OFFICIAL_RAW & flashcards_generated.json)
+  if (!SYLLABUS || !SYLLABUS.areas) return null;
+  for (const area of SYLLABUS.areas) {
+    const ch = (area.chapters || []).find(c => c.id === chIdOrLessonId || `lesson_${c.id}` === chIdOrLessonId);
+    if (ch) {
+      const subs = ch.subtopics || [];
+      const subSentences = subs.map((s, idx) =>
+        `נושא משנה ${idx + 1} בפרק ${ch.title} מתוך הסילבוס הרשמי הוא **${s.titleEn || s.title}** (${s.title}).`
+      );
+      return {
+        id: `lesson_${ch.id}`,
+        chapterId: ch.id,
+        areaId: area.id,
+        title: ch.title,
+        titleEn: ch.titleEn || '',
+        estimatedMinutes: 7,
+        isSyllabusFallback: true,
+        cards: [
+          {
+            type: 'concept',
+            title: `${ch.title} (${ch.titleEn || ''})`,
+            content: subSentences.join(' ') +
+              ` בנוסף, מתוך מאגר הכרטיסיות של הפרק: **דופן התא** (The Plant Cell Wall) הוא מבנה קשיח המורכב בעיקר מציולוז, המספק תמיכה מכנית ומגן על התא הצמחי.`,
+            keyPoints: [
+              ...subs.map(s => `נושא סילבוס רשמי בפרק ${ch.title}: ${s.title} (${s.titleEn || ''}).`),
+              'דופן התא (The Plant Cell Wall) — מבנה קשיח המורכב בעיקר מציולוז, המספק תמיכה מכנית ומגן על התא הצמחי.'
+            ]
+          }
+        ],
+        followUpQuestionIds: []
+      };
+    }
+  }
+  return null;
+}
+
 function startLessonById(id) {
-  const l = LESSONS.find(x => x.id === id);
+  const l = getOrBuildLessonForChapter(id);
   if (l) {
     startLesson(l, { id: 'lesson_' + l.chapterId, title: l.title, xp: 30 });
   }
@@ -1181,7 +1347,7 @@ function startLessonById(id) {
 
 function startChapterLesson(chId) {
   haptic();
-  const lesson = LESSONS.find(l => l.chapterId === chId);
+  const lesson = getOrBuildLessonForChapter(chId);
   if (!lesson) { showToast('אין שיעור לפרק זה עדיין'); return; }
   startLesson(lesson, { id: 'lesson_'+chId, title: lesson.title, xp: 20 });
 }
@@ -1190,12 +1356,1221 @@ function practiceSubtopic(subId, chId, areaId) {
   haptic();
   const qs = QUESTIONS.filter(q => q.subtopicId === subId);
   if (!qs.length) {
-    const lesson = LESSONS.find(l => l.chapterId === chId);
+    const lesson = getOrBuildLessonForChapter(chId);
     if (lesson) { startLesson(lesson, { id: 'sub_'+subId, title: 'למידה', xp: 10 }); return; }
     showToast('תוכן בהכנה לנושא זה');
     return;
   }
   startQuizSession(qs, { id: 'sub_'+subId, title: 'תרגול נושא', xp: 15 });
+}
+
+// ============================================================
+// ACTIVE LEARN MODE & SPACED REVIEW (1, 3, 7, 14 DAYS)
+// ============================================================
+const ACTIVE_INTERVALS = [1, 3, 7, 14];
+const PILOT_LESSON_ID = 'lesson_biochemistry-ch-02';
+const PILOT_CHAPTER_ID = 'biochemistry-ch-02';
+
+// Audit of lessons with complete vs. telegraphic/missing key points (no invented facts)
+const ACTIVE_LEARN_AUDIT = {
+  pilotLessonId: 'lesson_biochemistry-ch-02',
+  readyLessonIds: [
+    'lesson_biochemistry-ch-02',
+    'lesson_biochemistry-ch-05',
+    'lesson_biochemistry-ch-07',
+    'lesson_biochemistry-ch-16',
+    'lesson_biochemistry-ch-22',
+    'lesson_biochemistry-ch-23',
+    'lesson_molecular-biology-ch-05',
+    'lesson_molecular-biology-ch-06',
+    'lesson_molecular-biology-ch-07',
+    'lesson_cell-biology-ch-10',
+    'lesson_cell-biology-ch-16',
+    'lesson_cell-biology-ch-18'
+  ],
+  missingLessonChapterIds: [
+    'cell-biology-ch-19' // צומתי תאים והמטריצה החוץ-תאית — אין רשומת שיעור ב-lessons.json
+  ],
+  telegraphicKeyPointLessonIds: [
+    'lesson_biochemistry-ch-01',
+    'lesson_biochemistry-ch-03',
+    'lesson_biochemistry-ch-04',
+    'lesson_biochemistry-ch-06',
+    'lesson_biochemistry-ch-12',
+    'lesson_biochemistry-ch-13',
+    'lesson_biochemistry-ch-14',
+    'lesson_biochemistry-ch-15',
+    'lesson_biochemistry-ch-17',
+    'lesson_biochemistry-ch-18',
+    'lesson_biochemistry-ch-19',
+    'lesson_biochemistry-ch-21',
+    'lesson_molecular-biology-ch-01',
+    'lesson_molecular-biology-ch-04',
+    'lesson_molecular-biology-ch-08',
+    'lesson_molecular-biology-ch-09',
+    'lesson_cell-biology-ch-12',
+    'lesson_cell-biology-ch-13',
+    'lesson_cell-biology-ch-14',
+    'lesson_cell-biology-ch-15',
+    'lesson_cell-biology-ch-17',
+    'lesson_physiology-ch-01',
+    'lesson_physiology-ch-02',
+    'lesson_physiology-ch-04',
+    'lesson_physiology-ch-05',
+    'lesson_physiology-ch-06',
+    'lesson_physiology-ch-12'
+  ]
+};
+
+// Explicit mapping of questions strictly taught by the pilot lesson's 4 concept cards
+const PILOT_TAUGHT_QUESTIONS = {
+  'lesson_biochemistry-ch-02': [
+    { qId: 'q_biochemistry-ch-02-sec-2-1_1_1791322844', cardIdx: 1, kpIdx: 0 },
+    { qId: 'q_biochemistry-ch-02-sec-2-1_2_1791322844', cardIdx: 2, kpIdx: 0 },
+    { qId: 'q_biochemistry-ch-02-sec-2-1_3_1791322844', cardIdx: 2, kpIdx: 1 },
+    { qId: 'q_biochemistry-ch-02-sec-2-1_4_1791322844', cardIdx: 0, kpIdx: 0 }
+  ]
+};
+
+function addDaysISO(baseMs, days) {
+  return new Date(baseMs + days * 86400000).toISOString().split('T')[0];
+}
+
+function formatISOToHe(isoStr) {
+  if (!isoStr) return '';
+  const parts = String(isoStr).split('-');
+  if (parts.length !== 3) return isoStr;
+  return `${parts[2]}.${parts[1]}.${parts[0]}`;
+}
+
+function buildScheduleDates(baseMs) {
+  return {
+    '1d': addDaysISO(baseMs, 1),
+    '3d': addDaysISO(baseMs, 3),
+    '7d': addDaysISO(baseMs, 7),
+    '14d': addDaysISO(baseMs, 14)
+  };
+}
+
+function getActiveLearnState() {
+  const def = {
+    explanations: {},
+    checklists: {},
+    completedLessons: [],
+    queue: []
+  };
+  const saved = DB.get('active_learn');
+  if (!saved || typeof saved !== 'object') return def;
+  return {
+    explanations: saved.explanations || {},
+    checklists: saved.checklists || {},
+    completedLessons: Array.isArray(saved.completedLessons) ? saved.completedLessons : [],
+    queue: Array.isArray(saved.queue) ? saved.queue : []
+  };
+}
+
+function saveActiveLearnState(alState) {
+  DB.set('active_learn', alState);
+}
+
+function getActiveQueueStats() {
+  const al = getActiveLearnState();
+  const today = todayStr();
+  const activeItems = al.queue.filter(item => !item.mastered);
+  const dueTodayItems = activeItems.filter(item => item.dueDate && item.dueDate <= today);
+  const masteredItems = al.queue.filter(item => item.mastered);
+  return {
+    totalActive: activeItems.length,
+    dueToday: dueTodayItems.length,
+    masteredCount: masteredItems.length
+  };
+}
+
+function splitVerbatimSentences(content) {
+  const clean = String(content || '').replace(/\*\*(.*?)\*\*/g, '$1').trim();
+  if (!clean) return [];
+  return clean
+    .split(/(?<=[.!?])\s+|\n+/)
+    .map(s => s.trim())
+    .filter(s => s.length > 12);
+}
+
+// Builds complete verbatim key-point statements strictly from card.keyPoints + card.content (zero invented facts)
+function getEffectiveKeyPoints(card) {
+  const kps = Array.isArray(card?.keyPoints) ? card.keyPoints : [];
+  const sents = splitVerbatimSentences(card?.content || '');
+  if (!kps.length) {
+    return sents.length ? sents : [card?.title || ''];
+  }
+  const result = [];
+  const usedSentIdxs = new Set();
+  kps.forEach((kp, i) => {
+    const kpStr = String(kp || '').trim();
+    if (kpStr.length >= 38) {
+      result.push(kpStr);
+      return;
+    }
+    const words = kpStr
+      .toLowerCase()
+      .split(/[^\w\u0590-\u05FF]+/)
+      .filter(w => w.length >= 2);
+    let bestIdx = -1;
+    let bestScore = 0;
+    sents.forEach((s, si) => {
+      if (usedSentIdxs.has(si)) return;
+      const sLow = s.toLowerCase();
+      let sc = 0;
+      words.forEach(w => { if (sLow.includes(w)) sc++; });
+      if (sc > bestScore) {
+        bestScore = sc;
+        bestIdx = si;
+      }
+    });
+    if (bestIdx === -1 && i < sents.length && !usedSentIdxs.has(i)) {
+      bestIdx = i;
+    }
+    if (bestIdx === -1 && sents.length) {
+      sents.forEach((s, si) => {
+        const sLow = s.toLowerCase();
+        let sc = 0;
+        words.forEach(w => { if (sLow.includes(w)) sc++; });
+        if (sc > bestScore) {
+          bestScore = sc;
+          bestIdx = si;
+        }
+      });
+      if (bestIdx === -1) bestIdx = Math.min(i, sents.length - 1);
+    }
+    if (bestIdx !== -1 && sents[bestIdx]) {
+      usedSentIdxs.add(bestIdx);
+      const st = sents[bestIdx];
+      if (st.toLowerCase().includes(kpStr.toLowerCase()) && !result.includes(st)) {
+        result.push(st);
+      } else {
+        result.push(`${kpStr} — ${st}`);
+      }
+    } else {
+      result.push(kpStr);
+    }
+  });
+  return result;
+}
+
+function getConceptCards(lesson) {
+  return (lesson?.cards || [])
+    .filter(c => c.type === 'concept')
+    .map(c => ({
+      ...c,
+      rawKeyPoints: c.keyPoints || [],
+      keyPoints: getEffectiveKeyPoints(c)
+    }));
+}
+
+function normalizeQuestionForActiveLearn(q) {
+  if (!q) return null;
+  const normOpts = (q.options || []).map(o => Array.isArray(o) ? o.join(' · ') : String(o ?? ''));
+  return {
+    ...q,
+    options: normOpts
+  };
+}
+
+// Builds verbatim cloze/concept questions strictly from the lesson's own concept cards when QUESTIONS has < 4 items for a chapter
+function buildLessonVerbatimQuestions(lesson, conceptCards, neededCount) {
+  const generated = [];
+  const allBoldTerms = [];
+  conceptCards.forEach((card, cIdx) => {
+    const matches = [...String(card.content || '').matchAll(/\*\*(.*?)\*\*/g)];
+    matches.forEach(m => {
+      const term = m[1].trim();
+      if (term && term.length >= 2 && !allBoldTerms.includes(term)) {
+        allBoldTerms.push(term);
+      }
+    });
+  });
+  const fallbackPool = ['Glycine', 'ATP', 'Ribosome', 'Homeostasis', 'Actin', 'Collagen'];
+  allBoldTerms.push(...fallbackPool.filter(t => !allBoldTerms.includes(t)));
+
+  conceptCards.forEach((card, cIdx) => {
+    const rawSents = String(card.content || '')
+      .split(/(?<=[.!?])\s+|\n+/)
+      .map(s => s.trim())
+      .filter(s => s.length > 15);
+    rawSents.forEach((sent, sIdx) => {
+      if (generated.length >= neededCount) return;
+      const m = sent.match(/\*\*(.*?)\*\*/);
+      if (!m) return;
+      const correctTerm = m[1].trim();
+      const blanked = sent
+        .replace(`**${correctTerm}**`, '______')
+        .replace(/\*\*(.*?)\*\*/g, '$1');
+      const distractors = allBoldTerms.filter(t => t.toLowerCase() !== correctTerm.toLowerCase()).slice(0, 3);
+      const options = [correctTerm, ...distractors];
+      // Deterministic rotation based on index so correct answer position varies cleanly
+      const rot = (cIdx + sIdx) % options.length;
+      const rotated = options.slice(rot).concat(options.slice(0, rot));
+      const correctIndex = rotated.indexOf(correctTerm);
+      const cleanExplanation = sent.replace(/\*\*(.*?)\*\*/g, '$1');
+      generated.push({
+        q: {
+          id: `al_verbatim_${lesson.id}_${cIdx}_${sIdx}`,
+          chapterId: lesson.chapterId,
+          areaId: lesson.areaId,
+          difficulty: 1,
+          question: `השלם את המונח המדויק מתוך השיעור (${card.title}): «${blanked}»`,
+          options: rotated,
+          correctIndex: correctIndex >= 0 ? correctIndex : 0,
+          explanation: cleanExplanation
+        },
+        cardIdx: cIdx,
+        kpIdx: Math.min(sIdx, Math.max((card.keyPoints || []).length - 1, 0)),
+        isRetry: false
+      });
+    });
+  });
+  return generated;
+}
+
+function getActiveLessonQuestions(lesson) {
+  if (!lesson) return [];
+  const conceptCards = getConceptCards(lesson);
+  if (PILOT_TAUGHT_QUESTIONS[lesson.id]) {
+    return PILOT_TAUGHT_QUESTIONS[lesson.id]
+      .map(entry => {
+        const q = normalizeQuestionForActiveLearn(QUESTIONS.find(x => x.id === entry.qId));
+        if (!q) return null;
+        return {
+          q,
+          cardIdx: Math.min(entry.cardIdx, Math.max(conceptCards.length - 1, 0)),
+          kpIdx: entry.kpIdx || 0,
+          isRetry: false
+        };
+      })
+      .filter(Boolean);
+  }
+  const rawCandidateIds = (lesson.followUpQuestionIds || []).flat();
+  let candidates = rawCandidateIds
+    .map(id => QUESTIONS.find(q => q.id === id))
+    .filter(Boolean);
+  QUESTIONS.filter(q => q.chapterId === lesson.chapterId).forEach(q => {
+    if (!candidates.some(c => c.id === q.id)) candidates.push(q);
+  });
+  candidates = candidates.map(normalizeQuestionForActiveLearn).filter(Boolean);
+
+  // Score each question against each (cardIdx, kpIdx) so we select 4 questions taught in the lesson and diversify across concept cards
+  const scored = candidates.map(q => {
+    const ansText = q.options?.[q.correctIndex] || '';
+    const qPrimary = `${q.question || ''} ${ansText}`.toLowerCase();
+    const qFull = `${qPrimary} ${(q.options || []).join(' ')} ${q.explanation || ''}`.toLowerCase();
+    let bestCardIdx = 0;
+    let bestKpIdx = 0;
+    let bestScore = -1;
+
+    conceptCards.forEach((c, cIdx) => {
+      const cWords = `${c.title || ''} ${c.content || ''} ${(c.keyPoints || []).join(' ')}`
+        .toLowerCase()
+        .split(/[^\w\u0590-\u05FF]+/)
+        .filter(w => w.length >= 3);
+      let cardScore = 0;
+      cWords.forEach(w => {
+        if (qPrimary.includes(w)) cardScore += 2;
+        else if (qFull.includes(w)) cardScore += 1;
+      });
+      if (cardScore > bestScore) {
+        bestScore = cardScore;
+        bestCardIdx = cIdx;
+        // Also find the closest keyPoint within this card
+        let bestKSc = -1;
+        (c.keyPoints || []).forEach((kp, kIdx) => {
+          const kWords = String(kp).toLowerCase().split(/[^\w\u0590-\u05FF]+/).filter(w => w.length >= 3);
+          let kSc = 0;
+          kWords.forEach(w => { if (qFull.includes(w)) kSc++; });
+          if (kSc > bestKSc) {
+            bestKSc = kSc;
+            bestKpIdx = kIdx;
+          }
+        });
+      }
+    });
+    return { q, cardIdx: bestCardIdx, kpIdx: bestKpIdx, score: bestScore, isRetry: false };
+  });
+
+  scored.sort((a, b) => b.score - a.score);
+
+  const targetCount = 4; // 3-5 short questions per lesson
+  const selected = [];
+  const usedIds = new Set();
+
+  // First pass: pick top question for each concept card so all cards are covered
+  for (let cIdx = 0; cIdx < conceptCards.length && selected.length < targetCount; cIdx++) {
+    const match = scored.find(item => item.cardIdx === cIdx && !usedIds.has(item.q.id));
+    if (match) {
+      selected.push({ q: match.q, cardIdx: match.cardIdx, kpIdx: match.kpIdx, isRetry: false });
+      usedIds.add(match.q.id);
+    }
+  }
+  // Second pass: fill up to targetCount with highest-scoring remaining questions
+  for (const item of scored) {
+    if (selected.length >= targetCount) break;
+    if (!usedIds.has(item.q.id)) {
+      selected.push({ q: item.q, cardIdx: item.cardIdx, kpIdx: item.kpIdx, isRetry: false });
+      usedIds.add(item.q.id);
+    }
+  }
+  // If chapter has fewer than 4 questions in QUESTIONS (e.g., physiology-ch-04, physiology-ch-12, cell-biology-ch-19), supplement with verbatim lesson-card questions
+  if (selected.length < targetCount) {
+    const extra = buildLessonVerbatimQuestions(lesson, conceptCards, targetCount - selected.length);
+    selected.push(...extra);
+  }
+  return selected.slice(0, 5);
+}
+
+let ACTIVE_SESSION = null;
+
+function startActiveLesson(chId) {
+  haptic();
+  const lesson = getOrBuildLessonForChapter(chId);
+  if (!lesson) {
+    showToast('אין שיעור לפרק זה עדיין');
+    return;
+  }
+  const al = getActiveLearnState();
+  const savedExp = al.explanations[lesson.id]?.text || '';
+  const savedMarks = { ...(al.checklists[lesson.id] || {}) };
+  const quizItems = getActiveLessonQuestions(lesson);
+
+  ACTIVE_SESSION = {
+    lesson,
+    step: 1, // 1: Read, 2: Explain + Reference & Checklist, 3: 3-5 Questions + Re-teach/Retry, 4: Queue Summary
+    ownWords: savedExp,
+    revealedRef: false,
+    marks: savedMarks, // key `${cardIdx}_${kpIdx}` -> 'got' | 'missed'
+    quizQueue: quizItems,
+    quizIdx: 0,
+    quizAnswered: false,
+    quizFirstTryCorrect: 0,
+    quizTotalOriginal: quizItems.length,
+    quizMissedKeys: new Set(),
+    enqueuedItems: []
+  };
+  renderActiveLessonStep();
+}
+
+function renderActiveStepsHeader(activeStep) {
+  const labels = ['1. קריאה', '2. הסבר ותיוג', '3. שאלות', '4. תור חזרה'];
+  return `
+    <div class="al-steps-bar" role="navigation" aria-label="שלבי למידה פעילה">
+      ${labels.map((lbl, idx) => {
+        const sNum = idx + 1;
+        const cls = sNum === activeStep ? 'active' : sNum < activeStep ? 'done' : '';
+        return `<div class="al-step-pill ${cls}"><span>${sNum < activeStep ? '✓ ' : ''}${lbl}</span></div>`;
+      }).join('')}
+    </div>
+  `;
+}
+
+function renderActiveLessonStep() {
+  if (!ACTIVE_SESSION || !ACTIVE_SESSION.lesson) return;
+  const { lesson, step } = ACTIVE_SESSION;
+  const conceptCards = getConceptCards(lesson);
+  const pct = Math.round((step / 4) * 100);
+  const conceptTitlesSample = conceptCards.map(c => c.title).join(' · ');
+
+  if (step === 1) {
+    // STEP 1: Read the lesson
+    openOverlay(`
+      <div class="ov-hdr">
+        <button class="close-btn" onclick="closeOverlay()" aria-label="סגור">✕</button>
+        <div class="prog-track"><div class="prog-fill" style="width:${pct}%"></div></div>
+        <div class="xp-badge">שלב 1/4</div>
+      </div>
+      ${renderActiveStepsHeader(1)}
+      <div class="ov-body" id="al-step-body">
+        <div class="al-step-hdr">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap">
+            <div class="al-step-kicker">${getAreaTitle(lesson.areaId)} · למידה פעילה</div>
+            <button type="button" class="al-clear-btn" onclick="startChapterLesson('${lesson.chapterId}')">📖 מעבר לשיעור רגיל</button>
+          </div>
+          <div class="al-step-title">${formatRTL(lesson.title)}</div>
+          <div class="al-step-desc">שלב 1: קרא בעיון את פסקאות המקור ונקודות המפתח של השיעור. בשלב הבא תסביר את החומר במילים שלך.</div>
+        </div>
+        ${conceptCards.map((card, cIdx) => `
+          <div class="concept-card" id="al-read-card-${cIdx}">
+            <div class="area-chip">מושג ${cIdx + 1} מתוך ${conceptCards.length}</div>
+            <h2>${formatRTL(card.title)}</h2>
+            <div class="concept-body">${formatRTL(card.content, true)}</div>
+            ${card.keyPoints?.length ? `
+              <div class="key-points">
+                ${card.keyPoints.map(kp => `<div class="kp"><span>${formatRTL(kp)}</span></div>`).join('')}
+              </div>
+            ` : ''}
+          </div>
+        `).join('')}
+      </div>
+      <div class="ov-footer">
+        <button class="btn btn-accent" id="al-to-step2-btn" onclick="goActiveStep(2)">המשך להסבר במילים שלך ←</button>
+      </div>
+    `);
+    return;
+  }
+
+  if (step === 2) {
+    // STEP 2: Explain in your own words + Reference explanation + Key-points checklist ("got it" / "missed it")
+    let totalKps = 0;
+    let markedKps = 0;
+    conceptCards.forEach((c, cIdx) => {
+      (c.keyPoints || []).forEach((_, kIdx) => {
+        totalKps++;
+        if (ACTIVE_SESSION.marks[`${cIdx}_${kIdx}`]) markedKps++;
+      });
+    });
+    const allMarked = totalKps > 0 && markedKps === totalKps;
+
+    openOverlay(`
+      <div class="ov-hdr">
+        <button class="close-btn" onclick="closeOverlay()" aria-label="סגור">✕</button>
+        <div class="prog-track"><div class="prog-fill" style="width:${pct}%"></div></div>
+        <div class="xp-badge">שלב 2/4</div>
+      </div>
+      ${renderActiveStepsHeader(2)}
+      <div class="ov-body" id="al-step-body">
+        <div class="al-step-hdr">
+          <div class="al-step-kicker">${formatRTL(lesson.title)}</div>
+          <div class="al-step-title">הסבר את החומר במילים שלך</div>
+          <div class="al-step-desc">כתוב במילים שלך את עיקרי השיעור, ולאחר מכן הצג את הסבר המקור לצד ההסבר שלך וסמן על כל נקודת מפתח "הבנתי" או "פספסתי".</div>
+        </div>
+
+        <div class="al-field-card">
+          <div class="al-field-hdr">
+            <label class="al-field-label" for="al-own-words">✍️ ההסבר שלך במילים שלך</label>
+            <button type="button" class="al-clear-btn" onclick="clearActiveOwnWords()">נקה</button>
+          </div>
+          <textarea
+            id="al-own-words"
+            class="al-textarea"
+            placeholder="הסבר כאן במילים שלך את המושגים המרכזיים שלמדת בשיעור (${escapeHtml(conceptTitlesSample)})..."
+            oninput="onActiveOwnWordsInput(this.value)"
+          >${escapeHtml(ACTIVE_SESSION.ownWords || '')}</textarea>
+          <div class="al-field-hint">
+            <span>נשמר אוטומטית במכשיר (זמין אופליין)</span>
+            <span id="al-word-count">${countWords(ACTIVE_SESSION.ownWords)} מילים</span>
+          </div>
+          ${!ACTIVE_SESSION.revealedRef ? `
+            <button type="button" class="btn btn-accent" id="al-reveal-ref-btn" style="margin-top:12px" onclick="revealActiveReference()">
+              הצג הסבר מקור ורשימת נקודות מפתח ←
+            </button>
+          ` : ''}
+        </div>
+
+        ${ACTIVE_SESSION.revealedRef ? `
+          <div class="al-compare-wrap" id="al-comparison-section">
+            <div class="al-user-box">
+              <span class="al-box-tag">📝 ההסבר שכתבת</span>
+              <div class="concept-body" id="al-user-summary-preview">${ACTIVE_SESSION.ownWords.trim() ? formatRTL(ACTIVE_SESSION.ownWords) : '<span style="color:var(--label3)">(לא הוזן טקסט — מומלץ לכתוב הסבר קצר בתיבה למעלה)</span>'}</div>
+            </div>
+            <div class="al-ref-box">
+              <span class="al-box-tag">📖 הסבר המקור מהשיעור (ללא שינוי)</span>
+              ${conceptCards.map(c => `
+                <div class="al-ref-concept">
+                  <h3>${formatRTL(c.title)}</h3>
+                  <p>${formatRTL(c.content, true)}</p>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+
+          <div class="al-checklist-card" id="al-checklist-section">
+            <div class="al-checklist-hdr">
+              <div>
+                <div class="al-field-label">✅ רשימת נקודות מפתח לבדיקה עצמית</div>
+                <div style="font-size:13px;color:var(--label3);margin-top:2px">סמן על כל נקודה אם כללת והבנת אותה או שפספסת אותה (נקודות שפספסת ייכנסו לתור חזרה מרווחת: 1, 3, 7 ו-14 ימים)</div>
+              </div>
+              <span class="al-checklist-prog" id="al-checklist-counter" dir="ltr">${markedKps} / ${totalKps}</span>
+            </div>
+
+            ${conceptCards.map((c, cIdx) => `
+              <div class="al-kp-group">
+                <div class="al-kp-group-title">${formatRTL(c.title)}</div>
+                ${(c.keyPoints || []).map((kp, kIdx) => {
+                  const key = `${cIdx}_${kIdx}`;
+                  const mark = ACTIVE_SESSION.marks[key] || '';
+                  const itemCls = mark === 'got' ? 'marked-got' : mark === 'missed' ? 'marked-missed' : '';
+                  return `
+                    <div class="al-kp-item ${itemCls}" id="al-kp-row-${cIdx}-${kIdx}">
+                      <div class="al-kp-text">${formatRTL(kp)}</div>
+                      <div class="al-kp-actions">
+                        <button type="button" class="al-kp-btn got ${mark === 'got' ? 'active' : ''}" id="al-kp-got-${cIdx}-${kIdx}" onclick="markActiveKeyPoint(${cIdx}, ${kIdx}, 'got')">
+                          ✓ הבנתי
+                        </button>
+                        <button type="button" class="al-kp-btn missed ${mark === 'missed' ? 'active' : ''}" id="al-kp-missed-${cIdx}-${kIdx}" onclick="markActiveKeyPoint(${cIdx}, ${kIdx}, 'missed')">
+                          ✗ פספסתי
+                        </button>
+                      </div>
+                    </div>
+                  `;
+                }).join('')}
+              </div>
+            `).join('')}
+          </div>
+        ` : ''}
+      </div>
+      <div class="ov-footer">
+        <button
+          class="btn btn-accent"
+          id="al-to-step3-btn"
+          ${(!ACTIVE_SESSION.revealedRef || !allMarked) ? 'disabled' : ''}
+          onclick="goActiveStep(3)"
+        >
+          ${!ACTIVE_SESSION.revealedRef
+            ? 'הצג תחילה את הסבר המקור'
+            : !allMarked
+              ? `סמן את כל נקודות המפתח (${markedKps}/${totalKps})`
+              : `המשך לשאלות על השיעור (${ACTIVE_SESSION.quizQueue.length} שאלות) ←`}
+        </button>
+      </div>
+    `);
+    return;
+  }
+
+  if (step === 3) {
+    // STEP 3: 3-5 short questions about ONLY what that lesson taught, with simple re-teach after wrong answer, then retry
+    renderActiveQuizSlide();
+    return;
+  }
+
+  if (step === 4) {
+    // STEP 4: Spaced-review queue summary (1, 3, 7, 14 days) + link to "Review today"
+    renderActiveCompletionStep();
+    return;
+  }
+}
+
+function escapeHtml(str) {
+  return String(str || '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function countWords(str) {
+  const s = String(str || '').trim();
+  if (!s) return 0;
+  return s.split(/\s+/).length;
+}
+
+function onActiveOwnWordsInput(val) {
+  if (!ACTIVE_SESSION) return;
+  ACTIVE_SESSION.ownWords = val;
+  const al = getActiveLearnState();
+  al.explanations[ACTIVE_SESSION.lesson.id] = {
+    text: val,
+    updatedAt: Date.now()
+  };
+  saveActiveLearnState(al);
+  const wc = document.getElementById('al-word-count');
+  if (wc) wc.textContent = `${countWords(val)} מילים`;
+  const preview = document.getElementById('al-user-summary-preview');
+  if (preview) {
+    preview.innerHTML = val.trim()
+      ? formatRTL(val)
+      : '<span style="color:var(--label3)">(לא הוזן טקסט — מומלץ לכתוב הסבר קצר בתיבה למעלה)</span>';
+  }
+}
+
+function clearActiveOwnWords() {
+  if (!ACTIVE_SESSION) return;
+  const ta = document.getElementById('al-own-words');
+  if (ta) {
+    ta.value = '';
+    onActiveOwnWordsInput('');
+    ta.focus();
+  }
+}
+
+function revealActiveReference() {
+  if (!ACTIVE_SESSION) return;
+  haptic();
+  const ta = document.getElementById('al-own-words');
+  if (ta) onActiveOwnWordsInput(ta.value);
+  if (!ACTIVE_SESSION.ownWords.trim()) {
+    showToast('כתוב תחילה הסבר קצר במילים שלך בתיבת הטקסט');
+    if (ta) ta.focus();
+    return;
+  }
+  ACTIVE_SESSION.revealedRef = true;
+  renderActiveLessonStep();
+  setTimeout(() => {
+    const comp = document.getElementById('al-comparison-section');
+    if (comp) comp.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 60);
+}
+
+function markActiveKeyPoint(cIdx, kIdx, status) {
+  if (!ACTIVE_SESSION) return;
+  haptic();
+  const key = `${cIdx}_${kIdx}`;
+  ACTIVE_SESSION.marks[key] = status;
+  const al = getActiveLearnState();
+  if (!al.checklists[ACTIVE_SESSION.lesson.id]) al.checklists[ACTIVE_SESSION.lesson.id] = {};
+  al.checklists[ACTIVE_SESSION.lesson.id][key] = status;
+  saveActiveLearnState(al);
+
+  // Update DOM in place so scroll position stays smooth
+  const row = document.getElementById(`al-kp-row-${cIdx}-${kIdx}`);
+  const gotBtn = document.getElementById(`al-kp-got-${cIdx}-${kIdx}`);
+  const missedBtn = document.getElementById(`al-kp-missed-${cIdx}-${kIdx}`);
+  if (row) {
+    row.classList.toggle('marked-got', status === 'got');
+    row.classList.toggle('marked-missed', status === 'missed');
+  }
+  if (gotBtn) gotBtn.classList.toggle('active', status === 'got');
+  if (missedBtn) missedBtn.classList.toggle('active', status === 'missed');
+
+  const conceptCards = getConceptCards(ACTIVE_SESSION.lesson);
+  let totalKps = 0, markedKps = 0;
+  conceptCards.forEach((c, ci) => {
+    (c.keyPoints || []).forEach((_, ki) => {
+      totalKps++;
+      if (ACTIVE_SESSION.marks[`${ci}_${ki}`]) markedKps++;
+    });
+  });
+  const counter = document.getElementById('al-checklist-counter');
+  if (counter) counter.textContent = `${markedKps} / ${totalKps}`;
+
+  const nextBtn = document.getElementById('al-to-step3-btn');
+  if (nextBtn) {
+    const allMarked = totalKps > 0 && markedKps === totalKps;
+    nextBtn.disabled = !allMarked;
+    nextBtn.textContent = allMarked
+      ? `המשך לשאלות על השיעור (${ACTIVE_SESSION.quizQueue.length} שאלות) ←`
+      : `סמן את כל נקודות המפתח (${markedKps}/${totalKps})`;
+  }
+}
+
+function goActiveStep(nextStep) {
+  if (!ACTIVE_SESSION) return;
+  haptic();
+  if (nextStep === 4) {
+    finalizeActiveLessonSession();
+  }
+  ACTIVE_SESSION.step = nextStep;
+  renderActiveLessonStep();
+}
+
+function renderActiveQuizSlide() {
+  if (!ACTIVE_SESSION) return;
+  const { lesson, quizQueue, quizIdx } = ACTIVE_SESSION;
+  if (!quizQueue.length || quizIdx >= quizQueue.length) {
+    goActiveStep(4);
+    return;
+  }
+  ACTIVE_SESSION.quizAnswered = false;
+  const item = quizQueue[quizIdx];
+  const q = item.q;
+  const letters = ['א', 'ב', 'ג', 'ד'];
+  const pct = 50 + Math.round(((quizIdx + 1) / Math.max(quizQueue.length, 1)) * 35);
+
+  openOverlay(`
+    <div class="ov-hdr">
+      <button class="close-btn" onclick="closeOverlay()" aria-label="סגור">✕</button>
+      <div class="prog-track"><div class="prog-fill" style="width:${pct}%"></div></div>
+      <div class="xp-badge">שלב 3/4</div>
+    </div>
+    ${renderActiveStepsHeader(3)}
+    <div class="ov-body" id="al-step-body">
+      <div class="al-step-hdr">
+        <div class="al-step-kicker">שאלה ${quizIdx + 1} מתוך ${quizQueue.length} · מתוך החומר שנלמד בשיעור בלבד</div>
+        <div class="al-step-title">${formatRTL(lesson.title)}</div>
+      </div>
+      <div class="q-card" id="al-quiz-card">
+        <div class="q-meta" style="justify-content:space-between">
+          <span>${getAreaTitle(q.areaId)}</span>
+          ${item.isRetry ? `<span class="al-retry-badge">🔄 ניסיון חוזר לאחר חיזוק</span>` : `<span class="diff-badge diff-1">שאלת שיעור</span>`}
+        </div>
+        <div class="q-text">${formatRTL(q.question)}</div>
+        <div class="options" id="al-opts">
+          ${q.options.map((optText, i) => `
+            <button type="button" class="opt" id="al-opt-${i}" onclick="selectActiveQuizAnswer(${i})">
+              <span class="opt-letter">${letters[i]}</span>
+              <span>${formatRTL(optText)}</span>
+            </button>
+          `).join('')}
+        </div>
+      </div>
+      <div id="al-reteach-slot"></div>
+    </div>
+    <div class="ov-footer">
+      <button class="btn btn-accent" id="al-quiz-next-btn" style="display:none" onclick="nextActiveQuizSlide()">המשך ←</button>
+    </div>
+  `);
+}
+
+function selectActiveQuizAnswer(chosenIdx) {
+  if (!ACTIVE_SESSION || ACTIVE_SESSION.quizAnswered) return;
+  ACTIVE_SESSION.quizAnswered = true;
+  haptic();
+
+  const item = ACTIVE_SESSION.quizQueue[ACTIVE_SESSION.quizIdx];
+  const q = item.q;
+  const isCorrect = chosenIdx === q.correctIndex;
+  const conceptCards = getConceptCards(ACTIVE_SESSION.lesson);
+  const matchedCard = conceptCards[item.cardIdx] || conceptCards[0];
+
+  document.querySelectorAll('#al-opts .opt').forEach((btn, i) => {
+    btn.classList.add('locked');
+    if (i === q.correctIndex) btn.classList.add('correct');
+    if (i === chosenIdx && !isCorrect) btn.classList.add('wrong');
+  });
+
+  const slot = document.getElementById('al-reteach-slot');
+  const nextBtn = document.getElementById('al-quiz-next-btn');
+
+  if (isCorrect) {
+    if (!item.isRetry) ACTIVE_SESSION.quizFirstTryCorrect++;
+    if (slot) {
+      slot.innerHTML = `
+        <div class="exp-card ok">
+          <div class="exp-hdr">
+            <span class="exp-icon">🎉</span>
+            <span class="exp-title">${item.isRetry ? 'מעולה! הצלחת בניסיון החוזר' : 'נכון מאוד!'}</span>
+          </div>
+          <div class="exp-text">${formatRTL(q.explanation || '')}</div>
+        </div>
+      `;
+    }
+    if (nextBtn) {
+      nextBtn.style.display = 'block';
+      nextBtn.className = 'btn btn-success';
+      nextBtn.textContent = (ACTIVE_SESSION.quizIdx + 1 < ACTIVE_SESSION.quizQueue.length)
+        ? 'לשאלה הבאה ←'
+        : 'לסיכום ותור החזרה ←';
+    }
+  } else {
+    // Mark associated key point as missed & push question for retry after re-teach
+    const missedKey = `${item.cardIdx}_${item.kpIdx || 0}`;
+    ACTIVE_SESSION.quizMissedKeys.add(missedKey);
+    ACTIVE_SESSION.marks[missedKey] = 'missed';
+    ACTIVE_SESSION.quizQueue.push({
+      q: item.q,
+      cardIdx: item.cardIdx,
+      kpIdx: item.kpIdx || 0,
+      isRetry: true
+    });
+
+    if (slot && matchedCard) {
+      const kpText = matchedCard.keyPoints?.[item.kpIdx || 0] || matchedCard.keyPoints?.[0] || '';
+      slot.innerHTML = `
+        <div class="al-reteach-card" id="al-reteach-box">
+          <div class="al-reteach-tag">💡 לימוד מחדש מתוך השיעור (לפני ניסיון חוזר)</div>
+          <div class="al-reteach-title">${formatRTL(matchedCard.title)}</div>
+          <div class="al-reteach-body">${formatRTL(matchedCard.content, true)}</div>
+          ${kpText ? `
+            <div class="key-points" style="margin-top:8px">
+              <div class="kp"><span>${formatRTL(kpText)}</span></div>
+            </div>
+          ` : ''}
+          <div style="font-size:13px;color:var(--warning);font-weight:700;margin-top:10px">
+            🔄 השאלה תופיע שוב לניסיון חוזר בהמשך הסבב, והנקודה נוספה לתור החזרה המרווחת (1, 3, 7 ו-14 ימים).
+          </div>
+        </div>
+      `;
+      setTimeout(() => slot.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 50);
+    }
+    if (nextBtn) {
+      nextBtn.style.display = 'block';
+      nextBtn.className = 'btn btn-accent';
+      nextBtn.textContent = 'הבנתי את החיזוק — המשך ←';
+    }
+  }
+}
+
+function nextActiveQuizSlide() {
+  if (!ACTIVE_SESSION) return;
+  haptic();
+  ACTIVE_SESSION.quizIdx++;
+  if (ACTIVE_SESSION.quizIdx < ACTIVE_SESSION.quizQueue.length) {
+    renderActiveQuizSlide();
+  } else {
+    goActiveStep(4);
+  }
+}
+
+function finalizeActiveLessonSession() {
+  if (!ACTIVE_SESSION || !ACTIVE_SESSION.lesson) return;
+  const { lesson, marks, quizMissedKeys } = ACTIVE_SESSION;
+  const conceptCards = getConceptCards(lesson);
+  const al = getActiveLearnState();
+  const now = Date.now();
+  const today = todayStr();
+  const enqueuedNow = [];
+
+  conceptCards.forEach((card, cIdx) => {
+    (card.keyPoints || []).forEach((kp, kIdx) => {
+      const key = `${cIdx}_${kIdx}`;
+      const status = quizMissedKeys.has(key) ? 'missed' : (marks[key] || 'got');
+      const itemId = `kp_${lesson.id}_${cIdx}_${kIdx}`;
+      const existingIdx = al.queue.findIndex(x => x.id === itemId);
+
+      if (status === 'missed') {
+        const dueAt = now + ACTIVE_INTERVALS[0] * 86400000;
+        const dueDate = addDaysISO(now, ACTIVE_INTERVALS[0]);
+        const queueItem = {
+          id: itemId,
+          lessonId: lesson.id,
+          chapterId: lesson.chapterId,
+          areaId: lesson.areaId,
+          lessonTitle: lesson.title,
+          conceptTitle: card.title,
+          pointText: kp,
+          referenceText: card.content,
+          stage: 0,
+          intervalDays: ACTIVE_INTERVALS[0], // 1 day
+          intervalsSchedule: ACTIVE_INTERVALS, // [1, 3, 7, 14]
+          dueAt,
+          dueDate,
+          dueDatesSchedule: buildScheduleDates(now),
+          addedDate: today,
+          lastReviewedAt: now,
+          mastered: false
+        };
+        if (existingIdx >= 0) {
+          al.queue[existingIdx] = queueItem;
+        } else {
+          al.queue.push(queueItem);
+        }
+        enqueuedNow.push(queueItem);
+      }
+    });
+  });
+
+  if (!al.completedLessons.includes(lesson.id)) {
+    al.completedLessons.push(lesson.id);
+  }
+  al.checklists[lesson.id] = { ...marks };
+  saveActiveLearnState(al);
+  ACTIVE_SESSION.enqueuedItems = enqueuedNow;
+
+  // Also record lesson completion in main app state so progress rings & checkmarks update
+  let state = getState();
+  const lessonMissionKey = `lesson_${lesson.chapterId}`;
+  if (!state.missionsCompleted.includes(lessonMissionKey)) {
+    state.missionsCompleted.push(lessonMissionKey);
+    state = addXP(state, 30);
+  }
+  const chSubs = getAllSubtopics().filter(s => s.chapterId === lesson.chapterId);
+  chSubs.forEach(s => {
+    const m = getMastery(state, s.id);
+    m.total = Math.max(m.total, 3);
+    m.correct = Math.max(m.correct, 3);
+    m.level = Math.max(m.level, 2);
+    m.nextReview = addDaysISO(now, 3);
+    state.mastery[s.id] = m;
+  });
+  saveState(state);
+}
+
+function renderActiveCompletionStep() {
+  if (!ACTIVE_SESSION) return;
+  const { lesson, marks, enqueuedItems, quizFirstTryCorrect, quizTotalOriginal } = ACTIVE_SESSION;
+  const gotCount = Object.values(marks).filter(v => v === 'got').length;
+  const missedCount = enqueuedItems.length;
+
+  openOverlay(`
+    <div class="ov-hdr">
+      <button class="close-btn" onclick="closeOverlay()" aria-label="סגור">✕</button>
+      <div class="prog-track"><div class="prog-fill" style="width:100%"></div></div>
+      <div class="xp-badge">שלב 4/4</div>
+    </div>
+    ${renderActiveStepsHeader(4)}
+    <div class="ov-body" id="al-step-body">
+      <div class="al-step-hdr">
+        <div class="al-step-kicker">סיכום למידה פעילה · ${formatRTL(lesson.title)}</div>
+        <div class="al-step-title">השיעור הושלם ותור החזרה עודכן!</div>
+        <div class="al-step-desc">כל הנקודות שסימנת "פספסתי" (או שדרשו חיזוק בשאלות) נשמרו בתור החזרה המרווחת המקומי לפי מרווחי 1, 3, 7 ו-14 ימים.</div>
+      </div>
+
+      <div class="c-stats" style="margin-bottom:18px">
+        <div class="c-stat">
+          <div class="c-val" style="color:var(--success)" dir="ltr">${gotCount}</div>
+          <div class="c-lbl">הבנתי ✓</div>
+        </div>
+        <div class="c-stat">
+          <div class="c-val" style="color:var(--warning)" dir="ltr">${missedCount}</div>
+          <div class="c-lbl">בתור חזרה</div>
+        </div>
+        <div class="c-stat">
+          <div class="c-val" dir="ltr">${quizFirstTryCorrect}/${quizTotalOriginal}</div>
+          <div class="c-lbl">ניסיון ראשון</div>
+        </div>
+      </div>
+
+      <div class="al-checklist-card">
+        <div class="al-checklist-hdr">
+          <div class="al-field-label">🗓️ נקודות שנכנסו לתור חזרה מרווחת (1, 3, 7 ו-14 ימים)</div>
+          <span class="al-checklist-prog">${missedCount} נקודות</span>
+        </div>
+        ${missedCount === 0 ? `
+          <div style="padding:14px;text-align:center;color:var(--success);font-weight:600">
+            🎉 שלטת בכל נקודות המפתח בשיעור זה!
+          </div>
+        ` : enqueuedItems.map(item => `
+          <div class="al-queue-card">
+            <div class="al-queue-top">
+              <span class="al-interval-badge">מרווח נוכחי: ${item.intervalDays} ימים (שלב 1 מתוך 4)</span>
+              <span class="al-due-badge">מועד חזרה: <bdi dir="ltr">${formatISOToHe(item.dueDate)}</bdi></span>
+            </div>
+            <div style="font-size:13px;font-weight:700;color:var(--label3);margin-bottom:4px">${formatRTL(item.conceptTitle)}</div>
+            <div style="font-size:15px;color:var(--label);line-height:1.5">${formatRTL(item.pointText)}</div>
+            <div class="al-sched-steps">
+              <span class="al-sched-chip current">יום 1 (${formatISOToHe(item.dueDatesSchedule?.['1d']).slice(0,5)})</span>
+              <span class="al-sched-chip">3 ימים (${formatISOToHe(item.dueDatesSchedule?.['3d']).slice(0,5)})</span>
+              <span class="al-sched-chip">7 ימים (${formatISOToHe(item.dueDatesSchedule?.['7d']).slice(0,5)})</span>
+              <span class="al-sched-chip">14 ימים (${formatISOToHe(item.dueDatesSchedule?.['14d']).slice(0,5)})</span>
+            </div>
+          </div>
+        `).join('')}
+      </div>
+    </div>
+    <div class="ov-footer" style="display:flex;flex-direction:column;gap:10px">
+      <button class="btn btn-accent" id="al-open-review-today-btn" onclick="openActiveReviewToday()">🗓️ פתח מסך "חזרה להיום"</button>
+      <button class="btn btn-ghost" onclick="closeOverlay()">סיום וחזרה</button>
+    </div>
+  `);
+}
+
+// ============================================================
+// "REVIEW TODAY" SCREEN (חזרה להיום)
+// ============================================================
+let ACTIVE_REVIEW_PASS = null;
+
+function openActiveReviewToday() {
+  haptic();
+  ACTIVE_REVIEW_PASS = null;
+  renderActiveReviewTodayScreen();
+}
+
+function renderActiveReviewTodayScreen() {
+  const al = getActiveLearnState();
+  const today = todayStr();
+  const activeItems = al.queue.filter(item => !item.mastered);
+  const dueTodayItems = activeItems.filter(item => item.dueDate && item.dueDate <= today);
+  const upcomingItems = activeItems.filter(item => !item.dueDate || item.dueDate > today);
+  const masteredItems = al.queue.filter(item => item.mastered);
+
+  openOverlay(`
+    <div class="ov-hdr">
+      <button class="close-btn" onclick="closeOverlay()" aria-label="סגור">✕</button>
+      <div style="flex:1;font-size:17px;font-weight:700;text-align:right">חזרה להיום · חזרה מרווחת</div>
+      <div class="xp-badge" dir="ltr">1·3·7·14d</div>
+    </div>
+    <div class="ov-body" id="review-today-body">
+      <div class="al-step-hdr">
+        <div class="al-step-kicker">תור חזרה מרווחת מקומי (אופליין)</div>
+        <div class="al-step-title">חזרה להיום</div>
+        <div class="al-step-desc">נקודות מפתח שפספסת בלמידה פעילה מתוזמנות לחזרה במרווחי <strong>1, 3, 7 ו-14 ימים</strong>. תשובה נכונה מקדמת למרווח הבא; פספוס מחזיר ליום 1.</div>
+      </div>
+
+      <div class="c-stats" style="margin-bottom:18px">
+        <div class="c-stat">
+          <div class="c-val" style="color:var(--warning)" id="rt-due-count" dir="ltr">${dueTodayItems.length}</div>
+          <div class="c-lbl">לביצוע היום</div>
+        </div>
+        <div class="c-stat">
+          <div class="c-val" id="rt-active-count" dir="ltr">${activeItems.length}</div>
+          <div class="c-lbl">סה״כ בתור</div>
+        </div>
+        <div class="c-stat">
+          <div class="c-val" style="color:var(--success)" id="rt-mastered-count" dir="ltr">${masteredItems.length}</div>
+          <div class="c-lbl">הושלמו (14d)</div>
+        </div>
+      </div>
+
+      ${ACTIVE_REVIEW_PASS ? renderActiveReviewPassCard() : ''}
+
+      ${!ACTIVE_REVIEW_PASS && activeItems.length > 0 ? `
+        <div class="al-field-card" style="padding:16px">
+          <div style="font-size:16px;font-weight:700;margin-bottom:6px">
+            ${dueTodayItems.length > 0
+              ? `🎯 יש לך ${dueTodayItems.length} נקודות שהגיע מועד החזרה שלהן היום`
+              : `📚 יש לך ${activeItems.length} נקודות מתוזמנות בתור החזרה המרווחת`}
+          </div>
+          <div style="font-size:14px;color:var(--label3);margin-bottom:12px">
+            תוכל לבצע סבב חזרה עצמית כעת (ניסוח במילים שלך ← בדיקה מול הסבר המקור ← סימון "הבנתי" לקידום המרווח 1, 3, 7 ו-14 ימים או "פספסתי" לאיפוס ליום 1).
+          </div>
+          <button type="button" class="btn btn-accent" id="rt-start-pass-btn" onclick="startActiveReviewPass()">
+            ${dueTodayItems.length > 0 ? `התחל חזרה להיום (${dueTodayItems.length} נקודות) ←` : `תרגל כעת את נקודות התור (${activeItems.length} נקודות) ←`}
+          </button>
+        </div>
+      ` : ''}
+
+      <div class="al-checklist-card">
+        <div class="al-checklist-hdr">
+          <div class="al-field-label">📋 רשימת הנקודות בתור החזרה (1, 3, 7 ו-14 ימים)</div>
+          <span class="al-checklist-prog">${activeItems.length} פעילות</span>
+        </div>
+
+        ${activeItems.length === 0 ? `
+          <div class="empty" style="padding:28px 16px">
+            <div class="empty-e">✨</div>
+            <div class="empty-t">תור החזרה ריק כעת</div>
+            <div class="empty-d">כאשר תסמן "פספסתי" על נקודות מפתח במצב "למד באופן פעיל", הן יופיעו כאן עם תזמון של 1, 3, 7 ו-14 ימים.</div>
+          </div>
+        ` : activeItems.map((item, idx) => {
+          const isDue = item.dueDate && item.dueDate <= today;
+          const stage = item.stage || 0;
+          return `
+            <div class="al-queue-card" id="rt-queue-item-${idx}">
+              <div class="al-queue-top">
+                <span class="al-interval-badge">מרווח: <bdi dir="ltr">${item.intervalDays}d</bdi> (${item.intervalDays === 1 ? 'יום 1' : item.intervalDays + ' ימים'})</span>
+                <span class="al-due-badge ${isDue ? 'due-now' : ''}">
+                  ${isDue ? '🔔 לביצוע היום' : 'מועד הבא:'} <bdi dir="ltr">${formatISOToHe(item.dueDate)}</bdi>
+                </span>
+              </div>
+              <div style="font-size:13px;font-weight:700;color:var(--label3);margin-bottom:4px">
+                ${formatRTL(item.lessonTitle || '')} · ${formatRTL(item.conceptTitle || '')}
+              </div>
+              <div style="font-size:15px;color:var(--label);line-height:1.55;font-weight:500">
+                ${formatRTL(item.pointText)}
+              </div>
+              <div class="al-sched-steps">
+                ${ACTIVE_INTERVALS.map((d, sIdx) => {
+                  const sCls = sIdx === stage ? 'current' : sIdx < stage ? 'completed' : '';
+                  const dKey = `${d}d`;
+                  const dateLbl = item.dueDatesSchedule?.[dKey] ? ` · ${formatISOToHe(item.dueDatesSchedule[dKey]).slice(0,5)}` : '';
+                  return `<span class="al-sched-chip ${sCls}">${sIdx < stage ? '✓ ' : ''}${d === 1 ? 'יום 1' : d + ' ימים'}<bdi dir="ltr">${dateLbl}</bdi></span>`;
+                }).join('')}
+              </div>
+            </div>
+          `;
+        }).join('')}
+      </div>
+    </div>
+    <div class="ov-footer">
+      <button class="btn btn-ghost" onclick="closeOverlay()">סגור וחזור</button>
+    </div>
+  `);
+}
+
+function startActiveReviewPass() {
+  haptic();
+  const al = getActiveLearnState();
+  const today = todayStr();
+  const activeItems = al.queue.filter(item => !item.mastered);
+  const dueItems = activeItems.filter(item => item.dueDate && item.dueDate <= today);
+  const list = dueItems.length > 0 ? dueItems : activeItems;
+  if (!list.length) return;
+  ACTIVE_REVIEW_PASS = {
+    items: list.map(x => x.id),
+    idx: 0,
+    revealed: false,
+    recallText: ''
+  };
+  renderActiveReviewTodayScreen();
+}
+
+function renderActiveReviewPassCard() {
+  if (!ACTIVE_REVIEW_PASS) return '';
+  const al = getActiveLearnState();
+  const curId = ACTIVE_REVIEW_PASS.items[ACTIVE_REVIEW_PASS.idx];
+  const item = al.queue.find(x => x.id === curId);
+  if (!item) {
+    ACTIVE_REVIEW_PASS = null;
+    return '';
+  }
+  const nextStageIdx = Math.min((item.stage || 0) + 1, ACTIVE_INTERVALS.length - 1);
+  const nextIntervalDays = (item.stage || 0) >= ACTIVE_INTERVALS.length - 1 ? 14 : ACTIVE_INTERVALS[nextStageIdx];
+
+  return `
+    <div class="al-field-card" id="rt-active-pass-card" style="border:2px solid var(--accent)">
+      <div class="al-checklist-hdr">
+        <span class="al-pilot-badge">🔄 חזרה פעילה · נקודה ${ACTIVE_REVIEW_PASS.idx + 1} מתוך ${ACTIVE_REVIEW_PASS.items.length}</span>
+        <span class="al-interval-badge">מרווח נוכחי: ${item.intervalDays === 1 ? 'יום 1' : item.intervalDays + ' ימים'}</span>
+      </div>
+      <div style="font-size:14px;font-weight:700;color:var(--label3);margin-bottom:4px">${formatRTL(item.lessonTitle)}</div>
+      <div style="font-size:18px;font-weight:700;color:var(--label);margin-bottom:10px">${formatRTL(item.conceptTitle)}</div>
+      <div style="font-size:14px;color:var(--label2);margin-bottom:10px">נסח לעצמך במילים שלך את נקודת המפתח של מושג זה לפני חשיפת המקור:</div>
+      <textarea
+        id="rt-recall-input"
+        class="al-textarea"
+        style="min-height:88px;margin-bottom:12px"
+        placeholder="כתוב בקצרה מה שאתה זוכר על נקודה זו..."
+        oninput="if(ACTIVE_REVIEW_PASS) ACTIVE_REVIEW_PASS.recallText = this.value"
+      >${escapeHtml(ACTIVE_REVIEW_PASS.recallText || '')}</textarea>
+
+      ${!ACTIVE_REVIEW_PASS.revealed ? `
+        <button type="button" class="btn btn-accent" id="rt-reveal-btn" onclick="revealReviewPassAnswer()">הצג נקודת מפתח והסבר מקור ←</button>
+      ` : `
+        <div class="al-ref-box" style="margin-bottom:14px">
+          <span class="al-box-tag">🎯 נקודת המפתח לבדיקה</span>
+          <div style="font-size:16px;font-weight:700;color:var(--label);margin-bottom:10px;line-height:1.5">${formatRTL(item.pointText)}</div>
+          <div style="font-size:14px;color:var(--label2);line-height:1.55;border-top:.5px solid var(--sep);padding-top:8px">
+            <strong>הסבר המקור מהשיעור:</strong> ${formatRTL(item.referenceText, true)}
+          </div>
+        </div>
+        <div class="al-kp-actions">
+          <button type="button" class="al-kp-btn got active" id="rt-grade-got-btn" onclick="gradeActiveReviewItem('${item.id}', 'got')">
+            ✓ הבנתי (${(item.stage || 0) >= 3 ? 'סיים מסלול 14d' : `קדם ל-${nextIntervalDays} ימים`})
+          </button>
+          <button type="button" class="al-kp-btn missed active" id="rt-grade-missed-btn" onclick="gradeActiveReviewItem('${item.id}', 'missed')">
+            ✗ פספסתי (חזור ליום 1)
+          </button>
+        </div>
+      `}
+    </div>
+  `;
+}
+
+function revealReviewPassAnswer() {
+  if (!ACTIVE_REVIEW_PASS) return;
+  haptic();
+  ACTIVE_REVIEW_PASS.revealed = true;
+  renderActiveReviewTodayScreen();
+}
+
+function gradeActiveReviewItem(itemId, result) {
+  haptic();
+  const al = getActiveLearnState();
+  const idx = al.queue.findIndex(x => x.id === itemId);
+  if (idx < 0) return;
+
+  const now = Date.now();
+  const item = al.queue[idx];
+  if (result === 'got') {
+    if ((item.stage || 0) >= ACTIVE_INTERVALS.length - 1) {
+      item.mastered = true;
+      item.lastReviewedAt = now;
+    } else {
+      const nextStage = (item.stage || 0) + 1;
+      const nextDays = ACTIVE_INTERVALS[nextStage];
+      item.stage = nextStage;
+      item.intervalDays = nextDays;
+      item.dueAt = now + nextDays * 86400000;
+      item.dueDate = addDaysISO(now, nextDays);
+      item.lastReviewedAt = now;
+    }
+  } else {
+    item.stage = 0;
+    item.intervalDays = ACTIVE_INTERVALS[0]; // 1 day
+    item.dueAt = now + ACTIVE_INTERVALS[0] * 86400000;
+    item.dueDate = addDaysISO(now, ACTIVE_INTERVALS[0]);
+    item.dueDatesSchedule = buildScheduleDates(now);
+    item.lastReviewedAt = now;
+    item.mastered = false;
+  }
+  al.queue[idx] = item;
+  saveActiveLearnState(al);
+
+  if (ACTIVE_REVIEW_PASS) {
+    ACTIVE_REVIEW_PASS.idx++;
+    ACTIVE_REVIEW_PASS.revealed = false;
+    ACTIVE_REVIEW_PASS.recallText = '';
+    if (ACTIVE_REVIEW_PASS.idx >= ACTIVE_REVIEW_PASS.items.length) {
+      ACTIVE_REVIEW_PASS = null;
+      showToast('סבב החזרה הושלם והמועדים עודכנו!');
+    }
+  }
+  renderActiveReviewTodayScreen();
 }
 
 // ============================================================
@@ -1688,8 +3063,11 @@ function renderGameChallenge() {
       <div class="xp-badge" dir="ltr" style="color:var(--label4)">🔥 ${GAME_COMBO}</div>
     </div>
     <div class="ov-body">
-      <div style="font-size:13px;font-weight:600;color:var(--label3);margin-bottom:10px;text-transform:uppercase">
-        ${ch.type === 'TEACH' ? 'לימוד' : ch.type === 'TRUE_FALSE' ? 'נכון או שקר?' : ch.type === 'FILL_BLANK' ? 'השלם את החסר' : ch.type === 'SORT_ORDER' ? 'סדר את השלבים' : 'בחר את התשובה הנכונה'}
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:10px">
+        <div style="font-size:13px;font-weight:600;color:var(--label3);text-transform:uppercase">
+          ${ch.type === 'TEACH' ? 'לימוד' : ch.type === 'TRUE_FALSE' ? 'נכון או שקר?' : ch.type === 'FILL_BLANK' ? 'השלם את החסר' : ch.type === 'SORT_ORDER' ? 'סדר את השלבים' : 'בחר את התשובה הנכונה'}
+        </div>
+        ${CUR_LESSON ? `<button type="button" class="al-clear-btn" onclick="startActiveLesson('${CUR_LESSON.chapterId}')">🧠 עבור ללמידה פעילה</button>` : ''}
       </div>
       ${contentHtml}
       <div id="reteach-area"></div>
@@ -1993,6 +3371,7 @@ function openOverlay(html) {
 function closeOverlay() {
   document.getElementById('overlay').style.display = 'none';
   CUR_LESSON = null; FUQ = []; SESSION_QS = [];
+  ACTIVE_SESSION = null; ACTIVE_REVIEW_PASS = null;
   renderHome();
   renderExplore();
   renderProgress();
