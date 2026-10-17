@@ -2,7 +2,7 @@
 // SERVICE WORKER — Med-Exam Trainer PWA
 // =====================================================================
 
-const CACHE_NAME = 'medexam-v32';
+const CACHE_NAME = 'medexam-v33';
 const STATIC_ASSETS = [
   '/',
   '/index.html',

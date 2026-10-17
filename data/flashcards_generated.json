@@ -144,7 +144,7 @@
     {
       "deckId": "biochemistry-ch-05",
       "front": "הידרוליזה ATP ב-Myosin",
-      "back": "הידרוליזה של ATP ל-ADP ו-Pi גורמת לשינוי קונפורמציה. השינוי מאפשר שחרור של Myosin מה-Actin."
+      "back": "הידרוליזה של ATP ל-ADP ו-Pi בראש ה-Myosin המנותק גורמת לשינוי קונפורמציה ולהזדקפות הראש למצב עתיר-אנרגיה (Cocked state) לקראת קישור מחדש ל-Actin."
     },
     {
       "deckId": "biochemistry-ch-05",
@@ -224,7 +224,7 @@
     {
       "deckId": "biochemistry-ch-07",
       "front": "Proteoglycans",
-      "back": "GAG מצורף לחלבון בקישור O-linked ל-Ser או Thr. הקישור מתרחש דרך רצף טטרא-סוכר (Xyl-Gal-GlcA-GlcA)."
+      "back": "GAG מצורף לחלבון בקישור O-linked ל-Ser. הקישור מתרחש דרך רצף טטרא-סוכר קבוע (Xyl-Gal-Gal-GlcA)."
     },
     {
       "deckId": "biochemistry-ch-07",
@@ -289,7 +289,7 @@
     {
       "deckId": "biochemistry-ch-13",
       "front": "טרנסאמינציה",
-      "back": "העברת קבוצת אמין מ-α-ketoacid לאמינו-חומצה. בדרך כלל Glutamate נותן את הקבוצה ל-Pyruvate."
+      "back": "העברת קבוצת אמינו מחומצת אמינו תורמת לחומצת אלפא-קטו קולטת (α-keto acid). למשל, העברת אמין מ-Alanine ל-α-ketoglutarate ליצירת Pyruvate ו-Glutamate."
     },
     {
       "deckId": "biochemistry-ch-13",
@@ -304,7 +304,7 @@
     {
       "deckId": "biochemistry-ch-13",
       "front": "Complex I",
-      "back": "מעביר אלקטרונים עם פוטנציאל E°' גבוה יותר. תורם יותר ל-Δp מאשר Complex II."
+      "back": "מקבל אלקטרונים מ-NADH בעל פוטנציאל חיזור שלילי יותר (הפרש פוטנציאלים ΔE°' גדול יותר לעומת FADH₂), ולכן תורם יותר למפל הפרוטונים (Δp) מאשר Complex II."
     },
     {
       "deckId": "biochemistry-ch-13",
@@ -319,7 +319,7 @@
     {
       "deckId": "biochemistry-ch-14",
       "front": "PEPCK",
-      "back": "מקטלזת המרת OAA ל-PEP. משתמשת ב-GTP או ATP וב-CO₂."
+      "back": "מקטלזת המרת Oxaloacetate (OAA) ל-PEP בגלוקונאוגנזה תוך צריכת GTP ושחרור CO₂ (דקרבוקסילציה)."
     },
     {
       "deckId": "biochemistry-ch-14",
@@ -354,7 +354,7 @@
     {
       "deckId": "biochemistry-ch-14",
       "front": "גלוקגון ו-PFK-2",
-      "back": "גלוקגון מפעיל קינאז-2 של PFK-2/FBPase-2. זה מוריד את פעילות PFK-2 ומעלה Fructose-2,6-bisphosphate."
+      "back": "גלוקגון מפעיל את PKA המזרחן את האנזים הדו-תפקודי PFK-2/FBPase-2. הזרחון משבית את PFK-2 ומשפעל את FBPase-2, מה שמוריד את רמת Fructose-2,6-bisphosphate ומעכב גליקוליזה."
     },
     {
       "deckId": "biochemistry-ch-14",
@@ -364,7 +364,7 @@
     {
       "deckId": "biochemistry-ch-14",
       "front": "Transketolase",
-      "back": "מעביר קבוצה של שני פחמימות. מייצר סדוהפטולוז-7-פוספט ו-G3P."
+      "back": "מעביר יחידה דו-פחמנית (2 פחמנים) בתלות בקו-פקטור TPP במסלול הפנטוזות הלא-חמצוני."
     },
     {
       "deckId": "biochemistry-ch-15",
@@ -643,8 +643,8 @@
     },
     {
       "deckId": "molecular-biology-ch-04",
-      "front": "כרומטיד",
-      "back": "במיטוזה הכרומוזום מורכב משני כרומטידים אחידים. כל אחד הוא העותק המלא של ה-DNA."
+      "front": "כרומטידות אחיות (Sister chromatids)",
+      "back": "במיטוזה הכרומוזום המשוכפל מורכב משתי כרומטידות אחיות (Sister chromatids) זהות המחוברות באמצעות קוהזין (Cohesin)."
     },
     {
       "deckId": "molecular-biology-ch-04",
@@ -1148,8 +1148,8 @@
     },
     {
       "deckId": "cell-biology-ch-17",
-      "front": "חילופי חומרים",
-      "back": "מתרחש בשלב ה-pachytene (פכיטן) של Prophase I במיוזה. מוביל ליצירת כרומוזומים רקומביננטיים ומגביר שונות גנטית."
+      "front": "שחלוף כרומוזומלי (Crossing over)",
+      "back": "רקומבינציה הומולוגית המתרחשת בשלב ה-pachytene (פכיטן) של Prophase I במיוזה. מובילה ליצירת כרומוזומים רקומביננטיים ומגבירה שונות גנטית."
     },
     {
       "deckId": "cell-biology-ch-17",
