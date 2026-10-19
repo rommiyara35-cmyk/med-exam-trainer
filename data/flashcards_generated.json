@@ -2405,6 +2405,156 @@
       "deckId": "biochemistry-ch-13",
       "front": "Flavin Nucleotides: FAD and FMN / Semiquinone Radical (פלאבין נוקלאוטידים ורדיקל סמיקווינון)",
       "back": "קבוצות פרוסטטיות הקשורות בחוזקה לפלאבופרוטאינים ונגזרות מריבופלאבין (ויטמין B2); מסוגלות לקלוט אלקטרון אחד ליצירת רדיקל סמיקווינון (Semiquinone) יציב או שני אלקטרונים (FADH2/FMNH2), ובכך מהוות גשר מולקולרי בין תורמי שני אלקטרונים לקולטי אלקטרון בודד."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "Glycolysis Overview (גליקוליזה: סקירה ומאזן כולל)",
+      "back": "מסלול קטבולי מרכזי בציטוזול שבו מולקולת גלוקוז אחת (6 פחמנים) מפורקת ל-2 מולקולות פירובט (3 פחמנים), תוך הפקת רווח נקי של 2 מולקולות ATP ו-2 מולקולות NADH."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "Preparatory Phase of Glycolysis (שלב ההכנה / השקעת האנרגיה בגליקוליזה)",
+      "back": "חמשת השלבים הראשונים של הגליקוליזה (שלבים 1–5), שבהם מושקעות 2 מולקולות ATP לזרחון והפעלת סוכר ההקסוז, המבוקע בסיומו לשתי מולקולות טריוז פוספט (G3P ו-DHAP)."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "Payoff Phase of Glycolysis (שלב הרווח האנרגטי בגליקוליזה)",
+      "back": "חמשת השלבים האחרונים של הגליקוליזה (שלבים 6–10), שבהם שתי מולקולות G3P מומרות לשתי מולקולות פירובט, תוך ייצור של 4 מולקולות ATP (רווח נקי של 2 ATP) ו-2 מולקולות NADH."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "Hexokinase (הקסוקינאז - שלב 1 בגליקוליזה)",
+      "back": "אנזים המזרז זרחון בלתי-הפיך של גלוקוז ל-Glucose 6-phosphate תוך צריכת ATP ויוני Mg2+; פעולה זו לוכדת את הגלוקוז בתוך התא ושומרת על מפל ריכוזים המאפשר המשך כניסת גלוקוז."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "Phosphohexose Isomerase (פוספוהקסוז איזומראז - שלב 2 בגליקוליזה)",
+      "back": "אנזים המזרז איזומריזציה הפיכה של אלדוז (Glucose 6-phosphate) לקטוז (Fructose 6-phosphate) דרך חומר ביניים מסוג enediol, לקראת זרחון נוסף בעמדה C-1 וביקוע אלדול סימטרי."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "Phosphofructokinase-1 / PFK-1 (פוספופרוקטוקינאז-1 - שלב 3 בגליקוליזה)",
+      "back": "אנזים המזרז זרחון בלתי-הפיך של Fructose 6-phosphate ל-Fructose 1,6-bisphosphate תוך צריכת ATP; מהווה את שלב המחויבות העיקרי (Committed step) ואתר הבקרה המרכזי של מסלול הגליקוליזה."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "Aldolase (אלדולאז - שלב 4 בגליקוליזה)",
+      "back": "אנזים המזרז ביקוע אלדול הפיך של Fructose 1,6-bisphosphate (הקסוז) לשני תוצרי טריוז פוספט שונים: Glyceraldehyde 3-phosphate (G3P) ו-Dihydroxyacetone phosphate (DHAP)."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "Triose Phosphate Isomerase / TPI (טריוז פוספט איזומראז - שלב 5 בגליקוליזה)",
+      "back": "אנזים המזרז המרה הפיכה ומהירה של DHAP ל-Glyceraldehyde 3-phosphate (G3P); בזכותו שני חצאי מולקולת הגלוקוז ממשיכים יחד לשלב הרווח האנרגטי במסלול אחיד."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "Glyceraldehyde 3-Phosphate Dehydrogenase / GAPDH (גליצראלדהיד 3-פוספט דהידרוגנאז - שלב 6 בגליקוליזה)",
+      "back": "אנזים המזרז חמצון וזרחון של G3P ל-1,3-Bisphosphoglycerate תוך חיזור NAD+ ל-NADH ושימוש בפוספט אנאורגני (Pi); הריאקציה מערבת שייר Cys פעיל ויצירת קשר תיו-אסטר כתוצר ביניים עתיר אנרגיה."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "Phosphoglycerate Kinase (פוספוגליצרט קינאז - שלב 7 בגליקוליזה)",
+      "back": "אנזים המזרז העברת קבוצת פוספוריל מ-1,3-Bisphosphoglycerate ל-ADP ליצירת ATP ו-3-Phosphoglycerate; שלב זה מהווה את הדוגמה הראשונה לזרחון ברמת הסובסטרט (Substrate-level phosphorylation) בגליקוליזה."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "Phosphoglycerate Mutase (פוספוגליצרט מוטאז - שלב 8 בגליקוליזה)",
+      "back": "אנזים המזרז העברה הפיכה של קבוצת פוספוריל מפחמן C-3 לפחמן C-2 של 3-Phosphoglycerate לקבלת 2-Phosphoglycerate; המנגנון דורש שייר His מזורחן באתר הפעיל ותוצר ביניים 2,3-Bisphosphoglycerate (2,3-BPG)."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "Enolase (אנולאז - שלב 9 בגליקוליזה)",
+      "back": "אנזים המזרז דהידרטציה הפיכה (סילוק מולקולת מים) מ-2-Phosphoglycerate ליצירת Phosphoenolpyruvate (PEP), תוך יצירת תרכובת בעלת פוטנציאל העברת פוספט גבוה ביותר."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "Pyruvate Kinase (פירובט קינאז - שלב 10 בגליקוליזה)",
+      "back": "אנזים המזרז העברה בלתי-הפיכה של קבוצת פוספוריל מ-PEP ל-ADP ליצירת ATP ופירובט; מהווה את שלב הזרחון השני ברמת הסובסטרט ודורש יוני Mg2+ ו-K+ לפעילותו."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "Lactic Acid Fermentation (תסיסה לקטית)",
+      "back": "מסלול אנאירובי שבו פירובט מחוזר ל-L-Lactate ע\"י האנזים Lactate Dehydrogenase (LDH) תוך חמצון מולקולת NADH חזרה ל-NAD+, מה שמאפשר את המשך פעילות הגליקוליזה בהיעדר חמצן."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "Ethanol Fermentation (תסיסה כהלית)",
+      "back": "מסלול אנאירובי דו-שלבי בשמרים שבו פירובט עובר דקרבוקסילציה בלתי-הפיכה לאצטאלדהיד ע\"י Pyruvate Decarboxylase, ולאחר מכן אצטאלדהיד מחוזר לאתנול ע\"י Alcohol Dehydrogenase תוך חידוש NAD+."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "Thiamine Pyrophosphate / TPP in Pyruvate Decarboxylation (תיאמין פירופוספט בפירובט דקרבוקסילאז)",
+      "back": "קואנזים הנגזר מוויטמין B1, בעל טבעת תיאזוליום המייצרת קרבניון יציב לתקיפה נוקלאופילית של פחמן קרבונילי; חיוני לביקוע ודקרבוקסילציה של חומצות אלפא-קטו כגון פירובט."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "Warburg Effect / Aerobic Glycolysis (אפקט ורבורג / גליקוליזה אירובית בגידולים)",
+      "back": "תופעה שבה תאי גידול סרטניים צורכים גלוקוז ומבצעים גליקוליזה בקצב מהיר עד פי 10 מתאים רגילים, ומייצרים לקטאט גם בנוכחות שופעת של חמצן; מהווה את הבסיס לדימות גידולים באמצעות PET סריקה עם 18F-FDG."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "Gluconeogenesis Overview (גלוקונאוגנזה: סקירה ומצעים עיקריים)",
+      "back": "מסלול ביוסינתזה אנבולי שבו גלוקוז מיוצר מקדמנים לא-פחמימתיים (פירובט, לקטאט, גליצרול וחומצות אמינו גלוקוגניות); מתרחש בעיקר בכבד (ובמידה פחותה בקורטקס הכליה) לשמירה על רמת סוכר קבועה בדם."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "Pyruvate Carboxylase (פירובט קרבוקסילאז - מעקף 1א בגלוקונאוגנזה)",
+      "back": "אנזים מיטוכונדריאלי הממיר פירובט לאוקסלואצטט תוך צריכת ATP ו-CO2 (ביקרבונט); דורש ביוטין (Biotin) כזרוע נשאית של CO2 ומשופעל אלוסטרית באופן מוחלט ע\"י Acetyl-CoA."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "PEP Carboxykinase / PEPCK (פוספואנולפירובט קרבוקסיקינאז - מעקף 1ב בגלוקונאוגנזה)",
+      "back": "אנזים המזרז המרה של אוקסלואצטט לפוספואנולפירובט (PEP) תוך צריכת מולקולת GTP ושחרור CO2 (דה-קרבוקסילציה מניעה את הזרחון האנדרגוני); מעביר את תוצרי המיטוכונדריה לציטוזול."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "Fructose 1,6-Bisphosphatase-1 / FBPase-1 (פרוקטוז 1,6-ביספוספטאז-1 - מעקף 2 בגלוקונאוגנזה)",
+      "back": "אנזים התלוי ביוני Mg2+ המזרז הידרוליזה בלתי-הפיכה של Fructose 1,6-bisphosphate ל-Fructose 6-phosphate ולפוספט אנאורגני (Pi), תוך עקיפת השלב הבלתי-הפיך של PFK-1 ללא יצירת ATP."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "Glucose 6-Phosphatase (גלוקוז 6-פוספטאז - מעקף 3 בגלוקונאוגנזה)",
+      "back": "אנזים הממוקם בלומן של הרשת האנדופלזמטית (ER) בכבד ובכליות, המזרז הידרוליזה של Glucose 6-phosphate לגלוקוז חופשי ו-Pi; מאפשר שחרור גלוקוז לדם ונעדר מרקמות שריר ומוח."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "Energetic Cost of Gluconeogenesis (עלות אנרגטית של הגלוקונאוגנזה)",
+      "back": "סינתזה של מולקולת גלוקוז אחת משתי מולקולות פירובט דורשת השקעה של 4 ATP, 2 GTP ו-2 NADH (סה\"כ שישה קשרים עתירי אנרגיה); השקעה תרמודינמית כבדה זו הופכת את המסלול לאקסרגוני ובלתי-הפיך פיזיולוגית."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "Coordinated Allosteric Regulation of PFK-1 and FBPase-1 (בקרה אלוסטרית מתואמת של PFK-1 ו-FBPase-1)",
+      "back": "בקרת מפתח למניעת Futile cycle: PFK-1 משופעל אלוסטרית ע\"י AMP ומעוכב ע\"י ATP וציטראט; לעומתו FBPase-1 מעוכב אלוסטרית בחוזקה ע\"י AMP, כך שרמת אנרגיה תאית נמוכה מפעילה גליקוליזה ומכבה גלוקונאוגנזה."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "Fructose 2,6-Bisphosphate / F-2,6-BP (פרוקטוז 2,6-ביספוספט כמבקר אלוסטרי עיקרי)",
+      "back": "מבקר אלוסטרי רב-עוצמה הנוצר בכבד, המשפעל בחוזקה את PFK-1 (מגביר זיקה ל-F6P ומבטל עיכוב ע\"י ATP) ומעכב את FBPase-1; ריכוזו קובע האם הכבד יבצע גליקוליזה או גלוקונאוגנזה."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "Bifunctional Enzyme PFK-2/FBPase-2 (האנזים הדו-תפקודי PFK-2/FBPase-2 ובקרה הורמונלית)",
+      "back": "חלבון יחיד בעל שני אתרים קטליטיים מנוגדים: זרחון בתיווך גלוקגון ו-PKA משפעל את FBPase-2 ומעכב את PFK-2 (מוריד F-2,6-BP ומעודד גלוקונאוגנזה); דה-זרחון בתיווך אינסולין מפעיל את PFK-2 (מעלה F-2,6-BP ומעודד גליקוליזה)."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "Regulation of Liver Pyruvate Kinase (בקרת פירובט קינאז בכבד)",
+      "back": "האיזוזים הכבדי (L isozyme) של פירובט קינאז מעוכב ע\"י זרחון בתיווך PKA בתגובה לגלוקגון כדי למנוע צריכת גלוקוז בצום; בנוסף, הוא משופעל אלוסטרית ע\"י Fructose 1,6-bisphosphate (הזנה קדימה) ומעוכב ע\"י ATP ואלנין."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "Pentose Phosphate Pathway: Oxidative Phase (מסלול הפנטוזות: שלב חמצוני)",
+      "back": "שני שלבי חמצון בלתי-הפיכים הממירים Glucose 6-phosphate ל-Ribulose 5-phosphate ו-CO2 ע\"י G6PD ו-6-Phosphogluconate Dehydrogenase, תוך הפקת 2 מולקולות NADPH החיוניות להגנה מעקה חמצונית ולביוסינתזה."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "Pentose Phosphate Pathway: Nonoxidative Phase (מסלול הפנטוזות: שלב לא-חמצוני)",
+      "back": "שלב הפיך הממחזר פנטוזות פוספט להקסוזות פוספט (Fructose 6-phosphate ו-G3P) כאשר יש עודף פנטוזות; מזורז ע\"י Transketolase (מעביר 2 פחמנים, תלוי ב-TPP) ו-Transaldolase (מעביר 3 פחמנים)."
+    },
+    {
+      "deckId": "biochemistry-ch-14",
+      "front": "Glucose 6-Phosphate Dehydrogenase Deficiency and Favism (חסר ב-G6PD ופאביזם)",
+      "back": "פגם תורשתי בתאחיזה ל-X שבו מחסור ב-NADPH פוגע בחידוש גלוטתיון מחוזר (GSH) באריתרוציטים; חשיפה לפול (Fava beans) או לתרופות מחמצנות גורמת לפרוקסידציה של ליפידים ממברנליים ולהמוליזה חריפה."
     }
   ]
 }
