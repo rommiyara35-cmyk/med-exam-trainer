@@ -2705,6 +2705,156 @@
       "deckId": "biochemistry-ch-16",
       "front": "Regulation of the Citric Acid Cycle (בקרת מעגל קרבס)",
       "back": "המעגל מבוקר בשלושת שלביו הבלתי-הפיכים (Citrate synthase, Isocitrate dehydrogenase ו-alpha-KGDH); מעוכב ע\"י מדדי מטען אנרגטי גבוהים (ATP, NADH, Acetyl-CoA, Succinyl-CoA) ומשופעל ע\"י ADP ויוני Ca2+ (המאותתים על צורך בהפקת אנרגיה)."
+    },
+    {
+      "deckId": "biochemistry-ch-17",
+      "front": "Hormonal Mobilization of Triacylglycerols (גיוס טריאצילגליצרולים ע\"י הורמונים)",
+      "back": "גלוקגון ואפינפרין מפעילים PKA, המזרחן את חלבוני הפריליפין (Perilipin) על מעטפת טיפת השומן ואת הורמון-סנסיטיב ליפאז (HSL); שינוי זה מאפשר לליפאזות (ATGL, HSL, MGL) לפרק טריאצילגליצרולים לשלוש חומצות שומן חופשיות וגליצרול."
+    },
+    {
+      "deckId": "biochemistry-ch-17",
+      "front": "Fatty Acid Transport by Serum Albumin (הובלת חומצות שומן בדם ע\"י סרום אלבומין)",
+      "back": "חומצות שומן חופשיות אינן מסיסות בדם ונקשרות באופן לא-קוולנטי לחלבון סרום אלבומין (Serum albumin), המסוגל לשאת מספר מולקולות חומצת שומן לכל מולקולת חלבון ומסיע אותן מרקמת השומן אל רקמות היעד (שריר, לב, כבד)."
+    },
+    {
+      "deckId": "biochemistry-ch-17",
+      "front": "Fatty Acid Activation: Fatty Acyl-CoA Synthetase (הפעלת חומצות שומן ע\"י אציל-CoA סינתטאז)",
+      "back": "אנזים בממברנת המיטוכונדריה החיצונית הממיר חומצת שומן ל-Fatty acyl-CoA תוך שימוש ב-ATP ושחרור AMP ופירופוספט (PPi); הידרוליזת PPi לשני Pi ע\"י פירופוספטאז הופכת את התהליך לבלתי-הפיך (עלות של 2 קשרים עתירי אנרגיה, שווה-ערך ל-2 ATP)."
+    },
+    {
+      "deckId": "biochemistry-ch-17",
+      "front": "Carnitine Shuttle (שאטל הקרניטין לכניסה למיטוכונדריה)",
+      "back": "מנגנון הובלת חומצות שומן ארוכות (מעל 12 פחמנים) לתוך המטריקס: Carnitine Palmitoyltransferase I (CPT-I) ממיר Acyl-CoA ל-Acyl-carnitine; טרנסלוקאז מעבירו דרך הממברנה הפנימית; ו-CPT-II במטריקס משחזר Fatty acyl-CoA וקרניטין חופשי."
+    },
+    {
+      "deckId": "biochemistry-ch-17",
+      "front": "Regulation of Carnitine Shuttle by Malonyl-CoA (בקרת שאטל הקרניטין ע\"י מלוניל-CoA)",
+      "back": "האנזים CPT-I מעוכב אלוסטרית בחוזקה ע\"י Malonyl-CoA (תוצר הביניים הראשון בביוסינתזת חומצות שומן בכבד); בקרה זו מונעת פירוק חומצות שומן בבטא חמצון במקביל לסינתזתן כשיש שפע פחמימות (מניעת Futile cycle)."
+    },
+    {
+      "deckId": "biochemistry-ch-17",
+      "front": "Beta-Oxidation Step 1: Acyl-CoA Dehydrogenase (בטא חמצון שלב 1: אציל-CoA דהידרוגנאז)",
+      "back": "אנזים המזרז דה-הידרוגנציה של Fatty acyl-CoA ליצירת קשר כפול טרנס בין פחמנים C-2 ו-C-3 (trans-Delta2-enoyl-CoA) תוך חיזור FAD הקשור ל-FADH2; האלקטרונים מועברים לשרשרת הנשימה באמצעות ETF (Electron-transferring flavoprotein)."
+    },
+    {
+      "deckId": "biochemistry-ch-17",
+      "front": "Beta-Oxidation Step 2: Enoyl-CoA Hydratase (בטא חמצון שלב 2: אנואיל-CoA הידרטאז)",
+      "back": "אנזים המזרז הידרטציה סטריאוספציפית (הוספת מולקולת מים) על פני הקשר הכפול הטרנס לקבלת L-beta-hydroxyacyl-CoA; האנזים אינו פועל על איזומרים בתצורת ציס."
+    },
+    {
+      "deckId": "biochemistry-ch-17",
+      "front": "Beta-Oxidation Step 3: beta-Hydroxyacyl-CoA Dehydrogenase (בטא חמצון שלב 3: בטא-הידרוקסיאציל-CoA דהידרוגנאז)",
+      "back": "אנזים המזרז חמצון של קבוצת ההידרוקסיל בפחמן בטא לקבוצת קטו לקבלת beta-ketoacyl-CoA, תוך חיזור NAD+ ל-NADH המעביר אלקטרונים ישירות לקומפלקס I בשרשרת הנשימה."
+    },
+    {
+      "deckId": "biochemistry-ch-17",
+      "front": "Beta-Oxidation Step 4: Thiolase / Acyl-CoA Acetyltransferase (בטא חמצון שלב 4: תיאולאז)",
+      "back": "אנזים המזרז ביקוע תיאוליטי (Thiolysis) של beta-ketoacyl-CoA בעזרת מולקולת CoA-SH חופשית; משחרר מולקולת Acetyl-CoA (2 פחמנים) ומותיר Fatty acyl-CoA מקוצר בשני פחמנים המוכן לסיבוב הבא."
+    },
+    {
+      "deckId": "biochemistry-ch-17",
+      "front": "ATP Yield from Palmitate Oxidation (מאזן אנרגטי של חמצון חומצה פלמיטית)",
+      "back": "חומצה פלמיטית (16:0) עוברת 7 מחזורי בטא חמצון ומפיקה 8 Acetyl-CoA, 7 FADH2 ו-7 NADH; לאחר חמצונם במעגל קרבס ובשרשרת הנשימה והפחתת 2 ATP עבור שלב ההפעלה, מתקבל רווח נקי של 106 (או 108) מולקולות ATP."
+    },
+    {
+      "deckId": "biochemistry-ch-17",
+      "front": "Oxidation of Odd-Chain Fatty Acids (חמצון חומצות שומן בעלות מספר פחמנים אי-זוגי)",
+      "back": "המחזור האחרון של בטא חמצון מפיק מולקולת Acetyl-CoA (2 פחמנים) ומולקולת Propionyl-CoA (3 פחמנים); פרופיוניל-CoA מומר ל-Succinyl-CoA הנכנס למעגל קרבס בעזרת שלושה אנזימים הדורשים ביוטין וויטמין B12."
+    },
+    {
+      "deckId": "biochemistry-ch-17",
+      "front": "Auxiliary Enzymes for Unsaturated Fatty Acids (אנזימי עזר לחמצון חומצות שומן בלתי-רוויות)",
+      "back": "חומצות שומן טבעיות מכילות קשרי ציס הדורשים שני אנזימי עזר: enoyl-CoA isomerase (הממיר קשר כפול cis-Delta3 ל-trans-Delta2 המתאים להידרטאז), ו-2,4-dienoyl-CoA reductase (אנזים תלוי NADPH המטפל בקשרים כפולים מצומדים בחומצות רב-בלתי-רוויות)."
+    },
+    {
+      "deckId": "biochemistry-ch-17",
+      "front": "Ketone Bodies Synthesis in Liver (גופי קטון: הרכב וסינתזה בכבד)",
+      "back": "שלוש תרכובות מסיסות מים (Acetoacetate, D-beta-hydroxybutyrate, ו-Acetone) המיוצרות במיטוכונדריה של הכבד מעודפי Acetyl-CoA (דרך תוצר ביניים HMG-CoA) כאשר ריכוז אוקסלואצטט נמוך עקב גלוקונאוגנזה פעילה."
+    },
+    {
+      "deckId": "biochemistry-ch-17",
+      "front": "Extrahepatic Utilization of Ketone Bodies (ניצול גופי קטון ברקמות חוץ-כבדיות)",
+      "back": "רקמות חוץ-כבדיות (שריר שלד, לב, ומוח בצום) ממירות אצטואצטט לשתי מולקולות Acetyl-CoA בעזרת האנזים beta-ketoacyl-CoA transferase (Thiophorase), המעביר CoA מסוקציניל-CoA; אנזים זה חסר בכבד, ולכן הכבד מייצר גופי קטון אך אינו מנצלם."
+    },
+    {
+      "deckId": "biochemistry-ch-17",
+      "front": "Ketoacidosis in Diabetes and Starvation (חמצת קטוטית בסוכרת וברעב)",
+      "back": "בסוכרת לא-מאוזנת (חוסר אינסולין) או ברעב ממושך, ליפוליזה בלתי-מבוקרת וגלוקונאוגנזה מוגברת גורמות לייצור מסיבי של גופי קטון בכבד; הצטברותם בדם מעבר ליכולת הניצול מורידה את pH הדם (חמצת מטבולית) ומלווה בריח אצטון בנשימה."
+    },
+    {
+      "deckId": "biochemistry-ch-18",
+      "front": "Transamination Reactions and Aminotransferases (תגובות טרנסאמינציה ואמינוטרנספראזות)",
+      "back": "אנזימים המזרזים העברה הפיכה של קבוצת אלפא-אמינו מחומצת אמינו אל alpha-Ketoglutarate לקבלת אלפא-קטואסיד וגלוטמאט (Glutamate); גלוטמאט פועל כנקודת איסוף מרכזית לקבוצות אמינו בתא לקראת הפרשת חנקן."
+    },
+    {
+      "deckId": "biochemistry-ch-18",
+      "front": "Pyridoxal Phosphate / PLP in Transamination (פירידוקסל פוספט בטרנסאמינציה)",
+      "back": "קואנזים חיוני הנגזר מוויטמין B6, הפועל כנשא ביניים של קבוצת האמינו באתר הפעיל; הוא קושר את קבוצת האמינו תוך יצירת Pyridoxamine phosphate (PMP), ולאחר מכן מוסר אותה לחומצת האלפא-קטו המקבלת כדי לשחזר את צורת ה-PLP."
+    },
+    {
+      "deckId": "biochemistry-ch-18",
+      "front": "Oxidative Deamination: Glutamate Dehydrogenase (דה-אמינציה חמצונית: גלוטמאט דהידרוגנאז)",
+      "back": "אנזים במיטוכונדריה של הכבד המזרז שחרור של יון אמוניום חופשי (NH4+) מגלוטמאט לקבלת alpha-Ketoglutarate, תוך שימוש ב-NAD+ או NADP+; מעוכב אלוסטרית ע\"י GTP (מדד אנרגיה גבוהה) ומשופעל ע\"י ADP."
+    },
+    {
+      "deckId": "biochemistry-ch-18",
+      "front": "Ammonia Transport by Glutamine Synthetase and Glutaminase (הובלת אמוניה ע\"י גלוטמין סינתטאז וגלוטמינאז)",
+      "back": "ברקמות חוץ-כבדיות אמוניה רעילה מומרת לגלוטמין ניטרלי ע\"י Glutamine synthetase (צורך ATP); במיטוכונדריה של הכבד והכליות האנזים Glutaminase מבצע הידרוליזה של גלוטמין לשחרור אמוניה (המופנית למעגל האוריאה) וגלוטמאט."
+    },
+    {
+      "deckId": "biochemistry-ch-18",
+      "front": "Glucose-Alanine Cycle (מעגל גלוקוז-אלנין בין השריר לכבד)",
+      "back": "בשריר פעיל פירקט שרירי מומר לפירובט, המקבל קבוצת אמינו מגלוטמאט לקבלת אלנין (Alanine) ע\"י ALT; אלנין מוסע בדם לכבד, שם הוא מוסר את האמינו ליצירת אוריאה, והפירובט שנותר משמש לגלוקונאוגנזה של גלוקוז החוזר לשריר."
+    },
+    {
+      "deckId": "biochemistry-ch-18",
+      "front": "Urea Cycle Step 1: Carbamoyl Phosphate Synthetase I / CPS-I (מעגל האוריאה שלב 1: קרבמויל פוספט סינתטאז I)",
+      "back": "אנזים במיטוכונדריה של הכבד הממזג יון אמוניום (NH4+) וביקרבונט (HCO3-) תוך צריכת 2 מולקולות ATP ליצירת Carbamoyl phosphate; שלב זה מהווה את אתר בקרת הקצב המרכזי של מעגל האוריאה."
+    },
+    {
+      "deckId": "biochemistry-ch-18",
+      "front": "Regulation of CPS-I by N-Acetylglutamate (בקרת CPS-I ע\"י N-אצטילגלוטמאט)",
+      "back": "האנזים CPS-I דורש שפעול אלוסטרי מוחלט ע\"י N-Acetylglutamate (NAG), המסונתז ע\"י NAG synthase מאצטיל-CoA וגלוטמאט; ריכוז גבוה של ארגינין משפעל את NAG synthase, ובכך מאיץ את מעגל האוריאה כאשר פירוק חלבונים מוגבר."
+    },
+    {
+      "deckId": "biochemistry-ch-18",
+      "front": "Urea Cycle Step 2: Ornithine Transcarbamoylase / OTC (מעגל האוריאה שלב 2: אורניתין טרנסקרבמוילאז)",
+      "back": "אנזים במיטוכונדריה המעביר קבוצת קרבמויל מקרבמויל פוספט לאורניתין (Ornithine) ליצירת ציטרולין (Citrulline) ושחרור פוספט אנאורגני (Pi); ציטרולין שנוצר מיוצא דרך נשא ייעודי אל הציטוזול."
+    },
+    {
+      "deckId": "biochemistry-ch-18",
+      "front": "Urea Cycle Step 3: Argininosuccinate Synthetase (מעגל האוריאה שלב 3: ארגינינוסוקצינאט סינתטאז)",
+      "back": "אנזים ציטוזולי המחבר ציטרולין עם אספרטט (Aspartate, התורם את אטום החנקן השני של האוריאה) ליצירת Argininosuccinate תוך ביקוע ATP ל-AMP ופירופוספט (PPi); שווה-ערך להשקעת 2 קשרים עתירי אנרגיה."
+    },
+    {
+      "deckId": "biochemistry-ch-18",
+      "front": "Urea Cycle Step 4: Argininosuccinase (מעגל האוריאה שלב 4: ארגינינוסוקצינאז / ארגינינוסוקצינאט ליאז)",
+      "back": "אנזים ציטוזולי המבקע את Argininosuccinate ליצירת חומצת האמינו ארגינין (Arginine) ופומראט (Fumarate); פומראט מחבר בין מעגל האוריאה למעגל קרבס דרך המרת פומראט למלאט ואוקסלואצטט."
+    },
+    {
+      "deckId": "biochemistry-ch-18",
+      "front": "Urea Cycle Step 5: Arginase (מעגל האוריאה שלב 5: ארגינאז)",
+      "back": "אנזים ציטוזולי ייחודי לכבד המבצע הידרוליזה של ארגינין לשחרור מולקולת אוריאה (Urea) וחידוש אורניתין (Ornithine); אורניתין מוחזר למיטוכונדריה דרך טרנסלוקאז להתחלת סיבוב חדש במעגל."
+    },
+    {
+      "deckId": "biochemistry-ch-18",
+      "front": "Energetic Cost and Krebs Bicycle (עלות אנרגטית של מעגל האוריאה וקשר מעגלי קרבס)",
+      "back": "סינתזת מולקולת אוריאה אחת צורכת 4 קשרי פוספט עתירי אנרגיה (3 ATP המתפרקים ל-2 ADP ול-1 AMP); פומראט שנוצר במעגל הופך למלאט בציטוזול ומשם לאוקסלואצטט תוך הפקת NADH במיטוכונדריה, מה שמפצה על חלק מעלות האנרגיה (Krebs bicycle)."
+    },
+    {
+      "deckId": "biochemistry-ch-18",
+      "front": "Glucogenic vs. Ketogenic Amino Acids (חומצות אמינו גלוקוגניות לעומת קטוגניות)",
+      "back": "חומצות אמינו קטוגניות בלבד (Leucine ו-Lysine) מתפרקות אך ורק לאצטיל-CoA או אצטואצטיל-CoA; חומצות אמינו גלוקוגניות מתפרקות לקדמנים המאפשרים ייצור גלוקוז (פירובט, alpha-ketoglutarate, succinyl-CoA, fumarate, oxaloacetate); 5 חומצות הן מעורבות (Phe, Tyr, Trp, Ile, Thr)."
+    },
+    {
+      "deckId": "biochemistry-ch-18",
+      "front": "Phenylketonuria / PKU (פנילקטונוריה)",
+      "back": "מחלה גנטית אוטוזומלית רצסיבית הנובעת מחסר באנזים Phenylalanine Hydroxylase (PAH) או בקואנזים Tetrahydrobiopterin (THB/BH4); מביאה להצטברות רעילה של פנילאלנין ופנילפירובט בדם וברקמות ולנזק מוחי קשה בהיעדר טיפול בדיאטה דלת פנילאלנין."
+    },
+    {
+      "deckId": "biochemistry-ch-18",
+      "front": "Maple Syrup Urine Disease / MSUD (מחלת שתן סירופ מייפל)",
+      "back": "מחלה גנטית הנובעת מפגם בקומפלקס Branched-chain alpha-keto acid dehydrogenase המפרק חומצות אמינו מסועפות (Leucine, Isoleucine, Valine); גורמת להצטברות חומצות אלפא-קטו רעילות בדם, ריח אופייני של סירופ מייפל בשתן ונזק נוירולוגי חמור."
     }
   ]
 }
