@@ -1285,6 +1285,176 @@
       "deckId": "physiology-ch-05",
       "front": "התמרה חושית",
       "back": "המרת גירוי פיזיקלי או כימי מהסביבה לאות חשמלי (פוטנציאל קולטן) בתאי חישה ייעודיים."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "Amino Acid Basic Structure (מבנה בסיסי של חומצת אמינו)",
+      "back": "מולקולה המורכבת מפחמן אלפא (α-carbon) מרכזי הקשור לקבוצת carboxyl (קבוצה קרבוקסילית, —COOH), קבוצת amino (קבוצת אמינו, —NH2), אטום מימן (H) ושרשרת צדדית משתנה (R group)."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "Chirality of Amino Acids (כיראליות של חומצות אמינו)",
+      "back": "פחמן האלפא (α-carbon) בכל חומצות האמינו הוא מרכז כיראלי אסימטרי, למעט ב-Glycine (גליצין); חלבונים מכילים אך ורק סטריאואיזומרים בתצורת L (סטריאואיזומרים מסוג L-stereoisomers)."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "Nonpolar Aliphatic Amino Acids (חומצות אמינו אליפטיות לא-פולריות)",
+      "back": "קבוצה של 7 חומצות אמינו הידרופוביות בעלות שרשרת R פחמימנית לא-פולרית: Glycine (Gly, G), Alanine (Ala, A), Proline (Pro, P), Valine (Val, V), Leucine (Leu, L), Isoleucine (Ile, I), Methionine (Met, M)."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "Proline (פרולין)",
+      "back": "חומצת אמינו בעלת שרשרת צד אליפטית הקשורה בקשר קוולנטי לקבוצת האמינו ליצירת מבנה טבעתי סגור (imino acid, חומצת אימינו), המקנה לה קשיחות מבנית ייחודית המגבילה את קונפורמציית הפפטיד."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "Aromatic Amino Acids (חומצות אמינו ארומטיות)",
+      "back": "קבוצה של 3 חומצות אמינו בעלות שרשרת טבעתית ארומטית: Phenylalanine (Phe, F), Tyrosine (Tyr, Y), ו-Tryptophan (Trp, W); בולעות קרינה על-סגולה (UV light) סביב אורך גל של 280 nm (בעיקר טריפטופן וטירוזין)."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "Polar Uncharged Amino Acids (חומצות אמינו פולריות לא-טעונות)",
+      "back": "קבוצה של 5 חומצות אמינו הידרופיליות המסוגלות ליצור קשרי מימן: Serine (Ser, S), Threonine (Thr, T), Cysteine (Cys, C), Asparagine (Asn, N), Glutamine (Gln, Q)."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "Cysteine (ציסטאין)",
+      "back": "חומצת אמינו פולרית בעלת קבוצת sulfhydryl (סולפהידריל / thiol, עם pKR = 8.18) היכולה לעבור חמצון ליצירת קשר דיסולפידי קוולנטי (disulfide bond) בין שני שיירים לקבלת Cystine (ציסטין)."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "Positively Charged Basic Amino Acids (חומצות אמינו בסיסיות טעונות חיובית)",
+      "back": "קבוצה של 3 חומצות אמינו הידרופיליות בעלות מטען חיובי נטו ב-pH פיזיולוגי (7.0): Lysine (Lys, K, עם pKR = 10.53), Arginine (Arg, R, עם pKR = 12.48), ו-Histidine (His, H, עם pKR = 6.00)."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "Histidine (היסטידין)",
+      "back": "חומצת אמינו בסיסית בעלת טבעת imidazole (אימידאזול) בעלת pKR = 6.00, המאפשרת לה לעבור פרוטונציה ודה-פרוטונציה בטווח pH פיזיולוגי ולשמש כבופר וכזרז חומצה-בסיס באתרים פעילים של אנזימים."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "Negatively Charged Acidic Amino Acids (חומצות אמינו חומציות טעונות שלילית)",
+      "back": "קבוצה של 2 חומצות אמינו בעלות קבוצת carboxyl שנייה בשרשרת הצד ומטען שלילי נטו ב-pH פיזיולוגי (7.0): Aspartate (Asp, D, עם pKR = 3.65) ו-Glutamate (Glu, E, עם pKR = 4.25)."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "Zwitterion (צוויטריון)",
+      "back": "יון דו-קוטבי (dipolar ion) שבו קבוצת האמינו נושאת מטען חיובי (—NH3+) וקבוצת הקרבוקסיל נושאת מטען שלילי (—COO−), כך שהמטען החשמלי הכולל של המולקולה הוא אפס (0)."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "Isoelectric Point (נקודה איזואלקטרית, pI)",
+      "back": "ערך ה-pH המדויק שבו המטען החשמלי הכולל (net electric charge) של מולקולת חומצת האמינו או הפפטיד שווה לאפס (0), ובמצב זה היא אינה נעה בשדה חשמלי."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "pI Calculation for Diprotic Amino Acids (חישוב pI לחומצות אמינו דיפרוטיות)",
+      "back": "עבור חומצות אמינו בעלות שרשרת R בלתי ניתנת ליינון (כגון Alanine או Glycine), ה-pI שווה לממוצע החשבוני של שני ערכי ה-pKa: pI = (pK1 + pK2) / 2."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "pI Calculation for Acidic Amino Acids (חישוב pI לחומצות אמינו חומציות)",
+      "back": "עבור חומצות אמינו חומציות (Aspartate ו-Glutamate), ה-pI הוא הממוצע החשבוני של שני ערכי ה-pKa הנמוכים ביותר (קבוצות הקרבוקסיל): pI = (pK1 + pKR) / 2 (לדוגמה בגלוטמט: (2.19 + 4.25) / 2 = 3.22)."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "pI Calculation for Basic Amino Acids (חישוב pI לחומצות אמינו בסיסיות)",
+      "back": "עבור חומצות אמינו בסיסיות (Histidine, Lysine, Arginine), ה-pI הוא הממוצע החשבוני של שני ערכי ה-pKa הגבוהים ביותר: pI = (pKR + pK2) / 2 (לדוגמה בהיסטידין: (6.00 + 9.17) / 2 = 7.59)."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "Peptide Bond (קשר פפטידי)",
+      "back": "קשר אמידי קוולנטי (substituted amide linkage) הנוצר בריאקציית דחיסה (condensation / dehydration) בין קבוצת α-carboxyl של חומצת אמינו אחת לקבוצת α-amino של חומצת אמינו סמוכה, תוך פליטת מולקולת מים."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "Polypeptide Directionality (כיווניות שרשרת פוליפפטידית)",
+      "back": "שרשרת פפטידית נקראת תמיד מקצה האמינו החופשי (amino-terminal / N-terminal residue) הממוקם משמאל, לקצה הקרבוקסיל החופשי (carboxyl-terminal / C-terminal residue) הממוקם מימין."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "Conjugated Proteins (חלבונים מצומדים)",
+      "back": "חלבונים המכילים לצד חומצות האמינו גם מרכיב כימי קבוע שאינו חלבוני המכונה prosthetic group (קבוצה פרוסטטית), כגון ליפידים (ליפופרוטאינים), סוכרים (גליקופרוטאינים) או קבוצת heme (המופרוטאינים)."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "Salting Out (המלחה החוצה)",
+      "back": "שיטת הפרדת חלבונים המבוססת על שינוי במסיסות החלבון בריכוז יוני גבוה, בדרך כלל באמצעות הוספת אמוניום סולפט ((NH4)2SO4); בריכוז מלח מוגבר חלבונים שונים שוקעים באופן סלקטיבי."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "Cation-Exchange Chromatography (כרומטוגרפיית חילוף קטיונים)",
+      "back": "שיטת כרומטוגרפיה המפרידה חלבונים על בסיס מטען חשמלי; העמודה מכילה שרף מוצק בעל מטען שלילי (כגון קבוצות carboxymethyl), הקושר חלבונים בעלי מטען חיובי ומעכב את יציאתם."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "Anion-Exchange Chromatography (כרומטוגרפיית חילוף אניונים)",
+      "back": "שיטת כרומטוגרפיה המפרידה חלבונים על בסיס מטען חשמלי; העמודה מכילה שרף מוצק בעל מטען חיובי (כגון קבוצות diethylaminoethyl, DEAE), הקושר חלבונים בעלי מטען שלילי ומעכב את יציאתם."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "Size-Exclusion Chromatography (כרומטוגרפיית סינון ג׳ל / הדרה לפי גודל)",
+      "back": "שיטת כרומטוגרפיה המפרידה חלבונים לפי גודל מולקולרי (size-exclusion / gel filtration); חלבונים גדולים אינם נכנסים לחרירי החרוזים ונשטפים ראשונים, בעוד חלבונים קטנים נכנסים לחרוזים ויוצאים מאוחר יותר."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "Affinity Chromatography (כרומטוגרפיית זיקה)",
+      "back": "שיטת כרומטוגרפיה בעלת סגוליות גבוהה המבוססת על קישור ספציפי של החלבון לליגנד (ligand) המקובע לחרוזי העמודה; שחרור החלבון נעשה באמצעות שטיפה בריכוז מלח גבוה או בתמיסת ליגנד חופשי."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "SDS-PAGE (אלקטרופורזה בג׳ל פוליאקרילאמיד בנוכחות SDS)",
+      "back": "שיטה אנליטית המפרידה חלבונים אך ורק על פי מסה מולקולרית; הדטרגנט SDS גורם לדנטורציה ומצפה את החלבון במטען שלילי אחיד (כמולקולת SDS אחת לכל 2 חומצות אמינו), כך שקצב הנדידה נקבע רק לפי גודל."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "Isoelectric Focusing (מיקוד איזואלקטרי, IEF)",
+      "back": "שיטת אלקטרופורזה המפרידה חלבונים על פי הנקודה האיזואלקטרית שלהם (pI) בתוך ג׳ל בעל מפל pH יציב; חלבון נודד עד לנקודה שבה ה-pH שווה ל-pI שלו, שבה מטענו נטו אפס והוא מפסיק לנוע."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "Two-Dimensional Gel Electrophoresis (אלקטרופורזה דו-ממדית בג׳ל)",
+      "back": "שיטת הפרדה המשלבת מיקוד איזואלקטרי (IEF) בממד הראשון להפרדה לפי pI, ולאחריו SDS-PAGE בממד השני להפרדה בניצב לפי מסה מולקולרית, ומאפשרת זיהוי אלפי חלבונים שונים."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "Specific Activity (פעילות סגולית)",
+      "back": "היחס בין מספר יחידות הפעילות האנזימטית (units of enzyme activity) לכמות החלבון הכוללת במיליגרם (mg of total protein); מהווה מדד מרכזי לטוהר החלבון והולך ועולה בכל שלב טיהור מוצלח."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "Primary Structure of Proteins (מבנה ראשוני של חלבונים)",
+      "back": "הרצף הלינארי המלא של שיירי חומצות האמינו המחוברים בקשרים פפטידיים קוולנטיים לאורך השרשרת הפוליפפטידית, לרבות מיקומם המדויק של קשרי הדיסולפיד (disulfide bonds)."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "Sanger Reagent / FDNB (מגיב סנגר / FDNB)",
+      "back": "המגיב הכימי 1-fluoro-2,4-dinitrobenzene (FDNB), הנקשר באופן ספציפי לקבוצת ה-α-amino החופשית בקצה האמינו-טרמינלי (N-terminal residue) של הפוליפפטיד לצורך זיהוי חומצת האמינו הראשונה ברצף."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "Edman Degradation (דגרדציית אדמן)",
+      "back": "שיטת ריצוף כימית שבה המגיב phenylisothiocyanate (PITC) מסמן ומבקע באופן סלקטיבי חומצת אמינו אחת בכל פעם מהקצה ה-N-טרמינלי של הפפטיד, מבלי להרוס את יתרת השרשרת."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "Trypsin (טריפסין)",
+      "back": "אנזים פרוטאוליטי (protease) המבקע באופן ספציפי קשרים פפטידיים בצד הקרבוקסילי (C-terminal side) של שיירי חומצות האמינו הבסיסיות Lysine (ליזין) ו-Arginine (ארגינין)."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "Chymotrypsin (כימוטריפסין)",
+      "back": "אנזים פרוטאוליטי (protease) המבקע באופן ספציפי קשרים פפטידיים בצד הקרבוקסילי (C-terminal side) של שיירי חומצות האמינו הארומטיות Phenylalanine (Phe), Tyrosine (Tyr), ו-Tryptophan (Trp)."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "Cyanogen Bromide / CNBr (ציאנוגן ברומיד)",
+      "back": "מגיב כימי המבקע באופן ספציפי קשרים פפטידיים בצד הקרבוקסילי (C-terminal side) של שיירי חומצת האמינו Methionine (מתיונין) בלבד."
+    },
+    {
+      "deckId": "biochemistry-ch-03",
+      "front": "Mass Spectrometry in Proteomics (ספקטרומטריית מסות בחקר חלבונים)",
+      "back": "שיטה אנליטית המודדת במדויק את יחס המסה למטען (mass-to-charge ratio, m/z) של מולקולות מיוננות (בשיטות יינון עדינות כגון MALDI או ESI); שיטת tandem MS (MS/MS) מאפשרת קביעת רצף חומצות אמינו מלא."
     }
   ]
 }
