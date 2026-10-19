@@ -2995,6 +2995,156 @@
       "deckId": "biochemistry-ch-19",
       "front": "Mitochondrial Permeability Transition Pore / MPTP (נקבובית המעבר הממברנלית במיטוכונדריה)",
       "back": "תעלת מעבר ענקית בלתי-סלקטיבית בממברנה הפנימית הנפתחת בתגובה לעומס יוני Ca2+, עקה חמצונית חריפה ודלדול ATP; פתיחתה מפילה את מפל הפרוטונים, מנפחת את המטריקס, מבקעת את הממברנה החיצונית ומשחררת גורמים פרו-אפופטוטיים."
+    },
+    {
+      "deckId": "biochemistry-ch-21",
+      "front": "Acetyl-CoA Carboxylase (אצטיל-CoA קרבוקסילאז בסינתזת חומצות שומן)",
+      "back": "האנזים המקטלז את שלב הבקרה והקומבינציה הבלתי-הפיך הראשון בסינתזת חומצות שומן: קרבוקסילציה של אצטיל-CoA ל-Malonyl-CoA תלוית ATP וביוטין (Biotin); ביונקים מורכב משלושה דומיינים תפקודיים על פוליפפטיד רב-תפקודי יחיד בציטוזול, ומעוכב במשוב ע\"י Palmitoyl-CoA ובזרחון ע\"י AMPK."
+    },
+    {
+      "deckId": "biochemistry-ch-21",
+      "front": "Acyl Carrier Protein / ACP (חלבון נושא אציל בקומפלקס Fatty Acid Synthase)",
+      "back": "הדומיין הפועל כזרוע גמישה בקומפלקס FAS, הנושא את שרשרת חומצת השומן ההולכת ומתארכת מאתר פעיל אחד למשנהו; מכיל קבוצה פרוסטטית 4′-Phosphopantetheine הקשורה בקשר קוולנטי לשייר Serine ומסתיימת בקבוצת תיאול (—SH) הקושרת את תוצרי הביניים בקשרי תיו-אסטר עתירי אנרגיה."
+    },
+    {
+      "deckId": "biochemistry-ch-21",
+      "front": "Palmitate Biosynthesis Stoichiometry (סטוכיומטריית סינתזת פלמיטט בציטוזול)",
+      "back": "יצירת מולקולת פלמיטט אחת (16:0) דורשת מולקולת אצטיל-CoA אחת כגרעין התחלתי ו-7 מולקולות Malonyl-CoA (הצורכות 7 ATP ביצירתן ע\"י ACC), יחד עם 14 מולקולות NADPH כמקור כוח מחזר: 8 Acetyl-CoA + 7 ATP + 14 NADPH + 14 H+ -> Palmitate + 8 CoA + 7 ADP + 7 Pi + 14 NADP+ + 6 H2O."
+    },
+    {
+      "deckId": "biochemistry-ch-21",
+      "front": "Citrate-Malate-Pyruvate Shuttle (שאטל ציטראט להובלת אצטיל-CoA לציטוזול)",
+      "back": "מנגנון עקיף להעברת קבוצות אצטיל מהמיטוכונדריה לציטוזול לצורך סינתזת ליפידים: אצטיל-CoA מיטוכונדריאלי מגיב עם אוקסלואצטט ליצירת ציטראט החוצה דרך ה-Citrate Transporter; בציטוזול Citrate Lyase מפרק ציטראט לאצטיל-CoA ואוקסלואצטט תוך צריכת ATP, ומלטרט מומר לפירובט ע\"י Malic Enzyme תוך ייצור NADPH ציטוזולי."
+    },
+    {
+      "deckId": "biochemistry-ch-21",
+      "front": "Fatty Acyl-CoA Desaturases & Essential Fatty Acids (דה-סטוראזות וחומצות שומן חיוניות)",
+      "back": "אנזימי ER מסוג Mixed-function oxidases המכניסים קשר כפול בשרשרת שומן תוך שימוש ב-O2, Cytochrome b5 ו-NADPH; יונקים אינם מסוגלים להכניס קשר כפול מעבר לפחמן Δ9, ולכן חומצות שומן רב-בלתי-רוויות עם קשרים מעבר ל-Δ9, כגון Linoleate (18:2 Δ9,12) ו-α-Linolenate (18:3 Δ9,12,15), הינן חומצות שומן חיוניות מהתזונה."
+    },
+    {
+      "deckId": "biochemistry-ch-21",
+      "front": "Cyclooxygenase / COX Inhibition by Aspirin and NSAIDs (עיכוב אנזימי COX ע\"י אספירין ו-NSAIDs)",
+      "back": "אנזימי COX (או Prostaglandin H2 Synthase) מקטלזים הפיכת ארכידונאט ל-PGH2, מקור הפרוסטגלנדינים והתרומבוקסנים; אספירין מעכב באופן בלתי-הפיך ע\"י אצטילציה של שייר Serine באתר הפעיל, בעוד NSAIDs כגון Ibuprofen ו-Naproxen מעכבים תחרותית הפיכה ע\"י חיקוי המצע וחסימת האתר הפעיל."
+    },
+    {
+      "deckId": "biochemistry-ch-21",
+      "front": "Phosphatidic Acid Biosynthesis (סינתזת חומצה פוספטידית כצומת ביניים)",
+      "back": "תוצר ביניים מרכזי משותף בסינתזת טריאצילגליצרולים וגליצרופוספוליפידים; נוצר ע\"י אצילציה כפולה של Glycerol 3-phosphate (או Dihydroxyacetone phosphate מחוזר) בשני שיירי אציל שמקורם ב-Fatty Acyl-CoA ע\"י אנזימי Acyltransferase, ונמצא בריכוזים מזעריים בלבד בתא."
+    },
+    {
+      "deckId": "biochemistry-ch-21",
+      "front": "Glyceroneogenesis & Triacylglycerol Cycle (גליצרונאוגנזה ומעגל הטריאצילגליצרול)",
+      "back": "מסלול מקוצר של גלוקונאוגנזה מפירובט אל Dihydroxyacetone Phosphate (DHAP) וגליצרול-3-פוספט ברקמת שומן ובכבד; מאפשר אסטריפיקציה מחדש של חומצות שומן חופשיות לטריאצילגליצרולים במהלך צום, ומבוקר הדדית ע\"י גלוקוקורטיקואידים המגבירים גליצרונאוגנזה בכבד אך מדכאים אותה בשומן דרך ויסות PEPCK."
+    },
+    {
+      "deckId": "biochemistry-ch-21",
+      "front": "Phospholipid Assembly: The Kennedy Pathway (הרכבת פוספוליפידים ומסלול קנדי)",
+      "back": "סינתזת גליצרופוספוליפידים דורשת שפעול ע\"י נוקלאוטיד ציטידין (CDP) באחת משתי אסטרטגיות: שפעול הדיאצילגליצרול לקבלת CDP-Diacylglycerol (אסטרטגיה 1, לייצור פוספטידילינוזיטול וקרדיוליפין), או שפעול ראש הפוספוליפיד לקבלת CDP-Choline או CDP-Ethanolamine (אסטרטגיה 2, מסלול קנדי ביונקים לייצור PC ו-PE)."
+    },
+    {
+      "deckId": "biochemistry-ch-21",
+      "front": "Sphingolipid Biosynthesis & Ceramide (סינתזת ספינגוליפידים וצרמיד)",
+      "back": "המסלול מתחיל בדחיסה של Palmitoyl-CoA עם Serine ע\"י האנזים תלוי-PLP בשם Serine Palmitoyltransferase ליצירת 3-Ketosphinganine, המחוזר ל-Sphinganine; אצילציה של קבוצת האמינו יוצרת N-Acylsphinganine, שלאחר חמצון יוצרת Ceramide (צרמיד) – ליבת המבנה המובילה ליצירת ספינגומיאלין וצרברוזידים בגולג'י."
+    },
+    {
+      "deckId": "biochemistry-ch-21",
+      "front": "HMG-CoA Reductase in Cholesterol Synthesis (HMG-CoA רדוקטאז בסינתזת כולסטרול)",
+      "back": "חלבון ממברנלי אינטגרלי של ה-ER החלק המקטלז את שלב הבקרה והשלב קובע המהירות העיקרי בביוסינתזה של כולסטרול: חיזור של HMG-CoA ל-Mevalonate תוך צריכת שתי מולקולות NADPH ושחרור קואנזים A חופשי; מעוכב תחרותית ע\"י תרופות ממשפחת הסטטינים."
+    },
+    {
+      "deckId": "biochemistry-ch-21",
+      "front": "Statins as Competitive Inhibitors of HMG-CoA Reductase (סטטינים כמעכבים תחרותיים של HMG-CoA רדוקטאז)",
+      "back": "תרופות להורדת כולסטרול בדם (כגון Atorvastatin ו-Lovastatin) המהוות אנלוגים מבניים למצב המעבר דמוי-Mevalonate של תגובת HMG-CoA Reductase; נקשרות בזיקה גבוהה פי אלפים רבים מזו של המצע, מעכבות את סינתזת הכולסטרול האנדוגנית בכבד וגורמות לעליית פיצוי בביטוי קולטני LDL וסילוקו מהדם."
+    },
+    {
+      "deckId": "biochemistry-ch-21",
+      "front": "SREBP, SCAP, and Sterol Homeostasis (בקרת הומאוסטזיס של כולסטרול ע\"י SREBP ו-SCAP)",
+      "back": "קומפלקס חיישן סטרולים ב-ER: ברמות כולסטרול גבוהות, החלבון SCAP קושר סטרולים ומשאיר את פקטור השעתוק SREBP מעוגן בממברנת ה-ER יחד עם Insig; בירידת סטרולים הקומפלקס עובר לגולג'י, שם שני ביקועים פרוטאוליטיים משחררים דומיין רגולטורי לגרעין, המפעיל שעתוק של HMG-CoA Reductase ושל ה-LDL Receptor."
+    },
+    {
+      "deckId": "biochemistry-ch-21",
+      "front": "Receptor-Mediated Endocytosis of LDL (אנדוציטוזה מתווכת קולטן של LDL והיפרכולסטרולמיה משפחתית)",
+      "back": "חלקיקי LDL עשירים בכולסטרול אסטריפיצי פוגשים קולטני LDL בממברנת תאי כבד ורקמות היקפיות דרך קישור לאפוליפופרוטאין ApoB-100; הקומפלקס מופנם בבועיות מצופות קלתרין, מתפרק בליזוזום ומשחרר כולסטרול חופשי; מוטציות בקולטן ה-LDL גורמות ל-Familial Hypercholesterolemia (FH) עם רמות LDL גבוהות ביותר וטרשת עורקים מוקדמת."
+    },
+    {
+      "deckId": "biochemistry-ch-22",
+      "front": "Amino Acid Biosynthesis: Six Precursor Families (שש משפחות המקורות בסינתזת חומצות אמינו)",
+      "back": "20 חומצות האמינו מסווגות לשש משפחות לפי שלד הפחמן המוצא: 1) α-Ketoglutarate (מקור ל-Glu, Gln, Pro, Arg); 2) Pyruvate (מקור ל-Ala, Val, Leu, Ile); 3) 3-Phosphoglycerate (מקור ל-Ser, Gly, Cys); 4) Phosphoenolpyruvate ו-Erythrose 4-phosphate (מקור ל-Trp, Phe, Tyr); 5) Oxaloacetate (מקור ל-Asp, Asn, Met, Thr, Lys); 6) Ribose 5-phosphate (מקור ל-His)."
+    },
+    {
+      "deckId": "biochemistry-ch-22",
+      "front": "Essential vs. Nonessential Amino Acids in Mammals (חומצות אמינו חיוניות לעומת לא-חיוניות ביונקים)",
+      "back": "יונקים יכולים לסנתז בעצמם רק כמחצית מחומצות האמינו (Nonessential, בעלות מסלולים פשוטים בני שלבים ספורים מחומרי ביניים גליקוליטיים או ממעגל קרבס); חומצות אמינו בעלות מסלולים ארוכים ומורכבים (כגון חומצות ארומטיות, מסועפות, ליזין ומתיונין) הינן Essential וחייבות להגיע מהמזון."
+    },
+    {
+      "deckId": "biochemistry-ch-22",
+      "front": "Glutamine Synthetase & Cumulative Feedback Inhibition (גלוטמין סינתטאז ובקרה ממושבת מצטברת)",
+      "back": "האנזים המרכזי בהטמעת חנקן אנאורגני (NH4+) ע\"י המרת גלוטמט לגלוטמין תוך פירוק ATP; עובר עיכוב אלוסטרי מצטבר (Cumulative feedback inhibition) ע\"י שישה תוצרי קצה של מטבוליזם גלוטמין (AMP, CTP, Glucosamine 6-phosphate, Histidine, Carbamoyl phosphate, Tryptophan) יחד עם Alanine ו-Glycine, כאשר כל מעכב תורם חלקו להורדת הפעילות."
+    },
+    {
+      "deckId": "biochemistry-ch-22",
+      "front": "Serine and Glycine Synthesis from 3-Phosphoglycerate (סינתזת סרין וגליצין מ-3-פוספוגליצראט)",
+      "back": "3-פוספוגליצראט מגליקוליזה מחומצן ע\"י דהידרוגנאז ל-3-פוספוהידרוקסיפירובט, עובר טרנסאמינציה מגלוטמט ל-3-פוספוסרין, ומפולס מזרחן לסרין ע\"י פוספטאז; סרין מומר לגליצין ע\"י Serine Hydroxymethyltransferase בתגובה תלוית PLP המעבירה את פחמן ה-β אל Tetrahydrofolate (THF)."
+    },
+    {
+      "deckId": "biochemistry-ch-22",
+      "front": "Alanine, Aspartate, and Asparagine Biosynthesis (סינתזת אלנין, אספרטט ואספרגין)",
+      "back": "אלנין ואספרטט מסונתזים בשלב יחיד מפירובט ומאוקסלואצטט, בהתאמה, באמצעות טרנסאמינציה מגלוטמט המקוטלזת ע\"י אמינוטרנספראזות תלויות PLP; אספרגין מסונתז מאספרטט ע\"י Asparagine Synthetase בתגובת אמידציה תלוית ATP שבה גלוטמין (ביונקים) תורם את קבוצת האמינו."
+    },
+    {
+      "deckId": "biochemistry-ch-22",
+      "front": "Chorismate: Branch Point for Aromatic Amino Acids (כוריסמאט בסינתזת חומצות אמינו ארומטיות)",
+      "back": "תוצר ביניים מרכזי בצמחים ובחיידקים במסלול השיקימאט (Shikimate Pathway), הנוצר מדחיסה של Erythrose 4-phosphate ו-Phosphoenolpyruvate; מהווה את צומת ההסתעפות המשותפת לסינתזת שלוש חומצות האמינו הארומטיות (טריפטופן, פנילאלנין וטירוזין), ומסלול זה אינו קיים בבעלי חיים ולכן הן חיוניות בתזונה."
+    },
+    {
+      "deckId": "biochemistry-ch-23",
+      "front": "Liver as Central Metabolic Hub & Glucokinase (הכבד כצומת מטבולי ותפקיד גלוקוקינאז)",
+      "back": "הכבד מווסת את מאזן הגלוקוז בדם באמצעות גלוקוקינאז (Hexokinase IV) בעל Km גבוה (כ-10 מ\"מ) שאינו מעוכב ע\"י תוצר התגובה גלוקוז-6-פוספט, ומאפשר קליטה מוגברת בעומס פוסטפראנדיאלי; בכבד מתרחשים גליקוגנזה, גלוקונאוגנזה, ייצור גופי קטון, פירוק חומצות אמינו, סינתזת אוריאה וייצור ליפופרוטאינים (VLDL)."
+    },
+    {
+      "deckId": "biochemistry-ch-23",
+      "front": "Skeletal Muscle Fuels and Phosphocreatine (מקורות אנרגיה בשריר שלד ומאגר פוספוקריאטין)",
+      "back": "שריר שלד במנוחה משתמש בעיקר בחומצות שומן ובגופי קטון לייצור ATP אירובי; בפעילות עצימה נשען על גליקוליזה אנאירובית מגליקוגן שרירי; פוספוקריאטין (10–30 מ\"מ) פועל כמאגר עתיר-אנרגיה מהיר המחדש ATP מ-ADP תוך שניות בודדות ע\"י Creatine Kinase ללא צורך בחמצן."
+    },
+    {
+      "deckId": "biochemistry-ch-23",
+      "front": "Cardiac Muscle Metabolism: Constant Aerobiosis (מטבוליזם שריר הלב: תלות מוחלטת בנשימה אירובית)",
+      "back": "שריר הלב פועם ברציפות ואינו בעל עתודות גליקוגן משמעותיות; עשיר בצפיפות מיטוכונדריאלית גבוהה (כ-40% מנפח הציטופלזמה) ומפיק כמעט את כל ה-ATP שלו בנשימה אירובית מזרחון חמצוני, תוך ניצול עיקרי של חומצות שומן חופשיות (60–90%), לקטט וגופי קטון; רגיש ביותר לאיסכמיה."
+    },
+    {
+      "deckId": "biochemistry-ch-23",
+      "front": "Brain Fuel Metabolism and Ketone Adaptation (מטבוליזם אנרגיה במוח והסתגלות לגופי קטון)",
+      "back": "במצב שובע המוח הוא צרכן גלוקוז בלעדי כמעט (כ-120 גרם ליום, המהווים כ-60% מניצול הגלוקוז במנוחה) לתחזוקת משאבות Na+/K+ ATPase בנוירונים; חומצות שומן אינן חוצות את מחסום הדם-מוח (BBB), אך בצום ממושך המוח מסתגל לחמצון גופי קטון (בעיקר β-hydroxybutyrate) המספקים עד שני שלישים מתצרוכת האנרגיה."
+    },
+    {
+      "deckId": "biochemistry-ch-23",
+      "front": "White vs. Brown Adipose Tissue / WAT vs. BAT (רקמת שומן לבנה לעומת רקמת שומן חומה)",
+      "back": "רקמת שומן לבנה (WAT) מכילה טיפת שומן יחידה גדולה (Unilocular) ומתמחה באגירת טריאצילגליצרולים ובשחרור חומצות שומן והורמונים (כגון לפטין); רקמת שומן חומה (BAT) מכילה טיפות שומן מרובות, שפע מיטוכונדריות וחלבון צימוד UCP1 (Thermogenin) המפזר את מפל הפרוטונים לחום בתרמוגנזה ללא רעד."
+    },
+    {
+      "deckId": "biochemistry-ch-23",
+      "front": "Well-Fed State / Postprandial Metabolic Profile (פרופיל מטבולי במצב שובע / פוסטפראנדיאלי)",
+      "back": "עליה בגלוקוז בדם משרה שחרור אינסולין מתאי β בלבלב; אינסולין מעודד שינוע נשאי GLUT4 לממברנה בשריר ובשומן, מפעיל גליקוגנזה (ע\"י דה-זרחון ושפעול Glycogen Synthase), גליקוליזה וסינתזת חומצות שומן בכבד, ומעכב גלוקונאוגנזה, גליקוגנוליזה וליפוליזה."
+    },
+    {
+      "deckId": "biochemistry-ch-23",
+      "front": "The Fasting State and Hepatic Glucogenesis (מצב צום קצר והפיכת הכבד למייצר גלוקוז)",
+      "back": "שעות ספורות לאחר ארוחה, ירידת גלוקוז בדם גורמת להפרשת גלוקגון ולירידת אינסולין; גלוקגון מפעיל גליקוגנוליזה בכבד (המספקת גלוקוז ב-12–24 השעות הראשונות) ומעורר גלוקונאוגנזה מחומצות אמינו גלוקוגניות, לקטט וגליצרול, לצד הפעלת ליפוליזה בשומן דרך Hormone-Sensitive Lipase."
+    },
+    {
+      "deckId": "biochemistry-ch-23",
+      "front": "Prolonged Starvation Adaptations (הסתגלויות מטבוליות במצב הרעבה ממושכת)",
+      "back": "בהרעבה של ימים עד שבועות, לאחר דלדול מוחלט של גליקוגן, קצב פירוק חלבוני השריר מתמתן כדי לשמר מסת שריר חיונית; הכבד מייצר כמויות אדירות של גופי קטון (בעיקר β-Hydroxybutyrate) מחמצון חומצות שומן מרקמת השומן, המספקים למוח ולשריר את מירב האנרגיה ומפחיתים את הפרשת האוריאה בשתן."
+    },
+    {
+      "deckId": "biochemistry-ch-23",
+      "front": "Metabolism in Diabetes Mellitus & Sulfonylureas (מטבוליזם בסוכרת ותרופות סולפונילאוריאה)",
+      "back": "בסוכרת בלתי-מאוזנת, מחסור באינסולין או תנגודת לאינסולין מונעים קליטת גלוקוז בשריר ובשומן ומבטלים דיכוי גלוקונאוגנזה וליפוליזה בכבד, תוך יצירת קטואצידוזיס (בסוכרת מסוג 1); תרופות ממשפחת Sulfonylurea בסוכרת מסוג 2 נקשרות לתת-יחידת SUR1 של תעלות K+ תלויות ATP בתאי β, חוסמות אותן, משרות דה-פולריזציה ומעוררות הפרשת אינסולין."
+    },
+    {
+      "deckId": "biochemistry-ch-23",
+      "front": "AMPK: The Cellular Energy Gauge (AMPK כחיישן האנרגיה התאי)",
+      "back": "קינאז הטרוטרימרי המשופעל בעליית יחסי AMP/ATP ו-ADP/ATP בעת עקה מטבולית או פעילות גופנית; משפעל מסלולים קטבוליים מייצרי ATP (גליקוליזה, קליטת גלוקוז דרך GLUT4, חמצון חומצות שומן) ומעכב מסלולים אנבוליים צורכי ATP ע\"י זרחון ועיכוב אנזימי מפתח, כולל Acetyl-CoA Carboxylase (דיכוי סינתזת שומן) ו-HMG-CoA Reductase (דיכוי סינתזת כולסטרול)."
     }
   ]
 }
