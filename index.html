@@ -2652,35 +2652,204 @@ function sm2(card, grade) {
   return { ...card, interval, repetitions, easeFactor, dueDate };
 }
 
+function hashCardKey(s) {
+  let h1 = 0xdeadbeef, h2 = 0x41c64e6d;
+  for (let i = 0; i < s.length; i++) {
+    const ch = s.charCodeAt(i);
+    h1 = Math.imul(h1 ^ ch, 2654435761);
+    h2 = Math.imul(h2 ^ ch, 1597334677);
+  }
+  h1 = Math.imul(h1 ^ (h1 >>> 16), 2246822507) ^ Math.imul(h2 ^ (h2 >>> 13), 3266489909);
+  h2 = Math.imul(h2 ^ (h2 >>> 16), 2246822507) ^ Math.imul(h1 ^ (h1 >>> 13), 3266489909);
+  return 'sc_' + ((h1 >>> 0).toString(36) + (h2 >>> 0).toString(36));
+}
+
+function getStableCardId(deckId, front, occ = 0) {
+  const key = (deckId + '::' + String(front || '').trim().toLowerCase() + '::' + occ);
+  return hashCardKey(key);
+}
+
+function createSafeFlashcardsBackup(data) {
+  const backupKey = NS + 'flashcards_backup_v10';
+  const jsonStr = JSON.stringify(data);
+  try {
+    localStorage.setItem(backupKey, jsonStr);
+    const readBack = localStorage.getItem(backupKey);
+    if (readBack !== jsonStr) {
+      throw new Error('אימות קריאה חוזרת נכשל: נתוני הגיבוי אינם תואמים למקור');
+    }
+  } catch (err) {
+    console.error('Critical: Failed to create verified flashcards backup:', err);
+    if (typeof showToast === 'function') {
+      showToast('שגיאה קריטית ביצירת גיבוי: נתוני הכרטיסיות לא שונו');
+    }
+    return false;
+  }
+
+  // Attempt one-time download
+  try {
+    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `medexam_flashcards_backup_${new Date().toISOString().slice(0, 10)}.json`;
+    document.body.appendChild(a);
+    a.click();
+    setTimeout(() => {
+      if (a.parentNode) a.parentNode.removeChild(a);
+      URL.revokeObjectURL(url);
+    }, 500);
+  } catch (e) {
+    console.warn('הורדת קובץ אוטומטית נחסמה בדפדפן, אך גיבוי ה-localStorage אומת בהצלחה:', e);
+  }
+  return true;
+}
+
+const CURRENT_FC_VERSION = 10;
+
 async function initFlashcards() {
   let data = DB.get('flashcards');
-  if (!data || data.version !== 9 || !Array.isArray(data.decks) || data.decks.length === 0) {
-    try {
-      const res = await fetch('data/flashcards_generated.json');
-      const genData = await res.json();
-      
-      data = { version: 9, decks: [] };
+
+  // Run-once check: If already migrated to version 10, render and exit immediately
+  if (data && data.version >= CURRENT_FC_VERSION && Array.isArray(data.decks) && data.decks.length > 0) {
+    renderFlashcards();
+    return;
+  }
+
+  try {
+    const res = await fetch('data/flashcards_generated.json');
+    const genData = await res.json();
+    if (!genData || !Array.isArray(genData.cards)) return;
+
+    // Case 1: Fresh install (no existing stored data)
+    if (!data || !Array.isArray(data.decks) || data.decks.length === 0) {
+      data = { version: CURRENT_FC_VERSION, decks: [] };
       if (SYLLABUS && SYLLABUS.areas) {
         for (const area of SYLLABUS.areas) {
           for (const ch of area.chapters) {
             const deckId = 'deck_' + ch.id;
             const chCards = genData.cards.filter(c => c.deckId === ch.id);
             if (chCards.length === 0) continue;
-            const formattedCards = chCards.map(c => ({
-              id: 'c_' + Math.random().toString(36).substr(2,9),
-              front: c.front,
-              back: c.back,
-              deckId, interval: 1, repetitions: 0, easeFactor: 2.5, dueDate: Date.now(), createdAt: Date.now()
-            }));
-            data.decks.push({ id: deckId, name: ch.title, subtopicId: null, chapterId: ch.id, areaId: area.id, cards: formattedCards });
+            const frontCounts = {};
+            const formattedCards = chCards.map(c => {
+              const k = String(c.front || '').trim().toLowerCase();
+              const occ = frontCounts[k] = (frontCounts[k] || 0);
+              frontCounts[k]++;
+              return {
+                id: getStableCardId(deckId, c.front, occ),
+                front: c.front,
+                back: c.back,
+                deckId,
+                interval: 1,
+                repetitions: 0,
+                easeFactor: 2.5,
+                dueDate: Date.now(),
+                createdAt: Date.now()
+              };
+            });
+            data.decks.push({
+              id: deckId,
+              name: ch.title,
+              subtopicId: null,
+              chapterId: ch.id,
+              areaId: area.id,
+              cards: formattedCards
+            });
           }
         }
       }
       DB.set('flashcards', data);
       renderFlashcards();
-    } catch (e) {
-      console.error("Failed to load generated flashcards", e);
+      return;
     }
+
+    // Case 2: Existing user data to safely migrate
+    // Step A: Verified backup before any modification
+    const backupOk = createSafeFlashcardsBackup(data);
+    if (!backupOk) {
+      console.error('Migration aborted: pre-migration backup could not be verified.');
+      return; // STOP! Leave data untouched
+    }
+
+    // Step B: Incremental merge
+    // Retain all existing decks (including user-created custom decks)
+    const existingDeckMap = new Map();
+    for (const d of data.decks) {
+      existingDeckMap.set(d.id, d);
+      if (d.chapterId) existingDeckMap.set('deck_' + d.chapterId, d);
+    }
+
+    if (SYLLABUS && SYLLABUS.areas) {
+      for (const area of SYLLABUS.areas) {
+        for (const ch of area.chapters) {
+          const deckId = 'deck_' + ch.id;
+          let deck = existingDeckMap.get(deckId);
+          if (!deck) {
+            deck = { id: deckId, name: ch.title, subtopicId: null, chapterId: ch.id, areaId: area.id, cards: [] };
+            data.decks.push(deck);
+            existingDeckMap.set(deckId, deck);
+          }
+
+          // Group existing cards in this deck by normalized front
+          const existingFrontGroups = new Map();
+          for (const card of deck.cards) {
+            const k = String(card.front || '').trim().toLowerCase();
+            if (!existingFrontGroups.has(k)) existingFrontGroups.set(k, []);
+            existingFrontGroups.get(k).push(card);
+          }
+
+          const matchedCardSet = new Set();
+          const incomingChCards = genData.cards.filter(c => c.deckId === ch.id);
+          const incomingFrontCounts = {};
+
+          for (const inc of incomingChCards) {
+            const k = String(inc.front || '').trim().toLowerCase();
+            const occ = incomingFrontCounts[k] = (incomingFrontCounts[k] || 0);
+            incomingFrontCounts[k]++;
+
+            const stableId = getStableCardId(deckId, inc.front, occ);
+            const group = existingFrontGroups.get(k);
+            let matchedCard = null;
+
+            if (group && occ < group.length) {
+              matchedCard = group[occ];
+            } else if (group) {
+              matchedCard = group.find(c => !matchedCardSet.has(c));
+            }
+
+            if (matchedCard) {
+              matchedCardSet.add(matchedCard);
+              matchedCard.id = stableId;
+              matchedCard.back = inc.back;
+              // RETAIN ALL REVIEW HISTORY:
+              // interval, repetitions, easeFactor, dueDate, createdAt are UNTOUCHED!
+            } else {
+              // New card: add to deck
+              deck.cards.push({
+                id: stableId,
+                front: inc.front,
+                back: inc.back,
+                deckId,
+                interval: 1,
+                repetitions: 0,
+                easeFactor: 2.5,
+                dueDate: Date.now(),
+                createdAt: Date.now()
+              });
+            }
+          }
+          // Note: Any existing cards in deck.cards that were NOT in matchedCardSet
+          // (such as user-created cards added via createCard) REMAIN IN deck.cards!
+        }
+      }
+    }
+
+    // Step C: Bump version to 10 and persist
+    data.version = CURRENT_FC_VERSION;
+    DB.set('flashcards', data);
+    renderFlashcards();
+  } catch (e) {
+    console.error("Failed to safely migrate flashcards", e);
   }
 }
 function renderFlashcards() {
