@@ -447,6 +447,39 @@
     .al-sched-chip.current{background:var(--fill-accent);color:#fff}
     .al-sched-chip.completed{background:var(--tint-success);color:var(--success)}
 
+    /* AI Teach-Back Feedback Layer */
+    .al-ai-feedback-card{background:var(--surface);border:1.5px solid var(--accent);border-radius:var(--r-xl);padding:18px;margin-bottom:16px;box-shadow:var(--shadow-md);direction:rtl;text-align:right;animation:slideUp .3s ease}
+    .al-ai-hdr{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px;padding-bottom:10px;border-bottom:.5px solid var(--sep);flex-wrap:wrap}
+    .al-ai-model-tag{font-size:11.5px;font-weight:700;color:var(--accent);background:var(--tint-accent);padding:3px 8px;border-radius:99px;letter-spacing:.3px}
+    .al-ai-sec{margin-bottom:14px}
+    .al-ai-sec:last-child{margin-bottom:0}
+    .al-ai-sec-title{display:flex;align-items:center;gap:6px;font-size:14px;font-weight:800;margin-bottom:8px}
+    .al-ai-sec-title.strengths{color:var(--success)}
+    .al-ai-sec-title.gaps{color:var(--warning)}
+    .al-ai-sec-title.errors{color:var(--danger)}
+    .al-ai-sec-title.conclusions{color:var(--accent)}
+    .al-ai-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:6px}
+    .al-ai-list-item{font-size:14px;line-height:1.55;color:var(--label);padding:8px 12px;border-radius:var(--r-sm);background:var(--surface2)}
+    .al-ai-gap-item{border-right:3px solid var(--warning)}
+    .al-ai-err-item{border-right:3px solid var(--danger)}
+    .al-ai-ref-tag{display:inline-block;font-size:11.5px;font-weight:700;color:var(--label3);margin-top:4px}
+    .al-ai-loading-box{background:var(--surface);border:1.5px dashed var(--accent);border-radius:var(--r-xl);padding:22px 18px;margin-top:14px;text-align:center;direction:rtl;display:flex;flex-direction:column;align-items:center;justify-content:center}
+    .al-ai-kp-eval{margin-top:8px;padding:6px 10px;border-radius:var(--r-xs);font-size:12.5px;line-height:1.45;display:flex;align-items:flex-start;gap:6px}
+    .al-ai-kp-eval.covered{background:var(--tint-success);color:var(--success)}
+    .al-ai-kp-eval.partial{background:var(--tint-warning);color:var(--warning)}
+    .al-ai-kp-eval.missed{background:var(--tint-danger);color:var(--danger)}
+    .al-followup-box{background:var(--surface2);border-radius:var(--r-md);padding:12px;margin-top:14px;border-top:.5px solid var(--sep)}
+    .al-followup-title{font-size:13.5px;font-weight:700;color:var(--label);margin-bottom:8px;display:flex;align-items:center;gap:6px}
+    .al-followup-form{display:flex;gap:8px;align-items:center}
+    .al-followup-input{flex:1;padding:8px 12px;border-radius:var(--r-sm);border:1px solid var(--sep);background:var(--surface);color:var(--label);font-family:var(--font);font-size:13.5px;direction:rtl}
+    .al-followup-input:focus{outline:none;border-color:var(--accent)}
+    .al-followup-qa{background:var(--surface);border-radius:var(--r-sm);padding:10px 12px;margin-top:8px;border-right:3px solid var(--accent);font-size:13.5px;line-height:1.5}
+    .al-followup-q{font-weight:700;color:var(--label);margin-bottom:4px}
+    .al-followup-a{color:var(--label2)}
+    .gemini-modal-overlay{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.55);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);z-index:99999;display:flex;align-items:center;justify-content:center;padding:16px;animation:fadeIn .2s ease}
+    .gemini-modal-card{background:var(--surface);border-radius:var(--r-xl);max-width:460px;width:100%;padding:22px;box-shadow:var(--shadow-lg);direction:rtl;text-align:right;max-height:90vh;overflow-y:auto;border:1px solid var(--sep)}
+    .gemini-warning-box{background:var(--tint-warning);border:1px solid var(--warning);border-radius:var(--r-md);padding:12px;font-size:13px;line-height:1.5;color:var(--label);margin:12px 0 16px}
+
     /* Compact Home CTAs when 3 buttons are shown */
     .home-actions{padding:12px 16px;gap:10px}
     .cta{min-height:66px;padding:12px 16px}
@@ -651,6 +684,7 @@
       <div class="settings-card">
         <div class="setting-row" onclick="toggleSetting('sounds')"><span class="s-label">🔊 צלילי משוב</span><div class="ios-toggle" id="tog-sounds"></div></div>
         <div class="setting-row" onclick="toggleSetting('haptics')"><span class="s-label">📳 רטט</span><div class="ios-toggle" id="tog-haptics"></div></div>
+        <div class="setting-row" onclick="openGeminiSettingsModal()"><span class="s-label">🤖 מפתח ומודל Gemini AI</span><span class="s-val" id="p-gemini-status">לא מוגדר ›</span></div>
       </div>
     </div>
     <div class="settings-sec">
@@ -682,6 +716,69 @@
 
   <!-- OVERLAY -->
   <div id="overlay" style="display:none"></div>
+
+  <!-- GEMINI SETTINGS MODAL -->
+  <div id="gemini-settings-modal" class="gemini-modal-overlay" style="display:none" onclick="if(event.target===this) closeGeminiSettingsModal()">
+    <div class="gemini-modal-card">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;border-bottom:.5px solid var(--sep);padding-bottom:10px">
+        <div style="font-size:18px;font-weight:800;color:var(--label);display:flex;align-items:center;gap:8px">
+          <span>🤖</span>
+          <span>הגדרות משוב AI (Gemini)</span>
+        </div>
+        <button type="button" class="close-btn" onclick="closeGeminiSettingsModal()" aria-label="סגור">✕</button>
+      </div>
+
+      <div class="gemini-warning-box">
+        <strong>⚠️ אזהרת אבטחה:</strong><br>
+        המפתח נשמר בדפדפן המקומי של מכשיר זה בלבד (localStorage) ואינו מאובטח - מיועד לשימוש אישי בלבד, לא להפצה משותפת. המפתח לעולם אינו נשלח לשרת צד שלישי מלבד ה-API הרשמי של Google.
+      </div>
+
+      <div style="margin-bottom:14px">
+        <label for="gemini-api-key-input" style="display:block;font-size:14px;font-weight:700;color:var(--label);margin-bottom:6px">
+          מפתח Gemini API (API Key)
+        </label>
+        <div style="position:relative">
+          <input
+            type="password"
+            id="gemini-api-key-input"
+            class="al-textarea"
+            style="min-height:auto;height:44px;padding:8px 12px;font-family:monospace;direction:ltr;font-size:14px;resize:none"
+            placeholder="AIzaSy..."
+            autocomplete="off"
+          />
+        </div>
+        <div style="font-size:12px;color:var(--label3);margin-top:4px">
+          ניתן להפיק מפתח אישי חינמי ב-Google AI Studio (<a href="https://aistudio.google.com/apikey" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:underline">aistudio.google.com</a>)
+        </div>
+      </div>
+
+      <div style="margin-bottom:16px">
+        <label for="gemini-model-select" style="display:block;font-size:14px;font-weight:700;color:var(--label);margin-bottom:6px">
+          בחירת מודל
+        </label>
+        <select id="gemini-model-select" class="al-textarea" style="min-height:auto;height:44px;padding:8px 12px;font-size:14px">
+          <option value="gemini-2.5-pro">Gemini 2.5 Pro (מומלץ — מודל חזק ומעמיק לעברית רפואית)</option>
+          <option value="gemini-2.5-flash">Gemini 2.5 Flash (מהיר וחסכוני)</option>
+        </select>
+      </div>
+
+      <div style="display:flex;gap:8px;margin-bottom:14px;flex-wrap:wrap">
+        <button type="button" class="btn btn-secondary" id="gemini-test-btn" style="flex:1;min-height:40px;font-size:13.5px" onclick="testGeminiConnection()">
+          🔍 בדיקת תקינות חיבור
+        </button>
+      </div>
+      <div id="gemini-test-status" style="font-size:13px;margin-bottom:16px;min-height:18px"></div>
+
+      <div style="display:flex;gap:10px">
+        <button type="button" class="btn btn-accent" style="flex:2" onclick="saveGeminiSettingsFromModal()">
+          שמור הגדרות
+        </button>
+        <button type="button" class="btn btn-secondary" style="flex:1;color:var(--danger)" onclick="clearGeminiSettingsFromModal()">
+          הסר מפתח
+        </button>
+      </div>
+    </div>
+  </div>
 
   <!-- TOAST -->
   <div class="toast" id="toast"></div>
@@ -1257,6 +1354,11 @@ function renderProfile() {
     const el = document.getElementById('tog-'+k);
     if (el) el.classList.toggle('on', !!state.settings?.[k]);
   });
+  const geminiCfg = getGeminiConfig();
+  const gemStatusEl = document.getElementById('p-gemini-status');
+  if (gemStatusEl) {
+    gemStatusEl.textContent = geminiCfg.apiKey ? `פעיל (${geminiCfg.model.replace('gemini-', '')}) ›` : 'לא מוגדר ›';
+  }
   if (OFFICIAL_RAW?.books) {
     document.getElementById('books-list').innerHTML = OFFICIAL_RAW.books.map(b =>
       `<div dir="ltr" style="text-align:left;font-size:14px;color:var(--label2);padding:4px 0;border-bottom:.5px solid var(--sep);line-height:1.4">
@@ -1870,7 +1972,7 @@ function renderActiveLessonStep() {
   }
 
   if (step === 2) {
-    // STEP 2: Explain in your own words + Reference explanation + Key-points checklist ("got it" / "missed it")
+    // STEP 2: Explain in your own words + Reference explanation + Key-points checklist ("got it" / "missed it") + AI Feedback Layer
     let totalKps = 0;
     let markedKps = 0;
     conceptCards.forEach((c, cIdx) => {
@@ -1880,6 +1982,8 @@ function renderActiveLessonStep() {
       });
     });
     const allMarked = totalKps > 0 && markedKps === totalKps;
+    const geminiCfg = getGeminiConfig();
+    const hasGeminiKey = !!geminiCfg.apiKey;
 
     openOverlay(`
       <div class="ov-hdr">
@@ -1905,19 +2009,43 @@ function renderActiveLessonStep() {
             class="al-textarea"
             placeholder="הסבר כאן במילים שלך את המושגים המרכזיים שלמדת בשיעור (${escapeHtml(conceptTitlesSample)})..."
             oninput="onActiveOwnWordsInput(this.value)"
+            ${ACTIVE_SESSION.aiLoading ? 'disabled' : ''}
           >${escapeHtml(ACTIVE_SESSION.ownWords || '')}</textarea>
           <div class="al-field-hint">
             <span>נשמר אוטומטית במכשיר (זמין אופליין)</span>
             <span id="al-word-count">${countWords(ACTIVE_SESSION.ownWords)} מילים</span>
           </div>
-          ${!ACTIVE_SESSION.revealedRef ? `
-            <button type="button" class="btn btn-accent" id="al-reveal-ref-btn" style="margin-top:12px" onclick="revealActiveReference()">
-              הצג הסבר מקור ורשימת נקודות מפתח ←
-            </button>
+
+          ${ACTIVE_SESSION.aiLoading ? `
+            <div class="al-ai-loading-box">
+              <div class="spinner" style="width:28px;height:28px;border-width:3px;margin-bottom:8px"></div>
+              <div style="font-weight:700;font-size:15px;color:var(--accent)">🤖 מנתח את ההסבר שלך מול חומרי השיעור...</div>
+              <div style="font-size:13px;color:var(--label3);margin-top:4px">בדיקה מבוססת מקור: חוזקות, פערים, טעויות והערכת נקודות מפתח</div>
+            </div>
+          ` : !ACTIVE_SESSION.revealedRef ? `
+            <div style="margin-top:14px;display:flex;flex-direction:column;gap:8px">
+              ${hasGeminiKey ? `
+                <button type="button" class="btn btn-accent" id="al-ai-feedback-btn" onclick="revealActiveReference(true)">
+                  🤖 הצג מקור וקבל משוב AI חכם ✨
+                </button>
+                <button type="button" class="btn btn-secondary" style="font-size:13px;padding:9px" onclick="revealActiveReference(false)">
+                  הצג מקור לבדיקה עצמית ללא AI
+                </button>
+              ` : `
+                <button type="button" class="btn btn-accent" id="al-reveal-ref-btn" onclick="revealActiveReference(false)">
+                  הצג הסבר מקור ורשימת נקודות מפתח ←
+                </button>
+                <div style="font-size:12.5px;color:var(--label3);text-align:center;margin-top:2px">
+                  💡 רוצה משוב AI מעמיק על ההסבר שלך? <a href="javascript:void(0)" onclick="openGeminiSettingsModal()" style="color:var(--accent);text-decoration:underline">הגדר מפתח Gemini בהגדרות</a> (לשימוש אישי בלבד)
+                </div>
+              `}
+            </div>
           ` : ''}
         </div>
 
         ${ACTIVE_SESSION.revealedRef ? `
+          ${renderActiveAiFeedbackCard(ACTIVE_SESSION.aiFeedback)}
+
           <div class="al-compare-wrap" id="al-comparison-section">
             <div class="al-user-box">
               <span class="al-box-tag">📝 ההסבר שכתבת</span>
@@ -1950,6 +2078,7 @@ function renderActiveLessonStep() {
                   const key = `${cIdx}_${kIdx}`;
                   const mark = ACTIVE_SESSION.marks[key] || '';
                   const itemCls = mark === 'got' ? 'marked-got' : mark === 'missed' ? 'marked-missed' : '';
+                  const aiTag = ACTIVE_SESSION.aiTagging?.[key];
                   return `
                     <div class="al-kp-item ${itemCls}" id="al-kp-row-${cIdx}-${kIdx}">
                       <div class="al-kp-text">${formatRTL(kp)}</div>
@@ -1961,6 +2090,12 @@ function renderActiveLessonStep() {
                           ✗ פספסתי
                         </button>
                       </div>
+                      ${aiTag ? `
+                        <div class="al-ai-kp-eval ${aiTag.status}">
+                          <span>💡 הערכת AI: <strong>${aiTag.status === 'covered' ? 'הובן וכוסה' : aiTag.status === 'partial' ? 'כוסה חלקית' : 'הוחמץ בהסבר'}</strong></span>
+                          <span>— ${escapeHtml(aiTag.justification || '')}</span>
+                        </div>
+                      ` : ''}
                     </div>
                   `;
                 }).join('')}
@@ -1986,7 +2121,6 @@ function renderActiveLessonStep() {
     `);
     return;
   }
-
   if (step === 3) {
     // STEP 3: 3-5 short questions about ONLY what that lesson taught, with simple re-teach after wrong answer, then retry
     renderActiveQuizSlide();
@@ -2043,7 +2177,348 @@ function clearActiveOwnWords() {
   }
 }
 
-function revealActiveReference() {
+// ============================================================
+// GEMINI AI INTEGRATION (Teach-Back Feedback Layer)
+// ============================================================
+const GEMINI_CONFIG_KEY = NS + 'gemini_config';
+
+function getGeminiConfig() {
+  try {
+    const raw = localStorage.getItem(GEMINI_CONFIG_KEY);
+    if (!raw) return { apiKey: '', model: 'gemini-2.5-pro' };
+    const parsed = JSON.parse(raw);
+    return {
+      apiKey: (parsed.apiKey || '').trim(),
+      model: parsed.model || 'gemini-2.5-pro'
+    };
+  } catch (e) {
+    return { apiKey: '', model: 'gemini-2.5-pro' };
+  }
+}
+
+function saveGeminiConfig(cfg) {
+  try {
+    const toSave = {
+      apiKey: (cfg.apiKey || '').trim(),
+      model: cfg.model || 'gemini-2.5-pro',
+      updatedAt: Date.now()
+    };
+    localStorage.setItem(GEMINI_CONFIG_KEY, JSON.stringify(toSave));
+    return true;
+  } catch (e) {
+    console.error('Failed to save gemini config:', e);
+    return false;
+  }
+}
+
+const OFFICIAL_AREA_BOOKS = {
+  'biochemistry': 'Lehninger Principles of Biochemistry, 8th ed.',
+  'molecular-biology': 'Molecular Biology of the Cell (Alberts), 7th ed.',
+  'cell-biology': 'Molecular Biology of the Cell (Alberts), 7th ed.',
+  'physiology': 'Berne & Levy Physiology, 7th ed.'
+};
+
+function getLessonSourceMetadata(lesson) {
+  const book = OFFICIAL_AREA_BOOKS[lesson.areaId] || 'ספר הלימוד הרשמי לפי הסילבוס';
+  let pageInfo = 'ללא מספרי עמודים ספציפיים במטא-דאטת השיעור';
+  if (lesson.pages) pageInfo = `עמודים: ${lesson.pages}`;
+  else if (lesson.sourcePages) pageInfo = `עמודים: ${lesson.sourcePages}`;
+  return {
+    book,
+    chapterId: lesson.chapterId,
+    areaTitle: getAreaTitle(lesson.areaId),
+    pageInfo
+  };
+}
+
+const TEACH_BACK_FEEDBACK_PROMPT = `אתה מנטור רפואי מדויק הבודק הסבר שנכתב על ידי סטודנט לרפואה במסגרת תרגיל "הסבר במילים שלך" (Teach-back).
+
+כללי יסוד חמורים ומחייבים (Grounding Rules):
+1. הבדיקה והמשוב שלך מבוססים אך ורק ובלעדית על תוכן השיעור, הסבר המקור, נקודות המפתח ומטא-דאטת המקור שנמסרו לך להלן.
+2. חל איסור מוחלט להשתמש בידע כללי מהזיכרון או להמציא עובדות שאינן מצוינות מפורשות בחומר השיעור. אם נקודה מסוימת שהסטודנט העלה אינה מופיעה בחומר השיעור, עליך לציין במפורש: "לא ניתן לאימות מתוך חומר השיעור".
+3. מראי מקום ועמודים: ציין מספרי עמודים אך ורק אם הם מופיעים במפורש במטא-דאטת המקור של השיעור שנמסרה לך (בשדה "מטא-דאטת עמודים"). אל תמציא מספרי עמודים לעולם. אם לא נמסר מספר עמוד במטא-דאטה, ציין את שם ספר הלימוד והפרק בלבד ללא מספר עמוד.
+4. השפה: עברית מדעית מדויקת. מונחים מדעיים ושמות אנזימים/חלבונים יש להשאיר באנגלית/אותיות לטיניות לצד התרגום המקובל.
+
+עליך להחזיר JSON תקין בלבד (ללא markdown code blocks, ללא טקסט מקדים וללא טקסט מסיים) במבנה הבא:
+{
+  "strengths": [
+    "מה הסטודנט הסביר נכון ומדויק מתוך חומר השיעור (ספציפי וממוקד)"
+  ],
+  "gaps": [
+    {
+      "point": "נקודת מפתח שהוחמצה או הוסברה באופן חלקי",
+      "correctWording": "הניסוח המדויק מתוך חומר השיעור",
+      "sourceRef": "מראה מקום מבוסס מטא-דאטה בלבד (ללא המצאת עמודים)"
+    }
+  ],
+  "errors": [
+    {
+      "wrong": "מה שהסטודנט כתב ואינו נכון / אינו מדויק ביחס לשיעור",
+      "correction": "התיקון המדויק מתוך חומר השיעור"
+    }
+  ],
+  "conclusions": [
+    "1 עד 3 נקודות ספציפיות וממוקדות לחיזוק בהמשך השיעור ובחזרה המרווחת"
+  ],
+  "tagging": [
+    {
+      "cardIdx": 0,
+      "kpIdx": 0,
+      "status": "covered",
+      "justification": "נימוק קצר של משפט אחד בלבד"
+    }
+  ]
+}`;
+
+const TEACH_BACK_FOLLOWUP_PROMPT = `אתה מנטור רפואי בשיעור. עליך לענות על שאלת ההבהרה הבודדת של הסטודנט בקצרה ובתמציתיות (עד 3-4 משפטים).
+
+כללי יסוד חמורים:
+1. התבסס אך ורק על חומר השיעור והסבר המקור המצורף.
+2. אל תמציא עובדות שאינן מצוינות בחומר השיעור. אם התשובה אינה בחומר, ציין: "שאלה זו חורגת מחומר השיעור שנלמד".
+3. אל תמציא מספרי עמודים.
+4. ענה בעברית מדעית מדויקת, מונחים בלועזית/אנגלית.`;
+
+async function callGeminiTeachBackFeedback({ lesson, userText, conceptCards, model, apiKey }) {
+  const meta = getLessonSourceMetadata(lesson);
+  const cardsPayload = conceptCards.map((c, cIdx) => ({
+    cardIdx: cIdx,
+    title: c.title,
+    content: c.content,
+    keyPoints: (c.keyPoints || []).map((kp, kIdx) => ({ kpIdx: kIdx, text: kp }))
+  }));
+
+  const userPrompt = `שיעור: ${lesson.title} (${lesson.titleEn || ''})
+פרק: ${lesson.chapterId}
+תחום: ${meta.areaTitle}
+מקור רשמי: ${meta.book}
+מטא-דאטת עמודים: ${meta.pageInfo}
+
+--- חומרי השיעור והסבר המקור (טקסט ונקודות מפתח) ---
+${JSON.stringify(cardsPayload, null, 2)}
+
+--- ההסבר שהסטודנט כתב במילים שלו ---
+${userText.trim() || '(לא נכתב הסבר)'}
+
+נתח את ההסבר והחזר את אובייקט ה-JSON בהתאם להנחיות ולכללי היסוד בלבד.`;
+
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent?key=${encodeURIComponent(apiKey)}`;
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), 25000);
+
+  try {
+    const res = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        contents: [
+          {
+            role: 'user',
+            parts: [
+              { text: TEACH_BACK_FEEDBACK_PROMPT },
+              { text: userPrompt }
+            ]
+          }
+        ],
+        generationConfig: {
+          temperature: 0.2,
+          maxOutputTokens: 2048,
+          responseMimeType: 'application/json'
+        }
+      }),
+      signal: controller.signal
+    });
+    clearTimeout(timeoutId);
+
+    if (!res.ok) {
+      let errMsg = `שגיאת שרת (${res.status})`;
+      try {
+        const errJson = await res.json();
+        if (errJson.error?.message) errMsg = errJson.error.message;
+      } catch (e) {}
+      throw new Error(errMsg);
+    }
+
+    const data = await res.json();
+    const candidate = data.candidates?.[0];
+    const rawText = candidate?.content?.parts?.[0]?.text;
+    if (!rawText) throw new Error('התקבלה תשובה ריקה מהמודל');
+
+    let cleanText = rawText.trim();
+    if (cleanText.startsWith('```')) {
+      cleanText = cleanText.replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/i, '');
+    }
+    const parsed = JSON.parse(cleanText);
+    parsed.model = model;
+    return parsed;
+  } catch (err) {
+    clearTimeout(timeoutId);
+    if (err.name === 'AbortError') throw new Error('בקשת ה-AI חרגה מזמן ההמתנה (25 שניות)');
+    throw err;
+  }
+}
+
+async function callGeminiTeachBackFollowup({ lesson, userText, feedback, questionText, model, apiKey }) {
+  const meta = getLessonSourceMetadata(lesson);
+  const conceptCards = getConceptCards(lesson);
+
+  const contextPrompt = `שיעור: ${lesson.title} (${meta.book})
+חומרי השיעור:
+${conceptCards.map(c => `${c.title}:\n${c.content}\nנקודות: ${(c.keyPoints || []).join('; ')}`).join('\n\n')}
+
+הסבר הסטודנט:
+${userText}
+
+משוב ה-AI שניתן:
+חוזקות: ${(feedback.strengths || []).join('; ')}
+פערים: ${(feedback.gaps || []).map(g => g.point).join('; ')}
+
+שאלת ההבהרה של הסטודנט:
+"${questionText}"
+
+ענה בתמציתיות (עד 3-4 משפטים) על שאלת ההבהרה מתוך חומרי השיעור בלבד.`;
+
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent?key=${encodeURIComponent(apiKey)}`;
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), 15000);
+
+  try {
+    const res = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        contents: [
+          {
+            role: 'user',
+            parts: [
+              { text: TEACH_BACK_FOLLOWUP_PROMPT },
+              { text: contextPrompt }
+            ]
+          }
+        ],
+        generationConfig: {
+          temperature: 0.2,
+          maxOutputTokens: 512
+        }
+      }),
+      signal: controller.signal
+    });
+    clearTimeout(timeoutId);
+
+    if (!res.ok) {
+      let msg = `שגיאה (${res.status})`;
+      try {
+        const j = await res.json();
+        if (j.error?.message) msg = j.error.message;
+      } catch (e) {}
+      throw new Error(msg);
+    }
+    const data = await res.json();
+    const txt = data.candidates?.[0]?.content?.parts?.[0]?.text;
+    if (!txt) throw new Error('תשובה ריקה');
+    return txt.trim();
+  } catch (err) {
+    clearTimeout(timeoutId);
+    if (err.name === 'AbortError') throw new Error('הבקשה חרגה מזמן המתנה (15 שניות)');
+    throw err;
+  }
+}
+
+function renderActiveAiFeedbackCard(fb) {
+  if (!fb) return '';
+  const strengths = Array.isArray(fb.strengths) ? fb.strengths : [];
+  const gaps = Array.isArray(fb.gaps) ? fb.gaps : [];
+  const errors = Array.isArray(fb.errors) ? fb.errors : [];
+  const conclusions = Array.isArray(fb.conclusions) ? fb.conclusions : [];
+
+  return `
+    <div class="al-ai-feedback-card" id="al-ai-feedback-section">
+      <div class="al-ai-hdr">
+        <div style="display:flex;align-items:center;gap:8px">
+          <span style="font-size:22px">🤖</span>
+          <div>
+            <div style="font-weight:800;font-size:16px;color:var(--label)">משוב AI מבוסס מקור על ההסבר שלך</div>
+            <div style="font-size:12px;color:var(--label3)">מבוסס אך ורק על תכני השיעור וספרי הלימוד הרשמיים</div>
+          </div>
+        </div>
+        <span class="al-ai-model-tag">${escapeHtml(fb.model || 'Gemini 2.5 Pro')}</span>
+      </div>
+
+      <!-- STRENGTHS -->
+      <div class="al-ai-sec">
+        <div class="al-ai-sec-title strengths"><span>💪</span><span>חוזקות — מה שהסברת נכון ומדויק:</span></div>
+        ${strengths.length ? `
+          <ul class="al-ai-list">
+            ${strengths.map(s => `<li class="al-ai-list-item">${formatRTL(s)}</li>`).join('')}
+          </ul>
+        ` : `<div style="font-size:13.5px;color:var(--label3)">לא זוהו נקודות מפתח שפותחו במלואן בהסבר.</div>`}
+      </div>
+
+      <!-- GAPS -->
+      ${gaps.length ? `
+        <div class="al-ai-sec">
+          <div class="al-ai-sec-title gaps"><span>⚠️</span><span>פערים ודיוקים — נקודות שהוחמצו או דורשות חידוד:</span></div>
+          <ul class="al-ai-list">
+            ${gaps.map(g => `
+              <li class="al-ai-list-item al-ai-gap-item">
+                <div style="font-weight:700;color:var(--label)">${formatRTL(g.point || '')}</div>
+                ${g.correctWording ? `<div style="font-size:13px;color:var(--label2);margin-top:2px"><strong>הניסוח המדויק:</strong> ${formatRTL(g.correctWording)}</div>` : ''}
+                ${g.sourceRef ? `<div class="al-ai-ref-tag">📖 מראה מקום: ${formatRTL(g.sourceRef)}</div>` : ''}
+              </li>
+            `).join('')}
+          </ul>
+        </div>
+      ` : ''}
+
+      <!-- ERRORS -->
+      <div class="al-ai-sec">
+        <div class="al-ai-sec-title errors"><span>❌</span><span>אי-דיוקים וטעויות:</span></div>
+        ${errors.length ? `
+          <ul class="al-ai-list">
+            ${errors.map(e => `
+              <li class="al-ai-list-item al-ai-err-item">
+                <div style="font-weight:700;color:var(--danger)">${formatRTL(e.wrong || '')}</div>
+                ${e.correction ? `<div style="font-size:13px;color:var(--label2);margin-top:2px"><strong>התיקון:</strong> ${formatRTL(e.correction)}</div>` : ''}
+              </li>
+            `).join('')}
+          </ul>
+        ` : `<div style="font-size:13.5px;color:var(--success);font-weight:600">🎉 לא אותרו טעויות עובדתיות בהסברך!</div>`}
+      </div>
+
+      <!-- CONCLUSIONS -->
+      ${conclusions.length ? `
+        <div class="al-ai-sec">
+          <div class="al-ai-sec-title conclusions"><span>🎯</span><span>מסקנות והמלצות להמשך השיעור:</span></div>
+          <ul class="al-ai-list">
+            ${conclusions.map(c => `<li class="al-ai-list-item" style="border-right:3px solid var(--accent)">${formatRTL(c)}</li>`).join('')}
+          </ul>
+        </div>
+      ` : ''}
+
+      <!-- OPTIONAL SINGLE FOLLOW-UP QUESTION -->
+      <div class="al-followup-box">
+        <div class="al-followup-title">
+          <span>💬</span>
+          <span>שאלת הבהרה אחת על המשוב (אופציונלי):</span>
+        </div>
+        ${ACTIVE_SESSION?.aiFollowup ? `
+          <div class="al-followup-qa">
+            <div class="al-followup-q">❓ ${escapeHtml(ACTIVE_SESSION.aiFollowup.question)}</div>
+            <div class="al-followup-a">💡 ${formatRTL(ACTIVE_SESSION.aiFollowup.answer)}</div>
+          </div>
+          <div style="font-size:12px;color:var(--label3);margin-top:6px">✓ שאלת ההבהרה נענתה (סיבוב יחיד)</div>
+        ` : `
+          <div class="al-followup-form">
+            <input type="text" id="al-followup-input" class="al-followup-input" placeholder="שאל שאלת הבהרה על המשוב או על מושגי השיעור..." onkeydown="if(event.key==='Enter') submitActiveLessonFollowup()" />
+            <button type="button" class="btn btn-accent" id="al-followup-btn" style="min-height:36px;padding:6px 14px;font-size:13px;flex-shrink:0" onclick="submitActiveLessonFollowup()">שאל</button>
+          </div>
+          <div style="font-size:11.5px;color:var(--label3);margin-top:4px">ניתן לשאול שאלת הבהרה אחת בלבד מתוך חומר השיעור</div>
+        `}
+      </div>
+    </div>
+  `;
+}
+
+async function revealActiveReference(useAI = false) {
   if (!ACTIVE_SESSION) return;
   haptic();
   const ta = document.getElementById('al-own-words');
@@ -2053,12 +2528,209 @@ function revealActiveReference() {
     if (ta) ta.focus();
     return;
   }
+
+  const geminiCfg = getGeminiConfig();
+  if (useAI && geminiCfg.apiKey) {
+    ACTIVE_SESSION.aiLoading = true;
+    renderActiveLessonStep();
+    try {
+      const feedback = await callGeminiTeachBackFeedback({
+        lesson: ACTIVE_SESSION.lesson,
+        userText: ACTIVE_SESSION.ownWords,
+        conceptCards: getConceptCards(ACTIVE_SESSION.lesson),
+        model: geminiCfg.model,
+        apiKey: geminiCfg.apiKey
+      });
+      ACTIVE_SESSION.aiFeedback = feedback;
+
+      // Pre-fill key-point tagging
+      if (Array.isArray(feedback.tagging)) {
+        if (!ACTIVE_SESSION.aiTagging) ACTIVE_SESSION.aiTagging = {};
+        const weakKpKeys = new Set();
+        feedback.tagging.forEach(tag => {
+          const k = `${tag.cardIdx}_${tag.kpIdx}`;
+          ACTIVE_SESSION.aiTagging[k] = tag;
+          const mark = tag.status === 'covered' ? 'got' : 'missed';
+          ACTIVE_SESSION.marks[k] = mark;
+          if (tag.status === 'missed' || tag.status === 'partial') {
+            weakKpKeys.add(k);
+          }
+        });
+        // Save to active learn state
+        const al = getActiveLearnState();
+        if (!al.checklists[ACTIVE_SESSION.lesson.id]) al.checklists[ACTIVE_SESSION.lesson.id] = {};
+        Object.assign(al.checklists[ACTIVE_SESSION.lesson.id], ACTIVE_SESSION.marks);
+        saveActiveLearnState(al);
+
+        // Prioritize follow-up questions in quizQueue for identified weak points
+        if (weakKpKeys.size > 0 && Array.isArray(ACTIVE_SESSION.quizQueue)) {
+          const weakQuestions = [];
+          const otherQuestions = [];
+          ACTIVE_SESSION.quizQueue.forEach(item => {
+            const k = `${item.cardIdx}_${item.kpIdx || 0}`;
+            if (weakKpKeys.has(k)) {
+              weakQuestions.push(item);
+            } else {
+              otherQuestions.push(item);
+            }
+          });
+          ACTIVE_SESSION.quizQueue = [...weakQuestions, ...otherQuestions];
+        }
+      }
+      showToast('משוב AI התקבל בהצלחה! ✨');
+    } catch (err) {
+      console.warn('Gemini feedback failed:', err);
+      showToast(`משוב AI לא היה זמין (${err.message || 'שגיאת רשת'}) — מעבר להשוואה ידנית`);
+    } finally {
+      ACTIVE_SESSION.aiLoading = false;
+    }
+  }
+
   ACTIVE_SESSION.revealedRef = true;
   renderActiveLessonStep();
   setTimeout(() => {
-    const comp = document.getElementById('al-comparison-section');
+    const comp = document.getElementById('al-ai-feedback-section') || document.getElementById('al-comparison-section');
     if (comp) comp.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }, 60);
+}
+
+async function submitActiveLessonFollowup() {
+  if (!ACTIVE_SESSION || !ACTIVE_SESSION.aiFeedback) return;
+  const input = document.getElementById('al-followup-input');
+  const btn = document.getElementById('al-followup-btn');
+  const qText = (input?.value || '').trim();
+  if (!qText) {
+    showToast('כתוב שאלת הבהרה בתיבה');
+    if (input) input.focus();
+    return;
+  }
+  const geminiCfg = getGeminiConfig();
+  if (!geminiCfg.apiKey) {
+    showToast('חסר מפתח Gemini');
+    return;
+  }
+
+  if (btn) {
+    btn.disabled = true;
+    btn.textContent = 'שואל...';
+  }
+  if (input) input.disabled = true;
+
+  try {
+    const answer = await callGeminiTeachBackFollowup({
+      lesson: ACTIVE_SESSION.lesson,
+      userText: ACTIVE_SESSION.ownWords,
+      feedback: ACTIVE_SESSION.aiFeedback,
+      questionText: qText,
+      model: geminiCfg.model,
+      apiKey: geminiCfg.apiKey
+    });
+    ACTIVE_SESSION.aiFollowup = {
+      question: qText,
+      answer
+    };
+    renderActiveLessonStep();
+    showToast('תשובת ההבהרה התקבלה');
+  } catch (err) {
+    console.warn('Gemini followup failed:', err);
+    showToast(`שגיאה בקבלת תשובה: ${err.message || 'שגיאת רשת'}`);
+    if (btn) {
+      btn.disabled = false;
+      btn.textContent = 'שאל שוב';
+    }
+    if (input) input.disabled = false;
+  }
+}
+
+function openGeminiSettingsModal() {
+  const modal = document.getElementById('gemini-settings-modal');
+  if (!modal) return;
+  const cfg = getGeminiConfig();
+  const keyInput = document.getElementById('gemini-api-key-input');
+  const modelSelect = document.getElementById('gemini-model-select');
+  const testStatus = document.getElementById('gemini-test-status');
+  if (keyInput) keyInput.value = cfg.apiKey;
+  if (modelSelect) modelSelect.value = cfg.model;
+  if (testStatus) testStatus.innerHTML = '';
+  modal.style.display = 'flex';
+}
+
+function closeGeminiSettingsModal() {
+  const modal = document.getElementById('gemini-settings-modal');
+  if (modal) modal.style.display = 'none';
+  renderProfile();
+  if (ACTIVE_SESSION && ACTIVE_SESSION.step === 2) {
+    renderActiveLessonStep();
+  }
+}
+
+function saveGeminiSettingsFromModal() {
+  const keyInput = document.getElementById('gemini-api-key-input');
+  const modelSelect = document.getElementById('gemini-model-select');
+  const apiKey = (keyInput?.value || '').trim();
+  const model = modelSelect?.value || 'gemini-2.5-pro';
+
+  saveGeminiConfig({ apiKey, model });
+  showToast(apiKey ? 'הגדרות Gemini נשמרו בהצלחה' : 'המפתח נמחק — מצב ידני בלבד');
+  closeGeminiSettingsModal();
+}
+
+function clearGeminiSettingsFromModal() {
+  if (confirm('למחוק את מפתח ה-Gemini מהמכשיר?')) {
+    saveGeminiConfig({ apiKey: '', model: 'gemini-2.5-pro' });
+    const keyInput = document.getElementById('gemini-api-key-input');
+    if (keyInput) keyInput.value = '';
+    showToast('המפתח הוסר');
+    closeGeminiSettingsModal();
+  }
+}
+
+async function testGeminiConnection() {
+  const keyInput = document.getElementById('gemini-api-key-input');
+  const modelSelect = document.getElementById('gemini-model-select');
+  const testStatus = document.getElementById('gemini-test-status');
+  const testBtn = document.getElementById('gemini-test-btn');
+  const apiKey = (keyInput?.value || '').trim();
+  const model = modelSelect?.value || 'gemini-2.5-pro';
+
+  if (!apiKey) {
+    if (testStatus) testStatus.innerHTML = '<span style="color:var(--danger)">הזן מפתח API לבדיקה</span>';
+    return;
+  }
+
+  if (testBtn) { testBtn.disabled = true; testBtn.textContent = 'בודק...'; }
+  if (testStatus) testStatus.innerHTML = '<span style="color:var(--label3)">מתחבר ל-Gemini API...</span>';
+
+  try {
+    const url = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent?key=${encodeURIComponent(apiKey)}`;
+    const res = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        contents: [{ role: 'user', parts: [{ text: 'Respond with the single word: OK' }] }],
+        generationConfig: { maxOutputTokens: 10 }
+      })
+    });
+    if (!res.ok) {
+      let msg = `שגיאה ${res.status}`;
+      try {
+        const j = await res.json();
+        if (j.error?.message) msg = j.error.message;
+      } catch (e) {}
+      throw new Error(msg);
+    }
+    const data = await res.json();
+    const txt = data.candidates?.[0]?.content?.parts?.[0]?.text;
+    if (testStatus) {
+      testStatus.innerHTML = `<span style="color:var(--success);font-weight:700">✓ חיבור הצליח! המודל הגיב: ${escapeHtml(txt?.trim() || 'OK')}</span>`;
+    }
+  } catch (err) {
+    if (testStatus) {
+      testStatus.innerHTML = `<span style="color:var(--danger);font-weight:700">✗ שגיאת התחברות: ${escapeHtml(err.message || 'שגיאת רשת')}</span>`;
+    }
+  } finally {
+    if (testBtn) { testBtn.disabled = false; testBtn.textContent = '🔍 בדיקת תקינות חיבור'; }
+  }
 }
 
 function markActiveKeyPoint(cIdx, kIdx, status) {
