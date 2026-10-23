@@ -2314,7 +2314,7 @@ ${userText.trim() || '(לא נכתב הסבר)'}
 
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent?key=${encodeURIComponent(apiKey)}`;
   const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), 25000);
+  const timeoutId = setTimeout(() => controller.abort(), 35000);
 
   try {
     const res = await fetch(url, {
@@ -2332,8 +2332,11 @@ ${userText.trim() || '(לא נכתב הסבר)'}
         ],
         generationConfig: {
           temperature: 0.2,
-          maxOutputTokens: 2048,
-          responseMimeType: 'application/json'
+          maxOutputTokens: 8192,
+          responseMimeType: 'application/json',
+          thinkingConfig: {
+            thinkingLevel: 'medium'
+          }
         }
       }),
       signal: controller.signal
@@ -2351,10 +2354,18 @@ ${userText.trim() || '(לא נכתב הסבר)'}
 
     const data = await res.json();
     const candidate = data.candidates?.[0];
-    const rawText = candidate?.content?.parts?.[0]?.text;
+    if (candidate?.finishReason === 'MAX_TOKENS') {
+      throw new Error('משוב ה-AI נקטע עקב מגבלת אסימונים (MAX_TOKENS) — אנא נסה שוב');
+    }
+    const parts = candidate?.content?.parts;
+    if (!parts || !parts.length) {
+      throw new Error('התקבלה תשובה ריקה מהמודל (ללא תוכן)');
+    }
+    const textParts = parts.filter(p => typeof p.text === 'string' && !p.thought);
+    const rawText = textParts.map(p => p.text).join('').trim() || parts[0]?.text?.trim() || '';
     if (!rawText) throw new Error('התקבלה תשובה ריקה מהמודל');
 
-    let cleanText = rawText.trim();
+    let cleanText = rawText;
     if (cleanText.startsWith('```')) {
       cleanText = cleanText.replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/i, '');
     }
@@ -2363,7 +2374,7 @@ ${userText.trim() || '(לא נכתב הסבר)'}
     return parsed;
   } catch (err) {
     clearTimeout(timeoutId);
-    if (err.name === 'AbortError') throw new Error('בקשת ה-AI חרגה מזמן ההמתנה (25 שניות)');
+    if (err.name === 'AbortError') throw new Error('בקשת ה-AI חרגה מזמן ההמתנה (35 שניות)');
     throw err;
   }
 }
@@ -2390,7 +2401,7 @@ ${userText}
 
   const url = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent?key=${encodeURIComponent(apiKey)}`;
   const controller = new AbortController();
-  const timeoutId = setTimeout(() => controller.abort(), 15000);
+  const timeoutId = setTimeout(() => controller.abort(), 20000);
 
   try {
     const res = await fetch(url, {
@@ -2408,7 +2419,10 @@ ${userText}
         ],
         generationConfig: {
           temperature: 0.2,
-          maxOutputTokens: 512
+          maxOutputTokens: 1024,
+          thinkingConfig: {
+            thinkingLevel: 'low'
+          }
         }
       }),
       signal: controller.signal
@@ -2424,12 +2438,21 @@ ${userText}
       throw new Error(msg);
     }
     const data = await res.json();
-    const txt = data.candidates?.[0]?.content?.parts?.[0]?.text;
-    if (!txt) throw new Error('תשובה ריקה');
-    return txt.trim();
+    const candidate = data.candidates?.[0];
+    if (candidate?.finishReason === 'MAX_TOKENS') {
+      throw new Error('התשובה נקטעה עקב מגבלת אסימונים (MAX_TOKENS)');
+    }
+    const parts = candidate?.content?.parts;
+    if (!parts || !parts.length) {
+      throw new Error('התקבלה תשובה ריקה מהמודל (ללא תוכן)');
+    }
+    const textParts = parts.filter(p => typeof p.text === 'string' && !p.thought);
+    const txt = textParts.map(p => p.text).join('').trim() || parts[0]?.text?.trim() || '';
+    if (!txt) throw new Error('התקבלה תשובה ריקה מהמודל');
+    return txt;
   } catch (err) {
     clearTimeout(timeoutId);
-    if (err.name === 'AbortError') throw new Error('הבקשה חרגה מזמן המתנה (15 שניות)');
+    if (err.name === 'AbortError') throw new Error('הבקשה חרגה מזמן המתנה (20 שניות)');
     throw err;
   }
 }
@@ -2821,6 +2844,9 @@ async function testGeminiConnection() {
   if (testBtn) { testBtn.disabled = true; testBtn.textContent = 'בודק...'; }
   if (testStatus) testStatus.innerHTML = '<span style="color:var(--label3)">מתחבר ל-Gemini API...</span>';
 
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), 20000);
+
   try {
     const url = `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent?key=${encodeURIComponent(apiKey)}`;
     const res = await fetch(url, {
@@ -2828,9 +2854,17 @@ async function testGeminiConnection() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         contents: [{ role: 'user', parts: [{ text: 'Respond with the single word: OK' }] }],
-        generationConfig: { maxOutputTokens: 10 }
-      })
+        generationConfig: {
+          maxOutputTokens: 256,
+          thinkingConfig: {
+            thinkingLevel: 'low'
+          }
+        }
+      }),
+      signal: controller.signal
     });
+    clearTimeout(timeoutId);
+
     if (!res.ok) {
       let msg = `שגיאה ${res.status}`;
       try {
@@ -2840,14 +2874,32 @@ async function testGeminiConnection() {
       throw new Error(msg);
     }
     const data = await res.json();
-    const txt = data.candidates?.[0]?.content?.parts?.[0]?.text;
+    const candidate = data.candidates?.[0];
+    if (candidate?.finishReason === 'MAX_TOKENS') {
+      throw new Error('בדיקת החיבור נקטעה עקב מגבלת אסימונים (MAX_TOKENS)');
+    }
+    const parts = candidate?.content?.parts;
+    if (!parts || !parts.length) {
+      throw new Error('התקבלה תשובה ריקה מהמודל (חלקים ריקים)');
+    }
+    const textParts = parts.filter(p => typeof p.text === 'string' && !p.thought);
+    const txt = textParts.map(p => p.text).join('').trim() || parts[0]?.text?.trim() || '';
+    if (!txt) {
+      throw new Error('התקבלה תשובה ריקה מהמודל');
+    }
+
     if (testStatus) {
-      testStatus.innerHTML = `<span style="color:var(--success);font-weight:700">✓ חיבור הצליח! המודל הגיב: ${escapeHtml(txt?.trim() || 'OK')}</span>`;
+      testStatus.innerHTML = `<span style="color:var(--success);font-weight:700">✓ חיבור הצליח! המודל הגיב: ${escapeHtml(txt)}</span>`;
     }
     fetchAndPopulateGeminiModels(apiKey, model);
   } catch (err) {
+    clearTimeout(timeoutId);
+    let errMsg = err.message || 'שגיאת רשת';
+    if (err.name === 'AbortError') {
+      errMsg = 'הבקשה ארכה יותר מ-20 שניות - בדוק מפתח ורשת';
+    }
     if (testStatus) {
-      testStatus.innerHTML = `<span style="color:var(--danger);font-weight:700">✗ שגיאת התחברות: ${escapeHtml(err.message || 'שגיאת רשת')}</span>`;
+      testStatus.innerHTML = `<span style="color:var(--danger);font-weight:700">✗ שגיאת התחברות: ${escapeHtml(errMsg)}</span>`;
     }
   } finally {
     if (testBtn) { testBtn.disabled = false; testBtn.textContent = '🔍 בדיקת תקינות חיבור'; }
