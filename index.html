@@ -1903,6 +1903,9 @@ function startActiveLesson(chId) {
     ownWords: savedExp,
     revealedRef: false,
     marks: savedMarks, // key `${cardIdx}_${kpIdx}` -> 'got' | 'missed'
+    aiFeedback: null,
+    aiError: null,
+    aiLoading: false,
     quizQueue: quizItems,
     quizIdx: 0,
     quizAnswered: false,
@@ -2046,6 +2049,21 @@ function renderActiveLessonStep() {
 
         ${ACTIVE_SESSION.revealedRef ? `
           ${renderActiveAiFeedbackCard(ACTIVE_SESSION.aiFeedback)}
+
+          ${(!ACTIVE_SESSION.aiFeedback && ACTIVE_SESSION.aiError) ? `
+            <div class="al-ai-error-box" id="al-ai-error-banner" style="background:var(--tint-danger, rgba(255,59,48,0.1));border:1.5px solid var(--danger, #ff3b30);border-radius:var(--r-md, 12px);padding:14px 16px;margin-bottom:14px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+              <div style="display:flex;align-items:flex-start;gap:10px;flex:1;min-width:240px">
+                <span style="font-size:20px;line-height:1">⚠️</span>
+                <div>
+                  <div style="font-weight:700;font-size:14px;color:var(--danger, #ff3b30);margin-bottom:2px">משוב AI לא היה זמין</div>
+                  <div style="font-size:13px;color:var(--label);line-height:1.4">${escapeHtml(ACTIVE_SESSION.aiError)}</div>
+                </div>
+              </div>
+              <button type="button" class="btn btn-secondary" style="font-size:13px;padding:8px 14px;height:auto;min-height:36px;border-color:var(--danger, #ff3b30);color:var(--danger, #ff3b30)" onclick="revealActiveReference(true)">
+                נסה שוב
+              </button>
+            </div>
+          ` : ''}
 
           <div class="al-compare-wrap" id="al-comparison-section">
             <div class="al-user-box">
@@ -2331,7 +2349,6 @@ ${userText.trim() || '(לא נכתב הסבר)'}
           }
         ],
         generationConfig: {
-          temperature: 0.2,
           maxOutputTokens: 8192,
           responseMimeType: 'application/json',
           thinkingConfig: {
@@ -2418,7 +2435,6 @@ ${userText}
           }
         ],
         generationConfig: {
-          temperature: 0.2,
           maxOutputTokens: 1024,
           thinkingConfig: {
             thinkingLevel: 'low'
@@ -2566,6 +2582,7 @@ async function revealActiveReference(useAI = false) {
   const geminiCfg = getGeminiConfig();
   if (useAI && geminiCfg.apiKey) {
     ACTIVE_SESSION.aiLoading = true;
+    ACTIVE_SESSION.aiError = null;
     renderActiveLessonStep();
     try {
       const feedback = await callGeminiTeachBackFeedback({
@@ -2576,6 +2593,7 @@ async function revealActiveReference(useAI = false) {
         apiKey: geminiCfg.apiKey
       });
       ACTIVE_SESSION.aiFeedback = feedback;
+      ACTIVE_SESSION.aiError = null;
 
       // Pre-fill key-point tagging
       if (Array.isArray(feedback.tagging)) {
@@ -2613,7 +2631,8 @@ async function revealActiveReference(useAI = false) {
       }
       showToast('משוב AI התקבל בהצלחה! ✨');
     } catch (err) {
-      console.warn('Gemini feedback failed:', err);
+      ACTIVE_SESSION.aiError = err.message || 'שגיאת רשת';
+      if (typeof console !== 'undefined' && console.warn) console.warn('Gemini feedback failed:', err);
       showToast(`משוב AI לא היה זמין (${err.message || 'שגיאת רשת'}) — מעבר להשוואה ידנית`);
     } finally {
       ACTIVE_SESSION.aiLoading = false;
@@ -2623,7 +2642,7 @@ async function revealActiveReference(useAI = false) {
   ACTIVE_SESSION.revealedRef = true;
   renderActiveLessonStep();
   setTimeout(() => {
-    const comp = document.getElementById('al-ai-feedback-section') || document.getElementById('al-comparison-section');
+    const comp = document.getElementById('al-ai-feedback-section') || document.getElementById('al-ai-error-banner') || document.getElementById('al-comparison-section');
     if (comp) comp.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }, 60);
 }
