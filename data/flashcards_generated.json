@@ -89,7 +89,7 @@
     {
       "deckId": "biochemistry-ch-04",
       "front": "משקל חומצות אמינו",
-      "back": "חומצות אמינו שונות במשקל המולקולרי שלהן. לדוגמה, גליצין שוקל 57 Da ואלנין 71 Da."
+      "back": "המשקל המולקולרי של גליצין חופשי הוא 75 ושל אלנין חופשי הוא 89, ובשילוב לפוליפפטיד נגרעת מולקולת מים (Mr 18) משיירי חומצות האמינו. המשקל המולקולרי הממוצע של שייר חומצת אמינו בחלבון הוא כ-110."
     },
     {
       "deckId": "biochemistry-ch-04",
@@ -100,11 +100,6 @@
       "deckId": "biochemistry-ch-04",
       "front": "בטא-שיט אנטי-מקביל",
       "back": "קשרי המימן הם כמעט קו ישר (180 מעלות). זה מאפשר אריזה יעילה ויציבות גבוהה יותר."
-    },
-    {
-      "deckId": "biochemistry-ch-04",
-      "front": "SDS-PAGE דימר",
-      "back": "ב-SDS-PAGE מתפרקים קשרים לא-קוולנטיים. נצפה רק את המשקל של תת-היחידה הבודדת."
     },
     {
       "deckId": "biochemistry-ch-04",
@@ -119,7 +114,7 @@
     {
       "deckId": "biochemistry-ch-04",
       "front": "דנטורציה ב-Urea",
-      "back": "Urea יוצר קשרי מימן עם קבוצות קוטביות. זה מחליש קשרים פנימיים ומוביל לפתיחת המבנה."
+      "back": "אוריאה (Urea) וגואנידיניום הידרוכלוריד גורמים לדנטורציה של חלבונים בעיקר על ידי שיבוש האינטראקציות ההידרופוביות המייצבות את ליבת החלבון."
     },
     {
       "deckId": "biochemistry-ch-05",
@@ -158,13 +153,8 @@
     },
     {
       "deckId": "biochemistry-ch-06",
-      "front": "דיכוי תחרותי",
-      "back": "בדיכוי תחרותי ה-Km עולה וה-Vmax נשאר קבוע. המעכב מתחרה על אתר הפעולה עם הסובסטרט."
-    },
-    {
-      "deckId": "biochemistry-ch-06",
       "front": "הגדרת Km",
-      "back": "Km הוא ריכוז הסובסטרט שבו מהירות התגובה היא חצי מה-Vmax. זהו מדד לאפיניות (זיקה) של האנזים לסובסטרט."
+      "back": "קבוע מיכאליס (Km) מוגדר כריכוז הסובסטרט שבו מהירות התגובה ההתחלתית שווה למחצית מ-Vmax, ושווה ל-(k-1 + k2)/k1. הערך Km מהווה מדד לזיקת האנזים לסובסטרט (Kd = k-1/k1) רק כאשר k2 קטן בהרבה מ-k-1."
     },
     {
       "deckId": "biochemistry-ch-06",
@@ -179,7 +169,7 @@
     {
       "deckId": "biochemistry-ch-06",
       "front": "Ordered Sequential",
-      "back": "מנגנון שבו סובסטרט A חייב להיקשר לפני B. שינוי ב-kcat/Km של A מצביע על מנגנון זה."
+      "back": "מנגנון דו-סובסטרטי סדרתי (Ordered bisubstrate) שבו סובסטרט 1 חייב להיקשר לאנזים לפני שסובסטרט 2 יכול להיקשר בצורה יצרנית ליצירת קומפלקס טרנרי (ES1S2)."
     },
     {
       "deckId": "biochemistry-ch-06",
@@ -233,11 +223,6 @@
     },
     {
       "deckId": "biochemistry-ch-07",
-      "front": "Siglec-7",
-      "back": "מזהה סיאלית בקישור α2-3 ל-Gal. זהו קוד סוכרים ספציפי לזיהוי."
-    },
-    {
-      "deckId": "biochemistry-ch-07",
       "front": "OGT",
       "back": "OGT הוא האנזים שמעביר קבוצת O-GlcNAc. הקישור מתרחש על שאריות Ser/Thr בחלבונים גרעיניים."
     },
@@ -269,12 +254,7 @@
     {
       "deckId": "biochemistry-ch-13",
       "front": "ATP ו-ΔG",
-      "back": "רמת ATP גבוהה מגדילה את היחס ATP/ADP. זה הופך את ΔG של הידרוליזת ATP לפחות שלילי."
-    },
-    {
-      "deckId": "biochemistry-ch-13",
-      "front": "משוואת ΔG",
-      "back": "ΔG תלוי בריכוזי החומרים (Q). הוא שונה מ-ΔG°' בתנאי התא."
+      "back": "שמירה על יחס תאי גבוה של [ATP]/[ADP] הופכת את שינוי האנרגיה החופשית בפועל של הידרוליזת ATP (ΔGp, פוטנציאל הזרחון) לשלילי יותר (כ-50- עד 65- kJ/mol) מאשר ΔG'° התקני (30.5- kJ/mol)."
     },
     {
       "deckId": "biochemistry-ch-13",
@@ -318,11 +298,6 @@
     },
     {
       "deckId": "biochemistry-ch-14",
-      "front": "PEPCK",
-      "back": "מקטלזת המרת OAA ל-PEP. משתמשת ב-GTP או ATP וב-CO₂."
-    },
-    {
-      "deckId": "biochemistry-ch-14",
       "front": "בקרת PFK-1",
       "back": "ATP גבוה מעכב את PFK-1. AMP ו-fructose-2,6-bisphosphate מעודדים את פעילותו."
     },
@@ -349,7 +324,7 @@
     {
       "deckId": "biochemistry-ch-14",
       "front": "PFK-1",
-      "back": "האנזים המהיר והבלתי-הפיך הראשון בגליקוליזה. מווסת את קצב המסלול."
+      "back": "האנזים פוספופרוקטוקינאז-1 (PFK-1) מזרז את הזרחון הבלתי-הפיך של פרוקטוז 6-פוספט לפרוקטוז 1,6-ביספוספט תוך שימוש ב-ATP. זהו השלב המחייב (Committed step) הראשון בגליקוליזה ונקודת הבקרה המרכזית של המסלול."
     },
     {
       "deckId": "biochemistry-ch-14",
@@ -364,7 +339,7 @@
     {
       "deckId": "biochemistry-ch-14",
       "front": "Transketolase",
-      "back": "מעביר קבוצה של שני פחמימות. מייצר סדוהפטולוז-7-פוספט ו-G3P."
+      "back": "אנזים תלוי-TPP בשלב הלא-חמצוני של מסלול הפנטוז פוספט, המעביר יחידה דו-פחמנית מקטוז תורם (קסילולוז 5-פוספט) לאלדוז קולט (ריבוז 5-פוספט) ליצירת סדוהפטולוז 7-פוספט וגליצראלדהיד 3-פוספט."
     },
     {
       "deckId": "biochemistry-ch-15",
@@ -444,7 +419,7 @@
     {
       "deckId": "biochemistry-ch-17",
       "front": "HMG-CoA Synthase",
-      "back": "האנזים הוא הראשון והקובע ביצירת HMG-CoA. הוא שלב מקדים ליצירת Acetoacetate."
+      "back": "אנזים המזרז את השלב השני ביצירת גופי קטון במיטוכונדריה של הכבד: דחיסה של אצטואצטיל-CoA עם מולקולה שלישית של אצטיל-CoA ליצירת β-hydroxy-β-methylglutaryl-CoA (HMG-CoA)."
     },
     {
       "deckId": "biochemistry-ch-17",
@@ -469,7 +444,7 @@
     {
       "deckId": "biochemistry-ch-18",
       "front": "חסר OTC",
-      "back": "חסר OTC מונע שימוש ב-Carbamoyl Phosphate (קרבמויל פוספט). החומר מצטבר במיטוכונדריה."
+      "back": "אורניתין טרנסקרבמוילאז (OTC) מזרז במיטוכונדריה את העברת הקבוצה הקרבמואילית מקרבמויל פוספט לאורניתין ליצירת ציטרולין. פגם גנטי באנזים ממעגל האוריאה פוגע בסילוק אמוניה ומוביל להיפראמונמיה."
     },
     {
       "deckId": "biochemistry-ch-18",
@@ -489,7 +464,7 @@
     {
       "deckId": "biochemistry-ch-19",
       "front": "Q-Cycle",
-      "back": "כל QH₂ מספק שני אלקטרונים ב-Q-Cycle. אחד מועבר ל-Cytochrome c והשני נצבר על Q."
+      "back": "מנגנון דו-שלבי בקומפלקס III שבו חמצון שתי מולקולות QH2 וחיזור מולקולת Q אחת חזרה ל-QH2 מובילים לחיזור נטו של שתי מולקולות ציטוכרום c ולשחרור 4 פרוטונים לחלל הבין-ממברנלי."
     },
     {
       "deckId": "biochemistry-ch-19",
@@ -523,11 +498,6 @@
     },
     {
       "deckId": "biochemistry-ch-21",
-      "front": "Monoacylglycerol pathway",
-      "back": "במעי הדק, חומצות שומן משוחררות כ-monoacylglycerol. השחרור מתבצע על ידי pancreatic lipase."
-    },
-    {
-      "deckId": "biochemistry-ch-21",
       "front": "CDP-diacylglycerol synthase",
       "back": "CDS הוא האנזים שמקשר CTP ל-DAG. התוצר הוא CDP-diacylglycerol."
     },
@@ -535,11 +505,6 @@
       "deckId": "biochemistry-ch-21",
       "front": "CDP-diacylglycerol",
       "back": "CDP-DAG משמש כ-substrate ל-phosphatidylinositol synthase. האנזים מקשר קבוצת אינוזיטול ל-DAG."
-    },
-    {
-      "deckId": "biochemistry-ch-21",
-      "front": "HMG-CoA Reductase",
-      "back": "HMG-CoA Reductase ממיר HMG-CoA ל-Mevalonate. זהו השלב קובע-הקצב בסינתזת כולסטרול."
     },
     {
       "deckId": "biochemistry-ch-21",
@@ -554,7 +519,7 @@
     {
       "deckId": "biochemistry-ch-22",
       "front": "תראונין",
-      "back": "תראונין (Threonine) אינו נוצר רק בטרנסאמינציה (transamination). הוא נוצר דרך תוצרי ביניים מזורחנים כמו O-phosphohomoserine."
+      "back": "תראונין (Threonine) היא חומצת אמינו חיונית ביונקים המסונתזת בחיידקים ובצמחים מאוקסלואצטט דרך אספרטט, β-aspartyl-phosphate והומוסרין (Homoserine)."
     },
     {
       "deckId": "biochemistry-ch-22",
@@ -644,7 +609,7 @@
     {
       "deckId": "molecular-biology-ch-04",
       "front": "כרומטיד",
-      "back": "במיטוזה הכרומוזום מורכב משני כרומטידים אחידים. כל אחד הוא העותק המלא של ה-DNA."
+      "back": "לאחר שכפול ה-DNA, כל כרומוזום מיטוטי מורכב משתי מולקולות DNA זהות הקשורות לחלבוניהן ונקראות כרומטידות אחיות (Sister chromatids)."
     },
     {
       "deckId": "molecular-biology-ch-04",
@@ -664,7 +629,7 @@
     {
       "deckId": "molecular-biology-ch-05",
       "front": "DNA pol ε",
-      "back": "האנזים העיקרי בעל פעילות 3'→5' exonuclease. מסיר נוקלאוטידים שגויים בזמן השכפול."
+      "back": "האנזים האוקריוטי DNA polymerase ε מסנתז באופן רציף את הגדיל המוביל (Leading strand) במזלג השכפול, ובעל פעילות אקסונוקלאזית של הגהה (3'→5' proofreading exonuclease)."
     },
     {
       "deckId": "molecular-biology-ch-05",
@@ -805,11 +770,6 @@
       "deckId": "molecular-biology-ch-07",
       "front": "עיבוד miRNA",
       "back": "pri-miRNA מעובד על ידי Drosha במעבה גרעין ל-pre-miRNA. לאחר מכן Dicer מעבד אותו בציטופלזמה."
-    },
-    {
-      "deckId": "molecular-biology-ch-08",
-      "front": "Papain",
-      "back": "אנזים קזאיני בעל פעילות עדינה המפרק חלבוני ECM במוח. משמש בבידוד תאי מוח מבלי לפגוע בממברנות הנוירונים."
     },
     {
       "deckId": "molecular-biology-ch-08",
@@ -1135,11 +1095,6 @@
       "deckId": "cell-biology-ch-17",
       "front": "טבעת התכווצות",
       "back": "מבנה מ-actin (אקטין) ו-myosin II המתכווץ תחת בקרת RhoA. יוצר את חריץ החלוקה (cleavage furrow) בחלוקת התא."
-    },
-    {
-      "deckId": "cell-biology-ch-17",
-      "front": "חילופי חומרים",
-      "back": "מתרחש בשלב ה-pachytene (פכיטן) של Prophase I במיוזה. מוביל ליצירת כרומוזומים רקומביננטיים ומגביר שונות גנטית."
     },
     {
       "deckId": "cell-biology-ch-17",
