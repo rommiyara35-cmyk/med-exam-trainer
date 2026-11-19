@@ -1544,7 +1544,8 @@ const ACTIVE_LEARN_AUDIT = {
     'lesson_molecular-biology-ch-07',
     'lesson_cell-biology-ch-10',
     'lesson_cell-biology-ch-16',
-    'lesson_cell-biology-ch-18'
+    'lesson_cell-biology-ch-18',
+    'lesson_physiology-ch-01'
   ],
   missingLessonChapterIds: [
     'cell-biology-ch-19' // צומתי תאים והמטריצה החוץ-תאית — אין רשומת שיעור ב-lessons.json
@@ -1571,7 +1572,6 @@ const ACTIVE_LEARN_AUDIT = {
     'lesson_cell-biology-ch-14',
     'lesson_cell-biology-ch-15',
     'lesson_cell-biology-ch-17',
-    'lesson_physiology-ch-01',
     'lesson_physiology-ch-02',
     'lesson_physiology-ch-04',
     'lesson_physiology-ch-05',
@@ -1580,13 +1580,27 @@ const ACTIVE_LEARN_AUDIT = {
   ]
 };
 
-// Explicit mapping of questions strictly taught by the pilot lesson's 4 concept cards
+// Explicit mapping of questions strictly taught by pilot lessons
 const PILOT_TAUGHT_QUESTIONS = {
   'lesson_biochemistry-ch-02': [
     { qId: 'q_biochemistry-ch-02-sec-2-1_1_1791322844', cardIdx: 1, kpIdx: 0 },
     { qId: 'q_biochemistry-ch-02-sec-2-1_2_1791322844', cardIdx: 2, kpIdx: 0 },
     { qId: 'q_biochemistry-ch-02-sec-2-1_3_1791322844', cardIdx: 2, kpIdx: 1 },
     { qId: 'q_biochemistry-ch-02-sec-2-1_4_1791322844', cardIdx: 0, kpIdx: 0 }
+  ],
+  'lesson_physiology-ch-01': [
+    { qId: 'q_physio_ch01_pilot_01', cardIdx: 0, kpIdx: 2 },
+    { qId: 'q_physio_ch01_pilot_02', cardIdx: 0, kpIdx: 0 },
+    { qId: 'q_physio_ch01_pilot_03', cardIdx: 1, kpIdx: 0 },
+    { qId: 'q_physio_ch01_pilot_04', cardIdx: 1, kpIdx: 1 },
+    { qId: 'q_physio_ch01_pilot_05', cardIdx: 2, kpIdx: 1 },
+    { qId: 'q_physio_ch01_pilot_06', cardIdx: 2, kpIdx: 3 },
+    { qId: 'q_physio_ch01_pilot_07', cardIdx: 3, kpIdx: 0 },
+    { qId: 'q_physio_ch01_pilot_08', cardIdx: 3, kpIdx: 3 },
+    { qId: 'q_physio_ch01_pilot_09', cardIdx: 4, kpIdx: 0 },
+    { qId: 'q_physio_ch01_pilot_10', cardIdx: 4, kpIdx: 2 },
+    { qId: 'q_physio_ch01_pilot_11', cardIdx: 4, kpIdx: 3 },
+    { qId: 'q_physio_ch01_pilot_12', cardIdx: 5, kpIdx: 3 }
   ]
 };
 
@@ -1959,6 +1973,12 @@ function renderActiveLessonStep() {
           <div class="concept-card" id="al-read-card-${cIdx}">
             <div class="area-chip">מושג ${cIdx + 1} מתוך ${conceptCards.length}</div>
             <h2>${formatRTL(card.title)}</h2>
+            ${card.diagramId && typeof getStepByStepDiagramSVG === 'function' ? `
+              <div class="sbs-diagram-box" id="al-svg-wrap-${cIdx}">
+                ${getStepByStepDiagramSVG(card.diagramId)}
+                ${card.diagramCaption ? `<div class="sbs-diagram-cap">${formatRTL(card.diagramCaption)}</div>` : ''}
+              </div>
+            ` : ''}
             <div class="concept-body">${formatRTL(card.content, true)}</div>
             ${card.keyPoints?.length ? `
               <div class="key-points">
@@ -3083,6 +3103,7 @@ function selectActiveQuizAnswer(chosenIdx) {
         <div class="al-reteach-card" id="al-reteach-box">
           <div class="al-reteach-tag">💡 לימוד מחדש מתוך השיעור (לפני ניסיון חוזר)</div>
           <div class="al-reteach-title">${formatRTL(matchedCard.title)}</div>
+          ${q.simpleReteach ? `<div style="font-weight:700;color:var(--label);margin-bottom:8px;line-height:1.55">${formatRTL(q.simpleReteach)}</div>` : ''}
           <div class="al-reteach-body">${formatRTL(matchedCard.content, true)}</div>
           ${kpText ? `
             <div class="key-points" style="margin-top:8px">
@@ -3569,12 +3590,12 @@ function createSafeFlashcardsBackup(data) {
   return true;
 }
 
-const CURRENT_FC_VERSION = 10;
+const CURRENT_FC_VERSION = 11;
 
 async function initFlashcards() {
   let data = DB.get('flashcards');
 
-  // Run-once check: If already migrated to version 10, render and exit immediately
+  // Run-once check: If already migrated to current version, render and exit immediately
   if (data && data.version >= CURRENT_FC_VERSION && Array.isArray(data.decks) && data.decks.length > 0) {
     renderFlashcards();
     return;
@@ -8521,67 +8542,254 @@ Object.assign(STEP_BY_STEP_PILOTS, {
     "lessonId": "lesson_physiology-ch-01",
     "chapterId": "physiology-ch-01",
     "title": "עקרונות תפקוד התא והממברנה",
-    "needsVerification": [],
+    "needsVerification": [
+      {
+        "id": "verify_ch01_table11_chromosomes",
+        "location": "יחידה 1 · Table 1.1 בספר (PDF p. 42)",
+        "originalText": "Table 1.1 מדפיסה '22 autosomes and 2 sex chromosomes—in humans'.",
+        "issue": "תוקן בשיעור להוראה המדעית המלאה (22 זוגות אוטוזומים [44 אוטוזומים] + 2 כרומוזומי מין = 46 כרומוזומים בתא סומטי דיפלואידי) לפי Alberts 7e Ch. 4, p. 191 (PDF p. 230)."
+      }
+    ],
     "steps": [
       {
         "type": "concept",
         "conceptNum": 1,
-        "totalConcepts": 2,
-        "title": "סקירת תאים אאוקריוטיים",
-        "diagramId": "physiology_nucleolus_ribosome",
-        "diagramCaption": "איור 1: מידור התא האאוקריוטי והגרעינון (Nucleolus) — אתר שעתוק rRNA והרכבת תת-יחידות הריבוזום ללא ממברנה",
+        "totalConcepts": 6,
+        "title": "סקירת תאים אאוקריוטיים ומידור תוך-תאי",
+        "diagramId": "physio_ch01_unit1_compartmentalization",
+        "diagramCaption": "איור 1: מידור התא האאוקריוטי (Table 1.1) — ציר סינתזת החלבונים, מאגרי הסידן (Mitochondria ו-Smooth ER) ומסלולי הפירוק",
         "sentences": [
-          "התא האאוקריוטי מכיל אברונים ממודרים.",
-          "ה-**Nucleolus (גרעינון)** אחראי על הרכבת תת-יחידות הריבוזום ואינו מוקף ממברנה."
+          "תאים **אאוקריוטיים (Eukaryotic cells)** מתאפיינים ב**גרעין מוקף ממברנה** המכיל בתא סומטי דיפלואידי באדם **22 זוגות אוטוזומים (44 אוטוזומים) ו-2 כרומוזומי מין** (46 כרומוזומים סך הכול, לפי Alberts 7e עמ׳ 191), למעט חריגים כגון **תאי דם אדומים בוגרים** ו**תאי עדשת העין** החסרים גרעין.",
+          "חלבוני הציטוזול מתורגמים מ-**mRNA** על גבי **ריבוזומים חופשיים (Free ribosomes)**, בעוד שחלבונים המיועדים לממברנות או להפרשה מתורגמים ב**רשת האנדופלזמטית המגורגרת (Rough ER)** ומועברים ל**מנגנון גולג׳י (Golgi apparatus)** לעיבוד, מיון ואריזה.",
+          "הן ה**מיטוכונדריה (Mitochondria)** — המייצרת **ATP** ב**זרחון חמצוני (Oxidative phosphorylation)** — והן ה**רשת האנדופלזמטית החלקה (Smooth ER)** — המייצרת ליפידים — משמשות כמאגרים תוך-תאיים של יוני סידן ($\\text{Ca}^{2+}$).",
+          "ה**אנדוזום (Endosome)** קולט כולסטרול, קולטנים וחלקיקים מהממברנה, ה**ליזוזום (Lysosome)** מבצע פירוק תוך-תאי, ה**פרוטאוזום (Proteosome)** מפרק חלבונים תוך-תאיים, וה**פרוקסיזום (Peroxisome)** מנטרל רעלים."
         ],
         "originalMapping": [
           {
-            "original": "התא האאוקריוטי מכיל אברונים ממודרים.",
-            "simplified": "התא האאוקריוטי מכיל אברונים ממודרים."
+            "original": "Eukaryotic cells are distinguished by a membrane-delimited nucleus (human red blood cells and lens cells lack a nucleus); somatic cells carry 46 chromosomes (22 pairs of autosomes + 2 sex chromosomes, Alberts 7e p. 191).",
+            "simplified": "תאים אאוקריוטיים מתאפיינים בגרעין מוקף ממברנה (46 כרומוזומים באדם: 22 זוגות אוטוזומים ו-2 כרומוזומי מין), למעט תאי דם אדומים בוגרים ותאי עדשת העין."
           },
           {
-            "original": "ה-Nucleolus (גרעינון) אחראי על הרכבת תת-יחידות הריבוזום ואינו מוקף ממברנה.",
-            "simplified": "ה-Nucleolus (גרעינון) אחראי על הרכבת תת-יחידות הריבוזום ואינו מוקף ממברנה."
+            "original": "Free ribosomes translate mRNA into cytosolic proteins; rough ER translates mRNA into membrane-associated or secreted proteins, which Golgi modifies, sorts, and packages.",
+            "simplified": "ריבוזומים חופשיים מתרגמים חלבונים ציטוזוליים; Rough ER וגולג׳י מייצרים, ממיינים ואורזים חלבוני ממברנה והפרשה."
+          },
+          {
+            "original": "Mitochondria (ATP synthesis by oxidative phosphorylation, Ca2+ storage) and Smooth ER (lipid synthesis, Ca2+ storage).",
+            "simplified": "המיטוכונדריה (ATP בזרחון חמצוני) וה-Smooth ER (סינתזת ליפידים) אוגרים שניהם יוני סידן."
+          },
+          {
+            "original": "Endosome (uptake of cholesterol/receptors/particles), Lysosome (intracellular degradation), Proteosome (degradation of intracellular proteins), Peroxisome (detoxification).",
+            "simplified": "אנדוזום (קליטה), ליזוזום (פירוק אברוני), פרוטאוזום (פירוק חלבונים) ופרוקסיזום (נטרול רעלים)."
           }
         ]
       },
       {
         "type": "concept",
         "conceptNum": 2,
-        "totalConcepts": 2,
-        "title": "הובלה בשלפוחיות",
-        "diagramId": "physiology_early_endosome",
-        "diagramCaption": "איור 2: מחזור קולטנים באנדוציטוזה — סביבה חומצית ב-Early Endosome מנתקת את הליגנד ומחזירה את הקולטן לממברנה",
+        "totalConcepts": 6,
+        "title": "ממברנת הפלזמה — ליפידים, אסימטריה וחלבונים",
+        "diagramId": "physio_ch01_unit2_membrane_asymmetry",
+        "diagramCaption": "איור 2: דו-שכבת הפוספוליפידים (5 nm) — אסימטריית העלים (Table 1.2), כיפוף Kink ועיגון חלבוני הממברנה",
         "sentences": [
-          "אנדוציטוזה מתווכת קולטן דורשת מחזור קולטנים.",
-          "סביבת ה-**Early Endosome (אנדוזום מוקדם)** חומצית מעט וגורמת לניתוק הליגנד מהקולטן, מה שמאפשר לו לחזור לממברנה."
+          "ממברנת הפלזמה (בעובי $5\\text{ nm}$) בנויה מליפידים **אמפיפתיים (Amphipathic)** ומפגינה אסימטריה בין שני עליה: בעלה החיצוני מרוכזים **Phosphatidylcholine**, **Sphingomyelin** (בעל שלד ספינגוזין) ו**גליקוליפידים**, ובעלה הפנימי מרוכזים **Phosphatidylethanolamine**, **Phosphatidylserine** ו-**Phosphatidylinositol** (המשתתף בהעברת אותות).",
+          "**כולסטרול (Cholesterol)** מצוי בשני העלים (עד 50% מהליפידים) ומייצב את הממברנה ב-37°C, בעוד שקשר כפול בחומצת שומן בלתי-רוויה יוצר **כיפוף (\"Kink\")** המונע אריזה צפופה ומגביר את **נזילות הממברנה (Fluidity)**.",
+          "**רפסודות ליפידיות (Lipid rafts)** של ספינגומיאלין וכולסטרול מרכזות חלבוני איתות, ו**צומתים הדוקים (Tight junctions)** באפיתל מפרידים בין המתחם ה**אפיקלי** ל**בזולטרלי** לצורך **הובלה וקטורית (Vectorial transport)**.",
+          "חלבוני הממברנה נחלקים ל**אינטגרליים/טרנס-ממברנליים** (ובראשם קולטני **GPCRs** החוצים ב-7 סלילי $\\alpha$), **מעוגני-ליפיד** (**GPI** בעלה החיצוני; **Myristate/Palmitate** בקצה ה-N או **Farnesyl/Geranylgeranyl** בקצה ה-C בעלה הפנימי) ו**פריפריאליים**, כאשר סוכרי הפנים החיצוניים יוצרים את ה**גליקוקליקס (Glycocalyx)**."
         ],
         "originalMapping": [
           {
-            "original": "אנדוציטוזה מתווכת קולטן דורשת מחזור קולטנים.",
-            "simplified": "אנדוציטוזה מתווכת קולטן דורשת מחזור קולטנים."
+            "original": "Outer leaflet: PC, sphingomyelin (sphingosine backbone), glycolipids. Inner leaflet: PE, PS, phosphatidylinositol (signal transduction).",
+            "simplified": "אסימטריית עלי הממברנה: PC וספינגומיאלין בעלה החיצוני; PE, PS ו-PI בעלה הפנימי."
           },
           {
-            "original": "סביבת ה-Early Endosome (אנדוזום מוקדם) חומצית מעט וגורמת לניתוק הליגנד מהקולטן, מה שמאפשר לו לחזור לממברנה.",
-            "simplified": "סביבת ה-Early Endosome (אנדוזום מוקדם) חומצית מעט וגורמת לניתוק הליגנד מהקולטן, מה שמאפשר לו לחזור לממברנה."
+            "original": "Cholesterol (both leaflets, up to 50%, stabilizes at 37°C); double bond creates a kink increasing fluidity.",
+            "simplified": "כולסטרול בשני העלים מייצב ב-37°C; קשר כפול יוצר כיפוף Kink המגדיל נזילות."
+          },
+          {
+            "original": "Lipid rafts segregate signaling molecules; tight junctions separate apical and basolateral domains for vectorial transport.",
+            "simplified": "רפסודות ליפידיות מרכזות איתות; צומתים הדוקים מפרידים בין המתחם האפיקלי לבזולטרלי."
+          },
+          {
+            "original": "GPCRs (7 alpha-helices); GPI on outer leaflet; fatty acids (myristate/palmitate) and prenyl anchors (farnesyl/geranylgeranyl) on inner leaflet; glycocalyx.",
+            "simplified": "חלבונים אינטגרליים (GPCRs ב-7 סלילים), מעוגני-ליפיד (GPI חיצוני, שומן/פרניל פנימי) וגליקוקליקס."
           }
         ]
       },
       {
         "type": "mini_quiz",
         "quizNum": 1,
-        "totalQuizzes": 1,
-        "coversSteps": "שלבים 1–2 (סקירת תאים אאוקריוטיים)",
-        "question": "לפי מה שלמדנו כעת ב«סקירת תאים אאוקריוטיים», איזה מונח משלים נכון את המשפט הבא?\n«כאשר ה-______ (גרעינון) אחראי על הרכבת תת-יחידות הריבוזום ואינו מוקף ממברנה.»",
+        "totalQuizzes": 3,
+        "coversSteps": "שלבים 1–2 (אברונים ואסימטריית ממברנה)",
+        "question": "אילו שני מרכיבים ממוקמים בצד הפנימי (הציטופלזמי) של ממברנת הפלזמה או בציטופלזמה ומשתתפים באגירת סידן ($\\text{Ca}^{2+}$) ובהעברת אותות תוך-תאית?",
         "options": [
-          "Extracellular Fluid (ECF)",
-          "Saltatory conduction",
-          "Nucleolus",
-          "Early Endosome"
+          "ספינגומיאלין (Sphingomyelin) בעלה החיצוני ומנגנון גולג׳י בציטופלזמה.",
+          "פוספטידילאינוזיטול (Phosphatidylinositol) בעלה הפנימי של הממברנה, והרשת האנדופלזמטית החלקה (Smooth ER) והמיטוכונדריה האוגרות $\\text{Ca}^{2+}$.",
+          "עוגן GPI בעלה החיצוני ופרוקסיזומים האוגרים $\\text{Ca}^{2+}$.",
+          "פוספטידילכולין (Phosphatidylcholine) בעלה הפנימי וריבוזומים חופשיים."
         ],
-        "correctIndex": 2,
-        "simpleReteach": "נזכור בפשטות מתוך השלב שלמדנו כעת (סקירת תאים אאוקריוטיים): ה-**Nucleolus (גרעינון)** אחראי על הרכבת תת-יחידות הריבוזום ואינו מוקף ממברנה. לכן התשובה המדויקת היא **Nucleolus**.",
-        "correctExplanation": "מדויק! ה-Nucleolus (גרעינון) אחראי על הרכבת תת-יחידות הריבוזום ואינו מוקף ממברנה."
+        "correctIndex": 1,
+        "simpleReteach": "נזכור: בעלה הפנימי של הממברנה ממוקם **Phosphatidylinositol** (החיוני להעברת אותות), ובציטופלזמה שני מאגרי ה-$\\text{Ca}^{2+}$ הם ה-**Smooth ER** וה-**Mitochondria**.",
+        "correctExplanation": "מדויק! Phosphatidylinositol ממוקם בעלה הפנימי ומשתתף בהעברת אותות, והן ה-Smooth ER והן המיטוכונדריה משמשות לאגירת $\\text{Ca}^{2+}$."
+      },
+      {
+        "type": "concept",
+        "conceptNum": 3,
+        "totalConcepts": 6,
+        "title": "חלבוני הובלה ממברנליים, CFTR ובקרת יוביקוויטינציה",
+        "diagramId": "physio_ch01_unit3_transporters_and_cftr",
+        "diagramCaption": "איור 3: 4 מחלקות חלבוני ההובלה (Table 1.3), משאבת Na+,K+-ATPase (1α:1β:1γ), CFTR/Trikafta ובקרת ENaC",
+        "sentences": [
+          "חלבוני ההובלה נחלקים ל-4 קבוצות: **תעלות מים (Aquaporins — AQPs)** הפועלות כנקבוביות פתוחות בקצב של עד $10^9$ מולקולות לשנייה (הומו-טטרמר שבו כל מונומר הוא תעלת מים; **AQP2** אפיקלי מבוקר על ידי **ADH**, וקבוצת **Aquaglyceroporins** מעבירה גם גליצרול, אוריאה, מניטול, פורינים, פירימידינים, $\\text{CO}_2$ ו-$\\text{NH}_3$), ו**תעלות יונים (Ion channels)** בעלות שער בקצב $10^6\\text{–}10^8$ יונים לשנייה.",
+          "**נשאי מומסים (Solute carriers — SLCs)** פועלים במחזור קונפורמציה של $10^2\\text{–}10^4$ לשנייה וכוללים **יוניפורטרים** (כגון **GLUT-1**), **סימפורטרים** באותו כיוון (כגון **NKCC2** בכליה) ו**אנטיפורטרים** בכיוונים מנוגדים (כגון משחלף $\\text{Na}^+\\text{-H}^+$ מסוג **NHE-1** לוויסות ה-pH).",
+          "**טרנספורטרים תלויי-ATP** ($10^2\\text{–}10^4$ לשנייה) כוללים משאבות **P-type** העוברות זרחון — ובראשן **$\\text{Na}^+,\\text{K}^+\\text{-ATPase}$** ($1\\alpha:1\\beta:1\\gamma$) המוציאה $3\\text{ Na}^+$ ומכניסה $2\\text{ K}^+$ לכל ATP ומעוכבת על ידי **Ouabain** הנקשר לתת-היחידה $\\alpha$ — וכן משאבות **V-type $\\text{H}^+\\text{-ATPases}$** באברונים תוך-תאיים (לצד משאבת $\\text{H}^+\\text{-ATPase}$ בממברנת הפלזמה להחמצת השתן) וטרנספורטרי **ABC**.",
+          "בסיסטיק פיברוזיס, המוטציה **Phe508del** בחלבון ה-**CFTR** (טרנספורטר ABC המתפקד כתעלת $\\text{Cl}^-$ ו-$\\text{HCO}_3^-$ ומווסת את **ENaC**) גורמת לפירוקו ב-ER ולריר צמיג בריאות (ומטופלת ב-**Trikafta**), ואילו בכליה ההורמון **אלדוסטרון** מעכב את ליגאז היוביקוויטין **Nedd4-2** וכך מונע סילוק של תעלות **ENaC** מהממברנה האפיקלית."
+        ],
+        "originalMapping": [
+          {
+            "original": "Pores/AQPs (up to 10^9/s, homotetramer, AQP2 regulated by ADH; aquaglyceroporins pass glycerol, urea, mannitol, purines, pyrimidines, CO2, NH3); Gated ion channels (10^6–10^8/s).",
+            "simplified": "AQPs כנקבוביות עד 10^9 לשנייה (כולל aquaglyceroporins) ותעלות יונים בעלות שער בקצב 10^6–10^8 לשנייה."
+          },
+          {
+            "original": "SLCs (10^2–10^4/s): uniporters (GLUT-1), symporters (NKCC2), antiporters (NHE-1).",
+            "simplified": "נשאי SLC (10^2–10^4 לשנייה): יוניפורטרים (GLUT-1), סימפורטרים (NKCC2) ואנטיפורטרים (NHE-1)."
+          },
+          {
+            "original": "P-type Na+,K+-ATPase (1α:1β:1γ; 3 Na+ out, 2 K+ in; α binds ouabain, β targets membrane); V-type H+-ATPases in organelles; plasma-membrane H+-ATPase in urinary acidification.",
+            "simplified": "Na+,K+-ATPase (3 Na+ החוצה, 2 K+ פנימה, אואבאין ב-α), V-type H+-ATPases באברונים ו-H+-ATPase בממברנת הפלזמה."
+          },
+          {
+            "original": "CFTR Phe508del degrades in ER (treated by Trikafta); aldosterone inhibits Nedd4-2 preventing ENaC ubiquitination.",
+            "simplified": "Phe508del-CFTR מפורק ב-ER ומטופל ב-Trikafta; אלדוסטרון מעכב Nedd4-2 ומשמר את ENaC בממברנה."
+          }
+        ]
+      },
+      {
+        "type": "concept",
+        "conceptNum": 4,
+        "totalConcepts": 6,
+        "title": "הובלה בשלפוחיות — אנדוציטוזה, אקסוציטוזה וחריגי ה-Ca2+",
+        "diagramId": "physio_ch01_unit4_vesicular_transport",
+        "diagramCaption": "איור 4: אנדוציטוזה מתווכת-קולטן של LDL (Adaptin, Clathrin, Dynamin) ואקסוציטוזה מבוקרת (SNAREs) עם חריגי Renin ו-PTH",
+        "sentences": [
+          "**אנדוציטוזה** מתבצעת בשלושה מנגנונים: **פינוציטוזה** לא-ספציפית של נוזלים ומומסים קטנים (בולטת באנדותל נימים), **פגוציטוזה** של חיידקים ותאים בתאי חיסון המזורזת על ידי ציפוי בנוגדנים (**Opsonization**) הנקשרים לקולטני **Fc**, ו**אנדוציטוזה מתווכת-קולטן**.",
+          "באנדוציטוזה מתווכת-קולטן, החלבון **Adaptin** מקשר את הקולטנים ל-**Clathrin**, וה-GTPase **Dynamin** מנתק את השלפוחית מהממברנה; בקליטת **LDL** (שמקורו מהדם כי רוב התאים אינם מסנתזים כולסטרול), הקולטנים ממוחזרים מהאנדוזום לממברנה וה-LDL מפורק בליזוזום, ופגם בקולטן ה-LDL גורם ל**טרשת עורקים (Atherosclerosis)**.",
+          "**אקסוציטוזה** יכולה להיות **קונסטיטוטיבית** ורציפה (הפרשת אימונוגלובולינים מתאי פלזמה או קולגן מפיברובלסטים) או **מבוקרת** (בנוירונים ובתאים אנדוקריניים ואקסוקריניים), שבה חלבוני **SNARE** מכוונים את איחוי שלפוחית ההפרשה עם ממברנת הפלזמה.",
+          "אקסוציטוזה מבוקרת מופעלת בדרך כלל על ידי **עלייה בריכוז ה-$\\text{Ca}^{2+}$ התוך-תאי**, למעט **שני חריגים פיזיולוגיים** שבהם ההפרשה מופעלת דווקא על ידי **ירידה ב-$[\\text{Ca}^{2+}]_i$**: הפרשת **רנין (Renin)** מתאי ה-Juxtaglomerular בכליה והפרשת **PTH** מבלוטת יותרת התריס."
+        ],
+        "originalMapping": [
+          {
+            "original": "Pinocytosis (nonspecific, capillary endothelium); Phagocytosis (opsonization, Fc receptors); Receptor-mediated endocytosis.",
+            "simplified": "פינוציטוזה, פגוציטוזה (אופסוניזציה וקולטני Fc) ואנדוציטוזה מתווכת-קולטן."
+          },
+          {
+            "original": "Adaptin links receptors to clathrin; dynamin pinches off vesicle; most cells cannot synthesize cholesterol so LDL receptors recycle in endosomes while LDL degrades in lysosomes.",
+            "simplified": "Adaptin, Clathrin ו-Dynamin מניעים קליטת LDL; הקולטנים ממוחזרים באנדוזום וה-LDL מפורק בליזוזום."
+          },
+          {
+            "original": "Constitutive exocytosis (plasma cells, fibroblasts) vs. regulated exocytosis (endocrine, neurons, exocrine) via SNAREs.",
+            "simplified": "אקסוציטוזה קונסטיטוטיבית רציפה מול אקסוציטוזה מבוקרת בתיווך SNAREs."
+          },
+          {
+            "original": "Triggered by increased [Ca2+]i except two exceptions triggered by decreased [Ca2+]i: renal renin and parathyroid hormone (PTH).",
+            "simplified": "עלייה ב-Ca2+ מפעילה הפרשה מבוקרת, למעט ירידה ב-Ca2+ המפעילה הפרשת Renin ו-PTH."
+          }
+        ]
+      },
+      {
+        "type": "mini_quiz",
+        "quizNum": 2,
+        "totalQuizzes": 3,
+        "coversSteps": "שלבים 3–4 (טרנספורטרים, ENaC ואקסוציטוזה)",
+        "question": "איזה שילוב מתאר נכונה את פעולת ההורמון אלדוסטרון על תעלות ENaC בכליה ואת הטריגר התוך-תאי להפרשת רנין (Renin) מתאי ה-Juxtaglomerular בכליה?",
+        "options": [
+          "אלדוסטרון מעכב את ליגאז היוביקוויטין Nedd4-2 וכך מונע סילוק של ENaC מהממברנה האפיקלית; הפרשת רנין מופעלת באופן חריג על ידי ירידה בריכוז הסידן התוך-תאי ($[\\text{Ca}^{2+}]_i$).",
+          "אלדוסטרון מזרחן ישירות את תת-היחידה $\\alpha$ של משאבת ה-$\\text{Na}^+,\\text{K}^+\\text{-ATPase}$; הפרשת רנין מופעלת על ידי עלייה חדה ב-$[\\text{Ca}^{2+}]_i$.",
+          "אלדוסטרון מגייס Clathrin ו-Dynamin לפירוק ENaC בליזוזום; הפרשת רנין מתבצעת באקסוציטוזה קונסטיטוטיבית ללא קשר לסידן.",
+          "אלדוסטרון חוסם את האנזים DUBs; הפרשת רנין מופעלת על ידי קישור נוגדנים לקולטני Fc."
+        ],
+        "correctIndex": 0,
+        "simpleReteach": "נזכור משלבים 3–4: **אלדוסטרון** מעכב את האנזים **Nedd4-2** (מונע יוביקוויטינציה של ENaC ומאריך את שהותה בממברנה), והפרשת **Renin** (יחד עם **PTH**) היא אחד משני החריגים שבהם אקסוציטוזה מבוקרת מופעלת על ידי **ירידה ב-$[\\text{Ca}^{2+}]_i$**.",
+        "correctExplanation": "מצוין! עיכוב Nedd4-2 על ידי אלדוסטרון מונע יוביקוויטינציה ואנדוציטוזה של ENaC, והפרשת רנין מתאי ה-Juxtaglomerular מופעלת בירידת $[\\text{Ca}^{2+}]_i$."
+      },
+      {
+        "type": "concept",
+        "conceptNum": 5,
+        "totalConcepts": 6,
+        "title": "דיפוזיה, המפל האלקטרוכימי, משוואת נרנסט ו-SGLT-1/2",
+        "diagramId": "physio_ch01_unit5_nernst_and_sglt",
+        "diagramCaption": "איור 5: חוק פיק הראשון, מאזן הכוחות על אשלגן (+30.8 mV החוצה) והשוואת כוח הריכוז של SGLT-2 (×100) מול SGLT-1 (×10,000)",
+        "sentences": [
+          "לפי **חוק פיק הראשון** ($J = -DA\\frac{\\Delta C}{\\Delta X}$), **משוואת סטוקס-איינשטיין** ($D = \\frac{kT}{6\\pi r\\eta}$) ומשוואת החדירות ($J = -P(C_i - C_o)$), שטף הדיפוזיה עולה עבור מולקולה קטנה וליפופילית ($\\beta > 1$) ועם קיצור מרחק הדיפוזיה ($\\Delta X$, כגון בגיוס נימים בשריר במאמץ מ-$40 µm$ ל-$\\le 20 µm$).",
+          "**המפל האלקטרוכימי** ($\\Delta\\mu_x = RT\\ln\\frac{[X]_i}{[X]_o} + z_x F V_m$) משלב את מפל הריכוזים הכימי ואת מתח הממברנה ($V_m = V_i - V_o$); בשיווי משקל ($\\Delta\\mu_x = 0$) מתקבלת **משוואת נרנסט** ב-37°C: $E_x = -\\frac{61.5\\text{ mV}}{z_x}\\log_{10}\\frac{[X]_i}{[X]_o}$, שבה מפל של פי 10 שקול ל-$61.5\\text{ mV}$ עבור יון חד-ערכי ($z = \\pm 1$) ול-$30.7\\text{ mV}$ עבור יון דו-ערכי ($z = 2$).",
+          "כאשר $V_m = -60\\text{ mV}$ ופוטנציאל נרנסט לאשלגן הוא $E_{\\text{K}^+} = -90.8\\text{ mV}$, מפל הריכוזים הדוחף את $\\text{K}^+$ החוצה ($90.8\\text{ mV}$) חזק מהמתח החשמלי המושך אותו פנימה ($-60\\text{ mV}$), ולכן הכוח המניע נטו ($V_m - E_{\\text{K}^+} = +30.8\\text{ mV}$) גורם ליציאת $\\text{K}^+$ **פסיבית** מהתא.",
+          "ב**הובלה פעילה שניונית**, הנשא **SGLT-2** ($1\\text{ Na}^+ : 1\\text{ Glucose}$) מייצר מפל ריכוזי גלוקוז של כפי 100, ואילו **SGLT-1** ($2\\text{ Na}^+ : 1\\text{ Glucose}$) מעלה בריבוע את יחס ריכוזי ה-$\\text{Na}^+$ ואת איבר המתח ולכן מייצר מפל גלוקוז של כמעט פי **10,000**."
+        ],
+        "originalMapping": [
+          {
+            "original": "Fick's First Law (J = -DA ΔC/ΔX), Stokes-Einstein (D = kT/6πrη), J = -P(Ci-Co); exercise capillary recruitment reduces ΔX from 40 µm to ≤20 µm.",
+            "simplified": "חוק פיק וסטוקס-איינשטיין: מולקולה קטנה וליפופילית (β>1) וקיצור מרחק ΔX (מ-40 ל-≤20 µm במאמץ) מאיצים דיפוזיה."
+          },
+          {
+            "original": "Electrochemical gradient (Δμx = RT ln([X]i/[X]o) + zxFVm) and Nernst at 37°C (Ex = -(61.5/zx)log([X]i/[X]o)): 10-fold = 61.5 mV univalent, 30.7 mV divalent.",
+            "simplified": "המפל האלקטרוכימי ומשוואת נרנסט ב-37°C: מפל פי 10 = 61.5 mV לחד-ערכי ו-30.7 mV לדו-ערכי."
+          },
+          {
+            "original": "Fig. 1.6B: Vm = -60 mV, EK+ = -90.8 mV → net driving force +30.8 mV drives passive K+ efflux.",
+            "simplified": "ב-Vm=-60 mV ו-EK=-90.8 mV, הכוח המניע נטו (+30.8 mV) מוציא K+ פסיבית."
+          },
+          {
+            "original": "SGLT-2 (1 Na+:1 Glc → ~100-fold) vs. SGLT-1 (2 Na+:1 Glc → squared Na+ & Vm terms → ~10,000-fold).",
+            "simplified": "SGLT-2 (1 Na+) מרכז פי ~100; SGLT-1 (2 Na+) מעלה בריבוע ומרכז פי ~10,000."
+          }
+        ]
+      },
+      {
+        "type": "concept",
+        "conceptNum": 6,
+        "totalConcepts": 6,
+        "title": "אוסמוזה, חוק ואן ׳ט הוף, אוסמולליות מול אוסמולריות וטוניסיות (σ)",
+        "diagramId": "physio_ch01_unit6_tonicity_sucrose_vs_urea",
+        "diagramCaption": "איור 6: חוק ואן ׳ט הוף (π = nCRT), משוואת πₑ = σnCRT ותאי דם אדומים בסוכרוז (σ=1, איזוטוני) מול אוריאה (σ=0, היפוטוני)",
+        "sentences": [
+          "**אוסמוזה** היא תנועה פסיבית של מים דרך ממברנה חדירה למחצה מריכוז מומסים נמוך (ריכוז מים גבוה) לריכוז מומסים גבוה, הנעצרת כאשר לחץ הידרוסטטי מנוגד משתווה ל**לחץ האוסמוטי ($\\pi$)** המחושב לפי **חוק ואן ׳ט הוף**: $\\pi = nCRT$ (תלוי אך ורק במספר החלקיקים המומסים $nC$, כאשר $1\\text{ mOsm/L}$ ב-37°C מפעיל $19.3\\text{ mm Hg}$).",
+          "**אוסמולליות ($\\text{mOsm/kg H}_2\\text{O}$)** מבוססת על מסת הממס ולכן **אינה תלויה בטמפרטורה** (ומועדפת בפיזיולוגיה), בעוד ש**אוסמולריות ($\\text{mOsm/L}$)** תלויה בטמפרטורה עקב השתנות נפח הנוזל עם הטמפרטורה.",
+          "**טוניסיות (Tonicity)** מתארת את השפעת התמיסה על נפח התא (**איזוטונית** — ללא שינוי נפח; **היפוטונית** — התנפחות התא; **היפרטונית** — התכווצות התא) ונקבעת לפי **הלחץ האוסמוטי האפקטיבי**: $\\pi_e = \\sigma(nCRT)$, כאשר **$\\sigma$ (מקדם ההחזרה)** נע בין 0 (מומס החודר בחופשיות, **Ineffective osmole**) ל-1 (מומס שאינו חודר כלל, **Effective osmole**).",
+          "תמיסת **סוכרוז** ותמיסת **אוריאה** של $300\\text{ mOsm/kg H}_2\\text{O}$ הן שתיהן **איזואוסמוטיות** לתא דם אדום, אך סוכרוז אינו חודר לתא ($\\sigma = 1$ → **איזוטוני**, נפח תקין), בעוד שאוריאה חודרת דרך יוניפורטרים לאוריאה ($\\sigma = 0$ → $\\pi_e = 0$ → **היפוטוני**, גורם לכניסת מים ולהתפוצצות התא)."
+        ],
+        "originalMapping": [
+          {
+            "original": "Osmosis & van 't Hoff (π = nCRT; depends only on number of particles; 1 mOsm/L at 37°C = 19.3 mm Hg).",
+            "simplified": "אוסמוזה וואן ׳ט הוף (π = nCRT): תלוי במספר החלקיקים בלבד; 1 mOsm/L ב-37°C = 19.3 mm Hg."
+          },
+          {
+            "original": "Osmolality (solvent mass) is temperature independent (preferred in physiology) vs. osmolarity (solution volume, temperature dependent).",
+            "simplified": "אוסמולליות (מסת ממס, בלתי תלויה בטמפ׳) מועדפת על פני אוסמולריות (נפח תלוי טמפ׳)."
+          },
+          {
+            "original": "Tonicity depends on effective osmotic pressure πe = σ(nCRT), where σ is 1 for impermeable effective osmoles and 0 for freely permeable ineffective osmoles.",
+            "simplified": "טוניסיות נקבעת לפי πe = σnCRT: מקדם החזרה σ=1 למומס אפקטיבי ו-σ=0 למומס לא-אפקטיבי."
+          },
+          {
+            "original": "300 mOsm/kg H2O sucrose (σ=1, isotonic) vs. urea (σ=0 via urea uniporters, hypotonic — RBCs swell and burst).",
+            "simplified": "300 mOsm/kg H2O סוכרוז (σ=1, איזוטוני) מול אוריאה (σ=0, היפוטוני — התא מתנפח ומתפוצץ)."
+          }
+        ]
+      },
+      {
+        "type": "mini_quiz",
+        "quizNum": 3,
+        "totalQuizzes": 3,
+        "coversSteps": "שלבים 5–6 (נרנסט, SGLT וטוניסיות)",
+        "question": "מדוע תמיסת אוריאה בריכוז $300\\text{ mOsm/kg H}_2\\text{O}$ גורמת לתאי דם אדומים להתנפח ולהתפוצץ, אף על פי שהיא איזואוסמוטית לנוזל התוך-תאי שלהם ($300\\text{ mOsm/kg H}_2\\text{O}$)?",
+        "options": [
+          "משום שאוריאה מתפרקת במים ל-3 יונים ($n = 3$) ולכן מפעילה לחץ אוסמוטי גבוה פי שלושה מסוכרוז.",
+          "משום שבממברנת תא הדם האדום קיימים יוניפורטרים לאוריאה המאפשרים לה לחדור לתא ($\\sigma = 0$, מומס לא-אפקטיבי, $\\pi_e = 0$), ולכן היא אינה מפעילה לחץ אוסמוטי המאזן את המומסים התוך-תאיים ומים נכנסים לתא באוסמוזה.",
+          "משום שאוריאה נשאבת לתוך תא הדם האדום בהובלה פעילה שניונית על ידי הסימפורטר SGLT-1 בקצב של פי 10,000.",
+          "משום שמקדם ההחזרה של אוריאה בממברנת תא הדם האדום הוא $\\sigma = 1$, ולכן היא שואבת מים החוצה מהתא."
+        ],
+        "correctIndex": 1,
+        "simpleReteach": "נזכור ממשוואת הלחץ האוסמוטי האפקטיבי ($\\pi_e = \\sigma nCRT$): בתא דם אדום יש יוניפורטרים לאוריאה, ולכן אוריאה חודרת לתא ($\\sigma = 0$, **Ineffective osmole**, $\\pi_e = 0$). בהיעדר מומס אפקטיבי בחוץ, מים נכנסים לתא בעקבות המומסים התוך-תאיים והתא מתנפח ומתפוצץ (**איזואוסמוטי אך היפוטוני**).",
+        "correctExplanation": "מדויק! בגלל יוניפורטרי האוריאה בממברנת תא הדם האדום, $\\sigma = 0$ ו-$\\pi_e = 0$, כך שהתמיסה היא איזואוסמוטית אך היפוטונית."
       }
     ]
   },
@@ -11088,6 +11296,211 @@ function renderSbsSpecDiagramSVG(diagramId, spec) {
 }
 
 function getStepByStepDiagramSVG(diagramId) {
+  const fitTxt = (str, maxW, baseFs) => {
+    const s = String(str || '').replace(/<[^>]+>/g, '');
+    const estW = s.length * baseFs * 0.62;
+    if (estW <= maxW) return `font-size="${baseFs}"`;
+    const scaled = Math.max(6.6, +(baseFs * (maxW / estW)).toFixed(1));
+    return `font-size="${scaled}" textLength="${maxW}" lengthAdjust="spacingAndGlyphs"`;
+  };
+
+  if (diagramId === 'physio_ch01_unit1_compartmentalization') {
+    return `
+      <svg viewBox="0 0 330 175" role="img" aria-label="מידור התא האאוקריוטי ו-4 הצירים התפקודיים">
+        <rect x="6" y="6" width="318" height="163" rx="12" fill="var(--surface)" stroke="var(--sep)" stroke-width="1"/>
+        <text x="165" y="21" text-anchor="middle" ${fitTxt('מידור התא האאוקריוטי — 4 צירים תפקודיים (Table 1.1)', 296, 10.0)} font-weight="800" fill="var(--label2)">מידור התא האאוקריוטי — 4 צירים תפקודיים (Table 1.1)</text>
+
+        <rect x="170" y="29" width="144" height="63" rx="8" fill="var(--surface2)" stroke="var(--accent)" stroke-width="1.3"/>
+        <text x="242" y="44" text-anchor="middle" ${fitTxt('1. ייצור וניתוב חלבונים', 132, 9.5)} font-weight="800" fill="var(--accent)">1. ייצור וניתוב חלבונים</text>
+        <text x="242" y="59" text-anchor="middle" ${fitTxt('Nucleus (44+2) → Free Ribosomes', 130, 8.2)} font-weight="700" fill="var(--label)" direction="ltr">Nucleus (44+2) → Free Ribosomes</text>
+        <text x="242" y="72" text-anchor="middle" ${fitTxt('(ציטוזול) · לעומת:', 130, 8.1)} font-weight="600" fill="var(--label2)">(ציטוזול) · לעומת:</text>
+        <text x="242" y="85" text-anchor="middle" ${fitTxt('Rough ER → Golgi (ממברנה/הפרשה)', 130, 8.1)} font-weight="700" fill="var(--accent)" direction="ltr">Rough ER → Golgi (ממברנה/הפרשה)</text>
+
+        <rect x="16" y="29" width="144" height="63" rx="8" fill="var(--surface2)" stroke="var(--success)" stroke-width="1.3"/>
+        <text x="88" y="44" text-anchor="middle" ${fitTxt('2. אנרגיה, ליפידים ו-Ca²⁺', 132, 9.5)} font-weight="800" fill="var(--success)">2. אנרגיה, ליפידים ו-Ca²⁺</text>
+        <text x="88" y="61" text-anchor="middle" ${fitTxt('Mitochondria: ATP + Ca²⁺', 130, 8.3)} font-weight="700" fill="var(--label)" direction="ltr">Mitochondria: ATP + Ca²⁺</text>
+        <text x="88" y="75" text-anchor="middle" ${fitTxt('Smooth ER: Lipids + Ca²⁺', 130, 8.3)} font-weight="700" fill="var(--label)" direction="ltr">Smooth ER: Lipids + Ca²⁺</text>
+        <text x="88" y="87" text-anchor="middle" ${fitTxt('שניהם מאגרי סידן תוך-תאיים', 130, 7.8)} font-weight="600" fill="var(--label3)">שניהם מאגרי סידן תוך-תאיים</text>
+
+        <rect x="170" y="98" width="144" height="63" rx="8" fill="var(--surface2)" stroke="var(--warning)" stroke-width="1.3"/>
+        <text x="242" y="113" text-anchor="middle" ${fitTxt('3. קליטה, מיחזור ופירוק', 132, 9.5)} font-weight="800" fill="var(--warning)">3. קליטה, מיחזור ופירוק</text>
+        <text x="242" y="128" text-anchor="middle" ${fitTxt('Endosome → Lysosome (פירוק)', 130, 8.1)} font-weight="700" fill="var(--label)" direction="ltr">Endosome → Lysosome (פירוק)</text>
+        <text x="242" y="142" text-anchor="middle" ${fitTxt('Proteosome (פירוק חלבונים)', 130, 8.1)} font-weight="700" fill="var(--label)" direction="ltr">Proteosome (פירוק חלבונים)</text>
+        <text x="242" y="155" text-anchor="middle" ${fitTxt('Peroxisome (נטרול רעלים)', 130, 8.1)} font-weight="700" fill="var(--label)" direction="ltr">Peroxisome (נטרול רעלים)</text>
+
+        <rect x="16" y="98" width="144" height="63" rx="8" fill="var(--tint-danger)" stroke="var(--danger)" stroke-width="1.3"/>
+        <text x="88" y="113" text-anchor="middle" ${fitTxt('4. חריגים חסרי גרעין באדם', 132, 9.5)} font-weight="800" fill="var(--danger)">4. חריגים חסרי גרעין באדם</text>
+        <text x="88" y="129" text-anchor="middle" ${fitTxt('תאי דם אדומים בוגרים (RBCs)', 130, 8.3)} font-weight="700" fill="var(--label)">תאי דם אדומים בוגרים (RBCs)</text>
+        <text x="88" y="143" text-anchor="middle" ${fitTxt('תאי עדשת העין (Lens cells)', 130, 8.3)} font-weight="700" fill="var(--label)">תאי עדשת העין (Lens cells)</text>
+        <text x="88" y="156" text-anchor="middle" ${fitTxt('שאר תאי הגוף: גרעין מוקף ממברנה', 130, 7.6)} font-weight="700" fill="var(--danger)">שאר תאי הגוף: גרעין מוקף ממברנה</text>
+      </svg>
+    `;
+  }
+
+  if (diagramId === 'physio_ch01_unit2_membrane_asymmetry') {
+    return `
+      <svg viewBox="0 0 330 175" role="img" aria-label="אסימטריית ממברנת הפלזמה ועיגון חלבונים">
+        <rect x="6" y="6" width="318" height="163" rx="12" fill="var(--surface)" stroke="var(--sep)" stroke-width="1"/>
+        <text x="165" y="21" text-anchor="middle" ${fitTxt('ממברנת הפלזמה (5 nm) — אסימטריית עלים, Kink וחלבונים', 296, 10.0)} font-weight="800" fill="var(--label2)">ממברנת הפלזמה (5 nm) — אסימטריית עלים, Kink וחלבונים</text>
+
+        <rect x="169" y="29" width="145" height="132" rx="9" fill="var(--surface2)" stroke="var(--accent)" stroke-width="1.3"/>
+        <text x="241" y="44" text-anchor="middle" ${fitTxt('אסימטריית ליפידים (Table 1.2)', 132, 9.2)} font-weight="800" fill="var(--accent)">אסימטריית ליפידים (Table 1.2)</text>
+        <rect x="176" y="51" width="131" height="32" rx="6" fill="var(--tint-accent)"/>
+        <text x="241" y="64" text-anchor="middle" ${fitTxt('עלה חיצוני (Outer Leaflet)', 122, 8.2)} font-weight="800" fill="var(--accent)">עלה חיצוני (Outer Leaflet)</text>
+        <text x="241" y="77" text-anchor="middle" ${fitTxt('PC · Sphingomyelin · Glycolipids', 122, 7.8)} font-weight="700" fill="var(--label)" direction="ltr">PC · Sphingomyelin · Glycolipids</text>
+
+        <rect x="176" y="88" width="131" height="20" rx="5" fill="var(--tint-warning)"/>
+        <text x="241" y="101" text-anchor="middle" ${fitTxt('Cholesterol בשני העלים (≤50%, 37°C)', 122, 7.8)} font-weight="800" fill="var(--warning)">Cholesterol בשני העלים (≤50%, 37°C)</text>
+
+        <rect x="176" y="113" width="131" height="41" rx="6" fill="var(--tint-success)"/>
+        <text x="241" y="126" text-anchor="middle" ${fitTxt('עלה פנימי (Inner Leaflet)', 122, 8.2)} font-weight="800" fill="var(--success)">עלה פנימי (Inner Leaflet)</text>
+        <text x="241" y="139" text-anchor="middle" ${fitTxt('PE · PS · PI (איתות תוך-תאי)', 122, 7.8)} font-weight="700" fill="var(--label)" direction="ltr">PE · PS · PI (איתות תוך-תאי)</text>
+        <text x="241" y="150" text-anchor="middle" ${fitTxt('קשר כפול → "Kink" ← עליית נזילות', 122, 7.5)} font-weight="700" fill="var(--label2)">קשר כפול → "Kink" ← עליית נזילות</text>
+
+        <rect x="16" y="29" width="145" height="132" rx="9" fill="var(--surface2)" stroke="var(--sep)" stroke-width="1.3"/>
+        <text x="88" y="44" text-anchor="middle" ${fitTxt('חלבוני ממברנה ומתחמים', 132, 9.2)} font-weight="800" fill="var(--label)">חלבוני ממברנה ומתחמים</text>
+        <rect x="23" y="51" width="131" height="32" rx="6" fill="var(--surface)"/>
+        <text x="88" y="64" text-anchor="middle" ${fitTxt('אינטגרליים (GPCRs = 7 סלילי α)', 122, 8.1)} font-weight="800" fill="var(--label)">אינטגרליים (GPCRs = 7 סלילי α)</text>
+        <text x="88" y="77" text-anchor="middle" ${fitTxt('יעד לכמעט ½ מהתרופות הלא-אנטיב׳', 122, 7.6)} font-weight="600" fill="var(--label2)">יעד לכמעט ½ מהתרופות הלא-אנטיב׳</text>
+
+        <rect x="23" y="88" width="131" height="33" rx="6" fill="var(--surface)"/>
+        <text x="88" y="101" text-anchor="middle" ${fitTxt('עיגון ליפידי קוולנטי', 122, 8.1)} font-weight="800" fill="var(--label)">עיגון ליפידי קוולנטי</text>
+        <text x="88" y="114" text-anchor="middle" ${fitTxt('חוץ: GPI · פנים: Myristate/Prenyl', 122, 7.5)} font-weight="700" fill="var(--accent)" direction="ltr">חוץ: GPI · פנים: Myristate/Prenyl</text>
+
+        <rect x="23" y="126" width="131" height="28" rx="6" fill="var(--surface)"/>
+        <text x="88" y="138" text-anchor="middle" ${fitTxt('Tight Junctions (אפיתל וקטורי)', 122, 7.8)} font-weight="800" fill="var(--label)">Tight Junctions (אפיתל וקטורי)</text>
+        <text x="88" y="150" text-anchor="middle" ${fitTxt('+ Lipid rafts לריכוז מולקולות איתות', 122, 7.5)} font-weight="700" fill="var(--label2)">+ Lipid rafts לריכוז מולקולות איתות</text>
+      </svg>
+    `;
+  }
+
+  if (diagramId === 'physio_ch01_unit3_transporters_and_cftr') {
+    return `
+      <svg viewBox="0 0 330 175" role="img" aria-label="4 מחלקות הובלה ממברנליות, משאבת נתרן-אשלגן ו-CFTR">
+        <rect x="6" y="6" width="318" height="163" rx="12" fill="var(--surface)" stroke="var(--sep)" stroke-width="1"/>
+        <text x="165" y="21" text-anchor="middle" ${fitTxt('קצבי הובלה (Table 1.3), Na⁺,K⁺-ATPase ובקרה אפיתליאלית', 296, 9.8)} font-weight="800" fill="var(--label2)">קצבי הובלה (Table 1.3), Na⁺,K⁺-ATPase ובקרה אפיתליאלית</text>
+
+        <rect x="220" y="28" width="94" height="36" rx="7" fill="var(--tint-success)" stroke="var(--success)"/>
+        <text x="267" y="42" text-anchor="middle" ${fitTxt('Pores / AQPs', 84, 8.4)} font-weight="800" fill="var(--success)">Pores / AQPs</text>
+        <text x="267" y="56" text-anchor="middle" ${fitTxt('≤ 10⁹ / sec (פתוח)', 84, 8.0)} font-weight="700" fill="var(--label)" direction="ltr">≤ 10⁹ / sec (פתוח)</text>
+
+        <rect x="118" y="28" width="94" height="36" rx="7" fill="var(--tint-accent)" stroke="var(--accent)"/>
+        <text x="165" y="42" text-anchor="middle" ${fitTxt('Ion Channels', 84, 8.4)} font-weight="800" fill="var(--accent)">Ion Channels</text>
+        <text x="165" y="56" text-anchor="middle" ${fitTxt('10⁶–10⁸ / sec (שער)', 84, 8.0)} font-weight="700" fill="var(--label)" direction="ltr">10⁶–10⁸ / sec (שער)</text>
+
+        <rect x="16" y="28" width="94" height="36" rx="7" fill="var(--tint-warning)" stroke="var(--warning)"/>
+        <text x="63" y="42" text-anchor="middle" ${fitTxt('SLCs & ATP-Pumps', 84, 8.1)} font-weight="800" fill="var(--warning)">SLCs &amp; ATP-Pumps</text>
+        <text x="63" y="56" text-anchor="middle" ${fitTxt('10²–10⁴ / sec (מחזור)', 84, 8.0)} font-weight="700" fill="var(--label)" direction="ltr">10²–10⁴ / sec (מחזור)</text>
+
+        <rect x="170" y="71" width="144" height="90" rx="9" fill="var(--surface2)" stroke="var(--accent)" stroke-width="1.3"/>
+        <text x="242" y="87" text-anchor="middle" ${fitTxt('Na⁺,K⁺-ATPase (1α:1β:1γ)', 130, 9.0)} font-weight="800" fill="var(--accent)" direction="ltr">Na⁺,K⁺-ATPase (1α:1β:1γ)</text>
+        <text x="242" y="104" text-anchor="middle" ${fitTxt('ATP → 3 Na⁺ החוצה | 2 K⁺ פנימה', 130, 8.4)} font-weight="800" fill="var(--success)" direction="ltr">ATP → 3 Na⁺ החוצה | 2 K⁺ פנימה</text>
+        <text x="242" y="121" text-anchor="middle" ${fitTxt('α: קטליזה (P,N,A) + מעוכבת ב-Ouabain', 130, 7.9)} font-weight="700" fill="var(--label)">α: קטליזה (P,N,A) + מעוכבת ב-Ouabain</text>
+        <text x="242" y="136" text-anchor="middle" ${fitTxt('β: הכוונה לממברנה · γ: זיקת Na⁺', 130, 7.9)} font-weight="700" fill="var(--label)">β: הכוונה לממברנה · γ: זיקת Na⁺</text>
+        <text x="242" y="151" text-anchor="middle" ${fitTxt('V-type H⁺ באברונים · H⁺ בפלזמה בכליה', 130, 7.5)} font-weight="700" fill="var(--label2)">V-type H⁺ באברונים · H⁺ בפלזמה בכליה</text>
+
+        <rect x="16" y="71" width="144" height="90" rx="9" fill="var(--surface2)" stroke="var(--danger)" stroke-width="1.3"/>
+        <text x="88" y="87" text-anchor="middle" ${fitTxt('CFTR וויסות יוביקוויטין', 130, 9.0)} font-weight="800" fill="var(--danger)">CFTR וויסות יוביקוויטין</text>
+        <text x="88" y="104" text-anchor="middle" ${fitTxt('Phe508del-CFTR (ABC: Cl⁻/HCO₃⁻)', 130, 8.0)} font-weight="700" fill="var(--label)" direction="ltr">Phe508del-CFTR (ABC: Cl⁻/HCO₃⁻)</text>
+        <text x="88" y="118" text-anchor="middle" ${fitTxt('מפורק ב-ER ← Trikafta משיב לממברנה', 130, 7.8)} font-weight="700" fill="var(--danger)">מפורק ב-ER ← Trikafta משיב לממברנה</text>
+        <line x1="26" y1="126" x2="150" y2="126" stroke="var(--sep)"/>
+        <text x="88" y="140" text-anchor="middle" ${fitTxt('Aldosterone ⊣ Nedd4-2', 130, 8.0)} font-weight="800" fill="var(--success)">Aldosterone ⊣ Nedd4-2</text>
+        <text x="88" y="153" text-anchor="middle" ${fitTxt('מונע פירוק ENaC ← ↑ ספיגת Na⁺', 130, 7.6)} font-weight="700" fill="var(--label)">מונע פירוק ENaC ← ↑ ספיגת Na⁺</text>
+      </svg>
+    `;
+  }
+
+  if (diagramId === 'physio_ch01_unit4_vesicular_transport') {
+    return `
+      <svg viewBox="0 0 330 175" role="img" aria-label="אנדוציטוזה מתווכת-קולטן של LDL ואקסוציטוזה מבוקרת וחריגי הסידן">
+        <rect x="6" y="6" width="318" height="163" rx="12" fill="var(--surface)" stroke="var(--sep)" stroke-width="1"/>
+        <text x="165" y="21" text-anchor="middle" ${fitTxt('הובלה בשלפוחיות: מסלול LDL (Fig. 1.5) וחריגי Ca²⁺ באקסוציטוזה', 296, 9.8)} font-weight="800" fill="var(--label2)">הובלה בשלפוחיות: מסלול LDL (Fig. 1.5) וחריגי Ca²⁺ באקסוציטוזה</text>
+
+        <rect x="169" y="29" width="145" height="132" rx="9" fill="var(--surface2)" stroke="var(--accent)" stroke-width="1.3"/>
+        <text x="241" y="45" text-anchor="middle" ${fitTxt('אנדוציטוזה מתווכת-קולטן (LDL)', 132, 9.0)} font-weight="800" fill="var(--accent)">אנדוציטוזה מתווכת-קולטן (LDL)</text>
+        <rect x="177" y="52" width="129" height="22" rx="5" fill="var(--surface)"/>
+        <text x="241" y="66" text-anchor="middle" ${fitTxt('1. קישור קולטן + Adaptin + Clathrin', 120, 7.9)} font-weight="700" fill="var(--label)">1. קישור קולטן + Adaptin + Clathrin</text>
+        <rect x="177" y="79" width="129" height="22" rx="5" fill="var(--surface)"/>
+        <text x="241" y="93" text-anchor="middle" ${fitTxt('2. Dynamin (GTPase) מנתק שלפוחית', 120, 7.9)} font-weight="700" fill="var(--label)">2. Dynamin (GTPase) מנתק שלפוחית</text>
+        <rect x="177" y="106" width="129" height="24" rx="5" fill="var(--tint-accent)"/>
+        <text x="241" y="121" text-anchor="middle" ${fitTxt('3. אנדוזום: קולטן ממוחזר · LDL לליזוזום', 120, 7.8)} font-weight="800" fill="var(--accent)">3. אנדוזום: קולטן ממוחזר · LDL לליזוזום</text>
+        <text x="241" y="143" text-anchor="middle" ${fitTxt('פגם בקולטן ← ↑LDL בדם ← טרשת עורקים', 128, 7.5)} font-weight="700" fill="var(--danger)">פגם בקולטן ← ↑LDL בדם ← טרשת עורקים</text>
+        <text x="241" y="155" text-anchor="middle" ${fitTxt('+ פינוציטוזה ופגוציטוזה (Opsonization/Fc)', 128, 7.3)} font-weight="600" fill="var(--label2)">+ פינוציטוזה ופגוציטוזה (Opsonization/Fc)</text>
+
+        <rect x="16" y="29" width="145" height="132" rx="9" fill="var(--surface2)" stroke="var(--warning)" stroke-width="1.3"/>
+        <text x="88" y="45" text-anchor="middle" ${fitTxt('אקסוציטוזה ובקרת Ca²⁺ (SNAREs)', 132, 9.0)} font-weight="800" fill="var(--warning)">אקסוציטוזה ובקרת Ca²⁺ (SNAREs)</text>
+        <rect x="24" y="52" width="129" height="24" rx="5" fill="var(--surface)"/>
+        <text x="88" y="67" text-anchor="middle" ${fitTxt('קונסטיטוטיבית: IgG (פלזמה), קולגן', 120, 7.8)} font-weight="700" fill="var(--label)">קונסטיטוטיבית: IgG (פלזמה), קולגן</text>
+
+        <rect x="24" y="81" width="129" height="28" rx="6" fill="var(--tint-success)"/>
+        <text x="88" y="94" text-anchor="middle" ${fitTxt('מבוקרת (כלל רגיל): ↑[Ca²⁺]ᵢ', 120, 8.0)} font-weight="800" fill="var(--success)">מבוקרת (כלל רגיל): ↑[Ca²⁺]ᵢ</text>
+        <text x="88" y="105" text-anchor="middle" ${fitTxt('נוירונים, תאים אנדוקריניים ואצינוס לבלב', 120, 7.5)} font-weight="700" fill="var(--label)">נוירונים, תאים אנדוקריניים ואצינוס לבלב</text>
+
+        <rect x="24" y="114" width="129" height="40" rx="6" fill="var(--tint-danger)" stroke="var(--danger)" stroke-width="1"/>
+        <text x="88" y="128" text-anchor="middle" ${fitTxt('2 חריגים מופעלים בירידת ↓[Ca²⁺]ᵢ:', 120, 8.1)} font-weight="800" fill="var(--danger)">2 חריגים מופעלים בירידת ↓[Ca²⁺]ᵢ:</text>
+        <text x="88" y="141" text-anchor="middle" ${fitTxt('1. Renin (תאי JG בכליה)', 120, 8.0)} font-weight="800" fill="var(--label)">1. Renin (תאי JG בכליה)</text>
+        <text x="88" y="152" text-anchor="middle" ${fitTxt('2. PTH (בלוטת הפאראתירואיד)', 120, 8.0)} font-weight="800" fill="var(--label)">2. PTH (בלוטת הפאראתירואיד)</text>
+      </svg>
+    `;
+  }
+
+  if (diagramId === 'physio_ch01_unit5_nernst_and_sglt') {
+    return `
+      <svg viewBox="0 0 330 175" role="img" aria-label="חוק פיק, משוואת נרנסט והשוואת SGLT-2 מול SGLT-1">
+        <rect x="6" y="6" width="318" height="163" rx="12" fill="var(--surface)" stroke="var(--sep)" stroke-width="1"/>
+        <text x="165" y="21" text-anchor="middle" ${fitTxt('דיפוזיה (Fick), מפל אלקטרוכימי (Fig. 1.6B) ו-SGLT-1/2', 296, 9.8)} font-weight="800" fill="var(--label2)">דיפוזיה (Fick), מפל אלקטרוכימי (Fig. 1.6B) ו-SGLT-1/2</text>
+
+        <rect x="16" y="27" width="298" height="27" rx="7" fill="var(--tint-accent)"/>
+        <text x="165" y="44" text-anchor="middle" ${fitTxt('חוק פיק: J = −DA(ΔC/ΔX) · גיוס נימים במאמץ מקצר ΔX מ-40 µm ל-≤20 µm', 284, 8.2)} font-weight="800" fill="var(--accent)">חוק פיק: J = −DA(ΔC/ΔX) · גיוס נימים במאמץ מקצר ΔX מ-40 µm ל-≤20 µm</text>
+
+        <rect x="169" y="60" width="145" height="101" rx="9" fill="var(--surface2)" stroke="var(--success)" stroke-width="1.3"/>
+        <text x="241" y="76" text-anchor="middle" ${fitTxt('נרנסט וכוח מניע נטו (37°C)', 132, 9.0)} font-weight="800" fill="var(--success)">נרנסט וכוח מניע נטו (37°C)</text>
+        <text x="241" y="92" text-anchor="middle" ${fitTxt('פי 10 מפל: 61.5 mV (z=1) | 30.7 mV (z=2)', 130, 7.9)} font-weight="700" fill="var(--label)">פי 10 מפל: 61.5 mV (z=1) | 30.7 mV (z=2)</text>
+        <rect x="176" y="99" width="131" height="36" rx="6" fill="var(--tint-success)"/>
+        <text x="241" y="113" text-anchor="middle" ${fitTxt('K⁺: Vm = −60 mV | EK = −90.8 mV', 122, 8.0)} font-weight="800" fill="var(--label)" direction="ltr">K⁺: Vm = −60 mV | EK = −90.8 mV</text>
+        <text x="241" y="128" text-anchor="middle" ${fitTxt('שקול: +30.8 mV → יציאת K⁺ פסיבית', 122, 8.1)} font-weight="800" fill="var(--success)">שקול: +30.8 mV → יציאת K⁺ פסיבית</text>
+        <text x="241" y="150" text-anchor="middle" ${fitTxt('גלוקוז (z=0): מפל ריכוזים כימי בלבד', 130, 7.6)} font-weight="700" fill="var(--label2)">גלוקוז (z=0): מפל ריכוזים כימי בלבד</text>
+
+        <rect x="16" y="60" width="145" height="101" rx="9" fill="var(--surface2)" stroke="var(--warning)" stroke-width="1.3"/>
+        <text x="88" y="76" text-anchor="middle" ${fitTxt('הובלה פעילה שניונית: SGLT', 132, 9.0)} font-weight="800" fill="var(--warning)">הובלה פעילה שניונית: SGLT</text>
+        <rect x="23" y="84" width="131" height="31" rx="6" fill="var(--surface)"/>
+        <text x="88" y="97" text-anchor="middle" ${fitTxt('SGLT-2 (1 Na⁺ : 1 Glucose)', 122, 8.1)} font-weight="800" fill="var(--label)" direction="ltr">SGLT-2 (1 Na⁺ : 1 Glucose)</text>
+        <text x="88" y="109" text-anchor="middle" ${fitTxt('כוח ריכוז: ≈ ×100 (עד 0.02 mmol/L)', 122, 7.9)} font-weight="700" fill="var(--label2)">כוח ריכוז: ≈ ×100 (עד 0.02 mmol/L)</text>
+        <rect x="23" y="121" width="131" height="33" rx="6" fill="var(--tint-warning)"/>
+        <text x="88" y="135" text-anchor="middle" ${fitTxt('SGLT-1 (2 Na⁺ : 1 Glucose)', 122, 8.1)} font-weight="800" fill="var(--warning)" direction="ltr">SGLT-1 (2 Na⁺ : 1 Glucose)</text>
+        <text x="88" y="148" text-anchor="middle" ${fitTxt('חזקה שנייה → ≈ ×10,000 (0.0002 mmol/L)', 122, 7.9)} font-weight="800" fill="var(--label)">חזקה שנייה → ≈ ×10,000 (0.0002 mmol/L)</text>
+      </svg>
+    `;
+  }
+
+  if (diagramId === 'physio_ch01_unit6_tonicity_sucrose_vs_urea') {
+    return `
+      <svg viewBox="0 0 330 175" role="img" aria-label="השוואת תא דם אדום בתמיסה איזואוסמוטית של סוכרוז מול אוריאה">
+        <rect x="6" y="6" width="318" height="163" rx="12" fill="var(--surface)" stroke="var(--sep)" stroke-width="1"/>
+        <text x="165" y="21" text-anchor="middle" ${fitTxt('ואן ׳ט הוף (π = nCRT) וטוניסיות (πₑ = σnCRT) ב-RBC (300 mOsm/kg)', 296, 9.5)} font-weight="800" fill="var(--label2)">ואן ׳ט הוף (π = nCRT) וטוניסיות (πₑ = σnCRT) ב-RBC (300 mOsm/kg)</text>
+
+        <rect x="169" y="29" width="145" height="114" rx="9" fill="var(--tint-success)" stroke="var(--success)" stroke-width="1.3"/>
+        <text x="241" y="45" text-anchor="middle" ${fitTxt('Sucrose (300 mOsm/kg)', 130, 9.0)} font-weight="800" fill="var(--success)" direction="ltr">Sucrose (300 mOsm/kg)</text>
+        <ellipse cx="241" cy="77" rx="34" ry="16" fill="var(--danger)" opacity="0.86" stroke="#fff" stroke-width="1.2"/>
+        <text x="241" y="80" text-anchor="middle" font-size="8.4" font-weight="800" fill="#fff">נפח תקין</text>
+        <text x="241" y="109" text-anchor="middle" ${fitTxt('σ = 1 (אין נשא ← לא חודר)', 128, 8.0)} font-weight="800" fill="var(--label)" direction="ltr">σ = 1 (אין נשא ← לא חודר)</text>
+        <text x="241" y="123" text-anchor="middle" ${fitTxt('מומס אפקטיבי (πₑ = πᵢ)', 128, 7.9)} font-weight="700" fill="var(--label2)">מומס אפקטיבי (πₑ = πᵢ)</text>
+        <text x="241" y="137" text-anchor="middle" ${fitTxt('איזואוסמוטי + איזוטוני', 128, 8.4)} font-weight="800" fill="var(--success)">איזואוסמוטי + איזוטוני</text>
+
+        <rect x="16" y="29" width="145" height="114" rx="9" fill="var(--tint-danger)" stroke="var(--danger)" stroke-width="1.3"/>
+        <text x="88" y="45" text-anchor="middle" ${fitTxt('Urea (300 mOsm/kg)', 130, 9.0)} font-weight="800" fill="var(--danger)" direction="ltr">Urea (300 mOsm/kg)</text>
+        <circle cx="88" cy="77" r="22" fill="var(--danger)" opacity="0.92" stroke="var(--warning)" stroke-width="2" stroke-dasharray="4 3"/>
+        <text x="88" y="75" text-anchor="middle" font-size="7.6" font-weight="800" fill="#fff">מתנפח</text>
+        <text x="88" y="85" text-anchor="middle" font-size="7.6" font-weight="800" fill="#fff">ומתפוצץ</text>
+        <text x="88" y="109" text-anchor="middle" ${fitTxt('σ = 0 (יוניפורטר לאוריאה)', 128, 8.0)} font-weight="800" fill="var(--label)" direction="ltr">σ = 0 (יוניפורטר לאוריאה)</text>
+        <text x="88" y="123" text-anchor="middle" ${fitTxt('לא-אפקטיבי (πₑ = 0 ← כניסת מים)', 128, 7.8)} font-weight="700" fill="var(--label2)">לא-אפקטיבי (πₑ = 0 ← כניסת מים)</text>
+        <text x="88" y="137" text-anchor="middle" ${fitTxt('איזואוסמוטי אך היפוטוני!', 128, 8.4)} font-weight="800" fill="var(--danger)">איזואוסמוטי אך היפוטוני!</text>
+
+        <text x="165" y="160" text-anchor="middle" ${fitTxt('אוסמולליות (mOsm/kg H₂O) אינה תלויה בטמפ׳ · 1 mOsm/L = 19.3 mm Hg (37°C)', 296, 8.0)} font-weight="700" fill="var(--label2)">אוסמולליות (mOsm/kg H₂O) אינה תלויה בטמפ׳ · 1 mOsm/L = 19.3 mm Hg (37°C)</text>
+      </svg>
+    `;
+  }
+
   if (typeof SBS_DIAGRAM_SPECS !== 'undefined' && SBS_DIAGRAM_SPECS[diagramId]) {
     return renderSbsSpecDiagramSVG(diagramId, SBS_DIAGRAM_SPECS[diagramId]);
   }

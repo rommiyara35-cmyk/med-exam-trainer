@@ -5255,6 +5255,116 @@
       "deckId": "physiology-ch-12",
       "front": "Muscle Fatigue Mechanisms: Pi and Lactic Acid (מנגנוני עייפות שריר: זרחה אי-אורגנית וחומצה לקטית)",
       "back": "במהלך פעילות גופנית עצימה, הצטברות של זרחה אי-אורגנית (Pi) וחומצה לקטית בתוך המיופלזמה תורמת לעייפות השריר; רמת ה-ATP במיופלזמה אינה צונחת משמעותית בעת עייפות, ומשמשת כמנגנון הגנה המונע התרוקנות קטסטרופלית."
+    },
+    {
+      "deckId": "physiology-ch-01",
+      "front": "Anucleate Human Cells (תאים חסרי גרעין בגוף האדם)",
+      "back": "בעוד שרוב התאים האאוקריוטיים בגוף האדם מוגדרים על ידי גרעין מוקף ממברנה (המכיל בתא דיפלואידי תקין 22 זוגות אוטוזומים [44 אוטוזומים] ו-2 כרומוזומי מין, סה״כ 46 כרומוזומים לפי Alberts 7e עמ׳ 191; ב-Berne & Levy 8e Table 1.1 מופיע הניסוח המקוצר \"22 autosomes\"), שני חריגים בולטים החסרים גרעין הם תאי דם אדומים בוגרים (Mature red blood cells) ותאי עדשת העין (Lens cells)."
+    },
+    {
+      "deckId": "physiology-ch-01",
+      "front": "Free Ribosomes vs. Rough ER (ריבוזומים חופשיים מול רשת אנדופלזמטית מגורגרת)",
+      "back": "ריבוזומים חופשיים (Free ribosomes) בציטוזול מתרגמים mRNA לחלבונים ציטוזוליים, בעוד שהרשת האנדופלזמטית המגורגרת (Rough ER) מתרגמת mRNA לחלבונים המיועדים לממברנות או להפרשה מחוץ לתא (המועברים בהמשך למנגנון גולג׳י למיון ואריזה)."
+    },
+    {
+      "deckId": "physiology-ch-01",
+      "front": "Intracellular Ca²⁺ Storage Organelles (אברוני אגירת סידן תוך-תאיים)",
+      "back": "שני האברונים הממברנליים המשמשים כמאגרים תוך-תאיים של יוני סידן (Ca²⁺) הם המיטוכונדריה (Mitochondria — המייצרות גם ATP בזרחון חמצוני) והרשת האנדופלזמטית החלקה (Smooth ER — האחראית גם לסינתזת ליפידים)."
+    },
+    {
+      "deckId": "physiology-ch-01",
+      "front": "Lysosome vs. Proteosome vs. Peroxisome (ליזוזום, פרוטאוזום ופרוקסיזום)",
+      "back": "הליזוזום (Lysosome) מבצע פירוק תוך-תאי של חומרים שהופנמו באנדוציטוזה/פגוציטוזה, הפרוטאוזום (Proteosome) מפרק חלבונים תוך-תאיים (כגון חלבונים שתויגו ביוביקוויטין), והפרוקסיזום (Peroxisome) מבצע נטרול רעלים (Detoxification)."
+    },
+    {
+      "deckId": "physiology-ch-01",
+      "front": "Plasma Membrane Leaflet Asymmetry (אסימטריית עלי ממברנת הפלזמה)",
+      "back": "בעלה החיצוני (Outer leaflet) מרוכזים בעיקר Phosphatidylcholine, Sphingomyelin (בעל שלד ספינגוזין) וגליקוליפידים; בעלה הפנימי (Inner leaflet) מרוכזים Phosphatidylethanolamine, Phosphatidylserine ו-Phosphatidylinositol (המשתתף בהעברת אותות); כולסטרול מצוי בשני העלים ומייצב את הממברנה ב-37°C."
+    },
+    {
+      "deckId": "physiology-ch-01",
+      "front": "Unsaturated Fatty Acyl Chains & Membrane Fluidity (שרשראות בלתי-רוויות ונזילות הממברנה)",
+      "back": "נוכחות קשר כפול בשרשרת חומצת שומן בלתי-רוויה בפוספוליפידים ובגליקוליפידים יוצרת כיפוף מבני (\"Kink\") המונע אריזה צפופה של הליפידים הסמוכים ובכך מגביר את נזילות הממברנה (Membrane fluidity)."
+    },
+    {
+      "deckId": "physiology-ch-01",
+      "front": "Lipid Rafts & Tight Junctions (רפסודות ליפידיות וצומתים הדוקים בממברנה)",
+      "back": "רפסודות ליפידיות (Lipid rafts) הן צברים של ספינגומיאלין וכולסטרול הנעים כיחידה במישור הממברנה ומרכזים מולקולות איתות; צומתים הדוקים (Tight junctions) בתאי אפיתל מפרידים בין המתחם האפיקלי לבזולטרלי ומאפשרים הובלה וקטורית (Vectorial transport)."
+    },
+    {
+      "deckId": "physiology-ch-01",
+      "front": "Lipid-Anchored Membrane Proteins (חלבוני ממברנה מעוגני-ליפיד)",
+      "back": "חלבונים המעוגנים קוולנטית לליפיד באחד מעלי הממברנה: בעלה החיצוני באמצעות הגליקוליפיד GPI (Glycosylphosphatidylinositol), ובעלה הפנימי באמצעות חומצות שומן בקצה האמיני (Myristate / Palmitate) או קבוצות פרניל בקצה הקרבוקסילי (Farnesyl / Geranylgeranyl)."
+    },
+    {
+      "deckId": "physiology-ch-01",
+      "front": "Transport Rates Across Transporter Classes (קצבי הובלה ב-4 מחלקות הטרנספורטרים)",
+      "back": "נקבוביות פתוחות (Pores, כגון Aquaporins): עד $10^9$ מולקולות לשנייה; תעלות יונים בעלות שער (Gated ion channels): $10^6\\text{–}10^8$ יונים לשנייה; נשאי מומסים (SLCs) וטרנספורטרים תלויי-ATP: $10^2\\text{–}10^4$ מולקולות לשנייה (עקב מחזור שינוי קונפורמציה)."
+    },
+    {
+      "deckId": "physiology-ch-01",
+      "front": "Aquaporins (AQPs) & Aquaglyceroporins (אקוופורינים ואקווה-גליצרופורינים)",
+      "back": "ארבעה מונומרים של AQP (שלכל אחד 6 מתחמים ונקבובית מים עצמאית) יוצרים הומו-טטרמר בממברנה. בצינור המאסף בכליה AQP2 אפיקלי מבוקר על ידי ADH (ו-AQP3/4 בזולטרליים). בעוד שכל האיזופורמים של AQP מאפשרים מעבר פסיבי של H2O, קבוצת ה-Aquaglyceroporins (שנקראה על שם זיהוי מעבר גליצרול) מאפשרת גם מעבר של גליצרול, אוריאה, מניטול, פורינים, פירימידינים, CO2 ו-NH3."
+    },
+    {
+      "deckId": "physiology-ch-01",
+      "front": "Ion Channel Properties & Gating Mechanisms (תכונות תעלות יונים ומנגנוני שער)",
+      "back": "תעלות יונים מסווגות לפי בררנות (Selectivity), מוליכות (Conductance, ב-pS; תעלת Inward rectifier מוליכה טוב יותר בכניסת יונים לתא), ומנגנון שער (Gating) המבוקר על ידי 4 גורמים: מתח ממברנה, אגוניסטים/אנטגוניסטים חוץ-תאיים (כגון ACh), שליחים תוך-תאיים (Ca²⁺, ATP, cGMP) ומתיחה מכנית."
+    },
+    {
+      "deckId": "physiology-ch-01",
+      "front": "Na+,K+-ATPase Subunits (1α:1β:1γ) & Ouabain (תת-יחידות משאבת הנתרן-אשלגן ואואבאין)",
+      "back": "משאבת P-type המוציאה $3\\text{ Na}^+$ ומכניסה $2\\text{ K}^+$ לכל מולקולת ATP. תת-היחידה הקטליטית $\\alpha$ (מתחמי P, N ו-A) עוברת זרחון וקושרת $\\text{Na}^+$, $\\text{K}^+$, ATP ואואבאין (Ouabain); תת-היחידה $\\beta$ הכרחית להכוונת $\\alpha$ לממברנה, ותת-היחידה $\\gamma$ מווסתת את הזיקה ל-$\\text{Na}^+$."
+    },
+    {
+      "deckId": "physiology-ch-01",
+      "front": "CFTR, Phe508del & Trikafta in Cystic Fibrosis (חלבון ה-CFTR וסיסטיק פיברוזיס)",
+      "back": "CFTR הוא טרנספורטר ממשפחת ה-ABC המתפקד כתעלת Cl⁻ ו-HCO3⁻ ומווסת את תעלת ה-ENaC. המוטציה השכיחה Phe508del גורמת לפירוק החלבון ב-ER ולמניעת הגעתו לממברנה (ריר צמיג וכשל בפינוי הרירי-ריסני בריאות), והתרופה Trikafta מגבירה את הגעת Phe508del-CFTR לממברנה."
+    },
+    {
+      "deckId": "physiology-ch-01",
+      "front": "Ubiquitination, Nedd4-2 & Aldosterone Regulation of ENaC (יוביקוויטינציה ובקרת ENaC על ידי אלדוסטרון)",
+      "back": "קישור החלבון Ubiquitin לחלבוני ממברנה על ידי ליגאזות ממשפחת Nedd4 (בניגוד לפעולת אנזימי DUBs) מתייג אותם לאנדוציטוזה ולפירוק בליזוזום או בפרוטאוזום. ההורמון אלדוסטרון מעכב את Nedd4-2, מונע יוביקוויטינציה של תעלות ENaC בממברנה האפיקלית בכליה ומגביר ספיגת Na⁺."
+    },
+    {
+      "deckId": "physiology-ch-01",
+      "front": "Receptor-Mediated Endocytosis: Adaptin, Clathrin & Dynamin (אנדוציטוזה מתווכת-קולטן וקליטת LDL)",
+      "back": "החלבון Adaptin מקשר בין הקולטנים למעטפת ה-Clathrin, והאנזים בעל פעילות ה-GTPase Dynamin מנתק את השלפוחית מהממברנה. בקליטת LDL, הקולטן ממוחזר מהאנדוזום לממברנה וה-LDL מפורק בליזוזום; פגם בקולטן ה-LDL גורם להיפרכולסטרולמיה ולטרשת עורקים."
+    },
+    {
+      "deckId": "physiology-ch-01",
+      "front": "Constitutive vs. Regulated Exocytosis & Ca²⁺ Exceptions (אקסוציטוזה וחריגי הסידן: רנין ו-PTH)",
+      "back": "אקסוציטוזה קונסטיטוטיבית מתרחשת ברציפות (הפרשת נוגדנים מתאי פלזמה וקולגן מפיברובלסטים), ואילו אקסוציטוזה מבוקרת נעזרת בחלבוני SNARE ומופעלת לרוב על ידי עלייה ב-$[\\text{Ca}^{2+}]_i$ — למעט שני חריגים שבהם ההפרשה מופעלת על ידי ירידה ב-$[\\text{Ca}^{2+}]_i$: הפרשת Renin מתאי JG בכליה והפרשת PTH מבלוטת הפאראתירואיד."
+    },
+    {
+      "deckId": "physiology-ch-01",
+      "front": "Fick's First Law, Stokes-Einstein & Capillary Recruitment (חוק פיק, סטוקס-איינשטיין וגיוס נימים במאמץ)",
+      "back": "לפי חוק פיק ($J = -DA\\frac{\\Delta C}{\\Delta X}$) ומשוואת סטוקס-איינשטיין ($D = \\frac{kT}{6\\pi r\\eta}$), שטף הדיפוזיה עולה עבור מולקולה קטנה וליפופילית ($\\beta > 1$) ועם קיצור מרחק הדיפוזיה ($\\Delta X$). במאמץ גופני, גיוס נימים בשריר השלד מקצר את $\\Delta X$ מ-$40 µm$ ל-$\\le 20 µm$ ומאיץ אספקת O2 ודלקים."
+    },
+    {
+      "deckId": "physiology-ch-01",
+      "front": "Electrochemical Gradient (Δμx) & Uncharged vs. Charged Solutes (המפל האלקטרוכימי)",
+      "back": "המפל האלקטרוכימי ($\\Delta\\mu_x = RT\\ln\\frac{[X]_i}{[X]_o} + z_x F V_m$) מכמת את האנרגיה החופשית להובלת מומס X: עבור מומס חסר מטען כגון גלוקוז ($z_x = 0$) פועל רק מפל הריכוזים הכימי, ואילו עבור יון טעון פועלים יחד מפל הריכוזים ומתח הממברנה ($V_m = V_i - V_o$)."
+    },
+    {
+      "deckId": "physiology-ch-01",
+      "front": "Nernst Equilibrium Potential (Ex) & Net Driving Force (משוואת נרנסט והכוח המניע נטו)",
+      "back": "בשיווי משקל ($\\Delta\\mu_x = 0$) ב-37°C: $E_x = -\\frac{61.5\\text{ mV}}{z_x}\\log_{10}\\frac{[X]_i}{[X]_o}$. מפל ריכוזים של פי 10 שקול ל-$61.5\\text{ mV}$ ליון חד-ערכי ($z=\\pm 1$) ול-$30.7\\text{ mV}$ ליון דו-ערכי ($z=2$). הכוח המניע נטו הוא $V_m - E_x$ (עבור $\\text{K}^+$ עם $E_{\\text{K}^+}=-90.8\\text{ mV}$ ו-$V_m=-60\\text{ mV}$, הכוח הוא $+30.8\\text{ mV}$ החוצה)."
+    },
+    {
+      "deckId": "physiology-ch-01",
+      "front": "SGLT-1 vs. SGLT-2 Stoichiometry & Concentrating Power (השוואת SGLT-1 מול SGLT-2)",
+      "back": "בהובלה פעילה שניונית של גלוקוז, SGLT-2 מוביל $1\\text{ Na}^+ : 1\\text{ Glucose}$ ומייצר מפל גלוקוז של כפי 100 ($\\frac{[\\text{Glc}]_i}{[\\text{Glc}]_o} = \\frac{[\\text{Na}^+]_o}{[\\text{Na}^+]_i}10^{-V_m/61.5}$), ואילו SGLT-1 מוביל $2\\text{ Na}^+ : 1\\text{ Glucose}$, מעלה בריבוע את יחס ה-$\\text{Na}^+$ והמתח, ומייצר מפל גלוקוז של כמעט פי 10,000."
+    },
+    {
+      "deckId": "physiology-ch-01",
+      "front": "van 't Hoff's Law & Osmolality vs. Osmolarity (חוק ואן ׳ט הוף ואוסמולליות מול אוסמולריות)",
+      "back": "הלחץ האוסמוטי מחושב לפי $\\pi = nCRT$ ותלוי אך ורק במספר החלקיקים המתפרקים ($nC$; ב-37°C, $1\\text{ mOsm/L} = 19.3\\text{ mm Hg}$). אוסמולליות ($\\text{mOsm/kg H}_2\\text{O}$) מבוססת על מסת הממס ולכן אינה תלויה בטמפרטורה (ומועדפת בפיזיולוגיה) לעומת אוסמולריות ($\\text{mOsm/L}$) התלויה בטמפרטורה."
+    },
+    {
+      "deckId": "physiology-ch-01",
+      "front": "Effective Osmotic Pressure (πe = σnCRT): Sucrose vs. Urea in RBCs (טוניסיות ומקדם ההחזרה σ)",
+      "back": "טוניסיות נקבעת לפי $\\pi_e = \\sigma(nCRT)$. תמיסות סוכרוז ואוריאה של $300\\text{ mOsm/kg H}_2\\text{O}$ הן שתיהן איזואוסמוטיות לתא דם אדום, אך סוכרוז אינו חודר לתא ($\\sigma = 1$, מומס אפקטיבי → איזוטוני), בעוד שאוריאה חודרת דרך יוניפורטרים ($\\sigma = 0$ → $\\pi_e = 0$, מומס לא-אפקטיבי → היפוטוני, גורם להתנפחות ולהתפוצצות התא)."
     }
   ]
 }
